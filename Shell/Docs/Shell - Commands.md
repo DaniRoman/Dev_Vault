@@ -1,0 +1,4 @@
+- `chmod +x script.sh` → dar permisos
+- `./script.sh` → ejecutar desde la carpeta actual
+- `sh script.sh` o `bash script.sh` → ejecutar explícitamente
+- `VAR=value ./script.sh` → pasar variables de entorno al script

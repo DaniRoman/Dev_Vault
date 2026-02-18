@@ -1,0 +1,241 @@
+{
+  "main": {
+    "id": "3fff378d59a03a66",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b92536e29959370",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1e498d70a32645cc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "98adcd184bf152fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b3d42c2c7dc79bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e998f953db48c1c4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "cd0b57e002270810",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "17ac3535bd3fa240",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3553b5f1a4be20ed",
+    "type": "split",
+    "children": [
+      {
+        "id": "bbe02a0537af0431",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef4ac5b9c11a5400",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Untitled.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Untitled"
+            }
+          },
+          {
+            "id": "1d0afae558fa5dc5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Untitled.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Untitled"
+            }
+          },
+          {
+            "id": "91e100fe676f8a95",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e321100362520522",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "024b059209ae347e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Untitled"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "1e498d70a32645cc",
+  "lastOpenFiles": [
+    "Bjj/Bjj Tecniques.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "Bjj",
+    "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
+    "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
+    "AKO 44 - Driver Translator Perte WorkFlow.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Conexion Layer workflow - DataAccessManager.canvas",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260217165606.png",
+    "AKO/AKO44/AKO 44 - Driver Translator Perte WorkFlow.md",
+    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
+    "AKO/AKO44/Docs/error en mis.md",
+    "AKO/AKO44/Docs/AKO 44 - Conexion Layer - Authentication.canvas",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260217160122.png",
+    "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
+    "AKO/AKO44/Docs/Ako44 - Protocolos.md",
+    "AKO/AKO44/Docs/ako 44 - Partes importantes del código.md",
+    "AKO/AKO44/attachments/Pasted image 20260217112922.png",
+    "AKO/AKO44/attachments/Pasted image 20260217112917.png",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260217095305.png",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260217095259.png",
+    "Ako44 - Script fakeDevice.md",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260216125617.png",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260216110821.png",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260216103224.png",
+    "AKO/Ako 44/Untitled.md",
+    "Development vault - Main Site.md",
+    "attachments/Pasted image 20260216101119.png",
+    "attachments",
+    "Db/Prisma - Main Site.md",
+    "Db/PostgreSQL/Dd - Postgres Main Site.md",
+    "Db/PostgreSQL",
+    "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
+    "AKO/AKO44/Docs/Ako44 - flujo mock Device.canvas",
+    "Ako44 - Script fakeDevice.canvas",
+    "AKO/AKO44/Docs/ako 44 - Manufactured device license code.md",
+    "AKO/Ako 44/Docs/ako 44 - Código `perte-coap`.md",
+    "AKO/AKO44/Docs/attachments",
+    "AKO/Ako 44/Crear empresa Phantom.md",
+    "AKO/Ako 44/Docs/Untitled.base",
+    "Lenguajes/TypeScript/TypeScript - Main Site.md",
+    "Shell/Shell - Main Site.md",
+    "Shell/Docs/SSH - Secure Shell.md",
+    "Dev_Vault",
+    "Lenguajes/TypeScript/Lenguajes - TypeScript - Abstract Class.md",
+    "Arquitectura y Diseño/Arquitectura y diseño.md",
+    "Cosas tener en cuenta proyecto API.md",
+    "AKO - API Main Site.md",
+    "API - Main site.md",
+    "AKO",
+    "AKO/AKO44/Docs",
+    "AKO/AKO44/Docs/ako 44 - schema definitions.md",
+    "Lenguajes/JavaScript/JavaScript.md",
+    "Lenguajes",
+    "AKO/AKO44/attachments",
+    "Node/Node - Main Site.md"
+  ]
+}
