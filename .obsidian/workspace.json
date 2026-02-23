@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo backlog.perte mediator.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
                 "viewState": {
-                  "x": 153.8520331811103,
-                  "y": 782.6893625126077,
-                  "zoom": 0.0769836943021898
+                  "x": 2098.4770311936363,
+                  "y": -691.6660469253525,
+                  "zoom": 0.11559935247955035
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo backlog.perte mediator"
+              "title": "AKO 44 - Flujo de cambio de parámetros Cloud - Device"
             }
           }
         ]
@@ -190,6 +190,7 @@
   },
   "active": "8504de3a2c6ee0e7",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo backlog.perte mediator.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
@@ -198,7 +199,6 @@
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo backlog.perte mediator.canvas",
     "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260220115059.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260220114948.png",
