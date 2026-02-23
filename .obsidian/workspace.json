@@ -23,8 +23,26 @@
               "icon": "lucide-layout-dashboard",
               "title": "AKO 44 - Flujo de cambio de parámetros Cloud - Device"
             }
+          },
+          {
+            "id": "b23753a51bea0e99",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
+                "viewState": {
+                  "x": -1821.7040730748258,
+                  "y": -1015.1243144641763,
+                  "zoom": -0.5164942348806034
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo Api Device"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -188,10 +206,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8504de3a2c6ee0e7",
+  "active": "b23753a51bea0e99",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo backlog.perte mediator.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
