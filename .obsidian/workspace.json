@@ -11,38 +11,17 @@
             "id": "8504de3a2c6ee0e7",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
-                "viewState": {
-                  "x": -92.4636187899847,
-                  "y": -544.0361404672287,
-                  "zoom": 0.11559935247955035
-                }
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo de cambio de parámetros Cloud - Device"
-            }
-          },
-          {
-            "id": "b23753a51bea0e99",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
-                "viewState": {
-                  "x": -664.5949321022861,
-                  "y": 448.0212491837143,
-                  "zoom": -0.5164942348806034
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo Api Device"
+              "icon": "lucide-file",
+              "title": "AKO 44 Main Site"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -206,20 +185,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b23753a51bea0e99",
+  "active": "8504de3a2c6ee0e7",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260223131220.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260223131204.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260223125127.png",
     "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo backlog.perte mediator.canvas",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "Git/Git Main Page.md",
-    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260220115059.png",
@@ -233,7 +212,6 @@
     "AKO/AKO44/Docs/attachments/Pasted image 20260219132353.png",
     "AKO/AKO44/Docs/AKO 44 - Flujo Request → middlewares → Context → Controller.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260219113307.png",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260219105610.png",
     "AKO/AKO44/Docs/ako 44 - schema definitions.md",
     "Rabbit",
     "AKO/AKO44/Docs/AKO 44 Flujo de cambio de parámetros Cloud - Device.md",
