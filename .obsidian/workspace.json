@@ -25,14 +25,17 @@
             "id": "9a42e69542edc05d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/AKO 44 - Flujo de cambio de parámetros Cloud - Device.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
+                "viewState": {
+                  "x": 3234.8035345848566,
+                  "y": -337.11581624230416,
+                  "zoom": -0.19928852814623138
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 - Flujo de cambio de parámetros Cloud - Device"
+              "icon": "lucide-layout-dashboard",
+              "title": "Flujo de samples (telemetría) y eventos del dispositivo"
             }
           },
           {
@@ -218,17 +221,17 @@
   },
   "active": "9a42e69542edc05d",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO 44 - Flujo de cambio de parámetros Cloud - Device.md",
+    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
+    "AKO/AKO44/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+    "AKO/AKO44/AKO 44 - Flujo de cambio de parámetros Cloud - Device.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
-    "AKO/AKO44/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
     "AKO/AKO44/Docs/ako 44 - Manufactured device license code.md",
-    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260223131220.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260223131204.png",
@@ -271,7 +274,6 @@
     "Shell/Shell - Main Site.md",
     "Shell/Docs/SSH - Secure Shell.md",
     "Dev_Vault",
-    "Lenguajes/TypeScript/Lenguajes - TypeScript - Abstract Class.md",
     "AKO",
     "AKO/AKO44/Docs"
   ]
