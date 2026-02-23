@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo backlog.perte mediator.canvas",
                 "viewState": {
-                  "x": 67.39042005001994,
-                  "y": -595.7536236213485,
-                  "zoom": 0.11559935247955035
+                  "x": 1585.9920289915908,
+                  "y": 1529.5,
+                  "zoom": -2.1025946349556244
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo de cambio de parámetros Cloud - Device"
+              "title": "AKO 44 - Flujo backlog.perte mediator"
             }
           }
         ]
@@ -190,8 +190,8 @@
   },
   "active": "8504de3a2c6ee0e7",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "Git/Git Main Page.md",
