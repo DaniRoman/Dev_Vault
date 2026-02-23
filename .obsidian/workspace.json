@@ -11,14 +11,17 @@
             "id": "8504de3a2c6ee0e7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Git/Git Main Page.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+                "viewState": {
+                  "x": -280.52719389588316,
+                  "y": -435.89958478134093,
+                  "zoom": 0.11559935247955035
+                }
               },
-              "icon": "lucide-file",
-              "title": "Git Main Page"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo de cambio de parámetros Cloud - Device"
             }
           }
         ]
@@ -186,13 +189,15 @@
   },
   "active": "8504de3a2c6ee0e7",
   "lastOpenFiles": [
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
+    "Git/Git Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo backlog.perte mediator.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260220115059.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260220114948.png",
@@ -202,7 +207,6 @@
     "Rabbit/Rabbit Main Page.md",
     "Rabbit/attachments/Pasted image 20260220104153.png",
     "Rabbit/attachments",
-    "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260219132353.png",
     "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Request → middlewares → Context → Controller.canvas",
