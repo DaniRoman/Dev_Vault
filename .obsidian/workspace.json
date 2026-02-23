@@ -15,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
                 "viewState": {
-                  "x": -81.50111527372424,
-                  "y": -200.6964963615455,
+                  "x": -273.4186967463111,
+                  "y": -135.4956041425662,
                   "zoom": 0
                 }
               },
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5110321044922,
-    "collapsed": true
+    "width": 269.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -208,11 +207,11 @@
   "active": "9a42e69542edc05d",
   "lastOpenFiles": [
     "Arquitectura y Diseño/Arquitectura y diseño.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/AKO 44 - Flujo de cambio de parámetros Cloud - Device.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
