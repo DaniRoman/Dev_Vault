@@ -20,6 +20,7 @@ Compruebo que el mensaje respeta esa forma.
 ---
 
 
+
 ## Conceptos del dispositivo
 
 ### Sondas
@@ -35,21 +36,12 @@ Compruebo que el mensaje respeta esa forma.
 >[!important] importante
 >`akocloud-api > src > schemas > device-definitions > panel_1ry_6402` el último dígito dígito me dice que protocolo utiliza, `2-CoAP` - `1-MQTT`
 
+
 ## Protocolos de red
 [[Ako44 - Protocolos]]
 
-## Device communication protocol
-
-
-
-[Recurso ](https://ako0.sharepoint.com/:w:/r/teams/DesarrolloModificaciondeProducto/DEVICE_COMMUNICATION_PROTOCOL/_layouts/15/Doc.aspx?sourcedoc=%7B940D230D-38CE-4236-9333-54ED338F9679%7D&file=ALWAYS_ON_DEVICE_EN12830_COMMUNICATION_PROTOCOL_rev2.docx&action=default&mobileredirect=true&wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1771252569867&web=1)
-
-### Mook device conexión 
-[[Ako44 - Mok device conexión Script.canvas]]
-
 ## Manufactured device license code
-
 [[ako 44 - Manufactured device license code ]]
 
-## Como interpretar el `schema > device.definitions` en el archivo `newDarwingPanel` del sharePoint
+## Como interpretar  parametros de la definición del dispositivo 
 [[ako 44 - mapear device.definitions contra Excel File ]]

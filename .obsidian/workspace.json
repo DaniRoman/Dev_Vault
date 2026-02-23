@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "file": "AKO/AKO44/AKO 44 Flujos de trabajo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "title": "AKO 44 Flujos de trabajo"
             }
           },
           {
@@ -201,8 +201,10 @@
   },
   "active": "8504de3a2c6ee0e7",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
+    "AKO/AKO44/Docs/ako 44 - Manufactured device license code.md",
+    "AKO/AKO44/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
@@ -220,7 +222,6 @@
     "AKO/AKO44/Docs/attachments/Pasted image 20260220114948.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260220112342.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260220111926.png",
-    "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
     "Rabbit/Rabbit Main Page.md",
     "Rabbit/attachments/Pasted image 20260220104153.png",
     "Rabbit/attachments",
@@ -244,7 +245,6 @@
     "Db/Prisma - Main Site.md",
     "Db/PostgreSQL/Dd - Postgres Main Site.md",
     "Db/PostgreSQL",
-    "AKO/AKO44/Docs/ako 44 - Manufactured device license code.md",
     "AKO/Ako 44/Docs/ako 44 - Código `perte-coap`.md",
     "AKO/AKO44/Docs/attachments",
     "AKO/Ako 44/Crear empresa Phantom.md",
