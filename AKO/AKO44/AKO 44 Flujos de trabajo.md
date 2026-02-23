@@ -13,5 +13,9 @@
 ### Flujo Translator
 [[AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas|AKO 44 - Driver Translator Perte WorkFlow]]
 
+## Flujo Sample
+
+[[AKO 44 - Flujo Sample.canvas]]
+
 ### Flujo Script Mokear dispositivo Iot  
 [[Ako44 - Mok device conexión Script.canvas]]
