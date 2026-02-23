@@ -1,7 +1,7 @@
 {
 	"nodes":[
 		{"id":"b51251361bbd01f8","type":"text","text":"`sample.perte > injector`","x":-401,"y":-614,"width":250,"height":60},
-		{"id":"e952ae4e2cb22e74","x":-401,"y":-480,"width":541,"height":80,"type":"text","text":">[!example] Conceptos\n\n"}
+		{"id":"e952ae4e2cb22e74","x":-401,"y":-480,"width":621,"height":200,"type":"text","text":">[!example] Conceptos\n\n***virtual values***: Valores calculados a partir de una fórmula/regla, no del sensor tal cual\n- Cada `VirtualValueDefinition` tiene un campo **`ref`** (referencia/código), que es básicamente el **identificador** del virtual value a calcular."}
 	],
 	"edges":[]
 }
