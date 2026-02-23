@@ -1,18 +1,10 @@
-## Flujo del proyecto general
-[[AKO 44 Flujo Del Proyecto]]
+## Flujos de trabajo
 
-## Flujo Set Context
-[[AKO 44 - Flujo Registrar el Context.canvas]]
+[[AKO 44 Flujos de trabajo]]
 
-## Flujo de cambio de parámetros Cloud - Device
-[[AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas]]
+## Manual de comunicación entre dispositivo y cloud
 
-- End point para devolver métricas que timescale esta guardando mas simular mas mensajes para poder recuperar y luego acabar mandando muchos mensajes 
-
-### Flujo Conexión Layer
-[[AKO 44 - Conexion Layer Workflow.canvas]]
-
-Manual de comunicación entre dispositivo y cloud [protocolo ](https://ako0.sharepoint.com/:w:/t/DesarrolloModificaciondeProducto/DEVICE_COMMUNICATION_PROTOCOL/IQANIw2Uzjg2QpMzVO0zj5Z5AWI-WY01IyDjBINtVQTB-ck?e=bLD5hS&ovuser=5a94156b-5d3f-467b-b767-561717bb62ca%2Cdaniel.roman%40ako.com&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNjAxMDQwMDkyNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D).
+[protocolo ](https://ako0.sharepoint.com/:w:/t/DesarrolloModificaciondeProducto/DEVICE_COMMUNICATION_PROTOCOL/IQANIw2Uzjg2QpMzVO0zj5Z5AWI-WY01IyDjBINtVQTB-ck?e=bLD5hS&ovuser=5a94156b-5d3f-467b-b767-561717bb62ca%2Cdaniel.roman%40ako.com&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNjAxMDQwMDkyNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D).
 
 - Define **qué tipos de mensajes existen** (status, event/alarm, sample, link, etc.).
 - Para cada tipo, define **qué campos lleva** y **cómo se organizan** (muchas veces en arrays para ahorrar bytes)
@@ -26,12 +18,7 @@ Compruebo que el mensaje respeta esa forma.
 `{ ty:"event", d:[[ts, 19, 100, 1, 1]] }`
 
 ---
-### Flujo Translator
-[[AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas|AKO 44 - Driver Translator Perte WorkFlow]]
 
-El micro translator es la capa que convierte los mensajes que llegan desde la capa de conexión en datos “entendibles” para el cloud y los distribuye internamente. Recibe mensajes ya autenticados y los valida para asegurar que tienen una estructura correcta. Interpreta el contenido según el tipo de mensaje y lo transforma desde un formato compacto del protocolo a un formato interno normalizado. Con esa salida, publica el mensaje en el canal interno adecuado para que lo consuma el micro especializado (eventos, muestras, estado, etc.). También gestiona la comunicación relacionada con parámetros: confirma recepciones, guarda pendientes y reintenta envíos cuando toca. Además puede manejar mensajes que van en sentido contrario (cloud → dispositivo), adaptándolos al formato esperado y enviándolos por el canal de salida correspondiente. En resumen: traduce, valida, normaliza y enruta mensajes entre dispositivos y micros de negocio.
-
-El mensaje es enviado por rabbit a un microservicio u otro en función del tipo de mensaje,  cada micro tiene su especialidad `sample, events, status`
 
 ## Conceptos del dispositivo
 
@@ -53,7 +40,7 @@ El mensaje es enviado por rabbit a un microservicio u otro en función del tipo 
 
 ## Device communication protocol
 
-> Aquí puedo mapear los `event_id` de los eventos con sus respectivos códigos en el `json`
+
 
 [Recurso ](https://ako0.sharepoint.com/:w:/r/teams/DesarrolloModificaciondeProducto/DEVICE_COMMUNICATION_PROTOCOL/_layouts/15/Doc.aspx?sourcedoc=%7B940D230D-38CE-4236-9333-54ED338F9679%7D&file=ALWAYS_ON_DEVICE_EN12830_COMMUNICATION_PROTOCOL_rev2.docx&action=default&mobileredirect=true&wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1771252569867&web=1)
 
