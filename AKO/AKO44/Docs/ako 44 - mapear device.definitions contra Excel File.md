@@ -1,6 +1,6 @@
 ## Ubicación y explicación de los parámetros
 
->Recursos de excel y word para especificaciónes [Recurso](https://ako0.sharepoint.com/teams/DesarrolloModificaciondeProducto/NEWDARWIN/Documentos%20compartidos/Forms/AllItems.aspx?id=%2Fteams%2FDesarrolloModificaciondeProducto%2FNEWDARWIN%2FDocumentos%20compartidos%2FEspecificaci%C3%B3n&viewid=415e4dff%2D290a%2D42c1%2Dad11%2D49b751afccbc) 
+>Recursos de excel y word para especificaciones [Recurso](https://ako0.sharepoint.com/teams/DesarrolloModificaciondeProducto/NEWDARWIN/Documentos%20compartidos/Forms/AllItems.aspx?id=%2Fteams%2FDesarrolloModificaciondeProducto%2FNEWDARWIN%2FDocumentos%20compartidos%2FEspecificaci%C3%B3n&viewid=415e4dff%2D290a%2D42c1%2Dad11%2D49b751afccbc) 
 
 >[!important] importante
 >Hay tres tipos de dispositivos, no comunicados, *(EDGE)*, *(NBIOT)*

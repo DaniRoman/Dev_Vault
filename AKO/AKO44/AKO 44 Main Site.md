@@ -1,75 +1,13 @@
-## Flujo del proyecto
+## Flujo del proyecto general
+[[AKO 44 Flujo Del Proyecto]]
 
-Los dispositivos IoT se conectan al Cloud mediante la capa de conexión que es la puerta de entrada y salida entre los dispositivos y el cloud. Mantiene el servidor de comunicación y recibe las peticiones del dispositivo con el mensaje en bruto (bytes). Extrae la identidad del dispositivo y el tipo de operación a partir de la petición (por ejemplo si el dispositivo está enviando datos o solicitando información). A partir de la ruta/endpoint detecta acciones especiales como vinculación o actualizaciones. Delega la validación del dispositivo y la integridad del mensaje (comprobación de CRC y decodificación del contenido) para asegurarse de que no está corrupto y pertenece a un dispositivo permitido. Si todo es correcto, entrega el mensaje al bus interno para que siga el flujo hacia la traducción y los micros de negocio. Si el mensaje no es válido, responde al dispositivo con un código de error. En el sentido inverso (cloud → dispositivo), prepara el mensaje de salida, lo empaqueta con su integridad y lo envía al dispositivo por el mismo canal de comunicación.
+## Flujo Set Context
+[[AKO 44 - Flujo Registrar el Context.canvas]]
 
-Lo que llega al micro CoAP (capa de conexión)
+## Flujo de cambio de parámetros Cloud - Device
+[[AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas]]
 
-```txt
-request.payload = [ CBOR_BYTES ... ][ CRC32_4_BYTES ]
-                  ^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^
-                  payload real      firma integridad
-```
-
-- `CBOR_BYTES`: longitud variable (casi todo el mensaje)
-- `CRC32_4_BYTES`: siempre los **últimos 4 bytes** (32 bits)
-
-Cómo lo deja la capa de conexión por dentro (tras validar)
-
-```js
-// esto es el "payload" decodificado (ya NO son bytes)
-{
-  id: [974130021, 6000, 1, 26, 0],
-  ty: "event",
-  d: [
-    [1771245275, 19, 100, 1, 1],
-    [1771245285, 25, 50, 1, 2],
-    [1771245295, 30, 0, 0, 3]
-  ]
-}
-```
-
-Qué manda la capa de conexión al translator (por Rabbit)
-
-```json
-{
-  "deviceInformation": {
-    "serialNumber": 974130021,
-    "uuid": "2E19CFDA300B3F...",
-    "license": true,
-    "device": { "_id": "6989bc8e...", "model": "panel_1ry_6402", ... }
-  },
-  "payload": {
-    "id": [974130021,6000,1,26,0],
-    "ty": "event",
-    "d": [[1771245275,19,100,1,1], ...]
-  }
-}
-```
-
-Qué hace el translator con eso Ya le llega JSON.
-- valida estructura
-- interpreta `ty:"event"`
-- traduce el contenido compacto (`d: [...]`) a formato cloud normalizado
-- publica a un topic interno según el tipo (`perte.input.event`, etc.)
-
-```js
-{
-  "deviceInformation": { ... },
-  "parsedData": {
-    "events": [
-      {
-        "date": "2026-02-17T07:51:58.000Z",
-        "active": true,
-        "eventRef": "event_log_reset",
-        "eventValue": 100,
-        "counterId": "1",
-        "isAlarm": false
-      }
-    ]
-  },
-  "deviceType": "12830"
-}
-```
+- End point para devolver métricas que timescale esta guardando mas simular mas mensajes para poder recuperar y luego acabar mandando muchos mensajes 
 
 ### Flujo Conexión Layer
 [[AKO 44 - Conexion Layer Workflow.canvas]]
@@ -88,14 +26,13 @@ Compruebo que el mensaje respeta esa forma.
 `{ ty:"event", d:[[ts, 19, 100, 1, 1]] }`
 
 ---
+### Flujo Translator
+[[AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas|AKO 44 - Driver Translator Perte WorkFlow]]
 
 El micro translator es la capa que convierte los mensajes que llegan desde la capa de conexión en datos “entendibles” para el cloud y los distribuye internamente. Recibe mensajes ya autenticados y los valida para asegurar que tienen una estructura correcta. Interpreta el contenido según el tipo de mensaje y lo transforma desde un formato compacto del protocolo a un formato interno normalizado. Con esa salida, publica el mensaje en el canal interno adecuado para que lo consuma el micro especializado (eventos, muestras, estado, etc.). También gestiona la comunicación relacionada con parámetros: confirma recepciones, guarda pendientes y reintenta envíos cuando toca. Además puede manejar mensajes que van en sentido contrario (cloud → dispositivo), adaptándolos al formato esperado y enviándolos por el canal de salida correspondiente. En resumen: traduce, valida, normaliza y enruta mensajes entre dispositivos y micros de negocio.
 
 El mensaje es enviado por rabbit a un microservicio u otro en función del tipo de mensaje,  cada micro tiene su especialidad `sample, events, status`
 
-### Flujo Translator
-
-[[AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas|AKO 44 - Driver Translator Perte WorkFlow]]
 ## Conceptos del dispositivo
 
 ### Sondas

@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"f94f7c636866d812","type":"text","text":">[!warning] Registramos el contexto\n\n`app.ts`\n\n```js\nthis._registerContext();\n```","x":44,"y":1,"width":696,"height":179},
+		{"id":"63fdf474e1dd5b7c","type":"text","text":"[[AKO 44 - Flujo Registrar el Context.canvas]]","x":193,"y":320,"width":399,"height":64},
+		{"id":"e4b6d606c02b64bd","type":"text","text":">[!warning] Accedemos al controlador del Device\n\n`device.ts`\n\n```js\nthis._registerContext();\n```","x":1220,"y":1,"width":696,"height":179}
+	],
+	"edges":[
+		{"id":"7bc8e490c9d0ec47","fromNode":"f94f7c636866d812","fromSide":"bottom","toNode":"63fdf474e1dd5b7c","toSide":"top"},
+		{"id":"5fcc17a3b20e1ff0","fromNode":"f94f7c636866d812","fromSide":"right","toNode":"e4b6d606c02b64bd","toSide":"left","label":"Accedemos al controlador"}
+	]
+}

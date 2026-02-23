@@ -4,17 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "3b92536e29959370",
+        "id": "e47b0586c87833d9",
         "type": "tabs",
         "children": [
           {
-            "id": "1e498d70a32645cc",
+            "id": "8504de3a2c6ee0e7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+                "viewState": {
+                  "x": -75.63696113366008,
+                  "y": -597.1591022874112,
+                  "zoom": 0.26814474456957843
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo de cambio de parámetros Cloud - Device"
             }
           }
         ]
@@ -74,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 231.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -180,42 +188,49 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1e498d70a32645cc",
+  "active": "8504de3a2c6ee0e7",
   "lastOpenFiles": [
-    "Bjj/Bjj Tecniques.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
-    "Bjj",
-    "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
-    "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
-    "AKO 44 - Driver Translator Perte WorkFlow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Conexion Layer workflow - DataAccessManager.canvas",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260217165606.png",
-    "AKO/AKO44/AKO 44 - Driver Translator Perte WorkFlow.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
-    "AKO/AKO44/Docs/error en mis.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
+    "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo backlog.perte mediator.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260220115059.png",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260220114948.png",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260220112342.png",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260220111926.png",
+    "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
+    "Rabbit/Rabbit Main Page.md",
+    "Rabbit/attachments/Pasted image 20260220104153.png",
+    "Rabbit/attachments",
+    "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260219132353.png",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Request → middlewares → Context → Controller.canvas",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260219113307.png",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260219105610.png",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260219105534.png",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260219105530.png",
+    "AKO/AKO44/Docs/ako 44 - schema definitions.md",
+    "Rabbit",
+    "AKO/AKO44/Docs/AKO 44 Flujo de cambio de parámetros Cloud - Device.md",
+    "Development vault - Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer - Authentication.canvas",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260217160122.png",
-    "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
+    "Bjj/Bjj Tecniques.md",
+    "Bjj",
+    "AKO/AKO44/AKO 44 - Driver Translator Perte WorkFlow.md",
+    "AKO/AKO44/Docs/error en mis.md",
     "AKO/AKO44/Docs/Ako44 - Protocolos.md",
     "AKO/AKO44/Docs/ako 44 - Partes importantes del código.md",
-    "AKO/AKO44/attachments/Pasted image 20260217112922.png",
-    "AKO/AKO44/attachments/Pasted image 20260217112917.png",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260217095305.png",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260217095259.png",
     "Ako44 - Script fakeDevice.md",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260216125617.png",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260216110821.png",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260216103224.png",
     "AKO/Ako 44/Untitled.md",
-    "Development vault - Main Site.md",
-    "attachments/Pasted image 20260216101119.png",
     "attachments",
     "Db/Prisma - Main Site.md",
     "Db/PostgreSQL/Dd - Postgres Main Site.md",
     "Db/PostgreSQL",
-    "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
-    "AKO/AKO44/Docs/Ako44 - flujo mock Device.canvas",
-    "Ako44 - Script fakeDevice.canvas",
     "AKO/AKO44/Docs/ako 44 - Manufactured device license code.md",
     "AKO/Ako 44/Docs/ako 44 - Código `perte-coap`.md",
     "AKO/AKO44/Docs/attachments",
@@ -228,14 +243,7 @@
     "Lenguajes/TypeScript/Lenguajes - TypeScript - Abstract Class.md",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "Cosas tener en cuenta proyecto API.md",
-    "AKO - API Main Site.md",
-    "API - Main site.md",
     "AKO",
-    "AKO/AKO44/Docs",
-    "AKO/AKO44/Docs/ako 44 - schema definitions.md",
-    "Lenguajes/JavaScript/JavaScript.md",
-    "Lenguajes",
-    "AKO/AKO44/attachments",
-    "Node/Node - Main Site.md"
+    "AKO/AKO44/Docs"
   ]
 }
