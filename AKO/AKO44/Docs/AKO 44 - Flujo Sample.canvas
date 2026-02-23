@@ -1,7 +1,10 @@
 {
 	"nodes":[
 		{"id":"b51251361bbd01f8","type":"text","text":"`sample.perte > injector`","x":-401,"y":-614,"width":250,"height":60},
-		{"id":"e952ae4e2cb22e74","x":-401,"y":-480,"width":621,"height":200,"type":"text","text":">[!example] Conceptos\n\n***virtual values***: Valores calculados a partir de una fórmula/regla, no del sensor tal cual\n- Cada `VirtualValueDefinition` tiene un campo **`ref`** (referencia/código), que es básicamente el **identificador** del virtual value a calcular."}
+		{"id":"e952ae4e2cb22e74","x":-401,"y":-440,"width":621,"height":200,"type":"text","text":">[!example] Conceptos\n\n***virtual values***: Valores calculados a partir de una fórmula/regla, no del sensor tal cual\n- Cada `VirtualValueDefinition` tiene un campo **`ref`** (referencia/código), que es básicamente el **identificador** del virtual value a calcular."},
+		{"id":"32f180a756baf71f","type":"text","text":">[!example] Conceptos\n\n```js\nthis.virtualStrategyFactory = new VirtualValueStrategyFactory([\n  new CommonVirtualValueStrategy(),\n]);\n```","x":-401,"y":-140,"width":621,"height":200}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"2ef6fddd1414f6a3","fromNode":"b51251361bbd01f8","fromSide":"bottom","toNode":"e952ae4e2cb22e74","toSide":"top"}
+	]
 }
