@@ -27,15 +27,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo micro sample.canvas",
                 "viewState": {
-                  "x": 3234.8035345848566,
-                  "y": -337.11581624230416,
-                  "zoom": -0.19928852814623138
+                  "x": -14.262695172901738,
+                  "y": 6.112583645529317,
+                  "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Flujo de samples (telemetría) y eventos del dispositivo"
+              "title": "AKO 44 - Flujo micro sample"
             }
           },
           {
@@ -113,7 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231.5110321044922
+    "width": 366.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -221,8 +221,9 @@
   },
   "active": "9a42e69542edc05d",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo micro sample.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/AKO 44 - Flujo de cambio de parámetros Cloud - Device.md",
