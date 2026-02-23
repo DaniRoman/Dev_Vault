@@ -4,7 +4,7 @@
 ## Flujo Set Context
 [[AKO 44 - Flujo Registrar el Context.canvas]]
 
-## Flujo comunicación dispo
+## Flujo comunicación dispositiov
 
 ## Flujo de cambio de parámetros Cloud - Device
 [[AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas]]
