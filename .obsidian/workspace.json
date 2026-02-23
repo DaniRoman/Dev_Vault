@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
                 "viewState": {
-                  "x": -247.6160682523525,
-                  "y": -435.89958478134093,
-                  "zoom": 0.11559935247955035
+                  "x": -1969.480038679661,
+                  "y": -511.2351612711368,
+                  "zoom": -0.19200387900375118
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo de cambio de parámetros Cloud - Device"
+              "title": "AKO 44 - Flujo Api Device"
             }
           }
         ]
@@ -189,10 +189,10 @@
   },
   "active": "8504de3a2c6ee0e7",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "Git/Git Main Page.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
@@ -242,7 +242,6 @@
     "Dev_Vault",
     "Lenguajes/TypeScript/Lenguajes - TypeScript - Abstract Class.md",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
-    "Cosas tener en cuenta proyecto API.md",
     "AKO",
     "AKO/AKO44/Docs"
   ]
