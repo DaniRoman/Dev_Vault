@@ -32,34 +32,17 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
                 "viewState": {
-                  "x": -1821.7040730748258,
-                  "y": -1015.1243144641763,
+                  "x": 807.2945293363299,
+                  "y": -1190.0022702786666,
                   "zoom": -0.5164942348806034
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "AKO 44 - Flujo Api Device"
             }
-          },
-          {
-            "id": "4481467f773498a5",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
-                "viewState": {
-                  "x": 770.2578948602124,
-                  "y": 1104.4501602708322,
-                  "zoom": -0.48256142700189153
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo Registrar el Context"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -223,8 +206,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4481467f773498a5",
+  "active": "b23753a51bea0e99",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
@@ -244,7 +228,6 @@
     "Rabbit/attachments/Pasted image 20260220104153.png",
     "Rabbit/attachments",
     "AKO/AKO44/Docs/attachments/Pasted image 20260219132353.png",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Request → middlewares → Context → Controller.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260219113307.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260219105610.png",
