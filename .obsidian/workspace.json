@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
+                "file": "AKO/AKO44/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
                 "viewState": {
-                  "x": -160.67833425619352,
-                  "y": 0,
-                  "zoom": 0
+                  "x": 3815.981746381487,
+                  "y": -604.2457392540223,
+                  "zoom": -0.5332285717619304
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo Sample"
+              "title": "Flujo de samples (telemetría) y eventos del dispositivo"
             }
           },
           {
