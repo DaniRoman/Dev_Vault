@@ -15,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
                 "viewState": {
-                  "x": 1388.0376478452974,
-                  "y": 89.2775341350578,
+                  "x": -740.5238248251228,
+                  "y": -220.28908791542437,
                   "zoom": -0.19200387900375118
                 }
               },
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231.5110321044922
+    "width": 231.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "3553b5f1a4be20ed",
