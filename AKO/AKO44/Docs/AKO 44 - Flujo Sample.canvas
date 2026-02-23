@@ -2,7 +2,7 @@
 	"nodes":[
 		{"id":"b51251361bbd01f8","type":"text","text":"`sample.perte > injector`","x":-401,"y":-614,"width":250,"height":66},
 		{"id":"e952ae4e2cb22e74","type":"text","text":">[!example] Conceptos\n\n***virtual values***: Valores calculados a partir de una fórmula/regla, no del sensor tal cual\n- Cada `VirtualValueDefinition` tiene un campo **`ref`** (referencia/código), que es básicamente el **identificador** del virtual value a calcular.","x":-401,"y":-421,"width":621,"height":221},
-		{"id":"32f180a756baf71f","type":"text","text":">[!example] Conceptos\n\n```js\nthis.virtualStrategyFactory = new VirtualValueStrategyFactory([\n  new CommonVirtualValueStrategy(),\n]);\n```","x":-401,"y":-140,"width":621,"height":260},
+		{"id":"32f180a756baf71f","type":"text","text":"Configura el “calculador” de valores virtuales, cargando la estrategia común (para cierto tipo de dispositivo) que luego se usará cuando lleguen muestras. Después crea el parser que se encargará de transformar/ordenar los valores de las muestras para poder guardarlos o tratarlos de forma consistente. En resumen: deja listo el cálculo de valores derivados y el formato de almacenamiento de los datos.\n```js\n\nthis.virtualStrategyFactory = new VirtualValueStrategyFactory([\n  new CommonVirtualValueStrategy(),\n]);\n\n// Crea el parser que prepara/transforma las lecturas (samples) al formato que se necesita\n// para guardarlas o procesarlas internamente.\nthis.valueStorageParser = new ValueStorageParser();\n```","x":-401,"y":-140,"width":621,"height":260},
 		{"id":"37c3f9d0a3a2a322","type":"text","text":">[!tip] Patron de diseño Factory\n>\n\n[[Arquitectura y diseño#^81cb34]]\n","x":-1200,"y":0,"width":621,"height":120}
 	],
 	"edges":[
