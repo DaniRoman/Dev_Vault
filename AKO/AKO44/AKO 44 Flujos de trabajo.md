@@ -1,6 +1,3 @@
-## Flujo del proyecto general
-[[AKO 44 Flujo Del Proyecto]]
-
 ## Flujo Set Context
 [[AKO 44 - Flujo Registrar el Context.canvas]]
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Flujos de trabajo.md",
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 Flujos de trabajo"
+              "title": "AKO 44 Main Site"
             }
           },
           {
@@ -201,12 +201,12 @@
   },
   "active": "8504de3a2c6ee0e7",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
-    "AKO/AKO44/Docs/ako 44 - Manufactured device license code.md",
     "AKO/AKO44/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
+    "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
+    "AKO/AKO44/Docs/ako 44 - Manufactured device license code.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
@@ -254,7 +254,6 @@
     "Shell/Docs/SSH - Secure Shell.md",
     "Dev_Vault",
     "Lenguajes/TypeScript/Lenguajes - TypeScript - Abstract Class.md",
-    "Arquitectura y Diseño/Arquitectura y diseño.md",
     "AKO",
     "AKO/AKO44/Docs"
   ]

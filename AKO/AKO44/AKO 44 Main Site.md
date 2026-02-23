@@ -1,3 +1,54 @@
+## Flujo del proyecto general
+[[AKO 44 Flujo Del Proyecto]]
+## Conceptos
+
+### Sondas
+
+| Característica      | Sonda Digital                    | Sonda Analógica                                           |
+| ------------------- | -------------------------------- | --------------------------------------------------------- |
+| Señal entregada     | Binaria (0 o 1)                  | Continua (rango de valores)                               |
+| Tipo de información | Sí/No, Encendido/Apagado         | Medición exacta (temperatura, presión, etc.)              |
+| Ejemplo 1           | Sensor de puerta abierta/cerrada | Termómetro de resistencia (RTD)                           |
+| Ejemplo 2           | Interruptor de límite            | Sensor de presión (0–5 V o 4–20 mA)                       |
+| Uso típico          | Detectar presencia, posición     | Medir magnitudes físicas como temperatura, nivel, presión |
+
+>[!important] importante
+>`akocloud-api > src > schemas > device-definitions > panel_1ry_6402` el último dígito dígito me dice que protocolo utiliza, `2-CoAP` - `1-MQTT`
+
+### Samples & Eventos
+
+***Sample (muestra / telemetría)*** ¿cuánto vale X en el tiempo? ⇒ **sample**
+
+- **Qué es:** una **medición** (data point) de una o varias variables.
+- **Frecuencia:** suele ser **periódico** (cada X segundos/minutos) o “cuando hay lectura”.
+- **Forma:** normalmente valores numéricos/continuos con timestamp.
+- **Uso típico:** series temporales, gráficas, promedios, tendencias, umbrales.
+
+	- `temperatura=4.2°C`
+	- `humedad=55%`
+	- `corriente=1.8A`
+	- `setpoint_actual=4`
+
+***Evento (event)***
+
+- **Qué es:** una **ocurrencia discreta**: “ha pasado algo”.
+- **Frecuencia:** **no periódica**; ocurre cuando cambia algo o se dispara una condición.
+- **Forma:** suele incluir un **código/tipo** (y quizá severidad, payload corto).
+- **Uso típico:** auditoría, alarmas, notificaciones, workflows, incidencias
+
+- “**Alarma** de alta temperatura ACTIVADA”
+- “**Puerta** abierta
+- “**Defrost** iniciado / finalizado”
+- “**Error E12**”
+- “Configuración aplicada”
+    
+
+
+
+- Si la pregunta es **“
+    
+- Si la pregunta es **“¿qué pasó / cambió?”** ⇒ **evento**
+
 ## Flujos de trabajo
 
 [[AKO 44 Flujos de trabajo]]
@@ -20,21 +71,6 @@ Compruebo que el mensaje respeta esa forma.
 ---
 
 
-
-## Conceptos del dispositivo
-
-### Sondas
-
-| Característica      | Sonda Digital                    | Sonda Analógica                                           |
-| ------------------- | -------------------------------- | --------------------------------------------------------- |
-| Señal entregada     | Binaria (0 o 1)                  | Continua (rango de valores)                               |
-| Tipo de información | Sí/No, Encendido/Apagado         | Medición exacta (temperatura, presión, etc.)              |
-| Ejemplo 1           | Sensor de puerta abierta/cerrada | Termómetro de resistencia (RTD)                           |
-| Ejemplo 2           | Interruptor de límite            | Sensor de presión (0–5 V o 4–20 mA)                       |
-| Uso típico          | Detectar presencia, posición     | Medir magnitudes físicas como temperatura, nivel, presión |
-
->[!important] importante
->`akocloud-api > src > schemas > device-definitions > panel_1ry_6402` el último dígito dígito me dice que protocolo utiliza, `2-CoAP` - `1-MQTT`
 
 
 ## Protocolos de red
