@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8504de3a2c6ee0e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Arquitectura y Diseño/Arquitectura y diseño.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Arquitectura y diseño"
-            }
-          },
-          {
             "id": "9a42e69542edc05d",
             "type": "leaf",
             "state": {
@@ -29,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
                 "viewState": {
-                  "x": -14.262695172901738,
-                  "y": 6.112583645529317,
+                  "x": -72.33223980543023,
+                  "y": -111.04526956044899,
                   "zoom": 0
                 }
               },
@@ -219,11 +205,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8504de3a2c6ee0e7",
+  "active": "9a42e69542edc05d",
   "lastOpenFiles": [
+    "Arquitectura y Diseño/Arquitectura y diseño.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/AKO 44 Flujos de trabajo.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/AKO 44 - Flujo de cambio de parámetros Cloud - Device.md",
@@ -272,7 +259,6 @@
     "AKO/Ako 44/Docs/Untitled.base",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "Shell/Shell - Main Site.md",
-    "Shell/Docs/SSH - Secure Shell.md",
     "Dev_Vault",
     "AKO",
     "AKO/AKO44/Docs"
