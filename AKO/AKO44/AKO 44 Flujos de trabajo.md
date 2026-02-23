@@ -1,7 +1,7 @@
 ## Flujo Set Context
 [[AKO 44 - Flujo Registrar el Context.canvas]]
 
-## Flujo comunicación dispositiov
+## Flujo de samples (telemetría) y eventos del dispositivo
 
 ## Flujo de cambio de parámetros Cloud - Device
 [[AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas]]

@@ -29,25 +29,19 @@
 	- `corriente=1.8A`
 	- `setpoint_actual=4`
 
-***Evento (event)***
+***Evento (event)*** ¿qué pasó / cambió? ⇒ evento
 
 - **Qué es:** una **ocurrencia discreta**: “ha pasado algo”.
 - **Frecuencia:** **no periódica**; ocurre cuando cambia algo o se dispara una condición.
 - **Forma:** suele incluir un **código/tipo** (y quizá severidad, payload corto).
 - **Uso típico:** auditoría, alarmas, notificaciones, workflows, incidencias
 
-- “**Alarma** de alta temperatura ACTIVADA”
-- “**Puerta** abierta
-- “**Defrost** iniciado / finalizado”
-- “**Error E12**”
-- “Configuración aplicada”
-    
+- Alarma de alta temperatura ACTIVADA
+- Puerta abierta
+- Defrost iniciado / finalizado
+- Error E12
+- Configuración aplicada
 
-
-
-- Si la pregunta es **“
-    
-- Si la pregunta es **“¿qué pasó / cambió?”** ⇒ **evento**
 
 ## Flujos de trabajo
 
