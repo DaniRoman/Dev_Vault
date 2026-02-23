@@ -40,9 +40,26 @@
               "icon": "lucide-layout-dashboard",
               "title": "AKO 44 - Flujo Api Device"
             }
+          },
+          {
+            "id": "4481467f773498a5",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
+                "viewState": {
+                  "x": 857.087707524129,
+                  "y": -758.8322131237752,
+                  "zoom": -0.48256142700189153
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo Registrar el Context"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -206,12 +223,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b23753a51bea0e99",
+  "active": "4481467f773498a5",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo backlog.perte mediator.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "Git/Git Main Page.md",
