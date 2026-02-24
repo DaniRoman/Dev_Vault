@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/Untitled.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": 0,
+                  "x": -28.525390345803476,
+                  "y": 11.20640335013708,
                   "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "title": "AKO 44 - Sample masive script workflow"
             }
           }
         ]
@@ -187,10 +187,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e998f953db48c1c4",
+  "active": "26844ee6daa05b99",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
-    "AKO/AKO44/Docs/Untitled.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
