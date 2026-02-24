@@ -62,6 +62,8 @@ Para `event`, el payload debe tener `ty: "event"` y una `d` con filas del estilo
 Compruebo que el mensaje respeta esa forma.
 `{ ty:"event", d:[[ts, 19, 100, 1, 1]] }`
 
+
+
 ---
 
 
