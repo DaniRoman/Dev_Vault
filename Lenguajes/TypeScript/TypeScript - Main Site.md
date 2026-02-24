@@ -20,6 +20,9 @@
 Las propiedades opcionales también se pueden crear declarándolas con un signo de interrogación justo después del nombre. Este signo indica al compilador de TypeScript que la propiedad declarada es opcional.
 [Recurso](https://www.geeksforgeeks.org/typescript/optional-property-class-in-typescript/)
 
+## Record Type
+[Recurso](https://mrando-via.medium.com/el-tipo-record-en-typescript-c40a4c3bbcdc)
+
 ## Opciones del compilador
 
 >[!error] Error

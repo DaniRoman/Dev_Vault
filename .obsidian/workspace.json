@@ -11,17 +11,14 @@
             "id": "9a42e69542edc05d",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
-                "viewState": {
-                  "x": 927.6739410654852,
-                  "y": 131.4205483788813,
-                  "zoom": 0
-                }
+                "file": "Lenguajes/TypeScript/TypeScript - Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo Sample"
+              "icon": "lucide-file",
+              "title": "TypeScript - Main Site"
             }
           },
           {
@@ -206,9 +203,9 @@
   },
   "active": "9a42e69542edc05d",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
