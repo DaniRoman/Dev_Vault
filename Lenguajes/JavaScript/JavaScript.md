@@ -35,8 +35,13 @@ Así creas un objeto igual al original pero **compatible con JSON**.
 
 ^eaec43
 
->`NaN` significa **“Not a Number”**: _no es un número válido_.
+`NaN` significa **“Not a Number”**: _no es un número válido_.
 
 ## `Math.Floor`
 
+^fb6174
+
 - `Math.floor(...)` quita los decimales y deja un **entero**.
+## Date.now()
+
+devuelve el tiempo actual en **milisegundos** desde el 1/1/1970
