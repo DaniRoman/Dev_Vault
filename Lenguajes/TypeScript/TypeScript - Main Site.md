@@ -21,6 +21,19 @@ Las propiedades opcionales también se pueden crear declarándolas con un signo 
 [Recurso](https://www.geeksforgeeks.org/typescript/optional-property-class-in-typescript/)
 
 ## Record Type
+Diccionario** (un objeto) para guardar pares **clave → valor**.
+
+const strategies: Partial<Record<string, number>> = {};
+
+- `Record<string, number>` significa: “un objeto donde **las claves son texto** (`string`) y **los valores son números** (`number`)”.
+    
+    - Ejemplo: `{ "a": 1, "b": 2 }`
+        
+- `Partial<...>` significa: “ese objeto puede estar **incompleto** (puede no tener algunas claves)”.
+    
+    - O sea, si preguntas por una clave que no existe, te dará `undefined`.
+        
+- `= {}` significa: “lo creo **vacío** al principio”.
 [Recurso](https://mrando-via.medium.com/el-tipo-record-en-typescript-c40a4c3bbcdc)
 
 ## Opciones del compilador
