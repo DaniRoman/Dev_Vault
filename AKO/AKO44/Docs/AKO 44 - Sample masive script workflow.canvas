@@ -5,14 +5,16 @@
 		{"id":"5d1adf8352355307","type":"text","text":">[!tip] `base 10`\n>\n\n`arseInt(cadena, 10)`, ese **10** le dice a JavaScript:\n>“interpreta la cadena como un número en **base 10**”.\n¿Por qué importa? Porque una misma cadena puede significar otra cosa en otras bases\n- Base 10: `\"10\"` = **10**\n- Base 2 (binario): `\"10\"` = **2**\n- Base 16 (hex): `\"10\"` = **16**","x":-1390,"y":-261,"width":680,"height":134},
 		{"id":"114772314b8db986","type":"text","text":"\n[[JavaScript#^0655fa]]\n\n- `Date.now()` devuelve el tiempo actual en **milisegundos** desde el 1/1/1970 (Unix epoch).\n    \n- Al dividir entre `1000`, lo conviertes a **segundos**.\n    \n- `Math.floor(...)` quita los decimales y deja un **entero**.\n    \n\nEn resumen: te da el **timestamp Unix en segundos** (ej. `1700000000`), útil para guardarlo/enviarlo en formatos compactos.","x":-1240,"y":200,"width":510,"height":120},
 		{"id":"4dbc950a7979ee68","type":"text","text":"[[JavaScript#^fb6174]]","x":-980,"y":0,"width":250,"height":60},
-		{"id":"3c222aae4d0f4262","x":-753,"y":368,"width":613,"height":252,"type":"text","text":"En caso del 1 Rele\n\n- <d1_v(K)>: digital value (1) of the variable k (current digital value: 0 / 1) \n\tEstado actual \n- <d1_c(K)>: digital counter (1) of the variable k.\n\t- Contador de cambios de estados\n- (k) tantos como elementos tenga "},
-		{"id":"9204ce8240a39e22","x":-753,"y":720,"width":613,"height":280,"type":"text","text":"“d”: data -  sample data array where: \n\n- <ts>:  sample time stamp (UTC) in seconds. \n    \n\n- <s1_v(k)>: sample (1) of the variable k (analog vars samples at the timestamp “ts”)  \n    \n\n- <s1_unit(k)>: unit of the variable k in the sample 1 \n    \n\n- <s1_decimals(k)>: decimal places of the variable k in the sample\nvalor unidades decimales  para cada uno"},
-		{"id":"d9ddd7569b7736ff","x":-82,"y":293,"width":502,"height":387,"type":"text","text":"d hace referencia a la sonda analogica y d1 a la digital\n![[Pasted image 20260224164121.png]]"}
+		{"id":"9204ce8240a39e22","x":760,"y":240,"width":613,"height":280,"type":"text","text":"“d”: data -  sample data array where: \n\n- <ts>:  sample time stamp (UTC) in seconds. \n    \n\n- <s1_v(k)>: sample (1) of the variable k (analog vars samples at the timestamp “ts”)  \n    \n\n- <s1_unit(k)>: unit of the variable k in the sample 1 \n    \n\n- <s1_decimals(k)>: decimal places of the variable k in the sample\nvalor unidades decimales  para cada uno"},
+		{"id":"3c222aae4d0f4262","x":760,"y":680,"width":613,"height":252,"type":"text","text":"En caso del 1 Rele\n\n- <d1_v(K)>: digital value (1) of the variable k (current digital value: 0 / 1) \n\tEstado actual \n- <d1_c(K)>: digital counter (1) of the variable k.\n\t- Contador de cambios de estados\n- (k) tantos como elementos tenga "},
+		{"id":"d9ddd7569b7736ff","x":-22,"y":320,"width":502,"height":387,"type":"text","text":"d hace referencia a la sonda analogica y d1 a la digital\n![[Pasted image 20260224164121.png]]"},
+		{"id":"957ecbcb7f73ce9c","x":-520,"y":320,"width":468,"height":180,"type":"text","text":"Para saber que payload se esta enviando debo de mirar en `device-definition > panel_1ry_6402` y en la parte de digitalinputs ( Entradas digitales ) veria las disponibles, en este caso 6 \n\nPara poder interpretar el "}
 	],
 	"edges":[
 		{"id":"328826234f0ffc9d","fromNode":"48300c02ca37240c","fromSide":"left","toNode":"5d1adf8352355307","toSide":"right","label":"parseInt(n, n)"},
 		{"id":"3172bec515c78f2b","fromNode":"48300c02ca37240c","fromSide":"left","toNode":"323707537d8dd724","toSide":"right","label":"Nan"},
 		{"id":"0f00f9640a72ff44","fromNode":"48300c02ca37240c","fromSide":"left","toNode":"4dbc950a7979ee68","toSide":"right","label":"Math.floor"},
-		{"id":"37ed8e65e995678c","fromNode":"48300c02ca37240c","fromSide":"left","toNode":"114772314b8db986","toSide":"right","label":"DateNow( )"}
+		{"id":"37ed8e65e995678c","fromNode":"48300c02ca37240c","fromSide":"left","toNode":"114772314b8db986","toSide":"right","label":"DateNow( )"},
+		{"id":"67366e19615b37a0","fromNode":"48300c02ca37240c","fromSide":"bottom","toNode":"d9ddd7569b7736ff","toSide":"top"}
 	]
 }
