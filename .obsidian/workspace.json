@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - VirtualValueStrategy WorkFlow.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
                 "viewState": {
-                  "x": 29.914163223157313,
-                  "y": -519.5696098699929,
-                  "zoom": 0
+                  "x": -690.7209138844894,
+                  "y": 161.55163840388312,
+                  "zoom": -0.08188483357482298
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - VirtualValueStrategy WorkFlow"
+              "title": "AKO 44 - Flujo Sample"
             }
           }
         ]
@@ -190,9 +190,9 @@
   },
   "active": "26844ee6daa05b99",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/attachments/Pasted image 20260224101703.png",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 - VirtualValueStrategy WorkFlow.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260224101703.png",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
@@ -221,7 +221,6 @@
     "Rabbit/attachments/Pasted image 20260220104153.png",
     "Rabbit/attachments",
     "AKO/AKO44/Docs/attachments/Pasted image 20260219132353.png",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260219113307.png",
     "AKO/AKO44/Docs/ako 44 - schema definitions.md",
     "Rabbit",
     "AKO/AKO44/Docs/AKO 44 Flujo de cambio de parámetros Cloud - Device.md",
