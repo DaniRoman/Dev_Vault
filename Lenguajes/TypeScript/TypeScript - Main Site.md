@@ -21,6 +21,9 @@ Las propiedades opcionales también se pueden crear declarándolas con un signo 
 [Recurso](https://www.geeksforgeeks.org/typescript/optional-property-class-in-typescript/)
 
 ## Record Type
+
+^b87f0d
+
 Diccionario** (un objeto) para guardar pares **clave → valor**.
 
 const strategies: Partial<Record<string, number>> = {};
