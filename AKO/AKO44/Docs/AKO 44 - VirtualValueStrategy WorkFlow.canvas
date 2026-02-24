@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"75163d2b0255524f","x":-422,"y":-359,"width":582,"height":119,"type":"text","text":"El valor virtual son valores calculador para diferentes paràmetros que dependiendo del punto ense  dependiendo. si esta por arriba  por abajo de objetivo utiliza una estrategia u otra"}
+		{"id":"75163d2b0255524f","x":-422,"y":-359,"width":582,"height":119,"type":"text","text":"El valor virtual son valores calculador para diferentes parámetros que dependiendo del punto en el que esta si por arriba o por abajo del valor objetivo se utiliza una estrategia u otra. Para el calculo de estos utilizamos un patron `Strategy` [[Arquitectura y diseño#^81cb34]] implementando la clase VirtualValueStartegy"}
 	],
 	"edges":[]
 }
