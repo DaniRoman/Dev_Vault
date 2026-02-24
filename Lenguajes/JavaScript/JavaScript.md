@@ -45,5 +45,13 @@ Así creas un objeto igual al original pero **compatible con JSON**.
 ## Date.now()
 
 ^0655fa
+- `Date.now()` devuelve el tiempo actual en **milisegundos** desde el 1/1/1970 (Unix epoch).
+- Al dividir entre `1000`, lo conviertes a **segundos**.
+ da el **timestamp Unix en segundos** (ej. `1700000000`), útil para guardarlo/enviarlo en formatos compactos.
+ ### Unix time (lo que tú estás viendo)
 
-devuelve el tiempo actual en **milisegundos** desde el 1/1/1970
+Es una forma estándar de representar una fecha/hora como un número:
+
+- **Cantidad de segundos** (o milisegundos) transcurridos desde el **1 de enero de 1970 00:00:00 UTC**.
+- Ejemplo: `1700000000` (segundos) representa una fecha concreta.
+- si ves valores tipo `1700000000000` → ms; si ves `1700000000` → segundos.
