@@ -15,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - VirtualValueStrategy WorkFlow.canvas",
                 "viewState": {
-                  "x": -9.168875468293972,
-                  "y": 14.262695172901738,
+                  "x": -139.5706599062528,
+                  "y": -73.35100374635199,
                   "zoom": 0
                 }
               },
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5110321044922
+    "width": 276.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "3553b5f1a4be20ed",
