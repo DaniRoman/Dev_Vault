@@ -17,5 +17,7 @@
 
 [[AKO 44 - Flujo Sample.canvas]]
 
+## Flujo Sample masivo
+
 ### Flujo Script Mokear dispositivo Iot  
 [[Ako44 - Mok device conexión Script.canvas]]
