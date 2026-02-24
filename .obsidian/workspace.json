@@ -11,17 +11,14 @@
             "id": "d1d59ec756e3a121",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
-                "viewState": {
-                  "x": 83.59296492120984,
-                  "y": 4.3484514454433825,
-                  "zoom": 0.09425678947905827
-                }
+                "file": "Lenguajes/JavaScript/JavaScript.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Sample masive script workflow"
+              "icon": "lucide-file",
+              "title": "JavaScript"
             }
           }
         ]
@@ -190,9 +187,9 @@
   "active": "d1d59ec756e3a121",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "Lenguajes/JavaScript/JavaScript.md",
-    "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224112304.png",
@@ -241,7 +238,6 @@
     "AKO/AKO44/Docs/attachments",
     "AKO/Ako 44/Crear empresa Phantom.md",
     "AKO/Ako 44/Docs/Untitled.base",
-    "Shell/Shell - Main Site.md",
     "Dev_Vault",
     "AKO",
     "AKO/AKO44/Docs"

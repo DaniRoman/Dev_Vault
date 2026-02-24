@@ -37,3 +37,6 @@ Así creas un objeto igual al original pero **compatible con JSON**.
 
 >`NaN` significa **“Not a Number”**: _no es un número válido_.
 
+## `Math.Floor`
+
+- `Math.floor(...)` quita los decimales y deja un **entero**.
