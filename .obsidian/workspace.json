@@ -4,20 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "e47b0586c87833d9",
+        "id": "6bfb9e497570f24d",
         "type": "tabs",
         "children": [
           {
-            "id": "26844ee6daa05b99",
+            "id": "d1d59ec756e3a121",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
                 "viewState": {
-                  "x": 18.40585782277833,
-                  "y": -388.3553356598998,
-                  "zoom": -0.014605934636868139
+                  "x": 86.67832217101167,
+                  "y": 3.3941195393187087,
+                  "zoom": 0.09425678947905827
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -187,12 +187,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "26844ee6daa05b99",
+  "active": "d1d59ec756e3a121",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224112304.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224112144.png",

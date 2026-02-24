@@ -31,5 +31,9 @@ Así creas un objeto igual al original pero **compatible con JSON**.
 [Recurso](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
 
+## NaN
 
+^eaec43
+
+>`NaN` significa **“Not a Number”**: _no es un número válido_.
 
