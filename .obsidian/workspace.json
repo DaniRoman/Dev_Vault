@@ -11,17 +11,14 @@
             "id": "d1d59ec756e3a121",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
-                "viewState": {
-                  "x": -359.8751146656928,
-                  "y": 77.38022841389113,
-                  "zoom": -0.054793815191892546
-                }
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Sample masive script workflow"
+              "icon": "lucide-file",
+              "title": "AKO 44 Main Site"
             }
           },
           {
@@ -203,9 +200,9 @@
   },
   "active": "d1d59ec756e3a121",
   "lastOpenFiles": [
-    "Lenguajes/JavaScript/JavaScript.md",
-    "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
+    "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
