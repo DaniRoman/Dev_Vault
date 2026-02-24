@@ -44,4 +44,6 @@ Así creas un objeto igual al original pero **compatible con JSON**.
 - `Math.floor(...)` quita los decimales y deja un **entero**.
 ## Date.now()
 
+^0655fa
+
 devuelve el tiempo actual en **milisegundos** desde el 1/1/1970

@@ -15,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
                 "viewState": {
-                  "x": -471.51502209938707,
-                  "y": -153.30757847698442,
+                  "x": -222.3089912903998,
+                  "y": -229.4980468079158,
                   "zoom": -0.054793815191892546
                 }
               },
@@ -38,8 +38,7 @@
               "title": "JavaScript"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -202,12 +201,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fb739eead2c69262",
+  "active": "d1d59ec756e3a121",
   "lastOpenFiles": [
+    "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224112304.png",
