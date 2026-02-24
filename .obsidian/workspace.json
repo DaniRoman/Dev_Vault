@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - VirtualValueStrategy WorkFlow.canvas",
                 "viewState": {
-                  "x": -12.248115926388492,
-                  "y": 53.725672848608546,
-                  "zoom": -0.08188483357482298
+                  "x": -9.168875468293972,
+                  "y": 14.262695172901738,
+                  "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo Sample"
+              "title": "AKO 44 - VirtualValueStrategy WorkFlow"
             }
           }
         ]
@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5110321044922,
-    "collapsed": true
+    "width": 276.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -190,10 +189,11 @@
   },
   "active": "26844ee6daa05b99",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
+    "AKO/AKO44/Docs/AKO 44 - VirtualValueStrategy WorkFlow.canvas",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
