@@ -4,6 +4,9 @@
 
 En un equipo IoT (un controlador, registrador, etc.) normalmente tienes **entradas** (sensores) y **salidas** (actuadores).
 
+- **Entradas** → sondas/sensores/interruptores (lo que el equipo lee)
+- **Salidas** → relés/actuadores (lo que el equipo enciende/apaga)
+
 ## Relé
 
 Un relé es una **salida** que el equipo puede **activar/desactivar** para controlar algo:
@@ -14,6 +17,12 @@ Un relé es una **salida** que el equipo puede **activar/desactivar** para contr
 > “Un aparato tiene más relés” = puede controlar más cosas (más salidas).
 
 ### Sondas
+
+es un sensor**, y normalmente entra al equipo como una **entrada**.
+
+- **Sonda = sensor** (mide temperatura/humedad/…)    
+- En electrónica/IoT se considera una **entrada** porque el equipo “recibe” ese valor.
+- Suele ser **entrada analógica** (un número), aunque hay sondas/interruptores que son digitales (ej. “puerta abierta/cerrada”).
 
 | Característica      | Sonda Digital                    | Sonda Analógica                                           |
 | ------------------- | -------------------------------- | --------------------------------------------------------- |
