@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
                 "viewState": {
-                  "x": 431.7211228728445,
-                  "y": 1385.646290816331,
-                  "zoom": 0.4304591311398922
+                  "x": -338.83938563480103,
+                  "y": -5,
+                  "zoom": -0.39223776867975113
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Driver Translator Perte WorkFlow"
+              "title": "AKO 44  - Driver Translator Perte - InputValidator workFlow"
             }
           },
           {
@@ -207,6 +207,7 @@
   },
   "active": "d1d59ec756e3a121",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
@@ -229,7 +230,6 @@
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "AKO/AKO44/AKO 44 - Flujo de cambio de parámetros Cloud - Device.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
     "AKO/AKO44/Docs/ako 44 - Manufactured device license code.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260223131220.png",
