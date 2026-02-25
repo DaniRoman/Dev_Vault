@@ -11,14 +11,17 @@
             "id": "d1d59ec756e3a121",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
+                "viewState": {
+                  "x": 379.37873061459266,
+                  "y": -66.1223429435658,
+                  "zoom": -0.43258365651453723
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 Flujos de trabajo"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo Sample"
             }
           },
           {
@@ -214,11 +217,11 @@
   },
   "active": "d1d59ec756e3a121",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
-    "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "Lenguajes/JavaScript/JavaScript.md",
@@ -239,7 +242,6 @@
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
     "AKO/AKO44/Docs/ako 44 - Manufactured device license code.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260223131220.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260223131204.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260223125127.png",
