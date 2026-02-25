@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
                 "viewState": {
-                  "x": 74.53893540954104,
-                  "y": 51.04413136080613,
-                  "zoom": 0.01604340646174291
+                  "x": 431.7211228728445,
+                  "y": 1385.646290816331,
+                  "zoom": 0.4304591311398922
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo Sample"
+              "title": "AKO 44 - Driver Translator Perte WorkFlow"
             }
           },
           {
@@ -41,8 +41,7 @@
               "title": "AKO 44 - Sample masive script workflow"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -206,10 +205,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "70c138a5c32beda4",
+  "active": "d1d59ec756e3a121",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "Lenguajes/JavaScript/JavaScript.md",
