@@ -15,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
                 "viewState": {
-                  "x": -51.39826398118495,
-                  "y": 366.39087863518324,
+                  "x": -218.64286477206966,
+                  "y": 411.7282704158438,
                   "zoom": 0.01604340646174291
                 }
               },
@@ -109,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "3553b5f1a4be20ed",
