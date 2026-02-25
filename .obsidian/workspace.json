@@ -15,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
                 "viewState": {
-                  "x": 645.7900718458721,
-                  "y": 223.3262201273187,
+                  "x": 74.53893540954104,
+                  "y": 51.04413136080613,
                   "zoom": 0.01604340646174291
                 }
               },
@@ -25,34 +25,24 @@
             }
           },
           {
-            "id": "efd6f25f6f4348e4",
+            "id": "70c138a5c32beda4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Lenguajes/JavaScript/JavaScript.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
+                "viewState": {
+                  "x": -262.3470073354278,
+                  "y": 223.5264344538055,
+                  "zoom": -0.3536968552946657
+                }
               },
-              "icon": "lucide-file",
-              "title": "JavaScript"
-            }
-          },
-          {
-            "id": "fb739eead2c69262",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lenguajes/JavaScript/JavaScript.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "JavaScript"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Sample masive script workflow"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -216,19 +206,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d1d59ec756e3a121",
+  "active": "70c138a5c32beda4",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - VirtualValueStrategy WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "Lenguajes/JavaScript/JavaScript.md",
+    "AKO/AKO44/Docs/AKO 44 - VirtualValueStrategy WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
-    "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer - Authentication.canvas",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "Shell/Shell - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224165827.png",
