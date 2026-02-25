@@ -42,6 +42,10 @@ Así creas un objeto igual al original pero **compatible con JSON**.
 ^fb6174
 
 - `Math.floor(...)` quita los decimales y deja un **entero**.
+
+## Math.Random
+
+genera un número “aleatorio” (pseudoaleatorio) **decimal** entre 0 (incluido) y 1
 ## Date.now()
 
 ^0655fa

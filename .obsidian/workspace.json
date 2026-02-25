@@ -11,14 +11,17 @@
             "id": "d1d59ec756e3a121",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Shell/Shell - Main Site.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
+                "viewState": {
+                  "x": 776.5049868518398,
+                  "y": 103.0321579963005,
+                  "zoom": -0.054793815191892546
+                }
               },
-              "icon": "lucide-file",
-              "title": "Shell - Main Site"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Sample masive script workflow"
             }
           },
           {
@@ -35,7 +38,8 @@
               "title": "JavaScript"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,9 +202,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d1d59ec756e3a121",
+  "active": "fb739eead2c69262",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
+    "Shell/Shell - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224165827.png",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/AKO 44 Main Site.md",
@@ -250,7 +255,6 @@
     "Db/PostgreSQL",
     "AKO/Ako 44/Docs/ako 44 - Código `perte-coap`.md",
     "AKO/AKO44/Docs/attachments",
-    "AKO/Ako 44/Crear empresa Phantom.md",
     "AKO/Ako 44/Docs/Untitled.base",
     "Dev_Vault",
     "AKO",
