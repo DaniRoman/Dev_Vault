@@ -15,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
                 "viewState": {
-                  "x": -338.83938563480103,
-                  "y": -5,
+                  "x": 532.9197239037834,
+                  "y": 45.80804626145064,
                   "zoom": -0.39223776867975113
                 }
               },
@@ -32,8 +32,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
                 "viewState": {
-                  "x": -262.3470073354278,
-                  "y": 223.5264344538055,
+                  "x": 48.78509855561834,
+                  "y": 258.67524976367304,
                   "zoom": -0.3536968552946657
                 }
               },
@@ -41,7 +41,8 @@
               "title": "AKO 44 - Sample masive script workflow"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,8 +206,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d1d59ec756e3a121",
+  "active": "70c138a5c32beda4",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
