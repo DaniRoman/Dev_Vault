@@ -15,9 +15,9 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
                 "viewState": {
-                  "x": 379.37873061459266,
-                  "y": -66.1223429435658,
-                  "zoom": -0.43258365651453723
+                  "x": 1725.8274938207373,
+                  "y": 469.15563333801396,
+                  "zoom": 0.01604340646174291
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -217,9 +217,10 @@
   },
   "active": "d1d59ec756e3a121",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - VirtualValueStrategy WorkFlow.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
@@ -234,7 +235,6 @@
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224112304.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224112144.png",
-    "AKO/AKO44/Docs/AKO 44 - VirtualValueStrategy WorkFlow.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224101703.png",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "AKO/AKO44/AKO 44 - Flujo de cambio de parámetros Cloud - Device.md",
