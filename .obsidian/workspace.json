@@ -53,7 +53,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -216,7 +216,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "efd6f25f6f4348e4",
+  "active": "fb739eead2c69262",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
     "Lenguajes/JavaScript/JavaScript.md",
