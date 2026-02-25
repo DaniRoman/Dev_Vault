@@ -2,6 +2,17 @@
 [[AKO 44 Flujo Del Proyecto]]
 ## Conceptos
 
+En un equipo IoT (un controlador, registrador, etc.) normalmente tienes **entradas** (sensores) y **salidas** (actuadores).
+
+## Relé
+
+Un relé es una **salida** que el equipo puede **activar/desactivar** para controlar algo:
+
+- encender compresor, ventilador, resistencia de desescarche, luz…
+- En datos, un relé suele ser **digital**: 0/1 (OFF/ON)
+- 
+> “Un aparato tiene más relés” = puede controlar más cosas (más salidas).
+
 ### Sondas
 
 | Característica      | Sonda Digital                    | Sonda Analógica                                           |
