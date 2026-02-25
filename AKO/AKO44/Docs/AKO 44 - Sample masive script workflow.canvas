@@ -7,7 +7,8 @@
 		{"id":"4dbc950a7979ee68","type":"text","text":"[[JavaScript#^fb6174]]","x":-980,"y":0,"width":250,"height":60},
 		{"id":"957ecbcb7f73ce9c","type":"text","text":">[!tip]\n\nPara saber que payload se esta enviando debo de mirar en `device-definition > panel_1ry_6402` y en la parte de digitalinputs ( Entradas digitales ) veria las disponibles, en este caso 6 \n\nPara poder interpretar el los valores d1 mirare el documento [[AKO 44 Main Site#^88cdea]] con la key `json sample` en los cuales me indica que para cada input (k) disponible en nuestro caso 6 (visto en la definicion) \ntimestamp\n<d1_v(K) el estado actual\n<d1_c(K)>: contador de cambios de estados","x":-855,"y":420,"width":600,"height":387},
 		{"id":"ddae2706ce024c42","type":"text","text":"![[Pasted image 20260224165827.png]]","x":-1420,"y":760,"width":510,"height":440},
-		{"id":"d9ddd7569b7736ff","type":"text","text":"d hace referencia a la sonda analogica y d1 a la digital\n![[Pasted image 20260224164121.png]]","x":-22,"y":160,"width":502,"height":387}
+		{"id":"d9ddd7569b7736ff","type":"text","text":"d hace referencia a la sonda analogica y d1 a la digital\n![[Pasted image 20260224164121.png]]","x":-22,"y":160,"width":502,"height":387},
+		{"id":"11a42869b87395e6","x":713,"y":-33,"width":250,"height":60,"type":"text","text":"[[JavaScript#^2b5f58]]"}
 	],
 	"edges":[
 		{"id":"328826234f0ffc9d","fromNode":"48300c02ca37240c","fromSide":"left","toNode":"5d1adf8352355307","toSide":"right","label":"parseInt(n, n)"},
@@ -16,6 +17,7 @@
 		{"id":"37ed8e65e995678c","fromNode":"48300c02ca37240c","fromSide":"left","toNode":"114772314b8db986","toSide":"right","label":"DateNow( )"},
 		{"id":"67366e19615b37a0","fromNode":"48300c02ca37240c","fromSide":"bottom","toNode":"d9ddd7569b7736ff","toSide":"top","label":"payload"},
 		{"id":"304a14b22f3e31c4","fromNode":"d9ddd7569b7736ff","fromSide":"left","toNode":"957ecbcb7f73ce9c","toSide":"right"},
-		{"id":"b4ee4b87cedfd13b","fromNode":"957ecbcb7f73ce9c","fromSide":"left","toNode":"ddae2706ce024c42","toSide":"top"}
+		{"id":"b4ee4b87cedfd13b","fromNode":"957ecbcb7f73ce9c","fromSide":"left","toNode":"ddae2706ce024c42","toSide":"top"},
+		{"id":"9653ba13c810888e","fromNode":"48300c02ca37240c","fromSide":"right","toNode":"11a42869b87395e6","toSide":"left","label":"math.Random( )"}
 	]
 }

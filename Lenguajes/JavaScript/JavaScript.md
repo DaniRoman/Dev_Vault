@@ -45,7 +45,10 @@ Así creas un objeto igual al original pero **compatible con JSON**.
 
 ## Math.Random
 
+^2b5f58
+
 genera un número “aleatorio” (pseudoaleatorio) **decimal** entre 0 (incluido) y 1
+Puede dar valores como `0.12`, `0.734`, `0.9991`…
 ## Date.now()
 
 ^0655fa
