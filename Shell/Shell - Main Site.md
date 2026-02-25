@@ -11,9 +11,10 @@
 >[!example] Crear alias
 
 ```bash
-# 1) Añadir alias "vault" a tu ~/.zshrc  
-echo 'alias vault="cd /Users/daniel.roman/Library/CloudStorage/OneDrive-AKOElectromecanicaSA/Dev"' >> ~/.zshrc  
-  
+#Abrimos el archivo con 
+code /.zshrc
+# 1) Añadir alias a tu ~/.zshrc  
+alias() {cd "/ruta"; }  
 # 2) Recargar la configuración  
 source ~/.zshrc
 ```
