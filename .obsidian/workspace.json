@@ -11,17 +11,14 @@
             "id": "d1d59ec756e3a121",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
-                "viewState": {
-                  "x": -387.51605709294495,
-                  "y": -144.58686407922647,
-                  "zoom": -0.054793815191892546
-                }
+                "file": "Shell/Shell - Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Sample masive script workflow"
+              "icon": "lucide-file",
+              "title": "Shell - Main Site"
             }
           },
           {
@@ -95,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 260.5110321044922,
-    "collapsed": true
+    "width": 260.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -204,10 +200,10 @@
   },
   "active": "d1d59ec756e3a121",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224165827.png",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224164121.png",
     "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
@@ -234,7 +230,6 @@
     "Git/Git Main Page.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260220115059.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260220114948.png",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260220112342.png",
     "Rabbit/Rabbit Main Page.md",
     "Rabbit/attachments",
     "AKO/AKO44/Docs/ako 44 - schema definitions.md",
