@@ -39,6 +39,24 @@ const humidity = populatedDevice.values.find(esHumedad);
 
 const humidity = populatedDevice.values.find(obj => obj.code === "humidity");
 ```
+
+>[!tip] ¿ Cuando usarla ?
+
+SÍ (típico)
+
+- **Arrays**: cuando recorres/transformas datos sin escribir bucles a mano  
+    (`find`, `map`, `filter`, `forEach`, `reduce`).
+- **Eventos / listeners**: cuando algo ocurre y quieres reaccionar  
+    (Rabbit consumer, `on('message', cb)`, clicks, timers).
+- **Funciones genéricas/reutilizables**: cuando una función hace un “proceso” y tú le pasas la acción concreta  
+    (ej. `procesarDatos(datos, transformFn)`).
+    
+Cuándo NO (o mejor evitar)
+
+- Cuando la lógica es **lineal y simple**: un `for` y ya.
+- Cuando los callbacks se anidan mucho (**callback hell**) → mejor `async/await` o promesas.
+- Cuando necesitas **control claro del flujo** (errores, retornos, secuencia) y el callback lo complica.
+- 
 ## Spread Operator
 
 Los tres puntos `...` son el **operador de propagación (spread)** en JavaScript/TypeScript.  
