@@ -1,1 +1,6 @@
-{}
+{
+	"nodes":[
+		{"id":"2d66790d4a2012b5","type":"text","text":"Este archivo tienen un `handler` para cada tipo de dispositivo","x":-441,"y":-298,"width":521,"height":98}
+	],
+	"edges":[]
+}

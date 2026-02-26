@@ -25,31 +25,31 @@
             "id": "6b25db81fbd49a68",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
+                "viewState": {
+                  "x": -138.73067842221633,
+                  "y": -249,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 - Status Legacy"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Status.conf Workflow"
             }
           },
           {
             "id": "7fc089c75815797a",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
+                "file": "Lenguajes/TypeScript/TypeScript - Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Status.conf Workflow"
+              "icon": "lucide-file",
+              "title": "TypeScript - Main Site"
             }
           }
         ],
@@ -110,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5110321044922
+    "width": 283.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -218,9 +219,10 @@
   },
   "active": "6b25db81fbd49a68",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "Lenguajes/TypeScript/TypeScript - Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
@@ -241,7 +243,6 @@
     "Shell/Shell - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224165827.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224164121.png",
-    "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224112304.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224112144.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224101703.png",
