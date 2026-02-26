@@ -25,7 +25,20 @@ En 2026, las características de ES6 se consideran el estándar del sector y a m
 
 >[!success] Concepto
 
+Un **callback** es una función que pasas como argumento a otra función para que esa función la ejecute después, normalmente por cada elemento o cuando ocurre algo. En el ejemplo de `find`, el callback se ejecuta con cada objeto del array y devuelve `true/false` para decidir cuál es el que se busca.
+
 >[!example] Ejemplo
+
+```js
+function esHumedad(obj) {
+  return obj.code === "humidity";
+}
+
+const humidity = populatedDevice.values.find(esHumedad);
+
+
+const humidity = populatedDevice.values.find(obj => obj.code === "humidity");
+```
 ## Spread Operator
 
 Los tres puntos `...` son el **operador de propagación (spread)** en JavaScript/TypeScript.  
