@@ -1,6 +1,6 @@
 ### `status.conf`
 
-Este reacciona a cambios de parámetros (mute, enabled_probes, etc.), y aplica efectos en el estado/valores del dispositivo.
+Este reacciona a cambios de parámetros (mute, enabled_probes, etc.), y actualiza campos/valores del dispositivo en la base de datos para que el resto del sistema sepa cómo debe comportarse/mostrarse.
 
 Este micro expone varios handlers, uno por modelo:
 
@@ -52,4 +52,4 @@ Recibe un mensaje:
 - Actualización del histórico de geolocalización
 ### `status.updater`
 
-Hace de actualizador de estado del dispositivo cuando llegan mensajes del tipo status
+Recibe mensajes de **status** del dispositivo, actualiza en la BD del cloud el “estado actual” (`lastStatus`, online, timestamps, valores/virtuals), descarta mensajes viejos y publica eventos internos tipo `status.updated.<model>` y notificaciones en tiempo real. También recalcula contadores (alarmas) y algunas reglas extra (p. ej. “healthy_status”).
