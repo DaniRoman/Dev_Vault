@@ -7,7 +7,7 @@ En un equipo IoT (un controlador, registrador, etc.) normalmente tienes **entrad
 - **Entradas** → sondas/sensores/interruptores (lo que el equipo lee)
 - **Salidas** → relés/actuadores (lo que el equipo enciende/apaga)
 
-## Relé
+### Relé
 
 Un relé es una **salida** que el equipo puede **activar/desactivar** para controlar algo:
 
@@ -63,6 +63,9 @@ es un sensor**, y normalmente entra al equipo como una **entrada**.
 - Configuración aplicada
 
 
+
+## Protocolos de red
+[[Ako44 - Protocolos]]
 ## Flujos de trabajo
 
 [[AKO 44 Flujos de trabajo]]
@@ -84,18 +87,14 @@ Para `event`, el payload debe tener `ty: "event"` y una `d` con filas del estilo
 Compruebo que el mensaje respeta esa forma.
 `{ ty:"event", d:[[ts, 19, 100, 1, 1]] }`
 
-
-
 ---
 
+### Documento para métricas
 
+[Recurso](https://ako0-my.sharepoint.com/:x:/r/personal/fmaataoui_ako_com/_layouts/15/Doc.aspx?sourcedoc=%7B14551CBA-3E92-4704-99CC-ACD1E74D41EF%7D&file=Chart%20new%20DARWIN%20Panel.xlsx&wdLOR=cAEAF4F08-87EF-CF44-857B-21C042E18A1A&fromShare=true&action=default&mobileredirect=true)
 
-
-## Protocolos de red
-[[Ako44 - Protocolos]]
 
 ## Manufactured device license code
 [[ako 44 - Manufactured device license code ]]
-
 ## Como interpretar  parametros de la definición del dispositivo 
 [[ako 44 - mapear device.definitions contra Excel File ]]
