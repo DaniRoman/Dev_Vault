@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
                 "viewState": {
-                  "x": -1256.1578532059775,
-                  "y": -145.56068768019833,
-                  "zoom": 0
+                  "x": 706.4982817145716,
+                  "y": -395.9587611497182,
+                  "zoom": -0.19628072081418857
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Status Legacy - Status.network"
+              "title": "AKO 44 - Status Legacy - Status.conf Workflow"
             }
           }
         ]
@@ -190,9 +190,9 @@
   "active": "fa092f5a296eef41",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
     "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
