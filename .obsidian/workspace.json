@@ -11,17 +11,14 @@
             "id": "fa092f5a296eef41",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
-                "viewState": {
-                  "x": 706.4982817145716,
-                  "y": -395.9587611497182,
-                  "zoom": -0.19628072081418857
-                }
+                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Status Legacy - Status.conf Workflow"
+              "icon": "lucide-file",
+              "title": "AKO 44 - Status Legacy"
             }
           }
         ]
@@ -189,8 +186,8 @@
   },
   "active": "fa092f5a296eef41",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "Lenguajes/JavaScript/JavaScript.md",
