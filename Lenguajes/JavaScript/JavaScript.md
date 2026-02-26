@@ -20,6 +20,12 @@ En 2026, las características de ES6 se consideran el estándar del sector y a m
 
 [Recurso](https://talent500.com/blog/what-is-es6-javascript-guide/)
 
+
+## Callbacks
+
+>[!success] Concepto
+
+>[!example] Ejemplo
 ## Spread Operator
 
 Los tres puntos `...` son el **operador de propagación (spread)** en JavaScript/TypeScript.  
