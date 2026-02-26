@@ -11,17 +11,14 @@
             "id": "fa092f5a296eef41",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
-                "viewState": {
-                  "x": 3271.1143566263136,
-                  "y": -509.0118085044881,
-                  "zoom": -0.30814021637199507
-                }
+                "file": "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Flujo de samples (telemetría) y eventos del dispositivo"
+              "icon": "lucide-file",
+              "title": "AKO 44 Flujos de trabajo"
             }
           },
           {
@@ -32,7 +29,7 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
                 "viewState": {
-                  "x": 3511.951685128124,
+                  "x": 1512.8296954991931,
                   "y": 610.6368044467627,
                   "zoom": -0.38950908499809817
                 }
@@ -41,8 +38,7 @@
               "title": "AKO 44 - Conexion Layer Workflow"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -205,16 +201,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "793b2da0403b2b88",
+  "active": "fa092f5a296eef41",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer workflow - DataAccessManager.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
