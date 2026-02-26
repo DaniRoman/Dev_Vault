@@ -8,7 +8,7 @@
 		{"id":"957ecbcb7f73ce9c","type":"text","text":">[!tip]\n\nPara saber que payload se esta enviando debo de mirar en `device-definition > panel_1ry_6402` y en la parte de digitalinputs ( Entradas digitales ) veria las disponibles, en este caso 6 \n\nPara poder interpretar el los valores d1 mirare el documento [[AKO 44 Main Site#^88cdea]] con la key `json sample` en los cuales me indica que para cada input (k) disponible en nuestro caso 6 (visto en la definicion) \ntimestamp\n<d1_v(K) el estado actual\n<d1_c(K)>: contador de cambios de estados","x":-855,"y":420,"width":600,"height":387},
 		{"id":"d9ddd7569b7736ff","type":"text","text":"d hace referencia a la sonda analogica y d1 a la digital\n![[Pasted image 20260224164121.png]]","x":-22,"y":160,"width":502,"height":387},
 		{"id":"11a42869b87395e6","type":"text","text":"[[JavaScript#^2b5f58]]","x":713,"y":-33,"width":250,"height":60},
-		{"id":"ccc06d94089b5f23","type":"text","text":">[!tip] ¿Que hace este Script?\n\n","x":-391,"y":-1060,"width":871,"height":340},
+		{"id":"ccc06d94089b5f23","type":"text","text":">[!tip] ¿Que hace este Script?\n\nComo argumentos recibe un numero de mensajes que queremos sean enviados y podemos decir que delay queremos que este tenga.\n\nDespues de preparar a que Exchange y topic de rabbit sera enviado, empezamos a definiendo la información base del device del cual seran enviados los mensajes.\n\nEl script para cada mensaje que se enviara creara un payload con la información \n\n","x":-391,"y":-1060,"width":871,"height":340},
 		{"id":"ddae2706ce024c42","type":"text","text":"![[Pasted image 20260224165827.png]]","x":-1495,"y":680,"width":510,"height":440}
 	],
 	"edges":[
