@@ -1,6 +1,6 @@
-`status.conf`
+### `status.conf`
 
-Este reacciona a mensaje de configuración actualizada, y aplica efectos en el estado/valores del dispositivo.
+Este reacciona a cambios de parámetros (mute, enabled_probes, etc.), y aplica efectos en el estado/valores del dispositivo.
 
 Este micro expone varios handlers, uno por modelo:
 
@@ -8,6 +8,10 @@ Este micro expone varios handlers, uno por modelo:
 
 Que hacen estos handlers
 - Parsea el json de entrada `JSON.parse(msg)`
+
+```json
+"{\"deviceInformation\":{...},\"payload\":{...}}"
+```
 
 ```json
 {
@@ -37,3 +41,6 @@ Ejemplo: A este micro le llega algo tipo
 - `conf: [{ ref: "...", value: ... }, ...]`
 
 Para luego aplicar una lógica de negocio como habilitar/deshabilitar sondas, activar mute...
+
+### `status.network`
+
