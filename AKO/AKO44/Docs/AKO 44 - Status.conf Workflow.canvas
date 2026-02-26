@@ -4,12 +4,12 @@
 		{"id":"222f360ae939fa72","type":"text","text":">[!success] Info general del modulo\n\nEste archivo tienen un `handler` para cada tipo de dispositivo, \n- `handleStatusConfInputAD20(...)`\n- `handleStatusConfInputAD20V3(...)`","x":440,"y":-430,"width":620,"height":180},
 		{"id":"34664565fd224813","type":"text","text":">[!success] Info general del modulo\n\nEste archivo tienen un `handler` para cada tipo de dispositivo, \n- `handleStatusConfInputAD20(...)`\n- `handleStatusConfInputAD20V3(...)`","x":440,"y":-160,"width":620,"height":180},
 		{"id":"36199fb2b29ef75e","type":"text","text":">[!success] Info general del modulo\n\nEste archivo tienen un `handler` para cada tipo de dispositivo, \n- `handleStatusConfInputAD20(...)`\n- `handleStatusConfInputAD20V3(...)`","x":440,"y":-700,"width":620,"height":180},
-		{"id":"9cfb270bac18e411","x":960,"y":-980,"width":543,"height":200,"type":"text","text":">[!question]\n\nTodos los micros extienden de la clase Microservice con lo que heredan el context [[AKO 44 - Flujo Registrar el Context.canvas]] del cual consiguen toda la info del device y del usuario "}
+		{"id":"9cfb270bac18e411","x":440,"y":-980,"width":620,"height":200,"type":"text","text":">[!question]\n\nTodos los micros extienden de la clase Microservice con lo que heredan el context [[AKO 44 - Flujo Registrar el Context.canvas]] del cual consiguen toda la info del device y del usuario "}
 	],
 	"edges":[
 		{"id":"ff72108129e7372c","fromNode":"2d66790d4a2012b5","fromSide":"right","toNode":"36199fb2b29ef75e","toSide":"left","label":"handleStatusConf.."},
 		{"id":"c093a6741165cdb9","fromNode":"2d66790d4a2012b5","fromSide":"right","toNode":"222f360ae939fa72","toSide":"left","label":"_helpers"},
 		{"id":"b8c0e43b88b36c52","fromNode":"2d66790d4a2012b5","fromSide":"right","toNode":"34664565fd224813","toSide":"left","label":"_soporte"},
-		{"id":"3460afe8c62dfa67","fromNode":"36199fb2b29ef75e","fromSide":"left","toNode":"9cfb270bac18e411","toSide":"left"}
+		{"id":"ac1098d8b7fa6395","fromNode":"9cfb270bac18e411","fromSide":"bottom","toNode":"36199fb2b29ef75e","toSide":"top"}
 	]
 }
