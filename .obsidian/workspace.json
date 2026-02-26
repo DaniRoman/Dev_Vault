@@ -11,31 +11,31 @@
             "id": "d1d59ec756e3a121",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Arquitectura y Diseño/Arquitectura y diseño.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
+                "viewState": {
+                  "x": 236.35312236053187,
+                  "y": -1135.792306939509,
+                  "zoom": -0.8179019029831217
+                }
               },
-              "icon": "lucide-file",
-              "title": "Arquitectura y diseño"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo Api Device"
             }
           },
           {
             "id": "6b25db81fbd49a68",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
-                "viewState": {
-                  "x": 264.00578507007907,
-                  "y": -310.12583645529327,
-                  "zoom": 0
-                }
+                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Status.conf Workflow"
+              "icon": "lucide-file",
+              "title": "AKO 44 - Status Legacy"
             }
           },
           {
@@ -52,8 +52,7 @@
               "title": "TypeScript - Main Site"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -216,15 +215,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6b25db81fbd49a68",
+  "active": "d1d59ec756e3a121",
   "lastOpenFiles": [
-    "Lenguajes/TypeScript/TypeScript - Main Site.md",
-    "Arquitectura y Diseño/Arquitectura y diseño.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "Arquitectura y Diseño/Arquitectura y diseño.md",
+    "Db/Db Main Page.md",
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
+    "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
+    "Lenguajes/TypeScript/TypeScript - Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
@@ -238,7 +239,6 @@
     "AKO/AKO44/Docs/attachments/Pasted image 20260225172613.png",
     "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/Docs/AKO 44 - VirtualValueStrategy WorkFlow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "Shell/Shell - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224165827.png",
@@ -266,7 +266,6 @@
     "Ako44 - Script fakeDevice.md",
     "AKO/Ako 44/Untitled.md",
     "attachments",
-    "Db/Prisma - Main Site.md",
     "Db/PostgreSQL",
     "AKO/AKO44/Docs/attachments",
     "AKO/Ako 44/Docs/Untitled.base",
