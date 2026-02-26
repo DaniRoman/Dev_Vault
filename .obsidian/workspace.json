@@ -29,8 +29,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
                 "viewState": {
-                  "x": 680.7480427078424,
-                  "y": -443.58391271601613,
+                  "x": 527.9334515696098,
+                  "y": -429.3212175431145,
                   "zoom": 0
                 }
               },
@@ -52,7 +52,8 @@
               "title": "TypeScript - Main Site"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -215,11 +216,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d1d59ec756e3a121",
+  "active": "6b25db81fbd49a68",
   "lastOpenFiles": [
+    "Lenguajes/TypeScript/TypeScript - Main Site.md",
+    "Arquitectura y Diseño/Arquitectura y diseño.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
-    "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
@@ -244,7 +246,6 @@
     "AKO/AKO44/Docs/attachments/Pasted image 20260224112304.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224112144.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224101703.png",
-    "Arquitectura y Diseño/Arquitectura y diseño.md",
     "AKO/AKO44/AKO 44 - Flujo de cambio de parámetros Cloud - Device.md",
     "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
     "AKO/AKO44/Docs/ako 44 - Manufactured device license code.md",
