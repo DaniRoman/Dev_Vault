@@ -11,17 +11,14 @@
             "id": "d1d59ec756e3a121",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
-                "viewState": {
-                  "x": 1863.4085057757668,
-                  "y": 209.31383139820673,
-                  "zoom": -0.03029106432536174
-                }
+                "file": "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44  - Driver Translator Perte - InputValidator workFlow"
+              "icon": "lucide-file",
+              "title": "AKO 44 Flujo Del Proyecto"
             }
           }
         ]
@@ -189,11 +186,11 @@
   },
   "active": "d1d59ec756e3a121",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
-    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
+    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Sample masive script workflow.canvas",
     "Bjj/Bjj Tecniques.md",
     "Obsidian/Obsidian Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260225172736.png",
