@@ -50,3 +50,6 @@ Recibe un mensaje:
 - Valida los cambios mínimos (`context.device conectivity imsi`)
 - Actualiza los estados/atributos en BD (online/offline, SIM, cell info)
 - Actualización del histórico de geolocalización
+### `status.updater`
+
+Hace de actualizador de estado del dispositivo cuando llegan mensajes del tipo status
