@@ -29,8 +29,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
                 "viewState": {
-                  "x": -26.27413229171618,
-                  "y": -198.0618029539219,
+                  "x": 516.7270482194713,
+                  "y": -582.1358086813474,
                   "zoom": 0
                 }
               },
@@ -219,10 +219,11 @@
   },
   "active": "6b25db81fbd49a68",
   "lastOpenFiles": [
+    "Lenguajes/TypeScript/TypeScript - Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "Lenguajes/TypeScript/TypeScript - Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
@@ -239,7 +240,6 @@
     "AKO/AKO44/Docs/AKO 44 - VirtualValueStrategy WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "Shell/Shell - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224165827.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224164121.png",
