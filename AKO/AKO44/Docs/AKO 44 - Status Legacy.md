@@ -1,3 +1,7 @@
+
+## Vision general del micro 
+
+Este micro esta dividido en tres modulos
 ### `status.conf`
 
 Este reacciona a cambios de parámetros (mute, enabled_probes, etc.), y actualiza campos/valores del dispositivo en la base de datos para que el resto del sistema sepa cómo debe comportarse/mostrarse.
@@ -42,6 +46,8 @@ Ejemplo: A este micro le llega algo tipo
 
 Para luego aplicar una lógica de negocio como habilitar/deshabilitar sondas, activar mute...
 
+#### El micro a mas detalle 
+[[AKO 44 - Status.conf Workflow.canvas]]
 ### `status.network`
 
 Gestiona eventos/entradas relacionadas con conectividad (dispositivo NB-IoT) y con SIM (actualización suspension ) y con geolocalización.

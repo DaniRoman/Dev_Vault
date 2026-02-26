@@ -27,12 +27,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 - Status Legacy.md",
+                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "AKO 44 - Status Legacy"
+            }
+          },
+          {
+            "id": "7fc089c75815797a",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Status.conf Workflow"
             }
           }
         ],
@@ -93,8 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 283.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -202,7 +218,8 @@
   },
   "active": "6b25db81fbd49a68",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO 44 - Status Legacy.md",
+    "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
@@ -221,7 +238,6 @@
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Conexion Layer - Authentication.canvas",
     "Shell/Shell - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224165827.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224164121.png",
@@ -251,7 +267,6 @@
     "AKO/Ako 44/Untitled.md",
     "attachments",
     "Db/Prisma - Main Site.md",
-    "Db/PostgreSQL/Dd - Postgres Main Site.md",
     "Db/PostgreSQL",
     "AKO/AKO44/Docs/attachments",
     "AKO/Ako 44/Docs/Untitled.base",
