@@ -1,6 +1,9 @@
 {
 	"nodes":[
-		{"id":"2d66790d4a2012b5","type":"text","text":"Este archivo tienen un `handler` para cada tipo de dispositivo","x":-441,"y":-298,"width":521,"height":98}
+		{"id":"2d66790d4a2012b5","type":"text","text":">[!success] Info general del modulo\n\n1. Este archivo tienen un `handler` para cada tipo de dispositivo, \n\t- `handleStatusConfInputAD20(...)`\n\t- `handleStatusConfInputAD20V3(...)`\nparsean el JSON de entrada, recorren `message.conf`, y según `conf.ref` llaman a lógica interna.\n\n2. Una serie de funciones internas de negocio (helpers privados tipo `_check...` [[TypeScript - Main Site#^36fb64]]) ","x":-580,"y":-520,"width":660,"height":280},
+		{"id":"36199fb2b29ef75e","type":"text","text":">[!success] Info general del modulo\n\nEste archivo tienen un `handler` para cada tipo de dispositivo, \n- `handleStatusConfInputAD20(...)`\n- `handleStatusConfInputAD20V3(...)`","x":460,"y":-700,"width":620,"height":180}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"ff72108129e7372c","fromNode":"2d66790d4a2012b5","fromSide":"right","toNode":"36199fb2b29ef75e","toSide":"left","label":"handleStatusConf.."}
+	]
 }

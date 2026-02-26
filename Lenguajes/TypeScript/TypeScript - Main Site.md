@@ -42,6 +42,8 @@ const strategies: Partial<Record<string, number>> = {};
 
 ## Convención de nombres 
 
+^36fb64
+
 Se usa el prefijo `_` como **señal visual** de que el método o variable es **interna** a la clase (helper), no un “handler” o parte de la interfaz pública del micro. Ayuda a distinguir rápido entre **puntos de entrada** (`handle...`) y **lógica reutilizable** (`_...`). No cambia el comportamiento por sí mismo: es solo una **convención de estilo**, la privacidad real la dan `private/protected/public`.
 
 ## Opciones del compilador
