@@ -11,14 +11,17 @@
             "id": "fa092f5a296eef41",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 - Status Legacy"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Status Legacy - Status.network"
             }
           }
         ]
@@ -74,8 +77,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -187,8 +189,9 @@
   },
   "active": "fa092f5a296eef41",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Status.conf Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
@@ -201,7 +204,6 @@
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo backlog.perte mediator.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "Db/Db Main Page.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",

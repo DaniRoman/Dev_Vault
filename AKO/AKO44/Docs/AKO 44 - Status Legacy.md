@@ -47,7 +47,7 @@ Ejemplo: A este micro le llega algo tipo
 Para luego aplicar una lógica de negocio como habilitar/deshabilitar sondas, activar mute...
 
 #### El micro a mas detalle 
-[[AKO 44 - Status.conf Workflow.canvas]]
+[[AKO 44 - Status Legacy - Status.conf Workflow.canvas]]
 ### `status.network`
 
 Gestiona eventos/entradas relacionadas con conectividad (dispositivo NB-IoT) y con SIM (actualización suspension ) y con geolocalización.
@@ -56,6 +56,8 @@ Recibe un mensaje:
 - Valida los cambios mínimos (`context.device conectivity imsi`)
 - Actualiza los estados/atributos en BD (online/offline, SIM, cell info)
 - Actualización del histórico de geolocalización
+#### El micro a mas detalle 
+[[AKO 44 - Status Legacy - Status.network.canvas]]
 ### `status.updater`
 
 Recibe mensajes de **status** del dispositivo, actualiza en la BD del cloud el “estado actual” (`lastStatus`, online, timestamps, valores/virtuals), descarta mensajes viejos y publica eventos internos tipo `status.updated.<model>` y notificaciones en tiempo real. También recalcula contadores (alarmas) y algunas reglas extra (p. ej. “healthy_status”).
