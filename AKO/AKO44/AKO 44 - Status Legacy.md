@@ -44,3 +44,9 @@ Para luego aplicar una lógica de negocio como habilitar/deshabilitar sondas, ac
 
 ### `status.network`
 
+Gestiona eventos/entradas relacionadas con conectividad (dispositivo NB-IoT) y con SIM (actualización suspension ) y con geolocalización.
+Recibe un mensaje:
+- Lo parsea
+- Valida los cambios mínimos (`context.device conectivity imsi`)
+- Actualiza los estados/atributos en BD (online/offline, SIM, cell info)
+- Actualización del histórico de geolocalización
