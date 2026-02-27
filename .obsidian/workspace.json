@@ -11,14 +11,34 @@
             "id": "fa092f5a296eef41",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Shell/Shell - Main Site.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.Updater.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "Shell - Main Site"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Status Legacy - Status.Updater"
+            }
+          },
+          {
+            "id": "79c6f54d0d5b2f51",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
+                "viewState": {
+                  "x": -1089.5,
+                  "y": -278,
+                  "zoom": -1.0166700655666339
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Status Legacy - Status.network"
             }
           }
         ]
@@ -79,7 +99,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5110321044922
+    "width": 283.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -187,11 +208,12 @@
   },
   "active": "fa092f5a296eef41",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 -.canvas",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
-    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.Updater.canvas",
+    "Shell/Shell - Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
     "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
@@ -202,7 +224,6 @@
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo backlog.perte mediator.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "Db/Db Main Page.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
@@ -211,7 +232,6 @@
     "AKO/AKO44/Docs/attachments/Pasted image 20260225172736.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260225172656.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260225172613.png",
-    "Shell/Shell - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224165827.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224164121.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260224112304.png",
