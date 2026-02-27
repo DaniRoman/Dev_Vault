@@ -98,3 +98,6 @@ Compruebo que el mensaje respeta esa forma.
 [[ako 44 - Manufactured device license code ]]
 ## Como interpretar  parámetros de la definición del dispositivo 
 [[ako 44 - mapear device.definitions contra Excel File ]]
+## Feature
+
+[[AKO44 - NuevaFeature]]
