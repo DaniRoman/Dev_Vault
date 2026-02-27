@@ -19,6 +19,11 @@ alias() {cd "/ruta"; }
 source ~/.zshrc
 ```
 
+>[!example] Añadir variables al path
+
+```shell
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"_
+```
 ## SSH - Secure Shell 
 [[SSH - Secure Shell]]
 
