@@ -29,8 +29,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.Updater.canvas",
                 "viewState": {
-                  "x": -1104.581682168568,
-                  "y": -59.01213753603944,
+                  "x": -1133.1070725143722,
+                  "y": -245.44593872468363,
                   "zoom": 0
                 }
               },
@@ -96,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.5110321044922
+    "width": 238.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "3553b5f1a4be20ed",
