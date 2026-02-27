@@ -62,3 +62,5 @@ Recibe un mensaje:
 
 Recibe mensajes de **status** del dispositivo, actualiza en la BD del cloud el “estado actual” (`lastStatus`, online, timestamps, valores/virtuals), descarta mensajes viejos y publica eventos internos tipo `status.updated.<model>` y notificaciones en tiempo real. También recalcula contadores (alarmas) y algunas reglas extra (p. ej. “healthy_status”).
 
+### El micro a mas detalle
+[[AKO 44 - Status Legacy - Status.Updater.canvas]]

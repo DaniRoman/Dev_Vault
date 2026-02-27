@@ -20,8 +20,26 @@
               "icon": "lucide-file",
               "title": "AKO 44 - Status Legacy"
             }
+          },
+          {
+            "id": "ba59fd2461c575f1",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.Updater.canvas",
+                "viewState": {
+                  "x": -1073,
+                  "y": -78.36865241354909,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Status Legacy - Status.Updater"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,14 +202,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9039c30d6bad9595",
+  "active": "ba59fd2461c575f1",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "Bjj/Bjj Tecniques.md",
     "Shell/Shell - Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.Updater.canvas",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
     "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
