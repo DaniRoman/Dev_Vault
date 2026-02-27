@@ -96,5 +96,5 @@ Compruebo que el mensaje respeta esa forma.
 
 ## Manufactured device license code
 [[ako 44 - Manufactured device license code ]]
-## Como interpretar  parametros de la definición del dispositivo 
+## Como interpretar  parámetros de la definición del dispositivo 
 [[ako 44 - mapear device.definitions contra Excel File ]]
