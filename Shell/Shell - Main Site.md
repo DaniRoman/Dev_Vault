@@ -22,7 +22,7 @@ source ~/.zshrc
 >[!example] Añadir variables al path
 
 ```shell
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"_
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 ```
 ## SSH - Secure Shell 
 [[SSH - Secure Shell]]
