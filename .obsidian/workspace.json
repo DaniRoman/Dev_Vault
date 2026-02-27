@@ -4,41 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6bfb9e497570f24d",
+        "id": "dcc930cb4f95fbef",
         "type": "tabs",
         "children": [
           {
-            "id": "fa092f5a296eef41",
+            "id": "9039c30d6bad9595",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.Updater.canvas",
-                "viewState": {
-                  "x": -1017.745176980631,
-                  "y": 11.20640335013708,
-                  "zoom": 0
-                }
+                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Status Legacy - Status.Updater"
-            }
-          },
-          {
-            "id": "79c6f54d0d5b2f51",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
-                "viewState": {
-                  "x": -1089.5,
-                  "y": -278,
-                  "zoom": -1.0166700655666339
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Status Legacy - Status.network"
+              "icon": "lucide-file",
+              "title": "AKO 44 - Status Legacy"
             }
           }
         ]
@@ -94,13 +74,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 283.5110321044922,
-    "collapsed": true
+    "width": 238.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -206,13 +184,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fa092f5a296eef41",
+  "active": "9039c30d6bad9595",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.Updater.canvas",
+    "Bjj/Bjj Tecniques.md",
     "Shell/Shell - Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.Updater.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
     "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
@@ -227,7 +206,6 @@
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "Db/Db Main Page.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
-    "Bjj/Bjj Tecniques.md",
     "Obsidian/Obsidian Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260225172736.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260225172656.png",

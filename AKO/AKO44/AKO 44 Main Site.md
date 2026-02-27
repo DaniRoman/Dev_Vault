@@ -68,7 +68,6 @@ es un sensor**, y normalmente entra al equipo como una **entrada**.
 [[Ako44 - Protocolos]]
 ## Flujos de trabajo
 [[AKO 44 Flujos de trabajo]]
-
 ## Status Legacy
 [[AKO 44 - Status Legacy]]
 ## Manual de comunicación entre dispositivo y cloud

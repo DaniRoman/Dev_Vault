@@ -11,5 +11,10 @@
 ### Abrir  Guardia
 ## Shoulder Cranch
 
+### Desde Burrito grip
+### Raspado
+
+### Single Shoulder cracnh
+
 
 
