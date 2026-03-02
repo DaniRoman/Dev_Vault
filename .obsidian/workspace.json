@@ -39,12 +39,17 @@
             "id": "01d9e775e9cf6603",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "canvas",
               "state": {
-                "currentVersion": "1.12.4"
+                "file": "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
+                "viewState": {
+                  "x": -2132.0760992452956,
+                  "y": 1534.857950160102,
+                  "zoom": -0.13280510752133995
+                }
               },
-              "icon": "lucide-book-up",
-              "title": "Registro de cambios 1.12.4"
+              "icon": "lucide-layout-dashboard",
+              "title": "Ako44 - Mok device conexión Script"
             }
           }
         ],
@@ -213,11 +218,13 @@
   },
   "active": "01d9e775e9cf6603",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/AKO44 - feature-KNT-2243.md",
     "AKO - feature/KNT-2243 - errores.md",
     "AKO - feature",
-    "AKO/AKO44/AKO44 - feature-KNT-2243.md",
     "Git/Git Main Page.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/attachments/Pasted image 20260227133455.png",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.Updater.canvas",
@@ -226,8 +233,6 @@
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
     "Lenguajes/JavaScript/JavaScript.md",
-    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
-    "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
@@ -262,7 +267,6 @@
     "AKO/AKO44/Docs/error en mis.md",
     "AKO/AKO44/Docs/Ako44 - Protocolos.md",
     "AKO/AKO44/Docs/ako 44 - Partes importantes del código.md",
-    "Ako44 - Script fakeDevice.md",
     "attachments",
     "Db/PostgreSQL",
     "AKO/AKO44/Docs/attachments",
