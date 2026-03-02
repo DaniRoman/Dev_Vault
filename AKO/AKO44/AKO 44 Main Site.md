@@ -100,4 +100,4 @@ Compruebo que el mensaje respeta esa forma.
 [[ako 44 - mapear device.definitions contra Excel File ]]
 ## Feature
 
-[[AKO44 - NuevaFeature]]
+[[AKO44 - feature-KNT-2243]]

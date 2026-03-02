@@ -9,3 +9,5 @@
 
 - Mover los modelos `event-perte, alarm-perte` a la api 
 
+[[AKO - feature/KNT-2243 - errores]]
+

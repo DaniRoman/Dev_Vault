@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO44 - NuevaFeature.md",
+                "file": "AKO/AKO44/AKO44 - feature-KNT-2243.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO44 - NuevaFeature"
+              "title": "AKO44 - feature-KNT-2243"
+            }
+          },
+          {
+            "id": "be6f1cb4a2596c73",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AKO - feature/KNT-2243 - errores.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "KNT-2243 - errores"
             }
           },
           {
@@ -27,15 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO44 - NuevaFeature.md",
+                "file": "AKO/AKO44/AKO44 - feature-KNT-2243.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO44 - NuevaFeature"
+              "title": "AKO44 - feature-KNT-2243"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,10 +213,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9039c30d6bad9595",
+  "active": "be6f1cb4a2596c73",
   "lastOpenFiles": [
+    "AKO - feature/KNT-2243 - errores.md",
+    "AKO - feature",
+    "AKO/AKO44/AKO44 - feature-KNT-2243.md",
     "Git/Git Main Page.md",
-    "AKO/AKO44/AKO44 - NuevaFeature.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/attachments/Pasted image 20260227133455.png",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
@@ -253,7 +270,6 @@
     "AKO/AKO44/Docs/attachments",
     "AKO/Ako 44/Docs/Untitled.base",
     "Dev_Vault",
-    "AKO",
-    "AKO/AKO44/Docs"
+    "AKO"
   ]
 }
