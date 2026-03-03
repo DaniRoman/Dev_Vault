@@ -60,4 +60,4 @@ Así puedes usar Prisma o cualquier otra herramienta sin instalarla globalmente.
 
  biblioteca ODM (Object Data Modeling) para Node.js diseñada para modelar datos de aplicaciones en MongoDB. Proporciona un entorno basado en esquemas para validar, convertir tipos, construir consultas y gestionar relaciones, facilitando la interacción entre el código orientado a objetos y la base de datos
 
-
+[](https://www.mongodb.com/es/docs/drivers/node/current/integrations/mongoose/mongoose-get-started/)
