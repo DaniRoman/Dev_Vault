@@ -52,8 +52,7 @@
               "title": "Ako44 - Mok device conexión Script"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -216,8 +215,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a6f71e43a96cce13",
+  "active": "9039c30d6bad9595",
   "lastOpenFiles": [
+    "Node/Node - Main Site.md",
     "Express/Express Main Site.md",
     "Db/Mongo/Mongo - Main Site.md",
     "Express",
@@ -268,7 +268,6 @@
     "Bjj",
     "AKO/AKO44/AKO 44 - Driver Translator Perte WorkFlow.md",
     "AKO/AKO44/Docs/error en mis.md",
-    "AKO/AKO44/Docs/Ako44 - Protocolos.md",
     "attachments",
     "Db/PostgreSQL",
     "AKO/AKO44/Docs/attachments",
