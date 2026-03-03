@@ -50,9 +50,14 @@ Así puedes usar Prisma o cualquier otra herramienta sin instalarla globalmente.
 ### HTTP Status Code
 [Status code cheatsheet](https://quickref.me/http-status-code.html)
 [Recurso](https://medium.com/@sajaldewangan/mastering-40x-error-handling-in-node-js-with-typescript-a-peaceful-approach-eedd8eb99c41)
-
-
 ## WebHooks
 
 [Recurso](https://medium.com/@ganesan.marimuthu/building-a-node-js-application-to-fetch-data-from-postgresql-and-publish-to-microsoft-teams-6fd6545c6602)
+
+## ODM (Object Data Modeling) 
+
+>[!success] ODM Moongose
+
+ biblioteca ODM (Object Data Modeling) para Node.js diseñada para modelar datos de aplicaciones en MongoDB. Proporciona un entorno basado en esquemas para validar, convertir tipos, construir consultas y gestionar relaciones, facilitando la interacción entre el código orientado a objetos y la base de datos
+
 
