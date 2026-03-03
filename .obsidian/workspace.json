@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO44 - feature-KNT-2243.md",
+                "file": "Express/Express Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO44 - feature-KNT-2243"
+              "title": "Express Main Site"
             }
           },
           {
@@ -110,7 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.5110321044922
+    "width": 336.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -218,11 +218,14 @@
   },
   "active": "a6f71e43a96cce13",
   "lastOpenFiles": [
+    "Db/Mongo/Mongo - Main Site.md",
+    "Express/Express Main Site.md",
+    "Express",
+    "AKO/AKO44/AKO44 - feature-KNT-2243.md",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/AKO44 - feature-KNT-2243.md",
     "AKO - feature/KNT-2243 - errores.md",
     "AKO - feature",
     "Git/Git Main Page.md",
@@ -240,7 +243,6 @@
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer workflow - DataAccessManager.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "Db/Db Main Page.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
@@ -267,12 +269,10 @@
     "AKO/AKO44/AKO 44 - Driver Translator Perte WorkFlow.md",
     "AKO/AKO44/Docs/error en mis.md",
     "AKO/AKO44/Docs/Ako44 - Protocolos.md",
-    "AKO/AKO44/Docs/ako 44 - Partes importantes del código.md",
     "attachments",
     "Db/PostgreSQL",
     "AKO/AKO44/Docs/attachments",
     "AKO/Ako 44/Docs/Untitled.base",
-    "Dev_Vault",
-    "AKO"
+    "Dev_Vault"
   ]
 }
