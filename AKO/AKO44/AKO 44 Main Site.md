@@ -101,7 +101,6 @@ Compruebo que el mensaje respeta esa forma.
 ## Feature
 
 [[AKO44 - feature-KNT-2243]]
-
 ## Scripts 
 
 >[!success] Script para simular datos de un dispositivo
