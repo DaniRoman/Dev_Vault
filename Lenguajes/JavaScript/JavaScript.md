@@ -7,6 +7,8 @@
 - ***ECMAScript 6***: Versión de JavaScript. [Recurso](https://talent500.com/blog/what-is-es6-javascript-guide/)
 
 ## Metodos
+
+`JSON.parse(), JSON.stringify()`: [Recurso a difference between JSON.parse & JSON.stringify](https://www.geeksforgeeks.org/javascript/what-is-difference-between-json-parse-and-json-stringify-methods-in-javascript/)
 ### Reduce
 [Recurso](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 ### Callbacks
