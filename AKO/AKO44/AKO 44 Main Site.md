@@ -125,7 +125,6 @@ node bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B
 # Alarma 3 → alarmCount = 3
 node bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B572E7E alarm -v -pl "{\"id\":[974130021,6000,1,26,0],\"ty\":\"alarm\",\"d\":[[$(date +%s),3,70,1,3]]}"
 
-# Desactivar alarma 2 (st=0) penultimo parae → alarmCount = 2
-
+# Desactivar alarma 2 (st=0) penultimo parametro → alarmCount = 2
 node bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B572E7E alarm -v -pl "{\"id\":[974130021,6000,1,26,0],\"ty\":\"alarm\",\"d\":[[$(date +%s),2,0,0,2]]}"
 ```
