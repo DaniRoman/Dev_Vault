@@ -11,5 +11,5 @@
 
 - Ir al micro de `events updater.perte` y actualizar el campo `alarmCount` en `Device` cuando se activa o desactiva una alarma, el número de `alarmCount` ha de coincidir con lo que devuelve `alarmsActive`
 
-[[AKO - feature/KNT-2243 - errores]]
+[[KNT-2243 - errores]]
 
