@@ -11,14 +11,17 @@
             "id": "9039c30d6bad9595",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
+                "viewState": {
+                  "x": -2656.9099775740574,
+                  "y": 1065.586609756412,
+                  "zoom": -0.48162263024236307
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "icon": "lucide-layout-dashboard",
+              "title": "Ako44 - Mok device conexión Script"
             }
           },
           {
@@ -200,9 +203,9 @@
   },
   "active": "9039c30d6bad9595",
   "lastOpenFiles": [
+    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "Express/Express Main Site.md",
     "Node/Node - Main Site.md",
     "Node/Node - Express - Logging and Handling Errors.md",
