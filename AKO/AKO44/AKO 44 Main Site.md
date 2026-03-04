@@ -105,4 +105,27 @@ Compruebo que el mensaje respeta esa forma.
 ## Scripts 
 
 >[!success] Script para simular datos de un dispositivo
+
 [[Ako44 - Mok device conexión Script.canvas]]
+
+>[!warning] Crear un payload a mano 
+
+Para probar los eventos de la activación de la alarma y la desactivación de esta
+
+```sh
+# Alarma 1 → alarmCount = 1
+node bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B572E7E alarm -v -pl "{\"id\":[974130021,6000,1,26,0],\"ty\":\"alarm\",\"d\":[[$(date +%s),1,85,1,1]]}"
+
+
+# Alarma 2 (distinto alarm_id y cnt_id) → alarmCount = 2
+node bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B572E7E alarm -v -pl "{\"id\":[974130021,6000,1,26,0],\"ty\":\"alarm\",\"d\":[[$(date +%s),2,90,1,2]]}"
+
+  
+
+# Alarma 3 → alarmCount = 3
+node bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B572E7E alarm -v -pl "{\"id\":[974130021,6000,1,26,0],\"ty\":\"alarm\",\"d\":[[$(date +%s),3,70,1,3]]}"
+
+# Desactivar alarma 2 (st=0) penultimo parae → alarmCount = 2
+
+node bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B572E7E alarm -v -pl "{\"id\":[974130021,6000,1,26,0],\"ty\":\"alarm\",\"d\":[[$(date +%s),2,0,0,2]]}"
+```
