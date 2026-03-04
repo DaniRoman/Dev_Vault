@@ -1,16 +1,24 @@
+
+## Conceptos
+
+>[!success]
+
+- ***Strict Mode***: [Recurso](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+- ***ECMAScript 6***: [Recurso](https://talent500.com/blog/what-is-es6-javascript-guide/)
 ## Reduce
 
 >[!important] Pasar a limpio
+
 [Recurso](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
 ## Strict Mode
 
 >[!important] Pasar a limpio
-[Recurso](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+
 
 ## ECMAScript 6
 
->[!note] Nota
+>[!note] Concepto 
 Versión de JavaScript. Concretamente, es la sexta versión del estándar ECMAScript que define cómo funciona JavaScript. 
 Aunque a menudo se utilizan indistintamente, estas son las diferencias técnicas entre ambos:
 ECMAScript (ES): el estándar oficial y el documento de referencia (especificaciones) del lenguaje.
@@ -18,7 +26,7 @@ JavaScript (JS): el lenguaje de programación real que implementa esos estándar
 ES6 (ECMAScript 2015): una importante actualización lanzada en 2015 que introdujo características «modernas» como las funciones de flecha, let/const y clases. 
 En 2026, las características de ES6 se consideran el estándar del sector y a menudo se denominan «JavaScript moderno»
 
-[Recurso](https://talent500.com/blog/what-is-es6-javascript-guide/)
+
 
 
 ## Callbacks

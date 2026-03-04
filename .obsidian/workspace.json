@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Db/Mongo/Mongo - Main Site.md",
+                "file": "Lenguajes/JavaScript/JavaScript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mongo - Main Site"
+              "title": "JavaScript"
             }
           }
         ]
@@ -186,6 +186,9 @@
   },
   "active": "9039c30d6bad9595",
   "lastOpenFiles": [
+    "Lenguajes/TypeScript/TypeScript - Main Site.md",
+    "Lenguajes/JavaScript/JavaScript.md",
+    "Db/Mongo/Mongo - Main Site.md",
     "Express/Express Main Site.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
@@ -196,7 +199,6 @@
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO44 - feature-KNT-2243.md",
     "AKO/AKO44/Docs/KNT-2243 - errores.md",
-    "Db/Mongo/Mongo - Main Site.md",
     "Express",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO - feature",
@@ -208,10 +210,8 @@
     "Shell/Shell - Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
-    "Lenguajes/JavaScript/JavaScript.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
-    "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer workflow - DataAccessManager.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "Db/Db Main Page.md",
