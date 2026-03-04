@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO44 - feature-KNT-2243.md",
+                "file": "Db/Mongo/Mongo - Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO44 - feature-KNT-2243"
+              "title": "Mongo - Main Site"
             }
           },
           {
@@ -217,11 +217,11 @@
   },
   "active": "9039c30d6bad9595",
   "lastOpenFiles": [
+    "AKO/AKO44/AKO44 - feature-KNT-2243.md",
     "Node/Node - Main Site.md",
     "Express/Express Main Site.md",
     "Db/Mongo/Mongo - Main Site.md",
     "Express",
-    "AKO/AKO44/AKO44 - feature-KNT-2243.md",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
