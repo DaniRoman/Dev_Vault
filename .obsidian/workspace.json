@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Express/Express Main Site.md",
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Express Main Site"
+              "title": "AKO 44 Main Site"
             }
           },
           {
@@ -200,16 +200,16 @@
   },
   "active": "9039c30d6bad9595",
   "lastOpenFiles": [
-    "Node/Node - Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
+    "AKO/AKO44/AKO 44 Main Site.md",
     "Express/Express Main Site.md",
+    "Node/Node - Main Site.md",
     "Node/Node - Express - Logging and Handling Errors.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
-    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO44 - feature-KNT-2243.md",
     "AKO/AKO44/Docs/KNT-2243 - errores.md",
-    "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "Db/Mongo/Mongo - Main Site.md",
     "Express",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
@@ -250,7 +250,6 @@
     "AKO/AKO44/Docs/AKO 44 Flujo de cambio de parámetros Cloud - Device.md",
     "Development vault - Main Site.md",
     "Bjj",
-    "AKO/AKO44/AKO 44 - Driver Translator Perte WorkFlow.md",
     "attachments",
     "Db/PostgreSQL",
     "AKO/AKO44/Docs/attachments",
