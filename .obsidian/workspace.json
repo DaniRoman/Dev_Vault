@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5110321044922
+    "width": 247.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -184,7 +184,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9039c30d6bad9595",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "Lenguajes/JavaScript/JavaScript.md",
