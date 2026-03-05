@@ -11,17 +11,14 @@
             "id": "2e09583ea2f4336f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
-                "viewState": {
-                  "x": 1379.0437265786527,
-                  "y": 564.7645324262148,
-                  "zoom": -0.6136332795736763
-                }
+                "file": "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Conexion Layer Workflow"
+              "icon": "lucide-file",
+              "title": "AKO 44 Flujos de trabajo"
             }
           }
         ]
@@ -81,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 454.5110321044922
+    "width": 290.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -187,9 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e998f953db48c1c4",
+  "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "Git/Git Main Page.md",
@@ -201,7 +199,6 @@
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - checkPrivilege.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
     "AKO/AKO44/Docs/Sin título.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.md",
