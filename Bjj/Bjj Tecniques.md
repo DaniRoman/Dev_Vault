@@ -15,7 +15,7 @@
 2. Cojo brazo me levanto por el mismo lado que ese brazo muy cerca de el para que no me tire. cambio la mano con la que agarro su brazo, y con la pierna del mismo lado que la mano anterior doy un paso atrás para abrir
 ## Media Guardia
 ### Raspados
-
+1. Posición defensiva mi brazo haciendo tope a mi pierna para que no me chafe, con mis brazos tengo que vigilar su brazo para que no me pase, a la vez que se lo empujo y me incorporo apoyando el brazo contrario que hacia tope, subo esgrimando y con la pierna que hacia media guardia abro su rodilla hacia fuera para desestabilizarlo. cuando el me empuja aprovecho para meterme dentro cogiendo su pierna por dentro de la ingle y raspandolo. 
 ## Shoulder Cranch
 
 ### Desde Burrito grip
