@@ -11,14 +11,17 @@
             "id": "2e09583ea2f4336f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Obsidian/Obsidian Main Site.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
+                "viewState": {
+                  "x": 687.2949395124945,
+                  "y": -1329.873693973468,
+                  "zoom": -0.31199912971385013
+                }
               },
-              "icon": "lucide-file",
-              "title": "Obsidian Main Site"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo Api Device"
             }
           }
         ]
@@ -53,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:ako44",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +77,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,8 +188,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2e09583ea2f4336f",
+  "active": "cd0b57e002270810",
   "lastOpenFiles": [
+    "Obsidian/Obsidian Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/AKO 44 Main Site.md",
@@ -216,7 +221,6 @@
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "Db/Db Main Page.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
-    "Obsidian/Obsidian Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260225172736.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260225172656.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260225172613.png",
