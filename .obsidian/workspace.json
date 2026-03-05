@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO44 - Features Main Site"
+              "title": "AKO 44 Main Site"
             }
           }
         ]
@@ -187,10 +187,10 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/KNT-2243 - errores.md",
-    "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
+    "AKO/AKO44/Docs/KNT-2243 - errores.md",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - _extraGetOptions.canvas",
