@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
                 "viewState": {
-                  "x": 396.8071059727282,
-                  "y": -134.5,
-                  "zoom": -0.14211523265574785
+                  "x": 295.1136213318868,
+                  "y": -502.29364131626244,
+                  "zoom": -0.43707377048152973
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - WorkFlows - Listar Eventos"
+              "title": "AKO 44 - Flujo Api Device"
             }
           },
           {
@@ -32,8 +32,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
                 "viewState": {
-                  "x": 283.67210368629867,
-                  "y": 57.05078069160692,
+                  "x": 486.4061279296871,
+                  "y": -167.0772863111348,
                   "zoom": 0
                 }
               },
@@ -41,7 +41,8 @@
               "title": "AKO 44 - WorkFlows - Listar Eventos"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -204,18 +205,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2e09583ea2f4336f",
+  "active": "164cc2895b15cf13",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
-    "AKO/AKO44/Docs/AKO 44 - WorkFlows - checkPrivilege.canvas",
+    "AKO/AKO44/Docs/AKO 44 - WorkFlows - _extraGetOptions.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
+    "AKO/AKO44/Docs/AKO 44 - WorkFlows - checkPrivilege.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/Sin título.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.md",
     "Obsidian/Obsidian Main Site.md",
