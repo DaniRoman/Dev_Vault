@@ -15,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
                 "viewState": {
-                  "x": 295.1136213318868,
-                  "y": -502.29364131626244,
+                  "x": 34.43363824456474,
+                  "y": -33.34552359303783,
                   "zoom": -0.43707377048152973
                 }
               },
@@ -32,7 +32,7 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
                 "viewState": {
-                  "x": 465.1501115273723,
+                  "x": 457,
                   "y": -181.33998148403657,
                   "zoom": 0
                 }
@@ -41,8 +41,7 @@
               "title": "AKO 44 - WorkFlows - Listar Eventos"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 886.5110321044922
+    "width": 454.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -206,11 +205,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "164cc2895b15cf13",
+  "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - _extraGetOptions.canvas",
-    "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - checkPrivilege.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
