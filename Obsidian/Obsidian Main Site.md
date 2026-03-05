@@ -3,4 +3,7 @@
 
 >[Recurso](https://help.obsidian.md/callouts)
 
+>[!Success] Tags
+
+>
 

@@ -11,17 +11,14 @@
             "id": "2e09583ea2f4336f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
-                "viewState": {
-                  "x": 697.4127059181718,
-                  "y": -1360.2269931905003,
-                  "zoom": -0.31199912971385013
-                }
+                "file": "Obsidian/Obsidian Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo Api Device"
+              "icon": "lucide-file",
+              "title": "Obsidian Main Site"
             }
           }
         ]
@@ -56,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"ack\"",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -190,6 +186,7 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
@@ -200,7 +197,6 @@
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "Node/Node - Main Site.md",
     "Node/Docs/Node - Express - Logging and Handling Errors.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO44 - feature-KNT-2243.md",
     "AKO/AKO44/Docs/KNT-2243 - errores.md",
