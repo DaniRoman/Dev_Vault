@@ -11,17 +11,14 @@
             "id": "2e09583ea2f4336f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
-                "viewState": {
-                  "x": 522.8812354202352,
-                  "y": -57.56456845955242,
-                  "zoom": -0.31199912971385013
-                }
+                "file": "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo Api Device"
+              "icon": "lucide-file",
+              "title": "AKO 44 - WorkFlows - Listar Eventos"
             }
           }
         ]
@@ -189,10 +186,12 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
-    "AKO/AKO44/AKO 44 Main Site.md",
-    "Obsidian/Obsidian Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
+    "Obsidian/Obsidian Main Site.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "Bjj/Bjj Tecniques.md",
     "Lenguajes/JavaScript/JavaScript.md",
@@ -216,7 +215,6 @@
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Conexion Layer workflow - DataAccessManager.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "Db/Db Main Page.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
