@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
                 "viewState": {
-                  "x": 30.621817671822367,
-                  "y": -517.7087234750486,
-                  "zoom": -1.2464013684454043
+                  "x": 396.8071059727282,
+                  "y": -134.5,
+                  "zoom": -0.14211523265574785
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo Api Device"
+              "title": "AKO 44 - WorkFlows - Listar Eventos"
             }
           },
           {
@@ -206,9 +206,10 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 - WorkFlows - checkPrivilege.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
@@ -233,7 +234,6 @@
     "Git/Git Main Page.md",
     "AKO/AKO44/attachments/Pasted image 20260227133455.png",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
-    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.Updater.canvas",
     "Shell/Shell - Main Site.md",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "Db/Db Main Page.md",

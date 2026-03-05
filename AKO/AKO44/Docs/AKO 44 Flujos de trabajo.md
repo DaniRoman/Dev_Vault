@@ -1,3 +1,4 @@
+
 ## Flujo Set Context
 [[AKO 44 - Flujo Registrar el Context.canvas]]
 
