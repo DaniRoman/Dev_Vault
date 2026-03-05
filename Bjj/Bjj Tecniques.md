@@ -17,9 +17,10 @@
 ### Raspados
 1. Posición defensiva mi brazo haciendo tope a mi pierna para que no me chafe, con mis brazos tengo que vigilar su brazo para que no me pase, a la vez que se lo empujo y me incorporo apoyando el brazo contrario que hacia tope, subo esgrimando y con la pierna que hacia media guardia abro su rodilla hacia fuera para desestabilizarlo. cuando el me empuja aprovecho para meterme dentro cogiendo su pierna por dentro de la ingle y raspandolo.
 2. Con el brazo que esgrime sigo bajando mi brazo como para tocar su hombro para que el saque su brazo de mi constrasgrima y quede expuesto para poder hacer un seatbelt sacar el culo cayendo hacia el lado y cogiendo su espalda.
-3. variante envés de coger su espalda, es que el una
-4. En en caso de ya estar chafado la cambio la pierna que ganchea para hacerle un lock down en la pierna a la vez que lo cojo axila y ingle modo bebe y lo lleve de un lado al otro estirando el lockdown para conseguir llevar a la posición inicial de dogfight
-5. 
+3. En en caso de ya estar chafado la cambio la pierna que ganchea para hacerle un lock down en la pierna a la vez que lo cojo axila y ingle modo bebe y lo lleve de un lado al otro estirando el lockdown para conseguir llevar a la posición inicial de dogfight
+### Ataques
+1. . variante envés de coger su espalda, es que el una vez apoya el brazo yo subire mi pierna por su costado haciendo presión , a la vez que con mi brazo que esgrimaba me llevare su mano hacia arriba y la pierna que sube rotare a la vez para envolverle el brazo colocando mi pie en su nuca haciendo tope y le tiro la llave de brazo  
+2. Lo mismo pero enves de rodear su brazo aprovechare que el apoya todo su peso en un brazo para saltar al trian
 ## Shoulder Cranch
 
 ### Desde Burrito grip
