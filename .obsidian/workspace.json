@@ -32,8 +32,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
                 "viewState": {
-                  "x": 486.4061279296871,
-                  "y": -167.0772863111348,
+                  "x": 465.1501115273723,
+                  "y": -181.33998148403657,
                   "zoom": 0
                 }
               },
@@ -74,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "has",
+                "query": "_getEventsByFilters",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,7 +95,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
