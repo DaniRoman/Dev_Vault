@@ -11,14 +11,34 @@
             "id": "2e09583ea2f4336f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
+                "viewState": {
+                  "x": 30.621817671822367,
+                  "y": -517.7087234750486,
+                  "zoom": -1.2464013684454043
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 Flujos de trabajo"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo Api Device"
+            }
+          },
+          {
+            "id": "164cc2895b15cf13",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
+                "viewState": {
+                  "x": 283.67210368629867,
+                  "y": 57.05078069160692,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - WorkFlows - Listar Eventos"
             }
           }
         ]
@@ -53,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "has",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -186,12 +206,17 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
+    "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
+    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/Sin título.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.md",
-    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "Obsidian/Obsidian Main Site.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "Bjj/Bjj Tecniques.md",
@@ -201,20 +226,15 @@
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "Node/Node - Main Site.md",
     "Node/Docs/Node - Express - Logging and Handling Errors.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO44 - feature-KNT-2243.md",
     "AKO/AKO44/Docs/KNT-2243 - errores.md",
     "Express",
-    "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO - feature",
     "Git/Git Main Page.md",
     "AKO/AKO44/attachments/Pasted image 20260227133455.png",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.Updater.canvas",
     "Shell/Shell - Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.network.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Status Legacy - Status.conf Workflow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "Db/Db Main Page.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
