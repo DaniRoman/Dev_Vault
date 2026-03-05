@@ -127,3 +127,8 @@ node bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B
 # Desactivar alarma 2 (st=0) penultimo parametro → alarmCount = 2
 node bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B572E7E alarm -v -pl "{\"id\":[974130021,6000,1,26,0],\"ty\":\"alarm\",\"d\":[[$(date +%s),2,0,0,2]]}"
 ```
+
+## Indicadores
+
+[Recurso de Excel](https://ako0-my.sharepoint.com/:x:/g/personal/fmaataoui_ako_com/IQC6HFUUkj4ER5nMrNHnTUHvAVrogbp4fs-CyKxK4Mn6QoY?wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1772711678220&web=1)
+

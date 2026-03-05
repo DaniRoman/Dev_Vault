@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Git Main Page.md",
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git Main Page"
+              "title": "AKO 44 Main Site"
             }
           }
         ]
@@ -186,6 +186,7 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
+    "Git/Git Main Page.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
@@ -211,7 +212,6 @@
     "Node/Docs/Node - Express - Logging and Handling Errors.md",
     "Express",
     "AKO - feature",
-    "Git/Git Main Page.md",
     "AKO/AKO44/attachments/Pasted image 20260227133455.png",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "Shell/Shell - Main Site.md",
