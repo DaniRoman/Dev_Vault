@@ -11,7 +11,11 @@
 4. si su peso se va hacia atras o mas recto que hacia abajo me levanto como para hacer kimura y le doy un golpe de cadera para tirarlo hacia atras  
 ### Ataques
 ### Abrir  Guardia
-1. Desde rodillas, Posición erguida para que no me vuelque pierna contraria hacia donde voy a abrir levanto una 
+1. Desde rodillas, Posición erguida para que no me vuelque pierna contraria hacia donde voy a abrir levanto una pierna poniendo mi muslo apretado al suyo haciendo fuerza hacia dentro a modo de calmante con mi rodilla y abrira el lado contrario
+2. Cojo brazo me levanto por el mismo lado que ese brazo muy cerca de el para que no me tire. cambio la mano con la que agarro su brazo, y con la pierna del mismo lado que la mano anterior doy un paso atrás para abrir
+## Media Guardia
+### Raspados
+
 ## Shoulder Cranch
 
 ### Desde Burrito grip
