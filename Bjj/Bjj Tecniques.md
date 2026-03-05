@@ -6,9 +6,12 @@
 	
 2. Raspado 2 envés de raspar chuto su rodilla por la parte interior 
 
-3. Raspado 3 
+3. Raspado 3 enves de colocar mi pierna en su barriga la voy a suir a su axila a la vez que me meto dentro y con la misma mano del lado de la pierna que subi a su axila cojo su pierna por la ingle para bolcarlo a la vez que con la otra pierna hago pendulo 
+
+4. si su peso se va hacia atras o mas recto que hacia abajo me levanto como para hacer kimura y le doy un golpe de cadera para tirarlo hacia atras  
 ### Ataques
 ### Abrir  Guardia
+1. Desde rodillas, Posición erguida para que no me vuelque pierna contraria hacia donde voy a abrir levanto una 
 ## Shoulder Cranch
 
 ### Desde Burrito grip
