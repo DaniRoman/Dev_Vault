@@ -100,7 +100,7 @@ Compruebo que el mensaje respeta esa forma.
 [[ako 44 - mapear device.definitions contra Excel File ]]
 ## Features
 
-[[AKO44 - feature-KNT-2243]]
+[[AKO44 - Features Main Site]]
 ## Scripts 
 
 >[!success] Script para simular datos de un dispositivo

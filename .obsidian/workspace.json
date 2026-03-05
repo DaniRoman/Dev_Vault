@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO44 - feature-KNT-2243.md",
+                "file": "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO44 - feature-KNT-2243"
+              "title": "AKO44 - Features Main Site"
             }
           }
         ]
@@ -187,6 +187,8 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/KNT-2243 - errores.md",
+    "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
@@ -208,8 +210,6 @@
     "Express/Express Main Site.md",
     "Node/Node - Main Site.md",
     "Node/Docs/Node - Express - Logging and Handling Errors.md",
-    "AKO/AKO44/Docs/AKO44 - feature-KNT-2243.md",
-    "AKO/AKO44/Docs/KNT-2243 - errores.md",
     "Express",
     "AKO - feature",
     "Git/Git Main Page.md",
