@@ -11,34 +11,14 @@
             "id": "2e09583ea2f4336f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
-                "viewState": {
-                  "x": 34.43363824456474,
-                  "y": -33.34552359303783,
-                  "zoom": -0.43707377048152973
-                }
+                "file": "AKO/AKO44/Docs/AKO44 - feature-KNT-2243.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo Api Device"
-            }
-          },
-          {
-            "id": "164cc2895b15cf13",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
-                "viewState": {
-                  "x": 457,
-                  "y": -181.33998148403657,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - WorkFlows - Listar Eventos"
+              "icon": "lucide-file",
+              "title": "AKO44 - feature-KNT-2243"
             }
           }
         ]
@@ -73,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "_getEventsByFilters",
+                "query": "feature",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -207,13 +187,13 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - _extraGetOptions.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - checkPrivilege.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
-    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
@@ -226,7 +206,6 @@
     "Lenguajes/JavaScript/JavaScript.md",
     "Db/Mongo/Mongo - Main Site.md",
     "Express/Express Main Site.md",
-    "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "Node/Node - Main Site.md",
     "Node/Docs/Node - Express - Logging and Handling Errors.md",
     "AKO/AKO44/Docs/AKO44 - feature-KNT-2243.md",

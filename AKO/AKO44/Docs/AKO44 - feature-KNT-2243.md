@@ -1,4 +1,4 @@
-
+## KNT-2243
 - Necesitamos devolver eventos y alarmas activas, `cuando un select con: eventActive alarmActive` que devuelva la respuesta un array de eventos y alarmas activas, 
 
 - En `micros.event.updater.perte.microservice`es donde se escriben los eventos en las colecciones de perte correspondientes
