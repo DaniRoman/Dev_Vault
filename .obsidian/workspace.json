@@ -11,10 +11,14 @@
             "id": "2e09583ea2f4336f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "markdown",
+              "state": {
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AKO 44 Main Site"
             }
           }
         ]
@@ -182,10 +186,10 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
-    "Arquitectura y Diseño/Arquitectura y diseño.md",
-    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
-    "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
+    "Arquitectura y Diseño/Arquitectura y diseño.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "Bjj/Bjj Tecniques.md",
     "Git/Git Main Page.md",
