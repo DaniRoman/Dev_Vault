@@ -23,4 +23,6 @@ En mi caso de ejemplo utilizare la sonda ***A1*** la cual lanza una alarma en ll
 
 ![[Pasted image 20260306125549.png]]
 
-Para modificar el valor y poder simular una alarma de máxima necesito el nombre del parámetr
+Para modificar el valor y poder simular una alarma de máxima necesito el nombre del parámetro y el valor establecido para este.
+
+
