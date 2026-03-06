@@ -1,5 +1,6 @@
 
-## 
+## Configurar alarmas desde cloud, o en crudo desde el device directamente
+[[AKO 44 - Configurar Alarmas desde Cloud o en Crudo]]
 ## Flujo del proyecto general
 [[AKO 44 Flujo Del Proyecto]]
 ## Conceptos
