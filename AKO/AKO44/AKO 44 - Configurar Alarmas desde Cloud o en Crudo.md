@@ -17,5 +17,10 @@
 
 Para hacer saltar las alarmas analógicas ire al Excel y buscare por alarmas 
 
-![[Pasted image 20260306125116.png]]
+![[Pasted image 20260306125206.png]]
 
+En mi caso de ejemplo utilizare la sonda ***A1*** la cual lanza una alarma en llegar a la temperatura máxima.
+
+![[Pasted image 20260306125549.png]]
+
+Para modificar el valor y poder simular una alarma de máxima necesito el nombre del parámetr
