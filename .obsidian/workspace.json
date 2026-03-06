@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "file": "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "title": "AKO 44 - Configurar Alarmas desde Cloud o en Crudo"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "Reunion"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,11 +198,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ffa7e71d31eaacf0",
+  "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
-    "Reunion.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "Reunion.md",
+    "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
