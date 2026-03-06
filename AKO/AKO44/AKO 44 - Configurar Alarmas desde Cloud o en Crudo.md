@@ -15,5 +15,7 @@
 
 ***S1***: Hace referencia a la sonda Analógica que viene conectada por defecto. y en ***S2/Dl1***, ***S3/Dl2*** es donde conectare mi sonda digital con un interruptor que simulara encendido y apagado 
 
-Para con
+Para hacer saltar las alarmas analógicas ire al Excel y buscare por alarmas 
+
+![[Pasted image 20260306125116.png]]
 
