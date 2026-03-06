@@ -1,6 +1,6 @@
 
 >[!success] Objetivo
->Hacer saltar las alarmas de las diferentes sondas del dispositivo 2
+>Hacer saltar alarmas de las diferentes sondas del dispositivo 2RY mediante cambio de parámetros en cloud o de forma Cruda con programa 
 
 ---
 
