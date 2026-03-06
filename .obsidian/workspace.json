@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
+                "file": "Reunion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - Configurar Alarmas desde Cloud o en Crudo"
+              "title": "Reunion"
             }
           }
         ],
@@ -202,6 +202,7 @@
   "active": "ffa7e71d31eaacf0",
   "lastOpenFiles": [
     "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
+    "Reunion.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
@@ -250,7 +251,6 @@
     "Rabbit/attachments",
     "AKO/AKO44/Docs/ako 44 - schema definitions.md",
     "Rabbit",
-    "AKO/AKO44/Docs/AKO 44 Flujo de cambio de parámetros Cloud - Device.md",
     "Bjj",
     "attachments",
     "Db/PostgreSQL",
