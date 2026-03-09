@@ -38,7 +38,8 @@
               "title": "Nueva feature Lucas"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,10 +202,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2e09583ea2f4336f",
+  "active": "ffa7e71d31eaacf0",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "Nueva feature Lucas.md",
