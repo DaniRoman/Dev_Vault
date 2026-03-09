@@ -14,3 +14,8 @@ los comands, tanto comands como cambio parametro c
 
 dos tipos de cmd depende el tipo aue venga eso lo veo en el texto always on device comminication protocol ,  esta como notas. 
 
+cmd se comporta de dos maneras
+
+cuando es menor que 100 cada dispositiovo tienen sus cmds cmd server en el exvel lo puedo ver ,  en device defitions el campo comands  cmd va al conexion layer , y luego translator.
+
+si es mayo sera un cambio de parametros. sendConfig12830
