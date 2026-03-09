@@ -11,17 +11,14 @@
             "id": "2e09583ea2f4336f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
-                "viewState": {
-                  "x": 3342.0596741695217,
-                  "y": -398.67618795789093,
-                  "zoom": -0.17673744212610948
-                }
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo de cambio de parámetros Cloud - Device"
+              "icon": "lucide-file",
+              "title": "AKO 44 Main Site"
             }
           },
           {
@@ -204,11 +201,12 @@
   },
   "active": "ffa7e71d31eaacf0",
   "lastOpenFiles": [
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
+    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "Nueva feature Lucas.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
-    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
-    "Nueva feature Lucas.md",
     "attachments/Pasted image 20260309094804.png",
     "attachments/Pasted image 20260309094747.png",
     "attachments",
@@ -247,7 +245,6 @@
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "Shell/Shell - Main Site.md",
     "Db/Db Main Page.md",
-    "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "AKO/AKO44/AKO 44 - Flujo de cambio de parámetros Cloud - Device.md",
     "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
     "AKO/AKO44/Docs/ako 44 - Manufactured device license code.md",
