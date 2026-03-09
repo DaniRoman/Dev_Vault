@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
                 "viewState": {
-                  "x": 2226.3481664033015,
-                  "y": 212.65158687197123,
-                  "zoom": -0.9220306168189822
+                  "x": 3342.0596741695217,
+                  "y": -398.67618795789093,
+                  "zoom": -0.17673744212610948
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo Api Device"
+              "title": "AKO 44 - Flujo de cambio de parámetros Cloud - Device"
             }
           },
           {
@@ -203,6 +203,7 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/AKO 44 Main Site.md",
@@ -226,7 +227,6 @@
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/KNT-2243 - errores.md",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - _extraGetOptions.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - checkPrivilege.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
