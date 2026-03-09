@@ -1,10 +1,15 @@
 >[!example] Feature 2253
 >[Enlace a tarea](https://ako-team.atlassian.net/browse/KNT-2253)
 
-Cuando Elimino un Manufactured Device el parámetro `param_lic_sys_state` definido en el `panel_2ry_7102.json` 
+Cuando Elimino un Device el parámetro `param_lic_sys_state` definido en el `panel_2ry_7102.json` debe de poder cambiar a `2`
+
+>[!tip] A tener en cuenta
+>Cuando un device es eliminado este todavía existe en `manufacturedDevice`como algo que salió de fabrica.
+
 ![[Pasted image 20260309094804.png|242]]
-que si miramos en el `spech` del [excel](https://ako0.sharepoint.com/:x:/r/teams/DesarrolloModificaciondeProducto/NEWDARWIN/_layouts/15/Doc.aspx?sourcedoc=%7B514EB616-8124-49F9-A674-3C8150BBA1E0%7D&file=2024_NEW_DARWIN_PANEL_2RY_REV5.xlsx&action=default&mobileredirect=true) en `conf.LIC` podemos ver sus valores posibles y el numero `2` sera el que nos interese cambiar en el momento que borremos un `manufactured` a través del siguiente endpoint `https://api.dev.akonet.cloud/api/device/:id/remove` l tendremos que enviar un `cmd` con ese cambio en configuración tiene que cambiar a 2, pero este cambio solo sera para los dispositivos `new` con lo que me puedo ayudar del código de `api > lib > helpers > device-classifier.ts`.
-Con todo esto es tipo de mensaje con su cuerpo válido para enviar lo encontrare en `src/controller/send-amqp/sendCmd12830` 
+Mirando especificaciones del dispositivo en ek¡l [excel](https://ako0.sharepoint.com/:x:/r/teams/DesarrolloModificaciondeProducto/NEWDARWIN/_layouts/15/Doc.aspx?sourcedoc=%7B514EB616-8124-49F9-A674-3C8150BBA1E0%7D&file=2024_NEW_DARWIN_PANEL_2RY_REV5.xlsx&action=default&mobileredirect=true) en `conf.LIC` podemos ver los posibles valores.
+Tendremos que enviar un `cmd` con ese cambio en configuración tiene que cambiar a 2, pero este cambio solo sera para los dispositivos `new` con lo que me puedo ayudar del código de `api > lib > helpers > device-classifier.ts`.
+Con todo esto es tipo de mensaje con su cuerpo válido para enviar lo encontrare en `src/controller/send-amqp/sendConfig12830` 
 
 KNT-2253
 
