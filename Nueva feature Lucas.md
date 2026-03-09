@@ -19,3 +19,6 @@ cmd se comporta de dos maneras
 cuando es menor que 100 cada dispositiovo tienen sus cmds cmd server en el exvel lo puedo ver ,  en device defitions el campo comands  cmd va al conexion layer , y luego translator.
 
 si es mayo sera un cambio de parametros. sendConfig12830
+
+>[!warning]
+Una ve se mande la auditoria con el 530 que se autodestrulla
