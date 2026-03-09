@@ -11,14 +11,17 @@
             "id": "2e09583ea2f4336f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Nueva feature Lucas.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
+                "viewState": {
+                  "x": 2226.3481664033015,
+                  "y": 212.65158687197123,
+                  "zoom": -0.9220306168189822
+                }
               },
-              "icon": "lucide-file",
-              "title": "Nueva feature Lucas"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo Api Device"
             }
           },
           {
@@ -200,9 +203,9 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
     "Nueva feature Lucas.md",
     "attachments/Pasted image 20260309094804.png",
     "attachments/Pasted image 20260309094747.png",
