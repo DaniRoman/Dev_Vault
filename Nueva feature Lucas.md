@@ -7,3 +7,10 @@ que si miramos en el `spech` del [excel](https://ako0.sharepoint.com/:x:/r/teams
 Con todo esto es tipo de mensaje con su cuerpo válido para enviar lo encontrare en `src/controller/send-amqp/sendCmd12830` 
 
 KNT-2253
+
+
+param para aplicación plantillas y dar de alta
+los comands, tanto comands como cambio parametro c
+
+dos tipos de cmd depende el tipo aue venga eso lo veo en el texto always on device comminication protocol ,  esta como notas. 
+
