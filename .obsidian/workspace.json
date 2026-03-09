@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
+                "file": "Nueva feature Lucas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - Configurar Alarmas desde Cloud o en Crudo"
+              "title": "Nueva feature Lucas"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reunion.md",
+                "file": "Nueva feature Lucas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reunion"
+              "title": "Nueva feature Lucas"
             }
           }
         ]
@@ -200,6 +200,10 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
+    "attachments/Pasted image 20260309094804.png",
+    "attachments/Pasted image 20260309094747.png",
+    "attachments",
+    "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
     "AKO/AKO44/attachments/Pasted image 20260306125549.png",
     "AKO/AKO44/attachments/Pasted image 20260306125349.png",
     "AKO/AKO44/attachments/Pasted image 20260306125329.png",
@@ -208,8 +212,7 @@
     "AKO/AKO44/attachments/Pasted image 20260306125116.png",
     "AKO/AKO44/attachments/Pasted image 20260306124349.png",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "Reunion.md",
-    "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
+    "Nueva feature Lucas.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
@@ -242,8 +245,6 @@
     "Db/Db Main Page.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260225172736.png",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260225172656.png",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260225172613.png",
     "AKO/AKO44/AKO 44 - Flujo de cambio de parámetros Cloud - Device.md",
     "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
     "AKO/AKO44/Docs/ako 44 - Manufactured device license code.md",
@@ -251,7 +252,6 @@
     "Rabbit/attachments",
     "Rabbit",
     "Bjj",
-    "attachments",
     "Db/PostgreSQL",
     "AKO/AKO44/Docs/attachments",
     "AKO/Ako 44/Docs/Untitled.base",
