@@ -22,3 +22,10 @@ si es mayo sera un cambio de parametros. sendConfig12830
 
 >[!warning]
 Una ve se mande la auditoria con el 530 que se autodestrulla
+
+>[!error] Error de `findOne`
+>`[error]`: statecontroller.12830 - Failed to process backlog message: Cannot read properties of undefined (reading 'findOne')
+
+Reiniciar los micros si se da este caso que los modelos no cargan por la base de datos.
+
+
