@@ -23,17 +23,27 @@ EL procedimiento para un cambio de parámetro es mediante el flujo de
 
 Para hacer un cambio de parámetros en el dispositivo lo haremos a traves de `<cmd>` la información de como se muestra este en el `payload` y sus diferentes opciones las encontrare en el documento del protocolo de comunicación en la sección de `JSON cmd`  [Documento](https://ako0.sharepoint.com/:w:/t/DesarrolloModificaciondeProducto/DEVICE_COMMUNICATION_PROTOCOL/IQANIw2Uzjg2QpMzVO0zj5Z5AWI-WY01IyDjBINtVQTB-ck?e=bLD5hS&ovuser=5a94156b-5d3f-467b-b767-561717bb62ca%2Cdaniel.roman%40ako.com&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNjAxMDQwMDkyNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D)
 
-Un punto a tener en cuenta es que existen dos tipos de `comandos`,  `cmd` 
+Un punto a tener en cuenta es que `cmd` se comporta de dos maneras, cuando es menor que 100 cada dispositiovo tienen sus cmds cmd server en el exvel lo puedo ver ,  en device defitions el campo comands  cmd va al conexion layer , y luego translator.
+
+>[!tip] Concepto
+>Cuando nos referimos a <> que 100 hacemos referencia al valor que aparece en el payload en la posición que define el fichero de protocolo de comunicación, en este caso 530 - valor para ese conf
+>![[Pasted image 20260310121655.png]]
+>_figura1 translator layer_
+
+
 - Entiende xxx, para ver los disponibles mirare en el Excel de las especificaciones técnicas en la pestaña de `CMD Server` 
 	- Para mandar ese cambio utilizare la función de la api `controllers/api/configuration/send-amqp/sendCmd12830` 
-- El dispositivo lo entiende como un cambio de valor en los parámetros disponibles para ese este. 
+- `> 100` El dispositivo lo entiende como un cambio de valor en los parámetros disponibles para ese este. 
 	- Para mandar ese cambio utilizare la función de la api `controllers/api/configuration/send-amqp/sendConfig12830`
 
 cmd en Tendremos que enviar un `cmd` con ese cambio en configuración 
 >[!tip] Explicar tema CMD y que funcion usa cada uno cmd o param 
 
 
----
+
+
+
+si es mayo sera un cambio de parametros. sendConfig12830
 
 >[!warning]
 Una ve se mande la auditoria con el 530 que se autodestrulla
