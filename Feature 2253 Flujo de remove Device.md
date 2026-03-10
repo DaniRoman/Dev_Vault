@@ -2,8 +2,12 @@
 >[Enlace a tarea](https://ako-team.atlassian.net/browse/KNT-2253)
 
 ***Objetivo***
-Al Eliminar un `Device` este tiene que setearse en`status: pending delete` (Este estado no existe). Se le envía un `cmd` para cambiar el `param_lic_sys_state` =  `2`.
-Tengo que cerciorarme que el flujo de `retry` se da 3 veces.
+Al Eliminar un `Device` este tiene que setearse en`status: pending delete` *(Este estado no existe)*. Se le envía un `cmd` para cambiar el `param_lic_sys_state` =  `2`. 
+Una vez tenemos una confirmación `ACK: ok` 
+
+>[!warning] Flujo de retry x 3
+*(cerciorase que el flujo de `retry` para el caso de que el dispositivo no me envio una confirmación se da 3 veces)*
+
 
 >[!example] Concepto flujo de retry 
 > El dispositivo envia un `ack` ( aknowledge ) conforme recibio ese cambio de parámetro) este se da en la `translator`
