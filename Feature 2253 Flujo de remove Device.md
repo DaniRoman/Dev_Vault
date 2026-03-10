@@ -3,22 +3,20 @@
 
 ***Objetivo***
 Al Eliminar un `Device` este tiene que setearse en`status: pending delete` *(Este estado no existe)*. Se le envía un `cmd` para cambiar el `param_lic_sys_state` =  `2`. 
-Una vez tenemos una confirmación `ACK: ok` 
+Una vez tenemos una confirmación `ACK: ok` Device tiene que mandar un `audit` con param_lic_sys_state =  2 y en ese micro `backlog.perte stateController` comprobar antes de borrar el Device ese audit y que `status: pending delete` 
+`ManufacturedDevice` se mostara como desactivado
 
 >[!warning] Flujo de retry x 3
 *(cerciorase que el flujo de `retry` para el caso de que el dispositivo no me envio una confirmación se da 3 veces)*
 
 
->[!example] Concepto flujo de retry 
-> El dispositivo envia un `ack` ( aknowledge ) conforme recibio ese cambio de parámetro) este se da en la `translator`
+>[!example] Flujo para recibir el ACK y el audit del Device 
+> [[AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas]]
 
-Una vez llega este mensaje se tiene que enviar un `audit` con param_lic_sys_state =  2`
-
->[!warning]  Quien lo envia y desde donde ese audit, recopilar info...
 
 Entonces el `Device` ya puede ser eliminado de la colección y en `manufacturedDevice` setearlo a `no activo`
 
-Cuando Elimino un Device desde el endpoint.`https://api.dev.akonet.cloud/api/device/:id/remove`
+Cuando Elimino un Device desde el endpoint.
 cambiare 
 
 ![[Pasted image 20260309094804.png|242]]
