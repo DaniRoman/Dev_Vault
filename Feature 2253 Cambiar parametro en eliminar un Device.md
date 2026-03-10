@@ -15,7 +15,7 @@ cambiare `param_lic_sys_state`  a `2`
 >[!tip] A tener en cuenta
 >Cuando un device es eliminado este todavía existe en `manufacturedDevice`como algo que salió de fabrica.
 
-Mirando especificaciones del dispositivo en el [excel](https://ako0.sharepoint.com/:x:/r/teams/DesarrolloModificaciondeProducto/NEWDARWIN/_layouts/15/Doc.aspx?sourcedoc=%7B514EB616-8124-49F9-A674-3C8150BBA1E0%7D&file=2024_NEW_DARWIN_PANEL_2RY_REV5.xlsx&action=default&mobileredirect=true) registro `conf.LIC` podemos ver los posibles valores.
+Mirando las especificaciones del dispositivo en el [excel](https://ako0.sharepoint.com/:x:/r/teams/DesarrolloModificaciondeProducto/NEWDARWIN/_layouts/15/Doc.aspx?sourcedoc=%7B514EB616-8124-49F9-A674-3C8150BBA1E0%7D&file=2024_NEW_DARWIN_PANEL_2RY_REV5.xlsx&action=default&mobileredirect=true)  `conf.LIC` podemos ver los posibles valores.
 
 EL procedimiento para un cambio de parámetro es mediante el flujo de 
 [[AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas]]
