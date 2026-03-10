@@ -25,14 +25,17 @@
             "id": "ffa7e71d31eaacf0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Feature 2253 Flujo de remove Device.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/Sin título 1.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "Feature 2253 Flujo de remove Device"
+              "icon": "lucide-layout-dashboard",
+              "title": "Sin título 1"
             }
           }
         ],
@@ -201,13 +204,14 @@
   },
   "active": "ffa7e71d31eaacf0",
   "lastOpenFiles": [
+    "Feature 2253 Flujo de remove Device.md",
+    "AKO/AKO44/Docs/Sin título 1.canvas",
     "attachments/Pasted image 20260310121655.png",
     "Git/Git Main Page.md",
     "Bjj/Bjj Tecniques.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
-    "Feature 2253 Flujo de remove Device.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
@@ -231,7 +235,6 @@
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - checkPrivilege.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Registrar el Context.canvas",
-    "AKO/AKO44/Docs/Sin título.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.md",
     "Obsidian/Obsidian Main Site.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
@@ -242,7 +245,6 @@
     "Node/Docs/Node - Express - Logging and Handling Errors.md",
     "Express",
     "AKO - feature",
-    "AKO/AKO44/attachments/Pasted image 20260227133455.png",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "Shell/Shell - Main Site.md",
     "Db/Db Main Page.md",
