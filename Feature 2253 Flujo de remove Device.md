@@ -3,11 +3,16 @@
 
 ***Objetivo***
 Al Eliminar un `Device` este tiene que setearse en`status: pending delete` (Este estado no existe). Se le envía un `cmd` para cambiar el `param_lic_sys_state` =  `2`.
-Tengo que cerciorarme que el flujo de `retry` 
+Tengo que cerciorarme que el flujo de `retry` se da 3 veces.
 
 >[!example] Concepto flujo de retry 
-> El dispositivo envia un `ack` ( aknowledge ) conforme recibio ese cambio de parámetro)
+> El dispositivo envia un `ack` ( aknowledge ) conforme recibio ese cambio de parámetro) este se da en la `coexion layer`
 
+Una vez llega este mensaje se tiene que enviar un `audit` con param_lic_sys_state =  2`
+
+>[!warning]  Quien lo envia y desde donde ese audit, recopilar info...
+
+Entonces el `Device` ya puede ser eliminado de la colección y en `manufacturedDevice` setearlo a `no activo`
 
 Cuando Elimino un Device desde el endpoint.`https://api.dev.akonet.cloud/api/device/:id/remove`
 cambiare 
