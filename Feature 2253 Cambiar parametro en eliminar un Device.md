@@ -21,10 +21,13 @@ Mirando las especificaciones del dispositivo en el [excel](https://ako0.sharepoi
 EL procedimiento para un cambio de parámetro es mediante el flujo de 
 [[AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas]]
 
-Para hacer un cambio de parámetros en el dispositivo lo haremos a traves de `<cmd>` la información de como se muestra este en el `payload`  y sus diferentes opció  
+Para hacer un cambio de parámetros en el dispositivo lo haremos a traves de `<cmd>` la información de como se muestra este en el `payload` y sus diferentes opciones las encontrare en el documento del protocolo de comunicación  [Documento](https://ako0.sharepoint.com/:w:/t/DesarrolloModificaciondeProducto/DEVICE_COMMUNICATION_PROTOCOL/IQANIw2Uzjg2QpMzVO0zj5Z5AWI-WY01IyDjBINtVQTB-ck?e=bLD5hS&ovuser=5a94156b-5d3f-467b-b767-561717bb62ca%2Cdaniel.roman%40ako.com&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNjAxMDQwMDkyNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D)
+
+Un punto a tener en cuenta es que existen dos tipos de `comandos`,  `cmd` que el dispositivo entiende xxx y otros que entiende como un cambio de valores en los parametros configur
+
 
 cmd en Tendremos que enviar un `cmd` con ese cambio en configuración 
->[!tip] Explicar tema CMD y que funcion usa cada uno cmd o param [protocolo de comunicación](https://ako0.sharepoint.com/:w:/t/DesarrolloModificaciondeProducto/DEVICE_COMMUNICATION_PROTOCOL/IQANIw2Uzjg2QpMzVO0zj5Z5AWI-WY01IyDjBINtVQTB-ck?e=bLD5hS&ovuser=5a94156b-5d3f-467b-b767-561717bb62ca%2Cdaniel.roman%40ako.com&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNjAxMDQwMDkyNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D)
+>[!tip] Explicar tema CMD y que funcion usa cada uno cmd o param 
 
 tiene que cambiar a 2, pero este cambio solo sera para los dispositivos `new` con lo que me puedo ayudar del código de `api > lib > helpers > device-classifier.ts`.
 Con todo esto es tipo de mensaje con su cuerpo válido para enviar lo encontrare en `src/controller/send-amqp/sendConfig12830` 
