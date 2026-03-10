@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
+                "file": "Git/Git Main Page.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO44 - Features Main Site"
+              "title": "Git Main Page"
             }
           },
           {
@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5024719238281,
-    "collapsed": true
+    "width": 290.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -201,11 +200,12 @@
   },
   "active": "2e09583ea2f4336f",
   "lastOpenFiles": [
+    "Bjj/Bjj Tecniques.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
     "Feature 2253 Cambiar parametro en eliminar un Device.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
-    "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
@@ -222,7 +222,6 @@
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
-    "Bjj/Bjj Tecniques.md",
     "Git/Git Main Page.md",
     "AKO/AKO44/Docs/KNT-2243 - errores.md",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
