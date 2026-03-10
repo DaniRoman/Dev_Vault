@@ -1,6 +1,15 @@
 {
 	"nodes":[
-		{"id":"a06779c827f605ba","x":-815,"y":-283,"width":250,"height":60,"type":"text","text":"Cambio de parámetro en la a"}
+		{"id":"a06779c827f605ba","type":"text","text":"Cambio de configuración/parametro ","x":-877,"y":-320,"width":200,"height":83},
+		{"id":"2c1c2c97c371e259","type":"text","text":"API","x":-847,"y":-140,"width":140,"height":60},
+		{"id":"76eb3bf9c33fdd6d","type":"text","text":"backlog.perte mediator","x":-660,"y":-140,"width":140,"height":60},
+		{"id":"7b10b95462a4505b","type":"text","text":"backlog.perte stateController","x":-480,"y":-140,"width":140,"height":60},
+		{"id":"3ca9cd6e3e18b0af","type":"text","text":"Translator","x":-300,"y":-140,"width":140,"height":60},
+		{"id":"b047fbf2d5cad9e6","type":"text","text":"CL","x":-120,"y":-140,"width":140,"height":60}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"7c5fdbb32d9c5ade","fromNode":"a06779c827f605ba","fromSide":"bottom","toNode":"2c1c2c97c371e259","toSide":"top"},
+		{"id":"9edc15d2a736b48f","fromNode":"2c1c2c97c371e259","fromSide":"right","toNode":"76eb3bf9c33fdd6d","toSide":"left"},
+		{"id":"beab6132984d8a12","fromNode":"76eb3bf9c33fdd6d","fromSide":"right","toNode":"7b10b95462a4505b","toSide":"left"}
+	]
 }

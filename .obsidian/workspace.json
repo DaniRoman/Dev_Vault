@@ -22,15 +22,15 @@
             }
           },
           {
-            "id": "ffa7e71d31eaacf0",
+            "id": "245c4002f8c368a3",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": 0,
+                  "x": -315.8168216856815,
+                  "y": 15.281459113823292,
                   "zoom": 0
                 }
               },
@@ -40,6 +40,29 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "a820acab8f4143b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ffa7e71d31eaacf0",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+                "viewState": {
+                  "x": 2800.1378266735114,
+                  "y": -468.58787344526905,
+                  "zoom": 0.07150376971011672
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo de cambio de parámetros Cloud - Device"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -202,10 +225,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ffa7e71d31eaacf0",
+  "active": "245c4002f8c368a3",
   "lastOpenFiles": [
-    "Feature 2253 Flujo de remove Device.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
+    "Feature 2253 Flujo de remove Device.md",
     "attachments/Pasted image 20260310121655.png",
     "Git/Git Main Page.md",
     "Bjj/Bjj Tecniques.md",
@@ -214,7 +238,6 @@
     "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "attachments/Pasted image 20260309094804.png",
     "attachments/Pasted image 20260309094747.png",
