@@ -17,7 +17,10 @@
 		{"id":"be426b2d49d9ca00","type":"text","text":"CMD [ 530, 2]","x":-410,"y":-28,"width":140,"height":57},
 		{"id":"d4f2417d3f9f34a1","type":"text","text":"PendingOutput Anulado","x":123,"y":-411,"width":245,"height":60},
 		{"id":"a9d2ceba91498e0e","type":"text","text":"Mensaje de Audit","x":-185,"y":-411,"width":180,"height":60},
-		{"id":"1c358a70e0a63379","x":-614,"y":-406,"width":314,"height":128,"type":"text","text":"`akocloud-micros/src/micros/backlog.perte/bl-lib/services/AuditProcessor.ts`\n"}
+		{"id":"5113ef329fd541ee","x":-535,"y":-402,"width":250,"height":60,"type":"text","text":"`initializeAuditProcessor`"},
+		{"id":"1c358a70e0a63379","x":-567,"y":-680,"width":314,"height":128,"type":"text","text":"`akocloud-micros/src/micros/backlog.perte/bl-lib/services/AuditProcessor.ts`\n"},
+		{"id":"e67e8263d62b372c","type":"text","text":"si status = pending & param_lic_sys_state =  2 = 2","x":117,"y":-666,"width":317,"height":100},
+		{"id":"e937f1315240b810","x":-380,"y":407,"width":250,"height":60,"type":"text","text":"El dispositiv"}
 	],
 	"edges":[
 		{"id":"7c5fdbb32d9c5ade","fromNode":"a06779c827f605ba","fromSide":"bottom","toNode":"2c1c2c97c371e259","toSide":"top"},
@@ -39,6 +42,9 @@
 		{"id":"dd0faa5e656cf7c4","fromNode":"b03a65f0d3196537","fromSide":"right","toNode":"58c4cd017fb12b65","toSide":"right"},
 		{"id":"97b12fe981aa004a","fromNode":"b03a65f0d3196537","fromSide":"right","toNode":"f7aeb8ac2f7066e2","toSide":"right"},
 		{"id":"8f9a8acf32100166","fromNode":"b03a65f0d3196537","fromSide":"right","toNode":"d4f2417d3f9f34a1","toSide":"bottom","label":"Si"},
-		{"id":"016e7566fe1857b2","fromNode":"3ca9cd6e3e18b0af","fromSide":"top","toNode":"7b10b95462a4505b","toSide":"top","label":"Audit"}
+		{"id":"016e7566fe1857b2","fromNode":"3ca9cd6e3e18b0af","fromSide":"top","toNode":"7b10b95462a4505b","toSide":"top","label":"Audit"},
+		{"id":"f4d54c4954f67acd","fromNode":"7b10b95462a4505b","fromSide":"top","toNode":"5113ef329fd541ee","toSide":"bottom","label":"Gestiona el audit"},
+		{"id":"dad45b67c24086c5","fromNode":"5113ef329fd541ee","fromSide":"top","toNode":"1c358a70e0a63379","toSide":"bottom","label":"Función"},
+		{"id":"b014180e477849e1","fromNode":"1c358a70e0a63379","fromSide":"right","toNode":"e67e8263d62b372c","toSide":"left","label":"Condición para borrar Device"}
 	]
 }
