@@ -21,7 +21,7 @@ Mirando las especificaciones del dispositivo en el [excel](https://ako0.sharepoi
 EL procedimiento para un cambio de parámetro es mediante el flujo de 
 [[AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas]]
 
-La explicación de que es un `cmd` la encuentro en las notas de la deficniones 
+Para hacer un cambio de parámetros en el dispositivo lo haremos a traves de `<cmd>` la información de como se muestra este en el `payload`  y sus diferentes opció  
 
 cmd en Tendremos que enviar un `cmd` con ese cambio en configuración 
 >[!tip] Explicar tema CMD y que funcion usa cada uno cmd o param [protocolo de comunicación](https://ako0.sharepoint.com/:w:/t/DesarrolloModificaciondeProducto/DEVICE_COMMUNICATION_PROTOCOL/IQANIw2Uzjg2QpMzVO0zj5Z5AWI-WY01IyDjBINtVQTB-ck?e=bLD5hS&ovuser=5a94156b-5d3f-467b-b767-561717bb62ca%2Cdaniel.roman%40ako.com&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNjAxMDQwMDkyNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D)
