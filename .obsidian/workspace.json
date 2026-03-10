@@ -35,7 +35,8 @@
               "title": "Feature 2253 Cambiar parametro en eliminar un Device"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,8 +199,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2e09583ea2f4336f",
+  "active": "ffa7e71d31eaacf0",
   "lastOpenFiles": [
+    "Git/Git Main Page.md",
     "Bjj/Bjj Tecniques.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
@@ -222,7 +224,6 @@
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
-    "Git/Git Main Page.md",
     "AKO/AKO44/Docs/KNT-2243 - errores.md",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - _extraGetOptions.canvas",
