@@ -29,8 +29,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
                 "viewState": {
-                  "x": -112.2592735186596,
-                  "y": 64.1821282780585,
+                  "x": 78.24958343367088,
+                  "y": -39.7317936959399,
                   "zoom": 0
                 }
               },
@@ -53,7 +53,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -216,10 +216,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "245c4002f8c368a3",
+  "active": "a434fde8bb19fc25",
   "lastOpenFiles": [
-    "Feature 2253 Flujo de remove Device.md",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
+    "Feature 2253 Flujo de remove Device.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "attachments/Pasted image 20260310121655.png",
     "Git/Git Main Page.md",

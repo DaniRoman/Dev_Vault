@@ -11,8 +11,8 @@
 		{"id":"a4303cb7f6cc5cb3","type":"text","text":"Anulan","x":-185,"y":169,"width":130,"height":50},
 		{"id":"792ef8f7b927172b","type":"text","text":"Otros : Sample, Events ...","x":115,"y":437,"width":160,"height":58},
 		{"id":"67b10b69199e36aa","type":"text","text":"Ejemplo el dispositivo se queda sin cobertura y al recuperarla este ahora tiene otra ip y al reconectarse este lo primero que haria seria enviar los datos acumulados","x":480,"y":368,"width":241,"height":197},
-		{"id":"58c4cd017fb12b65","type":"text","text":"ACK : Confirm","x":115,"y":219,"width":160,"height":57},
-		{"id":"f7aeb8ac2f7066e2","type":"text","text":"ACK : Rejected","x":115,"y":319,"width":160,"height":58},
+		{"id":"58c4cd017fb12b65","type":"text","text":"Confirm","x":115,"y":219,"width":105,"height":50},
+		{"id":"f7aeb8ac2f7066e2","type":"text","text":"Rejected","x":115,"y":319,"width":105,"height":50},
 		{"id":"a2a0fb88862df9b4","type":"text","text":"[[AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas]]","x":-1174,"y":-420,"width":297,"height":78},
 		{"id":"be426b2d49d9ca00","type":"text","text":"CMD [ 530, 2]","x":-410,"y":-28,"width":140,"height":57},
 		{"id":"d4f2417d3f9f34a1","type":"text","text":"PendingOutput Anulado","x":123,"y":-411,"width":245,"height":60},
@@ -20,7 +20,8 @@
 		{"id":"5113ef329fd541ee","x":-535,"y":-402,"width":250,"height":60,"type":"text","text":"`initializeAuditProcessor`"},
 		{"id":"1c358a70e0a63379","x":-567,"y":-680,"width":314,"height":128,"type":"text","text":"`akocloud-micros/src/micros/backlog.perte/bl-lib/services/AuditProcessor.ts`\n"},
 		{"id":"e67e8263d62b372c","type":"text","text":"si status = pending & param_lic_sys_state =  2 = 2","x":117,"y":-666,"width":317,"height":100},
-		{"id":"e937f1315240b810","x":-380,"y":407,"width":250,"height":60,"type":"text","text":"El dispositiv"}
+		{"id":"e937f1315240b810","x":-185,"y":438,"width":120,"height":58,"type":"text","text":"Retry x 3"},
+		{"id":"8b37189f927fd1e6","type":"text","text":"ACK","x":340,"y":-22,"width":80,"height":52}
 	],
 	"edges":[
 		{"id":"7c5fdbb32d9c5ade","fromNode":"a06779c827f605ba","fromSide":"bottom","toNode":"2c1c2c97c371e259","toSide":"top"},
@@ -38,13 +39,16 @@
 		{"id":"0232ba3a60db66e7","fromNode":"d4f2417d3f9f34a1","fromSide":"left","toNode":"a9d2ceba91498e0e","toSide":"right","label":"Envia"},
 		{"id":"4639267e31d74233","fromNode":"a9d2ceba91498e0e","fromSide":"bottom","toNode":"b047fbf2d5cad9e6","toSide":"top"},
 		{"id":"fcde4850211dfe21","fromNode":"b047fbf2d5cad9e6","fromSide":"top","toNode":"3ca9cd6e3e18b0af","toSide":"top","label":"Audit"},
-		{"id":"4e2b89ef01515172","fromNode":"b03a65f0d3196537","fromSide":"right","toNode":"792ef8f7b927172b","toSide":"right"},
-		{"id":"dd0faa5e656cf7c4","fromNode":"b03a65f0d3196537","fromSide":"right","toNode":"58c4cd017fb12b65","toSide":"right"},
-		{"id":"97b12fe981aa004a","fromNode":"b03a65f0d3196537","fromSide":"right","toNode":"f7aeb8ac2f7066e2","toSide":"right"},
+		{"id":"4e2b89ef01515172","fromNode":"8b37189f927fd1e6","fromSide":"bottom","toNode":"792ef8f7b927172b","toSide":"right"},
+		{"id":"dd0faa5e656cf7c4","fromNode":"8b37189f927fd1e6","fromSide":"bottom","toNode":"58c4cd017fb12b65","toSide":"right"},
+		{"id":"97b12fe981aa004a","fromNode":"8b37189f927fd1e6","fromSide":"bottom","toNode":"f7aeb8ac2f7066e2","toSide":"right"},
 		{"id":"8f9a8acf32100166","fromNode":"b03a65f0d3196537","fromSide":"right","toNode":"d4f2417d3f9f34a1","toSide":"bottom","label":"Si"},
 		{"id":"016e7566fe1857b2","fromNode":"3ca9cd6e3e18b0af","fromSide":"top","toNode":"7b10b95462a4505b","toSide":"top","label":"Audit"},
 		{"id":"f4d54c4954f67acd","fromNode":"7b10b95462a4505b","fromSide":"top","toNode":"5113ef329fd541ee","toSide":"bottom","label":"Gestiona el audit"},
 		{"id":"dad45b67c24086c5","fromNode":"5113ef329fd541ee","fromSide":"top","toNode":"1c358a70e0a63379","toSide":"bottom","label":"Función"},
-		{"id":"b014180e477849e1","fromNode":"1c358a70e0a63379","fromSide":"right","toNode":"e67e8263d62b372c","toSide":"left","label":"Condición para borrar Device"}
+		{"id":"b014180e477849e1","fromNode":"1c358a70e0a63379","fromSide":"right","toNode":"e67e8263d62b372c","toSide":"left","label":"Condición para borrar Device"},
+		{"id":"c99bcdb52547143d","fromNode":"e937f1315240b810","fromSide":"right","toNode":"792ef8f7b927172b","toSide":"left"},
+		{"id":"59da7622ee1ff308","fromNode":"3ca9cd6e3e18b0af","fromSide":"bottom","toNode":"e937f1315240b810","toSide":"left","label":"Si ACK Otros"},
+		{"id":"a7a00fb904661f6b","fromNode":"b03a65f0d3196537","fromSide":"right","toNode":"8b37189f927fd1e6","toSide":"top","label":"envia"}
 	]
 }
