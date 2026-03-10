@@ -2,9 +2,15 @@
 >[Enlace a tarea](https://ako-team.atlassian.net/browse/KNT-2253)
 
 ***Objetivo***
-Al Eliminar un `Device` este tiene que setearse en`status: pending delete` (Este estado no existe). Se le envía un `cmd` de Lic = 2 
+Al Eliminar un `Device` este tiene que setearse en`status: pending delete` (Este estado no existe). Se le envía un `cmd` para cambiar el `param_lic_sys_state` =  `2`.
+Tengo que cerciorarme que el flujo de `retry` 
+
+>[!example] Concepto flujo de retry 
+> El dispositivo envia un `ack` ( aknowledge ) conforme recibio ese cambio de parámetro)
+
+
 Cuando Elimino un Device desde el endpoint.`https://api.dev.akonet.cloud/api/device/:id/remove`
-cambiare `param_lic_sys_state`  a `2`
+cambiare 
 
 ![[Pasted image 20260309094804.png|242]]
 
