@@ -25,8 +25,9 @@ Para hacer un cambio de parámetros en el dispositivo lo haremos a traves de `<c
 
 Un punto a tener en cuenta es que existen dos tipos de `comandos`,  `cmd` 
 - Entiende xxx, para ver los disponibles mirare en el Excel de las especificaciones técnicas en la pestaña de `CMD Server` 
-	- Para modificar alguno de estos utilizare la función de la apoi
+	- Para mandar ese cambio utilizare la función de la api `controllers/api/configuration/send-amqp/sendCmd12830` 
 - El dispositivo lo entiende como un cambio de valor en los parámetros disponibles para ese este. 
+	- Para mandar ese cambio utilizare la función de la api `controllers/api/configuration/send-amqp/sendConfig12830`
 
 cmd en Tendremos que enviar un `cmd` con ese cambio en configuración 
 >[!tip] Explicar tema CMD y que funcion usa cada uno cmd o param 
