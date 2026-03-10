@@ -10,7 +10,11 @@
 		{"id":"be426b2d49d9ca00","x":-380,"y":-237,"width":140,"height":57,"type":"text","text":"CMD [ 530, 2]"},
 		{"id":"e478a795281620dd","x":-130,"y":0,"width":245,"height":60,"type":"text","text":"PendingOutput ( Pendiente de ser verificado)"},
 		{"id":"b03a65f0d3196537","type":"text","text":"Device","x":80,"y":-140,"width":140,"height":60},
-		{"id":"2aac009c06fc04a8","type":"text","text":"Este puede mandar tres mensajes","x":300,"y":20,"width":140,"height":80}
+		{"id":"2aac009c06fc04a8","type":"text","text":"Este puede mandar tres mensajes","x":300,"y":20,"width":140,"height":80},
+		{"id":"67b10b69199e36aa","x":39,"y":223,"width":241,"height":197,"type":"text","text":"Ejemplo el dispositivo se queda sin cobertura y al recuperarla este ahora tiene otra ip y al reconectarse este lo primero que haria seria enviar los datos acumulados"},
+		{"id":"58c4cd017fb12b65","type":"text","text":"ACK : Confirm","x":340,"y":223,"width":160,"height":57},
+		{"id":"f7aeb8ac2f7066e2","type":"text","text":"ACK : Rejected","x":340,"y":322,"width":160,"height":58},
+		{"id":"792ef8f7b927172b","type":"text","text":"Otros : Rejected","x":340,"y":440,"width":160,"height":58}
 	],
 	"edges":[
 		{"id":"7c5fdbb32d9c5ade","fromNode":"a06779c827f605ba","fromSide":"bottom","toNode":"2c1c2c97c371e259","toSide":"top"},
