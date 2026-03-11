@@ -31,8 +31,10 @@
 		{"id":"9d28fe1a485511dc","type":"text","text":"### 3. Confirmación (Device → Translator)\n\nCuando el dispositivo **aplica** los cambios, envía un `cmd_ack`\n\n```js\n{ \"id\": [974130021, 6000, 1, 26, 0], \"ty\": \"cmd_ack\", \"bid\": 12345 }\n```\n\nEsto entra por\n\n`handleInput`\n\n(líneas 108-122):","x":3604,"y":306,"width":476,"height":234},
 		{"id":"19345539d93a5f84","type":"text","text":"Script `client-perte`\n```js\nnode bin/examples/client-perte.js 974130021 <uuid> cmd_ack -v\n```","x":43,"y":109,"width":250,"height":60},
 		{"id":"a42d5f949b2ef96d","type":"text","text":"Primera comunicación \n\n![[Pasted image 20260311100103.png]]\n\n![[Pasted image 20260311100123.png]]","x":1920,"y":-540,"width":737,"height":423},
-		{"id":"6d0135275a88af1e","type":"text","text":"![[Pasted image 20260311103403.png]]\n\n![[Pasted image 20260311103427.png]]","x":2820,"y":-228,"width":449,"height":222},
-		{"id":"650f7dc8d086588d","x":3720,"y":-280,"width":516,"height":358,"type":"text","text":"\n![[Pasted image 20260311103914.png]]\n\n![[Pasted image 20260311103848.png]]"}
+		{"id":"650f7dc8d086588d","x":3720,"y":-280,"width":516,"height":358,"type":"text","text":"\n![[Pasted image 20260311103914.png]]\n\n![[Pasted image 20260311103848.png]]"},
+		{"id":"d58af6d4f8e9dc02","x":1566,"y":-820,"width":529,"height":168,"type":"text","text":">[!error] Error\n\n>Si el dispositivo esta en un estado diferente de `\"online\", \"error\", \"registered\"` no puede recibir mensajes"},
+		{"id":"6d0135275a88af1e","type":"text","text":"![[Pasted image 20260311103403.png]]\n\n![[Pasted image 20260311103427.png]]","x":2860,"y":-391,"width":449,"height":222},
+		{"id":"09e39d27f46825be","x":3124,"y":-18,"width":516,"height":218,"type":"text","text":"![[Pasted image 20260311110411.png]]"}
 	],
 	"edges":[
 		{"id":"7c5fdbb32d9c5ade","fromNode":"a06779c827f605ba","fromSide":"bottom","toNode":"2c1c2c97c371e259","toSide":"top"},
@@ -68,7 +70,9 @@
 		{"id":"4a0141910157d18b","fromNode":"e25220e269e3b062","fromSide":"right","toNode":"3f85b9f358e97217","toSide":"left"},
 		{"id":"92f04a2b8754f0e9","fromNode":"58c4cd017fb12b65","fromSide":"top","toNode":"19345539d93a5f84","toSide":"bottom"},
 		{"id":"1b20993004d6a5db","fromNode":"a81443065256286e","fromSide":"top","toNode":"a42d5f949b2ef96d","toSide":"bottom"},
-		{"id":"56c43dfc7d65a140","fromNode":"6d0135275a88af1e","fromSide":"bottom","toNode":"e25220e269e3b062","toSide":"top"},
-		{"id":"4ae04f4ca934e025","fromNode":"6d0135275a88af1e","fromSide":"right","toNode":"650f7dc8d086588d","toSide":"left","label":"Maximas alcanzadas"}
+		{"id":"56c43dfc7d65a140","fromNode":"6d0135275a88af1e","fromSide":"bottom","toNode":"e25220e269e3b062","toSide":"top","label":"No confirmado"},
+		{"id":"4ae04f4ca934e025","fromNode":"6d0135275a88af1e","fromSide":"right","toNode":"650f7dc8d086588d","toSide":"left","label":"Maximas alcanzadas"},
+		{"id":"5a222239f2d76c8a","fromNode":"a42d5f949b2ef96d","fromSide":"top","toNode":"d58af6d4f8e9dc02","toSide":"bottom"},
+		{"id":"9163f5ccd744cc20","fromNode":"e25220e269e3b062","fromSide":"top","toNode":"09e39d27f46825be","toSide":"left","label":"Confirmado"}
 	]
 }
