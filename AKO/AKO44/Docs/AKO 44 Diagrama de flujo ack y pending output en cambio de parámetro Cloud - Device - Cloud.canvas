@@ -24,7 +24,8 @@
 		{"id":"87545b76034fdaa9","type":"text","text":"Primera comunicación \n\n![[Pasted image 20260311100103.png]]\n\n![[Pasted image 20260311100123.png]]","x":-815,"y":600,"width":515,"height":318},
 		{"id":"ae92cc5faa4935c8","type":"text","text":"***backlog.perte stateController***\n\n`handleConfirmation`\nCuando llega Confirmación `cmd_ack` actualiza el backlog de `\"pending\"` a `\"send\"`:\nEl `cmd_ack` confirma que el dispositivo **recibió** el comando, pero aún no confirma que lo **aplicó**.\n\n\n\n","x":-650,"y":214,"width":300,"height":171},
 		{"id":"294faa19c3b69bd5","type":"text","text":"Crear el backlog de `\"pending\"`","x":-1120,"y":325,"width":250,"height":54},
-		{"id":"070b60bd71e40b77","type":"text","text":"***backlog.perte stateController***\n\n`handleAudit`\nCuando llega el **audit**, lo confirma de `\"send\"` a `confirmed`\n\n.","x":-800,"y":-480,"width":300,"height":171}
+		{"id":"070b60bd71e40b77","type":"text","text":"***backlog.perte stateController***\n\n`handleAudit`\nauditProcessor.processAuditMessag\n   → Crea el audit en la BD\n   → Actualiza la conf actual del device\n   → Devuelve el audit con { ref, newValue, device, ... }\n2. Si el resultado tiene \"ref\" (línea 157):\n   → backlogProcessor.confirmAudit() (línea 159)\n   → Busca backlog en status \"send\"\n   → Compara ref + newValue\n   → Si match → \"confirmed\"\n","x":-800,"y":-480,"width":300,"height":171},
+		{"id":"922620a6f3487ab5","x":-1304,"y":-572,"width":250,"height":60,"type":"text","text":"A"}
 	],
 	"edges":[
 		{"id":"2b9a58ab6c2cb0dd","fromNode":"3ca9cd6e3e18b0af","fromSide":"right","toNode":"b047fbf2d5cad9e6","toSide":"left","label":"sendEvent"},
