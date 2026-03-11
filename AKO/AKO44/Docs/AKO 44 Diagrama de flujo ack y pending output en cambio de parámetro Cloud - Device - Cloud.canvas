@@ -27,7 +27,7 @@
 		{"id":"070b60bd71e40b77","type":"text","text":"***backlog.perte stateController***\n\n`handleAudit`\nauditProcessor.processAuditMessag\n   → Crea el audit en la BD\n   → Actualiza la conf actual del device\n   → Devuelve el audit con { ref, newValue, device, ... }\n2. Si el resultado tiene \"ref\" (línea 157):\n   → backlogProcessor.confirmAudit() (línea 159)\n   → Busca backlog en status \"send\"\n   → Compara ref + newValue\n   → Si match → \"confirmed\"\n","x":-800,"y":-480,"width":300,"height":171},
 		{"id":"922620a6f3487ab5","type":"text","text":"condición para borrar/deshabilitar el dispositivo\n\n`530 = 2` (`param_lic_sys_state = 2`)","x":-1240,"y":-660,"width":250,"height":60},
 		{"id":"1dc845723deaf05c","type":"text","text":"```sh \nnode bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B572E7E audit -pl '{\"id\":[974130021,6000,1,26,0],\"ty\":\"audit\",\"d\":[['\"$(date +%s)\"',530,0,2,1,1]]}' -v\n```","x":290,"y":-671,"width":395,"height":201},
-		{"id":"ec01051a3bacd453","x":-1376,"y":-428,"width":250,"height":60,"type":"text","text":"Se realiza el cambio de parametro"}
+		{"id":"ec01051a3bacd453","type":"text","text":">[!success]\n\n>Se realiza el cambio de parámetro","x":-1488,"y":-340,"width":400,"height":100}
 	],
 	"edges":[
 		{"id":"2b9a58ab6c2cb0dd","fromNode":"3ca9cd6e3e18b0af","fromSide":"right","toNode":"b047fbf2d5cad9e6","toSide":"left","label":"sendEvent"},
@@ -57,7 +57,7 @@
 		{"id":"f2fc632b93c70c45","fromNode":"b047fbf2d5cad9e6","fromSide":"top","toNode":"3ca9cd6e3e18b0af","toSide":"top","label":"ty: audit"},
 		{"id":"ddd536e08e15b36c","fromNode":"ae92cc5faa4935c8","fromSide":"left","toNode":"76eb3bf9c33fdd6d","toSide":"bottom","label":"actualiza a send"},
 		{"id":"016e7566fe1857b2","fromNode":"3ca9cd6e3e18b0af","fromSide":"top","toNode":"070b60bd71e40b77","toSide":"right","label":"ty: audit parseado"},
-		{"id":"dbbd01444a60eed0","fromNode":"070b60bd71e40b77","fromSide":"left","toNode":"76eb3bf9c33fdd6d","toSide":"left","label":"cheakea si log = send"},
-		{"id":"c5b985c95c5742f0","fromNode":"070b60bd71e40b77","fromSide":"left","toNode":"922620a6f3487ab5","toSide":"bottom"}
+		{"id":"c5b985c95c5742f0","fromNode":"070b60bd71e40b77","fromSide":"left","toNode":"922620a6f3487ab5","toSide":"bottom"},
+		{"id":"8c2331c9279ae7d4","fromNode":"070b60bd71e40b77","fromSide":"left","toNode":"ec01051a3bacd453","toSide":"right","label":"si backog = send"}
 	]
 }
