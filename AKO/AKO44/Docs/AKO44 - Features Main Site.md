@@ -1,4 +1,5 @@
 ## KNT-2243
+
 - Necesitamos devolver eventos y alarmas activas, `cuando un select con: eventActive alarmActive` que devuelva la respuesta un array de eventos y alarmas activas, 
 
 - En `micros.event.updater.perte.microservice`es donde se escriben los eventos en las colecciones de perte correspondientes
@@ -12,4 +13,8 @@
 - Ir al micro de `events updater.perte` y actualizar el campo `alarmCount` en `Device` cuando se activa o desactiva una alarma, el número de `alarmCount` ha de coincidir con lo que devuelve `alarmsActive`
 
 [[KNT-2243 - errores]]
+
+## 2253
+
+[[Feature 2253 Flujo de remove Device]]
 
