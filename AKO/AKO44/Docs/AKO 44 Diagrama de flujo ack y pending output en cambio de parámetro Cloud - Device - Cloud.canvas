@@ -34,7 +34,7 @@
 		{"id":"650f7dc8d086588d","x":3720,"y":-280,"width":516,"height":358,"type":"text","text":"\n![[Pasted image 20260311103914.png]]\n\n![[Pasted image 20260311103848.png]]"},
 		{"id":"d58af6d4f8e9dc02","x":1566,"y":-820,"width":529,"height":168,"type":"text","text":">[!error] Error\n\n>Si el dispositivo esta en un estado diferente de `\"online\", \"error\", \"registered\"` no puede recibir mensajes"},
 		{"id":"6d0135275a88af1e","type":"text","text":"![[Pasted image 20260311103403.png]]\n\n![[Pasted image 20260311103427.png]]","x":2860,"y":-391,"width":449,"height":222},
-		{"id":"09e39d27f46825be","x":3124,"y":-18,"width":516,"height":218,"type":"text","text":"![[Pasted image 20260311110411.png]]"}
+		{"id":"09e39d27f46825be","x":3124,"y":-18,"width":516,"height":218,"type":"text","text":"![[Pasted image 20260311110411.png]]\n\n![[Pasted image 20260311113603.png]]"}
 	],
 	"edges":[
 		{"id":"7c5fdbb32d9c5ade","fromNode":"a06779c827f605ba","fromSide":"bottom","toNode":"2c1c2c97c371e259","toSide":"top"},
