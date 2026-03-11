@@ -44,7 +44,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Feature 2253 Flujo de remove Device.md",
+                "file": "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
                 "mode": "source",
                 "source": false
               },
@@ -53,35 +53,21 @@
             }
           },
           {
-            "id": "2112dbd520a73816",
+            "id": "85e06ee78edd9b32",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cambiar el `param_lic_sys_state` =  `2`..md",
+                "file": "AKO/AKO44/Docs/AKO 44 - Feature 2253 - Confirmación ACK ok.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cambiar el `param_lic_sys_state` =  `2`."
-            }
-          },
-          {
-            "id": "abae029f4fbfef83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AKO 44 - Feature 2253 - status pending delete.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AKO 44 - Feature 2253 - status pending delete"
+              "title": "AKO 44 - Feature 2253 - Confirmación ACK ok"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -244,13 +230,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a434fde8bb19fc25",
+  "active": "85e06ee78edd9b32",
   "lastOpenFiles": [
-    "cambiar el `param_lic_sys_state` =  `2`..md",
-    "Feature 2253 Flujo de remove Device.md",
+    "AKO/AKO44/Docs/AKO 44 - Feature 2253 - Confirmación ACK ok.md",
+    "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
+    "AKO/AKO44/Docs/AKO 44 - Feature 2253 - cambio de parámetro.md",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Feature 2253 - status pending delete.md",
+    "cambiar el `param_lic_sys_state` =  `2`..md",
     "Git/Git Main Page.md",
-    "AKO 44 - Feature 2253 - status pending delete.md",
     "attachments/Pasted image 20260311084158.png",
     "attachments/Pasted image 20260311084042.png",
     "Db/Mongo/Mongo - Main Site.md",
@@ -293,8 +281,6 @@
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
     "Shell/Shell - Main Site.md",
     "Db/Db Main Page.md",
-    "AKO/AKO44/AKO 44 - Flujo de cambio de parámetros Cloud - Device.md",
-    "AKO/AKO44/Docs/ako 44 - mapear device.definitions contra Excel File.md",
     "Rabbit/attachments",
     "Rabbit",
     "Bjj",
