@@ -4,12 +4,10 @@
 		{"id":"a2a0fb88862df9b4","type":"text","text":"[[AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas]]","x":-1800,"y":-552,"width":297,"height":78},
 		{"id":"a06779c827f605ba","type":"text","text":"### 1. Primer envío (API → Device)\n\n*Cambio de configuración mediante *\n`api/src/controllers/api/configuration/send-amqp/endConfig12830`","x":-1651,"y":-185,"width":326,"height":171},
 		{"id":"7b10b95462a4505b","type":"text","text":"***backlog.perte mediator***\n\nrecibe el mensaje de la API, lo valida y clasifica, y luego lo reenvía al statecontroller\n\n\n","x":-1240,"y":-185,"width":300,"height":171},
-		{"id":"76eb3bf9c33fdd6d","type":"text","text":"\n\n***backlog.perte stateController***\n\n`handleNewConfiguration`\ncrea/actualiza el backlog en la BD:","x":-800,"y":-185,"width":300,"height":171},
+		{"id":"76eb3bf9c33fdd6d","type":"text","text":"\n\n***backlog.perte stateController***\n\n`handleNewConfiguration`\ncrea/actualiza el backlog en la BD: a `pending`","x":-800,"y":-185,"width":300,"height":171},
 		{"id":"3ca9cd6e3e18b0af","type":"text","text":"Translator\n\n`handleOutput()`\n- Parsea el mensaje del backlog\n- Convierte los parámetros a formato CoAP (registros MODBUS del dispositivo)\n- Guarda en MongoDB con `storeOutput()` → crea documento en `outputMsg` con status `PENDING`\n- Envía** por primera vez: `sendEvent(\"cl.output.perte.coap.driver\", toCLMessage)` → esto baja al CL (Communication Layer) que envía por CoAP al dispositivo","x":-285,"y":-185,"width":285,"height":171},
 		{"id":"b047fbf2d5cad9e6","type":"text","text":"CL","x":440,"y":-129,"width":140,"height":60},
 		{"id":"b03a65f0d3196537","type":"text","text":"Device","x":728,"y":-129,"width":140,"height":60},
-		{"id":"87545b76034fdaa9","type":"text","text":"Primera comunicación \n\n![[Pasted image 20260311100103.png]]\n\n![[Pasted image 20260311100123.png]]","x":-800,"y":312,"width":515,"height":318},
-		{"id":"f3e53fbb9f4622bb","type":"text","text":">[!error] Error\n\n>Si el dispositivo esta en un estado diferente de `\"online\", \"error\", \"registered\"` no puede recibir mensajes","x":-732,"y":680,"width":380,"height":100},
 		{"id":"f7aeb8ac2f7066e2","type":"text","text":"cmd_ack_error","x":427,"y":365,"width":145,"height":50},
 		{"id":"a45afb374b5b307a","type":"text","text":"cmd_ack","x":450,"y":279,"width":105,"height":50},
 		{"id":"7552f512fb1966dc","type":"text","text":"Translator\n\n`handleInput()`\nProcesa el mensaje Busca pending si el mensaje no es `ACK`: getPendingOutputMessage()\nSi hay PENDING → reenvía el comando al device\nupdateRetries() incrementa contador\nSi max_retries → emite \"12830.output.failed\" y cancela\n    → Si no → sendEvent(\"cl.output.perte.coap.driver\", outputMsg)","x":685,"y":279,"width":285,"height":171},
@@ -22,16 +20,17 @@
 		{"id":"67b10b69199e36aa","type":"text","text":">[!tip] Ejemplo\n\nEjemplo el dispositivo se queda sin cobertura y al recuperarla este ahora tiene otra ip y al reconectarse este lo primero que haria seria enviar los datos acumulados","x":685,"y":537,"width":360,"height":116},
 		{"id":"19345539d93a5f84","type":"text","text":"ejemplo de envio `cmd_ack`\n```js\nnode bin/examples/client-perte.js 974130021 <uuid> cmd_ack -v\n```","x":1100,"y":317,"width":280,"height":96},
 		{"id":"9ea66424de53af69","type":"text","text":"Cuando aplica el cambio de parámetro genera un mensaje `ty: \"audit\"` informando del cambio.","x":798,"y":-400,"width":366,"height":86},
-		{"id":"070b60bd71e40b77","type":"text","text":"***backlog.perte stateController***\n\n`handleAudit`\nCuando llega el **audit**, lo confirma de `\"send\"` a `confirmed`\n\n.","x":-1240,"y":-420,"width":300,"height":171},
-		{"id":"ae92cc5faa4935c8","type":"text","text":"***backlog.perte stateController***\n\n`handleConfirmation`\nCuando llega Confirmación `cmd_ack` actualiza el backlog de `\"pending\"` a `\"send\"`:\nEl `cmd_ack` confirma que el dispositivo **recibió** el comando, pero aún no confirma que lo **aplicó**.\n\n\n\n","x":-600,"y":119,"width":300,"height":171},
-		{"id":"294faa19c3b69bd5","x":-925,"y":89,"width":250,"height":60,"type":"text","text":"Crear el backlog de `\"pending\"`"}
+		{"id":"f3e53fbb9f4622bb","type":"text","text":">[!error] Error\n\n>Si el dispositivo esta en un estado diferente de `\"online\", \"error\", \"registered\"` no puede recibir mensajes","x":-747,"y":968,"width":380,"height":100},
+		{"id":"87545b76034fdaa9","type":"text","text":"Primera comunicación \n\n![[Pasted image 20260311100103.png]]\n\n![[Pasted image 20260311100123.png]]","x":-815,"y":600,"width":515,"height":318},
+		{"id":"ae92cc5faa4935c8","type":"text","text":"***backlog.perte stateController***\n\n`handleConfirmation`\nCuando llega Confirmación `cmd_ack` actualiza el backlog de `\"pending\"` a `\"send\"`:\nEl `cmd_ack` confirma que el dispositivo **recibió** el comando, pero aún no confirma que lo **aplicó**.\n\n\n\n","x":-650,"y":214,"width":300,"height":171},
+		{"id":"294faa19c3b69bd5","type":"text","text":"Crear el backlog de `\"pending\"`","x":-1120,"y":325,"width":250,"height":54},
+		{"id":"070b60bd71e40b77","type":"text","text":"***backlog.perte stateController***\n\n`handleAudit`\nCuando llega el **audit**, lo confirma de `\"send\"` a `confirmed`\n\n.","x":-800,"y":-480,"width":300,"height":171}
 	],
 	"edges":[
 		{"id":"2b9a58ab6c2cb0dd","fromNode":"3ca9cd6e3e18b0af","fromSide":"right","toNode":"b047fbf2d5cad9e6","toSide":"left","label":"sendEvent"},
 		{"id":"6afe73755a12e631","fromNode":"a06779c827f605ba","fromSide":"left","toNode":"a2a0fb88862df9b4","toSide":"bottom"},
 		{"id":"06c8c5a76de831af","fromNode":"b047fbf2d5cad9e6","fromSide":"right","toNode":"b03a65f0d3196537","toSide":"left"},
 		{"id":"8f9a8acf32100166","fromNode":"b03a65f0d3196537","fromSide":"right","toNode":"9ea66424de53af69","toSide":"bottom","label":"Si cmd_ack =  ok "},
-		{"id":"016e7566fe1857b2","fromNode":"3ca9cd6e3e18b0af","fromSide":"top","toNode":"070b60bd71e40b77","toSide":"right","label":"ty: audit parseado"},
 		{"id":"049a12bc632b2114","fromNode":"a06779c827f605ba","fromSide":"right","toNode":"7b10b95462a4505b","toSide":"left"},
 		{"id":"1704cde6b2a1932c","fromNode":"7b10b95462a4505b","fromSide":"right","toNode":"76eb3bf9c33fdd6d","toSide":"left"},
 		{"id":"5e2a459b3c59471b","fromNode":"76eb3bf9c33fdd6d","fromSide":"right","toNode":"3ca9cd6e3e18b0af","toSide":"left"},
@@ -53,7 +52,8 @@
 		{"id":"3b2f99eab79c58aa","fromNode":"e478a795281620dd","fromSide":"left","toNode":"ae92cc5faa4935c8","toSide":"right"},
 		{"id":"c08eeef5d0df581b","fromNode":"9ea66424de53af69","fromSide":"left","toNode":"b047fbf2d5cad9e6","toSide":"top","label":"ty: audit"},
 		{"id":"f2fc632b93c70c45","fromNode":"b047fbf2d5cad9e6","fromSide":"top","toNode":"3ca9cd6e3e18b0af","toSide":"top","label":"ty: audit"},
-		{"id":"ff703fe577616c2e","fromNode":"76eb3bf9c33fdd6d","fromSide":"bottom","toNode":"294faa19c3b69bd5","toSide":"top"},
-		{"id":"ddd536e08e15b36c","fromNode":"ae92cc5faa4935c8","fromSide":"left","toNode":"294faa19c3b69bd5","toSide":"right","label":"Send"}
+		{"id":"ddd536e08e15b36c","fromNode":"ae92cc5faa4935c8","fromSide":"left","toNode":"76eb3bf9c33fdd6d","toSide":"bottom","label":"actualiza a send"},
+		{"id":"016e7566fe1857b2","fromNode":"3ca9cd6e3e18b0af","fromSide":"top","toNode":"070b60bd71e40b77","toSide":"right","label":"ty: audit parseado"},
+		{"id":"dbbd01444a60eed0","fromNode":"070b60bd71e40b77","fromSide":"left","toNode":"76eb3bf9c33fdd6d","toSide":"left","label":"cheakea si log = send"}
 	]
 }
