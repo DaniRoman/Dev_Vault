@@ -3,9 +3,6 @@
 		{"id":"5113ef329fd541ee","type":"text","text":"`initializeAuditProcessor`","x":-535,"y":-402,"width":250,"height":60},
 		{"id":"1c358a70e0a63379","type":"text","text":"`akocloud-micros/src/micros/backlog.perte/bl-lib/services/AuditProcessor.ts`\n","x":-567,"y":-680,"width":314,"height":128},
 		{"id":"e67e8263d62b372c","type":"text","text":"si status = pending & param_lic_sys_state =  2 = 2","x":117,"y":-666,"width":317,"height":100},
-		{"id":"9d28fe1a485511dc","type":"text","text":"### 3. Confirmación (Device → Translator)\n\nCuando el dispositivo **aplica** los cambios, envía un `cmd_ack`\n\n```js\n{ \"id\": [974130021, 6000, 1, 26, 0], \"ty\": \"cmd_ack\", \"bid\": 12345 }\n```\n\nEsto entra por\n\n`handleInput`\n\n(líneas 108-122):","x":3604,"y":306,"width":476,"height":234},
-		{"id":"5e86b2188319042c","type":"text","text":"### 1. `PENDING` — API envía configuración\n\nAPI → backlog.mediator → statecontroller.handleNewConfiguration()\n  → Crea/actualiza documento en `backlogs` con status: \"pending\"\n  → Envía al translator → translator crea `outputMsg` PENDING\n  → Envía CoAP al dispositivo","x":1376,"y":841,"width":504,"height":279},
-		{"id":"de4d9c28c6863f61","type":"text","text":"### 2. `SEND` — Dispositivo recibe y envía `cmd_ack`\n\nADevice envía cmd_ack → translator.handleInput()\n  → outputMsgService.confirmOutput() → outputMsg: CONFIRMED\n  → publishParsedData() → llega al statecontroller.handleConfirmation()\n    → backlogProcessor.processConfirmationMessage()\n      → Si bid != null → backlog status: \"pending\" → \"send\"\n      → Si bid == null → backlog status: \"pending\" → \"rejected\"\nEl `cmd_ack` confirma que el dispositivo **recibió** el comando, pero aún no confirma que lo **aplicó**.","x":2184,"y":841,"width":504,"height":279},
 		{"id":"297109263e3f161f","type":"text","text":"### 3. `CONFIRMED` — Dispositivo envía `audit`\n\nDevice aplica el cambio → envía mensaje tipo \"audit\"\n  → translator parsea → statecontroller.handleAudit()\n    → auditProcessor.processAuditMessage() → crea audit en BD\n    → backlogProcessor.confirmAudit()\n      → Busca backlog con status \"send\"\n      → Compara ref + newValue del audit con los del backlog.config\n      → Si match → config item: \"confirmed\"\n      → Si TODOS los items confirmed → backlog status: \"confirmed\" ✅","x":2933,"y":841,"width":504,"height":279},
 		{"id":"9ea66424de53af69","type":"text","text":"Entonces el **audit lo envía el dispositivo automáticamente** cuando aplica el cambio de parámetro. No lo mokeas tú — el dispositivo real, después de recibir el `cmd` y aplicarlo, genera un mensaje `ty: \"audit\"` informando del cambio.","x":3628,"y":917,"width":472,"height":203},
 		{"id":"b94cf35ecf74e02b","type":"text","text":"Mensaje audit \n```sh\nnode bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B572E7E audit -pl '{\"id\":[974130021,6000,1,26,0],\"ty\":\"audit\",\"d\":[[1773220600,530,0,2,1,1]]}' -v\n```","x":4255,"y":888,"width":472,"height":203},
@@ -13,8 +10,7 @@
 		{"id":"a06779c827f605ba","type":"text","text":"### 1. Primer envío (API → Device)\n\n*Cambio de configuración mediante *\n`api/src/controllers/api/configuration/send-amqp/endConfig12830`","x":-1651,"y":-185,"width":326,"height":171},
 		{"id":"7b10b95462a4505b","type":"text","text":"***backlog.perte mediator***\n\nrecibe el mensaje de la API, lo valida y clasifica, y luego lo reenvía al statecontroller\n\n\n","x":-1240,"y":-185,"width":300,"height":171},
 		{"id":"76eb3bf9c33fdd6d","type":"text","text":"\n\n***backlog.perte stateController***\n\n`handleNewConfiguration`\ncrea/actualiza el backlog en la BD:","x":-800,"y":-185,"width":300,"height":171},
-		{"id":"070b60bd71e40b77","type":"text","text":"***backlog.perte stateController***\n\n`handleAudit`\nCuando llega el **audit**, lo confirma de `\"send\"` a `confirmed`\n\n.","x":-1240,"y":300,"width":300,"height":171},
-		{"id":"ae92cc5faa4935c8","type":"text","text":"***backlog.perte stateController***\n\n`handleConfirmation`\nCuando llega Confirmación `cmd_ack` actualiza el backlog de `\"pending\"` a `\"send\"`:\n\n\n\n","x":-1240,"y":60,"width":300,"height":171},
+		{"id":"ae92cc5faa4935c8","type":"text","text":"***backlog.perte stateController***\n\n`handleConfirmation`\nCuando llega Confirmación `cmd_ack` actualiza el backlog de `\"pending\"` a `\"send\"`:\nEl `cmd_ack` confirma que el dispositivo **recibió** el comando, pero aún no confirma que lo **aplicó**.\n\n\n\n","x":-1240,"y":60,"width":300,"height":171},
 		{"id":"a9d2ceba91498e0e","type":"text","text":"Mensaje de Audit","x":515,"y":-425,"width":180,"height":60},
 		{"id":"d4f2417d3f9f34a1","type":"text","text":"PendingOutput Anulado","x":823,"y":-425,"width":245,"height":60},
 		{"id":"3ca9cd6e3e18b0af","type":"text","text":"Translator\n\n`handleOutput()`\n- Parsea el mensaje del backlog\n- Convierte los parámetros a formato CoAP (registros MODBUS del dispositivo)\n- Guarda en MongoDB con `storeOutput()` → crea documento en `outputMsg` con status `PENDING`\n- Envía** por primera vez: `sendEvent(\"cl.output.perte.coap.driver\", toCLMessage)` → esto baja al CL (Communication Layer) que envía por CoAP al dispositivo","x":-285,"y":-185,"width":285,"height":171},
@@ -32,7 +28,8 @@
 		{"id":"cadb246428d5403c","type":"text","text":"![[Pasted image 20260311103403.png]]\n\n![[Pasted image 20260311103427.png]]","x":-119,"y":569,"width":449,"height":222},
 		{"id":"5f9ba7738b33f7f8","type":"text","text":"\n![[Pasted image 20260311103914.png]]\n\n![[Pasted image 20260311103848.png]]","x":-105,"y":860,"width":421,"height":270},
 		{"id":"67b10b69199e36aa","type":"text","text":">[!tip] Ejemplo\n\nEjemplo el dispositivo se queda sin cobertura y al recuperarla este ahora tiene otra ip y al reconectarse este lo primero que haria seria enviar los datos acumulados","x":685,"y":537,"width":360,"height":116},
-		{"id":"19345539d93a5f84","type":"text","text":"ejemplo de envio `cmd_ack`\n```js\nnode bin/examples/client-perte.js 974130021 <uuid> cmd_ack -v\n```","x":1100,"y":317,"width":280,"height":96}
+		{"id":"19345539d93a5f84","type":"text","text":"ejemplo de envio `cmd_ack`\n```js\nnode bin/examples/client-perte.js 974130021 <uuid> cmd_ack -v\n```","x":1100,"y":317,"width":280,"height":96},
+		{"id":"070b60bd71e40b77","type":"text","text":"***backlog.perte stateController***\n\n`handleAudit`\nCuando llega el **audit**, lo confirma de `\"send\"` a `confirmed`\n\n.","x":-1240,"y":-487,"width":300,"height":171}
 	],
 	"edges":[
 		{"id":"2b9a58ab6c2cb0dd","fromNode":"3ca9cd6e3e18b0af","fromSide":"right","toNode":"b047fbf2d5cad9e6","toSide":"left","label":"sendEvent"},
@@ -46,12 +43,9 @@
 		{"id":"f4d54c4954f67acd","fromNode":"7b10b95462a4505b","fromSide":"top","toNode":"5113ef329fd541ee","toSide":"bottom","label":"Gestiona el audit"},
 		{"id":"dad45b67c24086c5","fromNode":"5113ef329fd541ee","fromSide":"top","toNode":"1c358a70e0a63379","toSide":"bottom","label":"Función"},
 		{"id":"b014180e477849e1","fromNode":"1c358a70e0a63379","fromSide":"right","toNode":"e67e8263d62b372c","toSide":"left","label":"Condición para borrar Device"},
-		{"id":"3fd2bc25466a9c74","fromNode":"5e86b2188319042c","fromSide":"right","toNode":"de4d9c28c6863f61","toSide":"left"},
-		{"id":"cf9c9ba344abd8c1","fromNode":"de4d9c28c6863f61","fromSide":"right","toNode":"297109263e3f161f","toSide":"left"},
 		{"id":"2262f6b20f0934aa","fromNode":"297109263e3f161f","fromSide":"right","toNode":"9ea66424de53af69","toSide":"left"},
 		{"id":"049a12bc632b2114","fromNode":"a06779c827f605ba","fromSide":"right","toNode":"7b10b95462a4505b","toSide":"left"},
 		{"id":"1704cde6b2a1932c","fromNode":"7b10b95462a4505b","fromSide":"right","toNode":"76eb3bf9c33fdd6d","toSide":"left"},
-		{"id":"9bb32d4fb4e1fa05","fromNode":"7b10b95462a4505b","fromSide":"bottom","toNode":"ae92cc5faa4935c8","toSide":"top"},
 		{"id":"5e2a459b3c59471b","fromNode":"76eb3bf9c33fdd6d","fromSide":"right","toNode":"3ca9cd6e3e18b0af","toSide":"left"},
 		{"id":"76d1050ad14a2073","fromNode":"3ca9cd6e3e18b0af","fromSide":"bottom","toNode":"e478a795281620dd","toSide":"left","label":"Guarda en db"},
 		{"id":"2a5d3abcd95c2759","fromNode":"87545b76034fdaa9","fromSide":"right","toNode":"e478a795281620dd","toSide":"left","label":"ejemplo"},
@@ -60,13 +54,14 @@
 		{"id":"58ebb73e762dc51a","fromNode":"7552f512fb1966dc","fromSide":"left","toNode":"a45afb374b5b307a","toSide":"right"},
 		{"id":"31446506bfac167d","fromNode":"7552f512fb1966dc","fromSide":"left","toNode":"f7aeb8ac2f7066e2","toSide":"right"},
 		{"id":"541265079575ef72","fromNode":"7552f512fb1966dc","fromSide":"left","toNode":"792ef8f7b927172b","toSide":"right"},
-		{"id":"38943603539f2d4c","fromNode":"a45afb374b5b307a","fromSide":"left","toNode":"e478a795281620dd","toSide":"right","label":"status `CONFIRM`"},
 		{"id":"91ce37d12d59cf4d","fromNode":"792ef8f7b927172b","fromSide":"left","toNode":"e937f1315240b810","toSide":"right","label":"Pending"},
 		{"id":"67ac03ccc9a7f960","fromNode":"e937f1315240b810","fromSide":"bottom","toNode":"cadb246428d5403c","toSide":"top"},
 		{"id":"6b5a0d9e3fc02523","fromNode":"cadb246428d5403c","fromSide":"bottom","toNode":"5f9ba7738b33f7f8","toSide":"top","label":"Llega a las maximas y cancela"},
 		{"id":"0656c37e71364d6b","fromNode":"a45afb374b5b307a","fromSide":"left","toNode":"e9f97744d621e7e1","toSide":"bottom"},
 		{"id":"ea454240fbb1bbcc","fromNode":"792ef8f7b927172b","fromSide":"right","toNode":"67b10b69199e36aa","toSide":"left"},
 		{"id":"3b45f1e4c66a39d5","fromNode":"19345539d93a5f84","fromSide":"left","toNode":"7552f512fb1966dc","toSide":"right"},
-		{"id":"9b6968122b703bab","fromNode":"e937f1315240b810","fromSide":"left","toNode":"b047fbf2d5cad9e6","toSide":"left"}
+		{"id":"9b6968122b703bab","fromNode":"e937f1315240b810","fromSide":"left","toNode":"b047fbf2d5cad9e6","toSide":"left"},
+		{"id":"38943603539f2d4c","fromNode":"a45afb374b5b307a","fromSide":"left","toNode":"e478a795281620dd","toSide":"right","label":"status `CONFIRM`"},
+		{"id":"3b2f99eab79c58aa","fromNode":"e478a795281620dd","fromSide":"left","toNode":"ae92cc5faa4935c8","toSide":"right"}
 	]
 }
