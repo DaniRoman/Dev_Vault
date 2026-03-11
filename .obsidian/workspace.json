@@ -29,8 +29,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
                 "viewState": {
-                  "x": 66.02441614261222,
-                  "y": -10.187639409214883,
+                  "x": -135.6908441598551,
+                  "y": -43.806849459626136,
                   "zoom": 0
                 }
               },
@@ -67,7 +67,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -230,14 +230,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "abae029f4fbfef83",
+  "active": "245c4002f8c368a3",
   "lastOpenFiles": [
+    "Feature 2253 Flujo de remove Device.md",
+    "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
+    "AKO 44 - Feature 2253 - status pending delete.md",
     "attachments/Pasted image 20260311084158.png",
     "attachments/Pasted image 20260311084042.png",
-    "AKO 44 - Feature 2253 - status pending delete.md",
-    "Feature 2253 Flujo de remove Device.md",
     "Db/Mongo/Mongo - Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "attachments/Pasted image 20260310121655.png",
@@ -257,7 +257,6 @@
     "AKO/AKO44/attachments/Pasted image 20260306125329.png",
     "AKO/AKO44/attachments/Pasted image 20260306125300.png",
     "AKO/AKO44/attachments/Pasted image 20260306125206.png",
-    "AKO/AKO44/attachments/Pasted image 20260306125116.png",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
