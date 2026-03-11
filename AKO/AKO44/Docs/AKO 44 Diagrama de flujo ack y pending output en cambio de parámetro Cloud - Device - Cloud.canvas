@@ -37,14 +37,14 @@
 		{"id":"b94cf35ecf74e02b","type":"text","text":"Mensaje audit \n```sh\nnode bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B572E7E audit -pl '{\"id\":[974130021,6000,1,26,0],\"ty\":\"audit\",\"d\":[[1773220600,530,0,2,1,1]]}' -v\n```","x":4255,"y":888,"width":472,"height":203},
 		{"id":"a2a0fb88862df9b4","type":"text","text":"[[AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas]]","x":-1800,"y":-552,"width":297,"height":78},
 		{"id":"a06779c827f605ba","type":"text","text":"### 1. Primer envío (API → Device)\n\n*Cambio de configuración mediante *\n`api/src/controllers/api/configuration/send-amqp/endConfig12830`","x":-1651,"y":-185,"width":326,"height":171},
-		{"id":"76eb3bf9c33fdd6d","type":"text","text":"***backlog.perte mediator***\n\nrecibe el mensaje de la API, lo valida y clasifica, y luego lo reenvía al statecontroller","x":-1240,"y":-185,"width":300,"height":171},
-		{"id":"7b10b95462a4505b","type":"text","text":"***backlog.perte stateController***\n\nGenera el backlog en `handleNewConfiguration`\n","x":-820,"y":-173,"width":265,"height":148}
+		{"id":"7b10b95462a4505b","type":"text","text":"***backlog.perte stateController***\n\n`handleNewConfiguration`\ncrea/actualiza el backlog en la BD:\n\n\n\n","x":-1240,"y":-185,"width":300,"height":171},
+		{"id":"76eb3bf9c33fdd6d","type":"text","text":"***backlog.perte mediator***\n\nrecibe el mensaje de la API, lo valida y clasifica, y luego lo reenvía al statecontroller","x":-800,"y":-185,"width":300,"height":171},
+		{"id":"ae92cc5faa4935c8","type":"text","text":"***backlog.perte stateController***\n\n`handleConfirmation`\nCuando llega Confirmación `cmd_ack` actualiza el backlog de `\"pending\"` a `\"send\"`:\n\n\n\n","x":-1240,"y":80,"width":300,"height":171},
+		{"id":"070b60bd71e40b77","type":"text","text":"***backlog.perte stateController***\n\n`handleConfirmation`\nCuando llega Confirmación `cmd_ack` actualiza el backlog de `\"pending\"` a `\"send\"`:\n\n\n\n","x":-1240,"y":300,"width":300,"height":171}
 	],
 	"edges":[
-		{"id":"beab6132984d8a12","fromNode":"76eb3bf9c33fdd6d","fromSide":"right","toNode":"7b10b95462a4505b","toSide":"left"},
 		{"id":"2b9a58ab6c2cb0dd","fromNode":"3ca9cd6e3e18b0af","fromSide":"right","toNode":"b047fbf2d5cad9e6","toSide":"left"},
 		{"id":"6afe73755a12e631","fromNode":"a06779c827f605ba","fromSide":"left","toNode":"a2a0fb88862df9b4","toSide":"bottom"},
-		{"id":"e2d2d478a5beb60a","fromNode":"7b10b95462a4505b","fromSide":"right","toNode":"3ca9cd6e3e18b0af","toSide":"left"},
 		{"id":"cbcd187ff39feccc","fromNode":"3ca9cd6e3e18b0af","fromSide":"right","toNode":"e478a795281620dd","toSide":"left"},
 		{"id":"06c8c5a76de831af","fromNode":"b047fbf2d5cad9e6","fromSide":"right","toNode":"b03a65f0d3196537","toSide":"left"},
 		{"id":"46a63648efdd4426","fromNode":"58c4cd017fb12b65","fromSide":"left","toNode":"a4303cb7f6cc5cb3","toSide":"bottom"},
@@ -79,6 +79,7 @@
 		{"id":"3fd2bc25466a9c74","fromNode":"5e86b2188319042c","fromSide":"right","toNode":"de4d9c28c6863f61","toSide":"left"},
 		{"id":"cf9c9ba344abd8c1","fromNode":"de4d9c28c6863f61","fromSide":"right","toNode":"297109263e3f161f","toSide":"left"},
 		{"id":"2262f6b20f0934aa","fromNode":"297109263e3f161f","fromSide":"right","toNode":"9ea66424de53af69","toSide":"left"},
-		{"id":"833d7eafbe18034d","fromNode":"a06779c827f605ba","fromSide":"right","toNode":"76eb3bf9c33fdd6d","toSide":"left"}
+		{"id":"049a12bc632b2114","fromNode":"a06779c827f605ba","fromSide":"right","toNode":"7b10b95462a4505b","toSide":"left"},
+		{"id":"1704cde6b2a1932c","fromNode":"7b10b95462a4505b","fromSide":"right","toNode":"76eb3bf9c33fdd6d","toSide":"left"}
 	]
 }
