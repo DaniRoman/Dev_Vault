@@ -6,7 +6,7 @@
 		{"id":"7b10b95462a4505b","type":"text","text":"backlog.perte stateController","x":-480,"y":-140,"width":140,"height":60},
 		{"id":"3ca9cd6e3e18b0af","type":"text","text":"Translator","x":-300,"y":-140,"width":140,"height":60},
 		{"id":"b047fbf2d5cad9e6","type":"text","text":"CL","x":-120,"y":-140,"width":140,"height":60},
-		{"id":"e478a795281620dd","type":"text","text":"PendingOutput ( Pendiente de ser verificado)","x":-130,"y":0,"width":245,"height":60},
+		{"id":"e478a795281620dd","type":"text","text":"PendingOutput ( Pendiente de ser verificado)\nEste mensaje de crea en `handleOutput línea 338:`","x":-130,"y":0,"width":245,"height":60},
 		{"id":"b03a65f0d3196537","type":"text","text":"Device","x":80,"y":-140,"width":140,"height":60},
 		{"id":"a4303cb7f6cc5cb3","type":"text","text":"Anulan","x":-185,"y":169,"width":130,"height":50},
 		{"id":"792ef8f7b927172b","type":"text","text":"Otros : Sample, Events ...","x":115,"y":437,"width":160,"height":58},
