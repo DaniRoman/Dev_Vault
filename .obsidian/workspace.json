@@ -11,17 +11,14 @@
             "id": "85e06ee78edd9b32",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
-                "viewState": {
-                  "x": 291.41151011061305,
-                  "y": -185.25139078291403,
-                  "zoom": 0.028762984951409068
-                }
+                "file": "Db/Mongo/Mongo - Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud"
+              "icon": "lucide-file",
+              "title": "Mongo - Main Site"
             }
           }
         ]
@@ -189,6 +186,7 @@
   },
   "active": "85e06ee78edd9b32",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311113603.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311110411.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311103914.png",
@@ -209,11 +207,9 @@
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
-    "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "Bjj/Bjj Tecniques.md",
     "Git/Git Main Page.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311100123.png",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260311100103.png",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - status pending delete.md",
     "cambiar el `param_lic_sys_state` =  `2`..md",
     "Db/Mongo/Mongo - Main Site.md",
