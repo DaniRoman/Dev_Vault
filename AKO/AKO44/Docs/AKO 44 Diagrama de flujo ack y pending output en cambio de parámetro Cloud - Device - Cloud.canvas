@@ -34,7 +34,11 @@
 		{"id":"650f7dc8d086588d","x":3720,"y":-280,"width":516,"height":358,"type":"text","text":"\n![[Pasted image 20260311103914.png]]\n\n![[Pasted image 20260311103848.png]]"},
 		{"id":"d58af6d4f8e9dc02","x":1566,"y":-820,"width":529,"height":168,"type":"text","text":">[!error] Error\n\n>Si el dispositivo esta en un estado diferente de `\"online\", \"error\", \"registered\"` no puede recibir mensajes"},
 		{"id":"6d0135275a88af1e","type":"text","text":"![[Pasted image 20260311103403.png]]\n\n![[Pasted image 20260311103427.png]]","x":2860,"y":-391,"width":449,"height":222},
-		{"id":"09e39d27f46825be","x":3124,"y":-18,"width":516,"height":218,"type":"text","text":"![[Pasted image 20260311110411.png]]\n\n![[Pasted image 20260311113603.png]]"}
+		{"id":"09e39d27f46825be","x":3124,"y":-18,"width":516,"height":218,"type":"text","text":"![[Pasted image 20260311110411.png]]\n\n![[Pasted image 20260311113603.png]]"},
+		{"id":"5e86b2188319042c","x":1376,"y":841,"width":504,"height":279,"type":"text","text":"### 1. `PENDING` — API envía configuración\n\nAPI → backlog.mediator → statecontroller.handleNewConfiguration()\n  → Crea/actualiza documento en `backlogs` con status: \"pending\"\n  → Envía al translator → translator crea `outputMsg` PENDING\n  → Envía CoAP al dispositivo"},
+		{"id":"de4d9c28c6863f61","type":"text","text":"### 2. `SEND` — Dispositivo recibe y envía `cmd_ack`\n\nADevice envía cmd_ack → translator.handleInput()\n  → outputMsgService.confirmOutput() → outputMsg: CONFIRMED\n  → publishParsedData() → llega al statecontroller.handleConfirmation()\n    → backlogProcessor.processConfirmationMessage()\n      → Si bid != null → backlog status: \"pending\" → \"send\"\n      → Si bid == null → backlog status: \"pending\" → \"rejected\"\nEl `cmd_ack` confirma que el dispositivo **recibió** el comando, pero aún no confirma que lo **aplicó**.","x":2184,"y":841,"width":504,"height":279},
+		{"id":"297109263e3f161f","type":"text","text":"### 3. `CONFIRMED` — Dispositivo envía `audit`\n\nDevice aplica el cambio → envía mensaje tipo \"audit\"\n  → translator parsea → statecontroller.handleAudit()\n    → auditProcessor.processAuditMessage() → crea audit en BD\n    → backlogProcessor.confirmAudit()\n      → Busca backlog con status \"send\"\n      → Compara ref + newValue del audit con los del backlog.config\n      → Si match → config item: \"confirmed\"\n      → Si TODOS los items confirmed → backlog status: \"confirmed\" ✅","x":2933,"y":841,"width":504,"height":279},
+		{"id":"9ea66424de53af69","x":3628,"y":917,"width":472,"height":203,"type":"text","text":"Entonces el **audit lo envía el dispositivo automáticamente** cuando aplica el cambio de parámetro. No lo mokeas tú — el dispositivo real, después de recibir el `cmd` y aplicarlo, genera un mensaje `ty: \"audit\"` informando del cambio."}
 	],
 	"edges":[
 		{"id":"7c5fdbb32d9c5ade","fromNode":"a06779c827f605ba","fromSide":"bottom","toNode":"2c1c2c97c371e259","toSide":"top"},
@@ -73,6 +77,9 @@
 		{"id":"56c43dfc7d65a140","fromNode":"6d0135275a88af1e","fromSide":"bottom","toNode":"e25220e269e3b062","toSide":"top","label":"No confirmado"},
 		{"id":"4ae04f4ca934e025","fromNode":"6d0135275a88af1e","fromSide":"right","toNode":"650f7dc8d086588d","toSide":"left","label":"Maximas alcanzadas"},
 		{"id":"5a222239f2d76c8a","fromNode":"a42d5f949b2ef96d","fromSide":"top","toNode":"d58af6d4f8e9dc02","toSide":"bottom"},
-		{"id":"9163f5ccd744cc20","fromNode":"e25220e269e3b062","fromSide":"top","toNode":"09e39d27f46825be","toSide":"left","label":"Confirmado"}
+		{"id":"9163f5ccd744cc20","fromNode":"e25220e269e3b062","fromSide":"top","toNode":"09e39d27f46825be","toSide":"left","label":"Confirmado"},
+		{"id":"3fd2bc25466a9c74","fromNode":"5e86b2188319042c","fromSide":"right","toNode":"de4d9c28c6863f61","toSide":"left"},
+		{"id":"cf9c9ba344abd8c1","fromNode":"de4d9c28c6863f61","fromSide":"right","toNode":"297109263e3f161f","toSide":"left"},
+		{"id":"2262f6b20f0934aa","fromNode":"297109263e3f161f","fromSide":"right","toNode":"9ea66424de53af69","toSide":"left"}
 	]
 }
