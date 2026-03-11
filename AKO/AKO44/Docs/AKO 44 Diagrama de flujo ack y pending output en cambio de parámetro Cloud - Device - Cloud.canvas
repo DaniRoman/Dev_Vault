@@ -27,13 +27,13 @@
 		{"id":"19345539d93a5f84","type":"text","text":"ejemplo de envio `cmd_ack`\n```js\nnode bin/examples/client-perte.js 974130021 <uuid> cmd_ack -v\n```","x":1100,"y":317,"width":280,"height":96},
 		{"id":"070b60bd71e40b77","type":"text","text":"***backlog.perte stateController***\n\n`handleAudit`\nCuando llega el **audit**, lo confirma de `\"send\"` a `confirmed`\n\n.","x":-1240,"y":-487,"width":300,"height":171},
 		{"id":"b87dfb2db0ae6426","type":"text","text":"### 3. `CONFIRMED` — Dispositivo envía `audit`\n\nDevice aplica el cambio → envía mensaje tipo \"audit\"\n  → translator parsea → statecontroller.handleAudit()\n    → auditProcessor.processAuditMessage() → crea audit en BD\n    → backlogProcessor.confirmAudit()\n      → Busca backlog con status \"send\"\n      → Compara ref + newValue del audit con los del backlog.config\n      → Si match → config item: \"confirmed\"\n      → Si TODOS los items confirmed → backlog status: \"confirmed\" ✅","x":1240,"y":-268,"width":504,"height":279},
-		{"id":"9ea66424de53af69","type":"text","text":"Cuando aplica el cambio de parámetro genera un mensaje `ty: \"audit\"` informando del cambio.","x":798,"y":-400,"width":366,"height":86}
+		{"id":"9ea66424de53af69","type":"text","text":"Cuando aplica el cambio de parámetro genera un mensaje `ty: \"audit\"` informando del cambio.","x":798,"y":-400,"width":366,"height":86},
+		{"id":"bf1ff4e12c05db78","type":"text","text":"Translator\n\n`handleAudit()`\n\ncrea audit en BD","x":-9,"y":-485,"width":285,"height":171}
 	],
 	"edges":[
 		{"id":"2b9a58ab6c2cb0dd","fromNode":"3ca9cd6e3e18b0af","fromSide":"right","toNode":"b047fbf2d5cad9e6","toSide":"left","label":"sendEvent"},
 		{"id":"6afe73755a12e631","fromNode":"a06779c827f605ba","fromSide":"left","toNode":"a2a0fb88862df9b4","toSide":"bottom"},
 		{"id":"06c8c5a76de831af","fromNode":"b047fbf2d5cad9e6","fromSide":"right","toNode":"b03a65f0d3196537","toSide":"left"},
-		{"id":"fcde4850211dfe21","fromNode":"b047fbf2d5cad9e6","fromSide":"top","toNode":"3ca9cd6e3e18b0af","toSide":"top","label":"Audit"},
 		{"id":"8f9a8acf32100166","fromNode":"b03a65f0d3196537","fromSide":"right","toNode":"9ea66424de53af69","toSide":"bottom","label":"Si cmd_ack =  ok "},
 		{"id":"016e7566fe1857b2","fromNode":"3ca9cd6e3e18b0af","fromSide":"top","toNode":"7b10b95462a4505b","toSide":"top","label":"Audit"},
 		{"id":"f4d54c4954f67acd","fromNode":"7b10b95462a4505b","fromSide":"top","toNode":"5113ef329fd541ee","toSide":"bottom","label":"Gestiona el audit"},
@@ -57,6 +57,8 @@
 		{"id":"3b45f1e4c66a39d5","fromNode":"19345539d93a5f84","fromSide":"left","toNode":"7552f512fb1966dc","toSide":"right"},
 		{"id":"9b6968122b703bab","fromNode":"e937f1315240b810","fromSide":"left","toNode":"b047fbf2d5cad9e6","toSide":"left"},
 		{"id":"38943603539f2d4c","fromNode":"a45afb374b5b307a","fromSide":"left","toNode":"e478a795281620dd","toSide":"right","label":"status `CONFIRM`"},
-		{"id":"3b2f99eab79c58aa","fromNode":"e478a795281620dd","fromSide":"left","toNode":"ae92cc5faa4935c8","toSide":"right"}
+		{"id":"3b2f99eab79c58aa","fromNode":"e478a795281620dd","fromSide":"left","toNode":"ae92cc5faa4935c8","toSide":"right"},
+		{"id":"c08eeef5d0df581b","fromNode":"9ea66424de53af69","fromSide":"left","toNode":"b047fbf2d5cad9e6","toSide":"top","label":"ty: audit"},
+		{"id":"f2fc632b93c70c45","fromNode":"b047fbf2d5cad9e6","fromSide":"top","toNode":"bf1ff4e12c05db78","toSide":"right","label":"ty: audit"}
 	]
 }
