@@ -15,13 +15,30 @@
               "state": {
                 "file": "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
                 "viewState": {
-                  "x": 3146.433945420773,
-                  "y": -200.3678908415364,
+                  "x": 3173.85384526101,
+                  "y": -235.40442952628484,
                   "zoom": -0.5804065931385062
                 }
               },
               "icon": "lucide-layout-dashboard",
               "title": "Flujo de samples (telemetría) y eventos del dispositivo"
+            }
+          },
+          {
+            "id": "6adf789cc785a913",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
+                "viewState": {
+                  "x": 527.4790707490932,
+                  "y": -469.8653718298398,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - WorkFlows - Listar Eventos"
             }
           }
         ]
@@ -189,6 +206,8 @@
   },
   "active": "85e06ee78edd9b32",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
+    "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
@@ -210,7 +229,6 @@
     "AKO/AKO44/Docs/attachments/Pasted image 20260311103427.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311103403.png",
     "AKO/AKO44/Docs/KNT-2243 - errores.md",
-    "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/Sin título.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "Bjj/Bjj Tecniques.md",
@@ -224,7 +242,6 @@
     "attachments",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
-    "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - _extraGetOptions.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - checkPrivilege.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.md",
