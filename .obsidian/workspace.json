@@ -11,14 +11,17 @@
             "id": "85e06ee78edd9b32",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Db/Mongo/Mongo - Main Site.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
+                "viewState": {
+                  "x": 141.65206228491567,
+                  "y": 682.8287965948582,
+                  "zoom": 0.04679150686004084
+                }
               },
-              "icon": "lucide-file",
-              "title": "Mongo - Main Site"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud"
             }
           },
           {
@@ -203,19 +206,20 @@
   },
   "active": "85e06ee78edd9b32",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
+    "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "Db/Mongo/Mongo - Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
-    "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
     "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
-    "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - Confirmación ACK ok.md",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - status pending delete.md",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - cambio de parámetro.md",
-    "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
-    "Db/Mongo/Mongo - Main Site.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311113603.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311110411.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311103914.png",
@@ -233,7 +237,6 @@
     "AKO/AKO44/Docs/attachments/Pasted image 20260311100123.png",
     "cambiar el `param_lic_sys_state` =  `2`..md",
     "AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "attachments",
