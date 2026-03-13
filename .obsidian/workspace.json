@@ -11,17 +11,14 @@
             "id": "85e06ee78edd9b32",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
-                "viewState": {
-                  "x": 59.79314237975366,
-                  "y": 41.76496601226566,
-                  "zoom": 0.04679150686004084
-                }
+                "file": "AKO/AKO44/Docs/AKO 44 - Admin.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud"
+              "icon": "lucide-file",
+              "title": "AKO 44 - Admin"
             }
           },
           {
@@ -206,6 +203,8 @@
   },
   "active": "85e06ee78edd9b32",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Admin.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
@@ -215,7 +214,6 @@
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
-    "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - Confirmación ACK ok.md",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - status pending delete.md",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - cambio de parámetro.md",
@@ -253,7 +251,6 @@
     "Express",
     "AKO - feature",
     "AKO/AKO44/Docs/AKO 44 - Status Legacy.md",
-    "Shell/Shell - Main Site.md",
     "Rabbit/attachments",
     "Rabbit",
     "Bjj",
