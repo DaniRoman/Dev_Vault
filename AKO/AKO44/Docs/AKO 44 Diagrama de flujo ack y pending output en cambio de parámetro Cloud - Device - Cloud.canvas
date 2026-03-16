@@ -27,7 +27,8 @@
 		{"id":"070b60bd71e40b77","type":"text","text":"***backlog.perte stateController***\n\n`handleAudit`\nauditProcessor.processAuditMessag\n   → Crea el audit en la BD\n   → Actualiza la conf actual del device\n   → Devuelve el audit con { ref, newValue, device, ... }\n2. Si el resultado tiene \"ref\" (línea 157):\n   → backlogProcessor.confirmAudit() (línea 159)\n   → Busca backlog en status \"send\"\n   → Compara ref + newValue\n   → Si match → \"confirmed\"\n","x":-800,"y":-480,"width":300,"height":171},
 		{"id":"922620a6f3487ab5","type":"text","text":"condición para borrar/deshabilitar el dispositivo\n\n`530 = 2` (`param_lic_sys_state = 2`)","x":-1240,"y":-660,"width":250,"height":60},
 		{"id":"1dc845723deaf05c","type":"text","text":"```sh \nnode bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B572E7E audit -pl '{\"id\":[974130021,6000,1,26,0],\"ty\":\"audit\",\"d\":[['\"$(date +%s)\"',530,0,2,1,1]]}' -v\n```","x":290,"y":-671,"width":395,"height":201},
-		{"id":"ec01051a3bacd453","type":"text","text":">[!success]\n\n>Se realiza el cambio de parámetro","x":-1488,"y":-340,"width":400,"height":100}
+		{"id":"ec01051a3bacd453","type":"text","text":">[!success]\n\n>Se realiza el cambio de parámetro","x":-1488,"y":-340,"width":400,"height":100},
+		{"id":"38bdbc059545e10c","type":"text","text":">[!warning] Atención! Renvio de parametros sin contestación del Device\n\nSi volvemos a renviar cambios de parámetros cuando el Device no a constestado, este añadira esos c","x":-2060,"y":294,"width":572,"height":185}
 	],
 	"edges":[
 		{"id":"2b9a58ab6c2cb0dd","fromNode":"3ca9cd6e3e18b0af","fromSide":"right","toNode":"b047fbf2d5cad9e6","toSide":"left","label":"sendEvent"},
