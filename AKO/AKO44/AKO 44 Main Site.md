@@ -1,4 +1,18 @@
+## Configurar Darwin 2Ry
 
+[Excel de Conf de parámetros en dispositivo](https://ako0-my.sharepoint.com/:x:/r/personal/fmaataoui_ako_com/_layouts/15/Doc.aspx?sourcedoc=%7B14551CBA-3E92-4704-99CC-ACD1E74D41EF%7D&file=Chart%20new%20DARWIN%20Panel.xlsx&wdLOR=c99E32DE4-E50B-3441-A947-77B3FBF12E90&fromShare=true&action=default&mobileredirect=true&wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1773646586414&web=1)
+[Excel de  Chart new Darwin](https://ako0.sharepoint.com/:x:/r/teams/DesarrolloModificaciondeProducto/NEWDARWIN/_layouts/15/Doc.aspx?sourcedoc=%7BEEE089AD-7016-4C7B-9872-92AE4155BE82%7D&file=2024_NEW_DARWIN_PANEL_2RY_REV4.xlsx&action=default&mobileredirect=true)
+
+>[!warning] Como mapear Excel de configuración junto con los parámetros del otro excel
+>
+
+![[Pasted image 20260316084231.png]]
+
+Mirando el nombre del parámetro `Ini1` y el valor un `9` en el excel de configuración de parametros lo busco en el excel de `chart new Darwing` en la sección de `device` encuentro el nombre del parámetro, 
+
+![[Pasted image 20260316084645.png]]
+
+y me quedo con la dirección de modbus la cual utilizare para modificar ese parametro en el dispositivo a traves del programa [[AKO 44 - Configurar Alarmas desde Cloud o en Crudo]]
 ## Configurar alarmas desde cloud, o en crudo desde el device directamente
 [[AKO 44 - Configurar Alarmas desde Cloud o en Crudo]]
 ## Flujo del proyecto general

@@ -57,4 +57,28 @@ Un punto a tener en cuenta es que `cmd` se comporta de dos maneras
 Una ve se mande la auditoria con el 530 que se autodestrulla
 
 
+## AKO 44 - Admin
+
+>[!warning] Importante
+>Utilizar la versión de node `12`
+
+En *Postman* Accedo al `endpoint` de `AKO54-Admin > Token request`
+
+Después de hacer la llamada en la colección de `users` con esta query consigo el token que me genero esa llamada.
+
+![[Pasted image 20260316093657.png]]
+
+En mi local con el admin arrancado accedo con estas credenciales.
+
+```json
+{
+	"username": "fmaataoui@ako.com",
+	"password": "Fmako-1909"
+}
+```
+
+y en la siguiente pagina accedo mediante navegador con 
+
+`http://localhost:3002/#/2falogin?token=a6WeJlXY4uwkyUf76DGIoGCfckWrBbPIOWaVUsMwE6niSCA764`
+
 
