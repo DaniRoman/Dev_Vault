@@ -12,6 +12,7 @@ Una vez tenemos una confirmación `ACK: ok` [[AKO 44 - Feature 2253 - Confirmaci
 >>[!tip] Recuperar un endpoint mediante navegador
 >Para saber el endponit al que apuntar desde el navegador en `devtools > network` puedo ver las llamadas que se hicieron a la `api`
 
+
 >[!success] Flujo para recibir el ACK y el audit del Device 
 > [[AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas]]
 > >[!Success] Flujo de micros para un cambio de parámetros
