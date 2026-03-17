@@ -4,24 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c0f2983c8270cccf",
+        "id": "c26893ee9f5f69ad",
         "type": "tabs",
         "children": [
           {
-            "id": "6adf789cc785a913",
+            "id": "df63855ecf958043",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
-                "viewState": {
-                  "x": -691.7843163932617,
-                  "y": 200.099600180875,
-                  "zoom": -0.09487089452577546
-                }
+                "file": "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud"
+              "icon": "lucide-file",
+              "title": "Feature 2253 Flujo de remove Device"
             }
           }
         ]
@@ -56,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git",
+                "query": "admin",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -187,19 +185,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6adf789cc785a913",
+  "active": "df63855ecf958043",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260316093657.png",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
+    "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
+    "AKO/AKO44/Docs/attachments/Pasted image 20260316093657.png",
     "AKO/AKO44/Docs/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
     "AKO/AKO44/attachments/Pasted image 20260316084645.png",
     "AKO/AKO44/attachments/Pasted image 20260316084231.png",
     "AKO/AKO44/attachments/Pasted image 20260316084200.png",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
     "Db/Mongo/Mongo - Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/AKO 44 - Admin.md",
     "Git/Git Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
