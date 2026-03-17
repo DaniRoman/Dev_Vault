@@ -73,14 +73,9 @@ En `localhost_3002`accedo con estas credenciales..
 
 Esto me generara un token el cual revisare en la colección `users` y el token de `login2faToken: {"token" : xxx }` 
 
-En el navegador, Después de pedir la comprobación,  en la `uri` del navegador accedere a `#/2falogin?token=` por correo voy a la colección
-
 ![[Pasted image 20260316093657.png]]
 
-accedere a la dirección 
+En el navegador, accederé mediante `uri` a `#/2falogin?token=xxx`
 
-y en la siguiente pagina accedo mediante navegador con 
-
-`http://localhost:3002/a6WeJlXY4uwkyUf76DGIoGCfckWrBbPIOWaVUsMwE6niSCA764`
 
 
