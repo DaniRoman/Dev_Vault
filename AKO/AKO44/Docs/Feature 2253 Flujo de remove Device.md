@@ -62,13 +62,7 @@ Una ve se mande la auditoria con el 530 que se autodestrulla
 >[!warning] Importante
 >Utilizar la versión de node `12`
 
-En *Postman* Accedo al `endpoint` de `AKO54-Admin > Token request`
-
-Después de hacer la llamada en la colección de `users` con esta query consigo el token que me genero esa llamada.
-
-![[Pasted image 20260316093657.png]]
-
-En mi local con el admin arrancado accedo con estas credenciales.
+En `localhost_3002`accedo con estas credenciales..
 
 ```json
 {
@@ -77,8 +71,16 @@ En mi local con el admin arrancado accedo con estas credenciales.
 }
 ```
 
+Esto me generara un token el cual revisare en la colección `users` y el token de `login2faToken: {"token" : xxx }` 
+
+En el navegador, Después de pedir la comprobación,  en la `uri` del navegador accedere a `#/2falogin?token=` por correo voy a la colección
+
+![[Pasted image 20260316093657.png]]
+
+accedere a la dirección 
+
 y en la siguiente pagina accedo mediante navegador con 
 
-`http://localhost:3002/#/2falogin?token=a6WeJlXY4uwkyUf76DGIoGCfckWrBbPIOWaVUsMwE6niSCA764`
+`http://localhost:3002/a6WeJlXY4uwkyUf76DGIoGCfckWrBbPIOWaVUsMwE6niSCA764`
 
 
