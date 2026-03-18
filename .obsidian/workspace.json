@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Git Main Page.md",
+                "file": "AKO/Landing-Page/Landing-Page Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git Main Page"
+              "title": "Landing-Page Main Site"
             }
           }
         ]
@@ -186,10 +186,10 @@
   },
   "active": "df63855ecf958043",
   "lastOpenFiles": [
+    "Git/Git Main Page.md",
     "AKO/Landing-Page/Landing-Page Main Site.md",
     "AKO/AKO44/Feat.md",
     "AKO/Landing-Page/Sin nombre",
-    "Git/Git Main Page.md",
     "AKO/AKO44/attachments/Pasted image 20260317154528.png",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - Confirmación ACK ok.md",
