@@ -71,8 +71,9 @@ Es como una oferta de actualización disponible, un Modelo/documento de base de 
 >[!warning]
 >Asegurarme que mi `device` coincida con esa `commercialVersion` y `comercialName` y también el `firmwareUpdate` que cree
 
-- Fijarme en la `firmwareVersion`
-
+- Fijarme en la `firmwareVersion` de mi `device` que no sea menor que `minVersion` que marca el la que marca el `firmwareUpdate` de ser asi no se mostrara en la pantalla administrador.
+- En el administrador Selecciono Commercial Version y subo un archivo Random.
+- 
 
 
 
