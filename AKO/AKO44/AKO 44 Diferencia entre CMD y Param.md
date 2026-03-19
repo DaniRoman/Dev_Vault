@@ -7,65 +7,21 @@
 	- a partir de ahora trabaja con este valor
 	- cambia la **configuración**
 	- Cambiar el SetPoint que el equipo Perte trabaje a **4 ºC** en vez de 6 ºC.
-- **`CMD`** = “qué acción quiero que haga ahora”
-	- dispara una **acción puntual**
+	- - “tu setpoint ahora será 4”
+	- “usa esta plantilla/configuración”
+	- “trabaja con estos parámetros”
+- **`CMD`** = “qué acción quiero que haga ahora” no estás cambiando la configuración base del equipo, sino diciendo:
+	- “haz esto ahora”
+	- lanzar una acción manual
+	- ejecutar una orden concreta
+	- disparar una función del dispositivo ahora mismo
+	- dispara una **acción puntual
+	- - “ejecuta esta orden”
+	- “haz esta maniobra”
+	- “lanza esta acción ahora”
 
 
 
-
-
-
-En vuestro código esto encaja con `ParamParser`, porque ahí existen cosas como:
-- `setPointValue`
-- `configurations`
-- `defaultParameters`
-- `isFirstActivation`
-
-O sea, `PARAM` se usa para mandar configuración del equipo.
-
----
-
-### Caso 2: ejecutar una acción puntual
-Ahora imagina que al Perte le dices algo como:
-- lanzar una acción manual
-- ejecutar una orden concreta
-- disparar una función del dispositivo ahora mismo
-
-Eso es un **`CMD`**.
-
-¿Por qué?
-Porque no estás cambiando la configuración base del equipo, sino diciendo:
-- “haz esto ahora”
-
-En el código, eso entra como:
-- `cmd_ref`
-- `cmd_value`
-
-y lo procesa `CMDParser`.
-
----
-
-## Una forma de recordarlo
-
-### `PARAM`
-Es como decirle al Perte:
-
-- “tu setpoint ahora será 4”
-- “usa esta plantilla/configuración”
-- “trabaja con estos parámetros”
-
-Es una **forma de operar**.
-
-### `CMD`
-Es como decirle al Perte:
-
-- “ejecuta esta orden”
-- “haz esta maniobra”
-- “lanza esta acción ahora”
-
-Es una **orden puntual**.
-
----
 
 ## Ejemplo comparando ambos
 
