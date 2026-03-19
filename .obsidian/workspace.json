@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "65126b68744d60da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AKO/AKO44/AKO 44 Diferencia entre CMD y Param.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AKO 44 Diferencia entre CMD y Param"
+            }
+          },
+          {
             "id": "03e4bacd481d601f",
             "type": "leaf",
             "state": {
@@ -35,7 +49,8 @@
               "title": "Feature 2253 Flujo de remove Device - Errores & Bugs"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,12 +213,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "df63855ecf958043",
+  "active": "65126b68744d60da",
   "lastOpenFiles": [
+    "AKO/AKO44/AKO 44 Diferencia entre CMD y Param.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device - Errores & Bugs.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/Landing-Page/Landing-Page Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
@@ -248,7 +264,6 @@
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.md",
     "Obsidian/Obsidian Main Site.md",
     "Lenguajes/JavaScript/JavaScript.md",
-    "Express/Express Main Site.md",
     "Express",
     "AKO - feature",
     "Rabbit/attachments",
