@@ -23,24 +23,6 @@
 
 
 
-## Ejemplo comparando ambos
-
-### `PARAM`
-“Cambia el setpoint del Perte a 4 ºC”
-
-Resultado esperado:
-- el valor configurado del equipo cambia
-- ese valor queda como nueva referencia de funcionamiento
-
-### `CMD`
-“Ejecuta ahora una acción X del Perte”
-
-Resultado esperado:
-- el equipo hace una acción concreta
-- no necesariamente cambia su configuración permanente
-
----
-
 ## En vuestro código, qué diferencia práctica tienen
 
 ### `PARAM`
