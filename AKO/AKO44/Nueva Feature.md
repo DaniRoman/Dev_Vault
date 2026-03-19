@@ -1,8 +1,6 @@
 Conexión layer 
-/Fota
-/PLMN
 
-Administración > FirmwareUpdate > Launch firmware, si es nuevo va a un topic si es viejo a otor
+Administración > FirmwareUpdate > Launch firmware, buscar este endPoint si es nuevo va a un topic si es viejo a otro
 
 Esos topics me llevan a la conexión layer para que esta envie un cmd con petición de firmware update
 
