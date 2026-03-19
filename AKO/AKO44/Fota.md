@@ -53,4 +53,11 @@ Eso indica que el device también informa de:
 
 ### firmwareUpdate 
 
-Es como una oferta de actualización disponible, un Modelo/documento de base de datos que **apunta a un archivo** de firmware, define **para qué devices aplicay qué **versión** representa
+Es como una oferta de actualización disponible, un Modelo/documento de base de datos que **apunta a un archivo** de firmware, define para qué devices aplica, y qué **versión** representa.
+
+- `version` → versión del firmware a instalar
+- `deviceDefinition` → a qué familia de dispositivos aplica
+- `commercialVersion[]` → a qué variantes comerciales aplica
+- `minVersion` → desde qué versión mínima se permite actualizar
+- `file` / `filePath` → el binario real del firmware
+- `active` → si está publicado o no
