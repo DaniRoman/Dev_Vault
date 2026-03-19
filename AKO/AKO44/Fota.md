@@ -50,3 +50,7 @@ Eso indica que el device también informa de:
 - revisión de tabla PLMN
 
 ---
+
+### firmwareUpdate 
+
+Es como una oferta de actualización disponible, un Modelo/documento de base de datos que **apunta a un archivo** de firmware, define **para qué devices aplicay qué **versión** representa
