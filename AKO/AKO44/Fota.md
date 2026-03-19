@@ -61,3 +61,18 @@ Es como una oferta de actualización disponible, un Modelo/documento de base de 
 - `minVersion` → desde qué versión mínima se permite actualizar
 - `file` / `filePath` → el binario real del firmware
 - `active` → si está publicado o no
+
+---
+
+Segun el documento always on Device este es el protocolo para actualizar un firmware
+
+```js
+{
+  "id": 974130021,
+  "ty": "cmd",
+  "bid": 1,
+  "d": [
+    [5, 1]
+  ]
+}
+```
