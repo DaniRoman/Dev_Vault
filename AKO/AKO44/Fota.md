@@ -66,7 +66,16 @@ Es como una oferta de actualización disponible, un Modelo/documento de base de 
 
 ***Como añadir un `firmwareupdate` para mi `device`***
 - Crear un `firmwareUpdate` nuevo con una `deviceDefinition` igual al de mi `device` 
-- En el `deviceDefinition` esta definido la `commercialVersion`  
+- En el `deviceDefinition` esta definido la `commercialVersion` de los dispositivos para esa definición 
+
+>[!warning]
+>Asegurarme que mi `device` coincida con esa `commercialVersion` y `comercialName` y también el `firmwareUpdate` que cree
+
+- Fijarme en la `firmwareVersion`
+
+
+
+
 
 ---
 
