@@ -1,6 +1,6 @@
 Conexión layer 
 
-Administración > FirmwareUpdate > Launch firmware, buscar este endPoint si es nuevo va a un topic si es viejo a otro
+Administración > FirmwareUpdate > Launch firmware, buscar este endPoint y hacer un fork, si es nuevo va a un topic si es viejo a otro
 
 Esos topics me llevan a la conexión layer para que esta envie un cmd con petición de firmware update
 
