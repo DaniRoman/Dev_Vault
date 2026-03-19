@@ -11,17 +11,14 @@
             "id": "063f8d7a4e72bf39",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
-                "viewState": {
-                  "x": -3474,
-                  "y": 676,
-                  "zoom": -1.9167799227741056
-                }
+                "file": "AKO/AKO44/Fota.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Ako44 - Mok device conexión Script"
+              "icon": "lucide-file",
+              "title": "Fota"
             }
           }
         ]
@@ -56,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "always",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -188,8 +184,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "063f8d7a4e72bf39",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/Fota.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device - Errores & Bugs.md",
@@ -238,7 +235,6 @@
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - checkPrivilege.canvas",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.md",
     "Obsidian/Obsidian Main Site.md",
-    "Lenguajes/JavaScript/JavaScript.md",
     "Express",
     "AKO - feature",
     "Rabbit/attachments",
