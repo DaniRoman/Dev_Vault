@@ -1,3 +1,4 @@
+## Protocolo de comunicación 
 ## Configurar Darwin 2Ry
 
 [Excel de Conf de parámetros en dispositivo](https://ako0-my.sharepoint.com/:x:/r/personal/fmaataoui_ako_com/_layouts/15/Doc.aspx?sourcedoc=%7B14551CBA-3E92-4704-99CC-ACD1E74D41EF%7D&file=Chart%20new%20DARWIN%20Panel.xlsx&wdLOR=c99E32DE4-E50B-3441-A947-77B3FBF12E90&fromShare=true&action=default&mobileredirect=true&wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1773646586414&web=1)
