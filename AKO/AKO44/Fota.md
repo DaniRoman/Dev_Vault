@@ -64,6 +64,12 @@ Es como una oferta de actualización disponible, un Modelo/documento de base de 
 
 ---
 
+***Como añadir un `firmwareupdate` para mi `device`***
+- Crear un `firmwareUpdate` nuevo con una `deviceDefinition` igual al de mi `device` 
+- En el `deviceDefinition` esta definido la `commercialVersion`  
+
+---
+
 Segun el documento always on Device este es el protocolo para actualizar un firmware
 
 ```js
