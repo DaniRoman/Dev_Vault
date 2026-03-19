@@ -4,49 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c26893ee9f5f69ad",
+        "id": "ab856523bbe99389",
         "type": "tabs",
         "children": [
           {
-            "id": "df63855ecf958043",
+            "id": "063f8d7a4e72bf39",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Diferencia entre CMD y Param.md",
+                "file": "AKO/AKO44/Nueva Feature.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 Diferencia entre CMD y Param"
-            }
-          },
-          {
-            "id": "65126b68744d60da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AKO/AKO44/AKO 44 Diferencia entre CMD y Param.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AKO 44 Diferencia entre CMD y Param"
-            }
-          },
-          {
-            "id": "03e4bacd481d601f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device - Errores & Bugs.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Feature 2253 Flujo de remove Device - Errores & Bugs"
+              "title": "Nueva Feature"
             }
           }
         ]
@@ -212,13 +184,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "df63855ecf958043",
+  "active": "063f8d7a4e72bf39",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device - Errores & Bugs.md",
     "AKO/AKO44/AKO 44 Diferencia entre CMD y Param.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
-    "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device - Errores & Bugs.md",
     "AKO/Landing-Page/Landing-Page Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
@@ -228,7 +200,7 @@
     "AKO/Landing-Page/attachments",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "Git/Git Main Page.md",
-    "AKO/AKO44/Feat.md",
+    "AKO/AKO44/Nueva Feature.md",
     "AKO/Landing-Page/Sin nombre",
     "AKO/AKO44/attachments/Pasted image 20260317154528.png",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - Confirmación ACK ok.md",
