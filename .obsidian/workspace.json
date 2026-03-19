@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "file": "AKO/AKO44/AKO 44 Diferencia entre CMD y Param.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "title": "AKO 44 Diferencia entre CMD y Param"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "Feature 2253 Flujo de remove Device - Errores & Bugs"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -213,10 +212,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "65126b68744d60da",
+  "active": "df63855ecf958043",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO 44 Diferencia entre CMD y Param.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/AKO 44 Diferencia entre CMD y Param.md",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device - Errores & Bugs.md",

@@ -1,5 +1,7 @@
 
-## Diferencia simple
+>[!warning] Diferencia Simple 
+>`cmd` es cuando cambio de parámetro `params` solo se hace desde un `endpoint`
+
 
 
 - **`PARAM`** = “cómo quiero que quede configurado el equipo” no le estás diciendo “haz algo ahora”, sino:
@@ -11,7 +13,7 @@
 	- “usa esta plantilla/configuración”
 	- “trabaja con estos parámetros”
 - **`CMD`** = “qué acción quiero que haga ahora” no estás cambiando la configuración base del equipo, sino diciendo:
-	- “haz esto ahora”
+	- “haz esto ahora, forzar encendido ahora”
 	- lanzar una acción manual
 	- ejecutar una orden concreta
 	- disparar una función del dispositivo ahora mismo
@@ -21,115 +23,15 @@
 	- “lanza esta acción ahora”
 
 
-
-
-## En vuestro código, qué diferencia práctica tienen
-
-### `PARAM`
-Pasa por:
-- `handleOutputParam(...)`
-- `processMessage(... MessageType.PARAM ...)`
-- `ParamParser`
-- `ParamMsgService`
-
-Y después:
-- si ya había un `PENDING`, compara el mensaje completo
-- si es igual, no lo vuelve a guardar
-- si es distinto, lo reemplaza
-
-### `CMD`
-Pasa por:
-- `handleOutputCommand(...)`
-- `processMessage(... MessageType.CMD ...)`
-- `CMDParser`
-- `OutputMsgService`
-
-Y después:
-- si ya había un `PENDING`, fusiona `payload.d`
-- por eso puede acumular varias órdenes
-
----
-
-## La diferencia “de negocio”
-
-La forma más útil de verlo es esta:
-
-### Un `PARAM`
-dice:
-> “quiero que el dispositivo quede así configurado”
-
-### Un `CMD`
-dice:
-> “quiero que el dispositivo haga esto”
-
----
-
-## Regla mental muy buena
-
-Hazte esta pregunta:
-
-### ¿Estoy cambiando una configuración estable?
-- Sí → **`PARAM`**
-
-### ¿Estoy pidiendo una acción puntual?
-- Sí → **`CMD`**
-
----
-
-## Ejemplo todavía más intuitivo
-
-### Termostato de casa
-
-- **`PARAM`**: cambiar la temperatura objetivo de 21 a 19
-- **`CMD`**: pulsar “forzar encendido ahora”
-
-El primero cambia la configuración.  
-El segundo ejecuta una acción.
-
-Con Perte pasa lo mismo.
-
----
-
-## En vuestro translator
-
-Ahora mismo la separación está bastante clara:
-
-- `PARAM` usa campos de configuración como `setPointValue` y `configurations`
-- `CMD` usa campos de orden como `cmd_ref` y `cmd_value`
-
-Así que, resumiendo:
-
-- **`PARAM` en Perte** = cambio de parámetros/configuración
-- **`CMD` en Perte** = orden puntual al equipo
-
-## Si quieres
-
-Puedo darte ahora **un ejemplo realista de JSON de entrada** de:
-- un `PARAM` para cambiar setpoint
-- y un `CMD` para lanzar una orden
-
-y te digo exactamente por qué uno cae en `handleOutputParam` y el otro en `handleOutputCommand`.
-
-
-
----
-
-
-## La clave: en Perte **no es lo mismo** “tipo de JSON” que “intención funcional”
-
-Con ese documento, para saber qué estás mandando tienes que mirar **dos cosas**:
+Con ese documento [[AKO 44 Main Site#^91b034]] , para saber qué estoy mandando miro **dos cosas**:
 
 1. **el campo `ty`**
 2. **el contenido de `d`**
 
 ---
 
-## Regla 1: mira `ty`
+ Si `ty = "param"`
 
-### Si `ty = "param"`
-Estás mandando un **mensaje PARAM**.
-
-Eso significa:
 - formato específico para parámetros
 - lleva `attr`
 - lleva `d` como lista plana `registro, valor, registro, valor...`
