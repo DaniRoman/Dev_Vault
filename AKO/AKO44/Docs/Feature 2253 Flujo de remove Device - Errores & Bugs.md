@@ -1,0 +1,1 @@
+Cuando llega un mensaje cmd para cambio de parmetros 

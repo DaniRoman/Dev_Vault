@@ -1,6 +1,9 @@
 >[!example] Feature 2253
 >[Enlace a tarea](https://ako-team.atlassian.net/browse/KNT-2253)
 
+>[!error] Errores & Bugs
+>[[Feature 2253 Flujo de remove Device - Errores & Bugs ]]
+
 ***Objetivo***
 Al Eliminar un `Device` este tiene que setearse en`status: pending delete` [[AKO 44 - Feature 2253 - status pending delete]] . Se le envía un `cmd` para  cambiar el `param_lic_sys_state` =  `2`.
 [[AKO 44 - Feature 2253 - cambio de parámetro]]
