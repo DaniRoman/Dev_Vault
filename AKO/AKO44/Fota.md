@@ -23,18 +23,6 @@ y el backend le responde con un fichero o contenido concreto.
 - cloud responde con el binario/contenido del firmware si existe
 
 
-Segun el documento always on Device este es el protocolo para actualizar un firmware
-
-```js
-{
-  "id": 974130021,
-  "ty": "cmd",
-  "bid": 1,
-  "d": [
-    [5, 1]
-  ]
-}
-```
 
 >[!tip] Flujo envio `ack` y `/fota`
 >El Device una vez envia el mensaje `ack` después no enviara un `audit` (esto lo hace solo para parámetros) en ves de esto enviara otro tipo de mensaje (Buscar mensaje)
