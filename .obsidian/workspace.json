@@ -35,8 +35,7 @@
               "title": "AKO  44 - Admin Main Page"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -201,8 +200,9 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "3aff379373129f5d",
+  "active": "063f8d7a4e72bf39",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/AKO 44 Diferentes casuísticas en la conexión layer.md",
     "AKO/AKO44/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
@@ -211,7 +211,6 @@
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device - Errores & Bugs.md",
     "AKO/Landing-Page/Landing-Page Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
