@@ -36,9 +36,6 @@ Segun el documento always on Device este es el protocolo para actualizar un firm
 }
 ```
 
->[!warning] Firmaware Version
->`firmware` esta es la versión inmutable del dispositivo, `firmware revision` es la actualización de la versión base `firmaware subrevision` esta es la actualización actual de `firmware revision` 
-
 >[!tip] Flujo envio `ack` y `/fota`
 >El Device una vez envia el mensaje `ack` después no enviara un `audit` (esto lo hace solo para parámetros) en ves de esto enviara otro tipo de mensaje (Buscar mensaje)
 
