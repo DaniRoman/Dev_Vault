@@ -17,11 +17,14 @@ Ahí hace esto:
 3. mira si la URL termina en algo especial:
     
     - `/fota`
-        
     - `/dfota`
-        
     - `/plmn`
-        
     - `/link`
         
 4. monta `messageParseCl`
+
+
+- `POST` → `requestAction = create`, la intención suele venir en el payload.
+- `GET` → `requestAction = retrieve`, la intención puede venir en la ruta.
+- Si la URL acaba en `/fota`, `/dfota`, `/plmn` o `/link`, se rellena `retiveAction`.
+- `/fota` no necesita body tipo traductor; la CL lo identifica por la URL.
