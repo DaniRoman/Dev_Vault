@@ -48,15 +48,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
                 "viewState": {
-                  "x": -3756.4804479362515,
-                  "y": 1089.631690369097,
-                  "zoom": 0.06942152577245798
+                  "x": 1342.1015420899348,
+                  "y": -106.97021379676258,
+                  "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Ako44 - Mok device conexión Script"
+              "title": "AKO 44 - Flujo para Actualizar firmware"
             }
           }
         ]
@@ -226,6 +226,7 @@
   },
   "active": "063f8d7a4e72bf39",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
@@ -235,7 +236,6 @@
     "AKO/AKO44/Docs/AKO 44 Diferencia entre CMD y Param.md",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
-    "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device - Errores & Bugs.md",
     "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
