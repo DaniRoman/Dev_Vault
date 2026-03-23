@@ -22,12 +22,12 @@ y el backend le responde con un fichero o contenido concreto.
 - el dispositivo pregunta “¿tengo firmware nuevo?”
 - cloud responde con el binario/contenido del firmware si existe
 
-
+## Flujo `Device` envia `Request fota`
 
 >[!tip] Flujo envio `ack` y `/fota`
 >El Device una vez envia el mensaje `ack` después no enviara un `audit` (esto lo hace solo para parámetros) en ves de esto enviara otro tipo de mensaje (Buscar mensaje)
-
-### Para que el device entre en `/fota`, en `client-perte` necesitas:
+ 
+ Para que el device entre en `/fota`, en `client-perte` necesitas:
 
 El `cmd_ack` solo confirma la orden.
 
@@ -44,10 +44,7 @@ Que el device tenga:
 
 Y que exista un `firmwareUpdate` compatible.
 
-
-## Porque `/fota` no va por el carril de “mensaje del device”
-
-Hay dos flujos distintos en Perte:
+### Hay dos flujos distintos en Perte:
 
 ### 1) Mensajes normales del device
 - método `POST`
@@ -62,9 +59,7 @@ Hay dos flujos distintos en Perte:
 - **no depende de `ty`**
 - entra por la URL, no por el body
 
----
 
-## No hace falta CBOR
 
 Porque **no estás enviando un mensaje** con campos como `ty`, `id`, `d`, etc.
 

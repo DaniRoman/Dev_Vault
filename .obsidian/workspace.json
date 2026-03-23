@@ -50,8 +50,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
                 "viewState": {
-                  "x": 2572.9579121693423,
-                  "y": -302.5728904537007,
+                  "x": 2496.550616600224,
+                  "y": -526.7009574564429,
                   "zoom": 0
                 }
               },
@@ -224,10 +224,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "063f8d7a4e72bf39",
+  "active": "ffe94eef894b9c91",
   "lastOpenFiles": [
-    "AKO/AKO44/Fota.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+    "AKO/AKO44/Fota.md",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/Landing-Page/Landing-Page Main Site.md",
