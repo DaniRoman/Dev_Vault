@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -185,7 +184,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "063f8d7a4e72bf39",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/AKO 44 Diferencia entre CMD y Param.md",

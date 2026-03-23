@@ -189,3 +189,6 @@ No por el contenido del body.
 **Sin CBOR ni CRC porque `/fota` no es un mensaje del traductor, sino una petición retrieve por `GET`, y en vuestro backend esa petición se identifica por la URL y acepta payload vacío.**
 
 Si quieres, te explico ahora **por qué en cambio el `cmd_ack` sí necesita CBOR + CRC**.
+
+
+[[AKO 44 Diferentes casuisticas en la ]]
