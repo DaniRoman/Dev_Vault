@@ -191,4 +191,4 @@ No por el contenido del body.
 Si quieres, te explico ahora **por qué en cambio el `cmd_ack` sí necesita CBOR + CRC**.
 
 
-[[AKO 44 Diferentes casuisticas en la ]]
+[[AKO 44 Diferentes casuísticas en la conexión layer]]
