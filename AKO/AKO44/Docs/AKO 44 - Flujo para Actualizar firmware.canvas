@@ -7,7 +7,8 @@
 		{"id":"53b4f1364fc49b3c","x":223,"y":121,"width":637,"height":319,"type":"text","text":">[!tip] `firmwareVersion`, `firmwareRevision`, `firmwareSubrevision`\n\n- **`firmwareVersion`** suele ser el **código interno/base** de la versión de firmware.\n- **`firmwareRevision`** indica una **revisión principal** sobre esa base.\n- **`firmwareSubrevision`** indica una **subrevisión o parche** dentro de esa revisión.\n- Con esos valores, se leería como una versión base **6000**, revisión **1**, subrevisión **26**.\n- En la práctica: `firmwareVersion` identifica la familia/base y `revision/subrevision` afinan la versión exacta."},
 		{"id":"9427f0178c19c9c3","x":306,"y":-120,"width":520,"height":107,"type":"text","text":">[!question] Preguntar\n>Cuando creo un `firmwareUpdate` nuevo a que aplica a `firmwareVersion`, `firmwareRevision`, `firmwareSubrevision`"},
 		{"id":"7c924cfad252e4e7","type":"text","text":"Confirmo cambios y lanzo el firmware para el `Device con serial number`\n","x":860,"y":-600,"width":186,"height":160,"color":"5"},
-		{"id":"07be00c8f70adbec","type":"text","text":"`api`\n","x":1420,"y":-600,"width":186,"height":160,"color":"5"}
+		{"id":"07be00c8f70adbec","type":"text","text":"`POST /api/firmware-update/:id/launch`\n","x":1420,"y":-600,"width":240,"height":160,"color":"5"},
+		{"id":"1641f5931609169c","x":1352,"y":-296,"width":308,"height":176,"type":"text","text":"Al entrar en este controlador y diferenciar "}
 	],
 	"edges":[
 		{"id":"7c456f413caa9bc6","fromNode":"8a876cc93983611d","fromSide":"bottom","toNode":"24ea27fa8db7eb58","toSide":"top"},
