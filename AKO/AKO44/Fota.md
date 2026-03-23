@@ -90,3 +90,102 @@ Segun el documento always on Device este es el protocolo para actualizar un firm
   ]
 }
 ```
+
+>[!warning] Firmaware Version
+>`firmware` esta es la versión inmutable del dispositivo, `firmware revision` es la actualización de la versión base `firmaware subrevision` esta es la actualización actual de `firmware revision` 
+
+>[!tip] Flujo envio `ack` y `/fota`
+>El Device una vez envia el mensaje `ack` después no enviara un `audit` (esto lo hace solo para parámetros) en ves de esto enviara otro tipo de mensaje (Buscar mensaje)
+
+### Para que el device entre en `/fota`, en `client-perte` necesitas:
+
+El `cmd_ack` solo confirma la orden.
+
+Después, el cliente/device tiene que lanzar explícitamente una **request GET `/${serial}/fota`** para descargar el firmware. Y para que responda con firmware, tienen que cumplirse estas condiciones
+
+Aunque hagas bien el `GET /fota`, si no hay match te devolverá error.
+Que el device tenga:
+
+- `deviceDefinition`
+- `commercialVersion`
+- `firmwareVersion`
+- licencia/estado válido
+- existencia en `device` y `manufactured`
+
+Y que exista un `firmwareUpdate` compatible.
+
+
+## Porque `/fota` no va por el carril de “mensaje del device”
+
+Hay dos flujos distintos en Perte:
+
+### 1) Mensajes normales del device
+- método `POST`
+- llevan `payload`
+- ese payload va en **CBOR**
+- y se protege con **CRC**
+- ejemplos: `sample`, `status`, `event`, `cmd_ack`, `param_ack`
+
+### 2) Retrieve de firmware
+- método `GET`
+- ruta `/{serial}/fota`
+- **no depende de `ty`**
+- entra por la URL, no por el body
+
+---
+
+## No hace falta CBOR
+
+Porque **no estás enviando un mensaje** con campos como `ty`, `id`, `d`, etc.
+
+En `fota` lo único que le dice al backend lo que quieres es:
+
+- el método: `GET`
+- la ruta: `/123456/fota`
+
+O sea, la intención ya va en la **URL**, no en un payload serializado. El CRC se usa para validar el **payload recibido**.
+
+Si no mandas payload:
+- no hay nada que serializar
+- no hay nada que firmar con CRC
+
+Y además el propio `CheckIntegrity` está preparado para eso:
+- si el payload no existe o mide menos de 4 bytes
+- devuelve `success` con payload vacío
+
+Es decir:
+- para `GET /fota`
+- el backend **tolera request vacía**
+
+---
+
+## La idea clave
+
+### En `POST`
+el backend entiende **qué quieres** por el **payload**
+
+### En `GET /fota`
+el backend entiende **qué quieres** por la **ruta**
+
+Por eso:
+
+- `POST` → CBOR + CRC
+- `GET /fota` → sin body, sin CBOR, sin CRC
+
+
+Si mandaras CBOR/CRC en `fota`, no estarías siguiendo el patrón que usa vuestro micro para retrieve.
+
+El micro decide `fota` por algo como:
+
+- `request.method === "GET"`
+- `request.url.endsWith("/fota")`
+
+No por el contenido del body.
+
+---
+
+## Resumen corto
+
+**Sin CBOR ni CRC porque `/fota` no es un mensaje del traductor, sino una petición retrieve por `GET`, y en vuestro backend esa petición se identifica por la URL y acepta payload vacío.**
+
+Si quieres, te explico ahora **por qué en cambio el `cmd_ack` sí necesita CBOR + CRC**.
