@@ -23,23 +23,6 @@ y el backend le responde con un fichero o contenido concreto.
 - cloud responde con el binario/contenido del firmware si existe
 
 
-
----
-
-***Como añadir un `firmwareupdate` para mi `device`***
-- Crear un `firmwareUpdate` nuevo con una `deviceDefinition` igual al de mi `device` 
-- En el `deviceDefinition` esta definido la `commercialVersion` de los dispositivos para esa definición 
-
->[!warning]
->Asegurarme que mi `device` coincida con esa `commercialVersion` y `comercialName` y también el `firmwareUpdate` que cree
-
-- Fijarme en la `firmwareVersion` de mi `device` que no sea menor que `minVersion` que marca el la que marca el `firmwareUpdate` de ser asi no se mostrara en la pantalla administrador.
-- En el administrador Selecciono Commercial Version y subo un archivo Random.
-- En `LaunchFirmware` selecciono la compañía y introduzco dígito a dígito el serial number de mi Device 
-
-
----
-
 Segun el documento always on Device este es el protocolo para actualizar un firmware
 
 ```js

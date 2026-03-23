@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"53b4f1364fc49b3c","x":223,"y":121,"width":250,"height":60,"type":"text","text":""},
 		{"id":"24ea27fa8db7eb58","x":-350,"y":-320,"width":397,"height":263,"type":"text","text":"`FirmwareUpdate` \n\nOferta de actualización disponible, un Modelo/documento de base de datos que **apunta a un archivo** de firmware, define para qué devices aplica, y qué **versión** representa.\n\n- `version` → versión del firmware a instalar\n- `deviceDefinition` → a qué familia de dispositivos aplica\n- `commercialVersion[]` → a qué variantes comerciales aplica\n- `minVersion` → desde qué versión mínima se permite actualizar\n- `file` / `filePath` → el binario real del firmware\n- `active` → si está publicado o no"},
 		{"id":"8a876cc93983611d","x":-20,"y":-600,"width":186,"height":160,"color":"5","type":"text","text":"En `Admin` voy a la \nPestaña Fw Update que es donde encuentro los `firmwareUpdate`"},
 		{"id":"96ee9ded3fb595c2","type":"text","text":"Crear un nuevo `firmwareUpdate` compatible con mi `Device`\n","x":380,"y":-600,"width":186,"height":160,"color":"5"},
