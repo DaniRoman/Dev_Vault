@@ -9,7 +9,11 @@
 		{"id":"7c924cfad252e4e7","type":"text","text":"Confirmo cambios y lanzo el firmware para el `Device con serial number`\n","x":860,"y":-600,"width":186,"height":160,"color":"5"},
 		{"id":"07be00c8f70adbec","type":"text","text":"`POST /api/firmware-update/:id/launch`\n","x":1420,"y":-600,"width":240,"height":160,"color":"5"},
 		{"id":"1641f5931609169c","type":"text","text":"Al entrar en este controlador y comprobar que es una dispositivos nuevo,  pasamos el parámetro y el valor que llega desde el `admin` `ref: server_command_fota_device_update, value: firmwareUpdateAction`","x":1348,"y":-300,"width":384,"height":156},
-		{"id":"01d6e3f9bc601741","type":"text","text":"`POST /api/firmware-update/:id/launch`\n","x":2000,"y":-600,"width":240,"height":160,"color":"5"}
+		{"id":"ad0bc8a8fd41d57f","type":"text","text":"`Translator`\n","x":1900,"y":-560,"width":180,"height":81,"color":"5"},
+		{"id":"ff0e90fcd792e237","type":"text","text":"`Conexión Layer`\n","x":2220,"y":-560,"width":180,"height":81,"color":"5"},
+		{"id":"01d6e3f9bc601741","type":"text","text":"`Device`\n","x":2560,"y":-560,"width":100,"height":80,"color":"5"},
+		{"id":"fc4d4e2b0ed9dcb2","type":"text","text":"`Mensaje ack ok\n","x":1960,"y":-262,"width":180,"height":81,"color":"5"},
+		{"id":"a36a1dfdfd2be667","type":"text","text":">[!warning] Firmware del Device\n>Un `Device` no tendrá `firmwareVersion`, `firmwareRevision`, `firmwareSubrevision` hasta que este no mande su primer mensaje de `status`","x":2520,"y":-352,"width":500,"height":180}
 	],
 	"edges":[
 		{"id":"7c456f413caa9bc6","fromNode":"8a876cc93983611d","fromSide":"bottom","toNode":"24ea27fa8db7eb58","toSide":"top"},
@@ -19,6 +23,10 @@
 		{"id":"4e0476a972edf695","fromNode":"9427f0178c19c9c3","fromSide":"bottom","toNode":"53b4f1364fc49b3c","toSide":"top"},
 		{"id":"0e9d91e76436246a","fromNode":"96ee9ded3fb595c2","fromSide":"right","toNode":"7c924cfad252e4e7","toSide":"left"},
 		{"id":"afa2baff30557a23","fromNode":"7c924cfad252e4e7","fromSide":"right","toNode":"07be00c8f70adbec","toSide":"left"},
-		{"id":"e434460526b8c384","fromNode":"07be00c8f70adbec","fromSide":"bottom","toNode":"1641f5931609169c","toSide":"top"}
+		{"id":"e434460526b8c384","fromNode":"07be00c8f70adbec","fromSide":"bottom","toNode":"1641f5931609169c","toSide":"top"},
+		{"id":"a1635330768a8be8","fromNode":"07be00c8f70adbec","fromSide":"right","toNode":"ad0bc8a8fd41d57f","toSide":"left"},
+		{"id":"768a6a8c240665fa","fromNode":"ad0bc8a8fd41d57f","fromSide":"right","toNode":"ff0e90fcd792e237","toSide":"left"},
+		{"id":"c8429a53dec17b83","fromNode":"ff0e90fcd792e237","fromSide":"right","toNode":"01d6e3f9bc601741","toSide":"left"},
+		{"id":"fee7e5bfeffbc0b5","fromNode":"01d6e3f9bc601741","fromSide":"bottom","toNode":"a36a1dfdfd2be667","toSide":"top"}
 	]
 }
