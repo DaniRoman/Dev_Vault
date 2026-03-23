@@ -22,34 +22,6 @@ y el backend le responde con un fichero o contenido concreto.
 - el dispositivo pregunta “¿tengo firmware nuevo?”
 - cloud responde con el binario/contenido del firmware si existe
 
-código
-- `src/micros/cl-perte/perte-coap/microservice.ts` → detecta `request.url.endsWith("/fota")`
-- `src/micros/cl-perte/cl-lib/process-message/messageProcessor.ts` → `processFota(...)`
-
----
-
-`PLMN` = **Public Land Mobile Network**
-
-En telecom significa:
-- información/listado de red móvil
-- operador móvil / tabla PLMN usada por el módem
-- parece servir para que el dispositivo descargue un **fichero de lista/configuración PLMN**.
-- el dispositivo pide la lista PLMN
-- cloud responde con el archivo PLMN correspondiente
-
- `código`
-
-- `src/micros/cl-perte/perte-coap/microservice.ts` → detecta `request.url.endsWith("/plmn")`
-- `src/micros/cl-perte/cl-lib/process-message/messageProcessor.ts` → `processPlmn(...)`
-- además en `sync.perte` se guarda info como:
-  - `plmn_op`
-  - `plmn_rev`
-
-Eso indica que el device también informa de:
-- operador PLMN actual
-- revisión de tabla PLMN
-
----
 
 ### firmwareUpdate 
 
