@@ -46,17 +46,14 @@
             "id": "063f8d7a4e72bf39",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-                "viewState": {
-                  "x": 593.4995749587622,
-                  "y": 138.55189596533162,
-                  "zoom": 0
-                }
+                "file": "Db/Mongo/Mongo - Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo para Actualizar firmware"
+              "icon": "lucide-file",
+              "title": "Mongo - Main Site"
             }
           }
         ]
@@ -91,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "always",
+                "query": "mongo ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -225,8 +222,9 @@
   },
   "active": "063f8d7a4e72bf39",
   "lastOpenFiles": [
-    "AKO/AKO44/Fota.md",
+    "2026-03-23.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+    "AKO/AKO44/Fota.md",
     "AKO/AKO44/Docs/AKO 44 Diferentes casuísticas en la conexión layer.md",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
@@ -272,7 +270,6 @@
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer Workflow.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - _extraGetOptions.canvas",
-    "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.md",
     "Express",
     "AKO - feature",
     "Rabbit/attachments",
