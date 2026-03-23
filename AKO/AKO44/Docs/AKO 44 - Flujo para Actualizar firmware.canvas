@@ -13,8 +13,8 @@
 		{"id":"ff0e90fcd792e237","type":"text","text":"`Conexión Layer`\n","x":2220,"y":-560,"width":180,"height":81,"color":"5"},
 		{"id":"01d6e3f9bc601741","type":"text","text":"`Device`\n","x":2560,"y":-560,"width":100,"height":80,"color":"5"},
 		{"id":"a36a1dfdfd2be667","type":"text","text":">[!warning] Firmware del Device\n>Un `Device` no tendrá `firmwareVersion`, `firmwareRevision`, `firmwareSubrevision` hasta que este no mande su primer mensaje de `status`\n>Lo procesa `status.perte/device`\nAquí se actualiza el `device` en BD con:\n\n- `firmwareVersion`\n- `firmwareRevision`\n- `firmwareSubrevision`\n- `lastStatus.timestamp`\n\n### Resultado de esta fase\nEl `device` ya tiene algo como:\n\n- `deviceDefinition`\n- `commercialVersion`\n- `firmwareVersion`\n\nY eso es lo que luego necesita FOTA.","x":2520,"y":-352,"width":500,"height":180},
-		{"id":"fc4d4e2b0ed9dcb2","type":"text","text":"`Mensaje ack ok\n","x":2450,"y":-800,"width":160,"height":62,"color":"5"},
-		{"id":"7d0525a44c3b5ca8","type":"text","text":"Mensaje `fota`\n","x":2310,"y":-433,"width":180,"height":81,"color":"5"}
+		{"id":"fc4d4e2b0ed9dcb2","type":"text","text":"`Mensaje ack ok\n","x":2530,"y":-700,"width":160,"height":62,"color":"5"},
+		{"id":"7d0525a44c3b5ca8","type":"text","text":"Mensaje `fota`\n","x":2510,"y":-860,"width":180,"height":81,"color":"5"}
 	],
 	"edges":[
 		{"id":"7c456f413caa9bc6","fromNode":"8a876cc93983611d","fromSide":"bottom","toNode":"24ea27fa8db7eb58","toSide":"top"},
@@ -28,6 +28,9 @@
 		{"id":"a1635330768a8be8","fromNode":"07be00c8f70adbec","fromSide":"right","toNode":"ad0bc8a8fd41d57f","toSide":"left"},
 		{"id":"768a6a8c240665fa","fromNode":"ad0bc8a8fd41d57f","fromSide":"right","toNode":"ff0e90fcd792e237","toSide":"left"},
 		{"id":"c8429a53dec17b83","fromNode":"ff0e90fcd792e237","fromSide":"right","toNode":"01d6e3f9bc601741","toSide":"left"},
-		{"id":"fee7e5bfeffbc0b5","fromNode":"01d6e3f9bc601741","fromSide":"bottom","toNode":"a36a1dfdfd2be667","toSide":"top"}
+		{"id":"fee7e5bfeffbc0b5","fromNode":"01d6e3f9bc601741","fromSide":"bottom","toNode":"a36a1dfdfd2be667","toSide":"top"},
+		{"id":"d09057546a3e9bed","fromNode":"01d6e3f9bc601741","fromSide":"right","toNode":"fc4d4e2b0ed9dcb2","toSide":"right"},
+		{"id":"21df60b196f1b564","fromNode":"fc4d4e2b0ed9dcb2","fromSide":"right","toNode":"7d0525a44c3b5ca8","toSide":"right"},
+		{"id":"4ad3b06e8a307ad9","fromNode":"7d0525a44c3b5ca8","fromSide":"left","toNode":"ff0e90fcd792e237","toSide":"top"}
 	]
 }
