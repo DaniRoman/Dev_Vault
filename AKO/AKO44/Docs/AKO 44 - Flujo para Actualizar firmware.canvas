@@ -3,9 +3,7 @@
 		{"id":"24ea27fa8db7eb58","type":"text","text":"`FirmwareUpdate` \n\nOferta de actualización disponible, un Modelo/documento de base de datos que **apunta a un archivo** de firmware, define para qué devices aplica, y qué **versión** representa.\n\n- `version` → versión del firmware a instalar\n- `deviceDefinition` → a qué familia de dispositivos aplica\n- `commercialVersion[]` → a qué variantes comerciales aplica\n- `minVersion` → desde qué versión mínima se permite actualizar\n- `file` / `filePath` → el binario real del firmware\n- `active` → si está publicado o no","x":-350,"y":-320,"width":397,"height":263},
 		{"id":"8a876cc93983611d","type":"text","text":"En `Admin` voy a la \nPestaña Fw Update que es donde encuentro los `firmwareUpdate`","x":-20,"y":-600,"width":186,"height":160,"color":"5"},
 		{"id":"96ee9ded3fb595c2","type":"text","text":"Crear un nuevo `firmwareUpdate` compatible con mi `Device`\n","x":380,"y":-600,"width":186,"height":160,"color":"5"},
-		{"id":"5eb34c63fb7f480e","type":"text","text":"- `deviceDefinition` igual al de mi `Device`\n- `comercialVersión comercialName` existentes en `deviceDefinition` tiene que hacer match con mi `Device`\n- `FirmwareVersion`???","x":340,"y":-380,"width":400,"height":192},
-		{"id":"53b4f1364fc49b3c","type":"text","text":">[!tip] `firmwareVersion`, `firmwareRevision`, `firmwareSubrevision` \n\n- **`firmwareVersion`** suele ser el **código interno/base** de la versión de firmware.\n- **`firmwareRevision`** indica una **revisión principal** sobre esa base.\n- **`firmwareSubrevision`** indica una **subrevisión o parche** dentro de esa revisión.\n- Con esos valores, se leería como una versión base **6000**, revisión **1**, subrevisión **26**.\n- En la práctica: `firmwareVersion` identifica la familia/base y `revision/subrevision` afinan la versión exacta.","x":223,"y":121,"width":637,"height":319},
-		{"id":"9427f0178c19c9c3","type":"text","text":">[!question] Preguntar\n>Cuando creo un `firmwareUpdate` nuevo a que aplica a `firmwareVersion`, `firmwareRevision`, `firmwareSubrevision`","x":306,"y":-120,"width":520,"height":107},
+		{"id":"5eb34c63fb7f480e","type":"text","text":"- `deviceDefinition` igual al de mi `Device`\n- `comercialVersión comercialName` existentes en `deviceDefinition` tiene que hacer match con mi `Device`\n- `FirmwareVersion` hace referencia a la actualización para la `firmwareRevision` del Device","x":340,"y":-380,"width":400,"height":192},
 		{"id":"7c924cfad252e4e7","type":"text","text":"Confirmo cambios y lanzo el firmware para el `Device con serial number`\n","x":860,"y":-600,"width":186,"height":160,"color":"5"},
 		{"id":"07be00c8f70adbec","type":"text","text":"`POST /api/firmware-update/:id/launch`\n","x":1420,"y":-600,"width":240,"height":160,"color":"5"},
 		{"id":"1641f5931609169c","type":"text","text":"Al entrar en este controlador y comprobar que es una dispositivos nuevo,  pasamos el parámetro y el valor que llega desde el `admin` `ref: server_command_fota_device_update, value: firmwareUpdateAction`","x":1348,"y":-300,"width":384,"height":156},
@@ -15,14 +13,13 @@
 		{"id":"a36a1dfdfd2be667","type":"text","text":">[!warning] Firmware del Device\n>Un `Device` no tendrá `firmwareVersion`, `firmwareRevision`, `firmwareSubrevision` hasta que este no mande su primer mensaje de `status`\n>Lo procesa `status.perte/device`\nAquí se actualiza el `device` en BD con:\n\n- `firmwareVersion`\n- `firmwareRevision`\n- `firmwareSubrevision`\n- `lastStatus.timestamp`\n\n### Resultado de esta fase\nEl `device` ya tiene algo como:\n\n- `deviceDefinition`\n- `commercialVersion`\n- `firmwareVersion`\n\nY eso es lo que luego necesita FOTA.","x":2520,"y":-352,"width":500,"height":180},
 		{"id":"fc4d4e2b0ed9dcb2","type":"text","text":"`Mensaje ack ok\n","x":2530,"y":-700,"width":160,"height":62,"color":"5"},
 		{"id":"7d0525a44c3b5ca8","type":"text","text":"Mensaje `fota`\n","x":2510,"y":-860,"width":180,"height":81,"color":"5"},
-		{"id":"9eb5e5ecddef341b","x":796,"y":-280,"width":164,"height":60,"type":"text","text":"`firmwareUpdate`\n`minVersion?`"}
+		{"id":"9eb5e5ecddef341b","type":"text","text":"`firmwareUpdate`\n`minVersion?` hace referencia a la minima version de `FirmwareRevision` que el dispositivo debe de tener","x":566,"y":-760,"width":234,"height":140},
+		{"id":"53b4f1364fc49b3c","type":"text","text":">[!tip] `firmwareVersion`, `firmwareRevision`, `firmwareSubrevision` \n\n- **`firmwareVersion`** suele ser el **código interno/base** de la versión de firmware.\n- **`firmwareRevision`** indica una **revisión principal** sobre esa base.\n- **`firmwareSubrevision`** indica una **subrevisión o parche** dentro de esa revisión.\n- Con esos valores, se leería como una versión base **6000**, revisión **1**, subrevisión **26**.\n- En la práctica: `firmwareVersion` identifica la familia/base y `revision/subrevision` afinan la versión exacta.","x":248,"y":-120,"width":637,"height":319}
 	],
 	"edges":[
 		{"id":"7c456f413caa9bc6","fromNode":"8a876cc93983611d","fromSide":"bottom","toNode":"24ea27fa8db7eb58","toSide":"top"},
-		{"id":"64c9b745835f867e","fromNode":"5eb34c63fb7f480e","fromSide":"bottom","toNode":"9427f0178c19c9c3","toSide":"top"},
 		{"id":"3a78dcc9068d3e6d","fromNode":"8a876cc93983611d","fromSide":"right","toNode":"96ee9ded3fb595c2","toSide":"left"},
 		{"id":"9fa26c408fc7d7b3","fromNode":"96ee9ded3fb595c2","fromSide":"bottom","toNode":"5eb34c63fb7f480e","toSide":"top"},
-		{"id":"4e0476a972edf695","fromNode":"9427f0178c19c9c3","fromSide":"bottom","toNode":"53b4f1364fc49b3c","toSide":"top"},
 		{"id":"0e9d91e76436246a","fromNode":"96ee9ded3fb595c2","fromSide":"right","toNode":"7c924cfad252e4e7","toSide":"left"},
 		{"id":"afa2baff30557a23","fromNode":"7c924cfad252e4e7","fromSide":"right","toNode":"07be00c8f70adbec","toSide":"left"},
 		{"id":"e434460526b8c384","fromNode":"07be00c8f70adbec","fromSide":"bottom","toNode":"1641f5931609169c","toSide":"top"},
@@ -33,6 +30,7 @@
 		{"id":"d09057546a3e9bed","fromNode":"01d6e3f9bc601741","fromSide":"right","toNode":"fc4d4e2b0ed9dcb2","toSide":"right"},
 		{"id":"21df60b196f1b564","fromNode":"fc4d4e2b0ed9dcb2","fromSide":"right","toNode":"7d0525a44c3b5ca8","toSide":"right"},
 		{"id":"4ad3b06e8a307ad9","fromNode":"7d0525a44c3b5ca8","fromSide":"left","toNode":"ff0e90fcd792e237","toSide":"top"},
-		{"id":"8b6b2bc2634dc974","fromNode":"96ee9ded3fb595c2","fromSide":"bottom","toNode":"9eb5e5ecddef341b","toSide":"top"}
+		{"id":"8b6b2bc2634dc974","fromNode":"96ee9ded3fb595c2","fromSide":"top","toNode":"9eb5e5ecddef341b","toSide":"left"},
+		{"id":"422ea84c71110b7d","fromNode":"5eb34c63fb7f480e","fromSide":"bottom","toNode":"53b4f1364fc49b3c","toSide":"top"}
 	]
 }
