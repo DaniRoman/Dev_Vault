@@ -16,7 +16,7 @@ Esto me generara un token el cual revisare en la colección `users` y el token d
 
 ![[Pasted image 20260316093657.png]]
 
-En el navegador, accederé mediante `uri` a `#/2falogin?token=IFPHlcPZhRxUsjCDUdq4Anos8wU56NNAubPvpxtFA6nuQaySnU
+En el navegador, accederé mediante `uri` a `#/2falogin?token=8lpmVOgj9NfnyZMuWPC993l0ZcvP9T3KynBGJaKdRAuKVNhEet
 
 
 

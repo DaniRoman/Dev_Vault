@@ -48,12 +48,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Db/Mongo/Mongo - Main Site.md",
+                "file": "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mongo - Main Site"
+              "title": "AKO  44 - Admin Main Page"
             }
           }
         ]
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mongo ",
+                "query": "f",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +109,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -222,6 +223,7 @@
   },
   "active": "063f8d7a4e72bf39",
   "lastOpenFiles": [
+    "Db/Mongo/Mongo - Main Site.md",
     "2026-03-23.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Fota.md",
@@ -252,7 +254,6 @@
     "AKO/AKO44/attachments/Pasted image 20260316084231.png",
     "AKO/AKO44/attachments/Pasted image 20260316084200.png",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
-    "Db/Mongo/Mongo - Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Admin.md",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
