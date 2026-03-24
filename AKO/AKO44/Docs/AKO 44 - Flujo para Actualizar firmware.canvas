@@ -16,7 +16,8 @@
 		{"id":"1641f5931609169c","type":"text","text":"Al entrar en este controlador y comprobar que es una dispositivos nuevo,  pasamos el parámetro y el valor que llega desde el `admin` al metodo `SendAmqp.sendCmd12830` `ref: server_command_fota_device_update, value: firmwareUpdateAction`","x":1156,"y":-320,"width":384,"height":156},
 		{"id":"ad0bc8a8fd41d57f","type":"text","text":"`Translator`\n","x":1574,"y":-561,"width":180,"height":81,"color":"5"},
 		{"id":"ff0e90fcd792e237","type":"text","text":"`Conexión Layer`\n","x":1880,"y":-561,"width":180,"height":81,"color":"5"},
-		{"id":"687d1efa9a4e9655","type":"text","text":"`_onMessage, _checkDeviceAndMessage, checkMessageRecived, _validateSerialNumber` <-- Aqui Recibo la info del Device","x":1778,"y":-320,"width":384,"height":156}
+		{"id":"687d1efa9a4e9655","type":"text","text":"`_onMessage, _checkDeviceAndMessage, checkMessageRecived, _validateSerialNumber, messageProcessor.process, processRetrive, processFota` <-- Aqui Recibo la info del Device","x":1778,"y":-320,"width":384,"height":156},
+		{"id":"aaebf4630d4e3fc8","type":"text","text":">[!tip] Distintos mensajes del Device\n>\n\n***Mensajes normales del device***\n- método `POST`\n- llevan `payload`\n- ese payload va en **CBOR**\n- y se protege con **CRC**\n- ejemplos: `sample`, `status`, `event`, `cmd_ack`, `param_ack`\n---\n***Retrieve de firmware***\n- método `GET`\n- ruta `/{serial}/fota`\n- **no depende de `ty`**\n- entra por la URL, no por el body\n\nLa intención ya va en la **URL**, no en un payload serializado. El CRC se usa para validar el **payload recibido**.\nSi no se manda payload:\n- no hay nada que serializar\n- no hay nada que firmar con CRC","x":2720,"y":-1100,"width":400,"height":160}
 	],
 	"edges":[
 		{"id":"7c456f413caa9bc6","fromNode":"8a876cc93983611d","fromSide":"bottom","toNode":"24ea27fa8db7eb58","toSide":"top"},
@@ -29,10 +30,9 @@
 		{"id":"768a6a8c240665fa","fromNode":"ad0bc8a8fd41d57f","fromSide":"right","toNode":"ff0e90fcd792e237","toSide":"left"},
 		{"id":"c8429a53dec17b83","fromNode":"ff0e90fcd792e237","fromSide":"right","toNode":"01d6e3f9bc601741","toSide":"left"},
 		{"id":"fee7e5bfeffbc0b5","fromNode":"01d6e3f9bc601741","fromSide":"bottom","toNode":"a36a1dfdfd2be667","toSide":"top"},
-		{"id":"d09057546a3e9bed","fromNode":"01d6e3f9bc601741","fromSide":"right","toNode":"fc4d4e2b0ed9dcb2","toSide":"right"},
-		{"id":"21df60b196f1b564","fromNode":"fc4d4e2b0ed9dcb2","fromSide":"right","toNode":"7d0525a44c3b5ca8","toSide":"right"},
 		{"id":"4ad3b06e8a307ad9","fromNode":"7d0525a44c3b5ca8","fromSide":"left","toNode":"ff0e90fcd792e237","toSide":"top"},
 		{"id":"8b6b2bc2634dc974","fromNode":"96ee9ded3fb595c2","fromSide":"top","toNode":"9eb5e5ecddef341b","toSide":"bottom"},
-		{"id":"422ea84c71110b7d","fromNode":"5eb34c63fb7f480e","fromSide":"bottom","toNode":"53b4f1364fc49b3c","toSide":"top"}
+		{"id":"422ea84c71110b7d","fromNode":"5eb34c63fb7f480e","fromSide":"bottom","toNode":"53b4f1364fc49b3c","toSide":"top"},
+		{"id":"b1419550c21fe81e","fromNode":"aaebf4630d4e3fc8","fromSide":"left","toNode":"7d0525a44c3b5ca8","toSide":"top"}
 	]
 }

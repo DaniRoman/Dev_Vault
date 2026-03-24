@@ -46,26 +46,7 @@ Que el device tenga:
 
 Y que exista un `firmwareUpdate` compatible.
 
-### Hay dos flujos distintos en Perte:
 
-### 1) Mensajes normales del device
-- método `POST`
-- llevan `payload`
-- ese payload va en **CBOR**
-- y se protege con **CRC**
-- ejemplos: `sample`, `status`, `event`, `cmd_ack`, `param_ack`
-
-### 2) Retrieve de firmware
-- método `GET`
-- ruta `/{serial}/fota`
-- **no depende de `ty`**
-- entra por la URL, no por el body
-
-La intención ya va en la **URL**, no en un payload serializado. El CRC se usa para validar el **payload recibido**.
-
-Si no mandas payload:
-- no hay nada que serializar
-- no hay nada que firmar con CRC
 
 ---
 
