@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "file": "AKO/AKO44/Fota.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "title": "Fota"
             }
           }
         ],
@@ -89,13 +89,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 316.5110321044922,
-    "collapsed": true
+    "width": 493.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -204,8 +202,8 @@
   },
   "active": "ffe94eef894b9c91",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Fota.md",
     "Db/Mongo/Mongo - Main Site.md",
     "2026-03-23.md",

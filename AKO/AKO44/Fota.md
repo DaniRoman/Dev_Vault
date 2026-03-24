@@ -8,6 +8,8 @@ En el Script de pruebas tengo que ver como puedo hacer un envio para solicitar e
 
 Una vez echa esa solicitud en la conexión layer llega esa petición y cuando llega una petición _/fota_ o el _/PLMN_ tiene que devolver el ultimo fichero o firmware disponible para ese numero de serie
 
+>[!Tip] Flujo de Actualizaci
+[[AKO 44 - Flujo para Actualizar firmware.canvas]]
 
 
 `/Fota` y `/PLMN` son **resources/endpoints de retrieve del dispositivo** por CoAP. El dispositivo hace una petición tipo:
