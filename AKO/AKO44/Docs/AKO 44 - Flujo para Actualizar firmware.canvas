@@ -16,7 +16,7 @@
 		{"id":"1641f5931609169c","type":"text","text":"Al entrar en este controlador y comprobar que es una dispositivos nuevo,  pasamos el parámetro y el valor que llega desde el `admin` al metodo `SendAmqp.sendCmd12830` `ref: server_command_fota_device_update, value: firmwareUpdateAction`","x":1156,"y":-320,"width":384,"height":156},
 		{"id":"ad0bc8a8fd41d57f","type":"text","text":"`Translator`\n","x":1574,"y":-561,"width":180,"height":81,"color":"5"},
 		{"id":"ff0e90fcd792e237","type":"text","text":"`Conexión Layer`\n","x":1880,"y":-561,"width":180,"height":81,"color":"5"},
-		{"id":"687d1efa9a4e9655","type":"text","text":"","x":1778,"y":-320,"width":384,"height":156}
+		{"id":"687d1efa9a4e9655","type":"text","text":"`_onMessage, _checkDeviceAndMessage, checkMessageRecived, _validateSerialNumber` <-- Aqui Recibo la info del Device","x":1778,"y":-320,"width":384,"height":156}
 	],
 	"edges":[
 		{"id":"7c456f413caa9bc6","fromNode":"8a876cc93983611d","fromSide":"bottom","toNode":"24ea27fa8db7eb58","toSide":"top"},
