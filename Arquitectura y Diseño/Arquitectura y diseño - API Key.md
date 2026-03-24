@@ -46,8 +46,8 @@ API: verifica con clave PÚBLICA → solo puede verificar, no crear
 
 **Concepto detrás**: criptografía **asimétrica** (2 claves, pública + privada)
 
-###### Recurso para ampliar concepto
- Paso 3: Recursos en orden
+## Implementar 
+# Recurso para ampliar concepto
 
 #### 3.1 — Primero ve este vídeo (concepto general)
 
