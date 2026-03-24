@@ -72,12 +72,3 @@ Si además esa API sirve binarios o acciones sensibles, separa claramente endpoi
 
 Una regla útil es esta. **API key**: credencial simple, buena para arranque controlado. **Private API key**: solo backend, nunca cliente. **Public API key**: expuesta o potencialmente expuesta, pero extremadamente restringida y nunca válida para operaciones sensibles. **Token de aplicación**: credencial más madura, temporal y expresiva. **API pública**: pensada para terceros o clientes. **API privada**: pensada para backend interno, pero igualmente securizada. Todo esto se monta sobre autenticación HTTP y autorización por recurso/función. ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Authorization?utm_source=chatgpt.com "Authorization header - HTTP | MDN - MDN Web Docs"))
 
-## 11) Orden de estudio recomendado
-
-Empieza por entender **HTTP Authorization** y cómo se envían credenciales. Luego estudia buenas prácticas de **API keys**. Después da el salto a **OAuth 2.0** y al concepto de acceso de aplicación a aplicación. Cierra con **OWASP API Security Top 10** para aprender qué suele romperse en la realidad. Ese orden va de “cómo viaja la credencial” a “cómo diseño el sistema sin agujeros”. ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Authorization?utm_source=chatgpt.com "Authorization header - HTTP | MDN - MDN Web Docs"))
-
-## 12) Enlaces fiables para estudiar
-
-Para base HTTP, MDN sobre `Authorization` y autenticación HTTP. Para claves, Google Cloud sobre gestión y buenas prácticas de API keys. Para diseño de tokens, el RFC de OAuth 2.0 y la guía de mejores prácticas de seguridad OAuth. Para seguridad de API real, OWASP API Security Project y API Security Top 10. Son fuentes muy usadas y suficientemente serias para tomar apuntes técnicos. ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Authorization?utm_source=chatgpt.com "Authorization header - HTTP | MDN - MDN Web Docs"))
-
-Si te va bien, en el siguiente mensaje te hago unos **apuntes tipo temario**, con títulos, definiciones cortas y ejemplos, listos para copiar en tu libreta.
