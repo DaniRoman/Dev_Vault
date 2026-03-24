@@ -30,3 +30,58 @@ API: verifica el token con el mismo secreto "xyz"
 - Ambos conocen el secreto
 - Mejor que API Key porque el token expira
 - Pero si hackean la API → pueden crear tokens porque tienen el secreto
+
+**Concepto detrás**: criptografía **simétrica** (1 clave, compartida)
+
+#### Nivel 3 — JWT con claves asimétricas (RS256)
+
+```md
+CL: firma con clave PRIVADA → solo él puede firmar
+API: verifica con clave PÚBLICA → solo puede verificar, no crear
+```
+
+- Si hackean la API → no pueden crear tokens
+- Si interceptan un token → caduca en minutos
+- Cada servicio puede tener su propio par de claves
+
+**Concepto detrás**: criptografía **asimétrica** (2 claves, pública + privada)
+
+###### Recurso para ampliar concepto
+ Paso 3: Recursos en orden
+
+#### 3.1 — Primero ve este vídeo (concepto general)
+
+Busca en YouTube:
+
+> **"Public Key Cryptography - Computerphile"**
+
+Son ~10 minutos. Explica con dibujos por qué funcionan 2 claves. Sin código, solo el concepto.
+
+#### 3.2 — Después lee esto (JWT específico)
+
+[https://jwt.io/introduction](https://jwt.io/introduction)
+
+Lee solo estas secciones:
+
+1. What is JSON Web Token?
+2. How do JSON Web Tokens work?
+3. Juega con el debugger → [https://jwt.io](https://jwt.io/) (pega un token y ve las partes)
+
+#### 3.3 — Después lee la diferencia de algoritmos
+
+[https://auth0.com/blog/rs256-vs-hs256-whats-the-difference/](https://auth0.com/blog/rs256-vs-hs256-whats-the-difference/)
+
+Este artículo te explica **exactamente** la diferencia entre:
+
+- HS256 (simétrico, 1 clave)
+- RS256 (asimétrico, 2 claves)
+
+#### 3.4 — Por último, la implementación en Node.js
+
+[https://github.com/auth0/node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
+
+Lee el README, específicamente:
+
+- `jwt.sign()` → cómo firmar
+- `jwt.verify()` → cómo verificar
+- Los ejemplos con RSA
