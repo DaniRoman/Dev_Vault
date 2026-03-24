@@ -11,14 +11,17 @@
             "id": "ffe94eef894b9c91",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+                "viewState": {
+                  "x": 1139.280539057026,
+                  "y": 242.2279029659603,
+                  "zoom": 0.16920909165383927
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO  44 - Admin Main Page"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo para Actualizar firmware"
             }
           }
         ]
@@ -188,12 +191,12 @@
   },
   "active": "ffe94eef894b9c91",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Fota.md",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "Db/Mongo/Mongo - Main Site.md",
     "2026-03-23.md",
     "AKO/AKO44/Docs/AKO 44 Diferentes casuísticas en la conexión layer.md",
