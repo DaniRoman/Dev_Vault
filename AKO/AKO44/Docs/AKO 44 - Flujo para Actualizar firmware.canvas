@@ -17,10 +17,10 @@
 		{"id":"7d0525a44c3b5ca8","type":"text","text":"Mensaje `fota`\n","x":2510,"y":-820,"width":180,"height":81,"color":"5"},
 		{"id":"ff0e90fcd792e237","type":"text","text":"`Conexión Layer`\n","x":1982,"y":-560,"width":180,"height":81,"color":"5"},
 		{"id":"1641f5931609169c","type":"text","text":"Al entrar en este controlador y comprobar que es una dispositivos nuevo,  pasamos el parámetro y el valor que llega desde el `admin` al metodo `SendAmqp.sendCmd12830` `ref: server_command_fota_device_update, value: firmwareUpdateAction`","x":1156,"y":-344,"width":384,"height":156},
-		{"id":"0a1beeb14efcd6bf","type":"text","text":"_validateSerialNumber  <-- Aqui Recibo la info del Device","x":1857,"y":-809,"width":250,"height":60},
-		{"id":"687d1efa9a4e9655","type":"text","text":"`Flujo funciones --> _onMessage, _checkDeviceAndMessage, checkMessageRecived, , messageProcessor.process, processRetrive, processFota, `","x":1778,"y":-1096,"width":294,"height":136},
-		{"id":"c5bde71df68df9f8","type":"text","text":">[!Warning] Apuntes código mongo y \n\nPara conseguir el `firmwareUpdate` correcto filtramos con una query de mongo [[Mongo - Main Site]] `$or`\n\nPara asegurarnos del valor `id` que devuelve una query\n\n[[JavaScript -  Acceso seguro a Propiedades Optional chaining]]\n\n\n\n","x":2182,"y":-1360,"width":348,"height":200},
-		{"id":"75ea4ad620a780a4","type":"text","text":"\nRetrieve de `FirmwareUpdate` y llamada a `api` con claves para solicitar el envio al Device`\n","x":1751,"y":-1420,"width":348,"height":200,"color":"5"}
+		{"id":"75ea4ad620a780a4","type":"text","text":"\nRetrieve de `FirmwareUpdate` y llamada a `api` con claves para solicitar el envio al `Device` del `Firmware`\n","x":1925,"y":-880,"width":269,"height":120,"color":"5"},
+		{"id":"0a1beeb14efcd6bf","type":"text","text":"_validateSerialNumber  <-- Aqui Recibo la info del Device","x":1629,"y":-850,"width":250,"height":60},
+		{"id":"687d1efa9a4e9655","type":"text","text":"`Flujo funciones --> _onMessage, _checkDeviceAndMessage, checkMessageRecived, , messageProcessor.process, processRetrive, processFota, `","x":1607,"y":-1060,"width":294,"height":136},
+		{"id":"c5bde71df68df9f8","type":"text","text":">[!Warning] Apuntes código \n\nPara conseguir el `firmwareUpdate` correcto filtramos con una query de mongo [[Mongo - Main Site]] `$or`\n\nPara asegurarnos del valor `id` que devuelve una query\n\n[[JavaScript -  Acceso seguro a Propiedades Optional chaining]]\n\n\n\n","x":1607,"y":-1320,"width":294,"height":200}
 	],
 	"edges":[
 		{"id":"7c456f413caa9bc6","fromNode":"8a876cc93983611d","fromSide":"bottom","toNode":"24ea27fa8db7eb58","toSide":"top"},
@@ -39,8 +39,9 @@
 		{"id":"6568aaff9e2365e1","fromNode":"01d6e3f9bc601741","fromSide":"right","toNode":"fc4d4e2b0ed9dcb2","toSide":"right"},
 		{"id":"863a4086e5d58159","fromNode":"01d6e3f9bc601741","fromSide":"right","toNode":"7d0525a44c3b5ca8","toSide":"right"},
 		{"id":"70c84545a676de4f","fromNode":"aaebf4630d4e3fc8","fromSide":"bottom","toNode":"7d0525a44c3b5ca8","toSide":"top"},
-		{"id":"003a7480c27f9b62","fromNode":"ff0e90fcd792e237","fromSide":"top","toNode":"0a1beeb14efcd6bf","toSide":"bottom","label":"Mensaje fota"},
-		{"id":"483b6afb5a7a39f4","fromNode":"0a1beeb14efcd6bf","fromSide":"top","toNode":"687d1efa9a4e9655","toSide":"bottom","label":"Mensaje fota"},
-		{"id":"9cd825732f11b229","fromNode":"687d1efa9a4e9655","fromSide":"right","toNode":"c5bde71df68df9f8","toSide":"bottom"}
+		{"id":"51163f8dd86a533d","fromNode":"ff0e90fcd792e237","fromSide":"top","toNode":"75ea4ad620a780a4","toSide":"bottom"},
+		{"id":"461a574e43fdd276","fromNode":"75ea4ad620a780a4","fromSide":"left","toNode":"0a1beeb14efcd6bf","toSide":"right"},
+		{"id":"3f225e69f6b7c4c1","fromNode":"0a1beeb14efcd6bf","fromSide":"top","toNode":"687d1efa9a4e9655","toSide":"bottom"},
+		{"id":"bf82b160a466ac82","fromNode":"687d1efa9a4e9655","fromSide":"top","toNode":"c5bde71df68df9f8","toSide":"bottom"}
 	]
 }
