@@ -28,6 +28,7 @@ const fileId = fileRef?._id ?? fileRef;
 ---
 ### Acceso seguro a propiedades / optional chaining
 
+[[JavaScript -  Acceso seguro a Propiedades Optional chaining]]
 ```js
 (response as FirmwareUpdate)?.file
 fileRef?._id
