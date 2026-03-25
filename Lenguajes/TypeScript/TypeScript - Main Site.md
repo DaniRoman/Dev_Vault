@@ -1,3 +1,6 @@
+
+## Extracción segura de id
+
 ## CheatSheet
 
 [Recurso](https://devhints.io/typescript)

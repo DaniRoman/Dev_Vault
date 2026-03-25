@@ -25,17 +25,14 @@
             "id": "12e483c0b5cacb19",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-                "viewState": {
-                  "x": 2404.059288033112,
-                  "y": -701.6381255935098,
-                  "zoom": 0.04532395968193914
-                }
+                "file": "Lenguajes/TypeScript/TypeScript - Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo para Actualizar firmware"
+              "icon": "lucide-file",
+              "title": "TypeScript - Main Site"
             }
           }
         ],
@@ -71,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fma",
+                "query": "typescript",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -206,8 +203,9 @@
   },
   "active": "12e483c0b5cacb19",
   "lastOpenFiles": [
-    "Db/Mongo/Mongo - Main Site.md",
+    "Development vault - Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+    "Db/Mongo/Mongo - Main Site.md",
     "AKO/AKO44/Fota.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
