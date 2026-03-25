@@ -2,7 +2,7 @@
 
 ## Type assertions
 
-[ (TypeScript Handbook)](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions) 
+[TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions) 
 
 - **`as` es una aserción de tipo**: indica a TypeScript cómo tratar una variable. (TypeScript Handbook)
 - **No valida en runtime**: no transforma ni comprueba el dato real. (TypeScript Handbook)

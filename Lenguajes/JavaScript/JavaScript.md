@@ -1,4 +1,12 @@
+### Acceso seguro a propiedades
 
+```js
+(response as FirmwareUpdate)?.file
+fileRef?._id
+```
+
+>[!example] `as`Referencia a otro recurso 
+[[TypeScript - Main Site ^ dea]]
 ## Conceptos
 
 >[!success]
