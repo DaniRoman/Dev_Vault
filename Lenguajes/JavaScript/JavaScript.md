@@ -1,4 +1,6 @@
 
+### Casos para recibir `null, undefined o valores vacios`
+[[JavaScript]]
 
 ### Fallback con nullish coalescing
 
