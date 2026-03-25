@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Fota.md",
+                "file": "Lenguajes/JavaScript/JavaScript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fota"
+              "title": "JavaScript"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "JavaScript"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,19 +213,20 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "25df9fd83d77ab7b",
+  "active": "ffe94eef894b9c91",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+    "AKO/AKO44/Fota.md",
+    "Lenguajes/JavaScript/JavaScript.md",
+    "Lenguajes/JavaScript/JavaScript - Difereréncia entre or y ??.md",
     "Lenguajes/JavaScript/JavaScript - Difere.md",
     "Lenguajes/JavaScript/JavaScript - Difererencia entre(.md",
-    "Lenguajes/JavaScript/JavaScript.md",
     "Lenguajes/JavaScript/JavaScript - Casos Recibir null, undefined o valores vacios.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "Lenguajes/JavaScript/TypeScript - Main Site ^ dea.md",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "Development vault - Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "Db/Mongo/Mongo - Main Site.md",
-    "AKO/AKO44/Fota.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
@@ -250,9 +250,7 @@
     "AKO/AKO44/attachments/Pasted image 20260317154528.png",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - Confirmación ACK ok.md",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - cambio de parámetro.md",
-    "AKO/AKO44/Docs/AKO 44 - Feature 2253 - status pending delete.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260316093657.png",
-    "AKO/AKO44/Docs/AKO 44 - Configurar Alarmas desde Cloud o en Crudo.md",
     "AKO/AKO44/attachments/Pasted image 20260316084645.png",
     "AKO/AKO44/attachments/Pasted image 20260316084231.png",
     "AKO/AKO44/attachments/Pasted image 20260316084200.png",

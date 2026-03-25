@@ -4,19 +4,27 @@
 
 ### Fallback con nullish coalescing
 
+^d7d631
+
 ```js
 const fileId = fileRef?._id ?? fileRef;
 ```
 
-`??` devuelve el operando derecho solo cuando el izquierdo es `null` o `undefined`, no cuando es `false`, `0` o `""`.
-
-[[JavaScript - Difereréncia entre or y ??]]
-
----
-
+`??` devuelve el operando derecho solo cuando el izquierdo es `null` o `undefined`, no cuando es `false`, `0` o `""`. ^320450
 
 >[!tip] Doc oficial nullish coalescing
 >[M mdn__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)
+
+>[!example] Enlaces de interes a este caso
+>[[JavaScript - Difereréncia entre or y ??]]
+>[[JavaScript - Casos Recibir null, undefined o valores vacios]]
+
+---
+
+### Diferencia entre `||` y `??`
+[[JavaScript - Difereréncia entre or y ??]]
+
+---
 ### Acceso seguro a propiedades / optional chaining
 
 ```js
