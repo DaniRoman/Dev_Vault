@@ -1,3 +1,14 @@
+
+### Fallback con nullish coalescing
+
+```js
+const fileId = fileRef?._id ?? fileRef;
+```
+
+`??` devuelve el operando derecho solo cuando el izquierdo es `null` o `undefined`, no cuando es `false`, `0` o `""`.
+
+>[!tip] Doc oficial nullish coalescing
+>[M mdn__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)
 ### Acceso seguro a propiedades / optional chaining
 
 ```js
