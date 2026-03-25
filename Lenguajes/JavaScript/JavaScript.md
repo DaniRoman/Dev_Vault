@@ -70,6 +70,10 @@ Regla rápida para diferenciarlos
 
 `||` cuando quieras reemplazar valores “vacíos” o falsy
 
+- trabaja con **truthy/falsy**
+- sustituye si el valor izquierdo “no vale” en booleano    
+- más agresivo
+
 Ejemplos:
 
 - texto vacío
@@ -78,83 +82,23 @@ Ejemplos:
 - null
 - undefined
     
+`??` cuando solo quieras reemplazar ausencia real de valor
 
-## Usa `??` cuando solo quieras reemplazar ausencia real de valor
+- trabaja con **null/undefined**
+- sustituye solo si el valor izquierdo “no existe”
+- más preciso para ids, paths, configs y datos opcionales
 
 Ejemplos:
 
 - `null`
-    
 - `undefined`
-    
 
-# Aplicado a tu caso
-
-## Con `||`
-
-```ts
-String((device.deviceDefinition as DeviceDefinitionModel)._id || device.deviceDefinition)
-```
-
-### Qué significa
-
-> “usa `_id` si es truthy; si no, usa `deviceDefinition`”
-
-### Problema
-
-Si `_id` fuese:
-
-- `""`
-    
-- `0`
-    
-- `false`
-    
-
-caería al fallback aunque exista.
-
----
-
-## Con `??`
-
-```ts
-String((device.deviceDefinition as DeviceDefinitionModel)._id ?? device.deviceDefinition)
-```
-
-### Qué significa
-
-> “usa `_id` si no es null ni undefined; si no, usa `deviceDefinition`”
-
-### Ventaja
-
-Es más preciso cuando quieres comprobar existencia real del `_id`.
-
-# Resumen para apuntes
-
-## `||`
-
-- trabaja con **truthy/falsy**
-    
-- sustituye si el valor izquierdo “no vale” en booleano
-    
-- más agresivo
-    
-
-## `??`
-
-- trabaja con **null/undefined**
-    
-- sustituye solo si el valor izquierdo “no existe”
-    
-- más preciso para ids, paths, configs y datos opcionales
-    
-
-# Frase para memorizar
+Frase para memorizar
 
 **`||` pregunta “¿es truthy?”**  
 **`??` pregunta “¿existe?”**
 
-# Ejemplo comparativo final
+Ejemplo comparativo final
 
 ```ts
 const a = "" || "X";   // "X"
@@ -167,7 +111,8 @@ const e = null || "X"; // "X"
 const f = null ?? "X"; // "X"
 ```
 
-Si quieres, te hago ahora una **tabla visual de 1 línea por caso** para pegarla en apuntes.
+---
+
 
 >[!tip] Doc oficial nullish coalescing
 >[M mdn__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)
