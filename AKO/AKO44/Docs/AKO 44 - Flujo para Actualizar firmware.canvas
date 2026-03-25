@@ -17,8 +17,8 @@
 		{"id":"7d0525a44c3b5ca8","type":"text","text":"Mensaje `fota`\n","x":2510,"y":-820,"width":180,"height":81,"color":"5"},
 		{"id":"ff0e90fcd792e237","type":"text","text":"`Conexión Layer`\n","x":1982,"y":-560,"width":180,"height":81,"color":"5"},
 		{"id":"1641f5931609169c","type":"text","text":"Al entrar en este controlador y comprobar que es una dispositivos nuevo,  pasamos el parámetro y el valor que llega desde el `admin` al metodo `SendAmqp.sendCmd12830` `ref: server_command_fota_device_update, value: firmwareUpdateAction`","x":1156,"y":-344,"width":384,"height":156},
-		{"id":"0a1beeb14efcd6bf","x":1935,"y":-1050,"width":250,"height":60,"type":"text","text":"_validateSerialNumber  <-- Aqui Recibo la info del Device"},
-		{"id":"687d1efa9a4e9655","type":"text","text":"`_onMessage, _checkDeviceAndMessage, checkMessageRecived, , messageProcessor.process, processRetrive, processFota`","x":1620,"y":-935,"width":384,"height":156}
+		{"id":"0a1beeb14efcd6bf","type":"text","text":"_validateSerialNumber  <-- Aqui Recibo la info del Device","x":1857,"y":-809,"width":250,"height":60},
+		{"id":"687d1efa9a4e9655","type":"text","text":"`_onMessage, _checkDeviceAndMessage, checkMessageRecived, , messageProcessor.process, processRetrive, processFota, getLasFirmwareUpdateForDevice`","x":1778,"y":-1096,"width":384,"height":156}
 	],
 	"edges":[
 		{"id":"7c456f413caa9bc6","fromNode":"8a876cc93983611d","fromSide":"bottom","toNode":"24ea27fa8db7eb58","toSide":"top"},
@@ -37,7 +37,7 @@
 		{"id":"6568aaff9e2365e1","fromNode":"01d6e3f9bc601741","fromSide":"right","toNode":"fc4d4e2b0ed9dcb2","toSide":"right"},
 		{"id":"863a4086e5d58159","fromNode":"01d6e3f9bc601741","fromSide":"right","toNode":"7d0525a44c3b5ca8","toSide":"right"},
 		{"id":"70c84545a676de4f","fromNode":"aaebf4630d4e3fc8","fromSide":"bottom","toNode":"7d0525a44c3b5ca8","toSide":"top"},
-		{"id":"0f5431b1dfba41e2","fromNode":"687d1efa9a4e9655","fromSide":"bottom","toNode":"ff0e90fcd792e237","toSide":"top"},
-		{"id":"f29c9095dbefd42a","fromNode":"0a1beeb14efcd6bf","fromSide":"bottom","toNode":"ff0e90fcd792e237","toSide":"top"}
+		{"id":"003a7480c27f9b62","fromNode":"ff0e90fcd792e237","fromSide":"top","toNode":"0a1beeb14efcd6bf","toSide":"bottom","label":"Mensaje fota"},
+		{"id":"483b6afb5a7a39f4","fromNode":"0a1beeb14efcd6bf","fromSide":"top","toNode":"687d1efa9a4e9655","toSide":"bottom","label":"Mensaje fota"}
 	]
 }
