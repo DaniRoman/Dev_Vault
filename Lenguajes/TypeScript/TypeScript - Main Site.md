@@ -4,7 +4,7 @@
 
 [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions) 
 
-- **`as` es una aserción de tipo**: indica a TypeScript cómo tratar una variable. (TypeScript Handbook)
+- **`as` es una aserción de tipo**: indica a TypeScript cómo tratar una variable. (TypeScript Handbook) ^55df50
 - **No valida en runtime**: no transforma ni comprueba el dato real. (TypeScript Handbook)
 - **Uso en el ejemplo**: `(response as FirmwareUpdate)?.file` permite acceder a `file` como si `response` fuera `FirmwareUpdate`.
 - **Riesgo**: si `response` no cumple esa estructura, la aserción no te protege; solo calla al compilador. (TypeScript Handbook)

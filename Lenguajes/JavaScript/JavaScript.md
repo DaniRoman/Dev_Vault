@@ -1,12 +1,19 @@
-### Acceso seguro a propiedades
+### Acceso seguro a propiedades / optional chaining
 
 ```js
 (response as FirmwareUpdate)?.file
 fileRef?._id
 ```
 
->[!example] `as`Referencia a otro recurso 
-[[TypeScript - Main Site ^ dea]]
+Si `response` o `fileRef` son `null` o `undefined`, **no lanza error** y devuelve `undefined`.
+
+>[!tip] Doc oficial optional chaining
+>[M mdn__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+
+>[!example] `(response as FirmwareUpdate)`  Aserción de tipos
+[[TypeScript - Main Site#^55df50]]
+
+---
 ## Conceptos
 
 >[!success]
