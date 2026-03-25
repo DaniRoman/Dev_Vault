@@ -11,17 +11,14 @@
             "id": "ffe94eef894b9c91",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-                "viewState": {
-                  "x": 2125.907435626983,
-                  "y": -411.84824745947236,
-                  "zoom": -0.6020391108143665
-                }
+                "file": "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo para Actualizar firmware"
+              "icon": "lucide-file",
+              "title": "AKO  44 - Admin Main Page"
             }
           },
           {
@@ -70,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "fma",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -205,8 +202,8 @@
   },
   "active": "ffe94eef894b9c91",
   "lastOpenFiles": [
-    "AKO/AKO44/Fota.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+    "AKO/AKO44/Fota.md",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
     "AKO/AKO44/AKO 44 Main Site.md",
