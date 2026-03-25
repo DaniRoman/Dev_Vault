@@ -7,6 +7,7 @@
 ^d7d631
 
 ```js
+const fileRef: any = (response as FirmwareUpdate)?.file;
 const fileId = fileRef?._id ?? fileRef;
 ```
 

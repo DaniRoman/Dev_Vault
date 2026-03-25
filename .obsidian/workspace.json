@@ -11,6 +11,23 @@
             "id": "ffe94eef894b9c91",
             "type": "leaf",
             "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+                "viewState": {
+                  "x": 2057.168012741047,
+                  "y": -960.9833965273427,
+                  "zoom": 0.13044843662838493
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo para Actualizar firmware"
+            }
+          },
+          {
+            "id": "3dec0b2eb171134f",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "Lenguajes/JavaScript/JavaScript.md",
@@ -49,7 +66,8 @@
               "title": "JavaScript"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -213,11 +231,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ffe94eef894b9c91",
+  "active": "3dec0b2eb171134f",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-    "AKO/AKO44/Fota.md",
     "Lenguajes/JavaScript/JavaScript.md",
+    "AKO/AKO44/Fota.md",
     "Lenguajes/JavaScript/JavaScript - Difereréncia entre or y ??.md",
     "Lenguajes/JavaScript/JavaScript - Difere.md",
     "Lenguajes/JavaScript/JavaScript - Difererencia entre(.md",
