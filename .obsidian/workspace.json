@@ -28,17 +28,14 @@
             "id": "8565fda9c7bade7e",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para crear un netwotk en Device.canvas",
-                "viewState": {
-                  "x": -103.2753197817452,
-                  "y": -520.7655660990279,
-                  "zoom": -0.33122934025654593
-                }
+                "file": "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo para crear un netwotk en Device"
+              "icon": "lucide-file",
+              "title": "AKO  44 - Admin Main Page"
             }
           }
         ],
@@ -74,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "firmwareUpdate",
+                "query": "fm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -209,8 +206,8 @@
   },
   "active": "8565fda9c7bade7e",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo para crear un netwotk en Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260326151439.png",
     "AKO/AKO44/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
