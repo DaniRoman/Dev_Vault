@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 - PLMN.md",
+                "file": "Lenguajes/Angular/Angular Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - PLMN"
+              "title": "Angular Main Site"
             }
           }
         ],
@@ -89,8 +89,7 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -204,6 +203,9 @@
   "active": "8565fda9c7bade7e",
   "lastOpenFiles": [
     "AKO/AKO44/AKO 44 - PLMN.md",
+    "Lenguajes/Angular/Angular Main Site.md",
+    "Lenguajes/Angular",
+    "Frontend/Frontend - Main Site.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/Landing-Page/Landing-Page Main Site.md",
     "AKO/AKO44/Fota.md",
@@ -232,8 +234,6 @@
     "AKO/AKO44/Docs/AKO 44 Diferencia entre CMD y Param.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
-    "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device - Errores & Bugs.md",
-    "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/Landing-Page/attachments/Pasted image 20260318153738.png",
     "AKO/Landing-Page/attachments/Pasted image 20260318153610.png",
@@ -257,7 +257,6 @@
     "AKO - feature",
     "Rabbit/attachments",
     "Rabbit",
-    "Bjj",
-    "Db/PostgreSQL"
+    "Bjj"
   ]
 }
