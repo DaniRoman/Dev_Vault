@@ -15,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
                 "viewState": {
-                  "x": 2955.6602333488167,
-                  "y": -271.81545030045845,
+                  "x": 2978.026741090692,
+                  "y": -431.29837506861406,
                   "zoom": 0.0671136480091753
                 }
               },
@@ -208,16 +208,16 @@
   },
   "active": "ffe94eef894b9c91",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo para crear un netwotk en Device.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260326151439.png",
     "AKO/AKO44/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para crear un netwotk en Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "Lenguajes/Angular/Angular Main Site.md",
     "Lenguajes/Angular",
     "Frontend/Frontend - Main Site.md",
     "AKO/Landing-Page/Landing-Page Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "Db/Mongo/Mongo - Main Site.md",
     "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
@@ -255,7 +255,6 @@
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311113603.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311110411.png",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260311103914.png",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "attachments",
