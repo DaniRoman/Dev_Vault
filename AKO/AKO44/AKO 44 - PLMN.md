@@ -83,7 +83,8 @@ PlmnList
 >[!tip] PLMN table
 >Como se crea una tabla, que valores tiene que tener y que son estos.
 
->[!tip] Generar el path 
->Una vez generado la lista de plmn al gurdarla `POST` el back genera una ruta `path` donde se a guardado esta.
+>[!error] Generar el path 
+>Una vez generado la lista de plmn al gurdarla `POST` el back genera una ruta `path` donde se a guardado esta, 
+>***¿porque no me genera el path?***
 
 
