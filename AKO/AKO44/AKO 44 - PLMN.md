@@ -80,8 +80,10 @@ PlmnList
 >[!warning] porque no aparece panel_2ry en deviceDefinitionsList? admin plm ?
 >Los modelos que acepta tienen que ir en `admin` `PlmnListEditComponent`
 
->[!warning] PLMN table
+>[!tip] PLMN table
 >Como se crea una tabla, que valores tiene que tener y que son estos.
 
->[!warning] Generar el path 
->Una vez generado la lista de plmn al 
+>[!tip] Generar el path 
+>Una vez generado la lista de plmn al gurdarla `POST` el back genera una ruta `path` donde se a guardado esta.
+
+
