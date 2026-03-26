@@ -83,8 +83,7 @@ PlmnList
 >[!tip] PLMN table
 >Como se crea una tabla, que valores tiene que tener y que son estos.
 
->[!error] Generar el path 
->Una vez generado la lista de plmn al gurdarla `POST` el back genera una ruta `path` donde se a guardado esta, 
->***¿porque no me genera el path?***
+>[!warning] Generar el path 
+>Una vez generado en `admin` la nueva lista `plmn` hacemos un post a la `api`, y esta publica el mensaje al micro `commands.plm` este genera el path y guarda el fichero ***¿Guarda el fichero en este micro?***
 
 
