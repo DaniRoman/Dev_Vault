@@ -12,7 +12,7 @@
 		{"id":"26c1e35dd9761327","type":"text","text":". commands/plmn → handleCommandPLMN()\n\n→ Parsea la tabla texto en líneas\n\n→ Genera el binario con CRC16\n\n→ Guarda el .bin en: files/plmn/plmn_op{X}_r{Y}_{timestamp}.bin\n\n→ Actualiza plmnlist en MongoDB: filePath + active=true","x":281,"y":-920,"width":325,"height":103},
 		{"id":"42a70017f243f5a8","type":"text","text":"1. Device PERTE envía request GET /{serialNumber}/plmn por CoAP/MQTTS","x":-620,"y":174,"width":325,"height":103},
 		{"id":"68f751ed7a209b35","type":"text","text":"2. cl-perte recibe → messageProcessor.process() → retiveAction = \"plmn\"","x":-214,"y":174,"width":325,"height":103},
-		{"id":"a9bd4cd04c0f8d54","type":"text","text":">[!warning] Aqui tendre que ahce","x":260,"y":174,"width":325,"height":103}
+		{"id":"a9bd4cd04c0f8d54","type":"text","text":">[!warning] Aqui tendre que hacer mismo flujo que con firmwareUpdate","x":260,"y":174,"width":325,"height":103}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"8fed70b81f8a3e2d","fromSide":"right","toNode":"d391fc29697139f9","toSide":"left"},
