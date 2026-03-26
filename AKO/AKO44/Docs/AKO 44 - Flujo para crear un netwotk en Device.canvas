@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"8fed70b81f8a3e2d","x":-541,"y":-343,"width":321,"height":63,"type":"text","text":"Device PERTE envía sync por MQTTS"},
+		{"id":"d391fc29697139f9","type":"text","text":"cl-perte recibe el mensaje","x":-40,"y":-343,"width":321,"height":63},
+		{"id":"2ef97b834098ee1c","type":"text","text":"    → driver/translator.perte parsea el mensaje (extrae plmn_op, plmn_rev)\n","x":440,"y":-355,"width":362,"height":87},
+		{"id":"bcd1b364e7e6ad1a","type":"text","text":"commands/sync.perte → ConfProcessor.processPlmnMessagemessage()\n","x":1040,"y":-355,"width":362,"height":87}
+	],
+	"edges":[
+		{"id":"c83dd05c0a86a932","fromNode":"8fed70b81f8a3e2d","fromSide":"right","toNode":"d391fc29697139f9","toSide":"left"},
+		{"id":"5a21b28d6bd19aae","fromNode":"d391fc29697139f9","fromSide":"right","toNode":"2ef97b834098ee1c","toSide":"left"},
+		{"id":"06c14157c6eb3ded","fromNode":"2ef97b834098ee1c","fromSide":"right","toNode":"bcd1b364e7e6ad1a","toSide":"left"}
+	]
+}
