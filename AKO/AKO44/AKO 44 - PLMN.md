@@ -83,3 +83,5 @@ PlmnList
 >[!warning] PLMN table
 >Como se crea una tabla, que valores tiene que tener y que son estos.
 
+>[!warning] Generar el path 
+>Una vez generado la lista de plmn al 
