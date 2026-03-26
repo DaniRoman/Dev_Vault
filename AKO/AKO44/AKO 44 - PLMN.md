@@ -76,3 +76,7 @@ PlmnList
 │ • El dispositivo reporta cambio (audit log)        │
 └─────────────────────────────────────────────────────┘
 ```
+
+>[!warning] porque no aparece panel_2ry en deviceDefinitionsList? admin plm ? 
+
+
