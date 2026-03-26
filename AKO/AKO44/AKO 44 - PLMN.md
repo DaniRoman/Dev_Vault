@@ -77,6 +77,10 @@ PlmnList
 └─────────────────────────────────────────────────────┘
 ```
 
->[!warning] porque no aparece panel_2ry en deviceDefinitionsList? admin plm ? 
+>[!warning] porque no aparece panel_2ry en deviceDefinitionsList? admin plm ?
+>Los modelos que acepta tienen que ir en `admin` `PlmnListEditComponent`
+
+
+			
 
 
