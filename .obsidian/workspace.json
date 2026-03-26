@@ -32,8 +32,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo para crear un netwotk en Device.canvas",
                 "viewState": {
-                  "x": -125.06407665928278,
-                  "y": -422.07531435958225,
+                  "x": 197.92220176071507,
+                  "y": -615.6107430953764,
                   "zoom": -0.33122934025654593
                 }
               },
@@ -41,7 +41,8 @@
               "title": "AKO 44 - Flujo para crear un netwotk en Device"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,10 +207,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ffe94eef894b9c91",
+  "active": "8565fda9c7bade7e",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Flujo para crear un netwotk en Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo para crear un netwotk en Device.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260326151439.png",
     "AKO/AKO44/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
