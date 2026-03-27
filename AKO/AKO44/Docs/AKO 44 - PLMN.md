@@ -5,6 +5,9 @@
 - **Operator**: Código identificador del operador (0-65535)
 - **Release**: Versión/revisión de la tabla (0-65535)
 
+
+>[!Example] Flujo `PLMN` [[AKO 44 - Flujo PLMN.canvas]] 
+
 ## Estructura del Sistema
 
 El sistema permite gestionar tablas PLMN que se distribuyen a dispositivos específicos. Está compuesto por:
@@ -84,6 +87,6 @@ PlmnList
 >Como se crea una tabla, que valores tiene que tener y que son estos.
 
 >[!warning] Generar el path 
->Una vez generado en `admin` la nueva lista `plmn` hacemos un post a la `api`, y esta publica el mensaje al micro `commands.plm` este genera el path y guarda el fichero ¿Guarda el fichero en este micro?
+>Una vez generado en `admin` la nueva lista `plmn` hacemos un post a la `api`, y esta publica el mensaje al micro `commands.plm` este genera el path y guarda el fichero ***¿Guarda el fichero en este micro?***
 
 

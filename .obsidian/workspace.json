@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "plmn",
+                "query": "sync",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +88,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -201,12 +202,13 @@
   },
   "active": "ffe94eef894b9c91",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
+    "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Fota.md",
-    "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para crear un netwotk en Device.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260326151439.png",
     "Lenguajes/Angular/Angular Main Site.md",
     "Lenguajes/Angular",
@@ -248,7 +250,6 @@
     "AKO/AKO44/Docs/Flujo de samples (telemetría) y eventos del dispositivo.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311113603.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311110411.png",
-    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "attachments",
     "Express",
