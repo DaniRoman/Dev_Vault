@@ -1,15 +1,5 @@
 {
 	"nodes":[
-		{"id":"42a70017f243f5a8","type":"text","text":"1. Device PERTE envía request GET /{serialNumber}/plmn por CoAP/MQTTS","x":-620,"y":174,"width":325,"height":103},
-		{"id":"68f751ed7a209b35","type":"text","text":"2. cl-perte recibe → messageProcessor.process() → retiveAction = \"plmn\"","x":-214,"y":174,"width":325,"height":103},
-		{"id":"a9bd4cd04c0f8d54","type":"text","text":">[!warning] Aqui tendre que hacer mismo flujo que con firmwareUpdate","x":260,"y":174,"width":325,"height":103},
-		{"id":"428e47d1fdfd88a4","type":"text","text":">[!important] importante Flujo para que `Device` tenga el campo `network`\n>sin `network` en `device`  no pasara el filtro para aparecer como candidato para un `plmn update` en la ventana de `plmn launch update` del `admin`\n\n","x":-1320,"y":-400,"width":580,"height":177},
-		{"id":"8fed70b81f8a3e2d","type":"text","text":"***`Device` ***\nenvía mensaje `sync` ","x":-535,"y":-343,"width":195,"height":63,"color":"5"},
-		{"id":"ac5e10b47c71a332","type":"text","text":"campos del `mensaje`\n\n```js\n{\n  \"id\": [\"23031300000001\", 4812, 23, 1, 5],\n  \"ty\": \"sync\",\n  \"ts\": 1774451808,\n  \"bid\": 1,\n  \"hw\": [\"123456789012345\", \"8934071111111111111\", \"214071234567890\", \"BC95-G\", \"V100R100C10B657SP2\"],\n  \"plmn\": [1, 3],\n  \"d\": [[10, 2, 0, 0], [11, 5, 1, 1]]\n}\n```","x":-637,"y":-208,"width":400,"height":240},
-		{"id":"0bdc9645e3a14584","type":"text","text":">[!important] campo plmn\n>El campo `plmn` es un **array de 2 números**: `[operator, [[tableRevision]]]`.","x":-94,"y":-169,"width":411,"height":162},
-		{"id":"d391fc29697139f9","type":"text","text":"***`micro cl-pert`***  recibe el mensaje","x":-151,"y":-343,"width":200,"height":63,"color":"5"},
-		{"id":"2ef97b834098ee1c","type":"text","text":"***`micro translator`***\nSyncParser.parse() descompone el array:\n     const [plmn_op, plmn_rev] = plmn;  // plmn_op=1, plmn_rev=3\n     → genera: { plmn: { plmn_op: 1, plmn_rev: 3 } }\n     ↓\n","x":167,"y":-355,"width":256,"height":87,"color":"5"},
-		{"id":"bcd1b364e7e6ad1a","type":"text","text":"***`micro commands sync.perte`***\nrecibe el mensaje parseado\n","x":520,"y":-355,"width":260,"height":87,"color":"5"},
 		{"id":"b99bca1e47175855","type":"text","text":">[!important] importante Flujo para crear una `new PLMN` y lanzar un `plmn launch update`","x":-1320,"y":-905,"width":580,"height":88},
 		{"id":"02003b3a5408006b","type":"text","text":"`Admin` crea un `new plmn`\n\n","x":-637,"y":-897,"width":237,"height":72,"color":"5"},
 		{"id":"e0f07bd11ba5d773","type":"text","text":"***`API`*** recibe en `POST /api/plmn-list` y manda mensaje en RabbitMQ → topic: `command.plmn`","x":-200,"y":-912,"width":325,"height":103,"color":"5"},
@@ -17,18 +7,28 @@
 		{"id":"7da5f88d571e9434","type":"text","text":"***`API`*** Recibe en ***`POST /api/plmn-list/:id/launch`*** y diferencia entre `newDevice oldDevice` para enviar el `cmd`","x":-200,"y":-1164,"width":325,"height":103,"color":"5"},
 		{"id":"c17b1588d409c05f","type":"text","text":"***`micro translator`*** \n***`handleOutputCommand()\n   → processCommand()`*** traduce el comando a formato device: y Publica en ***`cl.output.perte.coap.driver`***","x":295,"y":-1164,"width":325,"height":103,"color":"5"},
 		{"id":"26c1e35dd9761327","type":"text","text":"***`micro commands/plmn`***\nRecibe el mensaje \n→ Parsea la tabla texto en líneas\n→ Genera el binario con CRC16\n→ ***Guarda el .bin en: files/plmn/plmn_op{X}_r{Y}_{timestamp}.bin***\n\n→ Actualiza plmnlist en MongoDB: filePath + active=true","x":261,"y":-912,"width":325,"height":103,"color":"5"},
-		{"id":"08387c52584601f7","type":"text","text":">[!warning] Importante \n\n>guarda el `fichero.bin` en el `path` de `micros`\n\n","x":780,"y":-921,"width":434,"height":120,"color":"2"},
 		{"id":"c2b2d37b89b54ff1","type":"text","text":">[!important] `TableRevision`\n\n**listado de códigos MCC-MNC** (Mobile Country Code + Mobile Network Code) separados por saltos de línea. Mira el ejemplo comentado en el código:\n\n```\n20205    ← KPN (Países Bajos)\n20404    ← Vodafone NL\n21401    ← Vodafone España\n22210    ← Vodafone Italia\n26201    ← Telekom Alemania\n310410   ← AT&T (USA)\n...\n```\n\nSon los operadores de red donde la SIM del device tiene **permiso de roaming**. Cada operador de telecomunicaciones (en este caso Vodafone/GDSP) proporciona esta lista.\n\nCada vez que se genera un nuevo `.bin` con una tabla PLMN actualizada, lleva un `operator` y un `release` (la revisión).\n\nEntonces:\n\n- **`operator`** = identificador del operador (ej: `1` = Vodafone)\n- **`release`** (tableRevision) = versión de esa tabla (ej: `3` = tercera revisión)\n","x":-759,"y":-740,"width":481,"height":220},
 		{"id":"8310cf28b1fd4220","x":-180,"y":-1400,"width":285,"height":142,"color":"6","type":"text","text":"***`mensaje`***\n```js\nMensaje: {\n     deviceInformation: { _id, serialNumber, connectivity: \"nbiot\", ... },\n     cmd_ref: \"server_command_plmns_update\",\n     cmd_value: 1\n   }\n```"},
 		{"id":"9c451bbaa4489ba9","type":"text","text":"***`formato device:`***\n```js\n{ id: [974130021], ty: \"cmd\", bid: 0, d: [[11, 1]] }\n     (registro 11 = flag PLMN update, valor 1 = \"tienes actualización pendiente\")\n```","x":153,"y":-1400,"width":285,"height":142,"color":"6"},
 		{"id":"d41d28fbf546a3ed","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":620,"y":-1380,"width":308,"height":160,"color":"4"},
-		{"id":"96b088f71bae5304","type":"text","text":"***`micro translator`*** \n***`handleOutputCommand()\n   → processCommand()`*** traduce el comando a formato device: y Publica en ***`cl.output.perte.coap.driver`***","x":740,"y":-1164,"width":325,"height":103,"color":"5"}
+		{"id":"96b088f71bae5304","type":"text","text":"***`micro coap`*** \n cl-perte-coap → recibe el mensaje\n   → Busca el device en MongoDB ✓\n   → Busca manufacturedDevice ✓\n   → Busca IP del device \n   → Intenta enviar CoAP POST al device","x":740,"y":-1164,"width":325,"height":103,"color":"5"},
+		{"id":"08387c52584601f7","type":"text","text":">[!warning] Importante \n\n>guarda el `fichero.bin` en el `path` de `micros`\n\n","x":711,"y":-920,"width":434,"height":120,"color":"2"},
+		{"id":"42a70017f243f5a8","type":"text","text":"1. Device PERTE epor CoAP/MQTTS","x":-840,"y":680,"width":325,"height":103},
+		{"id":"68f751ed7a209b35","type":"text","text":"2. cl-perte recibe → messageProcessor.process() → retiveAction = \"plmn\"","x":-434,"y":680,"width":325,"height":103},
+		{"id":"a9bd4cd04c0f8d54","type":"text","text":">[!warning] Aqui tendre que hacer mismo flujo que con firmwareUpdate","x":40,"y":680,"width":325,"height":103},
+		{"id":"d391fc29697139f9","type":"text","text":"***`micro cl-pert`***  recibe el mensaje","x":-232,"y":62,"width":200,"height":63,"color":"5"},
+		{"id":"2ef97b834098ee1c","type":"text","text":"***`micro translator`***\nSyncParser.parse() descompone el array:\n     const [plmn_op, plmn_rev] = plmn;  // plmn_op=1, plmn_rev=3\n     → genera: { plmn: { plmn_op: 1, plmn_rev: 3 } }\n     ↓\n","x":86,"y":50,"width":256,"height":87,"color":"5"},
+		{"id":"bcd1b364e7e6ad1a","type":"text","text":"***`micro commands sync.perte`***\nrecibe el mensaje parseado\n","x":439,"y":50,"width":260,"height":87,"color":"5"},
+		{"id":"8fed70b81f8a3e2d","type":"text","text":"***`Device` ***\nenvía mensaje `sync` ","x":-616,"y":62,"width":195,"height":63,"color":"5"},
+		{"id":"428e47d1fdfd88a4","type":"text","text":">[!important] importante Flujo para que `Device` tenga el campo `network`\n>sin `network` en `device`  no pasara el filtro para aparecer como candidato para un `plmn update` en la ventana de `plmn launch update` del `admin`\n\n","x":-1401,"y":5,"width":580,"height":177},
+		{"id":"ac5e10b47c71a332","type":"text","text":"campos del `mensaje`\n\n```js\n{\n  \"id\": [\"23031300000001\", 4812, 23, 1, 5],\n  \"ty\": \"sync\",\n  \"ts\": 1774451808,\n  \"bid\": 1,\n  \"hw\": [\"123456789012345\", \"8934071111111111111\", \"214071234567890\", \"BC95-G\", \"V100R100C10B657SP2\"],\n  \"plmn\": [1, 3],\n  \"d\": [[10, 2, 0, 0], [11, 5, 1, 1]]\n}\n```","x":-667,"y":-240,"width":298,"height":171},
+		{"id":"0bdc9645e3a14584","type":"text","text":">[!important] campo plmn\n>El campo `plmn` es un **array de 2 números**: `[operator, [[tableRevision]]]`.","x":-232,"y":-231,"width":411,"height":162},
+		{"id":"debe4e3ea59c1396","type":"text","text":"***`Device`***\nEnvía request `GET /{serialNumber}/plmn ","x":-616,"y":240,"width":216,"height":120,"color":"5"}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"8fed70b81f8a3e2d","fromSide":"right","toNode":"d391fc29697139f9","toSide":"left"},
 		{"id":"5a21b28d6bd19aae","fromNode":"d391fc29697139f9","fromSide":"right","toNode":"2ef97b834098ee1c","toSide":"left"},
 		{"id":"06c14157c6eb3ded","fromNode":"2ef97b834098ee1c","fromSide":"right","toNode":"bcd1b364e7e6ad1a","toSide":"left"},
-		{"id":"a99b77af735563f9","fromNode":"8fed70b81f8a3e2d","fromSide":"bottom","toNode":"ac5e10b47c71a332","toSide":"top"},
 		{"id":"c056ca387470896e","fromNode":"0bdc9645e3a14584","fromSide":"left","toNode":"ac5e10b47c71a332","toSide":"right"},
 		{"id":"869fc1aee64c1d4b","fromNode":"02003b3a5408006b","fromSide":"right","toNode":"e0f07bd11ba5d773","toSide":"left"},
 		{"id":"9e97a0c6a6a76da5","fromNode":"e0f07bd11ba5d773","fromSide":"right","toNode":"26c1e35dd9761327","toSide":"left"},
@@ -44,6 +44,7 @@
 		{"id":"97b1c3c291b110fa","fromNode":"8310cf28b1fd4220","fromSide":"bottom","toNode":"7da5f88d571e9434","toSide":"top"},
 		{"id":"28219d59d1e2d91e","fromNode":"9c451bbaa4489ba9","fromSide":"bottom","toNode":"c17b1588d409c05f","toSide":"top"},
 		{"id":"6da8487471b08049","fromNode":"c17b1588d409c05f","fromSide":"top","toNode":"d41d28fbf546a3ed","toSide":"left"},
-		{"id":"43258a6d3f4c3d94","fromNode":"c17b1588d409c05f","fromSide":"right","toNode":"96b088f71bae5304","toSide":"left"}
+		{"id":"43258a6d3f4c3d94","fromNode":"c17b1588d409c05f","fromSide":"right","toNode":"96b088f71bae5304","toSide":"left"},
+		{"id":"8a15eccb2de98d3b","fromNode":"ac5e10b47c71a332","fromSide":"bottom","toNode":"8fed70b81f8a3e2d","toSide":"top"}
 	]
 }
