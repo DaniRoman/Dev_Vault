@@ -84,7 +84,6 @@ PlmnList
 >Como se crea una tabla, que valores tiene que tener y que son estos.
 
 >[!warning] Generar el path 
->Una vez generado en `admin` la nueva lista `plmn` hacemos un post a la `api`, y esta publica el mensaje al micro `commands.plm` este genera el path y guarda el fichero ***¿Guarda el fichero en este micro?***
+>Una vez generado en `admin` la nueva lista `plmn` hacemos un post a la `api`, y esta publica el mensaje al micro `commands.plm` este genera el path y guarda el fichero ¿Guarda el fichero en este micro?
 
->[!Example] Flujo `plm` 
->
+
