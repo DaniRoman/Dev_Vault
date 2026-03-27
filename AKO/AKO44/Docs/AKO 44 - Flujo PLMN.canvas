@@ -1,6 +1,5 @@
 {
 	"nodes":[
-		{"id":"bcd1b364e7e6ad1a","type":"text","text":"commands.sync.perte → handleInput() recibe el mensaje parseado\n","x":1040,"y":-355,"width":362,"height":87},
 		{"id":"02003b3a5408006b","type":"text","text":"Admin en frontend → crea un plmnList con: operator, release, plmnTable (texto MCC-MNC)","x":-599,"y":-920,"width":325,"height":103},
 		{"id":"e0f07bd11ba5d773","type":"text","text":"API publica mensaje en RabbitMQ → topic: \"command.plmn\"","x":-193,"y":-920,"width":325,"height":103},
 		{"id":"c2b2d37b89b54ff1","type":"text","text":">[!important] `TableRevision`\n\n**listado de códigos MCC-MNC** (Mobile Country Code + Mobile Network Code) separados por saltos de línea. Mira el ejemplo comentado en el código:\n\n```\n20205    ← KPN (Países Bajos)\n20404    ← Vodafone NL\n21401    ← Vodafone España\n22210    ← Vodafone Italia\n26201    ← Telekom Alemania\n310410   ← AT&T (USA)\n...\n```\n\nSon los operadores de red donde la SIM del device tiene **permiso de roaming**. Cada operador de telecomunicaciones (en este caso Vodafone/GDSP) proporciona esta lista.\n\nCada vez que se genera un nuevo `.bin` con una tabla PLMN actualizada, lleva un `operator` y un `release` (la revisión).\n\nEntonces:\n\n- **`operator`** = identificador del operador (ej: `1` = Vodafone)\n- **`release`** (tableRevision) = versión de esa tabla (ej: `3` = tercera revisión)\n","x":-562,"y":-699,"width":563,"height":240},
@@ -13,7 +12,9 @@
 		{"id":"ac5e10b47c71a332","type":"text","text":"campos del `mensaje`\n\n```js\n{\n  \"id\": [\"23031300000001\", 4812, 23, 1, 5],\n  \"ty\": \"sync\",\n  \"ts\": 1774451808,\n  \"bid\": 1,\n  \"hw\": [\"123456789012345\", \"8934071111111111111\", \"214071234567890\", \"BC95-G\", \"V100R100C10B657SP2\"],\n  \"plmn\": [1, 3],\n  \"d\": [[10, 2, 0, 0], [11, 5, 1, 1]]\n}\n```","x":-637,"y":-208,"width":400,"height":240},
 		{"id":"0bdc9645e3a14584","type":"text","text":">[!important] campo plmn\n>El campo `plmn` es un **array de 2 números**: `[operator, [[tableRevision]]]`.","x":-94,"y":-169,"width":411,"height":162},
 		{"id":"d391fc29697139f9","type":"text","text":"***`micro cl-pert`***  recibe el mensaje","x":-151,"y":-343,"width":200,"height":63,"color":"5"},
-		{"id":"2ef97b834098ee1c","type":"text","text":"***`micro translator`***\n\ndriver/translator.perteSyncParser.parse() descompone el array:\n     const [plmn_op, plmn_rev] = plmn;  // plmn_op=1, plmn_rev=3\n     → genera: { plmn: { plmn_op: 1, plmn_rev: 3 } }\n     ↓\n","x":244,"y":-355,"width":362,"height":87}
+		{"id":"2ef97b834098ee1c","type":"text","text":"***`micro translator`***\nSyncParser.parse() descompone el array:\n     const [plmn_op, plmn_rev] = plmn;  // plmn_op=1, plmn_rev=3\n     → genera: { plmn: { plmn_op: 1, plmn_rev: 3 } }\n     ↓\n","x":167,"y":-355,"width":256,"height":87,"color":"5"},
+		{"id":"bcd1b364e7e6ad1a","type":"text","text":"***`micro commands sync.perte`***\nrecibe el mensaje parseado\n","x":520,"y":-355,"width":260,"height":87,"color":"5"},
+		{"id":"b99bca1e47175855","type":"text","text":">[!important] importante Flujo para crear un `Device` tenga el campo `network`\n>sin `network` en `device`  no pasara el filtro para aparecer como candidato para un `plmn update` en la ventana de `plmn launch update` del `admin`\n\n","x":-1320,"y":-787,"width":580,"height":177}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"8fed70b81f8a3e2d","fromSide":"right","toNode":"d391fc29697139f9","toSide":"left"},
