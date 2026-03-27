@@ -23,7 +23,8 @@
 		{"id":"debe4e3ea59c1396","type":"text","text":"***`Device`***\nEnvía request ***`GET /:sn/plmn`*** ","x":-666,"y":80,"width":216,"height":120,"color":"5"},
 		{"id":"de48e7ab6c7a7ac7","type":"text","text":"***`micro coap`*** \nRecive mensaje en `messageProcessor.process() → retiveAction = \"plmn\" -> processPlmn` y busca el `.bin` en el workspace","x":-307,"y":80,"width":251,"height":120,"color":"5"},
 		{"id":"c9107efca6763ef1","type":"text","text":">[!important] importante Flujo para recibir la actualización de `plmn`\n\n\n","x":-1372,"y":106,"width":501,"height":68},
-		{"id":"bf165271d22a5e3b","type":"text","text":">[!warning] Importante \n\n>EL fichero se guardo  el `fichero.bin` en el `path` de `micros`\n\n","x":125,"y":80,"width":434,"height":120,"color":"2"}
+		{"id":"bf165271d22a5e3b","type":"text","text":">[!warning] Importante \n\n>EL fichero se guardo  el `fichero.bin` en el `path` de `micros`\n\n","x":125,"y":80,"width":434,"height":120,"color":"2"},
+		{"id":"d5337abea677f7ca","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":-29,"y":-740,"width":308,"height":160,"color":"4"}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"8fed70b81f8a3e2d","fromSide":"right","toNode":"d391fc29697139f9","toSide":"left"},
@@ -47,6 +48,7 @@
 		{"id":"c4852f8a3e5a1dd2","fromNode":"c9107efca6763ef1","fromSide":"right","toNode":"debe4e3ea59c1396","toSide":"left"},
 		{"id":"7fed69db7baa1567","fromNode":"ac5e10b47c71a332","fromSide":"bottom","toNode":"8fed70b81f8a3e2d","toSide":"top"},
 		{"id":"c3a4a5217b003da2","fromNode":"428e47d1fdfd88a4","fromSide":"left","toNode":"c9107efca6763ef1","toSide":"left","label":"Flujos Device"},
-		{"id":"0b3969f91d3229e8","fromNode":"bf165271d22a5e3b","fromSide":"left","toNode":"de48e7ab6c7a7ac7","toSide":"right"}
+		{"id":"0b3969f91d3229e8","fromNode":"bf165271d22a5e3b","fromSide":"left","toNode":"de48e7ab6c7a7ac7","toSide":"right"},
+		{"id":"3878cfa8297e52f8","fromNode":"e0f07bd11ba5d773","fromSide":"bottom","toNode":"d5337abea677f7ca","toSide":"top"}
 	]
 }
