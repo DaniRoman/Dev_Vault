@@ -86,5 +86,5 @@ PlmnList
 >[!warning] Generar el path 
 >Una vez generado en `admin` la nueva lista `plmn` hacemos un post a la `api`, y esta publica el mensaje al micro `commands.plm` este genera el path y guarda el fichero ***¿Guarda el fichero en este micro?***
 
->[!Example] Flujo para crear un network (Necesario para recibir una actualización de `plmn`)
+>[!Example] Flujo `plm` 
 >
