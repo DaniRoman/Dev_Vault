@@ -1,9 +1,7 @@
 {
 	"nodes":[
-		{"id":"02003b3a5408006b","type":"text","text":"Admin en frontend → crea un plmnList con: operator, release, plmnTable (texto MCC-MNC)","x":-599,"y":-920,"width":325,"height":103},
-		{"id":"e0f07bd11ba5d773","type":"text","text":"API publica mensaje en RabbitMQ → topic: \"command.plmn\"","x":-193,"y":-920,"width":325,"height":103},
-		{"id":"c2b2d37b89b54ff1","type":"text","text":">[!important] `TableRevision`\n\n**listado de códigos MCC-MNC** (Mobile Country Code + Mobile Network Code) separados por saltos de línea. Mira el ejemplo comentado en el código:\n\n```\n20205    ← KPN (Países Bajos)\n20404    ← Vodafone NL\n21401    ← Vodafone España\n22210    ← Vodafone Italia\n26201    ← Telekom Alemania\n310410   ← AT&T (USA)\n...\n```\n\nSon los operadores de red donde la SIM del device tiene **permiso de roaming**. Cada operador de telecomunicaciones (en este caso Vodafone/GDSP) proporciona esta lista.\n\nCada vez que se genera un nuevo `.bin` con una tabla PLMN actualizada, lleva un `operator` y un `release` (la revisión).\n\nEntonces:\n\n- **`operator`** = identificador del operador (ej: `1` = Vodafone)\n- **`release`** (tableRevision) = versión de esa tabla (ej: `3` = tercera revisión)\n","x":-562,"y":-699,"width":563,"height":240},
-		{"id":"26c1e35dd9761327","type":"text","text":". commands/plmn → handleCommandPLMN()\n\n→ Parsea la tabla texto en líneas\n\n→ Genera el binario con CRC16\n\n→ Guarda el .bin en: files/plmn/plmn_op{X}_r{Y}_{timestamp}.bin\n\n→ Actualiza plmnlist en MongoDB: filePath + active=true","x":281,"y":-920,"width":325,"height":103},
+		{"id":"e0f07bd11ba5d773","type":"text","text":"API publica mensaje en RabbitMQ → topic: \"command.plmn\"","x":-193,"y":-920,"width":325,"height":103,"color":"5"},
+		{"id":"26c1e35dd9761327","type":"text","text":". commands/plmn → handleCommandPLMN()\n\n→ Parsea la tabla texto en líneas\n\n→ Genera el binario con CRC16\n\n→ Guarda el .bin en: files/plmn/plmn_op{X}_r{Y}_{timestamp}.bin\n\n→ Actualiza plmnlist en MongoDB: filePath + active=true","x":281,"y":-920,"width":325,"height":103,"color":"5"},
 		{"id":"42a70017f243f5a8","type":"text","text":"1. Device PERTE envía request GET /{serialNumber}/plmn por CoAP/MQTTS","x":-620,"y":174,"width":325,"height":103},
 		{"id":"68f751ed7a209b35","type":"text","text":"2. cl-perte recibe → messageProcessor.process() → retiveAction = \"plmn\"","x":-214,"y":174,"width":325,"height":103},
 		{"id":"a9bd4cd04c0f8d54","type":"text","text":">[!warning] Aqui tendre que hacer mismo flujo que con firmwareUpdate","x":260,"y":174,"width":325,"height":103},
@@ -14,7 +12,9 @@
 		{"id":"d391fc29697139f9","type":"text","text":"***`micro cl-pert`***  recibe el mensaje","x":-151,"y":-343,"width":200,"height":63,"color":"5"},
 		{"id":"2ef97b834098ee1c","type":"text","text":"***`micro translator`***\nSyncParser.parse() descompone el array:\n     const [plmn_op, plmn_rev] = plmn;  // plmn_op=1, plmn_rev=3\n     → genera: { plmn: { plmn_op: 1, plmn_rev: 3 } }\n     ↓\n","x":167,"y":-355,"width":256,"height":87,"color":"5"},
 		{"id":"bcd1b364e7e6ad1a","type":"text","text":"***`micro commands sync.perte`***\nrecibe el mensaje parseado\n","x":520,"y":-355,"width":260,"height":87,"color":"5"},
-		{"id":"b99bca1e47175855","type":"text","text":">[!important] importante Flujo para crear un `Device` tenga el campo `network`\n>sin `network` en `device`  no pasara el filtro para aparecer como candidato para un `plmn update` en la ventana de `plmn launch update` del `admin`\n\n","x":-1320,"y":-787,"width":580,"height":177}
+		{"id":"b99bca1e47175855","type":"text","text":">[!important] importante Flujo para crear una `new PLMN` y lanzar un `plmn launch update`","x":-1320,"y":-905,"width":580,"height":88},
+		{"id":"02003b3a5408006b","type":"text","text":"`Admin` crea un `new plmn` con\n\n","x":-637,"y":-912,"width":277,"height":103,"color":"5"},
+		{"id":"c2b2d37b89b54ff1","type":"text","text":">[!important] `TableRevision`\n\n**listado de códigos MCC-MNC** (Mobile Country Code + Mobile Network Code) separados por saltos de línea. Mira el ejemplo comentado en el código:\n\n```\n20205    ← KPN (Países Bajos)\n20404    ← Vodafone NL\n21401    ← Vodafone España\n22210    ← Vodafone Italia\n26201    ← Telekom Alemania\n310410   ← AT&T (USA)\n...\n```\n\nSon los operadores de red donde la SIM del device tiene **permiso de roaming**. Cada operador de telecomunicaciones (en este caso Vodafone/GDSP) proporciona esta lista.\n\nCada vez que se genera un nuevo `.bin` con una tabla PLMN actualizada, lleva un `operator` y un `release` (la revisión).\n\nEntonces:\n\n- **`operator`** = identificador del operador (ej: `1` = Vodafone)\n- **`release`** (tableRevision) = versión de esa tabla (ej: `3` = tercera revisión)\n","x":-718,"y":-720,"width":525,"height":240}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"8fed70b81f8a3e2d","fromSide":"right","toNode":"d391fc29697139f9","toSide":"left"},
@@ -27,6 +27,7 @@
 		{"id":"56aec8879ebe7802","fromNode":"c2b2d37b89b54ff1","fromSide":"top","toNode":"02003b3a5408006b","toSide":"bottom"},
 		{"id":"7323e53b6f3614ea","fromNode":"42a70017f243f5a8","fromSide":"right","toNode":"68f751ed7a209b35","toSide":"left"},
 		{"id":"0e727319c437c142","fromNode":"68f751ed7a209b35","fromSide":"right","toNode":"a9bd4cd04c0f8d54","toSide":"left"},
-		{"id":"fdcdd06c04f8005c","fromNode":"428e47d1fdfd88a4","fromSide":"right","toNode":"8fed70b81f8a3e2d","toSide":"left"}
+		{"id":"fdcdd06c04f8005c","fromNode":"428e47d1fdfd88a4","fromSide":"right","toNode":"8fed70b81f8a3e2d","toSide":"left"},
+		{"id":"cbdf4a7302db6637","fromNode":"b99bca1e47175855","fromSide":"right","toNode":"02003b3a5408006b","toSide":"left"}
 	]
 }
