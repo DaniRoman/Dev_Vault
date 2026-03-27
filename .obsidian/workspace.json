@@ -22,6 +22,23 @@
             }
           },
           {
+            "id": "9f6a50bd6f9c6abb",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
+                "viewState": {
+                  "x": -204.34826232743845,
+                  "y": -279.05974712690323,
+                  "zoom": -0.2758100579880192
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo PLMN"
+            }
+          },
+          {
             "id": "8565fda9c7bade7e",
             "type": "leaf",
             "state": {
@@ -35,7 +52,8 @@
               "title": "AKO  44 - Admin Main Page"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +111,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 627.5024719238281
+    "width": 275.5024719238281,
+    "collapsed": true
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -200,14 +219,14 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ffe94eef894b9c91",
+  "active": "9f6a50bd6f9c6abb",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "AKO/AKO44/Docs/AKO 44 - PLMN.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Fota.md",
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260326151439.png",
     "Lenguajes/Angular/Angular Main Site.md",
