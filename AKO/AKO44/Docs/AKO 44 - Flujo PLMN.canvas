@@ -24,7 +24,9 @@
 		{"id":"de48e7ab6c7a7ac7","type":"text","text":"***`micro coap`*** \nRecive mensaje en `messageProcessor.process() → retiveAction = \"plmn\" -> processPlmn` y busca el `.bin` en el workspace","x":-307,"y":80,"width":251,"height":120,"color":"5"},
 		{"id":"c9107efca6763ef1","type":"text","text":">[!important] importante Flujo para recibir la actualización de `plmn`\n\n\n","x":-1372,"y":106,"width":501,"height":68},
 		{"id":"bf165271d22a5e3b","type":"text","text":">[!warning] Importante \n\n>EL fichero se guardo  el `fichero.bin` en el `path` de `micros`\n\n","x":125,"y":80,"width":434,"height":120,"color":"2"},
-		{"id":"d5337abea677f7ca","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":-29,"y":-740,"width":308,"height":160,"color":"4"}
+		{"id":"d5337abea677f7ca","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":-29,"y":-740,"width":308,"height":160,"color":"4"},
+		{"id":"b567a9bb5a5f3154","type":"text","text":"NuevoFlujo","x":-666,"y":500,"width":216,"height":120,"color":"5"},
+		{"id":"94bdf070938d5343","type":"text","text":"NuevoFlujo","x":-307,"y":500,"width":216,"height":120,"color":"5"}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"8fed70b81f8a3e2d","fromSide":"right","toNode":"d391fc29697139f9","toSide":"left"},
