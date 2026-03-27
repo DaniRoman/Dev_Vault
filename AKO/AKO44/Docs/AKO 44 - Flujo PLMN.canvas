@@ -14,7 +14,7 @@
 		{"id":"02003b3a5408006b","type":"text","text":"`Admin` crea un `new plmn`\n\n","x":-637,"y":-897,"width":237,"height":72,"color":"5"},
 		{"id":"e0f07bd11ba5d773","type":"text","text":"***`API`*** recibe en `POST /api/plmn-list` y manda mensaje en RabbitMQ → topic: `command.plmn`","x":-200,"y":-912,"width":325,"height":103,"color":"5"},
 		{"id":"39ddd2298b63fc84","type":"text","text":"`Admin` lanza un `plmn launch update`\n\n","x":-637,"y":-1149,"width":237,"height":72,"color":"5"},
-		{"id":"7da5f88d571e9434","type":"text","text":"API publica mensaje en RabbitMQ → topic: \"command.plmn\"","x":-200,"y":-1164,"width":325,"height":103,"color":"5"},
+		{"id":"7da5f88d571e9434","type":"text","text":"***`API`*** Recibe en ***`POST /api/plmn-list/:id/launch`*** en RabbitMQ → topic: \"command.plmn\"","x":-200,"y":-1164,"width":325,"height":103,"color":"5"},
 		{"id":"c17b1588d409c05f","type":"text","text":". commands/plmn → handleCommandPLMN()\n\n→ Parsea la tabla texto en líneas\n\n→ Genera el binario con CRC16\n\n→ Guarda el .bin en: files/plmn/plmn_op{X}_r{Y}_{timestamp}.bin\n\n→ Actualiza plmnlist en MongoDB: filePath + active=true","x":295,"y":-1164,"width":325,"height":103,"color":"5"},
 		{"id":"26c1e35dd9761327","type":"text","text":"***`micro commands/plmn`***\nRecibe el mensaje \n→ Parsea la tabla texto en líneas\n→ Genera el binario con CRC16\n→ ***Guarda el .bin en: files/plmn/plmn_op{X}_r{Y}_{timestamp}.bin***\n\n→ Actualiza plmnlist en MongoDB: filePath + active=true","x":261,"y":-912,"width":325,"height":103,"color":"5"},
 		{"id":"08387c52584601f7","type":"text","text":">[!warning] Importante \n\n>guarda el `fichero.bin` en el `path` de `micros`\n\n","x":780,"y":-921,"width":434,"height":120,"color":"2"},
