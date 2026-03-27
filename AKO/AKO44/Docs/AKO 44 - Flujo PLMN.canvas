@@ -13,17 +13,16 @@
 		{"id":"d41d28fbf546a3ed","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":620,"y":-1380,"width":308,"height":160,"color":"4"},
 		{"id":"96b088f71bae5304","type":"text","text":"***`micro coap`*** \n cl-perte-coap → recibe el mensaje\n   → Busca el device en MongoDB ✓\n   → Busca manufacturedDevice ✓\n   → Busca IP del device \n   → Intenta enviar CoAP POST al device","x":740,"y":-1164,"width":325,"height":103,"color":"5"},
 		{"id":"08387c52584601f7","type":"text","text":">[!warning] Importante \n\n>guarda el `fichero.bin` en el `path` de `micros`\n\n","x":711,"y":-920,"width":434,"height":120,"color":"2"},
-		{"id":"42a70017f243f5a8","type":"text","text":"1. Device PERTE epor CoAP/MQTTS","x":-840,"y":680,"width":325,"height":103},
-		{"id":"68f751ed7a209b35","type":"text","text":"2. cl-perte recibe → messageProcessor.process() → retiveAction = \"plmn\"","x":-434,"y":680,"width":325,"height":103},
-		{"id":"a9bd4cd04c0f8d54","type":"text","text":">[!warning] Aqui tendre que hacer mismo flujo que con firmwareUpdate","x":40,"y":680,"width":325,"height":103},
 		{"id":"d391fc29697139f9","type":"text","text":"***`micro cl-pert`***  recibe el mensaje","x":-232,"y":62,"width":200,"height":63,"color":"5"},
 		{"id":"2ef97b834098ee1c","type":"text","text":"***`micro translator`***\nSyncParser.parse() descompone el array:\n     const [plmn_op, plmn_rev] = plmn;  // plmn_op=1, plmn_rev=3\n     → genera: { plmn: { plmn_op: 1, plmn_rev: 3 } }\n     ↓\n","x":86,"y":50,"width":256,"height":87,"color":"5"},
 		{"id":"bcd1b364e7e6ad1a","type":"text","text":"***`micro commands sync.perte`***\nrecibe el mensaje parseado\n","x":439,"y":50,"width":260,"height":87,"color":"5"},
 		{"id":"8fed70b81f8a3e2d","type":"text","text":"***`Device` ***\nenvía mensaje `sync` ","x":-616,"y":62,"width":195,"height":63,"color":"5"},
 		{"id":"428e47d1fdfd88a4","type":"text","text":">[!important] importante Flujo para que `Device` tenga el campo `network`\n>sin `network` en `device`  no pasara el filtro para aparecer como candidato para un `plmn update` en la ventana de `plmn launch update` del `admin`\n\n","x":-1401,"y":5,"width":580,"height":177},
-		{"id":"ac5e10b47c71a332","type":"text","text":"campos del `mensaje`\n\n```js\n{\n  \"id\": [\"23031300000001\", 4812, 23, 1, 5],\n  \"ty\": \"sync\",\n  \"ts\": 1774451808,\n  \"bid\": 1,\n  \"hw\": [\"123456789012345\", \"8934071111111111111\", \"214071234567890\", \"BC95-G\", \"V100R100C10B657SP2\"],\n  \"plmn\": [1, 3],\n  \"d\": [[10, 2, 0, 0], [11, 5, 1, 1]]\n}\n```","x":-667,"y":-240,"width":298,"height":171},
-		{"id":"0bdc9645e3a14584","type":"text","text":">[!important] campo plmn\n>El campo `plmn` es un **array de 2 números**: `[operator, [[tableRevision]]]`.","x":-232,"y":-231,"width":411,"height":162},
-		{"id":"debe4e3ea59c1396","type":"text","text":"***`Device`***\nEnvía request `GET /{serialNumber}/plmn ","x":-616,"y":240,"width":216,"height":120,"color":"5"}
+		{"id":"ac5e10b47c71a332","type":"text","text":"campos del `mensaje`\n\n```js\n{\n  \"id\": [\"23031300000001\", 4812, 23, 1, 5],\n  \"ty\": \"sync\",\n  \"ts\": 1774451808,\n  \"bid\": 1,\n  \"hw\": [\"123456789012345\", \"8934071111111111111\", \"214071234567890\", \"BC95-G\", \"V100R100C10B657SP2\"],\n  \"plmn\": [1, 3],\n  \"d\": [[10, 2, 0, 0], [11, 5, 1, 1]]\n}\n```","x":-667,"y":280,"width":298,"height":171,"color":"6"},
+		{"id":"0bdc9645e3a14584","type":"text","text":">[!important] campo plmn\n>El campo `plmn` es un **array de 2 números**: `[operator, [[tableRevision]]]`.","x":-278,"y":285,"width":411,"height":162,"color":"6"},
+		{"id":"debe4e3ea59c1396","type":"text","text":"***`Device`***\nEnvía request ***`GET /:sn/plmn`*** ","x":-616,"y":-200,"width":216,"height":120,"color":"5"},
+		{"id":"de48e7ab6c7a7ac7","type":"text","text":"***`micro coap`*** \nRecive mensaje en `messageProcessor.process() → retiveAction = \"plmn\"`\n\n\n\n   → Busca IP del device \n   → Intenta enviar CoAP POST al device","x":-257,"y":-200,"width":251,"height":120,"color":"5"},
+		{"id":"c9107efca6763ef1","type":"text","text":">[!important] importante Flujo para recibir la actualización de `plmn`\n\n\n","x":-1322,"y":-174,"width":501,"height":68}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"8fed70b81f8a3e2d","fromSide":"right","toNode":"d391fc29697139f9","toSide":"left"},
@@ -33,8 +32,6 @@
 		{"id":"869fc1aee64c1d4b","fromNode":"02003b3a5408006b","fromSide":"right","toNode":"e0f07bd11ba5d773","toSide":"left"},
 		{"id":"9e97a0c6a6a76da5","fromNode":"e0f07bd11ba5d773","fromSide":"right","toNode":"26c1e35dd9761327","toSide":"left"},
 		{"id":"56aec8879ebe7802","fromNode":"c2b2d37b89b54ff1","fromSide":"top","toNode":"02003b3a5408006b","toSide":"bottom"},
-		{"id":"7323e53b6f3614ea","fromNode":"42a70017f243f5a8","fromSide":"right","toNode":"68f751ed7a209b35","toSide":"left"},
-		{"id":"0e727319c437c142","fromNode":"68f751ed7a209b35","fromSide":"right","toNode":"a9bd4cd04c0f8d54","toSide":"left"},
 		{"id":"fdcdd06c04f8005c","fromNode":"428e47d1fdfd88a4","fromSide":"right","toNode":"8fed70b81f8a3e2d","toSide":"left"},
 		{"id":"cbdf4a7302db6637","fromNode":"b99bca1e47175855","fromSide":"right","toNode":"02003b3a5408006b","toSide":"left"},
 		{"id":"625297eb8c43b3df","fromNode":"7da5f88d571e9434","fromSide":"right","toNode":"c17b1588d409c05f","toSide":"left"},
@@ -45,6 +42,8 @@
 		{"id":"28219d59d1e2d91e","fromNode":"9c451bbaa4489ba9","fromSide":"bottom","toNode":"c17b1588d409c05f","toSide":"top"},
 		{"id":"6da8487471b08049","fromNode":"c17b1588d409c05f","fromSide":"top","toNode":"d41d28fbf546a3ed","toSide":"left"},
 		{"id":"43258a6d3f4c3d94","fromNode":"c17b1588d409c05f","fromSide":"right","toNode":"96b088f71bae5304","toSide":"left"},
-		{"id":"8a15eccb2de98d3b","fromNode":"ac5e10b47c71a332","fromSide":"bottom","toNode":"8fed70b81f8a3e2d","toSide":"top"}
+		{"id":"4e78a3f9ec9d3cc7","fromNode":"debe4e3ea59c1396","fromSide":"right","toNode":"de48e7ab6c7a7ac7","toSide":"left"},
+		{"id":"e5156f1255c014e4","fromNode":"ac5e10b47c71a332","fromSide":"top","toNode":"8fed70b81f8a3e2d","toSide":"bottom"},
+		{"id":"c4852f8a3e5a1dd2","fromNode":"c9107efca6763ef1","fromSide":"right","toNode":"debe4e3ea59c1396","toSide":"left"}
 	]
 }
