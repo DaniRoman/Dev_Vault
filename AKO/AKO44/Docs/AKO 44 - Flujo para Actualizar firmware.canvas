@@ -2,7 +2,6 @@
 	"nodes":[
 		{"id":"96ee9ded3fb595c2","type":"text","text":"`ADMIN --> Fw Update` \nCrear un nuevo `firmwareUpdate` compatible con mi `Device`\n","x":380,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"aaebf4630d4e3fc8","type":"text","text":">[!tip] Distintos mensajes del Device\n>\n\n***Mensajes normales del device***\n- método `POST`\n- llevan `payload`\n- ese payload va en **CBOR**\n- y se protege con **CRC**\n- ejemplos: `sample`, `status`, `event`, `cmd_ack`, `param_ack`\n---\n***Retrieve de firmware***\n- método `GET`\n- ruta `/{serial}/fota`\n- **no depende de `ty`**\n- entra por la URL, no por el body\n\nLa intención ya va en la **URL**, no en un payload serializado. El CRC se usa para validar el **payload recibido**.\nSi no se manda payload:\n- no hay nada que serializar\n- no hay nada que firmar con CRC","x":2720,"y":-1100,"width":400,"height":160},
-		{"id":"fc4d4e2b0ed9dcb2","type":"text","text":"`Mensaje ack ok\n","x":2530,"y":-680,"width":160,"height":62,"color":"5"},
 		{"id":"7d0525a44c3b5ca8","type":"text","text":"Mensaje `fota`\n","x":2510,"y":-820,"width":180,"height":81,"color":"5"},
 		{"id":"e2e75b0dc135d1c0","type":"text","text":"`ADMIN --> Fw Update`\n`launch firmawareUpdate`llama la `API` para lanzar el firmware para el `Device`\n","x":740,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"477aa56ef27bcf6b","type":"text","text":"`API`\n`POST /api/firmware-update/:id/launch` Recibe la solicitud\n","x":1100,"y":-600,"width":280,"height":140,"color":"5"},
@@ -13,20 +12,19 @@
 		{"id":"0a1beeb14efcd6bf","type":"text","text":"_validateSerialNumber  <-- Aqui Recibo la info del Device","x":1540,"y":-820,"width":250,"height":60},
 		{"id":"75ea4ad620a780a4","type":"text","text":"\nRetrieve de `FirmwareUpdate` y llamada a `api` con claves para solicitar el envio al `Device` del `Firmware`\n","x":1836,"y":-850,"width":269,"height":120,"color":"5"},
 		{"id":"1056b840f65ce8f3","type":"text","text":">[!tip] ***¿QUE ES ?*** `FirmwareUpdate` \n\nOferta de actualización disponible, Modelo/documento de base de datos que **apunta a un archivo** de firmware, define para qué devices aplica, y qué **versión** representa.\n\n- `version` → versión del firmware a instalar\n- `deviceDefinition` → a qué familia de dispositivos aplica\n- `commercialVersion[]` → a qué variantes comerciales aplica\n- `minVersion` → desde qué versión mínima se permite actualizar\n- `file` / `filePath` → el binario real del firmware\n- `active` → si está publicado o no","x":-80,"y":-620,"width":384,"height":180,"color":"6"},
-		{"id":"36c02bc919c989bc","type":"text","text":"***`Conexion Layer`***\nEnvía solicitud de actualización al `Device`","x":2180,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"9eb5e5ecddef341b","type":"text","text":">[!warning] \n>`firmwareUpdate minVersion`\n\n Hace referencia a la minima version de `FirmwareRevision` que el dispositivo debe de tener","x":-80,"y":-880,"width":384,"height":180,"color":"2"},
 		{"id":"c4c3311d689b81df","type":"text","text":">[!tip] ***QUE ES `firmwareVersion`, `firmwareRevision`, `firmwareSubrevision` ***\n\n- **`firmwareVersion`** suele ser el **código interno/base** de la versión de firmware.\n- **`firmwareRevision`** indica una **revisión principal** sobre esa base.\n- **`firmwareSubrevision`** indica una **subrevisión o parche** dentro de esa revisión.\n- Con esos valores, se leería como una versión base **6000**, revisión **1**, subrevisión **26**.\n- En la práctica: `firmwareVersion` identifica la familia/base y `revision/subrevision` afinan la versión exacta.","x":-520,"y":-620,"width":384,"height":180,"color":"6"},
 		{"id":"5eb34c63fb7f480e","type":"text","text":">[!warning] Para que `firmwareUpdate` sea compatible con mi `Device`\n\n- `deviceDefinition` igual al de mi `Device`\n- `comercialVersión comercialName` existentes en `deviceDefinition` tiene que hacer match con mi `Device`\n- `FirmwareVersion` hace referencia a la actualización para la `firmwareRevision` del Device","x":-88,"y":-1090,"width":392,"height":160,"color":"2"},
-		{"id":"a35bcb30dcbbab4e","type":"text","text":">[!error] ***Obtener `firmwareVersion` en `Device`***\n\nUn `Device` no tendrá `firmwareVersion`, `firmwareRevision`, `firmwareSubrevision`  lanzando un error en este flujo, hasta que este no mande su primer mensaje de `status`procesado por el  ***`micro status.perte device`***\n\n\n","x":-88,"y":-340,"width":392,"height":160,"color":"1"},
-		{"id":"59555bc99d12e1dd","type":"text","text":">[!tip] ***¿QUE ES ?*** `FirmwareUpdate` \n\nOferta de actualización disponible, Modelo/documento de base de datos que **apunta a un archivo** de firmware, define para qué devices aplica, y qué **versión** representa.\n\n- `version` → versión del firmware a instalar\n- `deviceDefinition` → a qué familia de dispositivos aplica\n- `commercialVersion[]` → a qué variantes comerciales aplica\n- `minVersion` → desde qué versión mínima se permite actualizar\n- `file` / `filePath` → el binario real del firmware\n- `active` → si está publicado o no","x":740,"y":-270,"width":384,"height":180,"color":"6"},
-		{"id":"2ff8e0f7850bc656","type":"text","text":">[!warning] Importante Checkear FirmwareVersion\n>Esta tiene que ser igual a la que tiene el nombre de la definición del dispositivo en este caso `panel_2ry_7102`\n>`7102` \n>```js\n>7101, 7102, // DARWIN 2R 2025 (7101=edge, 7102=nbiot)\n>```\n>","x":78,"y":-60,"width":560,"height":228},
-		{"id":"0695e22948e91ba3","type":"text","text":">[!tip] Tener en cuenta a la hora de mokear un dispositivo!!\n\n```js\n//cambiar pv dependiendo del modelo del dispositivo\n\"id\": [config.serialNumber, 7102, 1, 26, 0], // [sn, pv, pr, psr, spec]\n\"ty\": \"sample\",\n\"li\": 1, // location_id\n\"d\": [\n```","x":243,"y":243,"width":555,"height":245}
+		{"id":"a35bcb30dcbbab4e","type":"text","text":">[!error] ***Obtener `firmwareVersion` en `Device`***\n\nUn `Device` no tendrá `firmwareVersion`, `firmwareRevision`, `firmwareSubrevision`  lanzando un error en este flujo, hasta que este no mande su primer mensaje de `status`procesado por el  ***`micro status.perte device`\n\n***`FirmwareVersion`*** tiene que ser igual a la que tiene el nombre de la definición del dispositivo en este caso `panel_2ry_7102`, `7102` \n\n```js\n>7101, 7102, // DARWIN 2R 2025 (7101=edge, 7102=nbiot)\n>```\n\n","x":-88,"y":-340,"width":392,"height":160,"color":"1"},
+		{"id":"59555bc99d12e1dd","type":"text","text":">[!warning] Tener en cuenta el registro `\"id\":[]`a la hora de mokear un dispositivo!!\n\n```js\n//cambiar pv dependiendo del modelo del dispositivo\n\"id\": [config.serialNumber, 7102, 1, 26, 0], // [sn, pv, pr, psr, spec]\n\"ty\": \"sample\",\n\"li\": 1, // location_id\n\"d\": [\n```","x":-84,"y":-100,"width":384,"height":180,"color":"2"},
+		{"id":"fc4d4e2b0ed9dcb2","type":"text","text":"`Mensaje ack ok\n","x":2220,"y":-680,"width":160,"height":62,"color":"5"},
+		{"id":"c42f2d447fb02c80","type":"text","text":"***`Device`***\nRecibe solicitud de actualización y contesta con un mensaje y con la ","x":2200,"y":-600,"width":280,"height":140,"color":"5"}
 	],
 	"edges":[
 		{"id":"0e9d91e76436246a","fromNode":"96ee9ded3fb595c2","fromSide":"right","toNode":"e2e75b0dc135d1c0","toSide":"left"},
 		{"id":"afa2baff30557a23","fromNode":"e2e75b0dc135d1c0","fromSide":"right","toNode":"477aa56ef27bcf6b","toSide":"left"},
 		{"id":"4ad3b06e8a307ad9","fromNode":"7d0525a44c3b5ca8","fromSide":"left","toNode":"1a5373a5aa09d5b9","toSide":"top","label":"\n"},
-		{"id":"6568aaff9e2365e1","fromNode":"36c02bc919c989bc","fromSide":"right","toNode":"fc4d4e2b0ed9dcb2","toSide":"right"},
+		{"id":"6568aaff9e2365e1","fromNode":"c42f2d447fb02c80","fromSide":"right","toNode":"fc4d4e2b0ed9dcb2","toSide":"right"},
 		{"id":"70c84545a676de4f","fromNode":"aaebf4630d4e3fc8","fromSide":"bottom","toNode":"7d0525a44c3b5ca8","toSide":"top"},
 		{"id":"51163f8dd86a533d","fromNode":"1a5373a5aa09d5b9","fromSide":"top","toNode":"75ea4ad620a780a4","toSide":"bottom"},
 		{"id":"461a574e43fdd276","fromNode":"75ea4ad620a780a4","fromSide":"left","toNode":"0a1beeb14efcd6bf","toSide":"right"},
@@ -35,10 +33,11 @@
 		{"id":"02a4affb6d3dcf5c","fromNode":"477aa56ef27bcf6b","fromSide":"right","toNode":"7e9c53f409030759","toSide":"left"},
 		{"id":"5f769fc9f6bbf74f","fromNode":"7e9c53f409030759","fromSide":"right","toNode":"1a5373a5aa09d5b9","toSide":"left"},
 		{"id":"c9f687e074030637","fromNode":"1056b840f65ce8f3","fromSide":"right","toNode":"96ee9ded3fb595c2","toSide":"left"},
-		{"id":"fd39cc66aa0f38e1","fromNode":"1a5373a5aa09d5b9","fromSide":"right","toNode":"36c02bc919c989bc","toSide":"left"},
 		{"id":"d94b899f8f37a989","fromNode":"9eb5e5ecddef341b","fromSide":"right","toNode":"96ee9ded3fb595c2","toSide":"left"},
 		{"id":"e3f7e7826a6c6899","fromNode":"c4c3311d689b81df","fromSide":"right","toNode":"96ee9ded3fb595c2","toSide":"left"},
 		{"id":"6e6782f0f14a7a02","fromNode":"5eb34c63fb7f480e","fromSide":"right","toNode":"96ee9ded3fb595c2","toSide":"left"},
-		{"id":"0071fbd7c740cf36","fromNode":"a35bcb30dcbbab4e","fromSide":"right","toNode":"96ee9ded3fb595c2","toSide":"left"}
+		{"id":"0071fbd7c740cf36","fromNode":"a35bcb30dcbbab4e","fromSide":"right","toNode":"96ee9ded3fb595c2","toSide":"left"},
+		{"id":"055e493e63ca8f0b","fromNode":"59555bc99d12e1dd","fromSide":"top","toNode":"a35bcb30dcbbab4e","toSide":"bottom"},
+		{"id":"278af25d45dbb90b","fromNode":"1a5373a5aa09d5b9","fromSide":"right","toNode":"c42f2d447fb02c80","toSide":"left"}
 	]
 }
