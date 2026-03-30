@@ -6,13 +6,12 @@
 		{"id":"39ddd2298b63fc84","type":"text","text":"`Admin` lanza un `plmn launch update`\n\n","x":-637,"y":-1149,"width":237,"height":72,"color":"5"},
 		{"id":"7da5f88d571e9434","type":"text","text":"***`API`*** Recibe en ***`POST /api/plmn-list/:id/launch`*** y diferencia entre `newDevice oldDevice` para enviar el `cmd`","x":-200,"y":-1164,"width":325,"height":103,"color":"5"},
 		{"id":"c17b1588d409c05f","type":"text","text":"***`micro translator`*** \n***`handleOutputCommand()\n   → processCommand()`*** traduce el comando a formato device: y Publica en ***`cl.output.perte.coap.driver`***","x":295,"y":-1164,"width":325,"height":103,"color":"5"},
-		{"id":"26c1e35dd9761327","type":"text","text":"***`micro commands/plmn`***\nRecibe el mensaje \n→ Parsea la tabla texto en líneas\n→ Genera el binario con CRC16\n→ ***Guarda el .bin en: files/plmn/plmn_op{X}_r{Y}_{timestamp}.bin***\n\n→ Actualiza plmnlist en MongoDB: filePath + active=true","x":261,"y":-912,"width":325,"height":103,"color":"5"},
+		{"id":"26c1e35dd9761327","type":"text","text":"***`micro commands/plmn`***\nRecibe el mensaje \n→ Parsea la tabla texto en líneas\n→ Genera el binario con CRC16\n→ ***Envia el .bin a la API mediante `jwt` en: files/plmn/plmn_op{X}_r{Y}_{timestamp}.bin***\n\n→ Actualiza plmnlist en MongoDB: filePath + active=true","x":261,"y":-912,"width":325,"height":103,"color":"5"},
 		{"id":"c2b2d37b89b54ff1","type":"text","text":">[!important] `TableRevision`\n\n**listado de códigos MCC-MNC** (Mobile Country Code + Mobile Network Code) separados por saltos de línea. Mira el ejemplo comentado en el código:\n\n```\n20205    ← KPN (Países Bajos)\n20404    ← Vodafone NL\n21401    ← Vodafone España\n22210    ← Vodafone Italia\n26201    ← Telekom Alemania\n310410   ← AT&T (USA)\n...\n```\n\nSon los operadores de red donde la SIM del device tiene **permiso de roaming**. Cada operador de telecomunicaciones (en este caso Vodafone/GDSP) proporciona esta lista.\n\nCada vez que se genera un nuevo `.bin` con una tabla PLMN actualizada, lleva un `operator` y un `release` (la revisión).\n\nEntonces:\n\n- **`operator`** = identificador del operador (ej: `1` = Vodafone)\n- **`release`** (tableRevision) = versión de esa tabla (ej: `3` = tercera revisión)\n","x":-759,"y":-740,"width":481,"height":220},
 		{"id":"8310cf28b1fd4220","type":"text","text":"***`mensaje`***\n```js\nMensaje: {\n     deviceInformation: { _id, serialNumber, connectivity: \"nbiot\", ... },\n     cmd_ref: \"server_command_plmns_update\",\n     cmd_value: 1\n   }\n```","x":-180,"y":-1400,"width":285,"height":142,"color":"6"},
 		{"id":"9c451bbaa4489ba9","type":"text","text":"***`formato device:`***\n```js\n{ id: [974130021], ty: \"cmd\", bid: 0, d: [[11, 1]] }\n     (registro 11 = flag PLMN update, valor 1 = \"tienes actualización pendiente\")\n```","x":153,"y":-1400,"width":285,"height":142,"color":"6"},
 		{"id":"d41d28fbf546a3ed","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":620,"y":-1380,"width":308,"height":160,"color":"4"},
 		{"id":"96b088f71bae5304","type":"text","text":"***`micro coap`*** \n cl-perte-coap → recibe el mensaje\n   → Busca el device en MongoDB ✓\n   → Busca manufacturedDevice ✓\n   → Busca IP del device \n   → Intenta enviar CoAP POST al device","x":740,"y":-1164,"width":325,"height":103,"color":"5"},
-		{"id":"08387c52584601f7","type":"text","text":">[!warning] Importante \n\n>guarda el `fichero.bin` en el `path` de `micros`\n\n","x":711,"y":-920,"width":434,"height":120,"color":"2"},
 		{"id":"428e47d1fdfd88a4","type":"text","text":">[!important] importante Flujo para que `Device` tenga el campo `network`\n>sin `network` en `device`  no pasara el filtro para aparecer como candidato para un `plmn update` en la ventana de `plmn launch update` del `admin`\n\n","x":-1384,"y":-175,"width":580,"height":177},
 		{"id":"8fed70b81f8a3e2d","type":"text","text":"***`Device` ***\nenvía mensaje `sync` ","x":-599,"y":-118,"width":195,"height":63,"color":"5"},
 		{"id":"2ef97b834098ee1c","type":"text","text":"***`micro translator`***\nSyncParser.parse() descompone el array:\n     const [plmn_op, plmn_rev] = plmn;  // plmn_op=1, plmn_rev=3\n     → genera: { plmn: { plmn_op: 1, plmn_rev: 3 } }\n     ↓\n","x":103,"y":-130,"width":256,"height":87,"color":"5"},
@@ -21,13 +20,14 @@
 		{"id":"ac5e10b47c71a332","type":"text","text":"campos del `mensaje`\n\n```js\n{\n  \"id\": [\"23031300000001\", 4812, 23, 1, 5],\n  \"ty\": \"sync\",\n  \"ts\": 1774451808,\n  \"bid\": 1,\n  \"hw\": [\"123456789012345\", \"8934071111111111111\", \"214071234567890\", \"BC95-G\", \"V100R100C10B657SP2\"],\n  \"plmn\": [1, 3],\n  \"d\": [[10, 2, 0, 0], [11, 5, 1, 1]]\n}\n```","x":-748,"y":-440,"width":298,"height":171,"color":"6"},
 		{"id":"0bdc9645e3a14584","type":"text","text":">[!important] campo plmn\n>El campo `plmn` es un **array de 2 números**: `[operator, [[tableRevision]]]`.","x":-359,"y":-435,"width":411,"height":162,"color":"6"},
 		{"id":"debe4e3ea59c1396","type":"text","text":"***`Device`***\nEnvía request ***`GET /:sn/plmn`*** ","x":-666,"y":80,"width":216,"height":120,"color":"5"},
-		{"id":"de48e7ab6c7a7ac7","type":"text","text":"***`micro coap`*** \nRecive mensaje en `messageProcessor.process() → retiveAction = \"plmn\" -> processPlmn` y busca el `.bin` en el workspace","x":-307,"y":80,"width":251,"height":120,"color":"5"},
+		{"id":"de48e7ab6c7a7ac7","type":"text","text":"***`micro coap`*** \nRecive mensaje en `messageProcessor.process() → retiveAction = \"plmn\" -> processPlmn` y llama a la `API` en busca del `.bin`","x":-307,"y":80,"width":251,"height":120,"color":"5"},
 		{"id":"c9107efca6763ef1","type":"text","text":">[!important] importante Flujo para recibir la actualización de `plmn`\n\n\n","x":-1372,"y":106,"width":501,"height":68},
-		{"id":"bf165271d22a5e3b","type":"text","text":">[!warning] Importante \n\n>EL fichero se guardo  el `fichero.bin` en el `path` de `micros`\n\n","x":125,"y":80,"width":434,"height":120,"color":"2"},
 		{"id":"d5337abea677f7ca","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":-29,"y":-740,"width":308,"height":160,"color":"4"},
 		{"id":"b567a9bb5a5f3154","type":"text","text":"NuevoFlujo\n\n1. Frontend → POST /api/plmn-list/{id}/launch\n2. API publica en \"command.plmn\"\n3. commands/plmn:\n   a) Genera binario con CRC16\n   b) POST /api/plmn-list/{id}/binary (JWT) → API guarda en disco + filePath + active:true\n4. Device hace GET /plmn\n5. processPlmn → getLastPlmnListId() → deviceService.getPlmnFile(id) → GET /api/plmn-list/{id}/binary (JWT)","x":-1446,"y":280,"width":216,"height":120,"color":"5"},
 		{"id":"94bdf070938d5343","type":"text","text":"NuevoFlujo","x":-1087,"y":280,"width":216,"height":120,"color":"5"},
-		{"id":"71a63c2f00201a1d","type":"text","text":">[!warning] importante \n\nAhora el Device ya puede pedir una actualización \n>Despues de que se lance el Launch\n\n","x":-1540,"y":-740,"width":580,"height":160}
+		{"id":"71a63c2f00201a1d","type":"text","text":">[!warning] importante \n\nAhora el Device ya puede pedir una actualización \n>Despues de que se lance el Launch\n\n","x":-1540,"y":-740,"width":580,"height":160},
+		{"id":"e923e89d21c16070","type":"text","text":"***`API`***\nRecibe el fichero ","x":716,"y":-912,"width":325,"height":103,"color":"5"},
+		{"id":"eed6ebb34a8adcc7","type":"text","text":"***`API`***\nResponde enviando el fichero `.bin`","x":716,"y":-457,"width":325,"height":103,"color":"5"}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"8fed70b81f8a3e2d","fromSide":"right","toNode":"d391fc29697139f9","toSide":"left"},
@@ -42,7 +42,6 @@
 		{"id":"625297eb8c43b3df","fromNode":"7da5f88d571e9434","fromSide":"right","toNode":"c17b1588d409c05f","toSide":"left"},
 		{"id":"b40af73457383af9","fromNode":"39ddd2298b63fc84","fromSide":"right","toNode":"7da5f88d571e9434","toSide":"left"},
 		{"id":"5f3f228725109d37","fromNode":"b99bca1e47175855","fromSide":"right","toNode":"39ddd2298b63fc84","toSide":"left"},
-		{"id":"5f00f0535ba816cd","fromNode":"08387c52584601f7","fromSide":"left","toNode":"26c1e35dd9761327","toSide":"right"},
 		{"id":"97b1c3c291b110fa","fromNode":"8310cf28b1fd4220","fromSide":"bottom","toNode":"7da5f88d571e9434","toSide":"top"},
 		{"id":"28219d59d1e2d91e","fromNode":"9c451bbaa4489ba9","fromSide":"bottom","toNode":"c17b1588d409c05f","toSide":"top"},
 		{"id":"6da8487471b08049","fromNode":"c17b1588d409c05f","fromSide":"top","toNode":"d41d28fbf546a3ed","toSide":"left"},
@@ -51,8 +50,8 @@
 		{"id":"c4852f8a3e5a1dd2","fromNode":"c9107efca6763ef1","fromSide":"right","toNode":"debe4e3ea59c1396","toSide":"left"},
 		{"id":"7fed69db7baa1567","fromNode":"ac5e10b47c71a332","fromSide":"bottom","toNode":"8fed70b81f8a3e2d","toSide":"top"},
 		{"id":"c3a4a5217b003da2","fromNode":"428e47d1fdfd88a4","fromSide":"left","toNode":"c9107efca6763ef1","toSide":"left","label":"Flujos Device"},
-		{"id":"0b3969f91d3229e8","fromNode":"bf165271d22a5e3b","fromSide":"left","toNode":"de48e7ab6c7a7ac7","toSide":"right"},
 		{"id":"3878cfa8297e52f8","fromNode":"e0f07bd11ba5d773","fromSide":"bottom","toNode":"d5337abea677f7ca","toSide":"top"},
-		{"id":"95737fafa654703d","fromNode":"71a63c2f00201a1d","fromSide":"right","toNode":"b99bca1e47175855","toSide":"right"}
+		{"id":"95737fafa654703d","fromNode":"71a63c2f00201a1d","fromSide":"right","toNode":"b99bca1e47175855","toSide":"right"},
+		{"id":"6a9f0fe7ee525c81","fromNode":"26c1e35dd9761327","fromSide":"right","toNode":"e923e89d21c16070","toSide":"left"}
 	]
 }
