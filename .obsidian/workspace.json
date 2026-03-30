@@ -20,26 +20,8 @@
               "icon": "lucide-file",
               "title": "AKO 44 - PLMN"
             }
-          },
-          {
-            "id": "9f6a50bd6f9c6abb",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
-                "viewState": {
-                  "x": -480.84828618236094,
-                  "y": -600.7012860470252,
-                  "zoom": -0.588113122920409
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo PLMN"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -205,10 +187,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "9f6a50bd6f9c6abb",
+  "active": "ffe94eef894b9c91",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
+    "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
