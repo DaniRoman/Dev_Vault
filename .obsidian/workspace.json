@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ab856523bbe99389",
+        "id": "f015e6e914067ff8",
         "type": "tabs",
         "children": [
           {
-            "id": "ffe94eef894b9c91",
+            "id": "ff87f5ae1d20c93f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - PLMN.md",
+                "file": "Git/Git Main Page.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - PLMN"
+              "title": "Git Main Page"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sync",
+                "query": "git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,13 +74,11 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 275.5024719238281,
-    "collapsed": true
+    "width": 275.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -187,10 +185,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ffe94eef894b9c91",
+  "active": "ff87f5ae1d20c93f",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
+    "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - PLMN.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
