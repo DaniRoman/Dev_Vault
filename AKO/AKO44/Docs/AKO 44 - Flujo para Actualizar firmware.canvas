@@ -23,7 +23,7 @@
 		{"id":"fa1d7ad2880c842c","type":"text","text":"***`Mensaje `fota`***","x":1980,"y":-830,"width":200,"height":60,"color":"5"},
 		{"id":"3f9941ba28825388","type":"text","text":"***`ACK_OK`***","x":1980,"y":-710,"width":200,"height":60,"color":"5"},
 		{"id":"b5ced3e848b52dd7","type":"text","text":">[!example] Distintos mensajes del Device\n>\n\n***Mensajes normales del device***\n- método `POST`\n- llevan `payload`\n- ese payload va en **CBOR**\n- y se protege con **CRC**\n- ejemplos: `sample`, `status`, `event`, `cmd_ack`, `param_ack`\n---\n***Retrieve de firmware***\n- método `GET`\n- ruta `/{serial}/fota`\n- **no depende de `ty`**\n- entra por la URL, no por el body\n\nLa intención ya va en la **URL**, no en un payload serializado. El CRC se usa para validar el **payload recibido**.\nSi no se manda payload:\n- no hay nada que serializar\n- no hay nada que firmar con CRC","x":2320,"y":-890,"width":384,"height":180,"color":"6"},
-		{"id":"485a8b0093a93d0c","type":"text","text":">[!success] Flujo para Pruebas\n>\n\n>[[AKO 44 - Flujo para Actualizar firmware - Tests.canvas]]","x":-260,"y":-260,"width":384,"height":180,"color":"4"}
+		{"id":"485a8b0093a93d0c","type":"text","text":">[!success] Flujo para Pruebas\n>\n\n>[[AKO 44 - Flujo para Actualizar firmware - Tests.canvas]]","x":-260,"y":-270,"width":384,"height":180,"color":"4"}
 	],
 	"edges":[
 		{"id":"afa2baff30557a23","fromNode":"e2e75b0dc135d1c0","fromSide":"right","toNode":"477aa56ef27bcf6b","toSide":"left"},
