@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
                 "viewState": {
-                  "x": -24.12944885326784,
-                  "y": -517.8874378167279,
-                  "zoom": -0.43361532683316034
+                  "x": 253.33025402440973,
+                  "y": -386.8009513007199,
+                  "zoom": -0.15081967989045894
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo PLMN"
+              "title": "AKO 44 - Flujo para Actualizar firmware"
             }
           }
         ]
@@ -190,16 +190,16 @@
   },
   "active": "ff87f5ae1d20c93f",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
-    "AKO/AKO44/Docs/AKO 44 - PLMN.md",
+    "AKO/AKO44/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
+    "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "JavaScript - Acceso seguro a propiedades/JavaScript -  Acceso seguro a Propiedades Optional chaining.md",
     "JavaScript - Acceso seguro a propiedades",
     "Git/Git Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
-    "AKO/AKO44/Fota.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260326151439.png",
     "Lenguajes/Angular/Angular Main Site.md",
