@@ -51,9 +51,21 @@
               "icon": "lucide-file",
               "title": "AKO  44 - Admin Main Page"
             }
+          },
+          {
+            "id": "c92b76390c3542ce",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.12.7"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -219,7 +231,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "8565fda9c7bade7e",
+  "active": "c92b76390c3542ce",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
