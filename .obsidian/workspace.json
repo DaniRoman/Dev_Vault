@@ -15,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
                 "viewState": {
-                  "x": -37.88901640459588,
-                  "y": -428.45024873309484,
+                  "x": -24.12944885326784,
+                  "y": -517.8874378167279,
                   "zoom": -0.43361532683316034
                 }
               },
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git",
+                "query": "m",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -190,14 +190,14 @@
   },
   "active": "ff87f5ae1d20c93f",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "JavaScript - Acceso seguro a propiedades/JavaScript -  Acceso seguro a Propiedades Optional chaining.md",
     "JavaScript - Acceso seguro a propiedades",
     "Git/Git Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo Sample.canvas",
     "AKO/AKO44/Fota.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
@@ -224,7 +224,6 @@
     "Arquitectura y Diseño/Arquitectura y diseño.md",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "2026-03-23.md",
-    "AKO/AKO44/Docs/AKO 44 Diferentes casuísticas en la conexión layer.md",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
