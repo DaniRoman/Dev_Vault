@@ -11,17 +11,14 @@
             "id": "ff87f5ae1d20c93f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-                "viewState": {
-                  "x": 1119.8617435898063,
-                  "y": -742.0080256305961,
-                  "zoom": -0.15081967989045894
-                }
+                "file": "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo para Actualizar firmware"
+              "icon": "lucide-file",
+              "title": "AKO  44 - Admin Main Page"
             }
           }
         ]
@@ -76,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git",
+                "query": "fma",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +94,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -210,9 +208,9 @@
   },
   "active": "ff87f5ae1d20c93f",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "Git/Git Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "JavaScript - Acceso seguro a propiedades/JavaScript -  Acceso seguro a Propiedades Optional chaining.md",
     "Development vault - Main Site.md",
     "2026-03-23.md",
