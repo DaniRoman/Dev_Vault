@@ -25,9 +25,10 @@
 		{"id":"d5337abea677f7ca","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":-29,"y":-740,"width":308,"height":160,"color":"4"},
 		{"id":"b567a9bb5a5f3154","type":"text","text":"NuevoFlujo\n\n1. Frontend → POST /api/plmn-list/{id}/launch\n2. API publica en \"command.plmn\"\n3. commands/plmn:\n   a) Genera binario con CRC16\n   b) POST /api/plmn-list/{id}/binary (JWT) → API guarda en disco + filePath + active:true\n4. Device hace GET /plmn\n5. processPlmn → getLastPlmnListId() → deviceService.getPlmnFile(id) → GET /api/plmn-list/{id}/binary (JWT)","x":-1446,"y":280,"width":216,"height":120,"color":"5"},
 		{"id":"94bdf070938d5343","type":"text","text":"NuevoFlujo","x":-1087,"y":280,"width":216,"height":120,"color":"5"},
-		{"id":"71a63c2f00201a1d","type":"text","text":">[!warning] importante \n\nAhora el Device ya puede pedir una actualización \n>Despues de que se lance el Launch\n\n","x":-1540,"y":-740,"width":580,"height":160},
 		{"id":"e923e89d21c16070","type":"text","text":"***`API`***\nRecibe el fichero ","x":716,"y":-912,"width":325,"height":103,"color":"5"},
-		{"id":"eed6ebb34a8adcc7","type":"text","text":"***`API`***\nResponde enviando el fichero `.bin`","x":716,"y":-457,"width":325,"height":103,"color":"5"}
+		{"id":"eed6ebb34a8adcc7","type":"text","text":"***`API`***\nResponde enviando el fichero `.bin`","x":117,"y":89,"width":325,"height":103,"color":"5"},
+		{"id":"e88e38c3709975be","type":"text","text":"***`Device`***\nRecibe el archivo binbario","x":125,"y":280,"width":216,"height":120,"color":"5"},
+		{"id":"71a63c2f00201a1d","type":"text","text":">[!warning] importante \n\nUna vez se hace un launch` el Device ya puede pedir una actualización \n>Despues de que se lance el Launch\n\n","x":-1662,"y":-740,"width":580,"height":160}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"8fed70b81f8a3e2d","fromSide":"right","toNode":"d391fc29697139f9","toSide":"left"},
@@ -51,7 +52,10 @@
 		{"id":"7fed69db7baa1567","fromNode":"ac5e10b47c71a332","fromSide":"bottom","toNode":"8fed70b81f8a3e2d","toSide":"top"},
 		{"id":"c3a4a5217b003da2","fromNode":"428e47d1fdfd88a4","fromSide":"left","toNode":"c9107efca6763ef1","toSide":"left","label":"Flujos Device"},
 		{"id":"3878cfa8297e52f8","fromNode":"e0f07bd11ba5d773","fromSide":"bottom","toNode":"d5337abea677f7ca","toSide":"top"},
-		{"id":"95737fafa654703d","fromNode":"71a63c2f00201a1d","fromSide":"right","toNode":"b99bca1e47175855","toSide":"right"},
-		{"id":"6a9f0fe7ee525c81","fromNode":"26c1e35dd9761327","fromSide":"right","toNode":"e923e89d21c16070","toSide":"left"}
+		{"id":"95737fafa654703d","fromNode":"71a63c2f00201a1d","fromSide":"right","toNode":"b99bca1e47175855","toSide":"bottom"},
+		{"id":"6a9f0fe7ee525c81","fromNode":"26c1e35dd9761327","fromSide":"right","toNode":"e923e89d21c16070","toSide":"left"},
+		{"id":"29f53d9f98e46768","fromNode":"de48e7ab6c7a7ac7","fromSide":"right","toNode":"eed6ebb34a8adcc7","toSide":"left"},
+		{"id":"8f84de85df98368f","fromNode":"eed6ebb34a8adcc7","fromSide":"left","toNode":"de48e7ab6c7a7ac7","toSide":"right"},
+		{"id":"050cca70439a68e2","fromNode":"de48e7ab6c7a7ac7","fromSide":"bottom","toNode":"e88e38c3709975be","toSide":"left","label":"una vez tiene el `.bin`"}
 	]
 }
