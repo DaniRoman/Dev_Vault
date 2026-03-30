@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"2aa84ea0da63adae","type":"text","text":"***`Casuística 1`***\nCreo varios ***`firmWares`*** adjuntando un ***`file`*** al hacer un update quiero recibir el mas actual, mas adelante actualizo el que era menos actual con su ***`file`*** nuevo, al volver a lanzar una actulización quiero ","x":-440,"y":-160,"width":280,"height":140,"color":"5"}
+		{"id":"2aa84ea0da63adae","type":"text","text":">[!success] ***`Casuística1`***\n\nCreo varios ***`firmWares`*** adjuntando un ***`file`*** al hacer un update quiero recibir el mas actual, mas adelante actualizo el que era menos actual con su ***`file`*** nuevo, al volver a lanzar una actualizacion quiero recibir el ***`FirmWare`*** indicado ","x":-440,"y":-160,"width":340,"height":240,"color":"5"}
 	],
 	"edges":[]
 }
