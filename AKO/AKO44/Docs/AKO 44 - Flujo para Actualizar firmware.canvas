@@ -1,8 +1,7 @@
 {
 	"nodes":[
-		{"id":"96ee9ded3fb595c2","type":"text","text":"`ADMIN --> Fw Update` \nCrear un nuevo `firmwareUpdate` compatible con mi `Device`\n","x":380,"y":-600,"width":280,"height":140,"color":"5"},
+		{"id":"deef07234dedca3f","x":-540,"y":-1110,"width":864,"height":1210,"type":"group","label":"Grupo sin título"},
 		{"id":"aaebf4630d4e3fc8","type":"text","text":">[!tip] Distintos mensajes del Device\n>\n\n***Mensajes normales del device***\n- método `POST`\n- llevan `payload`\n- ese payload va en **CBOR**\n- y se protege con **CRC**\n- ejemplos: `sample`, `status`, `event`, `cmd_ack`, `param_ack`\n---\n***Retrieve de firmware***\n- método `GET`\n- ruta `/{serial}/fota`\n- **no depende de `ty`**\n- entra por la URL, no por el body\n\nLa intención ya va en la **URL**, no en un payload serializado. El CRC se usa para validar el **payload recibido**.\nSi no se manda payload:\n- no hay nada que serializar\n- no hay nada que firmar con CRC","x":2720,"y":-1100,"width":400,"height":160,"color":"6"},
-		{"id":"e2e75b0dc135d1c0","type":"text","text":"`ADMIN --> Fw Update`\n`launch firmawareUpdate`llama la `API` para lanzar el firmware para el `Device`\n","x":740,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"477aa56ef27bcf6b","type":"text","text":"`API`\n`POST /api/firmware-update/:id/launch` Recibe la solicitud\n","x":1100,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"7e9c53f409030759","type":"text","text":"***`Translator`***\nTraduce la solicitud","x":1467,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"1a5373a5aa09d5b9","type":"text","text":"***`Conexion Layer`***\nEnvía solicitud de actualización al `Device`","x":1830,"y":-600,"width":280,"height":140,"color":"5"},
@@ -15,15 +14,17 @@
 		{"id":"c42f2d447fb02c80","type":"text","text":"***`Device`***\nRecibe solicitud de actualización, contesta con `ack_confirm` y posteriormente acepta el `update` enviando un mensaje tipo `fota` ","x":2200,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"fa1d7ad2880c842c","type":"text","text":"***`Mensaje `fota`***","x":2240,"y":-850,"width":200,"height":60,"color":"5"},
 		{"id":"3f9941ba28825388","type":"text","text":"***`ACK_OK`***","x":2240,"y":-730,"width":200,"height":60,"color":"5"},
-		{"id":"9761f81bb110e732","type":"text","text":"`API`\n`POST /api/firmware-update/:id/launch` Recibe la solicitud\n","x":1100,"y":-972,"width":280,"height":140,"color":"5"},
-		{"id":"89f3bbaf0a788b62","type":"text","text":"***`Conexion Layer`***\nRecibe \n- ***`ACK_OK`***\n- ***`Mensaje `fota`***","x":1841,"y":-820,"width":280,"height":140,"color":"5"},
 		{"id":"c5bde71df68df9f8","type":"text","text":">[!Warning] Apuntes código \n\nPara conseguir el `firmwareUpdate` correcto filtramos con una query de mongo [[Mongo - Main Site]] `$or`\n\nPara asegurarnos del valor `id` que devuelve una query\n\n[[JavaScript -  Acceso seguro a Propiedades Optional chaining]]\n\n\n\n","x":1420,"y":-1640,"width":294,"height":200},
 		{"id":"687d1efa9a4e9655","type":"text","text":"`Flujo funciones --> _onMessage, _checkDeviceAndMessage, checkMessageRecived, , messageProcessor.process, processRetrive, processFota, `","x":1420,"y":-1380,"width":294,"height":136},
 		{"id":"0a1beeb14efcd6bf","type":"text","text":"_validateSerialNumber  <-- Aqui Recibo la info del Device","x":1442,"y":-1170,"width":250,"height":60},
-		{"id":"75ea4ad620a780a4","type":"text","text":"\nRetrieve de `FirmwareUpdate` y llamada a `api` con claves para solicitar el envio al `Device` del `Firmware`\n","x":1852,"y":-1000,"width":269,"height":120,"color":"5"}
+		{"id":"75ea4ad620a780a4","type":"text","text":"\n\n","x":1852,"y":-1000,"width":269,"height":120,"color":"5"},
+		{"id":"9761f81bb110e732","type":"text","text":"`API`\n`POST /api/firmware-update/:id/launch` Recibe la solicitud\n","x":1100,"y":-820,"width":280,"height":140,"color":"5"},
+		{"id":"89f3bbaf0a788b62","type":"text","text":"***`Conexion Layer`***\nRecibe \n- ***`ACK_OK`***\n- ***`Mensaje `fota`***\n\t- LLama a  la `API` mediante `jwt` para solicitar el envio al `Device` del `Firmware`","x":1830,"y":-820,"width":280,"height":140,"color":"5"},
+		{"id":"0461da47900f470a","type":"text","text":"`API`\n`POST /api/firmware-update/` Recibe la solicitud\n","x":1100,"y":-340,"width":280,"height":140,"color":"5"},
+		{"id":"be8a2ec5b6dbdd83","type":"text","text":"`ADMIN --> Fw Update` \nCrear un nuevo `firmwareUpdate` compatible con mi `Device`\n","x":640,"y":-340,"width":280,"height":140,"color":"5"},
+		{"id":"e2e75b0dc135d1c0","type":"text","text":"`ADMIN --> Fw Update`\n`launch firmawareUpdate`llama la `API` para lanzar el firmware para el `Device`\n","x":640,"y":-600,"width":280,"height":140,"color":"5"}
 	],
 	"edges":[
-		{"id":"0e9d91e76436246a","fromNode":"96ee9ded3fb595c2","fromSide":"right","toNode":"e2e75b0dc135d1c0","toSide":"left"},
 		{"id":"afa2baff30557a23","fromNode":"e2e75b0dc135d1c0","fromSide":"right","toNode":"477aa56ef27bcf6b","toSide":"left"},
 		{"id":"70c84545a676de4f","fromNode":"aaebf4630d4e3fc8","fromSide":"bottom","toNode":"fa1d7ad2880c842c","toSide":"right"},
 		{"id":"461a574e43fdd276","fromNode":"75ea4ad620a780a4","fromSide":"left","toNode":"0a1beeb14efcd6bf","toSide":"right"},
@@ -31,16 +32,13 @@
 		{"id":"bf82b160a466ac82","fromNode":"687d1efa9a4e9655","fromSide":"top","toNode":"c5bde71df68df9f8","toSide":"bottom"},
 		{"id":"02a4affb6d3dcf5c","fromNode":"477aa56ef27bcf6b","fromSide":"right","toNode":"7e9c53f409030759","toSide":"left"},
 		{"id":"5f769fc9f6bbf74f","fromNode":"7e9c53f409030759","fromSide":"right","toNode":"1a5373a5aa09d5b9","toSide":"left"},
-		{"id":"c9f687e074030637","fromNode":"1056b840f65ce8f3","fromSide":"right","toNode":"96ee9ded3fb595c2","toSide":"left"},
-		{"id":"d94b899f8f37a989","fromNode":"9eb5e5ecddef341b","fromSide":"right","toNode":"96ee9ded3fb595c2","toSide":"left"},
-		{"id":"e3f7e7826a6c6899","fromNode":"c4c3311d689b81df","fromSide":"right","toNode":"96ee9ded3fb595c2","toSide":"left"},
-		{"id":"6e6782f0f14a7a02","fromNode":"5eb34c63fb7f480e","fromSide":"right","toNode":"96ee9ded3fb595c2","toSide":"left"},
-		{"id":"0071fbd7c740cf36","fromNode":"a35bcb30dcbbab4e","fromSide":"right","toNode":"96ee9ded3fb595c2","toSide":"left"},
 		{"id":"055e493e63ca8f0b","fromNode":"59555bc99d12e1dd","fromSide":"top","toNode":"a35bcb30dcbbab4e","toSide":"bottom"},
 		{"id":"278af25d45dbb90b","fromNode":"1a5373a5aa09d5b9","fromSide":"right","toNode":"c42f2d447fb02c80","toSide":"left"},
 		{"id":"637d52b2acfca846","fromNode":"c42f2d447fb02c80","fromSide":"right","toNode":"3f9941ba28825388","toSide":"right"},
 		{"id":"101c93565f201ebd","fromNode":"c42f2d447fb02c80","fromSide":"right","toNode":"fa1d7ad2880c842c","toSide":"right"},
 		{"id":"41bc0004f9611d35","fromNode":"3f9941ba28825388","fromSide":"left","toNode":"89f3bbaf0a788b62","toSide":"right"},
-		{"id":"012b889ee6e1622f","fromNode":"fa1d7ad2880c842c","fromSide":"left","toNode":"89f3bbaf0a788b62","toSide":"right"}
+		{"id":"012b889ee6e1622f","fromNode":"fa1d7ad2880c842c","fromSide":"left","toNode":"89f3bbaf0a788b62","toSide":"right"},
+		{"id":"33da8be273f1aa7b","fromNode":"89f3bbaf0a788b62","fromSide":"left","toNode":"9761f81bb110e732","toSide":"right"},
+		{"id":"101b680c0bf60466","fromNode":"be8a2ec5b6dbdd83","fromSide":"right","toNode":"0461da47900f470a","toSide":"left"}
 	]
 }
