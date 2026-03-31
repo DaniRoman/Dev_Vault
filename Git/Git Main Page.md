@@ -24,4 +24,4 @@ git branch -D nombreRama
 >[!error] ***`Merge Request`*** con conflictos en ***`web`*** pero no en ***`local`***
 >
 
-Una vez echo un merge request de una rama a otra puede que me de conflictos en la web pero no en mi local y eso se debe a que en la rama que estoy trabajando (se supone que salio desde la origen que ahora quiero mergear) en algun momento se actualizo en el origen pero yo no tengo esos cambios, con lo que necesi
+>Una vez echo un merge request de una rama a otra puede que me de conflictos en la web pero no en mi local y eso se debe a que en la rama que estoy trabajando ( se supone que salió desde la origen que ahora quiero mergear) en algún momento se actualizo en el origen pero yo no tengo esos cambios, con lo que necesitaremos volver a esa rama hacer un pull de origen luego volver a mi rama 
