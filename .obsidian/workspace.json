@@ -15,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
                 "viewState": {
-                  "x": 1305.6193543170912,
-                  "y": -604.0896335267635,
+                  "x": 1286.2471403082416,
+                  "y": -297.23478403736857,
                   "zoom": 0.1958597796310427
                 }
               },
@@ -198,9 +198,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e998f953db48c1c4",
+  "active": "ff87f5ae1d20c93f",
   "lastOpenFiles": [
     "AKO44 - Nuevo Flujo para actualización firmware.md",
+    "AKO/AKO44/Docs/attachments/mermaid-diagram.png",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas",
     "AKO/AKO44/Fota.md",
@@ -235,7 +236,6 @@
     "Lenguajes/JavaScript/TypeScript - Main Site ^ dea.md",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño.md",
-    "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
@@ -250,7 +250,6 @@
     "AKO/AKO44/attachments/Pasted image 20260316084200.png",
     "AKO/AKO44/Docs/AKO 44 - WorkFlows - Listar Eventos.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260311113603.png",
-    "AKO/AKO44/Docs/attachments/Pasted image 20260311110411.png",
     "attachments",
     "Express",
     "AKO - feature",
