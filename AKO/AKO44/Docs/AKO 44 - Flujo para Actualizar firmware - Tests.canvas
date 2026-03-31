@@ -1,6 +1,7 @@
 {
 	"nodes":[
-		{"id":"2aa84ea0da63adae","type":"text","text":">[!success] ***`Casuística1`***\n\nCreo varios ***`firmWares`*** adjuntando un ***`file`*** al hacer un update quiero recibir el mas actual, mas adelante actualizo el que era menos actual con su ***`file`*** nuevo, al volver a lanzar una actualizacion quiero recibir el ***`FirmWare`*** indicado ","x":-440,"y":-160,"width":340,"height":240,"color":"5"}
+		{"id":"2aa84ea0da63adae","type":"text","text":">[!success] ***`Casuística1`***\n\nCreo varios ***`firmWares`*** adjuntando un ***`file`*** al hacer un update quiero recibir el mas actual, mas adelante actualizo el que era menos actual con su ***`file`*** nuevo, al volver a lanzar una actualizacion quiero recibir el ***`FirmWare`*** indicado ","x":-440,"y":-160,"width":340,"height":240,"color":"5"},
+		{"id":"ce85f2931b45c13b","type":"text","text":">[!success] ***`Casuística1`***\n\nActualmente filtramos por\n- activos\n- de ese deviceDefinition\n- de esa commercialVersion\n- con `version` mayor que la actual\n- y compatibles por `minVersion`\n\nEso puede devolver **varios documentos**.\n- versión 31\n- versión 32\n- versión 40\n\nLa parte que decide cuál coger es esta:\n{ version: -1 }\nporque ordena de mayor a menor por `version`, y al usar `findOne`, se queda con la primera.","x":-440,"y":200,"width":340,"height":240,"color":"5"}
 	],
 	"edges":[]
 }
