@@ -15,9 +15,13 @@ git branch -D nombreRama
 ```
 
 >[!error] Revertir commits una vez echo el ***`push`***.
->
->`git reset --soft <destino>` mueve el `HEAD` al commit indicado y deja los cambios en **staged**.  
-`git reset --mixed <destino>` mueve el `HEAD` al commit indicado y deja los cambios en local **sin staged**.  
+
+>`git reset --soft HEAD~1` mueve el `HEAD` al commit indicado y deja los cambios en **staged**.  
+`git reset --mixed <has> `HEAD` al commit indicado y deja los cambios en local **sin staged**.  
 `git reset --hard <destino>` mueve el `HEAD` al commit indicado y **borra** los cambios locales posteriores en archivos trackeados.  
 `HEAD~1`, `HEAD~2`, etc. sirven para volver atrás un número de commits; usar un `hash` te lleva a un commit exacto.
 
+>[!error] ***`Merge Request`*** con conflictos en ***`web`*** pero no en ***`local`***
+>
+
+Una vez echo un merge request de una rama a otra puede que me de conflictos en la web pero no en mi local y eso se debe a que en la rama que estoy trabajando (se supone que salio desde la origen que ahora quiero mergear) en algun momento se actualizo en el origen pero yo no tengo esos cambios, con lo que necesi
