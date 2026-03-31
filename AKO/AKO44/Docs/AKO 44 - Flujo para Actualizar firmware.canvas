@@ -13,19 +13,19 @@
 		{"id":"0461da47900f470a","type":"text","text":"`API`\n`POST /api/file/` Recibe ese fichero y lo guarda en el entorno\n","x":960,"y":-340,"width":280,"height":140,"color":"5"},
 		{"id":"7e9c53f409030759","type":"text","text":"***`Translator`***\nTraduce la solicitud","x":1280,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"9aa746407d5f6cd4","type":"text","text":"***`Conexion Layer`***\nRecibe `.bin` y lo envía al `device`","x":1610,"y":-1020,"width":280,"height":140,"color":"5"},
-		{"id":"5ff35c9a67bb2e09","type":"text","text":"`API`\n`POST /api/firmware-update/:id/launch` Recibe la solicitud desencriptando el `jwt` y entrega el `binario`\n","x":1160,"y":-1020,"width":280,"height":140,"color":"5"},
+		{"id":"5ff35c9a67bb2e09","type":"text","text":"`API`\n`GET /api/firmware-update/:id/launch` Recibe la solicitud desencriptando el `jwt` y entrega el `binario`\n","x":1160,"y":-1020,"width":280,"height":140,"color":"5"},
 		{"id":"477aa56ef27bcf6b","type":"text","text":"`API`\n`POST /api/firmware-update/:id/launch` Recibe la solicitud\n","x":960,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"89f3bbaf0a788b62","type":"text","text":"***`Conexion Layer`***\nRecibe \n- ***`ACK_OK`***\n- ***`Mensaje fota`***\n\t- LLama a  la `API` `autenticandose` mediante `jwt` para solicitar el `.bin` del `firmware` ","x":1610,"y":-820,"width":280,"height":140,"color":"5"},
 		{"id":"1a5373a5aa09d5b9","type":"text","text":"***`Conexion Layer`***\nEnvía solicitud de actualización al `Device`","x":1610,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"07512efdee461e32","type":"text","text":"***`Device`***\nRecibe `.bin`","x":1940,"y":-1020,"width":280,"height":140,"color":"5"},
-		{"id":"9761f81bb110e732","type":"text","text":"`API`\n`POST /api/firmware-update/:id/launch` Recibe la solicitud desencriptando el `jwt` y entrega el `binario`\n","x":1160,"y":-820,"width":280,"height":140,"color":"5"},
+		{"id":"9761f81bb110e732","type":"text","text":"`API`\n`GET /api/firmware-update/:id/launch` Recibe la solicitud desencriptando el `jwt` y entrega el `binario`\n","x":1160,"y":-820,"width":280,"height":140,"color":"5"},
 		{"id":"b1b598a481dbb8e7","type":"text","text":">[!tip] Apuntes de código Para asegurarnos del valor `id` que devuelve una query\n>\n\n>En `_validateSerialNumber` Recibimos la información del Device \n\n[[JavaScript -  Acceso seguro a Propiedades Optional chaining]]","x":1556,"y":-1260,"width":384,"height":180,"color":"4"},
 		{"id":"c42f2d447fb02c80","type":"text","text":"***`Device`***\nRecibe solicitud de actualización, contesta con `ack_confirm` y posteriormente acepta el `update` enviando un mensaje tipo `fota` ","x":1940,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"fa1d7ad2880c842c","type":"text","text":"***`Mensaje `fota`***","x":1980,"y":-830,"width":200,"height":60,"color":"5"},
 		{"id":"3f9941ba28825388","type":"text","text":"***`ACK_OK`***","x":1980,"y":-710,"width":200,"height":60,"color":"5"},
 		{"id":"b5ced3e848b52dd7","type":"text","text":">[!example] Distintos mensajes del Device\n>\n\n***Mensajes normales del device***\n- método `POST`\n- llevan `payload`\n- ese payload va en **CBOR**\n- y se protege con **CRC**\n- ejemplos: `sample`, `status`, `event`, `cmd_ack`, `param_ack`\n---\n***Retrieve de firmware***\n- método `GET`\n- ruta `/{serial}/fota`\n- **no depende de `ty`**\n- entra por la URL, no por el body\n\nLa intención ya va en la **URL**, no en un payload serializado. El CRC se usa para validar el **payload recibido**.\nSi no se manda payload:\n- no hay nada que serializar\n- no hay nada que firmar con CRC","x":2320,"y":-890,"width":384,"height":180,"color":"6"},
 		{"id":"32b6e9a63e4bb935","x":401,"y":-1126,"width":250,"height":60,"type":"text","text":"[[AKO44 - Nuevo Flujo para actualización firmware]]"},
-		{"id":"f3dfa4a589908524","type":"text","text":"`API`\nPersiste el ***`FirmwareUpdate`***\n- Pendiente de ACK\n- Device id\n- File id\n","x":1132,"y":-362,"width":280,"height":140,"color":"3"}
+		{"id":"f3dfa4a589908524","type":"text","text":"`API`\nPersiste el ***`FirmwareUpdate`***\n- Pendiente de ACK\n- Device id\n- File id\n","x":1330,"y":-310,"width":280,"height":140,"color":"3"}
 	],
 	"edges":[
 		{"id":"afa2baff30557a23","fromNode":"e2e75b0dc135d1c0","fromSide":"right","toNode":"477aa56ef27bcf6b","toSide":"left"},
@@ -45,6 +45,7 @@
 		{"id":"1dc57f95cb2e7bdd","fromNode":"9aa746407d5f6cd4","fromSide":"right","toNode":"07512efdee461e32","toSide":"left"},
 		{"id":"0163195e215f386a","fromNode":"9761f81bb110e732","fromSide":"top","toNode":"5ff35c9a67bb2e09","toSide":"bottom"},
 		{"id":"cc5796041f887e29","fromNode":"b5ced3e848b52dd7","fromSide":"left","toNode":"fa1d7ad2880c842c","toSide":"right"},
-		{"id":"e0eae59c60559f89","fromNode":"b1b598a481dbb8e7","fromSide":"bottom","toNode":"89f3bbaf0a788b62","toSide":"top"}
+		{"id":"e0eae59c60559f89","fromNode":"b1b598a481dbb8e7","fromSide":"bottom","toNode":"89f3bbaf0a788b62","toSide":"top"},
+		{"id":"41b8234163472b73","fromNode":"477aa56ef27bcf6b","fromSide":"bottom","toNode":"f3dfa4a589908524","toSide":"top"}
 	]
 }
