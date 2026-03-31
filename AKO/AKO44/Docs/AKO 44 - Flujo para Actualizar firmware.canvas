@@ -26,7 +26,9 @@
 		{"id":"b5ced3e848b52dd7","type":"text","text":">[!example] Distintos mensajes del Device\n>\n\n***Mensajes normales del device***\n- método `POST`\n- llevan `payload`\n- ese payload va en **CBOR**\n- y se protege con **CRC**\n- ejemplos: `sample`, `status`, `event`, `cmd_ack`, `param_ack`\n---\n***Retrieve de firmware***\n- método `GET`\n- ruta `/{serial}/fota`\n- **no depende de `ty`**\n- entra por la URL, no por el body\n\nLa intención ya va en la **URL**, no en un payload serializado. El CRC se usa para validar el **payload recibido**.\nSi no se manda payload:\n- no hay nada que serializar\n- no hay nada que firmar con CRC","x":2320,"y":-890,"width":384,"height":180,"color":"6"},
 		{"id":"32b6e9a63e4bb935","x":401,"y":-1126,"width":250,"height":60,"type":"text","text":"[[AKO44 - Nuevo Flujo para actualización firmware]]"},
 		{"id":"f3dfa4a589908524","type":"text","text":"`API`\nPersiste el ***`PendingFirmwareUpdate`***\n- Pendiente de ACK\n- Device id\n- File id\n","x":1330,"y":-310,"width":280,"height":140,"color":"3"},
-		{"id":"0a7fda1c6d9f5237","type":"text","text":"`API`\nBusca el ***`PendingFirmwareUpdate`*** Persistido\n- Pendiente de ACK\n- Device id\n- File id\n- Status\n","x":720,"y":-860,"width":280,"height":140,"color":"3"}
+		{"id":"066457642f3b4dfa","type":"text","text":"Alguna Pendiente?","x":940,"y":-790,"width":160,"height":80,"color":"3"},
+		{"id":"0a7fda1c6d9f5237","type":"text","text":"`API` Busca el ***`PendingFirmwareUpdate`*** Persistido\n- Pendiente de ACK\n- Device id\n- File id\n- Status\n","x":680,"y":-1020,"width":280,"height":140,"color":"3"},
+		{"id":"41caf41802e88681","type":"text","text":"Si tiene alguna pendiente se le entrega la que tiene, sino le mandaremos la mas actual ( flujo existent )","x":1160,"y":-1220,"width":280,"height":140,"color":"6"}
 	],
 	"edges":[
 		{"id":"afa2baff30557a23","fromNode":"e2e75b0dc135d1c0","fromSide":"right","toNode":"477aa56ef27bcf6b","toSide":"left"},
@@ -44,10 +46,12 @@
 		{"id":"bf417ffddd19a36b","fromNode":"deef07234dedca3f","fromSide":"right","toNode":"be8a2ec5b6dbdd83","toSide":"left"},
 		{"id":"671f8e02c9f9e931","fromNode":"5ff35c9a67bb2e09","fromSide":"right","toNode":"9aa746407d5f6cd4","toSide":"left"},
 		{"id":"1dc57f95cb2e7bdd","fromNode":"9aa746407d5f6cd4","fromSide":"right","toNode":"07512efdee461e32","toSide":"left"},
-		{"id":"0163195e215f386a","fromNode":"9761f81bb110e732","fromSide":"top","toNode":"5ff35c9a67bb2e09","toSide":"bottom"},
 		{"id":"cc5796041f887e29","fromNode":"b5ced3e848b52dd7","fromSide":"left","toNode":"fa1d7ad2880c842c","toSide":"right"},
 		{"id":"e0eae59c60559f89","fromNode":"b1b598a481dbb8e7","fromSide":"bottom","toNode":"89f3bbaf0a788b62","toSide":"top"},
 		{"id":"41b8234163472b73","fromNode":"477aa56ef27bcf6b","fromSide":"bottom","toNode":"f3dfa4a589908524","toSide":"top"},
-		{"id":"45b0b4be1422b308","fromNode":"9761f81bb110e732","fromSide":"left","toNode":"0a7fda1c6d9f5237","toSide":"right"}
+		{"id":"f389b36b88ace03c","fromNode":"9761f81bb110e732","fromSide":"left","toNode":"066457642f3b4dfa","toSide":"right"},
+		{"id":"e8aab86b918e9b2d","fromNode":"066457642f3b4dfa","fromSide":"left","toNode":"0a7fda1c6d9f5237","toSide":"bottom"},
+		{"id":"59858f2d75c8fd2d","fromNode":"0a7fda1c6d9f5237","fromSide":"right","toNode":"5ff35c9a67bb2e09","toSide":"left"},
+		{"id":"08acb689726f7ed1","fromNode":"41caf41802e88681","fromSide":"bottom","toNode":"5ff35c9a67bb2e09","toSide":"top"}
 	]
 }
