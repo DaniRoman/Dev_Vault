@@ -13,3 +13,4 @@ git switch -c feature/KNT-2253-no-arch --track origin/feature/KNT-2253-no-arch
 ```bash
 git branch -D nombreRama 
 ```
+
