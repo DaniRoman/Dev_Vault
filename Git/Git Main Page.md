@@ -14,3 +14,4 @@ git switch -c feature/KNT-2253-no-arch --track origin/feature/KNT-2253-no-arch
 git branch -D nombreRama 
 ```
 
+>[!error] Cuando 
