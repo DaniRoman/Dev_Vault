@@ -1,8 +1,6 @@
 {
 	"nodes":[
 		{"id":"deef07234dedca3f","type":"group","x":-300,"y":-860,"width":864,"height":920,"color":"3","label":"Conceptos previos, requerimientos para el flujo y Pruebas "},
-		{"id":"b5ced3e848b52dd7","type":"text","text":">[!example] Distintos mensajes del Device\n>\n\n***Mensajes normales del device***\n- método `POST`\n- llevan `payload`\n- ese payload va en **CBOR**\n- y se protege con **CRC**\n- ejemplos: `sample`, `status`, `event`, `cmd_ack`, `param_ack`\n---\n***Retrieve de firmware***\n- método `GET`\n- ruta `/{serial}/fota`\n- **no depende de `ty`**\n- entra por la URL, no por el body\n\nLa intención ya va en la **URL**, no en un payload serializado. El CRC se usa para validar el **payload recibido**.\nSi no se manda payload:\n- no hay nada que serializar\n- no hay nada que firmar con CRC","x":2320,"y":-890,"width":384,"height":180,"color":"6"},
-		{"id":"0461da47900f470a","type":"text","text":"`API`\n`POST api/firmware-update` Recibe ese fichero y lo guarda en el entorno\n","x":960,"y":-340,"width":280,"height":140,"color":"5"},
 		{"id":"477aa56ef27bcf6b","type":"text","text":"`API`\n`POST /api/firmware-update/:id/launch` Recibe la solicitud\n","x":960,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"be8a2ec5b6dbdd83","type":"text","text":"`ADMIN --> Fw Update` \n***`Crear`*** un nuevo `firmwareUpdate` a raiz del fichero que se añade","x":640,"y":-340,"width":280,"height":140,"color":"5"},
 		{"id":"e2e75b0dc135d1c0","type":"text","text":"`ADMIN --> Fw Update`\n`launch firmawareUpdate`llama la `API` para lanzar el firmware para el `Device`\n","x":640,"y":-600,"width":280,"height":140,"color":"5"},
@@ -10,7 +8,7 @@
 		{"id":"5ff35c9a67bb2e09","type":"text","text":"`API`\n`GET /api/firmware-update/:id/launch` Recibe la solicitud desencriptando el `jwt` y entrega el `binario`\n","x":1160,"y":-1020,"width":280,"height":140,"color":"5"},
 		{"id":"0a7fda1c6d9f5237","type":"text","text":"`API` Busca el ***`PendingFirmwareUpdate`*** Persistido\n- Pendiente de ACK\n- Device id\n- File id\n- Status\n","x":680,"y":-1020,"width":280,"height":140,"color":"3"},
 		{"id":"f3dfa4a589908524","type":"text","text":"`API`\nPersiste el ***`PendingFirmwareUpdate`***\n- Pendiente de ACK\n- Device id\n- File id\n","x":1330,"y":-340,"width":280,"height":140,"color":"3"},
-		{"id":"bf6b1a19df754218","type":"text","text":"Al Persistir `firmawareUpdate` podemos guardar ","x":1330,"y":-120,"width":280,"height":140,"color":"3"},
+		{"id":"bf6b1a19df754218","type":"text","text":"Al Persistir `firmawareUpdate` podemos guardar el SerialNumber del `device` en ***`avaibleDevices`*** ?\n(Parece que no envia el id del device)","x":1330,"y":-120,"width":280,"height":140,"color":"3"},
 		{"id":"9aa746407d5f6cd4","type":"text","text":"***`Conexion Layer`***\nRecibe `.bin` y lo envía al `device`","x":1610,"y":-1020,"width":280,"height":140,"color":"5"},
 		{"id":"89f3bbaf0a788b62","type":"text","text":"***`Conexion Layer`***\nRecibe \n- ***`ACK_OK`***\n- ***`Mensaje fota`***\n\t- LLama a  la `API` `autenticandose` mediante `jwt` para solicitar el `.bin` del `firmware` ","x":1610,"y":-820,"width":280,"height":140,"color":"5"},
 		{"id":"1a5373a5aa09d5b9","type":"text","text":"***`Conexion Layer`***\nEnvía solicitud de actualización al `Device`","x":1610,"y":-600,"width":280,"height":140,"color":"5"},
@@ -30,9 +28,10 @@
 		{"id":"32b6e9a63e4bb935","type":"text","text":"[[AKO44 - Nuevo Flujo para actualización firmware]]","x":401,"y":-1126,"width":250,"height":60},
 		{"id":"b1b598a481dbb8e7","type":"text","text":">[!tip] Apuntes de código Para asegurarnos del valor `id` que devuelve una query\n>\n\n>En `_validateSerialNumber` Recibimos la información del Device \n\n[[JavaScript -  Acceso seguro a Propiedades Optional chaining]]","x":1556,"y":-1260,"width":384,"height":180,"color":"4"},
 		{"id":"41caf41802e88681","type":"text","text":"Si tiene alguna pendiente se le entrega la que tiene, sino le mandaremos la mas actual ( flujo existent )","x":1160,"y":-1220,"width":280,"height":140,"color":"6"},
-		{"id":"3a0ea921da62a039","x":1640,"y":-120,"width":400,"height":225,"type":"file","file":"AKO/AKO44/Docs/attachments/Pasted image 20260401090339.png"},
-		{"id":"1e1f3240121d60e9","type":"text","text":"Se crea `Documento` de `firmawareUpdate`\n","x":960,"y":160,"width":280,"height":140,"color":"4"},
-		{"id":"c56e647b88a65917","type":"text","text":"`API`\n`POST api/file` Recibe ese fichero y lo guarda en el entorno\n","x":980,"y":-120,"width":280,"height":140,"color":"5"}
+		{"id":"c56e647b88a65917","type":"text","text":"`API`\n`POST api/file` Crea el ***`file` *** adjunto al documento ***`firmWareUpdate`***\n","x":980,"y":-120,"width":280,"height":140,"color":"5"},
+		{"id":"b5ced3e848b52dd7","type":"text","text":">[!example] Distintos mensajes del Device\n>\n\n***Mensajes normales del device***\n- método `POST`\n- llevan `payload`\n- ese payload va en **CBOR**\n- y se protege con **CRC**\n- ejemplos: `sample`, `status`, `event`, `cmd_ack`, `param_ack`\n---\n***Retrieve de firmware***\n- método `GET`\n- ruta `/{serial}/fota`\n- **no depende de `ty`**\n- entra por la URL, no por el body\n\nLa intención ya va en la **URL**, no en un payload serializado. El CRC se usa para validar el **payload recibido**.\nSi no se manda payload:\n- no hay nada que serializar\n- no hay nada que firmar con CRC","x":2320,"y":-890,"width":384,"height":180,"color":"6"},
+		{"id":"0461da47900f470a","type":"text","text":"`API`\n`POST api/firmware-update` Crea el documento ***`firmWareUpdate`***\n","x":980,"y":-340,"width":280,"height":140,"color":"5"},
+		{"id":"3a0ea921da62a039","x":1750,"y":-162,"width":400,"height":225,"type":"file","file":"AKO/AKO44/Docs/attachments/Pasted image 20260401090339.png"}
 	],
 	"edges":[
 		{"id":"afa2baff30557a23","fromNode":"e2e75b0dc135d1c0","fromSide":"right","toNode":"477aa56ef27bcf6b","toSide":"left"},
