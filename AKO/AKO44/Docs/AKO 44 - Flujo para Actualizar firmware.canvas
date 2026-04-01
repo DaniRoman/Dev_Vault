@@ -10,7 +10,6 @@
 		{"id":"5ff35c9a67bb2e09","type":"text","text":"`API`\n`GET /api/firmware-update/:id/launch` Recibe la solicitud desencriptando el `jwt` y entrega el `binario`\n","x":1160,"y":-1020,"width":280,"height":140,"color":"5"},
 		{"id":"0a7fda1c6d9f5237","type":"text","text":"`API` Busca el ***`PendingFirmwareUpdate`*** Persistido\n- Pendiente de ACK\n- Device id\n- File id\n- Status\n","x":680,"y":-1020,"width":280,"height":140,"color":"3"},
 		{"id":"f3dfa4a589908524","type":"text","text":"`API`\nPersiste el ***`PendingFirmwareUpdate`***\n- Pendiente de ACK\n- Device id\n- File id\n","x":1330,"y":-340,"width":280,"height":140,"color":"3"},
-		{"id":"1e1f3240121d60e9","type":"text","text":"Se crea `Documento` de `firmawareUpdate`\n","x":960,"y":-120,"width":280,"height":140,"color":"4"},
 		{"id":"bf6b1a19df754218","type":"text","text":"Al Persistir `firmawareUpdate` podemos guardar ","x":1330,"y":-120,"width":280,"height":140,"color":"3"},
 		{"id":"9aa746407d5f6cd4","type":"text","text":"***`Conexion Layer`***\nRecibe `.bin` y lo envía al `device`","x":1610,"y":-1020,"width":280,"height":140,"color":"5"},
 		{"id":"89f3bbaf0a788b62","type":"text","text":"***`Conexion Layer`***\nRecibe \n- ***`ACK_OK`***\n- ***`Mensaje fota`***\n\t- LLama a  la `API` `autenticandose` mediante `jwt` para solicitar el `.bin` del `firmware` ","x":1610,"y":-820,"width":280,"height":140,"color":"5"},
@@ -31,7 +30,9 @@
 		{"id":"32b6e9a63e4bb935","type":"text","text":"[[AKO44 - Nuevo Flujo para actualización firmware]]","x":401,"y":-1126,"width":250,"height":60},
 		{"id":"b1b598a481dbb8e7","type":"text","text":">[!tip] Apuntes de código Para asegurarnos del valor `id` que devuelve una query\n>\n\n>En `_validateSerialNumber` Recibimos la información del Device \n\n[[JavaScript -  Acceso seguro a Propiedades Optional chaining]]","x":1556,"y":-1260,"width":384,"height":180,"color":"4"},
 		{"id":"41caf41802e88681","type":"text","text":"Si tiene alguna pendiente se le entrega la que tiene, sino le mandaremos la mas actual ( flujo existent )","x":1160,"y":-1220,"width":280,"height":140,"color":"6"},
-		{"id":"3a0ea921da62a039","x":1640,"y":-120,"width":400,"height":225,"type":"file","file":"AKO/AKO44/Docs/attachments/Pasted image 20260401090339.png"}
+		{"id":"3a0ea921da62a039","x":1640,"y":-120,"width":400,"height":225,"type":"file","file":"AKO/AKO44/Docs/attachments/Pasted image 20260401090339.png"},
+		{"id":"1e1f3240121d60e9","type":"text","text":"Se crea `Documento` de `firmawareUpdate`\n","x":960,"y":160,"width":280,"height":140,"color":"4"},
+		{"id":"c56e647b88a65917","type":"text","text":"`API`\n`POST api/file` Recibe ese fichero y lo guarda en el entorno\n","x":980,"y":-120,"width":280,"height":140,"color":"5"}
 	],
 	"edges":[
 		{"id":"afa2baff30557a23","fromNode":"e2e75b0dc135d1c0","fromSide":"right","toNode":"477aa56ef27bcf6b","toSide":"left"},
@@ -56,8 +57,8 @@
 		{"id":"e8aab86b918e9b2d","fromNode":"066457642f3b4dfa","fromSide":"left","toNode":"0a7fda1c6d9f5237","toSide":"bottom"},
 		{"id":"59858f2d75c8fd2d","fromNode":"0a7fda1c6d9f5237","fromSide":"right","toNode":"5ff35c9a67bb2e09","toSide":"left"},
 		{"id":"08acb689726f7ed1","fromNode":"41caf41802e88681","fromSide":"bottom","toNode":"5ff35c9a67bb2e09","toSide":"top"},
-		{"id":"5f8d81ee6f8773e5","fromNode":"0461da47900f470a","fromSide":"bottom","toNode":"1e1f3240121d60e9","toSide":"top"},
 		{"id":"e3f2c56abab8197e","fromNode":"0461da47900f470a","fromSide":"bottom","toNode":"bf6b1a19df754218","toSide":"top"},
-		{"id":"7cf4c36e181e5768","fromNode":"3a0ea921da62a039","fromSide":"left","toNode":"bf6b1a19df754218","toSide":"right"}
+		{"id":"7cf4c36e181e5768","fromNode":"3a0ea921da62a039","fromSide":"left","toNode":"bf6b1a19df754218","toSide":"right"},
+		{"id":"e3b6f076011c4a69","fromNode":"be8a2ec5b6dbdd83","fromSide":"right","toNode":"c56e647b88a65917","toSide":"left"}
 	]
 }
