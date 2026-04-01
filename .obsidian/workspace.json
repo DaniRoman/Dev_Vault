@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
                 "viewState": {
-                  "x": 1200.4593118689331,
-                  "y": -617.3372474757325,
-                  "zoom": -0.596755056876246
+                  "x": -918.8002176019767,
+                  "y": -371.87414408227374,
+                  "zoom": -0.045486353958373374
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo para Actualizar firmware"
+              "title": "AKO 44 - Flujo PLMN"
             }
           }
         ]
@@ -200,11 +200,11 @@
   },
   "active": "ff87f5ae1d20c93f",
   "lastOpenFiles": [
-    "AKO/AKO44/Fota.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - PLMN.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Fota.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "AKO44 - Nuevo Flujo para actualización firmware.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260401090339.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260401090335.png",
