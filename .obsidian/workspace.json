@@ -11,14 +11,17 @@
             "id": "ff87f5ae1d20c93f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+                "viewState": {
+                  "x": 1207.7622406473163,
+                  "y": -369.27896609139987,
+                  "zoom": 0.1958597796310427
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO  44 - Admin Main Page"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo para Actualizar firmware"
             }
           }
         ]
@@ -198,9 +201,9 @@
   },
   "active": "ff87f5ae1d20c93f",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "Db/Mongo/Mongo - Main Site.md",
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO44 - Nuevo Flujo para actualización firmware.md",
     "AKO/AKO44/Docs/attachments/mermaid-diagram.png",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas",
