@@ -22,8 +22,9 @@
 		{"id":"518ed8b899485947","type":"text","text":">[!success] Flujo para lanzar un ***`New PLMN`*** \n\n`Admin` lanza un `plmn launch update`","x":-911,"y":-724,"width":317,"height":160,"color":"5"},
 		{"id":"fcb4c26fb2c6c397","type":"text","text":"***`API`*** Recibe en ***`POST /api/plmn-list/:id/launch`*** y diferencia entre `newDevice oldDevice` para enviar el `cmd`","x":-535,"y":-724,"width":317,"height":160,"color":"5"},
 		{"id":"d5337abea677f7ca","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":-526,"y":-1204,"width":317,"height":160,"color":"4"},
-		{"id":"9e80d56e4ef035ec","type":"text","text":"***`API`*** recibe en `POST /api/plmn-list` y manda mensaje en RabbitMQ → topic: `command.plmn`","x":-526,"y":-964,"width":317,"height":160,"color":"5"},
-		{"id":"3d975cc528648e64","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":-185,"y":-1204,"width":317,"height":160,"color":"4"}
+		{"id":"9e80d56e4ef035ec","type":"text","text":"***`API`*** recibe en `POST /api/plmn-list` Crea un ***`plmnList`*** y manda mensaje en RabbitMQ → topic: `command.plmn`","x":-526,"y":-964,"width":317,"height":160,"color":"5"},
+		{"id":"3d975cc528648e64","type":"text","text":">[!tip] Se crea un ***`plmnlists`***\n\n","x":-185,"y":-1204,"width":317,"height":160,"color":"4"},
+		{"id":"c84d8c8660f576f9","type":"text","text":">[!tip] Se crea un ***`plmnlists`***\n\n","x":240,"y":-1204,"width":317,"height":160,"color":"3"}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"665d1da08bc91cb5","fromSide":"right","toNode":"a1ec65f5ca867ed7","toSide":"left"},
