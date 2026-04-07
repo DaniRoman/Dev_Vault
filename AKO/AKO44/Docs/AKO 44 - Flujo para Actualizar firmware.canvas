@@ -27,10 +27,11 @@
 		{"id":"485a8b0093a93d0c","type":"text","text":">[!success] Flujo para Pruebas\n>\n\n>[[AKO 44 - Flujo para Actualizar firmware - Tests.canvas]]","x":-260,"y":-270,"width":384,"height":180,"color":"4"},
 		{"id":"a35bcb30dcbbab4e","type":"text","text":">[!error] ***Obtener `firmwareVersion` en `Device`***\n\nUn `Device` no tendrá `firmwareVersion`, `firmwareRevision`, `firmwareSubrevision`  lanzando un error en este flujo, hasta que este no mande su primer mensaje de `status`procesado por el  ***`micro status.perte device`\n\n***`FirmwareVersion`*** tiene que ser igual a la que tiene el nombre de la definición del dispositivo en este caso `panel_2ry_7102`, `7102` \n\n```js\n>7101, 7102, // DARWIN 2R 2025 (7101=edge, 7102=nbiot)\n>```\n\n","x":148,"y":-380,"width":384,"height":160,"color":"1"},
 		{"id":"b1b598a481dbb8e7","type":"text","text":">[!tip] Apuntes de código Para asegurarnos del valor `id` que devuelve una query\n>\n\n>En `_validateSerialNumber` Recibimos la información del Device \n\n[[JavaScript -  Acceso seguro a Propiedades Optional chaining]]","x":788,"y":-1020,"width":384,"height":180,"color":"4"},
-		{"id":"f961a7b69abe1f2a","type":"text","text":"***`Device`***\nmanda mensaje de ***`audit`***","x":1940,"y":-1240,"width":280,"height":140,"color":"5"},
-		{"id":"b9aabb6e0f77c17c","type":"text","text":"***`Conexion Layer`***\nEnvía solicitud de actualización al `Device`","x":1610,"y":-1240,"width":280,"height":140,"color":"5"},
-		{"id":"f018af6767826c4b","type":"text","text":"***`Translator`***\nTraduce la solicitud","x":1260,"y":-1240,"width":280,"height":140,"color":"5"},
-		{"id":"20aa097a9fd4cdad","type":"text","text":"***`backLockPer`***\nEnvía solicitud de actualización al `Device`","x":920,"y":-1240,"width":280,"height":140,"color":"5"}
+		{"id":"f961a7b69abe1f2a","type":"text","text":"***`Device`***\nmanda mensaje de ***`audit`***","x":1940,"y":-1220,"width":280,"height":140,"color":"5"},
+		{"id":"b9aabb6e0f77c17c","type":"text","text":"***`Conexion Layer`***\n","x":1610,"y":-1220,"width":280,"height":140,"color":"5"},
+		{"id":"20aa097a9fd4cdad","type":"text","text":"***`translator`***\n","x":1280,"y":-1220,"width":280,"height":140,"color":"5"},
+		{"id":"f018af6767826c4b","type":"text","text":"***`backlog.perte > StateController`***\ngestiona auditoria","x":920,"y":-1220,"width":280,"height":140,"color":"5"},
+		{"id":"c5ad2cf8848bc045","type":"text","text":"Llamada a la API para que borre el serial del Documento ***`FirmWareUpdate`***","x":640,"y":-1480,"width":280,"height":140,"color":"4"}
 	],
 	"edges":[
 		{"id":"afa2baff30557a23","fromNode":"e2e75b0dc135d1c0","fromSide":"right","toNode":"477aa56ef27bcf6b","toSide":"left"},
@@ -53,6 +54,10 @@
 		{"id":"e3f2c56abab8197e","fromNode":"0461da47900f470a","fromSide":"bottom","toNode":"bf6b1a19df754218","toSide":"top"},
 		{"id":"e3b6f076011c4a69","fromNode":"be8a2ec5b6dbdd83","fromSide":"right","toNode":"c56e647b88a65917","toSide":"left"},
 		{"id":"14669697dd21d729","fromNode":"89f3bbaf0a788b62","fromSide":"bottom","toNode":"8b85f03f89e15f7c","toSide":"top"},
-		{"id":"0ce0d000da66dfc1","fromNode":"07512efdee461e32","fromSide":"right","toNode":"f961a7b69abe1f2a","toSide":"right"}
+		{"id":"0ce0d000da66dfc1","fromNode":"07512efdee461e32","fromSide":"right","toNode":"f961a7b69abe1f2a","toSide":"right"},
+		{"id":"bdbe469daa45598e","fromNode":"f961a7b69abe1f2a","fromSide":"left","toNode":"b9aabb6e0f77c17c","toSide":"right"},
+		{"id":"d04a5d18053895c8","fromNode":"b9aabb6e0f77c17c","fromSide":"left","toNode":"20aa097a9fd4cdad","toSide":"right"},
+		{"id":"95fd6bd7ed70cf9b","fromNode":"20aa097a9fd4cdad","fromSide":"left","toNode":"f018af6767826c4b","toSide":"right"},
+		{"id":"40294c89768af01c","fromNode":"f018af6767826c4b","fromSide":"top","toNode":"c5ad2cf8848bc045","toSide":"right"}
 	]
 }
