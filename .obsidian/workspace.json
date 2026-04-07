@@ -11,14 +11,17 @@
             "id": "ff87f5ae1d20c93f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
+                "viewState": {
+                  "x": -165.0416219282589,
+                  "y": -500.72185480270633,
+                  "zoom": -0.3245603634300507
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO  44 - Admin Main Page"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo PLMN"
             }
           }
         ]
@@ -198,12 +201,12 @@
   },
   "active": "ff87f5ae1d20c93f",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO44 - Nuevo Flujo para actualización firmware.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260401090339.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260401090335.png",
