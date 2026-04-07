@@ -22,7 +22,8 @@
 		{"id":"518ed8b899485947","type":"text","text":">[!success] Flujo para lanzar un ***`New PLMN`*** \n\n`Admin` lanza un `plmn launch update`","x":-911,"y":-724,"width":317,"height":160,"color":"5"},
 		{"id":"fcb4c26fb2c6c397","type":"text","text":"***`API`*** Recibe en ***`POST /api/plmn-list/:id/launch`*** y diferencia entre `newDevice oldDevice` para enviar el `cmd`","x":-535,"y":-724,"width":317,"height":160,"color":"5"},
 		{"id":"d5337abea677f7ca","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":-526,"y":-1204,"width":317,"height":160,"color":"4"},
-		{"id":"9e80d56e4ef035ec","type":"text","text":"***`API`*** recibe en `POST /api/plmn-list` y manda mensaje en RabbitMQ → topic: `command.plmn`","x":-526,"y":-964,"width":317,"height":160,"color":"5"}
+		{"id":"9e80d56e4ef035ec","type":"text","text":"***`API`*** recibe en `POST /api/plmn-list` y manda mensaje en RabbitMQ → topic: `command.plmn`","x":-526,"y":-964,"width":317,"height":160,"color":"5"},
+		{"id":"3d975cc528648e64","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":-185,"y":-1204,"width":317,"height":160,"color":"4"}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"665d1da08bc91cb5","fromSide":"right","toNode":"a1ec65f5ca867ed7","toSide":"left"},
@@ -41,6 +42,7 @@
 		{"id":"448dc4a270dc1056","fromNode":"fcb4c26fb2c6c397","fromSide":"right","toNode":"b0cb585f3e1dc77d","toSide":"left"},
 		{"id":"896752ae375a874f","fromNode":"b0cb585f3e1dc77d","fromSide":"right","toNode":"eacecb07b4b11a5b","toSide":"left"},
 		{"id":"dab9163423364919","fromNode":"7ee22de3e539a019","fromSide":"right","toNode":"e3622114dded8527","toSide":"left"},
-		{"id":"3bea8c5e7e86d895","fromNode":"b0cb585f3e1dc77d","fromSide":"bottom","toNode":"ea48099f0b687a57","toSide":"top"}
+		{"id":"3bea8c5e7e86d895","fromNode":"b0cb585f3e1dc77d","fromSide":"bottom","toNode":"ea48099f0b687a57","toSide":"top"},
+		{"id":"d0a23d677df92902","fromNode":"9e80d56e4ef035ec","fromSide":"top","toNode":"3d975cc528648e64","toSide":"bottom"}
 	]
 }
