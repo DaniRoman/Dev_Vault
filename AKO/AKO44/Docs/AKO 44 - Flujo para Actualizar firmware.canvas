@@ -31,7 +31,7 @@
 		{"id":"b9aabb6e0f77c17c","type":"text","text":"***`Conexion Layer`***\n","x":1610,"y":-1220,"width":280,"height":140,"color":"5"},
 		{"id":"20aa097a9fd4cdad","type":"text","text":"***`translator`***\n","x":1280,"y":-1220,"width":280,"height":140,"color":"5"},
 		{"id":"f018af6767826c4b","type":"text","text":"***`backlog.perte > StateController`***\ngestiona auditoria","x":920,"y":-1220,"width":280,"height":140,"color":"5"},
-		{"id":"c5ad2cf8848bc045","type":"text","text":"Llamada a la API para que borre el serial del Documento ***`FirmWareUpdate`***","x":640,"y":-1480,"width":280,"height":140,"color":"4"}
+		{"id":"dec9f5494e350ad6","type":"text","text":"`API`\n`PATCH api/firmware-update`  Borra el serial del Documento ***`FirmWareUpdate\n","x":532,"y":-1220,"width":280,"height":140,"color":"5"}
 	],
 	"edges":[
 		{"id":"afa2baff30557a23","fromNode":"e2e75b0dc135d1c0","fromSide":"right","toNode":"477aa56ef27bcf6b","toSide":"left"},
@@ -58,6 +58,6 @@
 		{"id":"bdbe469daa45598e","fromNode":"f961a7b69abe1f2a","fromSide":"left","toNode":"b9aabb6e0f77c17c","toSide":"right"},
 		{"id":"d04a5d18053895c8","fromNode":"b9aabb6e0f77c17c","fromSide":"left","toNode":"20aa097a9fd4cdad","toSide":"right"},
 		{"id":"95fd6bd7ed70cf9b","fromNode":"20aa097a9fd4cdad","fromSide":"left","toNode":"f018af6767826c4b","toSide":"right"},
-		{"id":"40294c89768af01c","fromNode":"f018af6767826c4b","fromSide":"top","toNode":"c5ad2cf8848bc045","toSide":"right"}
+		{"id":"88ab653c23f667c3","fromNode":"f018af6767826c4b","fromSide":"left","toNode":"dec9f5494e350ad6","toSide":"right"}
 	]
 }
