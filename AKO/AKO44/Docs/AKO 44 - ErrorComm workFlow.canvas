@@ -2,18 +2,18 @@
 	"nodes":[
 		{"id":"7733d74c028dc1c5","x":-2200,"y":-525,"width":540,"height":585,"type":"group","label":"Conceptos prévios"},
 		{"id":"180ac27b0e0dc6ba","type":"text","text":">[!example] Flujo Reactivo\n\n***`Device`*** comunica un ***`status`***\n","x":-1380,"y":-490,"width":304,"height":150,"color":"6"},
-		{"id":"cb7cf7551a07a62a","type":"text","text":"***`micro errorCom`***","x":-920,"y":-490,"width":304,"height":150},
-		{"id":"0bbfddb36e27a3fa","type":"text","text":"- Parsea el mensaje\n- Carga Device y definición\n- recalculan `dateNextSync` y `dateError`","x":-920,"y":-280,"width":304,"height":150},
-		{"id":"8f7708c08901cf6f","type":"text","text":"se crear/actualiza el documento ***`errorComm`***","x":-540,"y":-280,"width":304,"height":150,"color":"4"},
+		{"id":"cb7cf7551a07a62a","type":"text","text":"***`micro errorCom`***\n\n- Parsea el mensaje\n- Carga Device y definición\n- recalculan `dateNextSync` y `dateError`","x":-920,"y":-490,"width":304,"height":150,"color":"5"},
 		{"id":"1fa9688bf7345a12","type":"text","text":"***`dataError`***\n\n- Fecha/hora a partir de la cual ya se considera fallo real de comunicación.\n- No coincide necesariamente con `dateNextSync`, se calcula añadiendo una ventana extra de tolerancia sobre la siguiente comunicación esperada. Eso evita disparar la alarma demasiado pronto si el equipo llega con retraso pequeño","x":-2180,"y":-505,"width":500,"height":245,"color":"3"},
 		{"id":"7aeb7489c93a5e29","type":"text","text":"***`dateNextSync`***\n\n- próxima fecha/hora esperada de comunicación del dispositivo, es cuando el sistema empieza a considerar que el equipo ya debería haber vuelto a comunicar\n- calcula a partir del último mensaje recibido más el intervalo de transmisión configurado","x":-2180,"y":-205,"width":500,"height":245,"color":"3"},
 		{"id":"8472b805f806444f","type":"text","text":">[!example] Flujo Periódico\n\n***`micro errorCom`*** Realiza chequeo periódico\n","x":-1380,"y":-35,"width":304,"height":150,"color":"6"},
-		{"id":"8720c137eb08821a","type":"text","text":"***`micro errorCom`***","x":-940,"y":-35,"width":304,"height":150}
+		{"id":"8720c137eb08821a","type":"text","text":"***`micro errorCom`***\nsi `dateNextSync` ya pasó y además `now > dateError`, se genera evento de activación de `errorcomm` y se pone el dispositivo en estado `error` si aplica.","x":-940,"y":-35,"width":304,"height":150,"color":"5"},
+		{"id":"8f7708c08901cf6f","type":"text","text":"se crear/actualiza el documento ***`errorComm`***","x":-660,"y":-280,"width":304,"height":150,"color":"4"},
+		{"id":"14bf123813baa4f5","x":-467,"y":-663,"width":250,"height":60,"type":"text","text":""},
+		{"id":"8c2674196138ac50","type":"text","text":">[!warning] handlers\n\nExisten","x":-400,"y":-457,"width":304,"height":150,"color":"2"}
 	],
 	"edges":[
 		{"id":"610923af29daefb9","fromNode":"180ac27b0e0dc6ba","fromSide":"right","toNode":"cb7cf7551a07a62a","toSide":"left","label":"comunica"},
-		{"id":"d946de7a01aa1f0b","fromNode":"cb7cf7551a07a62a","fromSide":"bottom","toNode":"0bbfddb36e27a3fa","toSide":"top"},
-		{"id":"e881f4b87c298764","fromNode":"0bbfddb36e27a3fa","fromSide":"right","toNode":"8f7708c08901cf6f","toSide":"left"},
-		{"id":"ddc04fe17ffc4688","fromNode":"8472b805f806444f","fromSide":"right","toNode":"8720c137eb08821a","toSide":"left"}
+		{"id":"ddc04fe17ffc4688","fromNode":"8472b805f806444f","fromSide":"right","toNode":"8720c137eb08821a","toSide":"left"},
+		{"id":"470d8bdbb7b5b9c9","fromNode":"cb7cf7551a07a62a","fromSide":"bottom","toNode":"8f7708c08901cf6f","toSide":"left"}
 	]
 }
