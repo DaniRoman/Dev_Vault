@@ -90,9 +90,7 @@ Eso es un **canal especial de Redis** que publica eventos internos de expiració
 ### Traducido
 
 - `keyevent` = evento sobre una key
-    
 - `@0` = base de datos Redis 0
-    
 - `expired` = tipo de evento: la key ha expirado
     
 
@@ -113,13 +111,10 @@ y el worker escucha eso y reacciona.
 Cuando detecta que expiró una key de errcom:
 
 1. saca el `deviceId` del nombre de la key
-    
 2. verifica si el device sigue online o si no se recuperó ya
-    
 3. actualiza Mongo:
     
     - `device.status = "error"`
-        
     - crea/actualiza documento en `ErrorComm`
         
 4. emite evento `errorcomm activation` a `events-12830`
@@ -134,48 +129,19 @@ Porque este problema se parece mucho a un **heartbeat**.
 Cada mensaje válido es como decir:
 
 - “sigo vivo”
-    
 - “reinicia mi temporizador”
     
 
 Redis con TTL hace esto muy bien:
 
 - es rápido
-    
 - evita cálculos constantes
-    
 - evita recorrer todos los devices todo el rato
-    
 - convierte el problema en algo reactivo
     
 
 ---
 
-## 9. Comparación con el enfoque actual
-
-### Actual
-
-- guardar fechas en Mongo
-    
-- hacer polling cada X minutos
-    
-- comprobar si `now > dateError`
-    
-
-### Nuevo
-
-- cada mensaje válido renueva TTL en Redis
-    
-- Redis avisa cuando el tiempo se acaba
-    
-- el worker actúa solo cuando hay expiración
-    
-
-Es más reactivo y más simple para este caso.
-
----
-
-## 10. Conceptos que deberías apuntarte
 
 ### Heartbeat
 
@@ -209,58 +175,8 @@ En vez de revisar cada 10 minutos, esperas a que Redis te avise cuando ocurra al
 
 ---
 
-## 11. Flujo simplificado para entenderlo
 
-### Cuando llega un mensaje válido
-
-1. `translator.perte` recibe un mensaje
-    
-2. si no es `link`, calcula TTL usando `TXE`
-    
-3. guarda o renueva:  
-    `device:errcom:{deviceId}`
-    
-4. si el device estaba en error, puede recuperarlo
-    
-
-### Cuando no llega nada durante el tiempo esperado
-
-1. expira la key en Redis
-    
-2. Redis emite evento de expiración
-    
-3. el worker lo escucha
-    
-4. marca el device en error
-    
-5. guarda registro en `ErrorComm`
-    
-6. envía evento a `events-12830`
     
 
 ---
 
-## 12. Por qué esto te interesa a nivel implementación
-
-Porque separa muy bien las responsabilidades:
-
-- `translator.perte` = sabe que llegó un mensaje
-    
-- Redis = sabe cuánto tiempo puede pasar sin mensajes
-    
-- worker = sabe qué hacer cuando expira
-    
-- Mongo = persistencia y auditoría
-    
-- `events-12830` = difusión del evento de negocio
-    
-
-Eso hace que el flujo sea más fácil de razonar y evolucionar.
-
-## Resumen corto para anotarte
-
-Un **worker** aquí es un proceso pequeño que escucha expiraciones de Redis y genera `errorcomm`.  
-No lo llaman microservicio porque no necesita API ni mucha lógica general, solo reaccionar a eventos.  
-Redis se usa como temporizador por device: cada mensaje válido renueva una key con TTL, y cuando esa key expira, el worker interpreta que el device ha dejado de comunicar.
-
-Si quieres, el siguiente paso te lo puedo dejar como **diagrama Mermaid del flujo Redis + worker + translator**.
