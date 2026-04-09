@@ -1,20 +1,13 @@
 {
 	"nodes":[
-		{"id":"7733d74c028dc1c5","x":-2740,"y":-525,"width":1060,"height":805,"type":"group","label":"Conceptos prévios"},
+		{"id":"7733d74c028dc1c5","type":"group","x":-2740,"y":-525,"width":1160,"height":1085,"label":"Conceptos prévios"},
 		{"id":"1fa9688bf7345a12","type":"text","text":"***`dataError`***\n\n- Fecha/hora a partir de la cual ya se considera fallo real de comunicación.\n- No coincide necesariamente con `dateNextSync`, se calcula añadiendo una ventana extra de tolerancia sobre la siguiente comunicación esperada. Eso evita disparar la alarma demasiado pronto si el equipo llega con retraso pequeño","x":-2720,"y":-510,"width":500,"height":245,"color":"3"},
 		{"id":"7aeb7489c93a5e29","type":"text","text":"***`dateNextSync`***\n\n- próxima fecha/hora esperada de comunicación del dispositivo, es cuando el sistema empieza a considerar que el equipo ya debería haber vuelto a comunicar\n- calcula a partir del último mensaje recibido más el intervalo de transmisión configurado","x":-2200,"y":-510,"width":500,"height":205,"color":"3"},
-		{"id":"8c2674196138ac50","type":"text","text":">[!warning] handlers\n\nDependiendo de la familia y el modelo del dispositivo se utiliza un handlers u otro y a su vez estos calculan el intervalo esperado con diferentes parámetros","x":-2720,"y":-240,"width":500,"height":185,"color":"2"},
-		{"id":"cb7cf7551a07a62a","type":"text","text":"***`micro errorCom`***\n\n- Parsea el mensaje\n- Carga Device y definición\n- recalculan `dateNextSync` y `dateError`","x":-1100,"y":-515,"width":304,"height":150,"color":"5"},
-		{"id":"8f7708c08901cf6f","type":"text","text":"se crear/actualiza el documento ***`errorComm`***","x":-840,"y":-305,"width":304,"height":150,"color":"4"},
-		{"id":"180ac27b0e0dc6ba","type":"text","text":">[!example] Flujo Reactivo\n\n***`Device`*** comunica un ***`status`***\n","x":-1560,"y":-515,"width":304,"height":150,"color":"6"},
-		{"id":"8720c137eb08821a","type":"text","text":"***`micro errorCom`***\nsi `dateNextSync` ya pasó y además `now > dateError`, se genera evento de activación de `errorcomm` y se pone el dispositivo en estado `error` si aplica.","x":-1120,"y":-40,"width":304,"height":150,"color":"5"},
-		{"id":"8472b805f806444f","type":"text","text":">[!example] Flujo Periódico\n\n***`micro errorCom`*** Realiza chequeo periódico\n","x":-1560,"y":-40,"width":304,"height":150,"color":"6"}
+		{"id":"4ba0df05224b438b","type":"text","text":">[!warning] lógica funcional antes de enviar el mensaje de error\n\nError = lastValidMessageTimestamp + 2 * TXE + 1h\n\n|Opción|TXE|Tiempo hasta Error|\n|---|---|---|\n|1|1|3 horas|\n|2|7|15 horas|\n|3|12|25 horas|\n|4|24|49 horas|\n\n> Nota: > Nota: el tiempo final se calcula como `(2 * TXE) + 1`\n> \n> El parámetro tendra los valores de la segunda columna (TXE) y el resultado de la fórmula es la tercera columna.  \n> Es decir => Si parámetro=7  -> fromula=2*7+1=15h -> esto quiere decir, que si lastMessageTimestamp ha sido hace mas de 15h, device = error y hayq ue crear el evento de errorCom enviandolo al micro de events-12830","x":-2718,"y":-230,"width":768,"height":380,"color":"2"},
+		{"id":"91400e37dc8b3b00","x":-1480,"y":-70,"width":250,"height":60,"type":"text","text":""},
+		{"id":"84819cc694be47bd","type":"text","text":">[!important] \n\nSe resetea con **cualquier mensaje válido excepto `link`**.\n","x":-2720,"y":240,"width":500,"height":137,"color":"3"}
 	],
 	"edges":[
-		{"id":"610923af29daefb9","fromNode":"180ac27b0e0dc6ba","fromSide":"right","toNode":"cb7cf7551a07a62a","toSide":"left","label":"comunica"},
-		{"id":"ddc04fe17ffc4688","fromNode":"8472b805f806444f","fromSide":"right","toNode":"8720c137eb08821a","toSide":"left"},
-		{"id":"470d8bdbb7b5b9c9","fromNode":"cb7cf7551a07a62a","fromSide":"bottom","toNode":"8f7708c08901cf6f","toSide":"left"},
-		{"id":"9b60b823832207e9","fromNode":"7733d74c028dc1c5","fromSide":"right","toNode":"180ac27b0e0dc6ba","toSide":"left"},
-		{"id":"5ac7ff7338e66886","fromNode":"7733d74c028dc1c5","fromSide":"right","toNode":"8472b805f806444f","toSide":"left"}
+		{"id":"56df5bf54c4049de","fromNode":"84819cc694be47bd","fromSide":"top","toNode":"4ba0df05224b438b","toSide":"bottom"}
 	]
 }

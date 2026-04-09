@@ -22,6 +22,23 @@
             }
           },
           {
+            "id": "e74ce891fc73c32f",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
+                "viewState": {
+                  "x": -1659.8067124927531,
+                  "y": -12.149709181546323,
+                  "zoom": -0.18650930452530223
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - ErrorComm workFlow"
+            }
+          },
+          {
             "id": "720de3eea0f9f7ff",
             "type": "leaf",
             "state": {
@@ -38,7 +55,8 @@
               "title": "AKO 44 - ErrorComm workFlow"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -212,12 +230,12 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ff87f5ae1d20c93f",
+  "active": "e74ce891fc73c32f",
   "lastOpenFiles": [
-    "AKO/AKO44/attachments/Pasted image 20260409132220.png",
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/AKO 44 - ErrorComm.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/attachments/Pasted image 20260409132220.png",
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
     "Git/Git Main Page.md",
@@ -264,7 +282,6 @@
     "AKO/AKO44/attachments/Pasted image 20260317154528.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260316093657.png",
     "AKO/AKO44/attachments/Pasted image 20260316084645.png",
-    "AKO/AKO44/attachments/Pasted image 20260316084231.png",
     "attachments",
     "Express",
     "AKO - feature",
