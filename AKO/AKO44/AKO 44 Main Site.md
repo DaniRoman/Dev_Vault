@@ -8,6 +8,10 @@ Ese `.json` está definiendo **qué topics escucha el microservicio** y **qué m
   { "topic": "status.updated.AD1", "handler": "handleInputStatusAD1" }
 ]
 ```
+
+Para ver quien manda ese topic puedo hacer una búsqueda en el proyecto y en este caso veo que es el micro de update quien lo manda 
+
+![[Pasted image 20260409132220.png]]
 ## Fota
 [[Fota]]
 
