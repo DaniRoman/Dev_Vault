@@ -12,4 +12,6 @@ Trabaja sobre dos ejes:
 [[AKO 44 - ErrorComm workFlow.canvas]]
 
 meter en topic map 
+status update si no se envia da error pero el dispositivo puede estar comunicando 
+
 
