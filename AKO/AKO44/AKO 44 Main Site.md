@@ -1,4 +1,13 @@
+>[!important] Importante ***`microservice.json`***
 
+Ese `.json` está definiendo **qué topics escucha el microservicio** y **qué método handler debe ejecutarse** cuando llega un mensaje en ese topic.
+
+```json
+"handlers": [
+  { "topic": "status.updated.AD20", "handler": "handleInputStatusAD20" },
+  { "topic": "status.updated.AD1", "handler": "handleInputStatusAD1" }
+]
+```
 ## Fota
 [[Fota]]
 
