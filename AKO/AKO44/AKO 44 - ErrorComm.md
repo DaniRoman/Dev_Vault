@@ -14,5 +14,7 @@ Trabaja sobre dos ejes:
 Crear 
 meter en topic map 
 status update si no se envia da error pero el dispositivo puede estar comunicando 
+En translator se actualiza el timestamp
+
 
 
