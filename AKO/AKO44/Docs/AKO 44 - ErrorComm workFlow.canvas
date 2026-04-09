@@ -1,9 +1,10 @@
 {
 	"nodes":[
-		{"id":"180ac27b0e0dc6ba","type":"text","text":"Device comunica un status","x":-1400,"y":-490,"width":304,"height":150},
-		{"id":"cb7cf7551a07a62a","type":"text","text":"micro errorCom","x":-880,"y":-490,"width":304,"height":150},
-		{"id":"0bbfddb36e27a3fa","type":"text","text":"- Parsea el mensaje\n- Carga Device y definición\n- recalculan `dateNextSync` y `dateError`","x":-860,"y":-260,"width":304,"height":150},
-		{"id":"8f7708c08901cf6f","type":"text","text":"se crear e","x":-400,"y":-260,"width":304,"height":150,"color":"4"}
+		{"id":"180ac27b0e0dc6ba","type":"text","text":"***`Device`*** comunica un ***`status`***","x":-1380,"y":-490,"width":304,"height":150},
+		{"id":"d04d4b7345827869","type":"text","text":"***`micro errorCom`*** Realiza chequeo periódico","x":-1380,"y":-740,"width":304,"height":150},
+		{"id":"cb7cf7551a07a62a","type":"text","text":"***`micro errorCom`***","x":-920,"y":-490,"width":304,"height":150},
+		{"id":"0bbfddb36e27a3fa","type":"text","text":"- Parsea el mensaje\n- Carga Device y definición\n- recalculan `dateNextSync` y `dateError`","x":-920,"y":-280,"width":304,"height":150},
+		{"id":"8f7708c08901cf6f","type":"text","text":"se crear/actualiza el documento ***`errorComm`***","x":-540,"y":-280,"width":304,"height":150,"color":"4"}
 	],
 	"edges":[
 		{"id":"610923af29daefb9","fromNode":"180ac27b0e0dc6ba","fromSide":"right","toNode":"cb7cf7551a07a62a","toSide":"left","label":"comunica"},
