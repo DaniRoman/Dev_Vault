@@ -11,17 +11,14 @@
             "id": "ff87f5ae1d20c93f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
-                "viewState": {
-                  "x": -1078.837816174052,
-                  "y": -54.53195151322164,
-                  "zoom": 0
-                }
+                "file": "AKO/AKO44/AKO 44 - ErrorComm.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - ErrorComm workFlow"
+              "icon": "lucide-file",
+              "title": "AKO 44 - ErrorComm"
             }
           },
           {
@@ -217,8 +214,8 @@
   },
   "active": "ff87f5ae1d20c93f",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO 44 - ErrorComm.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
+    "AKO/AKO44/AKO 44 - ErrorComm.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",

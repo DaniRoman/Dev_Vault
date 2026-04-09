@@ -7,8 +7,8 @@
 		{"id":"cb7cf7551a07a62a","type":"text","text":"***`micro errorCom`***\n\n- Parsea el mensaje\n- Carga Device y definición\n- recalculan `dateNextSync` y `dateError`","x":-1100,"y":-515,"width":304,"height":150,"color":"5"},
 		{"id":"8f7708c08901cf6f","type":"text","text":"se crear/actualiza el documento ***`errorComm`***","x":-840,"y":-305,"width":304,"height":150,"color":"4"},
 		{"id":"180ac27b0e0dc6ba","type":"text","text":">[!example] Flujo Reactivo\n\n***`Device`*** comunica un ***`status`***\n","x":-1560,"y":-515,"width":304,"height":150,"color":"6"},
-		{"id":"8720c137eb08821a","type":"text","text":"***`micro errorCom`***\nsi `dateNextSync` ya pasó y además `now > dateError`, se genera evento de activación de `errorcomm` y se pone el dispositivo en estado `error` si aplica.","x":-1120,"y":80,"width":304,"height":150,"color":"5"},
-		{"id":"8472b805f806444f","type":"text","text":">[!example] Flujo Periódico\n\n***`micro errorCom`*** Realiza chequeo periódico\n","x":-1560,"y":80,"width":304,"height":150,"color":"6"}
+		{"id":"8720c137eb08821a","type":"text","text":"***`micro errorCom`***\nsi `dateNextSync` ya pasó y además `now > dateError`, se genera evento de activación de `errorcomm` y se pone el dispositivo en estado `error` si aplica.","x":-1120,"y":-40,"width":304,"height":150,"color":"5"},
+		{"id":"8472b805f806444f","type":"text","text":">[!example] Flujo Periódico\n\n***`micro errorCom`*** Realiza chequeo periódico\n","x":-1560,"y":-40,"width":304,"height":150,"color":"6"}
 	],
 	"edges":[
 		{"id":"610923af29daefb9","fromNode":"180ac27b0e0dc6ba","fromSide":"right","toNode":"cb7cf7551a07a62a","toSide":"left","label":"comunica"},
