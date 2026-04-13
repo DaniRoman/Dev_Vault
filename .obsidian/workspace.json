@@ -49,8 +49,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
                 "viewState": {
-                  "x": 446.9197250809984,
-                  "y": -245.30609087001073,
+                  "x": 1337.526547606695,
+                  "y": -643.6648654033417,
                   "zoom": -0.39678562053001826
                 }
               },
@@ -72,8 +72,7 @@
               "title": "Landing-Page Main Site"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -247,10 +246,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "0b620b69ecebea79",
+  "active": "ff87f5ae1d20c93f",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas",
     "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - PLMN.md",
