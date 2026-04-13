@@ -28,14 +28,17 @@
             "id": "db51e61cdfcc0d01",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/AKO 44 - ErrorComm.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
+                "viewState": {
+                  "x": -1308.2251672910593,
+                  "y": 1132.2251672910588,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 - ErrorComm"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - ErrorComm workFlow"
             }
           },
           {
@@ -70,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -244,12 +247,13 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "0b620b69ecebea79",
+  "active": "db51e61cdfcc0d01",
   "lastOpenFiles": [
+    "AKO/AKO44/AKO 44 - ErrorComm.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/Landing-Page/Landing-Page Main Site.md",
-    "AKO/AKO44/AKO 44 - ErrorComm.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "Git/Git Main Page.md",
     "AKO/AKO44/Docs/Fota.md",
@@ -261,7 +265,6 @@
     "AKO/AKO44/attachments/Pasted image 20260409132220.png",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
     "AKO44 - Nuevo Flujo para actualización firmware.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260401090339.png",
