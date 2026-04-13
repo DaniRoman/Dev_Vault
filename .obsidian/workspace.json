@@ -42,14 +42,17 @@
             "id": "0b620b69ecebea79",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
+                "viewState": {
+                  "x": -251.00776215785243,
+                  "y": -502.93872304876766,
+                  "zoom": -0.5050228191063765
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo PLMN"
             }
           },
           {
@@ -243,8 +246,9 @@
   },
   "active": "0b620b69ecebea79",
   "lastOpenFiles": [
-    "AKO/Landing-Page/Landing-Page Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/Landing-Page/Landing-Page Main Site.md",
     "AKO/AKO44/AKO 44 - ErrorComm.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "Git/Git Main Page.md",
@@ -257,7 +261,6 @@
     "AKO/AKO44/attachments/Pasted image 20260409132220.png",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
-    "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
     "AKO44 - Nuevo Flujo para actualización firmware.md",
