@@ -28,17 +28,14 @@
             "id": "e74ce891fc73c32f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
-                "viewState": {
-                  "x": -85.11933829154225,
-                  "y": 674.8043305501078,
-                  "zoom": -0.18650930452530223
-                }
+                "file": "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - ErrorComm workFlow"
+              "icon": "lucide-file",
+              "title": "AKO  44 - Admin Main Page"
             }
           },
           {
@@ -88,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "redis",
+                "query": "ma",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +106,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -232,8 +230,8 @@
   },
   "active": "e74ce891fc73c32f",
   "lastOpenFiles": [
-    "Redis/Redis Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
+    "Redis/Redis Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/AKO 44 - ErrorComm.md",
