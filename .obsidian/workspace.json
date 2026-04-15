@@ -11,65 +11,14 @@
             "id": "ff87f5ae1d20c93f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
-                "viewState": {
-                  "x": -780.0868096580037,
-                  "y": 24.320748943382124,
-                  "zoom": -0.637417742401106
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud"
-            }
-          },
-          {
-            "id": "db51e61cdfcc0d01",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
-                "viewState": {
-                  "x": -1311.2814591138242,
-                  "y": 1154.6379739913332,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - ErrorComm workFlow"
-            }
-          },
-          {
-            "id": "0b620b69ecebea79",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-                "viewState": {
-                  "x": 1337.526547606695,
-                  "y": -643.6648654033417,
-                  "zoom": -0.39678562053001826
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo para Actualizar firmware"
-            }
-          },
-          {
-            "id": "eadaf96dbf5b696b",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/Landing-Page/Landing-Page Main Site.md",
+                "file": "Lenguajes/TypeScript/TypeScript - Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Landing-Page Main Site"
+              "title": "TypeScript - Main Site"
             }
           }
         ]
@@ -104,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cambio parametros",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -249,16 +198,17 @@
   },
   "active": "ff87f5ae1d20c93f",
   "lastOpenFiles": [
-    "Lenguajes/TypeScript/TypeScript - Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
+    "AKO/Landing-Page/Landing-Page Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+    "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas",
     "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "AKO/AKO44/AKO 44 - ErrorComm.md",
-    "AKO/Landing-Page/Landing-Page Main Site.md",
     "Git/Git Main Page.md",
     "Redis/Redis Main Site.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
@@ -290,10 +240,8 @@
     "JavaScript - Acceso seguro a propiedades ",
     "Lenguajes/JavaScript/JavaScript - Difereréncia entre or y ??.md",
     "Lenguajes/JavaScript/JavaScript - Difere.md",
-    "Lenguajes/JavaScript/JavaScript - Difererencia entre(.md",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
-    "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/Landing-Page/attachments/Pasted image 20260318153738.png",
     "AKO/Landing-Page/attachments/Pasted image 20260318153610.png",
     "AKO/Landing-Page/attachments",
