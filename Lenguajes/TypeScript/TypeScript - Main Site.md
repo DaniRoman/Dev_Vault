@@ -13,7 +13,7 @@ interface User {
 ```
 
 ```ts
-//Composicion de tipos
+//Composicion de tipos union
 type Status = "open" | "closed";
 ```
 
