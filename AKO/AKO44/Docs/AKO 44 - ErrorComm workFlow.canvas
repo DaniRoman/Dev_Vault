@@ -17,25 +17,31 @@
 		{"id":"746c70df9cd4f75b","type":"text","text":">[!example] ***`flujo micro si device en error` ***\n\n- Busca el device en Mongo  \n* Adquiere lock Redis para evitar doble procesamiento  \n* Marca la colección device como error  en la db\n* Crea/actualiza colección ErrorComm  \n* Emite alarma-12830 activation  \n* Libera lock","x":1060,"y":260,"width":460,"height":280,"color":"5"},
 		{"id":"dc975cfd061b2c94","type":"text","text":">[!example] ***`sweep inicial al arrancar` ***\n\n* Objetivo:  \n* reconstruir estado Redis si se perdió por:  \n* - reinicio del worker  \n* - reinicio de Redis  \n* - pérdida de keys temporales  \n\t* 1. busca devices online  \n\t* 2. comprueba si tienen key Redis  \n\t* 3. si falta la key:  \n\t* - calcula TTL restante desde lastMsgTimestamp  \n\t* - si ya expiró -> dispara handleDeviceExpired  \n\t* - si no expiró -> recrea la key  \n","x":1060,"y":620,"width":480,"height":420,"color":"5"},
 		{"id":"2379635e9aabdca2","type":"text","text":">[!example] ***`keylock redis` ***\n\nCuando expira la key de heartbeat, el worker crea una **lock key separada** por 30 segundos para asegurarse de que solo una instancia procese ese device","x":1660,"y":535,"width":460,"height":170,"color":"5"},
-		{"id":"73fe37e38e4feed2","type":"text","text":">[!success] HeartBeat\n\n- \n- Construye la key de Redis del device.\n- Prepara el valor que se guardará en Redis con datos del último mensaje.\n- Guarda/renueva la key en Redis con expiración.\n- Consulta el estado actual del device en Mongo.\n- Si estaba en `error`, lo cambia a `online`.\n- Devuelve que hubo recovery para que el caller actúe.\n- Si no hubo recovery, devuelve que todo fue bien pero sin recuperación.\n- Si algo falla, loguea el error y devuelve `null`.","x":-410,"y":340,"width":500,"height":340,"color":"3"},
 		{"id":"1ccb18566097ddd0","type":"text","text":">[!example] ***`Translator.perte`***\n\n \n hanldeInput renueva el ***`hertbeat`*** en los tres caminos posibles ***`PARAM_ACK`***, ***`CMD_ACK`***, ***`status, sample...`*** Se renueva el heartbeat  justo después de actualizar el ***`timestamp\n>[!warning] Recuerda ***`LINK`***\n`LINK` no renueva el hertbeat. Todo lo demás sí.\n","x":-400,"y":-40,"width":480,"height":300,"color":"5"},
-		{"id":"9f751dcb6236894c","type":"text","text":">[!success] HeartBeat\n- Comprueba si el tipo de mensaje debe ignorarse para errcomm.","x":-860,"y":700,"width":260,"height":160,"color":"3"},
-		{"id":"9b1cf760109a1840","type":"text","text":">[!success] HeartBeat\n- Obtiene el valor ***`TXE`***, ***`L2_param`*** del device o usa uno por defecto.","x":-420,"y":980,"width":260,"height":160,"color":"3"},
-		{"id":"45b00da6282021b5","type":"text","text":">[!success] HeartBeat\n- Calcula el ***`TTL`*** en segundos con la fórmula de error para ambos parametros.","x":-10,"y":980,"width":260,"height":160,"color":"3"},
-		{"id":"349dc820825d00aa","type":"text","text":">[!success] HeartBeat\n- Obtiene el valor `TXE` del device o usa uno por defecto.","x":-290,"y":1200,"width":260,"height":160,"color":"3"},
-		{"id":"95ec05a40bc671fd","type":"text","text":">[!success] HeartBeat\n- Sale sin hacer nada si Redis no está disponible.","x":-160,"y":780,"width":260,"height":160,"color":"3"}
+		{"id":"95ec05a40bc671fd","type":"text","text":">[!success] HeartBeat\n- Sale sin hacer nada si Redis no está disponible.","x":20,"y":740,"width":260,"height":160,"color":"3"},
+		{"id":"349dc820825d00aa","type":"text","text":">[!success] HeartBeat\n- Obtiene el valor `TXE` del device o usa uno por defecto.","x":-900,"y":600,"width":260,"height":160,"color":"3"},
+		{"id":"9f751dcb6236894c","type":"text","text":">[!success] HeartBeat\n- Comprueba si el tipo de mensaje debe ignorarse para errcomm.","x":-510,"y":760,"width":260,"height":160,"color":"3"},
+		{"id":"9b1cf760109a1840","type":"text","text":">[!success] HeartBeat\n- Obtiene el valor ***`TXE`***, ***`L2_param`*** del device o usa uno por defecto.","x":-510,"y":970,"width":260,"height":160,"color":"3"},
+		{"id":"45b00da6282021b5","type":"text","text":">[!success] HeartBeat\n- Calcula el ***`TTL`*** en segundos con la fórmula de error para ambos parametros.","x":-510,"y":1180,"width":260,"height":180,"color":"3"},
+		{"id":"9d5845d6b6d136ec","type":"text","text":">[!success] HeartBeat\n- Construye ambas key de Redis del device.\n- Prepara el valor que se guardará en Redis con datos del último mensaje para - Guarda/renueva la key en Redis con expiración.","x":-540,"y":1420,"width":320,"height":240,"color":"3"},
+		{"id":"1a5f983b726446e2","type":"text","text":">[!success] HeartBeat\n- Consulta el estado actual del device en Mongo.\n- Si estaba en `error`, lo cambia a `online`.","x":-200,"y":1080,"width":290,"height":190,"color":"3"}
 	],
 	"edges":[
 		{"id":"56df5bf54c4049de","fromNode":"84819cc694be47bd","fromSide":"top","toNode":"4ba0df05224b438b","toSide":"bottom"},
 		{"id":"b5055e7d448d38e5","fromNode":"84819cc694be47bd","fromSide":"right","toNode":"91400e37dc8b3b00","toSide":"left"},
 		{"id":"f28a6a18c2e412a3","fromNode":"111c876dbbb308bf","fromSide":"right","toNode":"ea6ea546fc87617c","toSide":"left"},
-		{"id":"3617a5236978f83d","fromNode":"1ccb18566097ddd0","fromSide":"bottom","toNode":"73fe37e38e4feed2","toSide":"top"},
+		{"id":"3617a5236978f83d","fromNode":"1ccb18566097ddd0","fromSide":"bottom","toNode":"9f751dcb6236894c","toSide":"top"},
 		{"id":"1bc6e4a0a08fd97a","fromNode":"ea6ea546fc87617c","fromSide":"right","toNode":"1ccb18566097ddd0","toSide":"left"},
 		{"id":"a9fde06851ba69e1","fromNode":"1ccb18566097ddd0","fromSide":"right","toNode":"d39c6b146e16f622","toSide":"left"},
 		{"id":"3f055efdd48686d4","fromNode":"d39c6b146e16f622","fromSide":"right","toNode":"3aa90f0172bd9c21","toSide":"left"},
 		{"id":"430031dc2ef9fbdc","fromNode":"d39c6b146e16f622","fromSide":"bottom","toNode":"3f92fe1096345e8e","toSide":"left"},
 		{"id":"5917c1626290a256","fromNode":"3f92fe1096345e8e","fromSide":"right","toNode":"746c70df9cd4f75b","toSide":"left"},
 		{"id":"1ed4a155f46b40d7","fromNode":"2379635e9aabdca2","fromSide":"top","toNode":"746c70df9cd4f75b","toSide":"right"},
-		{"id":"a539ba42a6d2ba5f","fromNode":"3f92fe1096345e8e","fromSide":"right","toNode":"dc975cfd061b2c94","toSide":"left"}
+		{"id":"a539ba42a6d2ba5f","fromNode":"3f92fe1096345e8e","fromSide":"right","toNode":"dc975cfd061b2c94","toSide":"left"},
+		{"id":"9313abb456f278aa","fromNode":"1ccb18566097ddd0","fromSide":"bottom","toNode":"95ec05a40bc671fd","toSide":"top"},
+		{"id":"be24b7cfff97ca20","fromNode":"9f751dcb6236894c","fromSide":"bottom","toNode":"9b1cf760109a1840","toSide":"top"},
+		{"id":"3b7be991002bbeec","fromNode":"9b1cf760109a1840","fromSide":"bottom","toNode":"45b00da6282021b5","toSide":"top"},
+		{"id":"468fb8a39c7e5bab","fromNode":"45b00da6282021b5","fromSide":"bottom","toNode":"9d5845d6b6d136ec","toSide":"top"},
+		{"id":"36e624f633e4cf14","fromNode":"1ccb18566097ddd0","fromSide":"bottom","toNode":"1a5f983b726446e2","toSide":"top"}
 	]
 }
