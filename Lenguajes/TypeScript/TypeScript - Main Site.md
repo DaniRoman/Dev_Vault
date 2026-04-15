@@ -1,5 +1,45 @@
+## Type & Interface
 
+`interface` y `type` son dos formas de definir tipos en TypeScript.
 
+- **`interface`** para describir la forma de objetos o contratos de clases.
+- **`type`** cuando necesites uniones, tuplas, alias de tipos primitivos o combinaciones más avanzadas.
+
+```ts
+interface User {
+  name: string;
+  id: number;
+}
+```
+
+```ts
+//Composicion de tipos
+type Status = "open" | "closed";
+```
+
+### Partialas Type
+
+`Partial<T>` es un tipo utilitario de TypeScript.  
+Convierte todas las propiedades de un tipo `T` en opcionales.  
+Sirve sobre todo para `update`, porque permite enviar solo los campos que cambian.  
+Ejemplo: `Partial<Device>` permite pasar `{ active: false }` sin tener que mandar todo el objeto.  
+No añade propiedades nuevas: solo admite campos que ya existen en el tipo original.  
+Por eso operadores como `$set` dan error si el parámetro espera `Partial<Modelo>`.
+
+```ts
+type Device = {
+  name: string;
+  active: boolean;
+  serialNumber: string;
+};
+Partial<Device>
+
+type PartialDevice = {
+  name?: string;
+  active?: boolean;
+  serialNumber?: string;
+};
+```
 ## Type assertions
 
 ^e3193a
@@ -30,29 +70,7 @@
 >[!example] Recurso
 >[Fuente del recurso](https://www.typescripttutorial.net/typescript-tutorial/interfaces-vs-abstract-classes/)
 
-## Partialas Type
 
-`Partial<T>` es un tipo utilitario de TypeScript.  
-Convierte todas las propiedades de un tipo `T` en opcionales.  
-Sirve sobre todo para `update`, porque permite enviar solo los campos que cambian.  
-Ejemplo: `Partial<Device>` permite pasar `{ active: false }` sin tener que mandar todo el objeto.  
-No añade propiedades nuevas: solo admite campos que ya existen en el tipo original.  
-Por eso operadores como `$set` dan error si el parámetro espera `Partial<Modelo>`.
-
-```ts
-type Device = {
-  name: string;
-  active: boolean;
-  serialNumber: string;
-};
-Partial<Device>
-
-type PartialDevice = {
-  name?: string;
-  active?: boolean;
-  serialNumber?: string;
-};
-```
 ## Optional Property Class
 
 Las propiedades opcionales también se pueden crear declarándolas con un signo de interrogación justo después del nombre. Este signo indica al compilador de TypeScript que la propiedad declarada es opcional.
