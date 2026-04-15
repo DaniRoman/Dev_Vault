@@ -18,4 +18,5 @@ En translator se actualiza el timestamp
 basarme en el tiempo en que se va a expirar la cache de  dependiendo del dispo
 
 
+## Flujo de ErrorComm con cambio de parámetro
 
