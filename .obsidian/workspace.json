@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lenguajes/TypeScript/TypeScript - Main Site.md",
+                "file": "Arquitectura y Diseño/Arquitectura, diseño y conceptos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TypeScript - Main Site"
+              "title": "Arquitectura, diseño y conceptos"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ma",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,20 +197,20 @@
   },
   "active": "ff87f5ae1d20c93f",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
-    "AKO/AKO44/AKO 44 - ErrorComm.md",
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+    "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/Landing-Page/Landing-Page Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "Git/Git Main Page.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
+    "AKO/AKO44/AKO 44 - ErrorComm.md",
+    "AKO/Landing-Page/Landing-Page Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas",
-    "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "Redis/Redis Main Site.md",
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer - Authentication.canvas",
     "Redis",
     "AKO/AKO44/attachments/Pasted image 20260409132220.png",
