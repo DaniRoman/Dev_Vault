@@ -1,6 +1,8 @@
 ## Conceptos
 `field projection`: Mostrar solo el atributo deseado de una colección 
 
+## Diferencias entre ***`Create & Save`***
+[Recurso](https://dev.to/shameel/create-vs-save-in-mongoose-mongodb-with-nodejs-7d3)
 ## exec()
 
 `exec()` se usa para **ejecutar explícitamente una query de Mongoose** y obtener una **Promise real**.  
