@@ -11,17 +11,14 @@
             "id": "d3980b11dcbd956a",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-                "viewState": {
-                  "x": 1038.6710242462996,
-                  "y": -438.811058169861,
-                  "zoom": -0.11384942799359556
-                }
+                "file": "Db/Mongo/Mongo - Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo para Actualizar firmware"
+              "icon": "lucide-file",
+              "title": "Mongo - Main Site"
             }
           }
         ]
@@ -81,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5110321044922
+    "width": 314.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -198,15 +195,15 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "d3980b11dcbd956a",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/Fota.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "Db/Mongo/Mongo - Main Site.md",
     "Db/Db Main Page.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "Arquitectura y Diseño/Arquitectura, diseño y conceptos.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "Git/Git Main Page.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
@@ -242,7 +239,6 @@
     "JavaScript - Acceso seguro a Propiedades Optional chaining.md",
     "Optional chaining.md",
     "JavaScript - Acceso seguro a propiedades ",
-    "Lenguajes/JavaScript/JavaScript - Difereréncia entre or y ??.md",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/Landing-Page/attachments/Pasted image 20260318153738.png",
