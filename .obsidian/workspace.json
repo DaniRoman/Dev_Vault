@@ -11,14 +11,17 @@
             "id": "d3980b11dcbd956a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/AKO 44 - Net-Sync WorkFlow.canvas",
+                "viewState": {
+                  "x": -6.112583645529317,
+                  "y": 30.562918227646584,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Net-Sync WorkFlow"
             }
           },
           {
@@ -35,8 +38,7 @@
               "title": "AKO 44 - Net-Sync"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 314.5024719238281
+    "width": 239.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -210,9 +212,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "f8e31c1c36b13a8a",
+  "active": "d3980b11dcbd956a",
   "lastOpenFiles": [
     "AKO/AKO44/AKO 44 - Net-Sync.md",
+    "AKO/AKO44/AKO 44 - Net-Sync WorkFlow.canvas",
+    "AKO/AKO44/attachments/imagen.png",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "Db/Mongo/Mongo - Main Site.md",
@@ -253,17 +257,14 @@
     "JavaScript - Acceso seguro a propiedades /JavaScript -  Acceso seguro a Propiedades Optional chaining.md",
     "Lenguajes/JavaScript/JavaScript.md",
     "JavaScript - Acceso seguro a Propiedades Optional chaining.md",
-    "Optional chaining.md",
     "JavaScript - Acceso seguro a propiedades ",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
-    "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/Landing-Page/attachments/Pasted image 20260318153738.png",
     "AKO/Landing-Page/attachments/Pasted image 20260318153610.png",
     "AKO/Landing-Page/attachments",
     "AKO/Landing-Page/Sin nombre",
     "AKO/AKO44/attachments/Pasted image 20260317154528.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260316093657.png",
-    "AKO/AKO44/attachments/Pasted image 20260316084645.png",
     "attachments",
     "Express",
     "AKO - feature",
