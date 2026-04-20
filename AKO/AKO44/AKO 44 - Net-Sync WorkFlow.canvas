@@ -3,11 +3,13 @@
 		{"id":"aa86010694e05dcb","type":"text","text":"***`Admin`***\n","x":-460,"y":-660,"width":320,"height":140},
 		{"id":"8f9b56191fac007f","type":"text","text":"***`Admin`***\n`Device Advance > New network`\nBoton de 3 puntos crearemos una nueva configuración de network ***`info en excel net-sync spech`*** o editaremos la existente","x":-560,"y":-240,"width":320,"height":180},
 		{"id":"c5220dc0787110c9","type":"text","text":"***`Admin`***\n","x":440,"y":-620,"width":320,"height":140},
-		{"id":"912fa91888852f11","type":"text","text":"***`Admin`***\nBotón verde enviamos un cmd al endpoint ya existente () ","x":-20,"y":40,"width":320,"height":140},
-		{"id":"5a748ee520a1b2ad","type":"text","text":"***`Admin`***\n","x":0,"y":-460,"width":320,"height":140}
+		{"id":"912fa91888852f11","type":"text","text":"***`Admin`***\nBotón verde enviamos un ***`CMD - server_command_fota_device_download value: 1`*** al endpoint  ***`api/device/command/:id`***","x":-20,"y":40,"width":320,"height":140},
+		{"id":"5a748ee520a1b2ad","type":"text","text":"***`Admin`***\n","x":0,"y":-460,"width":320,"height":140},
+		{"id":"cce1ed50d0b88eac","type":"text","text":"***`Este CMD no esta en deviceDefinition de momento se añade manualmente a la definición`***","x":-400,"y":220,"width":320,"height":140,"color":"4"}
 	],
 	"edges":[
 		{"id":"431e869f6dd19763","fromNode":"8f9b56191fac007f","fromSide":"right","toNode":"5a748ee520a1b2ad","toSide":"left","label":"Tenia configuración"},
-		{"id":"1841f4c734133a5c","fromNode":"8f9b56191fac007f","fromSide":"right","toNode":"912fa91888852f11","toSide":"left","label":"No tenia configuración"}
+		{"id":"1841f4c734133a5c","fromNode":"8f9b56191fac007f","fromSide":"right","toNode":"912fa91888852f11","toSide":"left","label":"No tenia configuración"},
+		{"id":"5dbf245e9a6c94d8","fromNode":"cce1ed50d0b88eac","fromSide":"right","toNode":"912fa91888852f11","toSide":"bottom"}
 	]
 }
