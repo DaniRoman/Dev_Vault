@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"8f9b56191fac007f","x":-560,"y":-360,"width":320,"height":140,"type":"text","text":"***`Admin`***\nDevice Advance"},
+		{"id":"5a748ee520a1b2ad","type":"text","text":"***`Admin`***","x":-200,"y":-540,"width":320,"height":140}
+	],
+	"edges":[]
+}
