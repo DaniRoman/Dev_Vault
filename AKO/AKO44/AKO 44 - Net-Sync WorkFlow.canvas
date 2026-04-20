@@ -5,19 +5,23 @@
 		{"id":"912fa91888852f11","type":"text","text":"***`Admin`***\nBotón verde enviamos un ***`CMD - server_command_fota_device_download value: 1`*** al la ***`api`*** para que este haga que el `Device` nos comunique con un `net-sync` y nos envie esa información","x":-20,"y":40,"width":340,"height":180},
 		{"id":"5a748ee520a1b2ad","type":"text","text":"***`Admin`***\nTendremos una lista con los parametros  y los podremos modificar","x":0,"y":-460,"width":320,"height":140},
 		{"id":"cce1ed50d0b88eac","type":"text","text":"***`Este CMD no esta en deviceDefinition de momento se añade manualmente a la definición`***","x":-400,"y":260,"width":320,"height":140,"color":"4"},
-		{"id":"1b961dfafb57667d","type":"text","text":"***`Micro commands-12830`***\nRecibe en petición en  ***`net-sync`*** \n","x":820,"y":60,"width":320,"height":140},
-		{"id":"86eb10ee6fe79bf2","type":"text","text":"***`Implementar nuevo micro handler para net-sync`***\n\ntengo que poner alguna configuración extra??","x":820,"y":280,"width":320,"height":140,"color":"4"},
 		{"id":"c5220dc0787110c9","type":"text","text":"***`Admin`***\n","x":340,"y":-740,"width":320,"height":140},
 		{"id":"72dbab7fa4dfa5b7","type":"text","text":"***`API`***\nRecibe ese cambio de configuración y la envia a los micros ","x":400,"y":-460,"width":320,"height":140},
 		{"id":"9c6c91199c0f4027","type":"text","text":"***`API`***\nRecibe ese cambio de configuración","x":860,"y":-460,"width":320,"height":140},
-		{"id":"f723d20d93fe7450","type":"text","text":"***`API`***\nRecibe en petición en  ***`api/device/command/:id`*** \n","x":400,"y":60,"width":320,"height":140}
+		{"id":"f723d20d93fe7450","type":"text","text":"***`API`***\nRecibe en petición en  ***`api/device/command/:id`*** \n","x":400,"y":60,"width":320,"height":140},
+		{"id":"1b961dfafb57667d","type":"text","text":"***`Micro commands-12830`***\nRecibe en petición en  ***`net-sync`*** \n","x":0,"y":470,"width":320,"height":140},
+		{"id":"86eb10ee6fe79bf2","type":"text","text":"***`Implementar nuevo micro handler para net-sync`***\n\ntengo que poner alguna configuración extra??","x":0,"y":690,"width":320,"height":140,"color":"4"},
+		{"id":"f95bbfb6870cf545","type":"text","text":"***`translator`*** gestiona el envio\n","x":800,"y":60,"width":320,"height":140},
+		{"id":"03f9c43cd409c5df","type":"text","text":"***`translator`*** gestiona el envio\n","x":1300,"y":40,"width":320,"height":140},
+		{"id":"29c8d2f8699edfc2","type":"text","text":"***`translator`*** gestiona el envio\n","x":800,"y":330,"width":320,"height":140}
 	],
 	"edges":[
 		{"id":"431e869f6dd19763","fromNode":"8f9b56191fac007f","fromSide":"right","toNode":"5a748ee520a1b2ad","toSide":"left","label":"Tenia configuración"},
 		{"id":"1841f4c734133a5c","fromNode":"8f9b56191fac007f","fromSide":"right","toNode":"912fa91888852f11","toSide":"left","label":"No tenia configuración"},
 		{"id":"5dbf245e9a6c94d8","fromNode":"cce1ed50d0b88eac","fromSide":"right","toNode":"912fa91888852f11","toSide":"bottom"},
 		{"id":"6a5bca8ccedc9e44","fromNode":"912fa91888852f11","fromSide":"right","toNode":"f723d20d93fe7450","toSide":"left"},
-		{"id":"62ce50e644cf214a","fromNode":"f723d20d93fe7450","fromSide":"right","toNode":"1b961dfafb57667d","toSide":"left"},
-		{"id":"de58cae24871012d","fromNode":"86eb10ee6fe79bf2","fromSide":"top","toNode":"1b961dfafb57667d","toSide":"bottom"}
+		{"id":"62ce50e644cf214a","fromNode":"f723d20d93fe7450","fromSide":"right","toNode":"f95bbfb6870cf545","toSide":"left"},
+		{"id":"de58cae24871012d","fromNode":"86eb10ee6fe79bf2","fromSide":"top","toNode":"1b961dfafb57667d","toSide":"bottom"},
+		{"id":"19f573474a8f7399","fromNode":"f95bbfb6870cf545","fromSide":"right","toNode":"03f9c43cd409c5df","toSide":"left"}
 	]
 }
