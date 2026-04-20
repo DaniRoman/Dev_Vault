@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"8f9b56191fac007f","x":-560,"y":-360,"width":320,"height":140,"type":"text","text":"***`Admin`***\nDevice Advance"},
+		{"id":"8f9b56191fac007f","x":-560,"y":-360,"width":320,"height":140,"type":"text","text":"***`Admin`***\n`Device Advance > New network`\nBoton de 3 puntos crearemos una nueva configuración o editaremos la existente"},
 		{"id":"5a748ee520a1b2ad","type":"text","text":"***`Admin`***","x":-200,"y":-540,"width":320,"height":140}
 	],
 	"edges":[]
