@@ -11,28 +11,17 @@
             "id": "d3980b11dcbd956a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/AKO 44 - Net-Sync WorkFlow.canvas",
+                "viewState": {
+                  "x": 530,
+                  "y": 45,
+                  "zoom": -0.23638297939511263
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
-            }
-          },
-          {
-            "id": "f8e31c1c36b13a8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AKO/AKO44/AKO 44 - Net-Sync.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AKO 44 - Net-Sync"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Net-Sync WorkFlow"
             }
           }
         ]
@@ -211,10 +200,10 @@
   },
   "active": "d3980b11dcbd956a",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/AKO 44 - Net-Sync.md",
-    "AKO/AKO44/attachments/imagen.png",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/AKO 44 - Net-Sync WorkFlow.canvas",
+    "AKO/AKO44/attachments/imagen.png",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "Db/Mongo/Mongo - Main Site.md",
     "AKO/AKO44/Docs/Fota.md",
