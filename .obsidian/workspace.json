@@ -11,14 +11,17 @@
             "id": "d3980b11dcbd956a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/AKO 44 - Net-Sync WorkFlow.canvas",
+                "viewState": {
+                  "x": 254.80774885056726,
+                  "y": -246.54464034717748,
+                  "zoom": -0.23638297939511263
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO  44 - Admin Main Page"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Net-Sync WorkFlow"
             }
           }
         ]
@@ -198,6 +201,7 @@
   },
   "active": "d3980b11dcbd956a",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/AKO 44 - Net-Sync.md",
     "AKO/AKO44/AKO 44 Main Site.md",
@@ -207,7 +211,6 @@
     "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "Db/Db Main Page.md",
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "Arquitectura y Diseño/Arquitectura, diseño y conceptos.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "Git/Git Main Page.md",
