@@ -11,13 +11,35 @@
             "id": "31cc0722a65fe115",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "AKO 44 Main Site"
+            }
+          },
+          {
+            "id": "50daa8a1b1563cea",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
+                "viewState": {
+                  "x": 353.4242565267939,
+                  "y": -120.32920151361252,
+                  "zoom": 0.058009062393046415
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Net-Sync WorkFlow"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,13 +214,13 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "31cc0722a65fe115",
+  "active": "50daa8a1b1563cea",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Activity.md",
     "AKO/AKO44/attachments/Pasted image 20260422120746.png",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/Sin título.md",
-    "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "Lenguajes/Angular/Angular Main Site.md",
