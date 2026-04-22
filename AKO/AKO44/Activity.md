@@ -172,14 +172,13 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ***`activity-12830`***
 ```json
 {
-
-"reg_amv_analog_avg": 24.73,
-"reg_cloud_virtual_value_tti_in": 0,
-"reg_amv_digital_var_device_on": 97.91,
-"reg_amv_digital_var_rl_cool": 94.13,
-"alarms_activations": 6,
-"reg_amv_digital_var_door_open": 0,
-"reg_amv_digital_var_rl_def": 3.18
+	"reg_amv_analog_avg": 24.73,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"reg_amv_digital_var_device_on": 97.91,
+	"reg_amv_digital_var_rl_cool": 94.13,
+	"alarms_activations": 6,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": 3.18
 }
 ```
 ---
@@ -208,13 +207,13 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 
 ```json
 {
-	"reg_amv_analog_avg": null,
-	"reg_cloud_virtual_value_tti_in": null,
+	"reg_amv_analog_avg": 24.84,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"reg_amv_digital_var_device_on": 99.26,
+	"reg_amv_digital_var_rl_cool": 96.67,
 	"alarms_activations": 3,
-	"reg_amv_digital_var_device_on": null,
-	"reg_amv_digital_var_rl_cool": null,
-	"reg_amv_digital_var_door_open": null,
-	"reg_amv_digital_var_rl_def": null
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": 2.59
 }
 ```
 
@@ -237,13 +236,13 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ***`activity-12830`***
 ```json
 {
-	"reg_amv_analog_avg": null,
-	"reg_cloud_virtual_value_tti_in": null,
+	"reg_amv_analog_avg": 24.9,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"reg_amv_digital_var_device_on": 99.52,
+	"reg_amv_digital_var_rl_cool": 96.04,
 	"alarms_activations": 5,
-	"reg_amv_digital_var_device_on": null,
-	"reg_amv_digital_var_rl_cool": null,
-	"reg_amv_digital_var_door_open": null,
-	"reg_amv_digital_var_rl_def": null
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": 3.47
 }
 ```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
@@ -265,13 +264,13 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ***`activity-12830`***
 ```json
 {
-	"reg_amv_analog_avg": null,
-	"reg_cloud_virtual_value_tti_in": null,
+	"reg_amv_analog_avg": 24.9,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"reg_amv_digital_var_device_on": 97.82,
+	"reg_amv_digital_var_rl_cool": 94.67,
 	"alarms_activations": 8,
-	"reg_amv_digital_var_device_on": null,
-	"reg_amv_digital_var_rl_cool": null,
-	"reg_amv_digital_var_door_open": null,
-	"reg_amv_digital_var_rl_def": null
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": 3.15
 }
 ```
 ---
