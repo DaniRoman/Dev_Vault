@@ -263,12 +263,28 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ***`activity-Legacy`***
 
 ```json
-
+{
+	"reg_amv_analog_avg": 24.44,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"alarms_activations": 0.92,
+	"reg_amv_digital_var_device_on": 83.33,
+	"reg_amv_digital_var_rl_cool": 82.64,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": null
+}
 ```
 
 ***`activity-12830`***
 ```json
-
+{
+	"reg_amv_analog_avg": null,
+	"reg_cloud_virtual_value_tti_in": null,
+	"reg_amv_digital_var_device_on": null,
+	"reg_amv_digital_var_rl_cool": null,
+	"alarms_activations": 0,
+	"reg_amv_digital_var_door_open": null,
+	"reg_amv_digital_var_rl_def": null
+}
 ```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
 
@@ -320,12 +336,28 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ***`activity-Legacy`***
 
 ```json
-
+{
+	"reg_amv_analog_avg": 24.55,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"alarms_activations": 0,
+	"reg_amv_digital_var_device_on": 97.61999999999999,
+	"reg_amv_digital_var_rl_cool": 97.61999999999999,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": null
+}
 ```
 
 ***`activity-12830`***
 ```json
-
+{
+	"reg_amv_analog_avg": 35.93,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"reg_amv_digital_var_device_on": 0,
+	"reg_amv_digital_var_rl_cool": 0,
+	"alarms_activations": 0,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": null
+}
 ```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
 
@@ -347,6 +379,7 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ***`activity-Legacy`***
 
 ```json
+{
 	"reg_amv_analog_avg": 32.68,
 	"reg_cloud_virtual_value_tti_in": 0,
 	"alarms_activations": 0.36,
@@ -355,6 +388,7 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 	"reg_amv_digital_var_door_open": 0,
 	"reg_amv_digital_var_rl_def": null
 }
+
 ```
 
 ***`activity-12830`***
@@ -376,12 +410,28 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ***`activity-Legacy`***
 
 ```json
-
+{
+	"reg_amv_analog_avg": 30.82,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"alarms_activations": 0.38,
+	"reg_amv_digital_var_device_on": 95.98,
+	"reg_amv_digital_var_rl_cool": 45.17,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": null
+}
 ```
 
 ***`activity-12830`***
 ```json
-
+{
+	"reg_amv_analog_avg": null,
+	"reg_cloud_virtual_value_tti_in": null,
+	"reg_amv_digital_var_device_on": null,
+	"reg_amv_digital_var_rl_cool": null,
+	"alarms_activations": 6,
+	"reg_amv_digital_var_door_open": null,
+	"reg_amv_digital_var_rl_def": null
+}
 ```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
 
@@ -433,12 +483,28 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ***`activity-Legacy`***
 
 ```json
-
+{
+	"reg_amv_analog_avg": null,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"alarms_activations": 0.79,
+	"reg_amv_digital_var_device_on": 84.88,
+	"reg_amv_digital_var_rl_cool": 0,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": 0
+}
 ```
 
 ***`activity-12830`***
 ```json
-
+{
+	"reg_amv_analog_avg": null,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"reg_amv_digital_var_device_on": 96.65,
+	"reg_amv_digital_var_rl_cool": 0,
+	"alarms_activations": 15,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": 0
+}
 ```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
 
@@ -461,13 +527,21 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 
 ```json
 {
-	"reg_amv_analog_avg": 26.02,
-	"reg_cloud_virtual_value_tti_in": 0,
-	"alarms_activations": 0.22,
-	"reg_amv_digital_var_device_on": 98.15,
-	"reg_amv_digital_var_rl_cool": 97.04,
-	"reg_amv_digital_var_door_open": 0,
-	"reg_amv_digital_var_rl_def": 0
+
+"reg_amv_analog_avg": 26.02,
+
+"reg_cloud_virtual_value_tti_in": 0,
+
+"alarms_activations": 0.22,
+
+"reg_amv_digital_var_device_on": 98.15,
+
+"reg_amv_digital_var_rl_cool": 97.04,
+
+"reg_amv_digital_var_door_open": 0,
+
+"reg_amv_digital_var_rl_def": 0
+
 }
 ```
 
