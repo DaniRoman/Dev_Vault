@@ -269,17 +269,13 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 
 ```json
 {
-"reg_amv_analog_avg": null,
-"reg_cloud_virtual_value_tti_in": 0,
-"alarms_activations": 0.14,
-
-"reg_amv_digital_var_device_on": 96.43,
-
-"reg_amv_digital_var_rl_cool": 0,
-
-"reg_amv_digital_var_door_open": 0,
-
-"reg_amv_digital_var_rl_def": 0
+	"reg_amv_analog_avg": null,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"alarms_activations": 0.14,
+	"reg_amv_digital_var_device_on": 96.43,
+	"reg_amv_digital_var_rl_cool": 0,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": 0
 }
 ```
 
@@ -287,31 +283,31 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 
 ```json
 {
-	"reg_amv_analog_avg": -17.04,
-	"reg_cloud_virtual_value_tti_in": 44.17,
-	"reg_amv_digital_var_device_on": 100,
-	"reg_amv_digital_var_rl_cool": 47.92,
+	"reg_amv_analog_avg": null,
+	"reg_cloud_virtual_value_tti_in": null,
+	"reg_amv_digital_var_device_on": null,
+	"reg_amv_digital_var_rl_cool": null,
 	"alarms_activations": 0,
-	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_door_open": null,
 	"reg_amv_digital_var_rl_def": null
 }
 ```
 
 ---
 
-10. ***`id: 6980c75c65f2990017c7de8f`***
+10. ***`id: 69a56225203e1c0017baac04`***
 
 ***`activity-Legacy`***
 
 ```json
 {
-	"reg_amv_analog_avg": -17.01,
-	"reg_cloud_virtual_value_tti_in": 45.07,
-	"alarms_activations": 0,
-	"reg_amv_digital_var_device_on": 100,
-	"reg_amv_digital_var_rl_cool": 50.59,
+	"reg_amv_analog_avg": null,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"alarms_activations": 0.14,
+	"reg_amv_digital_var_device_on": 96.43,
+	"reg_amv_digital_var_rl_cool": 0,
 	"reg_amv_digital_var_door_open": 0,
-	"reg_amv_digital_var_rl_def": null
+	"reg_amv_digital_var_rl_def": 0
 }
 ```
 
@@ -319,10 +315,10 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 
 ```json
 {
-	"reg_amv_analog_avg": -17.04,
-	"reg_cloud_virtual_value_tti_in": 44.17,
+	"reg_amv_analog_avg": -16.85,
+	"reg_cloud_virtual_value_tti_in": 45,
 	"reg_amv_digital_var_device_on": 100,
-	"reg_amv_digital_var_rl_cool": 47.92,
+	"reg_amv_digital_var_rl_cool": 49.58,
 	"alarms_activations": 0,
 	"reg_amv_digital_var_door_open": 0,
 	"reg_amv_digital_var_rl_def": null
