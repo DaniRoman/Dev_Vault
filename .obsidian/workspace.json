@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
+                "file": "AKO/AKO44/Activity.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - Net-Sync"
+              "title": "Activity"
             }
           }
         ]
@@ -195,13 +195,15 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e998f953db48c1c4",
+  "active": "d3980b11dcbd956a",
   "lastOpenFiles": [
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Activity.md",
+    "AKO/AKO44/Docs/Sin título.md",
+    "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "Lenguajes/Angular/Angular Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
     "AKO/AKO44/attachments/imagen.png",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "Db/Mongo/Mongo - Main Site.md",
@@ -239,7 +241,6 @@
     "Frontend/Frontend - Main Site.md",
     "JavaScript - Acceso seguro a propiedades /JavaScript -  Acceso seguro a Propiedades Optional chaining.md",
     "Lenguajes/JavaScript/JavaScript.md",
-    "JavaScript - Acceso seguro a Propiedades Optional chaining.md",
     "JavaScript - Acceso seguro a propiedades ",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/Landing-Page/attachments/Pasted image 20260318153738.png",
