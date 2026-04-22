@@ -64,7 +64,7 @@
 
 >[!warning] 
 
-Porque sale activity12830 todo null en api si en mongo salen datos? 
+Porque sale activity12830 todo null en api si en mongo salen datos y mas parecidos a los de legacy?? 
 
 ![[Pasted image 20260422120746.png]]
 
@@ -88,6 +88,8 @@ Porque sale activity12830 todo null en api si en mongo salen datos?
 
 ***`activity-12830`***
 
+>[!warning] 
+
 ```json
 {
 	"reg_amv_analog_avg": null,
@@ -102,17 +104,17 @@ Porque sale activity12830 todo null en api si en mongo salen datos?
 
 ---
 
-4. ***`id: 6980c75c65f2990017c7de8f`***
+4. ***`id: 69e22b9424f282001843727d`***
 
 ***`activity-Legacy`***
 
 ```json
 {
-	"reg_amv_analog_avg": -17.01,
-	"reg_cloud_virtual_value_tti_in": 45.07,
-	"alarms_activations": 0,
-	"reg_amv_digital_var_device_on": 100,
-	"reg_amv_digital_var_rl_cool": 50.59,
+	"reg_amv_analog_avg": 23.46,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"alarms_activations": 1.43,
+	"reg_amv_digital_var_device_on": 80.95,
+	"reg_amv_digital_var_rl_cool": 79.75999999999999,
 	"reg_amv_digital_var_door_open": 0,
 	"reg_amv_digital_var_rl_def": null
 }
@@ -122,29 +124,29 @@ Porque sale activity12830 todo null en api si en mongo salen datos?
 
 ```json
 {
-	"reg_amv_analog_avg": -17.04,
-	"reg_cloud_virtual_value_tti_in": 44.17,
-	"reg_amv_digital_var_device_on": 100,
-	"reg_amv_digital_var_rl_cool": 47.92,
+	"reg_amv_analog_avg": null,
+	"reg_cloud_virtual_value_tti_in": null,
+	"reg_amv_digital_var_device_on": null,
+	"reg_amv_digital_var_rl_cool": null,
 	"alarms_activations": 0,
-	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_door_open": null,
 	"reg_amv_digital_var_rl_def": null
 }
 ```
 
 ---
 
-5. ***`id: 6980c75c65f2990017c7de8f`***
+5. ***`id: 6980c9f365f2990017c7de98`***
 
 ***`activity-Legacy`***
 
 ```json
 {
-	"reg_amv_analog_avg": -17.01,
-	"reg_cloud_virtual_value_tti_in": 45.07,
+	"reg_amv_analog_avg": 24.84,
+	"reg_cloud_virtual_value_tti_in": 0,
 	"alarms_activations": 0,
-	"reg_amv_digital_var_device_on": 100,
-	"reg_amv_digital_var_rl_cool": 50.59,
+	"reg_amv_digital_var_device_on": 95.24000000000001,
+	"reg_amv_digital_var_rl_cool": 95.24000000000001,
 	"reg_amv_digital_var_door_open": 0,
 	"reg_amv_digital_var_rl_def": null
 }
@@ -154,10 +156,10 @@ Porque sale activity12830 todo null en api si en mongo salen datos?
 
 ```json
 {
-	"reg_amv_analog_avg": -17.04,
-	"reg_cloud_virtual_value_tti_in": 44.17,
-	"reg_amv_digital_var_device_on": 100,
-	"reg_amv_digital_var_rl_cool": 47.92,
+	"reg_amv_analog_avg": 35.99,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"reg_amv_digital_var_device_on": 0,
+	"reg_amv_digital_var_rl_cool": 0,
 	"alarms_activations": 0,
 	"reg_amv_digital_var_door_open": 0,
 	"reg_amv_digital_var_rl_def": null
