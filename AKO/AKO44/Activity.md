@@ -505,12 +505,12 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ***`activity-12830`***
 ```json
 {
-	"reg_amv_analog_avg": null,
-	"reg_cloud_virtual_value_tti_in": null,
-	"alarms_activations": 6,	
-	"reg_amv_digital_var_device_on": null,
-	"reg_amv_digital_var_rl_cool": null,
-	"reg_amv_digital_var_door_open": null,
+	"reg_amv_analog_avg": 27.98,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"reg_amv_digital_var_device_on": 99.55,
+	"reg_amv_digital_var_rl_cool": 31.18,
+	"alarms_activations": 6,
+	"reg_amv_digital_var_door_open": 0,
 	"reg_amv_digital_var_rl_def": null
 }
 ```
@@ -533,12 +533,12 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ***`activity-12830`***
 ```json
 {
-	"reg_amv_analog_avg": null,
-	"reg_cloud_virtual_value_tti_in": null,
-	"alarms_activations": 6,	
-	"reg_amv_digital_var_device_on": null,
-	"reg_amv_digital_var_rl_cool": null,
-	"reg_amv_digital_var_door_open": null,
+	"reg_amv_analog_avg": 27.98,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"reg_amv_digital_var_device_on": 99.55,
+	"reg_amv_digital_var_rl_cool": 31.18,
+	"alarms_activations": 6,
+	"reg_amv_digital_var_door_open": 0,
 	"reg_amv_digital_var_rl_def": null
 }
 ```
