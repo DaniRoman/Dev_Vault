@@ -1,6 +1,5 @@
-### ***`Period type=day&from=2026-04-21T00:00:00.000Z`*** 
-
-1. ***`id: 6980c75c65f2990017c7de8f`***
+## 1. ***`id: 6980c75c65f2990017c7de8f`***
+### ***`Period day from 2026-04-21T00:00:00.000Z`*** 
 
 ***`activity-Legacy`***
 
@@ -30,9 +29,12 @@
 }
 ```
 
+### ***`Period week from 2026-04-20T00:00:00.000Z`*** 
 ---
 
-2. ***`id: 69e1f16424f2820018437170`***
+## 2. ***`id: 69e1f16424f2820018437170`***
+
+### ***`Period day from 2026-04-21T00:00:00.000Z`*** 
 
 ***`activity-Legacy`***
 
@@ -70,7 +72,9 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 
 ---
 
-3. ***`id: 69e1ecb024f2820018437164`***
+## 3. ***`id: 69e1ecb024f2820018437164`***
+
+### ***`Period day from 2026-04-21T00:00:00.000Z`*** 
 
 ***`activity-Legacy`***
 
@@ -104,7 +108,8 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 
 ---
 
-4. ***`id: 69e22b9424f282001843727d`***
+## 4. ***`id: 69e22b9424f282001843727d`***
+### ***`Period day from 2026-04-21T00:00:00.000Z`*** 
 
 ***`activity-Legacy`***
 
@@ -136,7 +141,8 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 
 ---
 
-5. ***`id: 6980c9f365f2990017c7de98`***
+## 5. ***`id: 6980c9f365f2990017c7de98`***
+### ***`Period day from 2026-04-21T00:00:00.000Z`*** 
 
 ***`activity-Legacy`***
 
@@ -168,7 +174,8 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 
 ---
 
-6. ***`id: 69e22bc024f2820018437287`***
+## 6. ***`id: 69e22bc024f2820018437287`***
+### ***`Period day from 2026-04-21T00:00:00.000Z`*** 
 
 ***`activity-Legacy`***
 
@@ -199,7 +206,8 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 
 ---
 
-7. ***`id: 69bd3fa53c0c030017959599`***
+## 7. ***`id: 69bd3fa53c0c030017959599`***
+### ***`Period day from 2026-04-21T00:00:00.000Z`*** 
 
 ***`activity-Legacy`***
 
@@ -231,7 +239,8 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 
 ---
 
-8. ***`id: 69df6bf224f2820018436f8f`***
+## 8. ***`id: 69df6bf224f2820018436f8f`***
+### ***`Period day from 2026-04-21T00:00:00.000Z`*** 
 
 ***`activity-Legacy`***
 
