@@ -34,12 +34,28 @@
 ***`activity-Legacy`***
 
 ```json
-
+{
+	"reg_amv_analog_avg": -17.02,
+	"reg_cloud_virtual_value_tti_in": 45.07,
+	"alarms_activations": 0,
+	"reg_amv_digital_var_device_on": 100,
+	"reg_amv_digital_var_rl_cool": 47.910000000000004,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": null
+}
 ```
 
 ***`activity-12830`***
 ```json
-
+{
+	"reg_amv_analog_avg": -17.03,
+	"reg_cloud_virtual_value_tti_in": 42.65,
+	"reg_amv_digital_var_device_on": 100,
+	"reg_amv_digital_var_rl_cool": 48.12,
+	"alarms_activations": 0,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": null
+}
 ```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
 
@@ -98,12 +114,28 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ***`activity-Legacy`***
 
 ```json
-
+{
+	"reg_amv_analog_avg": 24.83,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"alarms_activations": 0.12,
+	"reg_amv_digital_var_device_on": 96.83,
+	"reg_amv_digital_var_rl_cool": 94.14,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": 2.69
+}
 ```
 
 ***`activity-12830`***
 ```json
-
+{
+	"reg_amv_analog_avg": -17.03,
+	"reg_cloud_virtual_value_tti_in": 42.65,
+	"reg_amv_digital_var_device_on": 100,
+	"reg_amv_digital_var_rl_cool": 48.12,
+	"alarms_activations": 0,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": null
+}
 ```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
 
@@ -158,12 +190,28 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ***`activity-Legacy`***
 
 ```json
-
+{
+	"reg_amv_analog_avg": 24.99,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"alarms_activations": 0.14,
+	"reg_amv_digital_var_device_on": 96.65,
+	"reg_amv_digital_var_rl_cool": 93.11,
+	"reg_amv_digital_var_door_open": 0,
+	"reg_amv_digital_var_rl_def": 3.6999999999999997
+}
 ```
 
 ***`activity-12830`***
 ```json
-
+{
+	"reg_amv_analog_avg": null,
+	"reg_cloud_virtual_value_tti_in": null,
+	"reg_amv_digital_var_device_on": null,
+	"reg_amv_digital_var_rl_cool": null,
+	"alarms_activations": 5,
+	"reg_amv_digital_var_door_open": null,
+	"reg_amv_digital_var_rl_def": null
+}
 ```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
 
