@@ -476,12 +476,12 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 
 ```json
 {
-	"reg_amv_analog_avg": null,
-	"reg_cloud_virtual_value_tti_in": null,
-	"alarms_activations": 1,	
-	"reg_amv_digital_var_device_on": null,
-	"reg_amv_digital_var_rl_cool": null,
-	"reg_amv_digital_var_door_open": null,
+	"reg_amv_analog_avg": 25.22,
+	"reg_cloud_virtual_value_tti_in": 0,
+	"reg_amv_digital_var_device_on": 98.57,
+	"reg_amv_digital_var_rl_cool": 98.57,
+	"alarms_activations": 1,
+	"reg_amv_digital_var_door_open": 0,
 	"reg_amv_digital_var_rl_def": null
 }
 ```
