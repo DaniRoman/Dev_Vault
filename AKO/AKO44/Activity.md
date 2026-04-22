@@ -94,7 +94,29 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ![[Pasted image 20260422120746.png]]
 
 ### ***`Period week from 2026-04-20T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ---
 
 ## 3. ***`Device: 69e1ecb024f2820018437164`***
@@ -132,7 +154,29 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ```
 
 ### ***`Period week from 2026-04-20T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ---
 
 ## 4. ***`Device: 69e22b9424f282001843727d`***
@@ -167,7 +211,29 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ```
 
 ### ***`Period week from 2026-04-20T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ---
 
 ## 5. ***`Device: 6980c9f365f2990017c7de98`***
@@ -202,7 +268,29 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ```
 
 ### ***`Period week from 2026-04-20T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ---
 
 ## 6. ***`Device: 69e22bc024f2820018437287`***
@@ -236,7 +324,29 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ```
 
 ### ***`Period week from 2026-04-20T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ---
 
 ## 7. ***`Device: 69bd3fa53c0c030017959599`***
@@ -271,7 +381,29 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ```
 
 ### ***`Period week from 2026-04-20T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ---
 
 ## 8. ***`Device: 69df6bf224f2820018436f8f`***
@@ -306,7 +438,29 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ```
 
 ### ***`Period week from 2026-04-20T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ---
 
 ## 9. ***`Device: 69e7339088186c00179cc08c`***
@@ -341,7 +495,29 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ```
 
 ### ***`Period week from 2026-04-20T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ---
 
 ## 10. ***`Device: 69a56225203e1c0017baac04`***
@@ -376,5 +552,27 @@ Porque sale activity12830 todo null en api si en mongo salen datos y mas parecid
 ```
 
 ### ***`Period week from 2026-04-20T00:00:00.000Z`*** 
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
 ### ***`Period month from 2026-04-01T00:00:00.000Z`*** 
----
+
+***`activity-Legacy`***
+
+```json
+
+```
+
+***`activity-12830`***
+```json
+
+```
+
