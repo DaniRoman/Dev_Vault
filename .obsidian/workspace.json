@@ -29,7 +29,7 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
                 "viewState": {
-                  "x": 407.24798593575065,
+                  "x": 1074.793341881795,
                   "y": 175.62933554077898,
                   "zoom": 0.058009062393046415
                 }
@@ -38,8 +38,7 @@
               "title": "AKO 44 - Net-Sync WorkFlow"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -71,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fma",
+                "query": "fmaactivit",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,7 +91,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -214,14 +214,14 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "50daa8a1b1563cea",
+  "active": "cd0b57e002270810",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Activity.md",
     "AKO/AKO44/attachments/Pasted image 20260422120746.png",
     "AKO/AKO44/Docs/Sin título.md",
-    "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "Lenguajes/Angular/Angular Main Site.md",
     "AKO/AKO44/attachments/imagen.png",
