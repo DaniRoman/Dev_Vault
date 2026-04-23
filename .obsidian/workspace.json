@@ -11,14 +11,17 @@
             "id": "31cc0722a65fe115",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
+                "viewState": {
+                  "x": 324.2460712933373,
+                  "y": -126.77143217767183,
+                  "zoom": -0.4743462926485805
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 - Net-Sync"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Net-Sync WorkFlow"
             }
           },
           {
@@ -216,9 +219,9 @@
   },
   "active": "31cc0722a65fe115",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
     "AKO/AKO44/Activity.md",
     "AKO/AKO44/attachments/Pasted image 20260422120746.png",
     "AKO/AKO44/Docs/Sin título.md",
