@@ -13,28 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-                "viewState": {
-                  "x": 1230.2719569958642,
-                  "y": -655.3471621572115,
-                  "zoom": -0.4013065470983869
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo para Actualizar firmware"
-            }
-          },
-          {
-            "id": "50daa8a1b1563cea",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
                 "viewState": {
-                  "x": 1074.793341881795,
-                  "y": 175.62933554077898,
-                  "zoom": 0.058009062393046415
+                  "x": 291.69285804441796,
+                  "y": -154.7347080977105,
+                  "zoom": -0.4743462926485805
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -219,6 +202,7 @@
   },
   "active": "31cc0722a65fe115",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
     "AKO/AKO44/AKO 44 Main Site.md",
@@ -231,7 +215,6 @@
     "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "Db/Mongo/Mongo - Main Site.md",
     "AKO/AKO44/Docs/Fota.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "Db/Db Main Page.md",
     "Arquitectura y Diseño/Arquitectura, diseño y conceptos.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
