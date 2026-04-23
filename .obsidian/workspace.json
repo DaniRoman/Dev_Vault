@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
                 "viewState": {
-                  "x": 314.33857160888385,
-                  "y": -164.64220778216415,
-                  "zoom": -0.4743462926485805
+                  "x": 1054.0134169495282,
+                  "y": -571.92708976887,
+                  "zoom": -0.4013065470983869
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Net-Sync WorkFlow"
+              "title": "AKO 44 - Flujo para Actualizar firmware"
             }
           },
           {
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fmaactivit",
+                "query": "fota",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -219,9 +219,9 @@
   },
   "active": "31cc0722a65fe115",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/Activity.md",
     "AKO/AKO44/attachments/Pasted image 20260422120746.png",
     "AKO/AKO44/Docs/Sin título.md",
