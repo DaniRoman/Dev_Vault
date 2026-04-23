@@ -23,7 +23,7 @@
 		{"id":"9761f81bb110e732","type":"text","text":"`API`\n`GET /api/firmware-update/:id/launch` Recibe la solicitud desencriptando el `jwt` y entrega el `binario`\n","x":1260,"y":-820,"width":280,"height":140,"color":"1"},
 		{"id":"7e9c53f409030759","type":"text","text":"***`Translator`***\nTraduce la solicitud","x":1280,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"07512efdee461e32","type":"text","text":"***`Device`***\nRecibe `.bin`","x":1940,"y":-1020,"width":280,"height":140,"color":"5"},
-		{"id":"89f3bbaf0a788b62","type":"text","text":"***`Conexion Layer`***\nRecibe \n- ***`ACK_OK`***\n- ***`Mensaje fota`***\n\t- LLama a  la `API` `autenticandose` mediante `jwt` para solicitar el `.bin` del `firmware` ","x":1610,"y":-820,"width":280,"height":140,"color":"5"},
+		{"id":"89f3bbaf0a788b62","type":"text","text":"***`Conexion Layer`***\nRecibe \n- ***`ACK_OK`***\n- ***`Mensaje fota`***\n- Busca en firmwareUpdate  el que esta su id y llama a la api con este\n\t- LLama a  la `API` `autenticandose` mediante `jwt` para solicitar el `.bin` del `firmware` ","x":1610,"y":-820,"width":280,"height":140,"color":"5"},
 		{"id":"fa1d7ad2880c842c","type":"text","text":"***`Mensaje `fota`***","x":1980,"y":-830,"width":200,"height":60,"color":"5"},
 		{"id":"f961a7b69abe1f2a","type":"text","text":"***`Device`***\nmanda mensaje de ***`audit`***","x":1940,"y":-1220,"width":280,"height":140,"color":"5"},
 		{"id":"3f9941ba28825388","type":"text","text":"***`ACK_OK`***","x":1980,"y":-710,"width":200,"height":60,"color":"5"},
