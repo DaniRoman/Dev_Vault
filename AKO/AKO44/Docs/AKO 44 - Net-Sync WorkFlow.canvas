@@ -3,7 +3,7 @@
 		{"id":"aa86010694e05dcb","type":"text","text":"***`Device`***\nEnvia net_sync","x":-460,"y":-660,"width":320,"height":140},
 		{"id":"8f9b56191fac007f","type":"text","text":"***`Admin`***\n`Device Advance > New network`\nBoton de 3 puntos crearemos una nueva configuración de network ***`info en excel net-sync spech`*** o editaremos la existente","x":-560,"y":-240,"width":320,"height":180},
 		{"id":"912fa91888852f11","type":"text","text":"***`Admin`***\nBotón verde enviamos un ***`CMD - server_command_fota_device_download value: 1`*** al la ***`api`*** para que este haga que el `Device` nos comunique con un `net-sync` y nos envie esa información","x":-20,"y":40,"width":340,"height":180},
-		{"id":"cce1ed50d0b88eac","type":"text","text":"***`Este CMD no esta en deviceDefinition de momento se añade manualmente a la definición`***","x":-400,"y":260,"width":320,"height":140,"color":"4"},
+		{"id":"cce1ed50d0b88eac","type":"text","text":"***`Este CMD no esta en deviceDefinition de momento se añade manualmente a la DeviceDefinición`***","x":-400,"y":260,"width":320,"height":140,"color":"4"},
 		{"id":"f723d20d93fe7450","type":"text","text":"***`API`***\nRecibe en petición en  ***`api/device/command/:id`*** \n","x":400,"y":60,"width":320,"height":140},
 		{"id":"f95bbfb6870cf545","type":"text","text":"***`translator`*** gestiona el envio\n","x":800,"y":60,"width":320,"height":140},
 		{"id":"03f9c43cd409c5df","type":"text","text":"***`coat`*** gestiona el envio\n","x":1220,"y":60,"width":320,"height":140},
