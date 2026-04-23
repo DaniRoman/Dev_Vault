@@ -20,7 +20,7 @@
 		{"id":"be8a2ec5b6dbdd83","type":"text","text":"`ADMIN --> Fw Update` \n***`Crear`*** un nuevo `firmwareUpdate` a raiz del fichero que se añade","x":640,"y":-340,"width":280,"height":140,"color":"5"},
 		{"id":"f018af6767826c4b","type":"text","text":"***`backlog.perte > StateController`***\ngestiona auditoria","x":920,"y":-1220,"width":280,"height":140,"color":"5"},
 		{"id":"dec9f5494e350ad6","type":"text","text":"`API`\n`PATCH api/firmware-update`  Borra el serial del Documento ***`FirmWareUpdate\n","x":532,"y":-1220,"width":280,"height":140,"color":"5"},
-		{"id":"9761f81bb110e732","type":"text","text":"`API`\n`GET /api/firmware-update/:id/launch` Recibe la solicitud desencriptando el `jwt` y entrega el `binario`\n","x":1260,"y":-820,"width":280,"height":140,"color":"5"},
+		{"id":"9761f81bb110e732","type":"text","text":"`API`\n`GET /api/firmware-update/:id/launch` Recibe la solicitud desencriptando el `jwt` y entrega el `binario`\n","x":1260,"y":-820,"width":280,"height":140,"color":"1"},
 		{"id":"7e9c53f409030759","type":"text","text":"***`Translator`***\nTraduce la solicitud","x":1280,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"07512efdee461e32","type":"text","text":"***`Device`***\nRecibe `.bin`","x":1940,"y":-1020,"width":280,"height":140,"color":"5"},
 		{"id":"89f3bbaf0a788b62","type":"text","text":"***`Conexion Layer`***\nRecibe \n- ***`ACK_OK`***\n- ***`Mensaje fota`***\n\t- LLama a  la `API` `autenticandose` mediante `jwt` para solicitar el `.bin` del `firmware` ","x":1610,"y":-820,"width":280,"height":140,"color":"5"},
@@ -29,10 +29,12 @@
 		{"id":"3f9941ba28825388","type":"text","text":"***`ACK_OK`***","x":1980,"y":-710,"width":200,"height":60,"color":"5"},
 		{"id":"1a5373a5aa09d5b9","type":"text","text":"***`Conexion Layer`***\nEnvía solicitud de actualización al `Device`","x":1610,"y":-600,"width":280,"height":140,"color":"5"},
 		{"id":"8b85f03f89e15f7c","type":"text","text":"Buscamos si el Device Existe en algún,***`availableSerialNumbers`*** de ser así devuelve ese ***`firmWareUpdate`*** si no encuentra devolverá el mas actual haciendo una comprobación ","x":1800,"y":-360,"width":280,"height":140,"color":"4"},
-		{"id":"bf6b1a19df754218","type":"text","text":"Al Lanzar `launch firmawareUpdate` se crea `firmwareupdatelogs` y  se guarda el SerialNumber del `device` seleccionado en ***`availableSerialNumbers`***\ny si este existe en otro documento lo borra para asegurarnos que cuando el device lo pida siempre sera el ultimo`firmawareUpdate` que se selecciono desde el ***`admin`***","x":1300,"y":-340,"width":280,"height":140,"color":"4"},
 		{"id":"b5ced3e848b52dd7","type":"text","text":">[!example] Distintos mensajes del Device\n>\n\n***Mensajes normales del device***\n- método `POST`\n- llevan `payload`\n- ese payload va en **CBOR**\n- y se protege con **CRC**\n- ejemplos: `sample`, `status`, `event`, `cmd_ack`, `param_ack`\n---\n***Retrieve de firmware***\n- método `GET`\n- ruta `/{serial}/fota`\n- **no depende de `ty`**\n- entra por la URL, no por el body\n\nLa intención ya va en la **URL**, no en un payload serializado. El CRC se usa para validar el **payload recibido**.\nSi no se manda payload:\n- no hay nada que serializar\n- no hay nada que firmar con CRC","x":2320,"y":-890,"width":384,"height":180,"color":"6"},
 		{"id":"c42f2d447fb02c80","type":"text","text":"***`Device`***\nRecibe solicitud de actualización, contesta con `ack_confirm` y posteriormente acepta el `update` enviando un mensaje tipo `fota` ","x":1940,"y":-600,"width":280,"height":140,"color":"5"},
-		{"id":"5b74a2375686a7e3","x":-32,"y":-1209,"width":564,"height":329,"type":"text","text":"console.log(\"REQUEST EN LAAUNCH FIRMWARE:\", {\n\nuser:{\n\nid: this.context._user._original._id\n\nname: this.context._user._original.username\n\n}});"}
+		{"id":"5b74a2375686a7e3","type":"text","text":"console.log(\"REQUEST EN LAAUNCH FIRMWARE:\", {\n\nuser:{\n\nid: this.context._user._original._id\n\nname: this.context._user._original.username\n\n}});","x":-32,"y":-1209,"width":376,"height":189},
+		{"id":"2083aaf9f79900a6","x":1490,"y":-140,"width":250,"height":60,"type":"text","text":""},
+		{"id":"dddafaff8624d3fc","type":"text","text":"Al Lanzar `launch firmawareUpdate` se crea `firmwareupdatelogs` y  se guarda el SerialNumber del `device` seleccionado en ***`availableSerialNumbers`***\ny si este existe en otro documento lo borra para asegurarnos que cuando el device lo pida siempre sera el ultimo`firmawareUpdate` que se selecciono desde el ***`admin`***","x":1350,"y":-280,"width":280,"height":140,"color":"4"},
+		{"id":"b01f81f25f88462f","type":"text","text":"`API`\n`GET /api/firmware-update/:id/launch` Recibe la solicitud desencriptando el `jwt` y entrega el `binario`\n","x":920,"y":-820,"width":280,"height":140,"color":"1"}
 	],
 	"edges":[
 		{"id":"afa2baff30557a23","fromNode":"e2e75b0dc135d1c0","fromSide":"right","toNode":"477aa56ef27bcf6b","toSide":"left"},
@@ -52,7 +54,6 @@
 		{"id":"1dc57f95cb2e7bdd","fromNode":"9aa746407d5f6cd4","fromSide":"right","toNode":"07512efdee461e32","toSide":"left"},
 		{"id":"cc5796041f887e29","fromNode":"b5ced3e848b52dd7","fromSide":"left","toNode":"fa1d7ad2880c842c","toSide":"right"},
 		{"id":"e0eae59c60559f89","fromNode":"b1b598a481dbb8e7","fromSide":"bottom","toNode":"89f3bbaf0a788b62","toSide":"top"},
-		{"id":"e3f2c56abab8197e","fromNode":"477aa56ef27bcf6b","fromSide":"bottom","toNode":"bf6b1a19df754218","toSide":"top"},
 		{"id":"e3b6f076011c4a69","fromNode":"be8a2ec5b6dbdd83","fromSide":"right","toNode":"c56e647b88a65917","toSide":"left"},
 		{"id":"14669697dd21d729","fromNode":"89f3bbaf0a788b62","fromSide":"bottom","toNode":"8b85f03f89e15f7c","toSide":"top"},
 		{"id":"0ce0d000da66dfc1","fromNode":"07512efdee461e32","fromSide":"right","toNode":"f961a7b69abe1f2a","toSide":"right"},
