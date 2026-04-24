@@ -4,7 +4,6 @@
 		{"id":"7ee22de3e539a019","type":"text","text":"***`micro commands/plmn`***\nRecibe el mensaje \n→ Parsea la tabla texto en líneas\n→ Genera el binario con CRC16\n→ ***Envia el .bin a la API mediante `jwt` ","x":-160,"y":-964,"width":317,"height":160,"color":"5"},
 		{"id":"b0cb585f3e1dc77d","type":"text","text":"***`micro translator`*** \n***`handleOutputCommand()\n   → processCommand()`*** traduce el comando a formato device: y Publica en ***`cl.`***","x":-160,"y":-724,"width":317,"height":160,"color":"5"},
 		{"id":"eacecb07b4b11a5b","type":"text","text":"***`micro coap`*** \n cl-perte-coap → recibe el mensaje\n   → Busca el device en MongoDB ✓\n   → Busca manufacturedDevice ✓\n   → Busca IP del device \n   → Intenta enviar CoAP POST al device","x":227,"y":-724,"width":317,"height":160,"color":"5"},
-		{"id":"ea48099f0b687a57","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":-155,"y":-480,"width":308,"height":160,"color":"4"},
 		{"id":"518ed8b899485947","type":"text","text":">[!success] Flujo para lanzar un ***`New PLMN`*** \n\n`Admin` lanza un `plmn launch update`","x":-911,"y":-724,"width":317,"height":160,"color":"5"},
 		{"id":"d3ca4b93cb4a4d65","type":"text","text":"***`micro translator`***\nSyncParser.parse() descompone el array:","x":-100,"y":-26,"width":317,"height":160,"color":"5"},
 		{"id":"d0eabaf11e4ae889","type":"text","text":"***`micro commands sync.perte`***\nrecibe el mensaje parseado\n","x":294,"y":-26,"width":317,"height":160,"color":"5"},
@@ -26,7 +25,8 @@
 		{"id":"e3622114dded8527","type":"text","text":"***`API POST: /api/plmn-list/:id/binary`***\nRecibe el fichero y lo guarda en el entorno.","x":227,"y":-946,"width":273,"height":124,"color":"5"},
 		{"id":"1ea897b714313d6f","type":"text","text":">[!tip] Se actualiza ***`plmnList`***\n\nfilePath + active=true","x":-141,"y":-1120,"width":280,"height":120,"color":"4"},
 		{"id":"0bc7a521cece7b61","type":"text","text":">[!warning] Se Actualiza el campo  ***`avaibleDevices`*** en  ***`plmnlists`*** \n\nComprobar que el ***`Device`*** no exista en ningun otro documento y de ser así lo borra","x":-547,"y":-500,"width":341,"height":180,"color":"3"},
-		{"id":"d101cffa0842ef8d","type":"text","text":"***`micro coap`*** \n cl-perte-coap → recibe el mensaje\n   → Busca el device en MongoDB ✓\n   → Busca manufacturedDevice ✓\n   → Busca IP del device \n   → Intenta enviar CoAP POST al device","x":640,"y":-724,"width":317,"height":160,"color":"5"}
+		{"id":"d101cffa0842ef8d","type":"text","text":"***`Device`*** \n ","x":680,"y":-669,"width":160,"height":50,"color":"5"},
+		{"id":"ea48099f0b687a57","type":"text","text":">[!error] Se crea un ***`outPutMessage??`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":-155,"y":-490,"width":308,"height":160,"color":"1"}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"665d1da08bc91cb5","fromSide":"right","toNode":"a1ec65f5ca867ed7","toSide":"left"},
@@ -49,6 +49,7 @@
 		{"id":"f193dfacc7f7f186","fromNode":"119ff945673ad430","fromSide":"right","toNode":"c5eaaa14987dff51","toSide":"left"},
 		{"id":"5bb1ed9fe96c7522","fromNode":"52cf9d3e5dfaad54","fromSide":"right","toNode":"2ab52dca0520f3aa","toSide":"left"},
 		{"id":"be3e4930e6dae27b","fromNode":"52cf9d3e5dfaad54","fromSide":"right","toNode":"518ed8b899485947","toSide":"left"},
-		{"id":"258f217dfcd7f249","fromNode":"7ee22de3e539a019","fromSide":"top","toNode":"1ea897b714313d6f","toSide":"bottom"}
+		{"id":"258f217dfcd7f249","fromNode":"7ee22de3e539a019","fromSide":"top","toNode":"1ea897b714313d6f","toSide":"bottom"},
+		{"id":"79062b02f528b8be","fromNode":"eacecb07b4b11a5b","fromSide":"right","toNode":"d101cffa0842ef8d","toSide":"left"}
 	]
 }
