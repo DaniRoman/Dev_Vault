@@ -15,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
                 "viewState": {
-                  "x": 1190.5137258552907,
-                  "y": -593.4548503852164,
+                  "x": 441.0785593987295,
+                  "y": 174.8171066106475,
                   "zoom": -0.4013065470983869
                 }
               },
@@ -38,8 +38,7 @@
               "title": "AKO  44 - Admin Main Page"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 826.5110321044922
+    "width": 265.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -215,11 +214,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "760a972d7d3f167b",
+  "active": "31cc0722a65fe115",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Activity.md",
