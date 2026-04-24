@@ -8,37 +8,38 @@
         "type": "tabs",
         "children": [
           {
-            "id": "31cc0722a65fe115",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-                "viewState": {
-                  "x": 1269.0814257009376,
-                  "y": -660.9539137054543,
-                  "zoom": -0.4013065470983869
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo para Actualizar firmware"
-            }
-          },
-          {
             "id": "760a972d7d3f167b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO  44 - Admin Main Page"
+              "title": "AKO 44 Main Site"
+            }
+          },
+          {
+            "id": "e901df4c9eca92c4",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
+                "viewState": {
+                  "x": -805.9968756475635,
+                  "y": -440.49822429965576,
+                  "zoom": -0.39462119521729644
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo PLMN"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -70,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fm",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,8 +92,7 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -214,13 +214,14 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "31cc0722a65fe115",
+  "active": "e901df4c9eca92c4",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
+    "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
+    "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+    "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
     "AKO/AKO44/Activity.md",
     "AKO/AKO44/attachments/Pasted image 20260422120746.png",
     "AKO/AKO44/Docs/Sin título.md",
@@ -237,7 +238,6 @@
     "AKO/Landing-Page/Landing-Page Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas",
-    "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "Redis/Redis Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer - Authentication.canvas",
