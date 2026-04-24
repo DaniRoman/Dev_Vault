@@ -27,7 +27,8 @@
 		{"id":"0bc7a521cece7b61","type":"text","text":">[!warning] Se Actualiza el campo  ***`avaibleDevices`*** en  ***`plmnlists`*** \n\nComprobar que el ***`Device`*** no exista en ningun otro documento y de ser así lo borra","x":-547,"y":-500,"width":341,"height":180,"color":"3"},
 		{"id":"d101cffa0842ef8d","type":"text","text":"***`Device`*** \n ","x":680,"y":-669,"width":160,"height":50,"color":"5"},
 		{"id":"ea48099f0b687a57","type":"text","text":">[!success] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":-155,"y":-490,"width":308,"height":160,"color":"4"},
-		{"id":"664bb2dfc173a037","x":294,"y":-457,"width":498,"height":254,"color":"2","type":"text","text":">[!warning] Recuerda!\n\n>Si el device no a contestado con ***`CMD_ACK`*** a los  ***`outputmessages`*** con status pending no se crearan de nuevos.\n>dando el siguiente mensaje\n>Pending output exists for device 69babe8c3293df735c3d5174, all items in payload.d already exist. No update performed."}
+		{"id":"664bb2dfc173a037","x":294,"y":-457,"width":498,"height":254,"color":"2","type":"text","text":">[!warning] Recuerda!\n\n>Si el device no a contestado con ***`CMD_ACK`*** a los  ***`outputmessages`*** con status pending no se crearan de nuevos.\n>dando el siguiente mensaje\n>Pending output exists for device 69babe8c3293df735c3d5174, all items in payload.d already exist. No update performed."},
+		{"id":"40a2ae33cd4ac916","type":"text","text":"mirar este flujo ","x":660,"y":440,"width":317,"height":160,"color":"1"}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"665d1da08bc91cb5","fromSide":"right","toNode":"a1ec65f5ca867ed7","toSide":"left"},
