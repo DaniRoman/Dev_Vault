@@ -25,8 +25,7 @@
 		{"id":"9e80d56e4ef035ec","type":"text","text":"***`API`*** recibe en `POST /api/plmn-list` crea el documento ***`plmnList`*** en ***`DB`*** ","x":-526,"y":-946,"width":266,"height":124,"color":"5"},
 		{"id":"2ab52dca0520f3aa","type":"text","text":">[!success] Flujo para crear un ***`New PLMN`*** \n\n`Admin` crea un `new plmn`\n\n","x":-911,"y":-946,"width":313,"height":124,"color":"5"},
 		{"id":"e3622114dded8527","type":"text","text":"***`API POST: /api/plmn-list/:id/binary`***\nRecibe el fichero y lo guarda en el entorno.","x":227,"y":-946,"width":273,"height":124,"color":"5"},
-		{"id":"75b3c0e76018c85f","x":850,"y":-1001,"width":250,"height":60,"type":"text","text":"Actualiza plmnlist en MongoDB: filePath + active=true"},
-		{"id":"1ea897b714313d6f","type":"text","text":">[!tip] Se crea un ***`outPutMessage`***\n\n***`outputMsgService.storeOutput()`*** guarda para reintentos","x":821,"y":-724,"width":308,"height":160,"color":"4"}
+		{"id":"1ea897b714313d6f","type":"text","text":">[!tip] Se actualiza ***`plmnList`***\n\nfilePath + active=true","x":-141,"y":-1120,"width":280,"height":120,"color":"4"}
 	],
 	"edges":[
 		{"id":"c83dd05c0a86a932","fromNode":"665d1da08bc91cb5","fromSide":"right","toNode":"a1ec65f5ca867ed7","toSide":"left"},
@@ -48,6 +47,7 @@
 		{"id":"0e3c4c422a934823","fromNode":"119ff945673ad430","fromSide":"right","toNode":"665d1da08bc91cb5","toSide":"left"},
 		{"id":"f193dfacc7f7f186","fromNode":"119ff945673ad430","fromSide":"right","toNode":"c5eaaa14987dff51","toSide":"left"},
 		{"id":"5bb1ed9fe96c7522","fromNode":"52cf9d3e5dfaad54","fromSide":"right","toNode":"2ab52dca0520f3aa","toSide":"left"},
-		{"id":"be3e4930e6dae27b","fromNode":"52cf9d3e5dfaad54","fromSide":"right","toNode":"518ed8b899485947","toSide":"left"}
+		{"id":"be3e4930e6dae27b","fromNode":"52cf9d3e5dfaad54","fromSide":"right","toNode":"518ed8b899485947","toSide":"left"},
+		{"id":"258f217dfcd7f249","fromNode":"7ee22de3e539a019","fromSide":"top","toNode":"1ea897b714313d6f","toSide":"bottom"}
 	]
 }
