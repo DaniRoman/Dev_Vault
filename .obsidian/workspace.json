@@ -15,7 +15,7 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
                 "viewState": {
-                  "x": 1186.4772707397265,
+                  "x": 1242.987642357635,
                   "y": -680.9113778891243,
                   "zoom": -0.4013065470983869
                 }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fota",
+                "query": "fm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -199,7 +200,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "31cc0722a65fe115",
+  "active": "cd0b57e002270810",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
