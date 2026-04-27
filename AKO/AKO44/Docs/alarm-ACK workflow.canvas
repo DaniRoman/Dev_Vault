@@ -6,12 +6,17 @@
 		{"id":"b0debc368f8fc10b","type":"text","text":">[!success] ***`Persistencia de datos`***\n\n>***Colecciones involucradas***\n\n***`Legacy - events {isAlarm:True}`***\n***`nuevos - alarm12830`***","x":-1260,"y":-120,"width":310,"height":182,"color":"4"},
 		{"id":"077f424588c4bfb8","x":-950,"y":-300,"width":280,"height":140,"type":"text","text":"***`client`***\n Hace un `ACK` manual de alarma recibida pulsando un botón en el cliente y enviando la petición a la API"},
 		{"id":"4dae9c370922ddec","type":"text","text":"***`API`***\n***`/api/alarm/:id/ack` ***\n","x":-580,"y":-280,"width":200,"height":100},
-		{"id":"7177e595c0486263","type":"text","text":"***`API`***\n- Busca en `events` por su `_id`\n\t- De no ser una alarma sale\n- Busca en `eventacks` por el _id del  evento.\n\t- si existe es que ya se izo ese `ACK` y sale\n- Se crean datos para enviar al `rabbit` en ***`sendEventRPC(\"event.ack\", copyData, 50000)`***","x":-720,"y":-48,"width":420,"height":268}
+		{"id":"7177e595c0486263","type":"text","text":"***`API`***\n- Busca en `events` por su `_id`\n\t- De no ser una alarma sale\n- Busca en `eventacks` por el _id del  evento.\n\t- si existe es que ya se izo ese `ACK` y sale\n- Se crean datos para enviar al `rabbit` con el método ***`sendEventRPC","x":-720,"y":-48,"width":460,"height":228},
+		{"id":"2eb726c12856b793","x":-760,"y":320,"width":160,"height":105,"color":"2","type":"text","text":">[!warning] ***`Topic`***\n\n***`event.ack`***"},
+		{"id":"ca2a02fe3adb488b","type":"text","text":">[!warning] ***`Topic`***\n\n***`12830.alarm.ack`***","x":-440,"y":355,"width":200,"height":105,"color":"2"},
+		{"id":"3b4d592cf380be08","type":"text","text":">[!example] ***`Como se que es un dispositivo nuevo/viejo`***\n\n>***Colecciones involucradas***\n\n***`Legacy - events {isAlarm:True}`***\n***`nuevos - alarm12830`***","x":-1280,"y":300,"width":310,"height":182,"color":"6"}
 	],
 	"edges":[
 		{"id":"ce4123b61fc012b5","fromNode":"432326df9789914e","fromSide":"bottom","toNode":"b0debc368f8fc10b","toSide":"top"},
 		{"id":"648c4f6f23110674","fromNode":"432326df9789914e","fromSide":"right","toNode":"077f424588c4bfb8","toSide":"left"},
 		{"id":"ac54f65047c7a972","fromNode":"077f424588c4bfb8","fromSide":"right","toNode":"4dae9c370922ddec","toSide":"left"},
-		{"id":"aa70d3382463b7ca","fromNode":"4dae9c370922ddec","fromSide":"bottom","toNode":"7177e595c0486263","toSide":"top"}
+		{"id":"aa70d3382463b7ca","fromNode":"4dae9c370922ddec","fromSide":"bottom","toNode":"7177e595c0486263","toSide":"top"},
+		{"id":"4b83d9f863bb2976","fromNode":"7177e595c0486263","fromSide":"bottom","toNode":"2eb726c12856b793","toSide":"top","label":"Dispositivo antiguo"},
+		{"id":"1894adf6a04b3e09","fromNode":"7177e595c0486263","fromSide":"bottom","toNode":"ca2a02fe3adb488b","toSide":"top","label":"12830"}
 	]
 }
