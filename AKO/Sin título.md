@@ -15,6 +15,9 @@ el cliente puede hacer un alarma recibida pulsando un boton y enviando un ACK en
 
 una vez ahi dependiendo si es un modelo nuevo o un modelo viejo se tiene que gaurdar info de quien a echo el ack y se envia a la cola que gestiona esa alarma como apagarla 
 
+
+Flujo actual 
+
 ```js
 //Legacy
 copyData.event.ack = {
