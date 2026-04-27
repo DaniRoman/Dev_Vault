@@ -17,6 +17,7 @@ una vez ahi dependiendo si es un modelo nuevo o un modelo viejo se tiene que gau
 
 
 Flujo actual 
+Busca el evento, busca su ack 
 
 ```js
 //Legacy
