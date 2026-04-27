@@ -4,3 +4,4 @@ event
 
 enviar info del evento quien ack y demas info importante esto en el endpoint 
 
+12840.alar.ack
