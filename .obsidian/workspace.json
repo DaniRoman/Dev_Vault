@@ -25,17 +25,14 @@
             "id": "e901df4c9eca92c4",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
-                "viewState": {
-                  "x": 31.04348372488722,
-                  "y": -187.377219625427,
-                  "zoom": -0.39462119521729644
-                }
+                "file": "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo PLMN"
+              "icon": "lucide-file",
+              "title": "AKO  44 - Admin Main Page"
             }
           }
         ],
@@ -71,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "fma",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,7 +89,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -216,6 +214,7 @@
   },
   "active": "e901df4c9eca92c4",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
@@ -238,7 +237,6 @@
     "AKO/Landing-Page/Landing-Page Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "Redis/Redis Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer - Authentication.canvas",
     "Redis",
