@@ -9,11 +9,11 @@
 		{"id":"ca2a02fe3adb488b","type":"text","text":">[!warning] ***`Topic`***\n\n***`12830.alarm.ack`***","x":-200,"y":-413,"width":200,"height":105,"color":"2"},
 		{"id":"0164d6a655e63044","type":"text","text":">***`events.stateController`***\n\n","x":50,"y":-385,"width":260,"height":50,"color":"5"},
 		{"id":"7177e595c0486263","type":"text","text":"***`API`***\n- Busca en `events` por su `_id`\n\t- De no ser una alarma sale\n- Busca en `eventacks` por el _id del  evento.\n\t- si existe es que ya se izo ese `ACK` y sale\n- Se crean datos para enviar al `rabbit` con el método ***`sendEventRPC`*** dependiendo el topic manda a un micro u otro","x":-685,"y":-62,"width":410,"height":248,"color":"5"},
-		{"id":"59b7937e0fea9aeb","type":"text","text":">***`events.stateController`***\n\n","x":50,"y":-160,"width":260,"height":50,"color":"5"},
 		{"id":"66fd9f0097471b06","type":"text","text":">[!warning] ***`Topic`***\n\n***`event.ack.success\"`***","x":360,"y":-413,"width":200,"height":105,"color":"2"},
 		{"id":"3ec5dd8a10f17ea5","type":"text","text":">***`event.notifier`***\n\n","x":600,"y":-385,"width":240,"height":50,"color":"5"},
 		{"id":"7299a098eaf0a64e","type":"text","text":"***`events.stateController`***\n- Comprueba si en el `Device` existe la alarma que llego al micro como mensaje en el `topic` esta no esta seteáda como `null`\n- Asigna la información de (`ack`) a la alarma específica del dispositivo \n\n```json\n\"alarms\": {\n  \"alarm_door_open\": {\n    \"code\": \"alarm_door_open\",\n    \"priority\": \"high\",\n    \"startedAt\": \"2026-04-27T10:00:00.000Z\",\n    //La info que me llego del TOPIC\n    \"ack\": {\n      \"ackAt\": \"2026-04-27T10:05:00.000Z\",\n      \"ackAtGMT\": \"2026-04-27T08:05:00.000Z\",\n      \"ackBy\": \"usuario@email.com\",\n      \"comment\": \"Revisado\"\n```\n\n- Recalcula `device.noAckAlarmCount`: cuenta cuántas alarmas activas (`!== null`) tienen prioridad válida (`!== \"unassigned\"`) y todavía no tienen `ack`; si no hay `lastStatus.alarms`, pone `0`","x":-195,"y":-1020,"width":750,"height":520,"color":"5"},
-		{"id":"46f0cd66eb20d014","x":-864,"y":558,"width":464,"height":202,"type":"text","text":"`Device`: Para probar: DeviceDefinition "}
+		{"id":"46f0cd66eb20d014","x":-864,"y":558,"width":464,"height":202,"type":"text","text":"`Device`: Para probar: DeviceDefinition "},
+		{"id":"17f8eba068f4969c","type":"text","text":">***`event.notifier.12830`***\n\n","x":50,"y":-160,"width":284,"height":50,"color":"5"}
 	],
 	"edges":[
 		{"id":"ce4123b61fc012b5","fromNode":"432326df9789914e","fromSide":"bottom","toNode":"b0debc368f8fc10b","toSide":"top"},
@@ -24,9 +24,9 @@
 		{"id":"1894adf6a04b3e09","fromNode":"4dae9c370922ddec","fromSide":"right","toNode":"ca2a02fe3adb488b","toSide":"left","label":"12830"},
 		{"id":"5dee62c2cce4b5c2","fromNode":"3b4d592cf380be08","fromSide":"left","toNode":"b0debc368f8fc10b","toSide":"left"},
 		{"id":"5f4c8eeae5b34c66","fromNode":"ca2a02fe3adb488b","fromSide":"right","toNode":"0164d6a655e63044","toSide":"left"},
-		{"id":"dd8dea8341f96148","fromNode":"2eb726c12856b793","fromSide":"right","toNode":"59b7937e0fea9aeb","toSide":"left"},
 		{"id":"a8a10b0867aedc34","fromNode":"0164d6a655e63044","fromSide":"top","toNode":"7299a098eaf0a64e","toSide":"bottom"},
 		{"id":"6837d8630df39808","fromNode":"0164d6a655e63044","fromSide":"right","toNode":"66fd9f0097471b06","toSide":"left"},
-		{"id":"43702c64a2938591","fromNode":"66fd9f0097471b06","fromSide":"right","toNode":"3ec5dd8a10f17ea5","toSide":"left"}
+		{"id":"43702c64a2938591","fromNode":"66fd9f0097471b06","fromSide":"right","toNode":"3ec5dd8a10f17ea5","toSide":"left"},
+		{"id":"cd84a9421e9e3ce9","fromNode":"2eb726c12856b793","fromSide":"right","toNode":"17f8eba068f4969c","toSide":"left"}
 	]
 }
