@@ -2,15 +2,15 @@
 	"nodes":[
 		{"id":"432326df9789914e","type":"text","text":"***`Device`***\n\nDispara una alarma","x":-1185,"y":-280,"width":160,"height":100,"color":"5"},
 		{"id":"b0debc368f8fc10b","type":"text","text":">[!success] ***`Persistencia de datos`***\n\n>***Colecciones involucradas***\n\n***`Legacy - events {isAlarm:True}`***\n***`nuevos - alarm12830`***","x":-1260,"y":-120,"width":310,"height":182,"color":"4"},
-		{"id":"077f424588c4bfb8","x":-950,"y":-300,"width":280,"height":140,"color":"5","type":"text","text":"***`client`***\n Hace un `ACK` manual de alarma recibida pulsando un botón en el cliente y enviando la petición a la API"},
+		{"id":"077f424588c4bfb8","type":"text","text":"***`client`***\n Hace un `ACK` manual de alarma recibida pulsando un botón en el cliente y enviando la petición a la API","x":-950,"y":-300,"width":280,"height":140,"color":"5"},
 		{"id":"4dae9c370922ddec","type":"text","text":"***`API`***\n***`/api/alarm/:id/ack` ***\n","x":-580,"y":-280,"width":200,"height":100,"color":"5"},
 		{"id":"3b4d592cf380be08","type":"text","text":">[!example] ***`Como se que es un dispositivo nuevo/viejo`***\n\n>Dependiendo del tipo de dispositivo estará en una colección u otra\n\n","x":-1280,"y":120,"width":330,"height":160,"color":"6"},
-		{"id":"2eb726c12856b793","x":-180,"y":-188,"width":160,"height":105,"color":"2","type":"text","text":">[!warning] ***`Topic`***\n\n***`event.ack`***"},
+		{"id":"2eb726c12856b793","type":"text","text":">[!warning] ***`Topic`***\n\n***`event.ack`***","x":-180,"y":-188,"width":160,"height":105,"color":"2"},
 		{"id":"ca2a02fe3adb488b","type":"text","text":">[!warning] ***`Topic`***\n\n***`12830.alarm.ack`***","x":-200,"y":-413,"width":200,"height":105,"color":"2"},
 		{"id":"0164d6a655e63044","type":"text","text":">***`events.stateController`***\n\n","x":50,"y":-385,"width":260,"height":50,"color":"5"},
 		{"id":"7177e595c0486263","type":"text","text":"***`API`***\n- Busca en `events` por su `_id`\n\t- De no ser una alarma sale\n- Busca en `eventacks` por el _id del  evento.\n\t- si existe es que ya se izo ese `ACK` y sale\n- Se crean datos para enviar al `rabbit` con el método ***`sendEventRPC`*** dependiendo el topic manda a un micro u otro","x":-685,"y":-62,"width":410,"height":248,"color":"5"},
 		{"id":"59b7937e0fea9aeb","type":"text","text":">***`events.stateController`***\n\n","x":50,"y":-160,"width":260,"height":50,"color":"5"},
-		{"id":"7299a098eaf0a64e","type":"text","text":"***`events.stateController`***\n- Comprueba si en el `Device` existe la alarma que llego al micro como mensaje en el `topic` esta no esta seteáda como `null`","x":-100,"y":-820,"width":410,"height":248,"color":"5"}
+		{"id":"7299a098eaf0a64e","type":"text","text":"***`events.stateController`***\n- Comprueba si en el `Device` existe la alarma que llego al micro como mensaje en el `topic` esta no esta seteáda como `null`\n- Asigna la información de (`ack`) a la alarma específica del dispositivo \n\n```json\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n```","x":-100,"y":-820,"width":410,"height":248,"color":"5"}
 	],
 	"edges":[
 		{"id":"ce4123b61fc012b5","fromNode":"432326df9789914e","fromSide":"bottom","toNode":"b0debc368f8fc10b","toSide":"top"},
