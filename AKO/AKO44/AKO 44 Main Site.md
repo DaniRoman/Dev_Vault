@@ -12,6 +12,10 @@ Ese `.json` está definiendo **qué topics escucha el microservicio** y **qué m
 Para ver quien manda ese topic puedo hacer una búsqueda en el proyecto y en este caso veo que es el micro de update quien lo manda 
 
 ![[Pasted image 20260409132220.png]]
+
+
+## ***`alarm-ACK`***
+[[]]
 ## ***`Fota`***
 [[Fota]]
 

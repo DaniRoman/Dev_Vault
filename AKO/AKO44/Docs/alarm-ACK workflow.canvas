@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"8421af068e627f36","x":-70,"y":-462,"width":250,"height":60,"type":"text","text":""},
+		{"id":"077f424588c4bfb8","x":-680,"y":-241,"width":320,"height":221,"type":"text","text":"***`client`***"},
+		{"id":"c7ec64eb7d42a87c","x":-160,"y":-241,"width":889,"height":666,"type":"text","text":"Se dispara una alarma (Para legacy un evento - alarm true, para 1280 alarm-12830).\nEl cliente puede hacer un `ACK` manual de alarma recibida pulsando un botón en el cliente y enviando la petición a `/api/alarm/:id/ack`\n\n `/api/alarm/:id/ack` \n\n\nFlujo actual \nBusca el evento, busca su ack \n\n```js\n//Legacy\ncopyData.event.ack = {\n\tackAt: new Date(),\n\tackAtGMT: DateHelper.parseUTCOffset(new Date(), device.getUTCOffset()),\n\tackBy: parseExternalUserEmail(this.context.user.username),\n\tcomment: comment\n}\n//Se envia a\nSendAmqp.sendEventRPC(\"event.ack\", copyData, 50000)\n```"},
+		{"id":"432326df9789914e","type":"text","text":"***`Device`***\n\nDispara una alarma","x":-1100,"y":-300,"width":180,"height":100}
+	],
+	"edges":[]
+}
