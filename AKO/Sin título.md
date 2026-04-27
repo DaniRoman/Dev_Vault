@@ -15,4 +15,15 @@ el cliente puede hacer un alarma recibida pulsando un boton y enviando un ACK en
 
 una vez ahi dependiendo si es un modelo nuevo o un modelo viejo se tiene que gaurdar info de quien a echo el ack y se envia a la cola que gestiona esa alarma como apagarla 
 
-legacy, 
+```js
+//Legacy
+copyData.event.ack = {
+	ackAt: new Date(),
+	ackAtGMT: DateHelper.parseUTCOffset(new Date(), device.getUTCOffset()),
+	ackBy: parseExternalUserEmail(this.context.user.username),
+	comment: comment
+}
+//Se envia a
+SendAmqp.sendEventRPC("event.ack", copyData, 50000)
+```
+
