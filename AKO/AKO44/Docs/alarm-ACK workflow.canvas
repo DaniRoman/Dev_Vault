@@ -6,7 +6,7 @@
 		{"id":"b0debc368f8fc10b","type":"text","text":">[!success] ***`Persistencia de datos`***\n\n>***Colecciones involucradas***\n\n***`Legacy - events {isAlarm:True}`***\n***`nuevos - alarm12830`***","x":-1260,"y":-120,"width":310,"height":182,"color":"4"},
 		{"id":"077f424588c4bfb8","x":-950,"y":-300,"width":280,"height":140,"type":"text","text":"***`client`***\n Hace un `ACK` manual de alarma recibida pulsando un botón en el cliente y enviando la petición a la API"},
 		{"id":"4dae9c370922ddec","type":"text","text":"***`API`***\n***`/api/alarm/:id/ack` ***\n","x":-580,"y":-280,"width":200,"height":100},
-		{"id":"7177e595c0486263","type":"text","text":"***`API`***\n- Busca en `events` por su `_id`\n- Busca en `eventacks` por el _id del  evento si existe es que ya se seteo ","x":-720,"y":-48,"width":280,"height":140}
+		{"id":"7177e595c0486263","type":"text","text":"***`API`***\n- Busca en `events` por su `_id`\n\t- De no ser una alarma sale\n- Busca en `eventacks` por el _id del  evento.\n\t- si existe es que ya se izo ese `ACK` y sale\n- Se crean datos para enviar al `rabbit` en ***`sendEventRPC(\"event.ack\", copyData, 50000)`***","x":-720,"y":-48,"width":420,"height":268}
 	],
 	"edges":[
 		{"id":"ce4123b61fc012b5","fromNode":"432326df9789914e","fromSide":"bottom","toNode":"b0debc368f8fc10b","toSide":"top"},
