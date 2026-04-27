@@ -6,16 +6,18 @@
 		{"id":"4dae9c370922ddec","type":"text","text":"***`API`***\n***`/api/alarm/:id/ack` ***\n","x":-580,"y":-280,"width":200,"height":100,"color":"5"},
 		{"id":"3b4d592cf380be08","type":"text","text":">[!example] ***`Como se que es un dispositivo nuevo/viejo`***\n\n>Dependiendo del tipo de dispositivo estará en una colección u otra\n\n","x":-1280,"y":120,"width":330,"height":160,"color":"6"},
 		{"id":"7177e595c0486263","type":"text","text":"***`API`***\n- Busca en `events` por su `_id`\n\t- De no ser una alarma sale\n- Busca en `eventacks` por el _id del  evento.\n\t- si existe es que ya se izo ese `ACK` y sale\n- Se crean datos para enviar al `rabbit` con el método ***`sendEventRPC","x":-670,"y":-108,"width":380,"height":228,"color":"5"},
-		{"id":"2eb726c12856b793","x":-750,"y":300,"width":160,"height":105,"color":"2","type":"text","text":">[!warning] ***`Topic`***\n\n***`event.ack`***"},
-		{"id":"ca2a02fe3adb488b","type":"text","text":">[!warning] ***`Topic`***\n\n***`12830.alarm.ack`***","x":-430,"y":335,"width":200,"height":105,"color":"2"}
+		{"id":"59b7937e0fea9aeb","type":"text","text":">***`events.stateController`***\n\n","x":-220,"y":-185,"width":260,"height":50,"color":"5"},
+		{"id":"0164d6a655e63044","type":"text","text":">***`events.stateController`***\n\n","x":-220,"y":-350,"width":260,"height":50,"color":"5"},
+		{"id":"ca2a02fe3adb488b","type":"text","text":">[!warning] ***`Topic`***\n\n***`12830.alarm.ack`***","x":30,"y":-64,"width":200,"height":105,"color":"2"},
+		{"id":"2eb726c12856b793","x":-290,"y":-99,"width":160,"height":105,"color":"2","type":"text","text":">[!warning] ***`Topic`***\n\n***`event.ack`***"}
 	],
 	"edges":[
 		{"id":"ce4123b61fc012b5","fromNode":"432326df9789914e","fromSide":"bottom","toNode":"b0debc368f8fc10b","toSide":"top"},
 		{"id":"648c4f6f23110674","fromNode":"432326df9789914e","fromSide":"right","toNode":"077f424588c4bfb8","toSide":"left"},
 		{"id":"ac54f65047c7a972","fromNode":"077f424588c4bfb8","fromSide":"right","toNode":"4dae9c370922ddec","toSide":"left"},
 		{"id":"aa70d3382463b7ca","fromNode":"4dae9c370922ddec","fromSide":"bottom","toNode":"7177e595c0486263","toSide":"top"},
-		{"id":"4b83d9f863bb2976","fromNode":"7177e595c0486263","fromSide":"bottom","toNode":"2eb726c12856b793","toSide":"top","label":"Dispositivo antiguo"},
-		{"id":"1894adf6a04b3e09","fromNode":"7177e595c0486263","fromSide":"bottom","toNode":"ca2a02fe3adb488b","toSide":"top","label":"12830"},
+		{"id":"4b83d9f863bb2976","fromNode":"4dae9c370922ddec","fromSide":"right","toNode":"2eb726c12856b793","toSide":"top","label":"Dispositivo antiguo"},
+		{"id":"1894adf6a04b3e09","fromNode":"4dae9c370922ddec","fromSide":"right","toNode":"ca2a02fe3adb488b","toSide":"top","label":"12830"},
 		{"id":"5dee62c2cce4b5c2","fromNode":"3b4d592cf380be08","fromSide":"left","toNode":"b0debc368f8fc10b","toSide":"left"}
 	]
 }
