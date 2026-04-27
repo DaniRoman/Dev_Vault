@@ -13,7 +13,8 @@
 		{"id":"3ec5dd8a10f17ea5","type":"text","text":">***`event.notifier`***\n\n","x":600,"y":-385,"width":240,"height":50,"color":"5"},
 		{"id":"7299a098eaf0a64e","type":"text","text":"***`events.stateController`***\n- Comprueba si en el `Device` existe la alarma que llego al micro como mensaje en el `topic` esta no esta seteáda como `null`\n- Asigna la información de (`ack`) a la alarma específica del dispositivo \n\n```json\n\"alarms\": {\n  \"alarm_door_open\": {\n    \"code\": \"alarm_door_open\",\n    \"priority\": \"high\",\n    \"startedAt\": \"2026-04-27T10:00:00.000Z\",\n    //La info que me llego del TOPIC\n    \"ack\": {\n      \"ackAt\": \"2026-04-27T10:05:00.000Z\",\n      \"ackAtGMT\": \"2026-04-27T08:05:00.000Z\",\n      \"ackBy\": \"usuario@email.com\",\n      \"comment\": \"Revisado\"\n```\n\n- Recalcula `device.noAckAlarmCount`: cuenta cuántas alarmas activas (`!== null`) tienen prioridad válida (`!== \"unassigned\"`) y todavía no tienen `ack`; si no hay `lastStatus.alarms`, pone `0`","x":-195,"y":-1020,"width":750,"height":520,"color":"5"},
 		{"id":"46f0cd66eb20d014","x":-864,"y":558,"width":464,"height":202,"type":"text","text":"`Device`: Para probar: DeviceDefinition "},
-		{"id":"17f8eba068f4969c","type":"text","text":">***`event.notifier.12830`***\n\n","x":140,"y":-160,"width":260,"height":50,"color":"5"}
+		{"id":"17f8eba068f4969c","type":"text","text":">***`event.notifier.12830`***\n\n","x":140,"y":-160,"width":260,"height":50,"color":"5"},
+		{"id":"ab3ad130f7712de9","x":-2020,"y":-197,"width":464,"height":155,"type":"text","text":">[!tip] ***`events-12830  MICRO=updater npm star`***\nmicro para mandar una alarma con los 12830\n"}
 	],
 	"edges":[
 		{"id":"ce4123b61fc012b5","fromNode":"432326df9789914e","fromSide":"bottom","toNode":"b0debc368f8fc10b","toSide":"top"},
