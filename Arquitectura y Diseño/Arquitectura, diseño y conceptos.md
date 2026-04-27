@@ -1,4 +1,7 @@
+### Manejo de errores
+![[Pasted image 20260427100152.png]]
 
+![[Pasted image 20260427100246.png]]
 ## Manejo HTTP de la ruta/listado con cache condicional
 
 En el navegador antes de devolverte el contenido otra vez tras una llamada a alguna api, el servidor y el navegador negocian si **la respuesta ha cambiado o no**.

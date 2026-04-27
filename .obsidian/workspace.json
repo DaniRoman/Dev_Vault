@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - PLMN.md",
+                "file": "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - PLMN"
+              "title": "Arquitectura y diseño - API Key"
             }
           }
         ],
@@ -211,11 +211,16 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e998f953db48c1c4",
+  "active": "e901df4c9eca92c4",
   "lastOpenFiles": [
+    "Arquitectura y Diseño/Arquitectura, diseño y conceptos.md",
+    "Arquitectura y Diseño/attachments/Pasted image 20260427100246.png",
+    "Arquitectura y Diseño/attachments/Pasted image 20260427100152.png",
+    "Arquitectura y Diseño/attachments",
+    "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
+    "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
-    "AKO/AKO44/Docs/AKO 44 - PLMN.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
@@ -229,7 +234,6 @@
     "Db/Mongo/Mongo - Main Site.md",
     "AKO/AKO44/Docs/Fota.md",
     "Db/Db Main Page.md",
-    "Arquitectura y Diseño/Arquitectura, diseño y conceptos.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "Git/Git Main Page.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
@@ -242,7 +246,6 @@
     "AKO/AKO44/attachments/Pasted image 20260409132220.png",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
-    "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
     "AKO44 - Nuevo Flujo para actualización firmware.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260401090339.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260401090335.png",
@@ -260,13 +263,10 @@
     "JavaScript - Acceso seguro a propiedades ",
     "AKO/AKO44/Docs/AKO 44 - Driver Translator Perte WorkFlow.canvas",
     "AKO/Landing-Page/attachments/Pasted image 20260318153738.png",
-    "AKO/Landing-Page/attachments/Pasted image 20260318153610.png",
     "AKO/Landing-Page/attachments",
     "AKO/Landing-Page/Sin nombre",
-    "AKO/AKO44/attachments/Pasted image 20260317154528.png",
     "attachments",
     "Express",
-    "AKO - feature",
-    "Rabbit/attachments"
+    "AKO - feature"
   ]
 }
