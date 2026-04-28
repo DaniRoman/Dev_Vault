@@ -24,7 +24,11 @@
 		{"id":"7ade3bb0a78cbedf","type":"text","text":"setea `device.lastStatus.alarms` como un **mapa de estado en tiempo real** embebido en el device:\n\n```json\ndevice.lastStatus.alarms = {\n  \"alarma_temp\":    { priority: \"high\", date: ..., ack: false },  ← activa\n  \"alarma_presion\": null,                                          ← inactiva\n  \"alarma_puerta\":  { priority: \"low\",  date: ..., ack: true  },  ← activa y ACK\n}\n```\n\nun snapshot del estado actual directamente en el documento del device. Fácil de consultar, pero acoplado al device.","x":-1510,"y":-760,"width":600,"height":380},
 		{"id":"275f44943539dce0","x":-1310,"y":-1140,"width":250,"height":60,"type":"text","text":"persiste en la colección `alarm12830`"},
 		{"id":"7177e595c0486263","type":"text","text":"***`API`***\n- Busca en `events/alarms` por su `_id`\n\t- De no ser una alarma sale\n- Dependiendo en que colección encontro el evento setea un `topic` y mas tarde cuando persista los datos se tendra en cuenta este.\n- Busca en `eventacks` creados con anterioridad por el _id del  evento.\n\t- si existe es que ya se izo ese `ACK` y sale\n- Se crean datos para enviar al `rabbit` con el método ***`sendEventRPC`*** dependiendo el topic manda a un micro u otro\n- Se crea un documento en la colección de ***`EventAcks`*** diferenciando que tipo de ***`event/alarm`*** o ***`alarm12830`***","x":-711,"y":-60,"width":462,"height":420,"color":"5"},
-		{"id":"f914463086a7a829","type":"text","text":">[!warning] ***`Ojo`***\n\nEl micro que escucha este micro tiene que estar escuchando de no ser así no se persistirá el dato en la colección de ***`eventsAcks`***\n","x":-70,"y":280,"width":310,"height":200,"color":"2"}
+		{"id":"f914463086a7a829","type":"text","text":">[!warning] ***`Ojo`***\n\nEl micro que escucha este micro tiene que estar escuchando de no ser así no se persistirá el dato en la colección de ***`eventsAcks`***\n","x":-70,"y":280,"width":310,"height":200,"color":"2"},
+		{"id":"97371ef0fdd1e4f3","x":-1340,"y":838,"width":240,"height":50,"type":"text","text":"serial `22201146890012`"},
+		{"id":"3aa002dfbe1fe5f2","type":"text","text":"conexion","x":-1340,"y":935,"width":240,"height":50},
+		{"id":"b68ce53578fabc76","type":"text","text":"conexion","x":-960,"y":935,"width":240,"height":50},
+		{"id":"58527f0106bff2f3","type":"text","text":"client coap","x":-960,"y":838,"width":240,"height":50}
 	],
 	"edges":[
 		{"id":"ce4123b61fc012b5","fromNode":"432326df9789914e","fromSide":"bottom","toNode":"b0debc368f8fc10b","toSide":"top"},
