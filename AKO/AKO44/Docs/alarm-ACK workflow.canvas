@@ -15,7 +15,9 @@
 		{"id":"17f8eba068f4969c","type":"text","text":">***`event.notifier.12830`***\n\n","x":140,"y":-160,"width":260,"height":50,"color":"5"},
 		{"id":"ab3ad130f7712de9","x":-2020,"y":-197,"width":464,"height":155,"type":"text","text":">[!tip] ***`events-12830  MICRO=updater npm star`***\nmicro para mandar una alarma con los 12830\n"},
 		{"id":"3021a76e201b90e9","x":-1430,"y":511,"width":250,"height":60,"type":"text","text":"Alarma Device12830"},
-		{"id":"7c51b1ed45e8192e","type":"text","text":"events-12830.updater en handlerEvent","x":-1060,"y":511,"width":250,"height":60}
+		{"id":"7c51b1ed45e8192e","type":"text","text":"events-12830.updater en handlerEvent","x":-1060,"y":511,"width":250,"height":60},
+		{"id":"84bb320d27c293b1","type":"text","text":"***`evento/alarma`*** en ***`Device`***","x":-1430,"y":640,"width":250,"height":60},
+		{"id":"266ba586326406d3","type":"text","text":"***`event`*** ***`stateController`***","x":-1060,"y":640,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"ce4123b61fc012b5","fromNode":"432326df9789914e","fromSide":"bottom","toNode":"b0debc368f8fc10b","toSide":"top"},
