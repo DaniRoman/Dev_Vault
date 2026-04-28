@@ -16,7 +16,7 @@
 		{"id":"ab3ad130f7712de9","x":-2020,"y":-197,"width":464,"height":155,"type":"text","text":">[!tip] ***`events-12830  MICRO=updater npm star`***\nmicro para mandar una alarma con los 12830\n"},
 		{"id":"3333b57c926038ad","type":"text","text":">[!warning] ***`Topic`***\n\n***`12830.alarm.ack.success\"`***","x":480,"y":-173,"width":320,"height":104,"color":"2"},
 		{"id":"31ec9d58f59d17ea","type":"text","text":">***`event.notifier.12830. notifier`***\n\n","x":900,"y":-146,"width":320,"height":50,"color":"5"},
-		{"id":"bea02aaa65495263","x":42,"y":0,"width":456,"height":113,"type":"text","text":"- Busca en `alarm12830` por  `_id`\n- Setea `ack` directamente en `alarm12830`\n- Cuenta documentos activos en `alarm12830` sin ack"},
+		{"id":"bea02aaa65495263","x":42,"y":0,"width":456,"height":113,"type":"text","text":"- Busca en `alarm12830` por  `_id`\n- Setea info de`ack` directamente en `alarm12830`\n- Cuenta documentos activos en `alarm12830` sin ack"},
 		{"id":"3021a76e201b90e9","x":-1880,"y":-1049,"width":250,"height":60,"type":"text","text":"Alarma Device12830"},
 		{"id":"7c51b1ed45e8192e","type":"text","text":"events-12830.updater en handlerEvent","x":-1510,"y":-1049,"width":250,"height":60},
 		{"id":"84bb320d27c293b1","type":"text","text":"***`evento/alarma`*** en ***`Device`***","x":-1880,"y":-920,"width":250,"height":60},
@@ -24,7 +24,7 @@
 		{"id":"7ade3bb0a78cbedf","type":"text","text":"setea `device.lastStatus.alarms` como un **mapa de estado en tiempo real** embebido en el device:\n\n```json\ndevice.lastStatus.alarms = {\n  \"alarma_temp\":    { priority: \"high\", date: ..., ack: false },  ← activa\n  \"alarma_presion\": null,                                          ← inactiva\n  \"alarma_puerta\":  { priority: \"low\",  date: ..., ack: true  },  ← activa y ACK\n}\n```\n\nun snapshot del estado actual directamente en el documento del device. Fácil de consultar, pero acoplado al device.","x":-1510,"y":-760,"width":600,"height":380},
 		{"id":"275f44943539dce0","x":-1310,"y":-1140,"width":250,"height":60,"type":"text","text":"persiste en la colección `alarm12830`"},
 		{"id":"7177e595c0486263","type":"text","text":"***`API`***\n- Busca en `events/alarms` por su `_id`\n\t- De no ser una alarma sale\n- Dependiendo en que colección encontro el evento setea un `topic` y mas tarde cuando persista los datos se tendra en cuenta este.\n- Busca en `eventacks` creados con anterioridad por el _id del  evento.\n\t- si existe es que ya se izo ese `ACK` y sale\n- Se crean datos para enviar al `rabbit` con el método ***`sendEventRPC`*** dependiendo el topic manda a un micro u otro\n- Se crea un documento en la colección de ***`EventAcks`*** diferenciando que tipo de ***`event/alarm`*** o ***`alarm12830`***","x":-711,"y":-60,"width":462,"height":420,"color":"5"},
-		{"id":"f914463086a7a829","type":"text","text":">[!warning] ***`Ojo`***\n\nEl micro que escucha este micro tiene que estar escuchando de no ser así no se persistira el dato en la coleccción de ***`eventsAcks`***\n","x":-70,"y":280,"width":310,"height":200,"color":"2"}
+		{"id":"f914463086a7a829","type":"text","text":">[!warning] ***`Ojo`***\n\nEl micro que escucha este micro tiene que estar escuchando de no ser así no se persistirá el dato en la colección de ***`eventsAcks`***\n","x":-70,"y":280,"width":310,"height":200,"color":"2"}
 	],
 	"edges":[
 		{"id":"ce4123b61fc012b5","fromNode":"432326df9789914e","fromSide":"bottom","toNode":"b0debc368f8fc10b","toSide":"top"},
