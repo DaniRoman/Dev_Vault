@@ -17,7 +17,8 @@
 		{"id":"3021a76e201b90e9","x":-1430,"y":511,"width":250,"height":60,"type":"text","text":"Alarma Device12830"},
 		{"id":"7c51b1ed45e8192e","type":"text","text":"events-12830.updater en handlerEvent","x":-1060,"y":511,"width":250,"height":60},
 		{"id":"84bb320d27c293b1","type":"text","text":"***`evento/alarma`*** en ***`Device`***","x":-1430,"y":640,"width":250,"height":60},
-		{"id":"266ba586326406d3","type":"text","text":"***`event`*** ***`stateController`***","x":-1060,"y":640,"width":250,"height":60}
+		{"id":"266ba586326406d3","type":"text","text":"***`event`*** ***`stateController`***","x":-1060,"y":640,"width":250,"height":60},
+		{"id":"7ade3bb0a78cbedf","type":"text","text":"setea `device.lastStatus.alarms` como un **mapa de estado en tiempo real** embebido en el device:\n\n```json\ndevice.lastStatus.alarms = {\n  \"alarma_temp\":    { priority: \"high\", date: ..., ack: false },  ← activa\n  \"alarma_presion\": null,                                          ← inactiva\n  \"alarma_puerta\":  { priority: \"low\",  date: ..., ack: true  },  ← activa y ACK\n}\n```","x":-1060,"y":800,"width":400,"height":80}
 	],
 	"edges":[
 		{"id":"ce4123b61fc012b5","fromNode":"432326df9789914e","fromSide":"bottom","toNode":"b0debc368f8fc10b","toSide":"top"},
@@ -32,6 +33,7 @@
 		{"id":"6837d8630df39808","fromNode":"0164d6a655e63044","fromSide":"right","toNode":"66fd9f0097471b06","toSide":"left"},
 		{"id":"43702c64a2938591","fromNode":"66fd9f0097471b06","fromSide":"right","toNode":"3ec5dd8a10f17ea5","toSide":"left"},
 		{"id":"cd84a9421e9e3ce9","fromNode":"2eb726c12856b793","fromSide":"right","toNode":"17f8eba068f4969c","toSide":"left"},
-		{"id":"7066980ad78961e9","fromNode":"17f8eba068f4969c","fromSide":"top","toNode":"7299a098eaf0a64e","toSide":"bottom"}
+		{"id":"7066980ad78961e9","fromNode":"17f8eba068f4969c","fromSide":"top","toNode":"7299a098eaf0a64e","toSide":"bottom"},
+		{"id":"b8778485ed24d329","fromNode":"84bb320d27c293b1","fromSide":"right","toNode":"266ba586326406d3","toSide":"left"}
 	]
 }
