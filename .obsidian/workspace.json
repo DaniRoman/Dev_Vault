@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
+                "file": "AKO/AKO44/Docs/Ako 44 - errcommTest - workflow.canvas",
                 "viewState": {
-                  "x": 703.1001247156612,
-                  "y": 253.84628716129797,
-                  "zoom": 0.17473720663753145
+                  "x": 545.0387083930308,
+                  "y": 86.59493497833199,
+                  "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - ErrorComm workFlow"
+              "title": "Ako 44 - errcommTest - workflow"
             }
           },
           {
@@ -218,9 +218,10 @@
   },
   "active": "760a972d7d3f167b",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
+    "AKO/AKO44/Docs/Ako 44 - errcommTest - workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
     "AKO/AKO44/Sin título.md",
     "AKO/AKO44/Activity.md",
