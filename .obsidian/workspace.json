@@ -15,7 +15,7 @@
               "state": {
                 "file": "AKO/AKO44/Docs/Ako 44 - errcommTest - workflow.canvas",
                 "viewState": {
-                  "x": 32.60044610949001,
+                  "x": 7.131347586451542,
                   "y": -91.68875468293986,
                   "zoom": 0
                 }
@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5024719238281
+    "width": 253.50247192382812
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -216,7 +216,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "760a972d7d3f167b",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/Docs/Ako 44 - errcommTest - workflow.canvas",
