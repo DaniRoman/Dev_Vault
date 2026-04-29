@@ -11,14 +11,17 @@
             "id": "760a972d7d3f167b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
+                "viewState": {
+                  "x": 470,
+                  "y": 150,
+                  "zoom": -1.4383163922497268
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - ErrorComm workFlow"
             }
           },
           {
@@ -38,8 +41,7 @@
               "title": "AKO 44 - ErrorComm workFlow"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,10 +216,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e901df4c9eca92c4",
+  "active": "760a972d7d3f167b",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
     "AKO/AKO44/Sin título.md",
     "AKO/AKO44/Activity.md",
@@ -240,7 +243,6 @@
     "Db/Mongo/Mongo - Main Site.md",
     "AKO/AKO44/Docs/Fota.md",
     "Db/Db Main Page.md",
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "Git/Git Main Page.md",
     "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "AKO/Landing-Page/Landing-Page Main Site.md",
