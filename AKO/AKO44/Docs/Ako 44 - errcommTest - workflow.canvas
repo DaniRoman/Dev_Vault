@@ -12,7 +12,8 @@
 		{"id":"edd2891862183b9b","type":"text","text":"***`STEP 4: Verify TXE Redis key exists`*** \n","x":2640,"y":-4420,"width":250,"height":60},
 		{"id":"0bdf8b611c75b6d9","type":"text","text":">[!example] Acceder a las claves de redis\n\n```js\nthis.redis.ttl(key) // obtiene el tiempo de vida de la clave\nthis.redis.get(key) // obtiene el valor guardado en la clave\n```","x":2113,"y":-4722,"width":430,"height":200,"color":"6"},
 		{"id":"0f22f0ee8458b9f3","type":"text","text":"***`STEP 5: Verify L2 Redis key exists`***","x":2980,"y":-4420,"width":250,"height":60},
-		{"id":"cfe859a8a0ab82c5","x":3320,"y":-4420,"width":260,"height":60,"type":"text","text":"***`STEP 5: STEP 6: Verify device is online`***"}
+		{"id":"cfe859a8a0ab82c5","type":"text","text":"***`STEP 6: STEP 6: Verify device is online`***","x":3320,"y":-4420,"width":260,"height":60},
+		{"id":"e457b42bf4316b1c","type":"text","text":">[!example] Acceder a las claves de redis\n\nvoy guardando todos los estados en una lista para luego poderlo mostrar en formato tabla \n","x":2684,"y":-4315,"width":430,"height":200,"color":"6"}
 	],
 	"edges":[
 		{"id":"1020493b25045239","fromNode":"aae50a40962b526e","fromSide":"top","toNode":"a06941e18eeef78f","toSide":"bottom"},
@@ -24,8 +25,8 @@
 		{"id":"b58d731851a9d029","fromNode":"7a7be585b0521171","fromSide":"right","toNode":"edd2891862183b9b","toSide":"left"},
 		{"id":"e702e5ca4cba8841","fromNode":"4ee8dee0f4981423","fromSide":"top","toNode":"8b12514c589ac3f6","toSide":"bottom"},
 		{"id":"7304563657bddec9","fromNode":"edd2891862183b9b","fromSide":"right","toNode":"0f22f0ee8458b9f3","toSide":"left"},
-		{"id":"f8ab4c318857ecbd","fromNode":"7b5a38dcfa318bb9","fromSide":"left","toNode":"8b12514c589ac3f6","toSide":"bottom"},
 		{"id":"773e6e62618d8489","fromNode":"edd2891862183b9b","fromSide":"top","toNode":"0bdf8b611c75b6d9","toSide":"right"},
-		{"id":"8cd2327436ae0c72","fromNode":"0f22f0ee8458b9f3","fromSide":"right","toNode":"cfe859a8a0ab82c5","toSide":"left"}
+		{"id":"8cd2327436ae0c72","fromNode":"0f22f0ee8458b9f3","fromSide":"right","toNode":"cfe859a8a0ab82c5","toSide":"left"},
+		{"id":"f8ab4c318857ecbd","fromNode":"7b5a38dcfa318bb9","fromSide":"left","toNode":"8b12514c589ac3f6","toSide":"bottom"}
 	]
 }
