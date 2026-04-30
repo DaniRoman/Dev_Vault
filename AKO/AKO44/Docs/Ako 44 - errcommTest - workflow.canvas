@@ -8,16 +8,20 @@
 		{"id":"7a7be585b0521171","type":"text","text":"***`Step 3 - Trigger device communication via CoAP`*** ","x":2240,"y":-4420,"width":275,"height":60},
 		{"id":"8b12514c589ac3f6","type":"text","text":"- Elimina las ***`Keys`*** existentes en Redis\n***`triggerCoapCommunication`***\n- Setea la configuración para la comunicación `Device - Coap`\n- Escojo en la variable de entorno que tipo de mensaje enviar. \n- Setea ***`SpawSync`*** para ejecutar comandos en segundo plano\n","x":2260,"y":-4239,"width":380,"height":211},
 		{"id":"4ee8dee0f4981423","type":"text","text":">[!example] TIp de código\n\n***`child_process`*** es un módulo nativo de Node.js para ejecutar comandos del sistema desde JavaScript.  \n***`spawnSync`*** lanza esos comandos de forma síncrona, bloqueando el programa hasta que terminan.","x":2260,"y":-3940,"width":430,"height":200,"color":"6"},
-		{"id":"edd2891862183b9b","x":2690,"y":-4420,"width":250,"height":60,"type":"text","text":"      await this.waitWithProgress(\"Waiting for translator pipeline\", 4_000, 1_000);\n"}
+		{"id":"7b5a38dcfa318bb9","type":"text","text":">[!example] Acceder a las claves de redis\n\nCon los metodos internos de redis podemos acceder a a sus key con ***`redis.ttl(nombre_de_la_clave)`***\n***`redis.del(nombre_de_la_clave)`***","x":2780,"y":-4133,"width":430,"height":200,"color":"6"},
+		{"id":"edd2891862183b9b","type":"text","text":"***`STEP 4: Verify TXE Redis key exists`*** \n","x":2640,"y":-4420,"width":250,"height":60},
+		{"id":"0f22f0ee8458b9f3","x":3020,"y":-4420,"width":250,"height":60,"type":"text","text":"STEP 4: Verify TXE Redis key exists"}
 	],
 	"edges":[
-		{"id":"e702e5ca4cba8841","fromNode":"4ee8dee0f4981423","fromSide":"top","toNode":"8b12514c589ac3f6","toSide":"bottom"},
 		{"id":"1020493b25045239","fromNode":"aae50a40962b526e","fromSide":"top","toNode":"a06941e18eeef78f","toSide":"bottom"},
 		{"id":"42ccb3a68511c4c9","fromNode":"dcd04cf80a93aaff","fromSide":"top","toNode":"aae50a40962b526e","toSide":"bottom"},
 		{"id":"7d50c141941905a8","fromNode":"a06941e18eeef78f","fromSide":"right","toNode":"5f049ac128faa940","toSide":"left"},
 		{"id":"be1af1c70c923bf6","fromNode":"85d8b7ad58fbe437","fromSide":"top","toNode":"5f049ac128faa940","toSide":"bottom"},
 		{"id":"f1874f5287c0f085","fromNode":"5f049ac128faa940","fromSide":"right","toNode":"7a7be585b0521171","toSide":"left"},
 		{"id":"e2f6a42aee05c60b","fromNode":"8b12514c589ac3f6","fromSide":"top","toNode":"7a7be585b0521171","toSide":"bottom"},
-		{"id":"b58d731851a9d029","fromNode":"7a7be585b0521171","fromSide":"right","toNode":"edd2891862183b9b","toSide":"left"}
+		{"id":"b58d731851a9d029","fromNode":"7a7be585b0521171","fromSide":"right","toNode":"edd2891862183b9b","toSide":"left"},
+		{"id":"e702e5ca4cba8841","fromNode":"4ee8dee0f4981423","fromSide":"top","toNode":"8b12514c589ac3f6","toSide":"bottom"},
+		{"id":"f8ab4c318857ecbd","fromNode":"7b5a38dcfa318bb9","fromSide":"left","toNode":"8b12514c589ac3f6","toSide":"bottom"},
+		{"id":"7304563657bddec9","fromNode":"edd2891862183b9b","fromSide":"right","toNode":"0f22f0ee8458b9f3","toSide":"left"}
 	]
 }
