@@ -1,4 +1,6 @@
 {
-	"nodes":[],
+	"nodes":[
+		{"id":"8b12514c589ac3f6","x":963,"y":-4263,"width":457,"height":263,"type":"text","text":"***`triggerCoapCommunication`***\n- "}
+	],
 	"edges":[]
 }

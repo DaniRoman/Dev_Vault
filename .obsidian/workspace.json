@@ -8,23 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "760a972d7d3f167b",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "AKO/AKO44/Docs/Ako 44 - errcommTest - workflow.canvas",
-                "viewState": {
-                  "x": 46.86314128239211,
-                  "y": -2763.9065717201706,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Ako 44 - errcommTest - workflow"
-            }
-          },
-          {
             "id": "e901df4c9eca92c4",
             "type": "leaf",
             "state": {
@@ -32,8 +15,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
                 "viewState": {
-                  "x": -2115.910966181208,
-                  "y": 463.2752917115249,
+                  "x": -767.55868493471,
+                  "y": 95.4439187806816,
                   "zoom": -0.09520148673796819
                 }
               },
@@ -98,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -215,6 +199,48 @@
       "obsidian-git:Open Git source control": false,
       "mermaid-tools:Open Mermaid Toolbar": false
     }
+  },
+  "floating": {
+    "id": "a8443a4f34fb76c8",
+    "type": "floating",
+    "children": [
+      {
+        "id": "68ebf5d81092bd52",
+        "type": "window",
+        "children": [
+          {
+            "id": "94697b80bfac1918",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "760a972d7d3f167b",
+                "type": "leaf",
+                "state": {
+                  "type": "canvas",
+                  "state": {
+                    "file": "AKO/AKO44/Docs/Ako 44 - errcommTest - workflow.canvas",
+                    "viewState": {
+                      "x": 1584.177928133017,
+                      "y": -4038.3802618130253,
+                      "zoom": 0
+                    }
+                  },
+                  "icon": "lucide-layout-dashboard",
+                  "title": "Ako 44 - errcommTest - workflow"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 0,
+        "y": 33,
+        "width": 1728,
+        "height": 992,
+        "maximize": true,
+        "zoom": -0.5
+      }
+    ]
   },
   "active": "760a972d7d3f167b",
   "lastOpenFiles": [
