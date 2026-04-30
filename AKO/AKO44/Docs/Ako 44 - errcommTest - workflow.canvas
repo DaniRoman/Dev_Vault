@@ -5,12 +5,15 @@
 		{"id":"4ee8dee0f4981423","type":"text","text":">[!example] TIp de código\n\n***`child_process`*** es un módulo nativo de Node.js para ejecutar comandos del sistema desde JavaScript.  \n***`spawnSync`*** lanza esos comandos de forma síncrona, bloqueando el programa hasta que terminan.","x":970,"y":-4020,"width":430,"height":200,"color":"6"},
 		{"id":"8b12514c589ac3f6","type":"text","text":"***`triggerCoapCommunication`***\n- Setea la configuración para la comunicación `Device - Coap`\n- Setea ***`SpawSync`*** para ejecutar comandos en segundo plano\n","x":1003,"y":-4280,"width":377,"height":163},
 		{"id":"aae50a40962b526e","type":"text","text":"***`triggerCoapCommunication`***\n- Conexión a Redis + comprobación `PING - PONG`.\n- Setea ***`SpawSync`*** para ejecutar comandos en segundo plano\n","x":1435,"y":-4280,"width":377,"height":163},
-		{"id":"dcd04cf80a93aaff","type":"text","text":">[!example] TIp de código\n\n***`addResult`*** Guarda en una lista estados sobre el paso\n- El paso, la descripción, ¿ok?, detalles\n***`Redis.ping():`*** Devuelve `PONG` desde redis para como ok para su conexión luego con la comparación ===","x":1413,"y":-4028,"width":430,"height":200,"color":"6"}
+		{"id":"dcd04cf80a93aaff","type":"text","text":">[!example] TIp de código\n\n***`addResult`*** Guarda en una lista estados sobre el paso\n- El paso, la descripción, ¿ok?, detalles\n***`Redis.ping():`*** Devuelve `PONG` desde redis para como ok para su conexión.","x":1413,"y":-4028,"width":427,"height":208,"color":"6"},
+		{"id":"5f049ac128faa940","type":"text","text":"***`Step 2 - Api conecction`*** ","x":1840,"y":-4420,"width":265,"height":60},
+		{"id":"85d8b7ad58fbe437","type":"text","text":"***`triggerCoapCommunication`***\n- Conexión a Redis + comprobación `PING - PONG`.\n- Setea ***`SpawSync`*** para ejecutar comandos en segundo plano\n","x":1250,"y":-4268,"width":377,"height":163}
 	],
 	"edges":[
-		{"id":"59d4ef2f6936da53","fromNode":"ab5528d2b46a3aab","fromSide":"right","toNode":"a06941e18eeef78f","toSide":"left"},
 		{"id":"401f91e53abf5e56","fromNode":"8b12514c589ac3f6","fromSide":"top","toNode":"ab5528d2b46a3aab","toSide":"bottom"},
-		{"id":"1020493b25045239","fromNode":"aae50a40962b526e","fromSide":"top","toNode":"a06941e18eeef78f","toSide":"bottom"},
-		{"id":"e702e5ca4cba8841","fromNode":"4ee8dee0f4981423","fromSide":"top","toNode":"8b12514c589ac3f6","toSide":"bottom"}
+		{"id":"e702e5ca4cba8841","fromNode":"4ee8dee0f4981423","fromSide":"top","toNode":"8b12514c589ac3f6","toSide":"bottom"},
+		{"id":"59d4ef2f6936da53","fromNode":"ab5528d2b46a3aab","fromSide":"right","toNode":"a06941e18eeef78f","toSide":"left"},
+		{"id":"7d50c141941905a8","fromNode":"a06941e18eeef78f","fromSide":"right","toNode":"5f049ac128faa940","toSide":"left"},
+		{"id":"1020493b25045239","fromNode":"aae50a40962b526e","fromSide":"top","toNode":"a06941e18eeef78f","toSide":"bottom"}
 	]
 }
