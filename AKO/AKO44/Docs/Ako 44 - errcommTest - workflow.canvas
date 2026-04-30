@@ -7,7 +7,7 @@
 		{"id":"85d8b7ad58fbe437","type":"text","text":"- Llamada a la ***`API`*** con ***`x-authtoken como header`***\n","x":1833,"y":-4280,"width":280,"height":82},
 		{"id":"7a7be585b0521171","type":"text","text":"***`Step 3 - Trigger device communication via CoAP`*** ","x":2240,"y":-4420,"width":275,"height":60},
 		{"id":"4ee8dee0f4981423","type":"text","text":">[!example] TIp de código\n\n***`child_process`*** es un módulo nativo de Node.js para ejecutar comandos del sistema desde JavaScript.  \n***`spawnSync`*** lanza esos comandos de forma síncrona, bloqueando el programa hasta que terminan.","x":2300,"y":-3979,"width":430,"height":200,"color":"6"},
-		{"id":"8b12514c589ac3f6","type":"text","text":"- Elimina las ***`Keys`*** existentes en Redis\n***`triggerCoapCommunication`***\n- Setea la configuración para la comunicación `Device - Coap`\n- Setea ***`SpawSync`*** para ejecutar comandos en segundo plano\n","x":2260,"y":-4239,"width":377,"height":163}
+		{"id":"8b12514c589ac3f6","type":"text","text":"- Elimina las ***`Keys`*** existentes en Redis\n***`triggerCoapCommunication`***\n- Setea la configuración para la comunicación `Device - Coap`\n- Escojo en la variable de entorno que tipo de mensaje enviar. \n- Setea ***`SpawSync`*** para ejecutar comandos en segundo plano\n","x":2260,"y":-4239,"width":377,"height":163}
 	],
 	"edges":[
 		{"id":"e702e5ca4cba8841","fromNode":"4ee8dee0f4981423","fromSide":"top","toNode":"8b12514c589ac3f6","toSide":"bottom"},
