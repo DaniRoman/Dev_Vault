@@ -220,8 +220,8 @@
                   "state": {
                     "file": "AKO/AKO44/Docs/Ako 44 - errcommTest - workflow.canvas",
                     "viewState": {
-                      "x": 2571.287251826385,
-                      "y": -4363.248414621403,
+                      "x": 2899.080082437378,
+                      "y": -4214.743767728091,
                       "zoom": 0.021908901955302207
                     }
                   },
@@ -237,7 +237,7 @@
         "y": 33,
         "width": 1728,
         "height": 989,
-        "maximize": false,
+        "maximize": true,
         "zoom": -0.5
       }
     ]
