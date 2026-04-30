@@ -5,7 +5,7 @@
 		{"id":"4ee8dee0f4981423","type":"text","text":">[!example] TIp de código\n\n***`child_process`*** es un módulo nativo de Node.js para ejecutar comandos del sistema desde JavaScript.  \n***`spawnSync`*** lanza esos comandos de forma síncrona, bloqueando el programa hasta que terminan.","x":970,"y":-4020,"width":430,"height":200,"color":"6"},
 		{"id":"8b12514c589ac3f6","type":"text","text":"***`triggerCoapCommunication`***\n- Setea la configuración para la comunicación `Device - Coap`\n- Setea ***`SpawSync`*** para ejecutar comandos en segundo plano\n","x":1003,"y":-4280,"width":377,"height":163},
 		{"id":"aae50a40962b526e","type":"text","text":"***`triggerCoapCommunication`***\n- Conexión a Redis + comprobación `PING - PONG`.\n- Setea ***`SpawSync`*** para ejecutar comandos en segundo plano\n","x":1435,"y":-4280,"width":377,"height":163},
-		{"id":"dcd04cf80a93aaff","type":"text","text":">[!example] TIp de código\n\n***`addResult`*** Guarda en una lista estados sobre el paso\n- El paso, la descripción, ¿ok?, detalles","x":1413,"y":-4028,"width":430,"height":200,"color":"6"}
+		{"id":"dcd04cf80a93aaff","type":"text","text":">[!example] TIp de código\n\n***`addResult`*** Guarda en una lista estados sobre el paso\n- El paso, la descripción, ¿ok?, detalles\n***`Redis.ping():`*** Devuelve `PONG` desde redis para como ok para su conexión luego con la comparación ===","x":1413,"y":-4028,"width":430,"height":200,"color":"6"}
 	],
 	"edges":[
 		{"id":"59d4ef2f6936da53","fromNode":"ab5528d2b46a3aab","fromSide":"right","toNode":"a06941e18eeef78f","toSide":"left"},
