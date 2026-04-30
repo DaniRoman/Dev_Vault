@@ -13,7 +13,9 @@
 		{"id":"0bdf8b611c75b6d9","type":"text","text":">[!example] Acceder a las claves de redis\n\n```js\nthis.redis.ttl(key) // obtiene el tiempo de vida de la clave\nthis.redis.get(key) // obtiene el valor guardado en la clave\n```","x":2113,"y":-4722,"width":430,"height":200,"color":"6"},
 		{"id":"0f22f0ee8458b9f3","type":"text","text":"***`STEP 5: Verify L2 Redis key exists`***","x":2980,"y":-4420,"width":250,"height":60},
 		{"id":"cfe859a8a0ab82c5","type":"text","text":"***`STEP 6: STEP 6: Verify device is online`***","x":3320,"y":-4420,"width":260,"height":60},
-		{"id":"e457b42bf4316b1c","type":"text","text":">[!example] Acceder a las claves de redis\n\n***`recordTransition`***\nvoy guardando todos los estados por los que pasara el device en una lista para luego poderlo mostrar en formato tabla el resultado\n","x":3320,"y":-4722,"width":430,"height":200,"color":"6"}
+		{"id":"e457b42bf4316b1c","type":"text","text":">[!example] Acceder a las claves de redis\n\n***`recordTransition`***\nvoy guardando todos los estados por los que pasara el device en una lista para luego poderlo mostrar en formato tabla el resultado\n","x":3320,"y":-4722,"width":430,"height":200,"color":"6"},
+		{"id":"ff17f786eedb7454","type":"text","text":"***`Set Up`***","x":3700,"y":-4420,"width":100,"height":60},
+		{"id":"82cbebbf1b7de8ae","type":"text","text":">[!example] Acceder a las claves de redis\n\nSeteamos las keys existentes de redis para que expiren antes de lo que están por defecto en el micro ","x":3580,"y":-4223,"width":330,"height":195,"color":"6"}
 	],
 	"edges":[
 		{"id":"1020493b25045239","fromNode":"aae50a40962b526e","fromSide":"top","toNode":"a06941e18eeef78f","toSide":"bottom"},
@@ -28,6 +30,7 @@
 		{"id":"773e6e62618d8489","fromNode":"edd2891862183b9b","fromSide":"top","toNode":"0bdf8b611c75b6d9","toSide":"right"},
 		{"id":"8cd2327436ae0c72","fromNode":"0f22f0ee8458b9f3","fromSide":"right","toNode":"cfe859a8a0ab82c5","toSide":"left"},
 		{"id":"f8ab4c318857ecbd","fromNode":"7b5a38dcfa318bb9","fromSide":"left","toNode":"8b12514c589ac3f6","toSide":"bottom"},
-		{"id":"25c7d78e8a81f20a","fromNode":"cfe859a8a0ab82c5","fromSide":"top","toNode":"e457b42bf4316b1c","toSide":"bottom"}
+		{"id":"25c7d78e8a81f20a","fromNode":"cfe859a8a0ab82c5","fromSide":"top","toNode":"e457b42bf4316b1c","toSide":"bottom"},
+		{"id":"21d8f8e8f10bcdd0","fromNode":"82cbebbf1b7de8ae","fromSide":"top","toNode":"ff17f786eedb7454","toSide":"bottom"}
 	]
 }
