@@ -1,7 +1,7 @@
 {
 	"nodes":[
 		{"id":"8b12514c589ac3f6","x":963,"y":-4263,"width":457,"height":263,"type":"text","text":"***`triggerCoapCommunication`***\n- "},
-		{"id":"4ee8dee0f4981423","x":1455,"y":-4081,"width":485,"height":201,"color":"6","type":"text","text":">[!example] TIp de código\n\n`child_process` es un módulo nativo de Node.js para ejecutar comandos del sistema desde JavaScript.  \n`spawnSync` lanza esos comandos de forma síncrona, bloqueando el programa hasta que terminan."}
+		{"id":"4ee8dee0f4981423","x":1455,"y":-4081,"width":465,"height":201,"color":"6","type":"text","text":">[!example] TIp de código\n\n***`child_process`*** es un módulo nativo de Node.js para ejecutar comandos del sistema desde JavaScript.  \n***`spawnSync`*** lanza esos comandos de forma síncrona, bloqueando el programa hasta que terminan."}
 	],
 	"edges":[]
 }
