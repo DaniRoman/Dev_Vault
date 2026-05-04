@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
+                "file": "AKO/AKO44/Produc/Ako44-Prod.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - ErrorComm"
+              "title": "Ako44-Prod"
             }
           }
         ]
@@ -196,13 +196,14 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e998f953db48c1c4",
+  "active": "e901df4c9eca92c4",
   "lastOpenFiles": [
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Produc/Ako44-Prod.md",
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "AKO/AKO44/Produc",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/Docs/Ako 44 - errcommTest - workflow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
     "AKO/AKO44/Sin título.md",
     "AKO/AKO44/Activity.md",
@@ -252,7 +253,6 @@
     "AKO/Landing-Page/attachments",
     "AKO/Landing-Page/Sin nombre",
     "attachments",
-    "Express",
-    "AKO - feature"
+    "Express"
   ]
 }
