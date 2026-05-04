@@ -25,14 +25,17 @@
             "id": "67cf42fc1ae0bf46",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/AKO 44 TestCases.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/AKO 44 TestCases ErrorComm.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 1.0187639409215528,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 TestCases"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 TestCases ErrorComm"
             }
           }
         ],
@@ -214,6 +217,7 @@
   "active": "67cf42fc1ae0bf46",
   "lastOpenFiles": [
     "AKO/AKO44/AKO 44 TestCases.md",
+    "AKO/AKO44/AKO 44 TestCases ErrorComm.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "Bjj/Bjj Tecniques.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
@@ -258,9 +262,7 @@
     "AKO/AKO44/Docs/attachments/Pasted image 20260401090339.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260401090335.png",
     "AKO/AKO44/Docs/attachments/mermaid-diagram.png",
-    "JavaScript - Acceso seguro a propiedades/JavaScript -  Acceso seguro a Propiedades Optional chaining.md",
     "JavaScript - Acceso seguro a propiedades",
-    "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260326151439.png",
     "Lenguajes/Angular",
     "JavaScript - Acceso seguro a propiedades ",
