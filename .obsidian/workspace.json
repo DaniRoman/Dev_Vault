@@ -4,24 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ccbde9a3da3fed83",
+        "id": "67ae5c22ff913f8f",
         "type": "tabs",
         "children": [
           {
-            "id": "e901df4c9eca92c4",
+            "id": "33d91e1d21ce267c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
-                "viewState": {
-                  "x": -548.8522948188801,
-                  "y": 107.73156279991078,
-                  "zoom": -0.2427528031350799
-                }
+                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - ErrorComm workFlow"
+              "icon": "lucide-file",
+              "title": "AKO 44 - ErrorComm"
             }
           }
         ]
@@ -81,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 815.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -199,17 +196,17 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e901df4c9eca92c4",
+  "active": "33d91e1d21ce267c",
   "lastOpenFiles": [
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
+    "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "AKO/AKO44/Produc/Ako44-Prod.md",
     "AKO/AKO44/Produc",
     "AKO/AKO44/Docs/Ako 44 - errcommTest - workflow.canvas",
-    "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
     "AKO/AKO44/Sin título.md",
     "AKO/AKO44/Activity.md",
     "AKO/Sin título.md",

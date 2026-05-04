@@ -11,12 +11,4 @@ Trabaja sobre dos ejes:
 
 [[AKO 44 - ErrorComm workFlow.canvas]]
 
-Crear 
-meter en topic map 
-status update si no se envia da error pero el dispositivo puede estar comunicando 
-En translator se actualiza el timestamp
-basarme en el tiempo en que se va a expirar la cache de  dependiendo del dispo
-
-
-## Flujo de ErrorComm con cambio de parámetro
 
