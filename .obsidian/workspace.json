@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - ErrorComm"
+              "title": "AKO 44 Main Site"
+            }
+          },
+          {
+            "id": "67cf42fc1ae0bf46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AKO/AKO44/AKO 44 TestCases.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AKO 44 TestCases"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,10 +211,14 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "33d91e1d21ce267c",
+  "active": "67cf42fc1ae0bf46",
   "lastOpenFiles": [
+    "AKO/AKO44/AKO 44 TestCases.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "Bjj/Bjj Tecniques.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
+    "AKO/Sin título.md",
+    "AKO/AKO44/Activity.md",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/Docs/Fota.md",
@@ -208,8 +227,6 @@
     "AKO/AKO44/Produc",
     "AKO/AKO44/Docs/Ako 44 - errcommTest - workflow.canvas",
     "AKO/AKO44/Sin título.md",
-    "AKO/AKO44/Activity.md",
-    "AKO/Sin título.md",
     "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
     "Arquitectura y Diseño/Arquitectura, diseño y conceptos.md",
     "Arquitectura y Diseño/attachments/Pasted image 20260427100246.png",
@@ -242,7 +259,6 @@
     "AKO/AKO44/Docs/attachments/Pasted image 20260401090335.png",
     "AKO/AKO44/Docs/attachments/mermaid-diagram.png",
     "JavaScript - Acceso seguro a propiedades/JavaScript -  Acceso seguro a Propiedades Optional chaining.md",
-    "Development vault - Main Site.md",
     "JavaScript - Acceso seguro a propiedades",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
     "AKO/AKO44/Docs/attachments/Pasted image 20260326151439.png",
