@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -108,7 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 429.5110321044922
+    "width": 301.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -226,11 +226,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "7ef49a559641b1af",
+  "active": "67cf42fc1ae0bf46",
   "lastOpenFiles": [
+    "AKO/AKO44/AKO 44 - Aceptar nuevo mensaje del device en el translator.md",
     "AKO/AKO44/AKO 44 TestCases.md",
     "AKO/AKO44/AKO 44 - comm_syn.md",
-    "AKO/AKO44/AKO 44 - Aceptar nuevo mensaje del device en el translator.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "Bjj/Bjj Tecniques.md",
