@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
+                "file": "AKO/AKO44/Sin título.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - Net-Sync"
+              "title": "Sin título"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "AKO 44 TestCases"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,13 +210,14 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "67cf42fc1ae0bf46",
+  "active": "33d91e1d21ce267c",
   "lastOpenFiles": [
     "AKO/AKO44/AKO 44 TestCases ErrorComm.canvas",
+    "AKO/AKO44/Sin título.md",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync.md",
+    "AKO/AKO44/AKO 44 TestCases.md",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/AKO 44 TestCases.md",
     "Bjj/Bjj Tecniques.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "AKO/Sin título.md",
@@ -229,7 +229,6 @@
     "AKO/AKO44/Produc/Ako44-Prod.md",
     "AKO/AKO44/Produc",
     "AKO/AKO44/Docs/Ako 44 - errcommTest - workflow.canvas",
-    "AKO/AKO44/Sin título.md",
     "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
     "Arquitectura y Diseño/Arquitectura, diseño y conceptos.md",
     "Arquitectura y Diseño/attachments/Pasted image 20260427100246.png",
