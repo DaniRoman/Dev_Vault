@@ -15,3 +15,7 @@ En el translator el mensaje del `sync` los campos `hardware` y `plmn` serán opc
 [[AKO 44 - comm_syn workflow.canvas]]
 
 ---
+
+>****Aceptar nuevo mensaje del `Device` en el translator***
+
+[[AKO 44 - Aceptar nuevo mensaje del device en el]]
