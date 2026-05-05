@@ -18,4 +18,4 @@ En el translator el mensaje del `sync` los campos `hardware` y `plmn` serán opc
 
 >****Aceptar nuevo mensaje del `Device` en el translator***
 
-[[AKO 44 - Aceptar nuevo mensaje del device en el]]
+[[AKO 44 - Aceptar nuevo mensaje del device en el translator]]
