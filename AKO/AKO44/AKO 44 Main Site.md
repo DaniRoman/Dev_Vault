@@ -25,6 +25,9 @@ Para ver quien manda ese topic puedo hacer una búsqueda en el proyecto y en est
 ## ***`Net-Sync`***
 [[AKO 44 - Net-Sync]]
 
+## ***`comm_sync`***
+[[AKO 44 - comm_syn]]
+
 ## `Tests`
 [[AKO 44 TestCases]]
 
