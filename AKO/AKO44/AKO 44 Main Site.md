@@ -31,10 +31,9 @@ Para ver quien manda ese topic puedo hacer una búsqueda en el proyecto y en est
 ## `Tests`
 [[AKO 44 TestCases]]
 
-## Aceptar nuevo mensaje del device en el translator
-[[AKO 44 - Aceptar nuevo mensaje del device en el translator]]
+## Translator
 
-## Flujo Device mensaje tipo a que
+[[AKO 44 - Translator]]
 
 ## Protocolo de comunicación dispositivo y cloud
 
