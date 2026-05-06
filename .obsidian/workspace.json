@@ -35,8 +35,7 @@
               "title": "AKO 44 - Aceptar nuevo mensaje del device en el translator"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,10 +210,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "f673c89050d587dc",
+  "active": "33d91e1d21ce267c",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/AKO 44 - Aceptar nuevo mensaje del device en el translator.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/AKO 44 - comm_syn.md",

@@ -34,6 +34,8 @@ Para ver quien manda ese topic puedo hacer una búsqueda en el proyecto y en est
 ## Aceptar nuevo mensaje del device en el translator
 [[AKO 44 - Aceptar nuevo mensaje del device en el translator]]
 
+## Flujo Device mensaje tipo a que
+
 ## Protocolo de comunicación dispositivo y cloud
 
 [Documento](https://ako0.sharepoint.com/:w:/t/DesarrolloModificaciondeProducto/DEVICE_COMMUNICATION_PROTOCOL/IQANIw2Uzjg2QpMzVO0zj5Z5AWI-WY01IyDjBINtVQTB-ck?e=bLD5hS&ovuser=5a94156b-5d3f-467b-b767-561717bb62ca%2Cdaniel.roman%40ako.com&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNjAxMDQwMDkyNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D)
