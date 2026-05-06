@@ -18,9 +18,6 @@ Para ver quien manda ese topic puedo hacer una búsqueda en el proyecto y en est
 [[alarm-ACK workflow.canvas]]
 ## ***`Fota`***
 [[Fota]]
-
-
-
 ## ***`PLMN`***
 [[AKO 44 - PLMN]]
 ## ***`Micro ErrorComm`***
@@ -34,6 +31,8 @@ Para ver quien manda ese topic puedo hacer una búsqueda en el proyecto y en est
 ## `Tests`
 [[AKO 44 TestCases]]
 
+## Aceptar nuevo mensaje del device en el translator
+[[AKO 44 - Aceptar nuevo mensaje del device en el translator]]
 
 ## Protocolo de comunicación dispositivo y cloud
 
