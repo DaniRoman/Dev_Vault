@@ -11,17 +11,14 @@
             "id": "33d91e1d21ce267c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
-                "viewState": {
-                  "x": 787.0208633806396,
-                  "y": 120.83101667107411,
-                  "zoom": 0.11201370665658693
-                }
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - ErrorComm workFlow"
+              "icon": "lucide-file",
+              "title": "AKO 44 Main Site"
             }
           }
         ]
@@ -204,6 +201,7 @@
   "active": "33d91e1d21ce267c",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/AKO 44 - comm_syn.md",
     "AKO/AKO44/AKO 44 - Aceptar nuevo mensaje del device en el translator.md",
@@ -217,7 +215,6 @@
     "AKO/Sin título.md",
     "AKO/AKO44/Activity.md",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Produc/Ako44-Prod.md",
@@ -246,7 +243,6 @@
     "AKO/AKO44/attachments/Pasted image 20260409132220.png",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
-    "AKO44 - Nuevo Flujo para actualización firmware.md",
     "AKO/AKO44/Docs/attachments/Pasted image 20260401090339.png",
     "AKO/AKO44/Docs/attachments/Pasted image 20260401090335.png",
     "AKO/AKO44/Docs/attachments/mermaid-diagram.png",

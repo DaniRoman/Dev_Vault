@@ -18,6 +18,9 @@ Para ver quien manda ese topic puedo hacer una búsqueda en el proyecto y en est
 [[alarm-ACK workflow.canvas]]
 ## ***`Fota`***
 [[Fota]]
+
+
+
 ## ***`PLMN`***
 [[AKO 44 - PLMN]]
 ## ***`Micro ErrorComm`***
@@ -193,3 +196,7 @@ node bin/examples/client-perte.js 974130021 0x2E19CFDA300B3F385A343536754B33324B
 
 [Recurso de Excel](https://ako0-my.sharepoint.com/:x:/g/personal/fmaataoui_ako_com/IQC6HFUUkj4ER5nMrNHnTUHvAVrogbp4fs-CyKxK4Mn6QoY?wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1772711678220&web=1)
 
+
+>[!warning] credenciales chat gpt
+[sw.support@ako.com](mailto:sw.support@ako.com "mailto:sw.support@ako.com")
+pass: vbWj8Ur4WWxX
