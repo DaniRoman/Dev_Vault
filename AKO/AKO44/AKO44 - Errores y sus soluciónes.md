@@ -19,6 +19,7 @@ Lo checkeo con el documento  [`always on device`](https://ako0.sharepoint.com/:w
 En la foto anterior vemos que en `d1 y d2`recibimos `null` pero en el `documento` no el siguiente paso seria mirar el `schema` del `translator` para ver que tipo de mensajes y tipos soporta en `perte-message-types > status-message-type` 
 
 ![[Pasted image 20260507085726.png]]
-En el `schema` ya podemos ver que en los apartados `d1, d2` no acepta valores null deberiamos poner ``
+
+En el `schema` ya podemos ver que en los apartados `d1, d2` no acepta valores null deberiamos poner `NumberOrNullSchema`
 
 ---
