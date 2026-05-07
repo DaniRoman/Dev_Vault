@@ -129,7 +129,7 @@ es un sensor**, y normalmente entra al equipo como una **entrada**.
 
 ## Errores
 
-[[AKO44 - Errores y s]]
+[[AKO44 - Errores y sus soluciónes]]
 ## Protocolos de red
 [[Ako44 - Protocolos]]
 ## Flujos de trabajo
