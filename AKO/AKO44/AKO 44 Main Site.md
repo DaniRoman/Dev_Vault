@@ -127,7 +127,9 @@ es un sensor**, y normalmente entra al equipo como una **entrada**.
 - Configuración aplicada
 
 
+## Errores
 
+[[AKO44 - Errores y s]]
 ## Protocolos de red
 [[Ako44 - Protocolos]]
 ## Flujos de trabajo
