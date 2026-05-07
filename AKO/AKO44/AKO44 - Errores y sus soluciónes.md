@@ -8,6 +8,9 @@ En los logs puede verse que el `Device` comunica pero algo hace que el mensaje n
 
 >[!tip] Solución
 
-Mirar que formato esta enviando el mensaje el permitido por el 
+Mirar que formato de mensaje esta enviando el device por ejemplo el de `status`
 
+![[imagen (3).png]]
+
+lo 
 ---
