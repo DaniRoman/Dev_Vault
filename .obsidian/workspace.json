@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - Flujo Device mensaje tipo a Quue"
+              "title": "AKO 44 Main Site"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fma",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,13 +74,11 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 301.5024719238281,
-    "collapsed": true
+    "width": 301.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -198,10 +196,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "33d91e1d21ce267c",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
+    "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/AKO 44 - Translator.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/AKO44 - Errores y sus soluciónes.md",

@@ -1,5 +1,25 @@
 >[!important] Importante ***`microservice.json`***
 
+### Devices creado
+
+```json
+{
+	"name": "panel_0ry_7302",
+	"deviceDefinition": "{{69fdc84da35d2373f93df2fa}}",
+	"commercialVersion": "AKO-D14012N",
+	"commercialName": "AKO-D14012N",
+	"connectivity": "nbiot",
+	"licenseCode": "5cd520177b4d0d002f472c16",
+	"serialNumber": "{{974130023}}",
+	"imei": "{{9741300023}}",
+	"validationCode": "{{9741300023}}",
+	"imsi": "{{9741300023}}",
+	"uuid": "2E19CFDA300B3F385A343536754B33324B572E7E"
+}
+```
+
+
+
 Ese `.json` está definiendo **qué topics escucha el microservicio** y **qué método handler debe ejecutarse** cuando llega un mensaje en ese topic.
 
 ```json
