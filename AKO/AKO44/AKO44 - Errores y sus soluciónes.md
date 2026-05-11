@@ -1,5 +1,6 @@
 >[!error] `Device` comunica pero no cambia su estado a `online`
 >
+### 
 
 ![[imagen (2).png]]
 ![[imagen (1).png|697]]
@@ -23,3 +24,6 @@ En la foto anterior vemos que en `d1 y d2`recibimos `null` pero en el `documento
 En el `schema` ya podemos ver que en los apartados `d1, d2` no acepta valores null deberiamos poner `NumberOrNullSchema`
 
 ---
+
+
+`Device` comunica pero no cambia su estado a `online`
