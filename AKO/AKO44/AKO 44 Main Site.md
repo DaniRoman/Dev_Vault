@@ -1,6 +1,6 @@
 >[!important] Importante ***`microservice.json`***
 
-### Devices creado
+### Devices creados
 
 ```json
 {
@@ -18,21 +18,8 @@
 }
 ```
 
-
-
-Ese `.json` está definiendo **qué topics escucha el microservicio** y **qué método handler debe ejecutarse** cuando llega un mensaje en ese topic.
-
-```json
-"handlers": [
-  { "topic": "status.updated.AD20", "handler": "handleInputStatusAD20" },
-  { "topic": "status.updated.AD1", "handler": "handleInputStatusAD1" }
-]
-```
-
-Para ver quien manda ese topic puedo hacer una búsqueda en el proyecto y en este caso veo que es el micro de update quien lo manda 
-
-![[Pasted image 20260409132220.png]]
-
+## Activación de  _`Panel0Ry`_
+[[AKO 44 - Activación de Panel0Ry]]
 
 ## ***`alarm-ACK`***
 [[alarm-ACK workflow.canvas]]
@@ -149,7 +136,7 @@ es un sensor**, y normalmente entra al equipo como una **entrada**.
 
 ## Errores
 
-[[AKO44 - Errores y sus soluciónes]]
+[[AKO 44 - Errores y sus soluciónes]]
 ## Protocolos de red
 [[Ako44 - Protocolos]]
 ## Flujos de trabajo
