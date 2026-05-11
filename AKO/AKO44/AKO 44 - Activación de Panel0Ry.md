@@ -260,4 +260,4 @@ setPointValue?: number | null;
 porque API puede enviarlo o no enviarlo.
 
 **Resumen para explicarlo**
-El parser antes asumía que todo `PARAM` debía venir con configuraciones de secciones. Los modelos `0RY` no tienen secciones, pero sí pueden enviar un setpoint. Por eso se cambió la validación para aceptar `setPointValue` como alternativa válida. Luego se detectó que la definición `0RY` no trae `modbus` para el setpoint, así que se añadió un fallback específico para esos modelos, usando la dirección y conversión esperadas del setpoint.
+El parser antes asumía que todo `PARAM` debía venir con configuraciones de secciones. Los modelos `0RY` no tienen secciones, pero sí pueden enviar un setpoint. Por eso se cambió la validación para aceptar `setPointValue` como alternativa válida. Luego se detectó que la definición `0RY` no trae `modbus` para el setpoint, así que se añadió un fallback específico para esos modelos, usando la dirección y conversión esperadas del setpoint. 
