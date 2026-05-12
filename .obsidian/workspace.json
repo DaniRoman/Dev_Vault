@@ -38,8 +38,7 @@
               "title": "alarm-ACK workflow"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,8 +213,9 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "b1d96c699aa8444e",
+  "active": "33d91e1d21ce267c",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/AKO 44 - Activación de Panel0Ry.md",
     "AKO/AKO44/AKO 44 - Errores y sus soluciónes.md",
@@ -243,7 +243,6 @@
     "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/Sin título.md",
     "AKO/AKO44/Activity.md",
-    "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
     "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Produc",
@@ -261,7 +260,6 @@
     "Db/Mongo/Mongo - Main Site.md",
     "Db/Db Main Page.md",
     "Git/Git Main Page.md",
-    "Lenguajes/TypeScript/TypeScript - Main Site.md",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas",
     "Redis",
