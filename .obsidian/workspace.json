@@ -25,14 +25,17 @@
             "id": "8056571a87255b8f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/AKO 44 - Errores y sus soluciónes.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
+                "viewState": {
+                  "x": 439.9277708264671,
+                  "y": 180.07222917353292,
+                  "zoom": -0.9766495127226192
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 - Errores y sus soluciónes"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - ErrorComm workFlow"
             }
           },
           {
@@ -230,12 +233,13 @@
   },
   "active": "8056571a87255b8f",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO 44 - Aceptar nuevo mensaje del device en el translator.md",
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/AKO 44 - Errores y sus soluciónes.md",
+    "AKO/AKO44/AKO 44 - Aceptar nuevo mensaje del device en el translator.md",
     "AKO/AKO44/AKO 44 -.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/AKO 44 TestCases.md",
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "AKO/AKO44/AKO 44 - Live Messages.md",
     "AKO/AKO44/attachments/Pasted image 20260513110828.png",
     "AKO/AKO44/attachments/Pasted image 20260513102610.png",
@@ -247,7 +251,6 @@
     "AKO/AKO44/AKO 44 - Translator.md",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
     "AKO/AKO44/AKO 44 - Activación de Panel0Ry.md",
-    "AKO/AKO44/AKO 44 - Errores y sus soluciónes.md",
     "AKO/AKO44/Produc/Ako44-Prod.md",
     "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
