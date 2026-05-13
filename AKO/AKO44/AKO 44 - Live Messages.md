@@ -15,3 +15,8 @@ Si pasamos el numero 8615 a `Binario` y leemos este al reves (Es el orden como s
 Mirando en la definición tenemos que para esa posición corresponde el `ds_ako` (La `A` de `AKO` en la parte superior izquierda en el display del panel)
 
 ![[Pasted image 20260513102610.png]]
+
+Y mirando en el translator el cual ya hizo el parse, vemos que efectivamente esta en `True` 
+
+![[Pasted image 20260513110828.png]]
+
