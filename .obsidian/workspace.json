@@ -35,8 +35,7 @@
               "title": "AKO - 44 Nueva tarea"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,7 +210,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "6761e96771355521",
+  "active": "33d91e1d21ce267c",
   "lastOpenFiles": [
     "AKO/AKO44/AKO - 44 Nueva tarea.md",
     "AKO/AKO44/AKO 44 Main Site.md",
