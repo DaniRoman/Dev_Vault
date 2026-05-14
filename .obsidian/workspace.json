@@ -35,7 +35,8 @@
               "title": "AKO - 44 Nueva tarea"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,10 +211,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "33d91e1d21ce267c",
+  "active": "6761e96771355521",
   "lastOpenFiles": [
-    "AKO/AKO44/AKO - 44 Nueva tarea.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/AKO - 44 Nueva tarea.md",
     "AKO/AKO44/AKO 44 - Live Messages.md",
     "Shell/Docs/SSH - Secure Shell.md",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
