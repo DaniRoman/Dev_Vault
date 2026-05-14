@@ -7,3 +7,5 @@ Los checkpoints son más útiles que el tiempo estimado. Las semanas son referen
 El orden tiene lógica. No tiene sentido diseñar sistemas (Fase 3) si no sabes revisar lo que genera la IA (Fase 1). Primero el criterio, luego la dirección.
 
 Puedes hacer click en cualquier bloque del mapa para ir directamente a esa parte del camino si quieres profundizar en algo concreto.
+
+![[Pasted image 20260514162153.png]]
