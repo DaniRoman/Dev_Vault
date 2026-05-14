@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 - Live Messages.md",
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - Live Messages"
+              "title": "AKO 44 Main Site"
+            }
+          },
+          {
+            "id": "6761e96771355521",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AKO/AKO44/AKO - 44 Nueva tarea.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AKO - 44 Nueva tarea"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,9 +211,11 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "33d91e1d21ce267c",
+  "active": "6761e96771355521",
   "lastOpenFiles": [
+    "AKO/AKO44/AKO - 44 Nueva tarea.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/AKO 44 - Live Messages.md",
     "Shell/Docs/SSH - Secure Shell.md",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
     "Shell/Shell - Main Site.md",
@@ -208,7 +225,6 @@
     "AKO/AKO44/AKO 44 - Aceptar nuevo mensaje del device en el translator.md",
     "AKO/AKO44/AKO 44 -.md",
     "AKO/AKO44/AKO 44 TestCases.md",
-    "AKO/AKO44/AKO 44 - Live Messages.md",
     "AKO/AKO44/attachments/Pasted image 20260513110828.png",
     "AKO/AKO44/attachments/Pasted image 20260513102610.png",
     "AKO/AKO44/attachments/Pasted image 20260513102300.png",
