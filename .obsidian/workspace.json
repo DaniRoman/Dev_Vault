@@ -13,29 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "file": "Shell/Docs/SSH - Secure Shell.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "title": "SSH - Secure Shell"
             }
           },
           {
             "id": "8056571a87255b8f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
-                "viewState": {
-                  "x": 439.9277708264671,
-                  "y": 180.07222917353292,
-                  "zoom": -0.9766495127226192
-                }
+                "file": "Shell/Docs/SSH - Secure Shell.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - ErrorComm workFlow"
+              "icon": "lucide-file",
+              "title": "SSH - Secure Shell"
             }
           },
           {
@@ -46,8 +43,8 @@
               "state": {
                 "file": "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
                 "viewState": {
-                  "x": -192.3061069361346,
-                  "y": -272.85353566374727,
+                  "x": 93.81478112874846,
+                  "y": -300.8298002745362,
                   "zoom": -0.31988002151580475
                 }
               },
@@ -56,7 +53,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 580.5110321044922
+    "width": 341.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -231,14 +228,16 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "8056571a87255b8f",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
+    "Shell/Docs/SSH - Secure Shell.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "Shell/Shell - Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm.md",
     "AKO/AKO44/AKO 44 - Errores y sus soluciónes.md",
     "AKO/AKO44/AKO 44 - Aceptar nuevo mensaje del device en el translator.md",
     "AKO/AKO44/AKO 44 -.md",
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/AKO 44 TestCases.md",
     "AKO/AKO44/AKO 44 - Live Messages.md",
     "AKO/AKO44/attachments/Pasted image 20260513110828.png",
@@ -277,7 +276,6 @@
     "AKO/AKO44/Docs/Sin título.md",
     "Lenguajes/Angular/Angular Main Site.md",
     "Db/Mongo/Mongo - Main Site.md",
-    "Db/Db Main Page.md",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas",
     "Redis",
