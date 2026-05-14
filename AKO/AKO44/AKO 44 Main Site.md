@@ -37,14 +37,19 @@
 
 ## `Live`
 [[AKO 44 - Live Messages]]
+
 ## ***`alarm-ACK`***
 [[alarm-ACK workflow.canvas]]
+
 ## ***`Fota`***
 [[Fota]]
+
 ## ***`PLMN`***
 [[AKO 44 - PLMN]]
+
 ## ***`Micro ErrorComm`***
 [[AKO 44 - ErrorComm]]
+
 ## ***`Net-Sync`***
 [[AKO 44 - Net-Sync]]
 
@@ -55,7 +60,6 @@
 [[AKO 44 TestCases]]
 
 ## Translator
-
 [[AKO 44 - Translator]]
 
 ## Protocolo de comunicación dispositivo y cloud
