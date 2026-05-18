@@ -1,37 +1,26 @@
 Ok vamos a acabar de darle forma final a esto 
-## “Los sentidos”
+## Tema de los sobres “Los sentidos” 
+
+Cada sobre un sentido
 
 
-Porque TODO lo que has preparado conecta con eso:
+orden de las notas¿?
 
   
-* gym → cuerpo
-* masaje → tacto
-* campanas → oído
-* restaurante → sabor
-* playa → vista
-* buda → paz/energía
+* nota gym a casa → Respira ?
+		Texto corto:
+> 	“Hoy no tienes que correr. respira toma un segundo para sentir el olor y aroma de todo aquello que te rodea respira y toma aliento para parar tu mundo y lo cotidiano.
+> 	Hoy solo quiero que sientas.
+> 	Vuelve a casa ![❤️](https://fonts.gstatic.com/s/e/notoemoji/17.0/2764_fe0f/32.png)”
+* nota en camilla para masage y escuchar campana → tacto y oido?
+* nota en la campanas que hablara sobre la amistad y personas especiales → nose cual... tacto?
+* nota que traera la amiga para mandarnos al restaurante → sabor
+* nota en casa de los padres antes de llegar vista (para ver al buda)
+* buda → paz/energía (El sexto sentido )
 
-## SOBRE 1 — “olfato o tacto PAra el masaje?'”
+Sobres aceite de aromas? cuerda fina? sobres de olores y colores? 
+ 
 
-  ### Gym → Casa
-
-* blanco, crema, beige
-
-Dentro:
-
-* una flor seca pequeña
-* o una ramita de lavanda
-
-Tema:
-
-“Parar el mundo”.
-
-Texto corto:
-
-> “Hoy no tienes que correr. respira toma un segundo para sentir el olor y aroma de todo aquello que te rodea respira y toma aliento para parar tu mundo y lo cotidiano.
-> Hoy solo quiero que sientas.
-> Vuelve a casa ![❤️](https://fonts.gstatic.com/s/e/notoemoji/17.0/2764_fe0f/32.png)”
 
 
 O otra versión que tendra que ver con el sentido del tactyo o que te toquen
