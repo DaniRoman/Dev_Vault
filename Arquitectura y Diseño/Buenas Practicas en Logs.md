@@ -1,6 +1,9 @@
 # 1. Objetivo
 
 ```
+No todos los logs son iguales,
+pero todos deberían pasar por la misma política común.
+
 1. Reducir volumen de logs innecesarios.
 2. Evitar exposición de datos sensibles.
 3. Estandarizar formato y campos mínimos.
@@ -63,9 +66,8 @@ user_id_hash si aplica
 
 Todo log debería tender a ser estructurado:
 
->[!warning] Todo log tiene que tener el mismo formato?
-
 ```json
+Envelope común + campos específicos del evento
 {  
 "level": "INFO",  
 "event": "order_created",  
