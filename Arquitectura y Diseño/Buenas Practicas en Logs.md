@@ -309,41 +309,12 @@ logger.info("user_loaded", {
 
 # Politica de niveles
 
-## ERROR
-
-Solo cuando algo falla de verdad:
-
-```
-operación fallida
-excepción no controlada
-fallo externo agotando retries
-inconsistencia de datos
-pérdida de mensaje
-```
-
-## WARN
-
-Anomalía recuperable:
-
-```
-retry
-fallback
-latencia alta
-circuit breaker abierto
-datos incompletos pero procesables
-```
-
-## INFO
-
-Evento relevante:
-
-```
-servicio iniciado
-job terminado
-pedido creado
-pago autorizado
-cambio de estado importante
-```
+| Nivel | Cuándo usarlo                             | Ejemplo                                                   |
+| ----- | ----------------------------------------- | --------------------------------------------------------- |
+| DEBUG | Diagnóstico temporal, no prod por defecto | Payload parcial sanitizado                                |
+| INFO  | Evento importante, esperado y útil        | Mensaje procesado, comando enviado                        |
+| WARN  | Anomalía recuperable                      | Retry, timeout recuperado, fallback                       |
+| ERROR | Fallo real de operación                   | Mensaje no procesado, API externa fallida definitivamente |
 
 ## DEBUG
 
@@ -413,28 +384,30 @@ cuántos logs hay en qué niveles qué clases/módulos loggean más
 - Si hay logs dentro de loops
 - Si hay access logs muy ruidosos
 
-|Campo|Descripción|Ejemplo|
-|---|---|---|
-|Servicio|Nombre del microservicio|`connection-layer`|
-|Módulo / archivo|Dónde está el log|`DeviceConsumer.ts`|
-|Línea aproximada|Línea o función|`processMessage()`|
-|Entrada|HTTP, Rabbit, Device, Job, Internal|`Rabbit`|
-|Evento actual|Qué loggea ahora|`"Received payload"`|
-|Nivel actual|DEBUG, INFO, WARN, ERROR|`INFO`|
-|Frecuencia|Alta, media, baja|Alta|
-|Volumen estimado|Logs/día o logs/min|`500k/día`|
-|Contiene payload|Sí/No|Sí|
-|Contiene headers|Sí/No|No|
-|Contiene datos sensibles|Sí/No/Dudoso|Dudoso|
-|Tiene trace_id/request_id/message_id|Sí/No|No|
-|Es necesario|Sí/No/Parcial|Parcial|
-|Problema|Ruido, sensible, duplicado, sin contexto|Payload completo|
-|Acción|Mantener, eliminar, samplear, sanitizar, mover a DEBUG|Sanitizar + reducir|
-|Nuevo evento propuesto|Nombre estructurado|`rabbit_message_received`|
-|Nuevo nivel propuesto|INFO/WARN/ERROR/DEBUG|DEBUG|
-|Campos permitidos|Qué campos se conservarán|`queue,message_id,duration_ms`|
-|Owner|Responsable|Backend/platform|
-|Prioridad|Alta/media/baja|Alta|
+***Inventario general***
+
+| Campo                                | Descripción                                            | Ejemplo                        |
+| ------------------------------------ | ------------------------------------------------------ | ------------------------------ |
+| Servicio                             | Nombre del microservicio                               | `connection-layer`             |
+| Módulo / archivo                     | Dónde está el log                                      | `DeviceConsumer.ts`            |
+| Línea aproximada                     | Línea o función                                        | `processMessage()`             |
+| Entrada                              | HTTP, Rabbit, Device, Job, Internal                    | `Rabbit`                       |
+| Evento actual                        | Qué loggea ahora                                       | `"Received payload"`           |
+| Nivel actual                         | DEBUG, INFO, WARN, ERROR                               | `INFO`                         |
+| Frecuencia                           | Alta, media, baja                                      | Alta                           |
+| Volumen estimado                     | Logs/día o logs/min                                    | `500k/día`                     |
+| Contiene payload                     | Sí/No                                                  | Sí                             |
+| Contiene headers                     | Sí/No                                                  | No                             |
+| Contiene datos sensibles             | Sí/No/Dudoso                                           | Dudoso                         |
+| Tiene trace_id/request_id/message_id | Sí/No                                                  | No                             |
+| Es necesario                         | Sí/No/Parcial                                          | Parcial                        |
+| Problema                             | Ruido, sensible, duplicado, sin contexto               | Payload completo               |
+| Acción                               | Mantener, eliminar, samplear, sanitizar, mover a DEBUG | Sanitizar + reducir            |
+| Nuevo evento propuesto               | Nombre estructurado                                    | `rabbit_message_received`      |
+| Nuevo nivel propuesto                | INFO/WARN/ERROR/DEBUG                                  | DEBUG                          |
+| Campos permitidos                    | Qué campos se conservarán                              | `queue,message_id,duration_ms` |
+| Owner                                | Responsable                                            | Backend/platform               |
+| Prioridad                            | Alta/media/baja                                        | Alta                           |
 
 Ejemplo rellenado
 
@@ -448,6 +421,57 @@ Ejemplo rellenado
 
 ### Fase 2 Definir estándar mínimo común 
 
+| Regla           | Descripción                                                    |
+| --------------- | -------------------------------------------------------------- |
+| Formato         | Todos los logs deben ser JSON estructurado                     |
+| Entrada única   | Usar `SafeLogger`, no logger directo salvo casos justificados  |
+| Sanitización    | Todo log pasa por sanitizer                                    |
+| Correlación     | Incluir `trace_id`, `request_id` o `message_id` cuando aplique |
+| Eventos         | Todo log debe tener campo `event`                              |
+| Payloads        | Prohibido loggear payload completo por defecto                 |
+| Headers         | Prohibido loggear headers completos                            |
+| Errores         | Una excepción se loggea una sola vez                           |
+| DEBUG           | Desactivado en producción por defecto                          |
+| Límites         | Truncar campos y eventos grandes                               |
+| Datos sensibles | Redactar tokens, passwords, secrets, cookies, credentials      |
+
+***Campos comunes obligatorios***
+
+| Campo            |     Obligatorio | Descripción                      |
+| ---------------- | --------------: | -------------------------------- |
+| `timestamp`      |              Sí | Fecha del evento                 |
+| `level`          |              Sí | `DEBUG`, `INFO`, `WARN`, `ERROR` |
+| `event`          |              Sí | Nombre estable del evento        |
+| `service`        |              Sí | Nombre del microservicio         |
+| `environment`    |              Sí | `dev`, `test`, `staging`, `prod` |
+| `version`        |     Recomendado | Versión desplegada               |
+| `trace_id`       |     Recomendado | Trazabilidad distribuida         |
+| `request_id`     |   Según entrada | HTTP/API                         |
+| `message_id`     |   Según entrada | Rabbit/eventos                   |
+| `device_id_hash` |   Según entrada | Device directo                   |
+| `duration_ms`    | Según operación | Duración                         |
+| `error_type`     |    Solo errores | Tipo de error                    |
+| `error_code`     |    Solo errores | Código interno estable           |
+
+***Nombres de eventos***
+
+```txt
+http_request_completed
+http_request_failed
+rabbit_message_received
+rabbit_message_processed
+rabbit_message_processing_failed
+rabbit_message_published
+device_connected
+device_disconnected
+device_message_received
+device_message_rejected
+external_http_call_completed
+external_http_call_failed
+validation_failed
+command_translated
+command_sent_to_device
+```
 ### Fase3 Implementar sanitizer común
 
 
