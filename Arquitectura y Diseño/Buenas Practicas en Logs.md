@@ -64,6 +64,9 @@ user_id_hash si aplica
 
 # 4. Punto global: dónde tocar
 
+>[!tip]
+>Definir los puntos globales de mi micro
+
 lugares del flujo donde puedes implementar lógica común sin tener que modificar cientos de líneas sueltas.
 Por ejemplo, en vez de buscar todos los `logger.error(...)` del código, se crear un punto donde todos los errores pasan.
 
