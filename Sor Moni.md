@@ -35,7 +35,7 @@ Texto corto:
 > Vuelve a casa ![❤️](https://fonts.gstatic.com/s/e/notoemoji/17.0/2764_fe0f/32.png)”
 
 
-O otra versión que tendra que verr
+O otra versión que tendra que ver con el sentido del tactyo o que te toquen
 
 
 
@@ -56,7 +56,7 @@ Haz que parezca una experiencia, no un regalo dejado ahí.
 
   
 
-# SOBRE 2 — “Escucha”
+# SOBRE 2 — “Escucha” el oido y el tacto? 
 
 
 Aquí empieza el masaje y le doy el sobre.
@@ -186,37 +186,6 @@ Lo mejor:
 
   
 
-# DESPUÉS DEL VIVERO
-
-  
-
-## Sitges perfecto:
-
-  
-
-* paseo casco antiguo
-
-* helado
-
-* playa
-
-* pequeñas tiendas
-
-* banco mirando el mar
-
-  
-
-NO metas actividades fuertes.
-
-  
-
-La energía aquí debe ser:
-
-“ojalá el día no termine”.
-
-  
-
----
 
   
 
@@ -224,29 +193,7 @@ La energía aquí debe ser:
 
   
 
-Aquí puedes hacer algo MUY bonito.
-
-  
-
-Mientras paseáis:
-
-hazle una pregunta profunda.
-
-  
-
-Ejemplos:
-
-  
-
-* “¿Qué momento guardarías para siempre?”
-
-* “¿Cuál ha sido tu sensación favorita de hoy?”
-
-* “¿Qué crees que recordarás dentro de años?”
-
-  
-
-Eso hace que emocionalmente el día suba aún más.
+en sitges comeremos un gofre y luego iremos de tapeo a  casa de sus padres y luego es cuando iremos a casa y vera el buda  aqui en casa de sus padres o algun sitio otro sobre oara el buda o otro sentido 
 
   
 
