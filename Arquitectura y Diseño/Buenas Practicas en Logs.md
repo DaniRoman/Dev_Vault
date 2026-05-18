@@ -260,29 +260,36 @@ Aquí no se confía en el nombre del campo. Miras el **contenido**. Aunque el no
 {
   "message": "Calling API with Authorization: Bearer eyJhbGciOiJIUzI1NiIs..."
 }
+//Se aplica regex/patrones:
+{
+  "message": "Calling API with Authorization: Bearer [REDACTED]"
+}
 ```
+
+### Truncar por valores Grandes
+
+```txt
+Reglas razonables 
+
+Máximo 2 KB por campo string.
+Máximo 8 KB por evento completo.
+Máximo 20 elementos por array.
+Máximo profundidad 4 en objetos.
+Máximo stacktrace 8-12 KB.
+```
+
+Si excede del limite
+
+```txt
+1. Eliminar campos no esenciales.
+2. Truncar message/stacktrace/payload_preview.
+3. Dejar campos críticos: event, level, service, trace_id, error_type.
+```
+
+serializar el evento y mirar cuánto ocupa.
 
 >[!warning]
->Redactar por patrón¿?.
-
-```
-Bearer eyJ...
-JWT
-API keys
-emails si aplica
-tarjetas
-cookies
-```
-
-### Truncar por valores Grandes?
-
->[!warning]
->Como conseguimos eso¿?.
-
-máximo 2 KB por campo
-máximo 8 KB por evento completo
-máximo 20 elementos en arrays
-máximo profundidad 4 en objetos
+>Que es serializar, entiendo que todo esto es una función para cada caso no ¿?
 
 ### No permitir objetos arbitrarios
 
