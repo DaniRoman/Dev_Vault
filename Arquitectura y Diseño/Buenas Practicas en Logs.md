@@ -7,3 +7,32 @@ Objetivo
 4. Centralizar sanitización en un punto común.
 5. Mantener capacidad de debug.
 6. Dejar un patrón reutilizable para el resto de servicios.
+
+Datos que no deben de mostrarse
+
+```json
+password
+token
+access_token
+refresh_token
+id_token
+authorization
+cookie
+set-cookie
+api_key
+secret
+private_key
+jwt
+session_id
+connection_string
+database_url
+card_number
+cvv
+iban
+dni
+passport
+request body completo
+response body completo
+headers completos
+query params completos
+```
