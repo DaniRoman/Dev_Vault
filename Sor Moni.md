@@ -13,7 +13,7 @@ Porque TODO lo que has preparado conecta con eso:
 * playa → vista
 * buda → paz/energía
 
-## SOBRE 1 — “Respira”
+## SOBRE 1 — “olfato o tacto PAra el masaje?'”
 
   ### Gym → Casa
 
@@ -30,9 +30,12 @@ Tema:
 
 Texto corto:
 
-> “Hoy no tienes que correr. respira toma un segundo de aliento para parar tu mundo y lo cotidiano.
+> “Hoy no tienes que correr. respira toma un segundo para sentir el olor y aroma de todo aquello que te rodea respira y toma aliento para parar tu mundo y lo cotidiano.
 > Hoy solo quiero que sientas.
 > Vuelve a casa ![❤️](https://fonts.gstatic.com/s/e/notoemoji/17.0/2764_fe0f/32.png)”
+
+
+O otra versión que tendra que verr
 
 
 
@@ -56,94 +59,37 @@ Haz que parezca una experiencia, no un regalo dejado ahí.
 # SOBRE 2 — “Escucha”
 
 
-Aquí empieza el masaje.
+Aquí empieza el masaje y le doy el sobre.
 
 Texto:
-
-
 
 > “Cierra los ojos.
 > Respira lento y escucho tu interior escucha aquello que tus pensamientos callan con su ruido escucha lo que realmente tienes que escucat y siente .
 > Deja fuera todo lo demás.
-> Hoy quiero cuidarte como mereces.”
-
-  
 
 Y abajo:
 
-  
-
 > “Escucha bien… porque algunas cosas bonitas no se dicen con palabras.”
 
-  
-
-Entonces:
-
-  
-
 * masaje
-
 * diapasones
-
 * campana de viento
 
   
 
-Ese momento puede quedar brutal.
+# LA CAMPANA DE VIENTO 
 
-  
-
----
-
-  
-
-# LA CAMPANA DE VIENTO
-
-  
-
-No se la des directamente como:
-
-“Toma tu regalo”.
-
-  
-
-Hazla aparecer en el ambiente.
-
-  
-
-Cuando ella pregunte o la vea:
-
-ahí sí le das la mini nota.
-
-  
-
----
-
-  
+La otra nota
 
 # MINI NOTA CAMPANA
 
   
-
-Tema:
-
-“La calma que transmite”.
+“La calma que transmite”. (que sentido sera la amiga?) 
 
   
-
 Texto:
 
-  
-
-> “Hay personas que llegan haciendo ruido.
-
-> Y otras que convierten cualquier lugar en paz.
-
-> Tú haces eso.”
-
-  
-
-Simple. Elegante. Muy emocional.
+Esta nota tiene que hablar sobre la amistad sobre su amiga 
 
   
 
@@ -153,39 +99,10 @@ Simple. Elegante. Muy emocional.
 
 # ENTRADA DE LA AMIGA
 
-  
 
-El ritmo ideal:
 
-  
 
-* masaje
-
-* relax
-
-* regalo
-
-* conexión íntima
-
-* 20-30 min tranquilos
-
-  
-
-Y entonces:
-
-TIMBRE.
-
-  
-
-La energía sube.
-
-  
-
----
-
-  
-
-# SOBRE 3 — “Compartir”
+# SOBRE 3 — “Compartir”? este tiene que ser el del sabor no? gusto?
 
   
 
