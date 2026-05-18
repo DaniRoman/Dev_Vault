@@ -487,7 +487,7 @@ Niveles permitidos:
 - `ERROR`: fallos reales de operación no recuperados.
 
 Catálogo de nombres de evento permitidos:
-```
+
 http_request_completed, http_request_failed,
 rabbit_message_received, rabbit_message_processed, rabbit_message_processing_failed, rabbit_message_published,
 device_connected, device_disconnected, device_message_received, device_message_rejected,
