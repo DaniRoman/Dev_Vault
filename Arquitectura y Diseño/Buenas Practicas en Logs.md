@@ -303,4 +303,29 @@ payload
 headers
 ```
 
-#Plan 
+# Plan de trabajo
+
+### Fase 1 Inventario
+
+```txt
+cuántos logs hay
+en qué niveles
+qué clases/módulos loggean más
+si hay request/response bodies
+si hay headers
+si hay tokens
+si hay logs duplicados de excepción
+si hay logs dentro de loops
+si hay access logs muy ruidosos
+```
+
+| Tipo                        |       Riesgo | Acción                         |
+| --------------------------- | -----------: | ------------------------------ |
+| Log de request body         |         Alto | Eliminar o allowlist           |
+| Log de Authorization header |      Crítico | Redactar inmediatamente        |
+| Log repetido de excepción   |        Medio | Centralizar en handler         |
+| Health checks               | Bajo/volumen | Dropear                        |
+| INFO en loop                | Alto volumen | Convertir a métrica o samplear |
+
+
+### Fase 2 Inventario
