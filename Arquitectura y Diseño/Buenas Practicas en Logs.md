@@ -198,7 +198,12 @@ Un **boundary** es el borde de entrada o salida de un sistema.
 
 ## 4.4 Interceptores de clientes externos
 
-Para llamadas a otros servicios:
+Para llamadas a otros servicios
+
+Pero si se publican miles por segundo, esto se samplea o se convierte en métrica.
+
+>[!tip]
+>Como y cuando samplear ¿?
 
 ```
 external_call_started opcional
@@ -227,21 +232,36 @@ Pero sin payload completo.
 
 ### Redactar por nombre de campo
 
->[!warning]
->Redactar por nombre de campo¿?
+“Redactar” significa reemplazar un dato sensible por algo seguro.
 
 Si el campo se llama `authorization`, `token`, `password`, etc.:
 
 ```json
 {
-  "authorization": "[REDACTED]",
-  "password": "[REDACTED]"
+  "user": "akocloud",
+  "password": "123456",
+  "authorization": "Bearer eyJhbGciOi...",
+  "device_id": "dev-123"
+}
+//SE REMPLAZAN 
+{  
+"user": "akocloud",  
+"password": "[REDACTED]",  
+"authorization": "[REDACTED]",  
+"device_id": "dev-123"  
 }
 ```
 
 ### Redactar por patrón
 
-Aunque el nombre del campo sea inocente, puede venir un token dentro del valor.
+Aquí no se confía en el nombre del campo. Miras el **contenido**. Aunque el nombre del campo sea inocente, puede venir un token dentro del valor.
+
+```json
+{
+  "message": "Calling API with Authorization: Bearer eyJhbGciOiJIUzI1NiIs..."
+}
+```
+
 >[!warning]
 >Redactar por patrón¿?.
 
