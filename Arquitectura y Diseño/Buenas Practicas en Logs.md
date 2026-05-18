@@ -64,7 +64,7 @@ user_id_hash si aplica
 
 # 3.Formato recomendado
 
->[!tip] Esto esta en un punto mas abaj
+>[!tip] Esto esta en la implementación de las fases la creación de wrapper. [[#^ac9cee]]
 
 Envelope común + campos específicos según del tipo de evento `info, warning...`
 
@@ -412,6 +412,15 @@ tests unitarios
 >Componente reutilizable? como wraper?
 
 ### Fase 4: Crear logger wrapper
+
+^ac9cee
+Logger wrapper común: ¿es una clase o un punto común para todos?
+
+Puede ser una **clase**, un **módulo**, una **librería interna** o un **servicio utilitario**, depende del lenguaje.
+
+La idea no es necesariamente tener “un único logger físico para todos los micros”, porque cada microservicio corre de forma independiente.
+
+La idea es tener una **abstracción común** que todos usen.
 
 >[!warning]
 Creamos un Envelope comun dependiendo del microservicio y otro para cada nivel `info, error...`
