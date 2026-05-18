@@ -36,3 +36,20 @@ response body completo
 headers completos
 query params completos
 ```
+
+Estructura del log 
+
+```json
+{
+  "level": "INFO",
+  "event": "order_created",
+  "service": "orders-api",
+  "environment": "prod",
+  "trace_id": "abc",
+  "request_id": "req-123",
+  "route": "/orders/{id}",
+  "method": "POST",
+  "status_code": 201,
+  "duration_ms": 83
+}
+```
