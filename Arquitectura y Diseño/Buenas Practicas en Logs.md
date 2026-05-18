@@ -64,10 +64,28 @@ user_id_hash si aplica
 
 # 3.Formato recomendado
 
-Todo log debería tender a ser estructurado:
+Envelope común + campos específicos del evento
 
 ```json
-Envelope común + campos específicos del evento
+//COMUN
+{
+  "timestamp": "2026-05-18T10:30:00.000Z",
+  "level": "INFO",
+  "event": "device_message_received",
+  "service": "connection-layer",
+  "environment": "prod",
+  "version": "1.4.2",
+  "trace_id": "abc123",
+  "request_id": "req-123"
+}
+//ERROR
+```
+Todos los logs deberían tener algo parecido a esto:
+
+```json
+
+
+
 {  
 "level": "INFO",  
 "event": "order_created",  
@@ -366,6 +384,9 @@ tests unitarios
 >Componente reutilizable? como wraper?
 
 ### Fase 4: Crear logger wrapper
+
+>[!warning]
+Creamos un Envelope comun dependiendo del microservicio y otro para cada nivel `info, error...`
 
 ```json
 safeLogger.info("payment_authorized", {
