@@ -62,71 +62,6 @@ user_id_hash si aplica
 
 ```
 
-# 3.Formato recomendado
-
->[!tip] Esto esta en la implementación de las fases la creación de wrapper. [[#^ac9cee]]
-
-Envelope común + campos específicos según del tipo de evento `info, warning...`
-
-```json
-//COMUN
-{
-  "timestamp": "2026-05-18T10:30:00.000Z",
-  "level": "INFO",
-  "event": "device_message_received",
-  "service": "connection-layer",
-  "environment": "prod",
-  "version": "1.4.2",
-  "trace_id": "abc123",
-  "request_id": "req-123"
-}
-// + ERROR
-{
-  "timestamp": "2026-05-18T10:30:05.000Z",
-  "level": "ERROR",
-  "event": "device_message_processing_failed",
-  "service": "translator-service",
-  "environment": "prod",
-  "trace_id": "abc123",
-  "message_id": "msg-789",
-  "queue": "device.events",
-  "error_type": "InvalidPayloadError",
-  "error_code": "INVALID_DEVICE_PAYLOAD",
-  "error_message": "Payload validation failed"
-}
-// WARN
-{
-  "timestamp": "2026-05-18T10:30:02.000Z",
-  "level": "WARN",
-  "event": "external_api_retry",
-  "service": "connection-layer",
-  "environment": "prod",
-  "target_service": "device-api",
-  "operation": "send_command",
-  "retry_count": 2,
-  "duration_ms": 1200,
-  "trace_id": "abc123"
-}
-```
-Todos los logs deberían tener algo parecido a esto:
-
-```json
-
-
-
-{  
-"level": "INFO",  
-"event": "order_created",  
-"service": "orders-api",  
-"environment": "prod",  
-"trace_id": "abc",  
-"request_id": "req-123",  
-"route": "/orders/{id}",  
-"method": "POST",  
-"status_code": 201,  
-"duration_ms": 83}
-```
-
 # 4. Punto global: dónde tocar
 
 >[!warning] Esto es una clase?
@@ -413,7 +348,8 @@ tests unitarios
 
 ### Fase 4: Crear logger wrapper
 
->[!warning]
+>[!warning] 
+>Que es mas útil tener dependiendo de mi arquitectura de microservicios?
 
 ^ac9cee
 Logger wrapper común: normalmente será una **clase o módulo común**, pero el concepto importante es que sea el **punto obligatorio de entrada al logging**.. La idea es tener una **abstracción común** que todos usen.
@@ -453,15 +389,65 @@ safeLogger.error("device_message_processing_failed", error, {
 
 ```
 
->[!warning]
-Creamos un Envelope comun dependiendo del microservicio y otro para cada nivel `info, error...`
+#### Formato recomendado
+
+Envelope común + campos específicos según del tipo de evento `info, warning...`
 
 ```json
-safeLogger.info("payment_authorized", {
-  payment_id,
-  amount,
-  currency,
-  user_id_hash
-});
+//COMUN
+{
+  "timestamp": "2026-05-18T10:30:00.000Z",
+  "level": "INFO",
+  "event": "device_message_received",
+  "service": "connection-layer",
+  "environment": "prod",
+  "version": "1.4.2",
+  "trace_id": "abc123",
+  "request_id": "req-123"
+}
+// + ERROR
+{
+  "timestamp": "2026-05-18T10:30:05.000Z",
+  "level": "ERROR",
+  "event": "device_message_processing_failed",
+  "service": "translator-service",
+  "environment": "prod",
+  "trace_id": "abc123",
+  "message_id": "msg-789",
+  "queue": "device.events",
+  "error_type": "InvalidPayloadError",
+  "error_code": "INVALID_DEVICE_PAYLOAD",
+  "error_message": "Payload validation failed"
+}
+// WARN
+{
+  "timestamp": "2026-05-18T10:30:02.000Z",
+  "level": "WARN",
+  "event": "external_api_retry",
+  "service": "connection-layer",
+  "environment": "prod",
+  "target_service": "device-api",
+  "operation": "send_command",
+  "retry_count": 2,
+  "duration_ms": 1200,
+  "trace_id": "abc123"
+}
 ```
+Todos los logs deberían tener algo parecido a esto:
 
+```json
+
+
+
+{  
+"level": "INFO",  
+"event": "order_created",  
+"service": "orders-api",  
+"environment": "prod",  
+"trace_id": "abc",  
+"request_id": "req-123",  
+"route": "/orders/{id}",  
+"method": "POST",  
+"status_code": 201,  
+"duration_ms": 83}
+```
