@@ -149,12 +149,34 @@ external_call_failed
 
 Pero sin payload completo.
 
-Ejemplo bueno:
-
-```
-{  "level": "WARN",  "event": "external_call_failed",  "target_service": "payments",  "operation": "authorize_payment",  "status_code": 504,  "duration_ms": 1200,  "retry_count": 2,  "trace_id": "abc"}
+```json
+{
+  "level": "WARN",
+  "event": "external_call_failed",
+  "target_service": "payments",
+  "operation": "authorize_payment",
+  "status_code": 504,
+  "duration_ms": 1200,
+  "retry_count": 2,
+  "trace_id": "abc"
+}
 ```
 
 ---
 
 # 5. Sanitización
+
+### Redactar por nombre de campo
+
+>[!warning] No entiendo que es re
+
+Si el campo se llama `authorization`, `token`, `password`, etc.:
+
+```json
+{
+  "authorization": "[REDACTED]",
+  "password": "[REDACTED]"
+}
+```
+
+## 5.2 Redactar por patrón
