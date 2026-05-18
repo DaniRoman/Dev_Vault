@@ -53,3 +53,53 @@ Estructura del log
   "duration_ms": 83
 }
 ```
+
+
+>[!warning] Importante
+### 4.1 Logger wrapper común
+
+Algo tipo:
+
+```
+safeLogger.info(event, fields)safeLogger.warn(event, fields)safeLogger.error(event, fields)
+```
+
+Ese wrapper hace:
+
+```
+sanitizar camposlimitar tamañoinyectar trace_id/request_idnormalizar estructurabloquear campos prohibidos
+```
+
+La idea es que el código de negocio no llame directamente al logger base siempre que sea posible.
+
+## 4.2 Middleware HTTP
+
+Para requests entrantes:
+
+```
+request started/completeddurationstatusroutemethodtrace_id
+```
+
+Pero con cuidado: no loggear cada request exitoso interno si genera demasiado volumen.
+
+Posible regla:
+
+```
+2xx/3xx: sampleado o solo gateway4xx: depende del caso5xx: siemprelatencia alta: siempre
+```
+
+## 4.3 Handler global de excepciones
+
+Regla crítica:
+
+```
+Una excepción se loggea una sola vez.
+```
+
+Normalmente en el boundary:
+
+```
+controller adviceexception filterglobal error handlermiddleware de error
+```
+
+Evitar que repository, service, controller y middleware loggeen el mismo error.
