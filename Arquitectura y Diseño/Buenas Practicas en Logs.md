@@ -85,14 +85,19 @@ En nuestra arquitectura los puntos globales seria.
 
 ## Middleware HTTP
 
-El concepto de “middleware HTTP” aplica **solo cuando el microservicio recibe tráfico HTTP**
+El concepto de “middleware HTTP” aplica **solo cuando el microservicio recibe tráfico HTTP y loggear de forma centralizada:**
+Pero el caso del micro que recibe trafico de RabbitMQ y del device directo ampliaríamos el concepto
+
+***Middleware HTTP***
 
 ```txt
-API REST
-endpoint interno
-webhook
-health check
-admin endpoint
+HTTP request entra
+↓
+middleware captura method, route, status, duration, trace_id
+↓
+controller/use case
+↓
+response
 ```
 
 ```json
@@ -104,6 +109,30 @@ admin endpoint
   "duration_ms": 54
 }
 ```
+
+
+Para RabbitMQ no es middleware HTTP. Sería un **consumer wrapper** o **Rabbit interceptor**.
+
+```txt
+Mensaje Rabbit entra
+↓
+consumer wrapper captura queue, routing_key, message_id, duration, error
+↓
+handler de negocio
+↓
+ack/nack/retry
+```
+
+```json
+{
+  "event": "rabbit_message_processed",
+  "queue": "device.events",
+  "routing_key": "device.telemetry",
+  "message_id": "msg-123",
+  "duration_ms": 41
+}
+```
+
 
 >[!warning] Aplica esto si es un micro?
 
