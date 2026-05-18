@@ -93,6 +93,8 @@ safeLogger.error(event, fields)
 
 ## Middleware HTTP
 
+>[!warning] Aplica esto si es un micro?
+
 Requests entrantes:
 
 ```
