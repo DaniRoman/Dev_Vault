@@ -110,8 +110,8 @@ response
 }
 ```
 
-
-Para RabbitMQ no es middleware HTTP. Sería un **consumer wrapper** o **Rabbit interceptor**.
+### 2xx/3xx sampleado o solo gateway
+## Para RabbitMQ no es middleware HTTP. Sería un **consumer wrapper** o **Rabbit interceptor**.
 
 ```txt
 Mensaje Rabbit entra
