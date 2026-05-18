@@ -357,3 +357,14 @@ tests unitarios
 >[!warning] 
 >Componente reutilizable? como wraper?
 
+### Fase 4: Crear logger wrapper
+
+```json
+safeLogger.info("payment_authorized", {
+  payment_id,
+  amount,
+  currency,
+  user_id_hash
+});
+```
+
