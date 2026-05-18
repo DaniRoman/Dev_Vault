@@ -413,47 +413,40 @@ cuántos logs hay en qué niveles qué clases/módulos loggean más
 - Si hay logs dentro de loops
 - Si hay access logs muy ruidosos
 
-| Campo                                | Descripción                                            | Ejemplo                        |                               |       |            |                      |                                     |                                    |
-| ------------------------------------ | ------------------------------------------------------ | ------------------------------ | ----------------------------- | ----- | ---------- | -------------------- | ----------------------------------- | ---------------------------------- |
-| Servicio                             | Nombre del microservicio                               | `connection-layer`             |                               |       |            |                      |                                     |                                    |
-| Módulo / archivo                     | Dónde está el log                                      | `DeviceConsumer.ts`            |                               |       |            |                      |                                     |                                    |
-| Línea aproximada                     | Línea o función                                        | `processMessage()`             |                               |       |            |                      |                                     |                                    |
-| Entrada                              | HTTP, Rabbit, Device, Job, Internal                    | `Rabbit`                       |                               |       |            |                      |                                     |                                    |
-| Evento actual                        | Qué loggea ahora                                       | `"Received payload"`           |                               |       |            |                      |                                     |                                    |
-| Nivel actual                         | DEBUG, INFO, WARN, ERROR                               | `INFO`                         |                               |       |            |                      |                                     |                                    |
-| Frecuencia                           | Alta, media, baja                                      | Alta                           |                               |       |            |                      |                                     |                                    |
-| Volumen estimado                     | Logs/día o logs/min                                    | `500k/día`                     |                               |       |            |                      |                                     |                                    |
-| Contiene payload                     | Sí/No                                                  | Sí                             |                               |       |            |                      |                                     |                                    |
-| Contiene headers                     | Sí/No                                                  | No                             |                               |       |            |                      |                                     |                                    |
-| Contiene datos sensibles             | Sí/No/Dudoso                                           | Dudoso                         |                               |       |            |                      |                                     |                                    |
-| Tiene trace_id/request_id/message_id | Sí/No                                                  | No                             |                               |       |            |                      |                                     |                                    |
-| Es necesario                         | Sí/No/Parcial                                          | Parcial                        |                               |       |            |                      |                                     |                                    |
-| Problema                             | Ruido, sensible, duplicado, sin contexto               | Payload completo               |                               |       |            |                      |                                     |                                    |
-| Acción                               | Mantener, eliminar, samplear, sanitizar, mover a DEBUG | Sanitizar + reducir            |                               |       |            |                      |                                     |                                    |
-| Nuevo evento propuesto               | Nombre estructurado                                    | `rabbit_message_received`      |                               |       |            |                      |                                     |                                    |
-| Nuevo nivel propuesto                | INFO/WARN/ERROR/DEBUG                                  | DEBUG                          |                               |       |            |                      |                                     |                                    |
-| Campos permitidos                    | Qué campos se conservarán                              | `queue,message_id,duration_ms` |                               |       |            |                      |                                     |                                    |
-| Owner                                | Responsable                                            | Backend/platform               |                               |       |            |                      |                                     |                                    |
-| Prioridad                            | Alta/media/baja                                        | Alta                           |                               |       |            |                      |                                     |                                    |
-| Servicio                             | Módulo                                                 | Entrada                        | Log actual                    | Nivel | Frecuencia | Riesgo               | Acción                              | Nuevo evento                       |
-| translator                           | `DeviceConsumer`                                       | Rabbit                         | `Received payload: {payload}` | INFO  | Alta       | Payload sensible     | Mover a DEBUG + truncar + sanitizar | `rabbit_message_received`          |
-| translator                           | `DeviceConsumer`                                       | Rabbit                         | `Error processing message`    | ERROR | Media      | Duplicado            | Dejar solo en consumer boundary     | `rabbit_message_processing_failed` |
-| connection-layer                     | `DeviceApiClient`                                      | HTTP client                    | `Calling API with headers`    | INFO  | Alta       | Authorization header | Eliminar headers + safe fields      | `external_http_call_started`       |
-| api                                  | `CommandController`                                    | HTTP                           | `POST /command body...`       | INFO  | Alta       | Body completo        | Eliminar body + route normalizada   | `http_request_completed`           |
+|Campo|Descripción|Ejemplo|
+|---|---|---|
+|Servicio|Nombre del microservicio|`connection-layer`|
+|Módulo / archivo|Dónde está el log|`DeviceConsumer.ts`|
+|Línea aproximada|Línea o función|`processMessage()`|
+|Entrada|HTTP, Rabbit, Device, Job, Internal|`Rabbit`|
+|Evento actual|Qué loggea ahora|`"Received payload"`|
+|Nivel actual|DEBUG, INFO, WARN, ERROR|`INFO`|
+|Frecuencia|Alta, media, baja|Alta|
+|Volumen estimado|Logs/día o logs/min|`500k/día`|
+|Contiene payload|Sí/No|Sí|
+|Contiene headers|Sí/No|No|
+|Contiene datos sensibles|Sí/No/Dudoso|Dudoso|
+|Tiene trace_id/request_id/message_id|Sí/No|No|
+|Es necesario|Sí/No/Parcial|Parcial|
+|Problema|Ruido, sensible, duplicado, sin contexto|Payload completo|
+|Acción|Mantener, eliminar, samplear, sanitizar, mover a DEBUG|Sanitizar + reducir|
+|Nuevo evento propuesto|Nombre estructurado|`rabbit_message_received`|
+|Nuevo nivel propuesto|INFO/WARN/ERROR/DEBUG|DEBUG|
+|Campos permitidos|Qué campos se conservarán|`queue,message_id,duration_ms`|
+|Owner|Responsable|Backend/platform|
+|Prioridad|Alta/media/baja|Alta|
+
+Ejemplo rellenado
+
+| Servicio         | Módulo              | Entrada     | Log actual                    | Nivel | Frecuencia | Riesgo               | Acción                              | Nuevo evento                       |
+| ---------------- | ------------------- | ----------- | ----------------------------- | ----- | ---------- | -------------------- | ----------------------------------- | ---------------------------------- |
+| translator       | `DeviceConsumer`    | Rabbit      | `Received payload: {payload}` | INFO  | Alta       | Payload sensible     | Mover a DEBUG + truncar + sanitizar | `rabbit_message_received`          |
+| translator       | `DeviceConsumer`    | Rabbit      | `Error processing message`    | ERROR | Media      | Duplicado            | Dejar solo en consumer boundary     | `rabbit_message_processing_failed` |
+| connection-layer | `DeviceApiClient`   | HTTP client | `Calling API with headers`    | INFO  | Alta       | Authorization header | Eliminar headers + safe fields      | `external_http_call_started`       |
+| api              | `CommandController` | HTTP        | `POST /command body...`       | INFO  | Alta       | Body completo        | Eliminar body + route normalizada   | `http_request_completed`           |
 
 
-
-### Fase 2 Definir estándar mínimo
-
-```txt
-campos obligatorios
-niveles
-campos prohibidos
-eventos permitidos
-reglas de sanitización
-reglas de sampling
-ejemplos buenos/malos
-```
+### Fase 2 Definir estándar mínimo común 
 
 ### Fase3 Implementar sanitizer común
 
