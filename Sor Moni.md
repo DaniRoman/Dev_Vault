@@ -13,95 +13,41 @@ Porque TODO lo que has preparado conecta con eso:
 * playa → vista
 * buda → paz/energía
 
-
-
-  
-
 ## SOBRE 1 — “Respira”
 
-  
+  ### Gym → Casa
 
-### Gym → Casa
-
-  
-
-Color:
-
-  
-
-* blanco
-
-* crema
-
-* o beige
-
-  
+* blanco, crema, beige
 
 Dentro:
 
-  
-
 * una flor seca pequeña
-
 * o una ramita de lavanda
-
-  
 
 Tema:
 
 “Parar el mundo”.
 
-  
-
 Texto corto:
 
-  
-
-> “Hoy no tienes que correr.
-
+> “Hoy no tienes que correr. respira toma un segundo de aliento para parar tu mundo y lo cotidiano.
 > Hoy solo quiero que sientas.
-
 > Vuelve a casa ![❤️](https://fonts.gstatic.com/s/e/notoemoji/17.0/2764_fe0f/32.png)”
 
-  
 
-MUY importante:
-
-No expliques nada todavía.
-
-  
-
----
-
-  
-
-# LLEGADA A CASA
-
-  
-
-## Cómo montar la escena
-
-  
 
 ### Encima de la camilla:
 
   
 
-* los diapasones
-
+* los diapasones  
 * una toalla enrollada bonita
-
-* aceite
-
-* quizá una piedra pequeña o cuarzo
-
-* música ambiente
-
-  
+* aceite (Baño)
+* quizá una piedra pequeña o cuarzo (cojer piedras de casa, comprar en chino?)
+* música ambiente (amazon prime)
 
 Haz que parezca una experiencia, no un regalo dejado ahí.
 
-  
 
 ---
 
@@ -109,26 +55,16 @@ Haz que parezca una experiencia, no un regalo dejado ahí.
 
 # SOBRE 2 — “Escucha”
 
-  
-
-Este es probablemente el más especial.
-
-  
 
 Aquí empieza el masaje.
 
-  
-
 Texto:
 
-  
+
 
 > “Cierra los ojos.
-
-> Respira lento.
-
+> Respira lento y escucho tu interior escucha aquello que tus pensamientos callan con su ruido escucha lo que realmente tienes que escucat y siente .
 > Deja fuera todo lo demás.
-
 > Hoy quiero cuidarte como mereces.”
 
   
