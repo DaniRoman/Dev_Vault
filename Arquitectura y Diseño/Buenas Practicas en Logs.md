@@ -328,4 +328,32 @@ si hay access logs muy ruidosos
 | INFO en loop                | Alto volumen | Convertir a métrica o samplear |
 
 
-### Fase 2 Inventario
+### Fase 2 Definir estándar mínimo
+
+```txt
+campos obligatorios
+niveles
+campos prohibidos
+eventos permitidos
+reglas de sanitización
+reglas de sampling
+ejemplos buenos/malos
+```
+
+### Fase3 Implementar sanitizer común
+
+
+```txt
+componente reutilizable.
+
+denylist de campos sensibles
+redacción por regex
+truncado
+límite de profundidad
+protección contra objetos enormes
+tests unitarios
+```
+
+>[!warning] 
+>Componente reutilizable? como wraper?
+
