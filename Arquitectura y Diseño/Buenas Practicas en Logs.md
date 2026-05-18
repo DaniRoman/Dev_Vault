@@ -131,37 +131,40 @@ ack/nack/retry
   "message_id": "msg-123",
   "duration_ms": 41
 }
+
+//SI FALLA 
+
+{  
+"level": "ERROR",  
+"event": "rabbit_message_processing_failed",  
+"queue": "device.events",  
+"message_id": "msg-123",  
+"error_type": "InvalidPayloadError"  
+}
 ```
 
+Para el device directo seria un **device connection wrapper**.
 
->[!warning] Aplica esto si es un micro?
-
-Requests entrantes:
-
-```
-request started/completed
-duration
-status
-route
-method
-trace_id
+```txt
+Device message entra
+↓
+connection handler / protocol adapter
+↓
+wrapper captura device_id_hash, protocol, message_type, duration
+↓
+translator
 ```
 
-no loggear cada request exitoso interno si genera demasiado volumen.
-
-Posible regla:
-
+```json
+{
+  "event": "device_message_received",
+  "protocol": "tcp",
+  "message_type": "telemetry",
+  "device_id_hash": "hmac_sha256:abc",
+  "payload_size_bytes": 512
+}
 ```
-2xx/3xx: sampleado o solo gateway
-4xx: depende del caso
-5xx: siempre
-latencia alta: siempre
-```
 
->[!warning] 
-Que es sampleado o solo gateway!¿?¿
-
----
 ## Handler global de excepciones
 
 ```
