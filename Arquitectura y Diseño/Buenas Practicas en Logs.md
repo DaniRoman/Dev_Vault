@@ -65,12 +65,14 @@ user_id_hash si aplica
 # 4. Punto global: dónde tocar
 
 >[!tip]
->Definir los puntos globales de mi micro
+>Definir los puntos globales de mi micro o boundarys
 
 lugares del flujo donde puedes implementar lógica común sin tener que modificar cientos de líneas sueltas.
 Por ejemplo, en vez de buscar todos los `logger.error(...)` del código, se crear un punto donde todos los errores pasan.
 
-En nuestra arquitectura los puntos globales seria.
+(Un **boundary** es el borde de entrada o salida de un sistema.)
+
+En nuestra arquitectura los puntos globales/boundarys seria.
 
 ```txt
 1. Entrada por API HTTP.
@@ -81,6 +83,15 @@ En nuestra arquitectura los puntos globales seria.
 6. Handler global de errores.
 7. Logger wrapper común.
 8. Pipeline de logs, si tenéis uno.
+P
+qué operación era
+qué mensaje era
+qué endpoint era
+qué device era
+qué queue era
+cuánto tardó
+si se hizo ack/nack
+qué status se respondió
 ```
 
 ## Middleware HTTP
@@ -111,6 +122,10 @@ response
 ```
 
 ### 2xx/3xx sampleado o solo gateway
+
+>[!warning] 
+>[[¿Qué significa 2xx 3xx sampleado o solo gateway?]]
+
 ## Para RabbitMQ no es middleware HTTP. Sería un **consumer wrapper** o **Rabbit interceptor**.
 
 ```txt
@@ -167,25 +182,18 @@ translator
 
 ## Handler global de excepciones
 
-```
-Una excepción se loggea una sola vez.
-```
+handler global de excepciones punto común donde caen errores no gestionados o errores finales de una operación.
+Un **boundary** es el borde de entrada o salida de un sistema.
 
-Normalmente en el boundary:
-
->[!warning] 
-Que es boundary?
-
-```
-controller advice
-exception filter
-global error handler
-middleware de error
+```txt
+1. Endpoint HTTP.
+2. Consumer RabbitMQ.
+3. Handler de conexión con device.
+4. Job programado.
+5. Cliente hacia otra API.
+6. Publisher hacia Rabbit.
 ```
 
-Evitar que repository, service, controller y middleware loggeen el mismo error.
-
----
 
 ## 4.4 Interceptores de clientes externos
 
