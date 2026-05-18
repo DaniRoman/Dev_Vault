@@ -83,7 +83,8 @@ En nuestra arquitectura los puntos globales/boundarys seria.
 6. Handler global de errores.
 7. Logger wrapper común.
 8. Pipeline de logs, si tenéis uno.
-P
+
+Por qué loggear en el boundary Porque ahí tienes el contexto completo:
 qué operación era
 qué mensaje era
 qué endpoint era
