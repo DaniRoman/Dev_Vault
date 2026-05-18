@@ -85,6 +85,26 @@ En nuestra arquitectura los puntos globales seria.
 
 ## Middleware HTTP
 
+El concepto de “middleware HTTP” aplica **solo cuando el microservicio recibe tráfico HTTP**
+
+```txt
+API REST
+endpoint interno
+webhook
+health check
+admin endpoint
+```
+
+```json
+{
+  "event": "http_request_completed",
+  "method": "POST",
+  "route": "/devices/{id}/commands",
+  "status_code": 200,
+  "duration_ms": 54
+}
+```
+
 >[!warning] Aplica esto si es un micro?
 
 Requests entrantes:
