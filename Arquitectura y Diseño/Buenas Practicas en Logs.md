@@ -64,7 +64,9 @@ user_id_hash si aplica
 
 # 3.Formato recomendado
 
-Envelope común + campos específicos del evento
+>[!tip] Esto esta en un punto mas abaj
+
+Envelope común + campos específicos según del tipo de evento `info, warning...`
 
 ```json
 //COMUN
@@ -78,7 +80,33 @@ Envelope común + campos específicos del evento
   "trace_id": "abc123",
   "request_id": "req-123"
 }
-//ERROR
+// + ERROR
+{
+  "timestamp": "2026-05-18T10:30:05.000Z",
+  "level": "ERROR",
+  "event": "device_message_processing_failed",
+  "service": "translator-service",
+  "environment": "prod",
+  "trace_id": "abc123",
+  "message_id": "msg-789",
+  "queue": "device.events",
+  "error_type": "InvalidPayloadError",
+  "error_code": "INVALID_DEVICE_PAYLOAD",
+  "error_message": "Payload validation failed"
+}
+// WARN
+{
+  "timestamp": "2026-05-18T10:30:02.000Z",
+  "level": "WARN",
+  "event": "external_api_retry",
+  "service": "connection-layer",
+  "environment": "prod",
+  "target_service": "device-api",
+  "operation": "send_command",
+  "retry_count": 2,
+  "duration_ms": 1200,
+  "trace_id": "abc123"
+}
 ```
 Todos los logs deberían tener algo parecido a esto:
 
