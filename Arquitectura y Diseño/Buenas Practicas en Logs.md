@@ -474,20 +474,26 @@ command_sent_to_device
 ```
 ### Fase3 Implementar sanitizer común
 
+`a modo de función`
 
 ```txt
-componente reutilizable.
-
-denylist de campos sensibles
-redacción por regex
-truncado
-límite de profundidad
-protección contra objetos enormes
-tests unitarios
+input log fields
+   ↓
+redactar por nombre de campo
+   ↓
+redactar por patrones dentro de strings
+   ↓
+truncar strings grandes
+   ↓
+limitar arrays
+   ↓
+limitar profundidad de objetos
+   ↓
+limitar tamaño total del evento
+   ↓
+output seguro
 ```
 
->[!warning] 
->Componente reutilizable? como wraper?
 
 ### Fase 4: Crear logger wrapper
 
