@@ -644,18 +644,18 @@ Verificación final de los dos micros:
 
 ### Archivos creados / modificados
 
-| Archivo | Cambio |
-|---|---|
-| `src/micros/lib/logger.ts` | Nivel configurable `LOG_LEVEL` por env, método `debug()` añadido, compatibilidad total |
-| `src/micros/lib/sanitizer.ts` | Pipeline de sanitización: redacción por campo + regex, truncado 2KB, límite arrays/profundidad |
-| `src/micros/lib/safeLogger.ts` | `SafeLogger` — wrapper estructurado con `info/warn/error/debug(event, fields)` y sanitización automática |
-| `cl-12830/cl-lib/microservice.abstract.ts` | 8 `console.log` AMQP → `this.log`, error DB con mensaje útil |
-| `cl-12830/perte-coap/microservice.ts` | `JSON.stringify(request)` completo eliminado → `device_message_received` con solo method+url+serial; `console.log` PLMN eliminado; delimitadores `####` eliminados |
-| `cl-12830/cl-lib/authentication.ts` | 4 logs problemáticos → sin payload/body/deviceInfo completo |
-| `cl-12830/cl-lib/integrity/checkIntegrity.ts` | `console.log(decode(payload))` eliminado → `debug` con solo bytes |
-| `translator-12830/microservice.ts` | 8 `JSON.stringify(parsedMsg/toCLMessage/message)` → eventos del catálogo (`command_translated`, `command_sent_to_device`) |
-| `translator-12830/tl-lib/services/InputProcessor.ts` | 5 `JSON.stringify(parsedData)` → `rabbit_message_processed` con type+device_id |
-| `translator-12830/tl-lib/services/InputValidator.ts` | 3 `JSON.stringify(payload/deviceInformation)` → `validation_passed/failed` con solo `ty` |
+| Archivo                                              | Cambio                                                                                                                                                             |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `src/micros/lib/logger.ts`                           | Nivel configurable `LOG_LEVEL` por env, método `debug()` añadido, compatibilidad total                                                                             |
+| `src/micros/lib/sanitizer.ts`                        | Pipeline de sanitización: redacción por campo + regex, truncado 2KB, límite arrays/profundidad                                                                     |
+| `src/micros/lib/safeLogger.ts`                       | `SafeLogger` — wrapper estructurado con `info/warn/error/debug(event, fields)` y sanitización automática                                                           |
+| `cl-12830/cl-lib/microservice.abstract.ts`           | 8 `console.log` AMQP → `this.log`, error DB con mensaje útil                                                                                                       |
+| `cl-12830/perte-coap/microservice.ts`                | `JSON.stringify(request)` completo eliminado → `device_message_received` con solo method+url+serial; `console.log` PLMN eliminado; delimitadores `####` eliminados |
+| `cl-12830/cl-lib/authentication.ts`                  | 4 logs problemáticos → sin payload/body/deviceInfo completo                                                                                                        |
+| `cl-12830/cl-lib/integrity/checkIntegrity.ts`        | `console.log(decode(payload))` eliminado → `debug` con solo bytes                                                                                                  |
+| `translator-12830/microservice.ts`                   | 8 `JSON.stringify(parsedMsg/toCLMessage/message)` → eventos del catálogo (`command_translated`, `command_sent_to_device`)                                          |
+| `translator-12830/tl-lib/services/InputProcessor.ts` | 5 `JSON.stringify(parsedData)` → `rabbit_message_processed` con type+device_id                                                                                     |
+| `translator-12830/tl-lib/services/InputValidator.ts` | 3 `JSON.stringify(payload/deviceInformation)` → `validation_passed/failed` con solo `ty`                                                                           |
 
 
 

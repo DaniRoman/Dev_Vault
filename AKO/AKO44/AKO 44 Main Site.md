@@ -46,7 +46,8 @@
 ```
 
 
-## [[AKO - 44 Nueva tarea]]
+## Logs
+[[AKO 44 - Guia_Logs_Microservicios]]
 ## Activación de  _`Panel0Ry`_
 [[AKO 44 - Activación de Panel0Ry]]
 
