@@ -291,7 +291,7 @@ serializar el evento y mirar cuánto ocupa.
 >[!warning]
 >Que es serializar, entiendo que todo esto es una función para cada caso no ¿?
 
-### No permitir objetos arbitrarios
+## No permitir objetos arbitrarios
 
 ```ts
 //Malo
@@ -348,6 +348,11 @@ cambio de estado importante
 ## DEBUG
 
 Solo temporal o local.
+
+varias capas, o configuración por entorno, o TTL
+
+>[!warning] 
+>TTL? Redis?
 
 En producción:
 
