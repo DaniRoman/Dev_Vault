@@ -64,14 +64,20 @@ user_id_hash si aplica
 
 # 4. Punto global: dónde tocar
 
->[!warning] Esto es una clase?
+lugares del flujo donde puedes implementar lógica común sin tener que modificar cientos de líneas sueltas.
+Por ejemplo, en vez de buscar todos los `logger.error(...)` del código, se crear un punto donde todos los errores pasan.
 
-Logger wrapper común
+En nuestra arquitectura los puntos globales seria.
 
-```
-safeLogger.info(event, fields)
-safeLogger.warn(event, fields)
-safeLogger.error(event, fields)
+```txt
+1. Entrada por API HTTP.
+2. Entrada por RabbitMQ.
+3. Entrada directa desde device.
+4. Salida hacia otra API.
+5. Salida hacia RabbitMQ.
+6. Handler global de errores.
+7. Logger wrapper común.
+8. Pipeline de logs, si tenéis uno.
 ```
 
 ## Middleware HTTP
