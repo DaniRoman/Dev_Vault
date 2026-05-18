@@ -1,7 +1,6 @@
-
+Ok vamos a acabar de darle forma final a esto 
 ## “Los sentidos”
 
-  
 
 Porque TODO lo que has preparado conecta con eso:
 
@@ -193,7 +192,7 @@ Lo mejor:
 
   
 
-en sitges comeremos un gofre y luego iremos de tapeo a  casa de sus padres y luego es cuando iremos a casa y vera el buda  aqui en casa de sus padres o algun sitio otro sobre oara el buda o otro sentido 
+en sitges comeremos un gofre y luego iremos de tapeo a  casa de sus padres ahi deberia darle la ultima nota de los sentidos que seria la vista? pk vera el buda al llegar a casa y en este una ultima nota con el 6 sentido algo con el amor el alma o algo muy profundo que hable del alma y de nosostros.
 
   
 
@@ -343,122 +342,8 @@ Hazlos todos iguales:
 
   
 
----
+aceites con aroma ? * o aceites relajantes en los sobres?
 
   
-
-## Olor
-
   
 
-Esto cambia TODO:
-
-  
-
-* incienso suave
-
-* vainilla
-
-* sándalo
-
-* o aceites relajantes
-
-  
-
-El cerebro asocia olor = recuerdo.
-
-  
-
----
-
-  
-
-# CRONOLOGÍA PERFECTA
-
-  
-
-## 08:00
-
-  
-
-Gym
-
-  
-
-## 09:30
-
-  
-
-Sobre 1 → casa
-
-  
-
-## 10:00
-
-  
-
-Escena masaje + diapasones
-
-  
-
-## 10:30
-
-  
-
-Campana + nota emocional
-
-  
-
-## 11:00
-
-  
-
-Amiga aparece + velas
-
-  
-
-## 12:30
-
-  
-
-Salida hacia Sitges
-
-  
-
-## 14:00
-
-  
-
-Vivero Beach Club
-
-  
-
-## 16:30
-
-  
-
-Paseo + helado + fotos
-
-  
-
-## 19:00
-
-  
-
-Playa / sunset tranquilo
-
-  
-
-## 21:00
-
-  
-
-Casa → buda → sobre final
-
-  
-
-Y sinceramente:
-
-la clave ahora ya no es añadir más cosas.
-
-Es ejecutar esto con calma y buena atmósfera.
