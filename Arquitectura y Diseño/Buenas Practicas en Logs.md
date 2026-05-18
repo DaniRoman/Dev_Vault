@@ -413,14 +413,45 @@ tests unitarios
 
 ### Fase 4: Crear logger wrapper
 
+>[!warning]
+
 ^ac9cee
-Logger wrapper común: ¿es una clase o un punto común para todos?
+Logger wrapper común: normalmente será una **clase o módulo común**, pero el concepto importante es que sea el **punto obligatorio de entrada al logging**.. La idea es tener una **abstracción común** que todos usen.
 
-Puede ser una **clase**, un **módulo**, una **librería interna** o un **servicio utilitario**, depende del lenguaje.
+```txt
+Micro A ─┐
+Micro B ─┼── usan misma librería/patrón → SafeLogger
+Micro C ─┘
+```
 
-La idea no es necesariamente tener “un único logger físico para todos los micros”, porque cada microservicio corre de forma independiente.
+`saveLogger` se encargaría de...
 
-La idea es tener una **abstracción común** que todos usen.
+```txt
+	1. Añadir campos comunes.
+	2. Sanitizar datos sensibles.
+	3. Truncar valores demasiado grandes.
+	4. Normalizar el formato.
+	5. Añadir trace_id/request_id/message_id.
+	6. Evitar que se loggeen objetos completos peligrosos.
+	7. Aplicar reglas de nivel.
+```
+
+```ts
+//NO
+logger.info("Request received", request);
+//SI
+safeLogger.info("rabbit_message_processed", {  
+	queue: "device.events",  
+	message_id: messageId,  
+	duration_ms: duration  
+});  
+  
+safeLogger.error("device_message_processing_failed", error, {  
+	queue: "device.events",  
+	message_id: messageId  
+});
+
+```
 
 >[!warning]
 Creamos un Envelope comun dependiendo del microservicio y otro para cada nivel `info, error...`
