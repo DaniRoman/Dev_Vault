@@ -467,11 +467,14 @@ tests unitarios
 
 ### Fase 4: Crear logger wrapper
 
->[!warning] 
->Que es mas útil tener dependiendo de mi arquitectura de microservicios?
+>[!tip]
+En mi caso se utiliza `looger /akocloud-micros/src/micros/lib/logger.ts`
+
 
 ^ac9cee
 Logger wrapper común: normalmente será una **clase o módulo común**, pero el concepto importante es que sea el **punto obligatorio de entrada al logging**.. La idea es tener una **abstracción común** que todos usen.
+
+
 
 ```txt
 Micro A ─┐
@@ -573,6 +576,4 @@ Todos los logs deberían tener algo parecido a esto:
 
 
 
->[!warning]
-Refactor de looger 
 
