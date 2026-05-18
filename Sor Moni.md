@@ -8,34 +8,24 @@ orden de las notas¿?
 
   
 * nota gym a casa → Respira ?
-		Texto corto:
-> 	“Hoy no tienes que correr. respira toma un segundo para sentir el olor y aroma de todo aquello que te rodea respira y toma aliento para parar tu mundo y lo cotidiano.
-> 	Hoy solo quiero que sientas.
-> 	Vuelve a casa ![❤️](https://fonts.gstatic.com/s/e/notoemoji/17.0/2764_fe0f/32.png)”
+	Texto corto:
+	“Hoy no tienes que correr. respira toma un segundo para sentir el olor y aroma de todo aquello que te rodea respira y toma aliento para parar tu mundo y lo cotidiano.
+	Hoy solo quiero que sientas.
+	Vuelve a casa ![❤️|32](https://fonts.gstatic.com/s/e/notoemoji/17.0/2764_fe0f/32.png)”
+	
 * nota en camilla para masage y escuchar campana → tacto y oido?
+	* “Cierra los ojos.
+> 	escucho tu interior escucha aquello que tus pensamientos callan con su ruido escucha lo que realmente tienes que escucat y siente .
+> 	Deja fuera todo lo demás este momento es para ti.
+> 	“Escucha bien… porque algunas cosas bonitas no se dicen con palabras.”
+* 
 * nota en la campanas que hablara sobre la amistad y personas especiales → nose cual... tacto?
 * nota que traera la amiga para mandarnos al restaurante → sabor
 * nota en casa de los padres antes de llegar vista (para ver al buda)
 * buda → paz/energía (El sexto sentido )
 
 Sobres aceite de aromas? cuerda fina? sobres de olores y colores? 
- 
-
-
-
-O otra versión que tendra que ver con el sentido del tactyo o que te toquen
-
-
-
-### Encima de la camilla:
-
-  
-
-* los diapasones  
-* una toalla enrollada bonita
-* aceite (Baño)
-* quizá una piedra pequeña o cuarzo (cojer piedras de casa, comprar en chino?)
-* música ambiente (amazon prime)
+ Encima camilla 
 
 Haz que parezca una experiencia, no un regalo dejado ahí.
 
@@ -47,21 +37,7 @@ Haz que parezca una experiencia, no un regalo dejado ahí.
 # SOBRE 2 — “Escucha” el oido y el tacto? 
 
 
-Aquí empieza el masaje y le doy el sobre.
-
-Texto:
-
-> “Cierra los ojos.
-> Respira lento y escucho tu interior escucha aquello que tus pensamientos callan con su ruido escucha lo que realmente tienes que escucat y siente .
-> Deja fuera todo lo demás.
-
-Y abajo:
-
-> “Escucha bien… porque algunas cosas bonitas no se dicen con palabras.”
-
-* masaje
-* diapasones
-* campana de viento
+Aquí empieza el masaje y le doy el sobre
 
   
 
