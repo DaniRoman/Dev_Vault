@@ -570,3 +570,9 @@ Todos los logs deberían tener algo parecido a esto:
 "status_code": 201,  
 "duration_ms": 83}
 ```
+
+
+
+>[!warning]
+Refactor de looger 
+
