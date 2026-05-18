@@ -63,6 +63,8 @@ user_id_hash si aplica
 
 Todo log debería tender a ser estructurado:
 
+>[!warning] Todo log tiene que tener el mismo formato?
+
 ```json
 {  
 "level": "INFO",  
@@ -78,6 +80,8 @@ Todo log debería tender a ser estructurado:
 ```
 
 # 4. Punto global: dónde tocar
+
+>[!warning] Esto es una clase?
 
 Logger wrapper común
 
