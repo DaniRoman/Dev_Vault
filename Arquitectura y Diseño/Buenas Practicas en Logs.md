@@ -58,3 +58,33 @@ tenant_id si aplica
 user_id_hash si aplica
 
 ```
+
+# 3.Formato recomendado
+
+Todo log debería tender a ser estructurado:
+
+```json
+{  
+"level": "INFO",  
+"event": "order_created",  
+"service": "orders-api",  
+"environment": "prod",  
+"trace_id": "abc",  
+"request_id": "req-123",  
+"route": "/orders/{id}",  
+"method": "POST",  
+"status_code": 201,  
+"duration_ms": 83}
+```
+
+# 4. Punto global: dónde tocar
+
+Logger wrapper común
+
+```
+safeLogger.info(event, fields)
+safeLogger.warn(event, fields)
+safeLogger.error(event, fields)
+```
+
+Ese wrapper hace:
