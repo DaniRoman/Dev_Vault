@@ -220,3 +220,87 @@ logger.info("user_loaded", {
   source
 });
 ```
+
+# Politica de niveles
+
+## ERROR
+
+Solo cuando algo falla de verdad:
+
+```
+operación fallida
+excepción no controlada
+fallo externo agotando retries
+inconsistencia de datos
+pérdida de mensaje
+```
+
+## WARN
+
+Anomalía recuperable:
+
+```
+retry
+fallback
+latencia alta
+circuit breaker abierto
+datos incompletos pero procesables
+```
+
+## INFO
+
+Evento relevante:
+
+```
+servicio iniciado
+job terminado
+pedido creado
+pago autorizado
+cambio de estado importante
+```
+
+## DEBUG
+
+Solo temporal o local.
+
+En producción:
+
+>[!warning] 
+>Como lo hago desactivable?
+
+
+```
+DEBUG desactivado por defecto
+activable con TTL
+por servicio / trace_id / tenant / usuario hasheado
+```
+
+# Antipatrones a buscar para modificar
+
+```json
+logger.info(request)
+logger.info(response)
+logger.info(headers)
+logger.info(body)
+logger.error(e) repetido en varias capas
+console.log
+printStackTrace
+logs dentro de loops
+logs de health checks
+logs de cada operación interna trivial
+logs con concatenación de strings
+logs sin event name
+logs sin trace_id/request_id
+
+Authorization
+Cookie
+Bearer
+password
+token
+secret
+body
+payload
+headers
+```
+
+#Plan 
