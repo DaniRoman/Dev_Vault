@@ -87,4 +87,74 @@ safeLogger.warn(event, fields)
 safeLogger.error(event, fields)
 ```
 
-Ese wrapper hace:
+## Middleware HTTP
+
+Requests entrantes:
+
+```
+request started/completed
+duration
+status
+route
+method
+trace_id
+```
+
+no loggear cada request exitoso interno si genera demasiado volumen.
+
+Posible regla:
+
+```
+2xx/3xx: sampleado o solo gateway
+4xx: depende del caso
+5xx: siempre
+latencia alta: siempre
+```
+
+>[!warning] 
+Que es sampleado o solo gateway!¿?¿
+
+---
+## Handler global de excepciones
+
+```
+Una excepción se loggea una sola vez.
+```
+
+Normalmente en el boundary:
+
+>[!warning] 
+Que es boundary?
+
+```
+controller advice
+exception filter
+global error handler
+middleware de error
+```
+
+Evitar que repository, service, controller y middleware loggeen el mismo error.
+
+---
+
+## 4.4 Interceptores de clientes externos
+
+Para llamadas a otros servicios:
+
+```
+external_call_started opcional
+external_call_completed
+external_call_failed
+```
+
+Pero sin payload completo.
+
+Ejemplo bueno:
+
+```
+{  "level": "WARN",  "event": "external_call_failed",  "target_service": "payments",  "operation": "authorize_payment",  "status_code": 504,  "duration_ms": 1200,  "retry_count": 2,  "trace_id": "abc"}
+```
+
+---
+
+# 5. Sanitización
