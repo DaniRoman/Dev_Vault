@@ -168,7 +168,8 @@ Pero sin payload completo.
 
 ### Redactar por nombre de campo
 
->[!warning] No entiendo que es re
+>[!warning]
+>Redactar por nombre de campo¿?
 
 Si el campo se llama `authorization`, `token`, `password`, etc.:
 
@@ -179,4 +180,43 @@ Si el campo se llama `authorization`, `token`, `password`, etc.:
 }
 ```
 
-## 5.2 Redactar por patrón
+### Redactar por patrón
+
+Aunque el nombre del campo sea inocente, puede venir un token dentro del valor.
+>[!warning]
+>Redactar por patrón¿?.
+
+```
+Bearer eyJ...
+JWT
+API keys
+emails si aplica
+tarjetas
+cookies
+```
+
+### Truncar por valores Grandes?
+
+>[!warning]
+>Como conseguimos eso¿?.
+
+máximo 2 KB por campo
+máximo 8 KB por evento completo
+máximo 20 elementos en arrays
+máximo profundidad 4 en objetos
+
+### No permitir objetos arbitrarios
+
+```ts
+//Malo
+logger.info("request", request);
+logger.info("user", user);
+logger.info("response", response);
+
+//Bueno
+logger.info("user_loaded", {
+  user_id_hash,
+  account_status,
+  source
+});
+```
