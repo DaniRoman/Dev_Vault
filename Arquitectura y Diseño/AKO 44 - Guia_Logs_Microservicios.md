@@ -461,7 +461,7 @@ Aquí tienes el mismo documento actualizado con todo lo implementado hasta ahora
 
 >[!important]
 >
->`WinstonCloudwatch.ts` es el puente que ya implementamos. Sin él, los logs solo van a consola y desaparecen cuando el contenedor se reinicia. Con él, quedan persistidos en AWS
+>`WinstonCloudwatch.ts` Sin él, los logs solo van a consola y desaparecen cuando el contenedor se reinicia. Con él, quedan persistidos en AWS
 
 ```
 Tráfico real  →  Microservicio  →  logger.ts  →  CloudWatch / consola
