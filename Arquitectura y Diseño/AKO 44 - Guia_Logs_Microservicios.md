@@ -448,13 +448,6 @@ Registrar las siguientes métricas antes de empezar y volver a medirlas tras la 
 
 [[AKO 44 - Guia_Logs_Microservicios - promp]]
 
-
-## Resumen de lo hecho (5 pasos)
-
-Aquí tienes el mismo documento actualizado con todo lo implementado hasta ahora:
-
----
-
 ## Resumen de lo hecho (8 pasos)
 
 ### La arquitectura: 3 capas
