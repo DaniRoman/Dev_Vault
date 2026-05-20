@@ -451,18 +451,22 @@ Registrar las siguientes métricas antes de empezar y volver a medirlas tras la 
 
 ## Resumen de lo hecho (5 pasos)
 
+Aquí tienes el mismo documento actualizado con todo lo implementado hasta ahora:
+
+---
+
+## Resumen de lo hecho (8 pasos)
 
 ### La arquitectura: 3 capas
 
->[!important] 
-
+>[!important]
+>
 >`WinstonCloudwatch.ts` es el puente que ya implementamos. Sin él, los logs solo van a consola y desaparecen cuando el contenedor se reinicia. Con él, quedan persistidos en AWS
-
 
 ```
 Tráfico real  →  Microservicio  →  logger.ts  →  CloudWatch / consola
                       ↕
-              sanitizer.ts  ←  safeLogger.ts
+              sanitizer.ts  ←  safeLogger.ts  ←  log-events.ts
 ```
 
 **Capa 1 — `sanitizer.ts`** (el filtro de seguridad)
@@ -494,25 +498,33 @@ Respeta `LOG_LEVEL` por variable de entorno. En producción: `info` y superior. 
 
 ---
 
-### El catálogo de eventos — nombres estables para buscas en CloudWatch
+### El catálogo de eventos — `log-events.ts` (adoptado de KNT-2347)
 
-En lugar de strings libres imposibles de buscar, todos los logs nuevos usan nombres del catálogo:
+En lugar de strings libres imposibles de buscar, todos los logs nuevos usan constantes del catálogo `LogEvents.*`. Se adoptó íntegro del otro desarrollador (124 líneas):
 
 | Evento | Cuándo ocurre |
 |---|---|
-| `device_message_received` | CoAP llega un mensaje de un dispositivo físico |
-| `device_message_rejected` | Mensaje rechazado por integridad/autenticación |
-| `rabbit_message_received` | AMQP recibe un mensaje entrante |
-| `rabbit_message_processed` | Mensaje procesado correctamente |
-| `rabbit_message_processing_failed` | Parser devuelve null o lanza excepción |
-| `rabbit_message_published` | Mensaje publicado a RabbitMQ (antes volcaba el payload entero) |
-| `command_translated` | Translator convirtió un comando al formato del dispositivo |
-| `command_sent_to_device` | Mensaje enviado al driver CoAP |
-| `validation_passed` | Payload validado correctamente contra el schema |
-| `validation_failed` | Payload inválido, campo faltante, firmware incompatible |
-| `database_query` / `database_query_result` | Consulta a MongoDB/Redis (sin exponer el contenido) |
-| `database_error` | Error en BD — solo el mensaje, nunca el objeto completo |
-| `exception_unhandled` | Error capturado en catch — solo `error.message`, sin stack en producción |
+| `DEVICE_MESSAGE_RECEIVED` | CoAP llega un mensaje de un dispositivo físico |
+| `DEVICE_MESSAGE_REJECTED` | Mensaje rechazado por integridad/autenticación |
+| `DEVICE_CONNECTED` / `DEVICE_DISCONNECTED` | Conexión/desconexión de dispositivo |
+| `RABBIT_MESSAGE_RECEIVED` | AMQP recibe un mensaje entrante |
+| `RABBIT_MESSAGE_PROCESSED` | Mensaje procesado correctamente |
+| `RABBIT_MESSAGE_PROCESSING_FAILED` | Parser devuelve null o lanza excepción |
+| `RABBIT_MESSAGE_PUBLISHED` | Mensaje publicado a RabbitMQ (antes volcaba el payload entero) |
+| `COMMAND_TRANSLATED` | Translator convirtió un comando al formato del dispositivo |
+| `COMMAND_SENT_TO_DEVICE` | Mensaje enviado al driver CoAP |
+| `VALIDATION_PASSED` | Payload validado correctamente contra el schema |
+| `VALIDATION_FAILED` | Payload inválido, campo faltante, firmware incompatible |
+| `DATABASE_QUERY` / `DATABASE_QUERY_RESULT` | Consulta a MongoDB/Redis (sin exponer el contenido) |
+| `DATABASE_ERROR` | Error en BD — solo el mensaje, nunca el objeto completo |
+| `EXCEPTION_UNHANDLED` | Error capturado en catch — solo `error.message`, sin stack en producción |
+| `BACKLOG_RECEIVED` / `BACKLOG_PROCESSED` | Ciclo de vida de un mensaje de backlog |
+| `AUDIT_PROCESSED` | Registro de auditoría creado correctamente |
+| `HTTP_REQUEST_COMPLETED` / `HTTP_REQUEST_FAILED` | Llamadas HTTP externas |
+| `EXTERNAL_HTTP_CALL_COMPLETED` / `EXTERNAL_HTTP_CALL_FAILED` | Llamadas a APIs externas |
+| `NOTIFICATION_SENT` / `NOTIFICATION_FAILED` | Notificaciones enviadas al exterior |
+| `SAMPLE_RECEIVED` / `SAMPLE_PROCESSED` | Ciclo de vida de muestras de sensores |
+| `EVENT_ACTIVATED` / `EVENT_DEACTIVATED` / `EVENT_RESET` | Handlers de eventos de dispositivo |
 
 ---
 
@@ -522,37 +534,87 @@ En lugar de strings libres imposibles de buscar, todos los logs nuevos usan nomb
 
 | Archivo | Qué había | Qué hay ahora |
 |---|---|---|
-| `perte-coap/microservice.ts` | `JSON.stringify(request)` completo por cada mensaje CoAP + delimitadores `#####` | `device_message_received :: method=X url=Y serial=Z` |
-| `perte-coap/microservice.ts` | 4× `JSON.stringify(error)` en catches | `exception_unhandled :: context=X error=message` |
-| `authentication.ts` | `JSON.stringify(message.payload)` — el payload del dispositivo | `device_message_received :: serial=X action=Y` |
-| `authentication.ts` | `JSON.stringify(deviceInfo.body)` — información completa del dispositivo | `integrity_check_passed :: serial=X` |
-| `authentication.ts` | `console.log(body, body.existsInManufactured, message)` — objeto completo | `device_not_found :: serial=X existsInManufactured=bool` |
+| `perte-coap/microservice.ts` | `JSON.stringify(request)` completo por cada mensaje CoAP + delimitadores `#####` | `DEVICE_MESSAGE_RECEIVED :: method=X url=Y serial=Z` |
+| `perte-coap/microservice.ts` | 4× `JSON.stringify(error)` en catches | `EXCEPTION_UNHANDLED :: context=X error=message` |
+| `authentication.ts` | `JSON.stringify(message.payload)` — el payload del dispositivo | `DEVICE_MESSAGE_RECEIVED :: serial=X action=Y` |
+| `authentication.ts` | `JSON.stringify(deviceInfo.body)` — información completa del dispositivo | `VALIDATION_PASSED :: serial=X` |
+| `authentication.ts` | `console.log(body, body.existsInManufactured, message)` — objeto completo | `DEVICE_MESSAGE_REJECTED :: serial=X existsInManufactured=bool` |
 | `authentication.ts` | `JSON.stringify(deviceInfo)` en `_validateSerialNumber` | `_validateSerialNumber :: result=success/error` |
 | `checkIntegrity.ts` | `console.log(decode(payload))` — el payload decodificado raw | `_decodePayload :: payload_bytes=N` |
 | `checkIntegrity.ts` | `JSON.stringify(decodePayload)` en debug | solo keys del objeto, nunca valores |
-| `checkIntegrity.ts` | `JSON.stringify(deviceInfo)` en UUID missing | `validation_failed :: reason=uuid_missing` |
+| `checkIntegrity.ts` | `JSON.stringify(deviceInfo)` en UUID missing | `VALIDATION_FAILED :: reason=uuid_missing` |
 | `microservice.abstract.ts` | 8× `console.log` convertidos a `this.log` | Todos migrados |
-| `microservice.abstract.ts` | `JSON.stringify(copyData)` en **CADA publicación RabbitMQ** (crítico) | `rabbit_message_published :: exchange=X routingKey=Y` |
-| `microservice.abstract.ts` | `JSON.stringify(data)` en RPC response | `rabbit_message_published :: type=RPC-RESPONSE` |
+| `microservice.abstract.ts` | `JSON.stringify(copyData)` en **CADA publicación RabbitMQ** (crítico) | `RABBIT_MESSAGE_PUBLISHED :: exchange=X routingKey=Y` |
+| `microservice.abstract.ts` | `JSON.stringify(data)` en RPC response | `RABBIT_MESSAGE_PUBLISHED :: type=RPC-RESPONSE` |
 | `microservice.abstract.ts` | 8× `JSON.stringify(e/err)` en conexiones AMQP | `error.message` solamente |
-| `repositories/ManufacturedRepository.ts` | `JSON.stringify(query)` + `JSON.stringify(response)` | `database_query :: key=X` + `found=true/false` |
-| `repositories/IPRepository.ts` | `JSON.stringify(query)` + `JSON.stringify(response)` | `database_query :: key=X` + `found=true/false` |
+| `repositories/ManufacturedRepository.ts` | `JSON.stringify(query)` + `JSON.stringify(response)` | `DATABASE_QUERY :: key=X` + `found=true/false` |
+| `repositories/IPRepository.ts` | `JSON.stringify(query)` + `JSON.stringify(response)` | `DATABASE_QUERY :: key=X` + `found=true/false` |
 | `adapters/data-access-manager.layer.ts` | `JSON.stringify(adapter)` + `JSON.stringify([query, sort, model])` + `JSON.stringify(queryObject)` | solo model + adapter index |
-| `adapters/redis-database.adapter.ts` | `JSON.stringify(query)` + `JSON.stringify(queryKey)` | `database_query :: model=X` |
+| `adapters/redis-database.adapter.ts` | `JSON.stringify(query)` + `JSON.stringify(queryKey)` | `DATABASE_QUERY :: model=X` |
 
 #### `translator-12830` — 22 logs problemáticos eliminados
 
 | Archivo | Qué había | Qué hay ahora |
 |---|---|---|
-| `microservice.ts` | 4× `JSON.stringify(parsedMsg/message)` en entrada de handlers | `command_translated :: handler=X device=Y` |
-| `microservice.ts` | 4× `JSON.stringify(toCLMessage)` justo antes de publicar | `command_sent_to_device :: handler=X device=Y connectivity=Z` |
-| `tl-lib/parsers/Parser.ts` | 4× `JSON.stringify(parsedData)` por cada tipo de mensaje | `command_translated :: type=CMD/PARAM/... ok=true` |
-| `tl-lib/parsers/implementations/SyncParser.ts` | 3× `JSON.stringify(d/singleD/bitMaps)` en errores de parseo | `validation_failed :: reason=X field=Y` |
-| `tl-lib/parsers/implementations/LiveParser.ts` | 3× `JSON.stringify(bitMaps/bitMap/analogInputs)` | `validation_failed :: reason=X field=Y` |
-| `tl-lib/services/InputProcessor.ts` | 3× `JSON.stringify(err/message)` | `exception_unhandled` + `validation_failed` con reason |
-| `tl-lib/services/InputValidator.ts` | 3× `JSON.stringify(deviceInformation/payload)` | `validation_failed/passed :: type=X serial=Y` |
-| `tl-lib/services/DeviceService.ts` | 2× `JSON.stringify(err)` en errores de Redis/BD | `database_error :: context=X device=Y error=message` |
-| `tl-lib/services/ParamMsgService.ts` | `JSON.stringify(data)` al almacenar param | `rabbit_message_processed :: context=storeParam device=X` |
+| `microservice.ts` | 4× `JSON.stringify(parsedMsg/message)` en entrada de handlers | `COMMAND_TRANSLATED :: handler=X device=Y` |
+| `microservice.ts` | 4× `JSON.stringify(toCLMessage)` justo antes de publicar | `COMMAND_SENT_TO_DEVICE :: handler=X device=Y connectivity=Z` |
+| `tl-lib/parsers/Parser.ts` | 4× `JSON.stringify(parsedData)` por cada tipo de mensaje | `COMMAND_TRANSLATED :: type=CMD/PARAM/... ok=true` |
+| `tl-lib/parsers/implementations/SyncParser.ts` | 3× `JSON.stringify(d/singleD/bitMaps)` en errores de parseo | `VALIDATION_FAILED :: reason=X field=Y` |
+| `tl-lib/parsers/implementations/LiveParser.ts` | 3× `JSON.stringify(bitMaps/bitMap/analogInputs)` | `VALIDATION_FAILED :: reason=X field=Y` |
+| `tl-lib/services/InputProcessor.ts` | 3× `JSON.stringify(err/message)` | `EXCEPTION_UNHANDLED` + `VALIDATION_FAILED` con reason |
+| `tl-lib/services/InputValidator.ts` | 3× `JSON.stringify(deviceInformation/payload)` | `VALIDATION_FAILED/PASSED :: type=X serial=Y` |
+| `tl-lib/services/DeviceService.ts` | 2× `JSON.stringify(err)` en errores de Redis/BD | `DATABASE_ERROR :: context=X device=Y error=message` |
+| `tl-lib/services/ParamMsgService.ts` | `JSON.stringify(data)` al almacenar param | `RABBIT_MESSAGE_PROCESSED :: context=storeParam device=X` |
+
+#### `backlog-12830/statecontroller` + `commands-12830/sync` + `status-12830` — migrados en WIP
+
+| Archivo | Acción |
+|---|---|
+| `backlog-12830/statecontroller/microservice.ts` | Migrado a `SafeLogger+LogEvents` (versión del otro dev adoptada en merge) |
+| `commands-12830/sync/microservice.ts` | Adoptada versión unificada: consolida `comm-sync` + `net-sync` + `sync` en un solo micro con `handleSync`, `handleCommSync`, `handleNetSync` |
+| `commands-12830/sync/services/ConfProcessor.ts` | Migrado a `SafeLogger+LogEvents` |
+| `commands-12830/sync/services/NetSyncProcessor.ts` | Migrado a `SafeLogger+LogEvents` |
+| `status-12830/device/microservice.ts` | Migrado a `LoggerHelper`, sin `JSON.stringify` |
+| `status-12830/st-lib/services/EdgeStatusProcessor.ts` | Migrado a `LoggerHelper` |
+
+#### `backlog-12830/bl-lib` — 3 servicios internos migrados (paso final)
+
+| Archivo | Qué había | Qué hay ahora | Resultado |
+|---|---|---|---|
+| `BacklogProcessor.ts` | `this.logger.info(template + JSON.stringify(msg))` en toda la lógica de procesado | `safeLog.info(LogEvents.BACKLOG_RECEIVED, { datos })` | −167 líneas de logging legacy |
+| `AuditProcessor.ts` | Campo `logger` declarado pero nunca usado, import `AuditMessage` muerto, `safeLog.error({...})` con firma incorrecta | `safeLog.error(LogEvents.DATABASE_ERROR, "message", { fields })` + limpieza de imports y campo muerto | −144 líneas, 0 warnings del IDE |
+| `ValuesClassifier.ts` | `JSON.stringify` residuales en clasificación de valores | `safeLog.info(LogEvents.VALIDATION_FAILED, { ... })` | Limpio |
+
+#### Micros adoptados íntegros del merge con KNT-2347 (ya usaban SafeLogger+LogEvents)
+
+| Microservicio | Archivos migrados |
+|---|---|
+| `activity-12830` | `activity/microservice.ts`, `activity-schedule/microservice.ts`, `abstract-panel.ts` |
+| `events-12830` | `updater/microservice.ts`, `ActivationHandler.ts`, `DeactivationHandler.ts`, `ResetHandler.ts`, `EventRepository.ts` |
+| `events-notifier-12830` | `notifier/microservice.ts`, `NotificationService.ts` |
+| `live-12830` | `realtime/microservice.ts` |
+| `sample-12830` | `injector/microservice.ts`, `indicator/microservice.ts`, `abstract-panel.ts`, estrategias TTI |
+| `backlog/` (sin sufijo) | `mediator/microservice.ts`, `statecontroller/microservice.ts`, `updater/microservice.ts` |
+| `cloudevents-12830/errcom` | `microservice.ts` |
+
+---
+
+### Cambio arquitectural — unificación de `commands-12830`
+
+El otro desarrollador (KNT-2347) unificó 3 microservicios separados en uno solo. Lo adoptamos en el merge:
+
+```
+ANTES:
+  commands-12830/comm-sync/microservice.ts   ← eliminado
+  commands-12830/net-sync/microservice.ts    ← eliminado
+  commands-12830/sync/microservice.ts
+
+DESPUÉS:
+  commands-12830/sync/microservice.ts
+    ├── handleSync()       → topic: perte.input.sync
+    ├── handleCommSync()   → topic: 12830.input.comm_sync
+    └── handleNetSync()    → topic: perte.input.net_sync
+```
 
 ---
 
@@ -560,17 +622,21 @@ En lugar de strings libres imposibles de buscar, todos los logs nuevos usan nomb
 
 | Métrica | Antes | Después |
 |---|---|---|
-| `console.log` activos en los 2 micros | ~12 | **0** |
+| `console.log` activos en micros `-12830` | ~12 | **0** |
 | `JSON.stringify` dentro de llamadas a logger | ~50 | **0** |
 | Payloads de dispositivo expuestos en logs | ✅ múltiples | **0** |
 | Payload RabbitMQ publicado en log (crítico) | ✅ cada publicación | **0** |
-| Logs con objeto de error completo (`JSON.stringify(err)`) | ~15 | **0** |
+| Logs con objeto de error completo | ~15 | **0** |
 | Campos sensibles automáticamente redactados | 0 | **20 campos** |
 | Patrones de credenciales en strings detectados | 0 | **6 patrones** |
 | IPs/emails/tarjetas/URLs redactados | 0 | **4 tipos** |
-| Eventos con nombre estable (buscables en CloudWatch) | 0 | **13 eventos** |
+| Eventos con nombre estable (buscables en CloudWatch) | 0 | **~21 eventos** en catálogo |
 | Soporte `trace_id` / `message_id` en logs | ❌ | ✅ vía `withTrace()` |
 | `DEBUG` desactivado en producción | ❌ | ✅ vía `LOG_LEVEL` env |
+| Microservicios migrados | 0 | **~18 microservicios** |
+| Ficheros modificados | 0 | **~71 ficheros** |
+| Microservicios eliminados (unificados) | — | **2** (`comm-sync`, `net-sync`) |
+| Commits en la rama | 0 | **3 commits** |
 
 ---
 
@@ -580,16 +646,18 @@ Para cualquier microservicio nuevo o existente, el uso correcto es:
 
 ```typescript
 import { SafeLogger } from "../lib/safeLogger";
+import { LogEvents } from "../lib/log-events";
 
 const log = new SafeLogger("mi-servicio");
 
 // En el boundary de entrada (RabbitMQ, CoAP, HTTP):
-log.info("rabbit_message_received", { type: "CMD", device: deviceId });
+log.info(LogEvents.RABBIT_MESSAGE_RECEIVED, { type: "CMD", device: deviceId });
 
 // Con correlación de traza:
 const tracedLog = log.withTrace(msg.correlationId, msg.messageId);
-tracedLog.info("rabbit_message_processed", { handler: "handleOutput" });
+tracedLog.info(LogEvents.RABBIT_MESSAGE_PROCESSED, { handler: "handleOutput" });
 
-// Errores — solo el mensaje, nunca el objeto completo:
-log.error("exception_unhandled", error, { context: "handleCLOutput" });
+// Errores — objeto Error como segundo arg, campos opcionales como tercero:
+log.error(LogEvents.EXCEPTION_UNHANDLED, error, { context: "handleCLOutput" });
+log.error(LogEvents.DATABASE_ERROR, "Device not found", { device: deviceId });
 ```
