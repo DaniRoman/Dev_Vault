@@ -454,6 +454,11 @@ Registrar las siguientes métricas antes de empezar y volver a medirlas tras la 
 
 ### La arquitectura: 3 capas
 
+>[!important] 
+
+>`WinstonCloudwatch.ts` es el puente que ya implementamos. Sin él, los logs solo van a consola y desaparecen cuando el contenedor se reinicia. Con él, quedan persistidos en AWS
+
+
 ```
 Tráfico real  →  Microservicio  →  logger.ts  →  CloudWatch / consola
                       ↕
