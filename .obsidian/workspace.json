@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "guia",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 614.5024719238281
+    "width": 272.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
