@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mata",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -196,7 +197,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "b3664ea61fab7f2b",
+  "active": "cd0b57e002270810",
   "lastOpenFiles": [
     "Arquitectura y Diseño/AKO 44 - Guia_Logs_Microservicios.md",
     "Arquitectura y Diseño/AKO 44 - Guia_Logs_Microservicios - promp.md",
