@@ -48,6 +48,9 @@
 
 ## Logs
 [[AKO 44 - Guia_Logs_Microservicios]]
+
+## Script Masivo para resetDevices
+[[AKO 44  - Script masivo para resetDevices]]
 ## Activación de  _`Panel0Ry`_
 [[AKO 44 - Activación de Panel0Ry]]
 
