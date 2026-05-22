@@ -231,4 +231,6 @@ Con esas 3 respuestas ya podemos ejecutar Fase 1 sin riesgo.
 
 ---
 
-Cuando quieras arrancar, dime si tienes las respuestas de la **Fase 0** y empezamos por la **Fase 1** (exponer `getIndicators` públicamente).
+Cuando quieras arrancar, dime si tienes las respuestas de la **Fase 0** y empezamos por la **Fase 1** (exponer `getIndicators` públicamente)
+
+
