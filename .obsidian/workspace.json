@@ -49,8 +49,7 @@
               "title": "AKO  44 - Admin Main Page"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 458.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -226,7 +225,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "1eea2f7f1dc23df2",
+  "active": "b3664ea61fab7f2b",
   "lastOpenFiles": [
     "AKO/AKO44/AKO44 - Unificar Endpoints.md",
     "AKO/AKO44/AKO 44 Main Site.md",
