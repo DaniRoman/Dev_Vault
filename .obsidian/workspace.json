@@ -8,23 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b3664ea61fab7f2b",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
-                "viewState": {
-                  "x": 223.6667850802212,
-                  "y": 73.55724131766273,
-                  "zoom": -0.09027989114719598
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - ErrorComm workFlow"
-            }
-          },
-          {
             "id": "1eea2f7f1dc23df2",
             "type": "leaf",
             "state": {
