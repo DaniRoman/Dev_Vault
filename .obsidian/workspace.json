@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/errocom — Device Communication Timeout Tests.md",
+                "file": "AKO/AKO44/AKO 44 - Activación de Panel0Ry.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "errocom — Device Communication Timeout Tests"
+              "title": "AKO 44 - Activación de Panel0Ry"
             }
           },
           {
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "errcom",
+                "query": "0ry",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -225,10 +225,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "09c0f32fe323a402",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/task-errcom-inactive-recovery.md",
     "AKO/AKO44/Docs/errocom — Device Communication Timeout Tests.md",
+    "AKO/AKO44/Docs/task-errcom-inactive-recovery.md",
     "AKO/AKO44/AKO 44 TestCases.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/AKO 44 Main Site.md",
