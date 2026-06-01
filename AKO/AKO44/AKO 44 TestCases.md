@@ -12,7 +12,7 @@ Lo único que faltaría, solo si quieres entrar al detalle visual exacto del HTM
 
 porque `CsvToHtmlConverter.ts` no pinta el HTML directamente: llama a `buildHtmlReport(...)`. Pero para entender el flujo **resultados → lista → CSV → HTML**, con lo que has pasado es suficiente.
 
-## Flujo completo
+### Flujo completo
 
 El flujo empieza en `test-error-comm-real.ts`. Ese runner selecciona el modo `local` o `production`, carga `.env` o `.env.prod`, selecciona `timingMode`, crea una instancia de `TestCaseErrorComm` y ejecuta `executeTestSteps()`.
 
@@ -43,7 +43,7 @@ this.exportReport(redisSnapshots);
 
 Ese es el punto donde empieza la generación de CSV y HTML.
 
-## Cómo se crean los CSV
+### Cómo se crean los CSV
 
 `exportReport(...)` está en `BaseComTestCase`. Primero calcula datos generales: nombre del test, total de pasos, cuántos han pasado, cuántos han fallado y crea una carpeta nueva dentro de `reports`, con un timestamp en el nombre.
 
@@ -77,7 +77,7 @@ generateReportFromCsv(subDir)
 
 para generar el HTML.
 
-## Cómo se pasa de CSV a HTML
+### Cómo se pasa de CSV a HTML
 
 `CsvToHtmlConverter.ts` es el conversor. Su comentario inicial ya resume la idea: lee `summary.csv`, descubre automáticamente el resto de CSV del directorio y genera un `index.html` standalone.
 
@@ -104,7 +104,7 @@ Por último llama a `buildHtmlReport(...)`, le pasa la cabecera, estadísticas, 
 index.html
 ```
 
-## En una frase
+### En una frase
 
 El flujo es:
 
@@ -119,5 +119,5 @@ executeTestSteps()
 ```
 
 Una cosa importante: **el HTML no se genera directamente desde `testResults`**, sino desde los CSV. Primero se materializa todo en archivos `.csv`; después el conversor lee esos archivos y construye la página.
-### ErroComm 
-
+## ErroComm 
+[[errocom — Device Communication Timeout Tests]]
