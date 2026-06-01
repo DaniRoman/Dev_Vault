@@ -257,3 +257,7 @@ src/errocomtest/reports/
 | `translator.perte` | Processes CoAP → calls `renewErrcommHeartbeat()` |
 | `errcom-12830` micro | Subscribes to Redis key expiry → transitions device state |
 | `events-12830/updater` | Creates / deactivates alarm records in MongoDB |
+
+## docs/ia
+Flujo de trabajo y documentación para el test realizado
+[[task-errcom-inactive-recovery]]
