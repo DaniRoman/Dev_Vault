@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/task-template.md",
+                "file": "AKO/AKO44/CLAUDE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "task-template"
+              "title": "CLAUDE"
             }
           }
         ]
@@ -196,9 +196,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e998f953db48c1c4",
+  "active": "fed71960236ad562",
   "lastOpenFiles": [
     "AKO/AKO44/AKO 44  - Flujo de trabajo con IA.md",
+    "AKO/AKO44/task-template.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Reset Conf/AKO 44 - Reset Conf for new devices.md",
     "AKO/AKO44/Reset Conf/task-reset-configuration.md",
@@ -206,7 +207,6 @@
     "AKO/AKO44/AGENTS.md",
     "AKO/AKO44/Activación Panel0Ry/AKO 44 - Activación de Panel0Ry.md",
     "AKO/AKO44/CLAUDE.md",
-    "AKO/AKO44/task-template.md",
     "AKO/AKO44/AKO44 - Unificar Endpoints.md",
     "AKO/AKO44/Docs/errocom — Device Communication Timeout Tests.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
