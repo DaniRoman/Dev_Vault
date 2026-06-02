@@ -5,7 +5,6 @@
 
 ## Reset `Device` Conf
 [[AKO 44 - Reset Conf for new devices]]
-
 ## Devices creados
 
 ```json
@@ -50,6 +49,7 @@
 }
 	
 ```
+
 
 ## Unificar Endpoints
 [[AKO44 - Unificar Endpoints]]
