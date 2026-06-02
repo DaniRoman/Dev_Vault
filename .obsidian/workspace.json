@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "file": "AKO/AKO44/Reset Conf/task-reset-configuration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "title": "task-reset-configuration"
             }
           }
         ]
@@ -198,18 +198,20 @@
   },
   "active": "fed71960236ad562",
   "lastOpenFiles": [
+    "AKO/AKO44/Reset Conf/task-template.md",
+    "AKO/AKO44/Reset Conf/task-reset-configuration.md",
+    "AKO/AKO44/Reset Conf/AKO 44 - Reset Conf for new devices.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/AGENTS.md",
     "AKO/AKO44/Activación Panel0Ry/AKO 44 - Activación de Panel0Ry.md",
     "AKO/AKO44/CLAUDE.md",
     "AKO/AKO44/task-template.md",
-    "AKO/AKO44/Reset Conf/AKO 44 - Reset Conf for new devices.md",
     "AKO/AKO44/AKO 44  - Flujo de trabajo con IA.md",
     "AKO/AKO44/AKO44 - Unificar Endpoints.md",
     "AKO/AKO44/Docs/errocom — Device Communication Timeout Tests.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Reset Conf",
     "AKO/AKO44/Activación Panel0Ry/task-panel0ry-activation.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Activación Panel0Ry",
     "AKO/AKO44/AKO 44 TestCases.md",
     "AKO/AKO44/Docs/task-errcom-inactive-recovery.md",
@@ -225,8 +227,6 @@
     "Arquitectura y Diseño/Buenas Practicas en Logs.md",
     "Arquitectura y Diseño/¿Qué significa 2xx 3xx sampleado o solo gateway?.md",
     "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
-    "Arquitectura y Diseño/Arquitectura, diseño y conceptos.md",
-    "DeveloperRoadMap/DeveloperRoadMap.md",
     "DeveloperRoadMap/attachments/Pasted image 20260514162153.png",
     "DeveloperRoadMap/attachments",
     "DeveloperRoadMap",
