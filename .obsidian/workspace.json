@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Reset Conf/task-reset-configuration.md",
+                "file": "AKO/AKO44/task-template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "task-reset-configuration"
+              "title": "task-template"
             }
           }
         ]
@@ -196,17 +196,17 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "fed71960236ad562",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
-    "AKO/AKO44/Reset Conf/task-template.md",
-    "AKO/AKO44/Reset Conf/task-reset-configuration.md",
-    "AKO/AKO44/Reset Conf/AKO 44 - Reset Conf for new devices.md",
+    "AKO/AKO44/AKO 44  - Flujo de trabajo con IA.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Reset Conf/AKO 44 - Reset Conf for new devices.md",
+    "AKO/AKO44/Reset Conf/task-reset-configuration.md",
+    "AKO/AKO44/Reset Conf/task-template.md",
     "AKO/AKO44/AGENTS.md",
     "AKO/AKO44/Activación Panel0Ry/AKO 44 - Activación de Panel0Ry.md",
     "AKO/AKO44/CLAUDE.md",
     "AKO/AKO44/task-template.md",
-    "AKO/AKO44/AKO 44  - Flujo de trabajo con IA.md",
     "AKO/AKO44/AKO44 - Unificar Endpoints.md",
     "AKO/AKO44/Docs/errocom — Device Communication Timeout Tests.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
