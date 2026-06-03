@@ -1,3 +1,5 @@
+
+
 # Task: Reset Configuration for New Device Models
 
 > Task document for AI-assisted work. Follow AGENTS.md workflow.
