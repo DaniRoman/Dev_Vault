@@ -3,8 +3,6 @@
 ## Flujo de trabajo con IA .md
 [[AKO 44  - Flujo de trabajo con IA]]
 
-## Reset `Device` Conf
-[[AKO 44 - Reset Conf for new devices]]
 ## Devices creados
 
 ```json
