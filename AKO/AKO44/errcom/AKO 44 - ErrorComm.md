@@ -11,4 +11,7 @@ Trabaja sobre dos ejes:
 
 [[AKO 44 - ErrorComm workFlow.canvas]]
 
+## Errores de
+[[task-knt-2248-12830-fixes]]
+
 
