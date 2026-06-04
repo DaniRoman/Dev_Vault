@@ -217,14 +217,23 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "4fd2c4eacf3f29d4",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,7 +248,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "da5fe951469baa41",
+  "active": "4fd2c4eacf3f29d4",
   "lastOpenFiles": [
     "AKO/AKO44/AKO 44  - Flujo de trabajo con IA.md",
     "AKO/AKO44/AKO 44 Main Site.md",
