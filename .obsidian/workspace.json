@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
+                "file": "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44  - Flujo de trabajo con IA"
+              "title": "AKO 44 - Flujo Device mensaje tipo a Quue"
             }
           },
           {
@@ -262,8 +262,13 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "958b2312419148b6",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
+    "AKO/AKO44/comm_sync",
+    "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
+    "AKO/AKO44/Test Cases",
+    "AKO/AKO44/Unificar Device & Device12830 Endpoints",
+    "AKO/AKO44/Reset Device Conf",
     "AKO/AKO44/Produc/Ako44-Prod.md",
     "AKO/AKO44/Flujo trabajo con Agents",
     "AKO/AKO44/Flujo trabajo con Agents/AGENTS.md",
@@ -271,14 +276,13 @@
     "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
     "Arquitectura y Diseño/¿Qué significa 2xx 3xx sampleado o solo gateway?.md",
     "Arquitectura y Diseño/AKO 44 - Guia_Logs_Microservicios - promp.md",
-    "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
     "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Reset Conf/Reset Configuration for New Device Models.md",
     "AKO/AKO44/Reset Conf/AKO 44 - Reset Conf for Devices.md",
     "AKO/AKO44/errcom/AKO 44 - ErrorComm.md",
     "AKO/AKO44/errcom/task-knt-2248-12830-fixes.md",
-    "AKO/AKO44/AKO 44  - Script masivo para resetDevices.md",
+    "AKO/AKO44/Reset Device Conf/AKO 44  - Script masivo para resetDevices.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
     "AKO/AKO44/errcom",
@@ -289,12 +293,11 @@
     "AKO/AKO44/Reset Conf",
     "AKO/AKO44/Activación Panel0Ry/task-panel0ry-activation.md",
     "AKO/AKO44/Activación Panel0Ry",
-    "AKO/AKO44/AKO 44 TestCases.md",
+    "AKO/AKO44/Test Cases/AKO 44 TestCases.md",
     "AKO/AKO44/Docs/task-errcom-inactive-recovery.md",
     "AKO/AKO44/Docs/Feature 2253 Flujo de remove Device.md",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - status pending delete.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
-    "AKO/AKO44/AKO - 44 Nueva tarea.md",
     "DeveloperRoadMap/attachments/Pasted image 20260514162153.png",
     "DeveloperRoadMap/attachments",
     "DeveloperRoadMap",
@@ -308,17 +311,14 @@
     "AKO/AKO44/attachments/Pasted image 20260513093347.png",
     "AKO/AKO44/attachments/Pasted image 20260507090226.png",
     "AKO/AKO44/attachments/Pasted image 20260507085726.png",
-    "AKO/AKO44/AKO 44 - comm_syn workflow.canvas",
-    "AKO/AKO44/AKO 44 TestCases ErrorComm.canvas",
+    "AKO/AKO44/comm_sync/AKO 44 - comm_syn workflow.canvas",
+    "AKO/AKO44/Test Cases/AKO 44 TestCases ErrorComm.canvas",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Produc",
     "AKO/AKO44/Docs/Ako 44 - errcommTest - workflow.canvas",
-    "Arquitectura y Diseño/attachments",
     "AKO/AKO44/Docs/AKO 44 - Flujo PLMN.canvas",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas",
-    "Redis",
-    "JavaScript - Acceso seguro a propiedades"
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware - Tests.canvas"
   ]
 }
