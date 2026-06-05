@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bjj/Bjj Tecniques.md",
+                "file": "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bjj Tecniques"
+              "title": "AKO 44 - Flujo Device mensaje tipo a Quue"
             }
           },
           {
@@ -135,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 1038.5110321044922
+    "width": 439.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -262,8 +262,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "958b2312419148b6",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
+    "AKO/AKO44/AKO 44 - Errores y sus soluciónes.md",
+    "Bjj/Bjj Tecniques.md",
     "AKO/AKO44/Logs para micros/AKO 44 - Guia_Logs_Microservicios.md",
     "AKO/AKO44/Logs para micros",
     "AKO/AKO44/Translator/AKO 44 - Translator.md",
@@ -298,7 +300,6 @@
     "AKO/AKO44/Docs/errocom — Device Communication Timeout Tests.md",
     "AKO/AKO44/Reset Conf",
     "AKO/AKO44/Activación Panel0Ry/task-panel0ry-activation.md",
-    "AKO/AKO44/Test Cases/AKO 44 TestCases.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "DeveloperRoadMap/attachments/Pasted image 20260514162153.png",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
