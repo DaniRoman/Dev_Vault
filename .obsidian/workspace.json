@@ -11,14 +11,17 @@
             "id": "958b2312419148b6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+                "viewState": {
+                  "x": 1157.4582066366058,
+                  "y": -537.824122474671,
+                  "zoom": -0.2056041281383848
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo para Actualizar firmware"
             }
           },
           {
@@ -222,11 +225,11 @@
   "active": "958b2312419148b6",
   "lastOpenFiles": [
     "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/FOTA launcher Blame/FOTA Launcher Blame.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/FOTA launcher Blame/FOTA Launcher Blame.md",
     "AKO/AKO44/Reset Conf/Reset Configuration for New Device Models.md",
     "AKO/AKO44/Logs para micros/AKO 44 - Guia_Logs_Microservicios.md",
     "AKO/AKO44/AlarmCount nunca es stale por caché Redis/alarmCount nunca es stale por caché Redis.md",
