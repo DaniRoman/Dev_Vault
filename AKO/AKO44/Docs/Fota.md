@@ -1,8 +1,9 @@
->[!exa]
+
+>[!example] Enlace a otra tarea o solución de BUG
+> FOTA Blame Launcher [[KNT-2303-firmware-plmn-launcher-log]]
 
 >[!Tip] Flujo de Actualizacion
 [[AKO 44 - Flujo para Actualizar firmware.canvas]]
-
 
 `/Fota` y `/PLMN` son **resources/endpoints de retrieve del dispositivo** por CoAP. El dispositivo hace una petición tipo:
 
