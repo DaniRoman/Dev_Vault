@@ -8,35 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fed71960236ad562",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AKO/AKO44/Logs para micros/AKO 44 - Guia_Logs_Microservicios.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AKO 44 - Guia_Logs_Microservicios"
-            }
-          },
-          {
             "id": "958b2312419148b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AlarmCount nunca es stale por caché Redis/alarmCount nunca es stale por caché Redis.md",
+                "file": "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "alarmCount nunca es stale por caché Redis"
+              "title": "AKO 44  - Flujo de trabajo con IA"
             }
           },
           {
-            "id": "da5fe951469baa41",
+            "id": "6a37a71436a85fcb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,37 +34,8 @@
               "icon": "lucide-file",
               "title": "CLAUDE"
             }
-          },
-          {
-            "id": "9fd36a4de2824421",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AKO/AKO44/Reset Conf/Reset Configuration for New Device Models.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Reset Configuration for New Device Models"
-            }
-          },
-          {
-            "id": "29a0b6b00d371d3a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AKO/AKO44/Reset Conf/Reset Configuration for New Device Models.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Reset Configuration for New Device Models"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -264,20 +221,25 @@
   },
   "active": "958b2312419148b6",
   "lastOpenFiles": [
-    "AKO/AKO44/AlarmCount nunca es stale por caché Redis/task-KNT-2373.md",
+    "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.md",
+    "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/FOTA launcher Blame/FOTA Launcher Blame.md",
+    "AKO/AKO44/Reset Conf/Reset Configuration for New Device Models.md",
+    "AKO/AKO44/Logs para micros/AKO 44 - Guia_Logs_Microservicios.md",
     "AKO/AKO44/AlarmCount nunca es stale por caché Redis/alarmCount nunca es stale por caché Redis.md",
+    "AKO/AKO44/FOTA launcher Blame",
+    "AKO/AKO44/AlarmCount nunca es stale por caché Redis/task-KNT-2373.md",
     "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
     "AKO/AKO44/AlarmCount nunca es stale por caché Redis",
     "AKO/AKO44/AKO 44 - Errores y sus soluciónes.md",
     "Bjj/Bjj Tecniques.md",
-    "AKO/AKO44/Logs para micros/AKO 44 - Guia_Logs_Microservicios.md",
     "AKO/AKO44/Logs para micros",
     "AKO/AKO44/Translator/AKO 44 - Translator.md",
     "AKO/AKO44/LiveMesages",
     "AKO/AKO44/LiveMesages/AKO 44 - Live Messages.md",
     "AKO/AKO44/Translator",
     "AKO/AKO44/comm_sync",
-    "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
     "AKO/AKO44/Test Cases",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints",
     "AKO/AKO44/Reset Device Conf",
@@ -287,19 +249,14 @@
     "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
     "Arquitectura y Diseño/¿Qué significa 2xx 3xx sampleado o solo gateway?.md",
     "Arquitectura y Diseño/AKO 44 - Guia_Logs_Microservicios - promp.md",
-    "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Reset Conf/Reset Configuration for New Device Models.md",
     "AKO/AKO44/Reset Conf/AKO 44 - Reset Conf for Devices.md",
     "AKO/AKO44/errcom/AKO 44 - ErrorComm.md",
     "AKO/AKO44/errcom/task-knt-2248-12830-fixes.md",
     "AKO/AKO44/Reset Device Conf/AKO 44  - Script masivo para resetDevices.md",
     "AKO/AKO44/Docs/AKO  44 - Admin Main Page.md",
     "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
-    "AKO/AKO44/errcom",
     "AKO/AKO44/Reset Conf/task-template.md",
     "AKO/AKO44/Activación Panel0Ry/AKO 44 - Activación de Panel0Ry.md",
-    "AKO/AKO44/Unificar Device & Device12830 Endpoints/AKO44 - Unificar Endpoints.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "DeveloperRoadMap/attachments/Pasted image 20260514162153.png",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
