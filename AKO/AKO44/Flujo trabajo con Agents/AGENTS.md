@@ -65,6 +65,14 @@ When a task is documented in `docs/ai/*.md`, follow this workflow.
    - expected validation.
 
 If the task document is missing, create it from `docs/ai/task-template.md` before implementation.
+See `docs/ai/writing-guide.md` for guidance on filling in each section correctly.
+
+### During investigation
+
+- Trace the affected code flow (controller → service → DB, or API → AMQP → translator).
+- Draw a Mermaid `flowchart` or `sequenceDiagram` in the task document to make the flow visible.
+- Annotate the diagram with ❌ markers where bugs sit before writing any fix.
+- If a bug is found during validation, open a dedicated bug investigation phase before coding the fix.
 
 ### During implementation
 
@@ -75,6 +83,7 @@ If the task document is missing, create it from `docs/ai/task-template.md` befor
 - Keep error handling consistent with surrounding code.
 - Keep logging useful but not noisy.
 - If the phase reveals a larger design issue, document it and stop before expanding scope.
+- Update the flow diagram in the task document to reflect the new behavior.
 
 ### After implementation
 
