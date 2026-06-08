@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
+                "file": "AKO/AKO44/AlarmCount nunca es stale por caché Redis/alarmCount nunca es stale por caché Redis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - Flujo Device mensaje tipo a Quue"
+              "title": "alarmCount nunca es stale por caché Redis"
             }
           },
           {
@@ -262,9 +262,12 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e998f953db48c1c4",
+  "active": "958b2312419148b6",
   "lastOpenFiles": [
-    "AKO/AKO44/Sin nombre",
+    "AKO/AKO44/AlarmCount nunca es stale por caché Redis/task-KNT-2373.md",
+    "AKO/AKO44/AlarmCount nunca es stale por caché Redis/alarmCount nunca es stale por caché Redis.md",
+    "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
+    "AKO/AKO44/AlarmCount nunca es stale por caché Redis",
     "AKO/AKO44/AKO 44 - Errores y sus soluciónes.md",
     "Bjj/Bjj Tecniques.md",
     "AKO/AKO44/Logs para micros/AKO 44 - Guia_Logs_Microservicios.md",
@@ -272,7 +275,6 @@
     "AKO/AKO44/Translator/AKO 44 - Translator.md",
     "AKO/AKO44/LiveMesages",
     "AKO/AKO44/LiveMesages/AKO 44 - Live Messages.md",
-    "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
     "AKO/AKO44/Translator",
     "AKO/AKO44/comm_sync",
     "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
@@ -298,8 +300,6 @@
     "AKO/AKO44/Reset Conf/task-template.md",
     "AKO/AKO44/Activación Panel0Ry/AKO 44 - Activación de Panel0Ry.md",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints/AKO44 - Unificar Endpoints.md",
-    "AKO/AKO44/Docs/errocom — Device Communication Timeout Tests.md",
-    "AKO/AKO44/Reset Conf",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "DeveloperRoadMap/attachments/Pasted image 20260514162153.png",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
