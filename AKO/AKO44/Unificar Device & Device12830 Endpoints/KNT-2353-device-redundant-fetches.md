@@ -226,6 +226,12 @@ Para una lista de N devices 12830 con `data.indicators` en el select, se produce
 
 **Fix:** `getIndicators(id: string, params: any, device?: DeviceModel)` — si `device` se pasa, omitir `super.get()`.
 
+Bug I es esto: cuando haces `GET /api/device?select=data.indicators` con 50 devices 12830 en la lista, el sistema ya los tiene todos en memoria (el `getList` los acaba de traer de BD). Antes del fix, `getIndicators(dev._id)` recibía solo el ID, y dentro hacía `super.get(id)` — otra consulta a MongoDB por cada device. 50 devices = 50 fetches extra.
+
+El fix es la línea 4262: ahora se pasa `dev` como tercer argumento. Dentro de `getIndicators`, si llega el device, omite el `super.get()`. Cero fetches extra.
+
+Es el más crítico porque el impacto escala con el número de devices en la lista, no es uno fijo por llamada.
+
 ---
 
 #### Bug J — `getActivity` (legacy) → `Device12830Controller.getActivity(deviceId)` — device ya obtenido
