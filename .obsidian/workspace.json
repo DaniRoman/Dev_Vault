@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/FOTA launcher Blame/KNT-2303-firmware-plmn-launcher-log.md",
+                "file": "AKO/AKO44/Unificar Device & Device12830 Endpoints/KNT-2353-device-redundant-fetches.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "KNT-2303-firmware-plmn-launcher-log"
+              "title": "KNT-2353-device-redundant-fetches"
             }
           }
         ]
@@ -207,9 +207,11 @@
   },
   "active": "958b2312419148b6",
   "lastOpenFiles": [
+    "AKO/AKO44/Unificar Device & Device12830 Endpoints/AKO44 - Unificar Endpoints.md",
+    "AKO/AKO44/Unificar Device & Device12830 Endpoints/KNT-2353-device-redundant-fetches.md",
+    "AKO/AKO44/FOTA launcher Blame/KNT-2303-firmware-plmn-launcher-log.md",
     "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/FOTA launcher Blame/KNT-2303-firmware-plmn-launcher-log.md",
     "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
     "AKO/AKO44/FOTA launcher Blame/FOTA Launcher Blame.md",
     "AKO/AKO44/Flujo trabajo con Agents/writing-guide.md",
@@ -242,8 +244,6 @@
     "Arquitectura y Diseño/Arquitectura y diseño - API Key.md",
     "Arquitectura y Diseño/¿Qué significa 2xx 3xx sampleado o solo gateway?.md",
     "Arquitectura y Diseño/AKO 44 - Guia_Logs_Microservicios - promp.md",
-    "AKO/AKO44/Reset Conf/AKO 44 - Reset Conf for Devices.md",
-    "AKO/AKO44/errcom/AKO 44 - ErrorComm.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "DeveloperRoadMap/attachments/Pasted image 20260514162153.png",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
