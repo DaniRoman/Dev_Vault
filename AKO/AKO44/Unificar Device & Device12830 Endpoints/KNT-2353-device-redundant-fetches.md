@@ -170,6 +170,8 @@ En `getActives()`, que se llama en cada `get()` de un device 12830 que incluya `
 #### Bug H — `getExportMetrics()` en `12830/device.ts` — device ya obtenido, llama a `getMetrics(id)` que lo busca de nuevo
 **Archivo:** `src/controllers/api/12830/device.ts:~280`
 
+
+
 ```
 getExportMetrics(id):
   Device.findById(id).populate(...)          ← fetch #1, device obtenido con populate
