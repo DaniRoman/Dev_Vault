@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/Fota.md",
+                "file": "AKO/AKO44/FOTA launcher Blame/KNT-2303-firmware-plmn-launcher-log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fota"
+              "title": "KNT-2303-firmware-plmn-launcher-log"
             }
           }
         ]
@@ -207,6 +207,7 @@
   },
   "active": "958b2312419148b6",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/FOTA launcher Blame/KNT-2303-firmware-plmn-launcher-log.md",
     "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
@@ -243,7 +244,6 @@
     "Arquitectura y Diseño/AKO 44 - Guia_Logs_Microservicios - promp.md",
     "AKO/AKO44/Reset Conf/AKO 44 - Reset Conf for Devices.md",
     "AKO/AKO44/errcom/AKO 44 - ErrorComm.md",
-    "AKO/AKO44/errcom/task-knt-2248-12830-fixes.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "DeveloperRoadMap/attachments/Pasted image 20260514162153.png",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
