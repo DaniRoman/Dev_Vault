@@ -1,183 +1,141 @@
-# Task: [Short name]
+# Task: [TICKET-ID] — [Short title]
 
-> Copy this file to `docs/ai/task-<short-name>.md` for each AI-assisted task.
-> **After every phase:** update §8 phase status, add an entry to §10 implementation log, and update the Mermaid diagrams.
+## Metadata
 
----
+| Field  | Value                              |
+|--------|------------------------------------|
+| Ticket | [TICKET-ID]                        |
+| Branch | `feature/[TICKET-ID]`              |
+| Author | [name]                             |
+| Created | [YYYY-MM-DD]                      |
+| Status | `planned` / `in-progress` / `done` |
 
-## 1. Metadata
+## Context and motivation
 
-| Field | Value |
-|---|---|
-| Task name | |
-| Owner | |
-| Created | YYYY-MM-DD |
-| Last updated | YYYY-MM-DD |
-| Status | Not started / In progress / Blocked / Done |
-| Current phase | Phase 0 |
-| Repository area | |
-| Base branch | |
-| Related ticket | |
+Why does this task exist? What problem does it solve?
 
----
+## Scope
 
-## 2. Objective
+**In scope:**
+- …
 
-Describe the desired outcome in one or two paragraphs.
+**Out of scope:**
+- …
 
----
+## Phases
 
-## 3. Non-goals
+| # | Phase name     | Status    |
+|---|----------------|-----------|
+| 1 | Investigation  | `pending` |
+| 2 | Implementation | `pending` |
+| 3 | Validation     | `pending` |
 
-List what must not change in this task.
-
-- Do not change public API contracts unless explicitly documented.
-- Do not remove legacy code until parity is validated.
-- Do not introduce new dependencies unless approved.
+> Add or remove phases as needed. Never advance without explicit confirmation.
 
 ---
 
-## 4. Background
+## Phase 1: Investigation
 
-Summarize what the agent must understand before touching code:
+**Status:** `pending`
 
-- **Current behavior:** what happens today.
-- **Target behavior:** what should happen after.
-- **Why:** the reason this change is needed.
-- **Constraints:** known technical or business limits.
+### Code flow
 
----
-
-## 5. Source of truth
-
-| Type | Path | Why it matters |
-|---|---|---|
-| Controller | | |
-| Service / helper | | |
-| Model / schema | | |
-| Test | | |
-| Docs | | |
-
----
-
-## 6. Scope
-
-### In scope
-
--
-
-### Out of scope
-
--
-
-### Compatibility requirements
-
-- Existing endpoint paths:
-- Existing request/response shapes:
-- Existing error codes:
-- Existing frontend assumptions:
-
----
-
-## 7. Architecture / strategy
-
-Describe the intended approach and the key branching or delegation pattern.
-
-### System flow
+> Trace the affected path. Annotate with ❌ where bugs sit.
 
 ```mermaid
 flowchart TD
-    A[Entry point] --> B{Branch condition}
-    B -->|Case A| C[Path A]
-    B -->|Case B| D[Path B]
-    C --> E[Output]
-    D --> E
+    A["POST /api/endpoint"] --> B["Controller.method()"]
+    B --> C["Service.method()"]
+    C --> D[("MongoDB")]
 ```
 
-> Replace this diagram with the actual data or control flow relevant to the task.
-> Add a before/after pair if the refactor changes the flow significantly.
+### Findings
+
+What did you find? Be specific: file, line, what it does vs what it should do.
+
+### Decisions and risks
+
+| Decision | Reason | Risk |
+|----------|--------|------|
+|          |        |      |
 
 ---
 
-## 8. Phases
+## Phase 2: Implementation
 
-| Phase | Name | Goal | Status |
-|---|---|---|---|
-| 0 | Analysis | Understand current state and map implementation | Not started |
-| 1 | | | Not started |
-| 2 | | | Not started |
-| N | Validation | Run tests, manual checks, document results | Not started |
+**Status:** `pending`
 
-### Phase progress
+### Files changed
+
+| File | Change summary |
+|------|---------------|
+|      |               |
+
+### Decisions made
+
+### Problems found
+
+<!--
+> If the flow changed significantly, update the diagram here.
+> Otherwise a note in "Decisions made" is enough.
+-->
+
+---
+
+## Phase 3: Validation
+
+**Status:** `pending`
+
+### Steps
+
+| # | Action | Result | Note |
+|---|--------|--------|------|
+| 1 | `npx tsc --noEmit` | ✅ / ❌ | |
+| 2 | … | | |
+
+### Remaining risks
+
+---
+
+<!--
+## Phase N: Bug investigation — [short symptom]
+
+Use this phase when a bug is found during validation or in production.
+Copy, rename, and fill it in before writing any fix.
+
+**Status:** `pending`
+
+### Symptom
+
+What the user or log observed. Be concrete.
+
+### Flow traced
+
+> Annotate the existing diagram with ❌ where the bug occurs.
 
 ```mermaid
-flowchart LR
-    P0[Phase 0\nAnalysis]
-    P1[Phase 1\n...]
-    PN[Phase N\nValidation]
-
-    P0 --> P1 --> PN
-
-    style P0 fill:#d3d3d3,color:#000
-    style P1 fill:#d3d3d3,color:#000
-    style PN fill:#d3d3d3,color:#000
+flowchart TD
+    A["POST /api/endpoint"] --> B["Controller"]
+    B -->|"launcher = undefined ❌"| C["Service"]
+    C -->|"if(launcher) → false ❌"| D["early return — launcher never saved"]
 ```
 
-> Update node styles after each phase:
-> - `fill:#d3d3d3` — Not started (gray)
-> - `fill:#ffd700` — In progress (yellow)
-> - `fill:#90ee90` — Done (green)
-> - `fill:#ff9999` — Blocked (red)
+### Bugs confirmed
 
-> **Do not advance to the next phase without explicit user confirmation.**
+**Bug #N — [short label]**
 
----
+File: `src/…:line`
 
-## 9. Decisions
+Expected: …
+Actual: …
 
-| Date | Decision | Reason | Alternatives considered |
-|---|---|---|---|
-| YYYY-MM-DD | | | |
+### Files implicated in the fix
 
----
+| File | Change needed |
+|------|--------------|
+|      |              |
 
-## 10. Implementation log
+### Design decision for next phase
 
-> Add one entry per completed phase. Keep it concise — code is the source of truth, not this log.
-
-### YYYY-MM-DD — Phase N: Name
-
-#### Summary
-
--
-
-#### Files changed
-
--
-
-#### Validation
-
-- Command:
-- Result:
-
-#### Problems found
-
--
-
-#### Next step
-
--
-
----
-
-## 11. Final summary
-
-Complete when the task is done.
-
-| Field | Value |
-|---|---|
-| Final status | |
-| Main changes | |
-| Validation completed | |
-| Known limitations | |
-| Recommended next task | |
+Options considered and which one was chosen, with rationale.
+-->
