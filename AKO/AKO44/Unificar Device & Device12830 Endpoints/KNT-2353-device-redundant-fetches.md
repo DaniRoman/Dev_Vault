@@ -328,18 +328,18 @@ flowchart TD
 
 ### Bugs implementados
 
-| Bug | Implementado |
-|-----|-------------|
-| I — getIndicators N fetches en lista | ✅ |
-| J — getActivity legacy → 12830 | ✅ |
-| K — getActivityExportXlsx legacy → 12830 | ✅ |
-| H — getExportMetrics → getMetrics | ✅ |
-| G — console.log en getActives | ✅ |
-| C — getVerifications fetch inútil | ✅ |
-| D — addVerification device no usado | ✅ |
-| E — startVerification bypass compañía | ✅ |
+| Bug                                                      | Implementado                                |
+| -------------------------------------------------------- | ------------------------------------------- |
+| I — getIndicators N fetches en lista                     | ✅                                           |
+| J — getActivity legacy → 12830                           | ✅                                           |
+| K — getActivityExportXlsx legacy → 12830                 | ✅                                           |
+| H — getExportMetrics → getMetrics                        | ✅                                           |
+| G — console.log en getActives                            | ✅                                           |
+| C — getVerifications fetch inútil                        | ✅                                           |
+| D — addVerification device no usado                      | ✅                                           |
+| E — startVerification bypass compañía                    | ✅                                           |
 | A, B — doble fetch en legacy getExportMetrics/getMetrics | ⏭ Diferido (requiere refactor del populate) |
-| F — updateDeviceSuspended/etc bypass | ⏭ Diferido (deuda técnica) |
+| F — updateDeviceSuspended/etc bypass                     | ⏭ Diferido (deuda técnica)                  |
 
 ### Validación del build
 
