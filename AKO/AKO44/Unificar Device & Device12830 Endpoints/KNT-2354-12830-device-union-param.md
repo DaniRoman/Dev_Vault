@@ -120,6 +120,8 @@ Cinco métodos del `Device12830Controller` se refactorizan. Por cada uno: qué h
 | Caller en legacy (`device.ts:2400`) | `Device.findById(deviceId)` ❌ sin filtro de compañía → pasa `deviceId` | Sigue usando `Device.findById` (necesario para conservar `getUTCOffset()`), **se añade guard manual de compañía** y luego pasa el `device` ya cargado |
 | Ahorro | 1 fetch + arregla bypass de compañía | |
 
+mirar pk no pieude ser get bypass, y se puede poner en el select para no poner codigo grande de context 
+
 ---
 
 #### 2. `getMetrics` — `12830/device.ts:230`
