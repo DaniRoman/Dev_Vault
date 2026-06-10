@@ -1,3 +1,5 @@
+flowchart TD
+Start --> Stop
 # Task: KNT-2354 — 12830 Device Controller: aceptar `string | DeviceModel`
 
 ## Metadata
