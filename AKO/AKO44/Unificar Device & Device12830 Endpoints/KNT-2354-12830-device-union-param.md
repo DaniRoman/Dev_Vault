@@ -135,13 +135,13 @@ Cinco métodos del `Device12830Controller` se refactorizan. Por cada uno: qué h
 
 #### 3. `getExportMetrics` — `12830/device.ts:270`
 
-| Aspecto | Estado anterior | Estado nuevo |
-|---|---|---|
-| Firma | `(id: string, params)` | `(deviceOrId: string \| DeviceModel, params)` |
-| Resolución del device | siempre `Device.findById(id).populate("connectedTo")` | ternario inline: si es string → `Device.findById(deviceOrId).populate("connectedTo")`; si es `DeviceModel` → reutilizar (el caller debe traer `connectedTo` populado) |
-| Llamada interna | `this.getMetrics(id, exportParams)` | `this.getMetrics(device, exportParams)` — pasa el modelo, no el id |
-| Caller en legacy (`device.ts:1814`) | `Device.findById(id).populate("connectedTo")` y pasa solo `id` | El populate ya incluye `connectedTo` con `timezone connectedTo lastStatus` → se pasa el `device` ya populado |
-| Ahorro | 2 fetches | |
+| Aspecto                             | Estado anterior                                                | Estado nuevo                                                                                                                                                          |
+| ----------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Firma                               | `(id: string, params)`                                         | `(deviceOrId: string \| DeviceModel, params)`                                                                                                                         |
+| Resolución del device               | siempre `Device.findById(id).populate("connectedTo")`          | ternario inline: si es string → `Device.findById(deviceOrId).populate("connectedTo")`; si es `DeviceModel` → reutilizar (el caller debe traer `connectedTo` populado) |
+| Llamada interna                     | `this.getMetrics(id, exportParams)`                            | `this.getMetrics(device, exportParams)` — pasa el modelo, no el id                                                                                                    |
+| Caller en legacy (`device.ts:1814`) | `Device.findById(id).populate("connectedTo")` y pasa solo `id` | El populate ya incluye `connectedTo` con `timezone connectedTo lastStatus` → se pasa el `device` ya populado                                                          |
+| Ahorro                              | 2 fetches                                                      |                                                                                                                                                                       |
 
 > Nota: `getUTCOffset()` necesita `connectedTo` populado. El caller legacy ya hace ese populate en su propio `Device.findById`, así que reutilizar el modelo funciona sin fetch extra.
 
