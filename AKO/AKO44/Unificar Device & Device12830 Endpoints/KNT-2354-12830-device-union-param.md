@@ -115,12 +115,12 @@ Cinco métodos del `Device12830Controller` se refactorizan. Por cada uno: qué h
 
 #### 1. `getActivity` — `12830/device.ts:189`
 
-| Aspecto | Estado actual | Cambio |
-|---|---|---|
-| Firma | `(id: string, params)` | `(deviceOrId: string \| DeviceModel, params)` |
-| Fetch interno | `super.get(id, {select: "... model lastStatus"})` | Sustituir por `_resolveDevice(deviceOrId, params.select)` |
+| Aspecto                             | Estado actual                                                       | Cambio                                                                                 |
+| ----------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Firma                               | `(id: string, params)`                                              | `(deviceOrId: string \| DeviceModel, params)`                                          |
+| Fetch interno                       | `super.get(id, {select: "... model lastStatus"})`                   | Sustituir por `_resolveDevice(deviceOrId, params.select)`                              |
 | Caller en legacy (`device.ts:2394`) | `Device.findById(deviceId)` ❌ sin filtro compañía → pasa `deviceId` | Cambiar a `this.get(deviceId, {select: "model lastStatus"})` → pasar `device` resuelto |
-| Ahorro | 1 fetch + arregla bypass de compañía | |
+| Ahorro                              | 1 fetch + arregla bypass de compañía                                |                                                                                        |
 
 ---
 
