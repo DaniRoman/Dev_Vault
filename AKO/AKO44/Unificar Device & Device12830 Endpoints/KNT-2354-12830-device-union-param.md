@@ -135,13 +135,13 @@ Cinco métodos del `Device12830Controller` se refactorizan. Por cada uno: qué h
 
 #### 3. `getExportMetrics` — `12830/device.ts:270`
 
-| Aspecto                             | Estado anterior                                                | Estado nuevo                                                                                                                                                          |
-| ----------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Firma                               | `(id: string, params)`                                         | `(deviceOrId: string \| DeviceModel, params)`                                                                                                                         |
-| Resolución del device               | siempre `Device.findById(id).populate("connectedTo")`          | ternario inline: si es string → `Device.findById(deviceOrId).populate("connectedTo")`; si es `DeviceModel` → reutilizar (el caller debe traer `connectedTo` populado) |
-| Llamada interna                     | `this.getMetrics(id, exportParams)`                            | `this.getMetrics(device, exportParams)` — pasa el modelo, no el id                                                                                                    |
-| Caller en legacy (`device.ts:1814`) | `Device.findById(id).populate("connectedTo")` y pasa solo `id` | El populate ya incluye `connectedTo` con `timezone connectedTo lastStatus` → se pasa el `device` ya populado                                                          |
-| Ahorro                              | 2 fetches                                                      |                                                                                                                                                                       |
+| Aspecto | Estado anterior | Estado nuevo |
+|---|---|---|
+| Firma | `(id: string, params)` | `(deviceOrId: string \| DeviceModel, params)` |
+| Resolución del device | siempre `Device.findById(id).populate("connectedTo")` | ternario inline: si es string → `Device.findById(deviceOrId).populate("connectedTo")`; si es `DeviceModel` → reutilizar (el caller debe traer `connectedTo` populado) |
+| Llamada interna | `this.getMetrics(id, exportParams)` | `this.getMetrics(device, exportParams)` — pasa el modelo, no el id |
+| Caller en legacy (`device.ts:1814`) | `Device.findById(id).populate("connectedTo")` y pasa solo `id` | El populate ya incluye `connectedTo` con `timezone connectedTo lastStatus` → se pasa el `device` ya populado |
+| Ahorro | 2 fetches | |
 
 > Nota: `getUTCOffset()` necesita `connectedTo` populado. El caller legacy ya hace ese populate en su propio `Device.findById`, así que reutilizar el modelo funciona sin fetch extra.
 
@@ -239,6 +239,23 @@ Verificar que el refactor no rompe los endpoints afectados, que el filtro de com
 | `npx tslint -c tslint.json -p tsconfig.json src/controllers/api/device.ts src/controllers/api/12830/device.ts` | ✅ sin warnings |
 | `npx jest test/controllers/api/device.test.ts --forceExit` | ✅ 11/11 pasan |
 
+### Validación runtime con Postman (superadmin token, device `69babe8c3293df735c3d5174` panel_2ry_7102)
+
+| # | Endpoint | Resultado | Notas |
+|---|----------|-----------|-------|
+| 1 | `GET /api/12830/device/indicators/:id` | ✅ 200 | Device + `indicators` poblado (valores `null` porque Timescale local sin datos) |
+| 2 | `GET /api/12830/device/activity/:id?type=day&from=...` | ✅ 200 | Body con `alarms_activations: 0` + métricas null |
+| 3 | `GET /api/12830/device/metrics/:id?dateRange=24h` | ✅ 200 | `{}` (sin datos en Timescale) |
+| 4 | `GET /api/device/:id/activity?type=day&from=...` (legacy → 12830) | ✅ 200 | **Body idéntico al #2** → confirma que el legacy pasa el `DeviceModel` al 12830 sin re-fetch |
+| 5 | `GET /api/12830/device/metrics/:id/export?dateRange=24h` | ✅ 200 | `[]` (sin datos) — el flujo `getExportMetrics → getMetrics(device, ...)` funciona |
+| 6 | `GET /api/device/:id/activity/xlsx?startDate=...&endDate=...` (legacy → 12830) | ✅ 200 | XLSX binario (base64) válido |
+| 7 | `GET /api/12830/device/indicators/:id` **sin token** | ✅ 401 | Auth guard intacto |
+| 8 | `GET /api/device/000.../activity` | ✅ 404 | Existence guard intacto |
+
+**Evidencia clave:** los responses de `/api/device/:id/activity` (legacy) y `/api/12830/device/activity/:id` (directo) son **idénticos byte a byte**. Demuestra que:
+- El controller legacy pasa el `DeviceModel` ya cargado al 12830.
+- El 12830 detecta que recibe un model (no un string), salta `_checkPrivilege` + `super.get`, y produce exactamente el mismo resultado que cuando se llama directo con un id.
+
 ### Validación por inspección estática
 
 No hay tests automatizados de integración que cubran los 5 endpoints afectados (`test/controllers/api/device.test.ts` cubre únicamente `testCheckConfiguration12830`). La validación adicional se hace por inspección estática siguiendo el contrato del patrón union.
@@ -263,30 +280,22 @@ No hay tests automatizados de integración que cubran los 5 endpoints afectados 
 | 4 | `getExportMetrics` (línea 1814) | `Device.findById(id).populate({connectedTo})` + guard `_company` | ✅ corregido este turno |
 | 5 | `getDeviceActivityExportXlsx` (línea 2483) | `Device.findById(deviceId)` + guard `_company` | ✅ añadido este turno |
 
-### Suite manual recomendada (opcional — para validación en runtime con Postman)
+### Pendiente de validar manualmente en QA (requiere user de otra compañía)
 
-Lanzar contra `http://localhost:3001` con token de superadmin (`x-authtoken`):
+No se pudo ejecutar en local porque solo había token de superadmin. Lanzar en QA con un user no-superadmin de la compañía A pidiendo devices de la compañía B:
 
-| # | Endpoint | Resultado esperado | Cubre |
-|---|----------|---------------------|-------|
-| 1 | `GET /api/device?select=data.indicators` | 200, `items[].data.indicators` poblado en 12830 | #5 getIndicators loop |
-| 2 | `GET /api/12830/device/indicators/:id` | 200 | #5 directo |
-| 3 | `GET /api/device/:id/activity` (12830) | 200 | #1 legacy → 12830 |
-| 4 | `GET /api/12830/device/activity/:id` | 200 | #1 directo |
-| 5 | `GET /api/device/:id/metrics` (12830) | 200 | #2 legacy → 12830 |
-| 6 | `GET /api/12830/device/metrics/:id` | 200 | #2 directo |
-| 7 | `GET /api/12830/device/metrics/:id/export` | 200 + array (o falla de Timescale si no está local) | #3 |
-| 8 | `GET /api/device/:id/activity/xlsx` (12830) | 200 + xlsx | #4 |
-| 9 | `GET /api/device/:idOtraCompañia/activity` con user no-superadmin | 403 Forbidden | Guard de compañía |
-| 10 | `GET /api/12830/device/indicators/:id` sin token | 401 | Auth guard intacto |
+| Endpoint | Resultado esperado | Antes del fix |
+|----------|---------------------|--------------|
+| `GET /api/device/:idCompañiaB/activity` | 403 Forbidden | 200 con datos ajenos (fuga) |
+| `GET /api/device/:idCompañiaB/metrics` | 403 Forbidden | 200 (guard roto) |
+| `GET /api/device/:idCompañiaB/metrics/export` | 403 Forbidden | 200 (guard roto) |
+| `GET /api/device/:idCompañiaB/activity/xlsx` | 403 Forbidden | 200 con xlsx ajeno (fuga) |
 
 ### Riesgos remanentes
 
-- **Cambio de comportamiento por el guard nuevo en `getActivity` y `getDeviceActivityExportXlsx`**: antes pasaban — un usuario no-superadmin de otra compañía recibía un 200 con datos ajenos (potencial fuga). Ahora recibe 403. **Es la corrección deseada**, pero técnicamente es un cambio observable en el contrato HTTP para esos dos endpoints.
-- **Cambio de comportamiento por el guard corregido en `getMetrics`/`getExportMetrics`**: mismo caso — el guard existía pero estaba roto, así que en la práctica nunca devolvía 403. Ahora sí lo hace cuando corresponde.
-- **No hay test de integración** que exija ningún status. Si el front asumía "200 vacío" para devices ajenos, ahora verá 403. Validar en QA.
+- **Cambio de comportamiento HTTP en 4 endpoints**: usuarios no-superadmin pidiendo devices de otra compañía pasarán de `200` (con datos ajenos) a `403`. Es la corrección deseada — la fuga no debería haber existido. Verificar en QA que el front no asume "200 vacío" para devices ajenos.
 
 ### Próximo paso recomendado
 
-Merge a `develop`. Si en QA aparece algún 403 inesperado en los flujos de `metrics`/`activity` para usuarios no-superadmin, revisar si el front está pidiendo devices de otra compañía (probablemente bug del front que estaba enmascarado).
+Merge a `develop`. Si en QA aparece algún 403 inesperado, revisar si el front está pidiendo devices de otra compañía (probable bug del front que estaba enmascarado por estos guards rotos).
 

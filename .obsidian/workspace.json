@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Flujo trabajo con Agents/AGENTS.md",
+                "file": "AKO/AKO44/Unificar Device & Device12830 Endpoints/KNT-2354-12830-device-union-param.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AGENTS"
+              "title": "KNT-2354-12830-device-union-param"
             }
           }
         ]
@@ -208,8 +208,8 @@
   },
   "active": "958b2312419148b6",
   "lastOpenFiles": [
-    "AKO/AKO44/Flujo trabajo con Agents/AGENTS.md",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints/KNT-2354-12830-device-union-param.md",
+    "AKO/AKO44/Flujo trabajo con Agents/AGENTS.md",
     "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints/KNT-2353-device-redundant-fetches.md",
     "AKO/AKO44/Flujo trabajo con Agents/writing-guide.md",
