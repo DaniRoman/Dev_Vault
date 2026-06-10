@@ -1,10 +1,9 @@
->[!example] Feature 2253
->[Enlace a tarea](https://ako-team.atlassian.net/browse/KNT-2253)
 
 >[!error] Errores & Bugs
 >[[Feature 2253 Flujo de remove Device - Errores & Bugs ]]
 
 ***Objetivo***
+
 Al Eliminar un `Device` este tiene que setearse en`status: pending delete` [[AKO 44 - Feature 2253 - status pending delete]] . Se le envía un `cmd` para  cambiar el `param_lic_sys_state` =  `2`.
 [[AKO 44 - Feature 2253 - cambio de parámetro]]
 Una vez tenemos una confirmación `ACK: ok` [[AKO 44 - Feature 2253 - Confirmación ACK ok ]]Device tiene que mandar un `audit` con param_lic_sys_state =  2 y en ese micro `backlog.perte stateController` comprobar antes de borrar el Device ese audit y que `status: pending delete` 
@@ -35,6 +34,3 @@ EL procedimiento para un cambio de parámetro es mediante el flujo de
 
 Mirando las especificaciones del dispositivo en el [excel](https://ako0.sharepoint.com/:x:/r/teams/DesarrolloModificaciondeProducto/NEWDARWIN/_layouts/15/Doc.aspx?sourcedoc=%7B514EB616-8124-49F9-A674-3C8150BBA1E0%7D&file=2024_NEW_DARWIN_PANEL_2RY_REV5.xlsx&action=default&mobileredirect=true)  en el grupo/pestaña `conf.LIC` podemos ver los posibles valores.
 
-
-## AKO 44 - Admin
-[[AKO  44 - Admin Main Page]]
