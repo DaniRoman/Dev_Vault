@@ -4,7 +4,7 @@
 
 ***Objetivo***
 
-Al Eliminar un `Device` este tiene que setearse en`status: pending delete` [[AKO 44 - Feature 2253 - status pending delete]] . Se le envía un `cmd` para  cambiar el `param_lic_sys_state` =  `2`.
+Al Eliminar un `Device` este tiene que setearse en`status: pending delete`. Se le envía un `cmd` para  cambiar el `param_lic_sys_state` =  `2`.
 [[AKO 44 - Feature 2253 - cambio de parámetro]]
 Una vez tenemos una confirmación `ACK: ok` [[AKO 44 - Feature 2253 - Confirmación ACK ok ]]Device tiene que mandar un `audit` con param_lic_sys_state =  2 y en ese micro `backlog.perte stateController` comprobar antes de borrar el Device ese audit y que `status: pending delete` 
 `ManufacturedDevice` se mostara como desactivado
