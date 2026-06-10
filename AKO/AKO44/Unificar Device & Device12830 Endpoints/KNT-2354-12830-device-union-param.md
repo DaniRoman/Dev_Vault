@@ -1,5 +1,3 @@
-flowchart TD
-Start --> Stop
 # Task: KNT-2354 — 12830 Device Controller: aceptar `string | DeviceModel`
 
 ## Metadata
@@ -83,27 +81,27 @@ flowchart TD
 
 ### Patrón a aplicar
 
-Cada método del 12830 acepta `string | DeviceModel` en el primer parámetro. Un helper privado resuelve el device:
+Cada método del 12830 acepta `string | DeviceModel` en el primer parámetro. La resolución del device se hace **inline con un ternario** al inicio del método (sin helper):
 
 ```ts
-private async _resolveDevice(
-  deviceOrId: string | DeviceModel,
-  extraSelect?: string
-): Promise<DeviceModel> {
-  if (typeof deviceOrId !== "string") {
-    return deviceOrId; // ya viene auth-checked desde el caller
-  }
-  const select = extraSelect
-    ? extraSelect + " model lastStatus"
-    : "model lastStatus";
-  return await super.get(deviceOrId, { select }) as DeviceModel;
+public getActivity(deviceOrId: string | DeviceModel, params: any): Promise<IControllerResponse> {
+  const devicePromise: Promise<any> = typeof deviceOrId === "string"
+    ? this._checkPrivilege().then(() => {
+        const selectParam = params.select ? params.select + " model lastStatus" : " model lastStatus";
+        return super.get(deviceOrId, {...params, select: selectParam});
+      })
+    : Promise.resolve(deviceOrId);
+
+  return devicePromise.then((device: any) => { /* lógica de negocio */ });
 }
 ```
 
 **Reglas del contrato:**
-- Si entra un `string` → el 12830 fetcha con `super.get` (aplica filtro de compañía, allowedDevices, etc.).
-- Si entra un `DeviceModel` → el 12830 confía: el caller ya validó acceso.
+- Si entra un `string` → el 12830 ejecuta `_checkPrivilege` + `super.get` (aplica filtro de compañía, allowedDevices, etc.).
+- Si entra un `DeviceModel` → el 12830 confía: el caller ya validó acceso y se salta tanto el fetch como `_checkPrivilege`.
 - Las rutas HTTP siguen pasando `req.params.id` (string), así que no se rompen.
+
+> Se descartó la idea de un helper `_resolveDevice` porque añadía indirección sin ahorrar código real (cada método tiene matices distintos: unos usan `super.get`, otros `Device.findById` con populate, otros sin `_checkPrivilege` al inicio).
 
 
 
@@ -113,60 +111,60 @@ Cinco métodos del `Device12830Controller` se refactorizan. Por cada uno: qué h
 
 ---
 
-#### 1. `getActivity` — `12830/device.ts:189`
+#### 1. `getActivity` — `12830/device.ts:194`
 
-| Aspecto                             | Estado actual                                                       | Cambio                                                                                 |
-| ----------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Firma                               | `(id: string, params)`                                              | `(deviceOrId: string \| DeviceModel, params)`                                          |
-| Fetch interno                       | `super.get(id, {select: "... model lastStatus"})`                   | Sustituir por `_resolveDevice(deviceOrId, params.select)`                              |
-| Caller en legacy (`device.ts:2394`) | `Device.findById(deviceId)` ❌ sin filtro compañía → pasa `deviceId` | Cambiar a `this.get(deviceId, {select: "model lastStatus"})` → pasar `device` resuelto |
-| Ahorro                              | 1 fetch + arregla bypass de compañía                                |                                                                                        |
-
----
-
-#### 2. `getMetrics` — `12830/device.ts:216`
-
-| Aspecto | Estado actual | Cambio |
+| Aspecto | Estado anterior | Estado nuevo |
 |---|---|---|
 | Firma | `(id: string, params)` | `(deviceOrId: string \| DeviceModel, params)` |
-| Fetch interno | `await Device.findById(id)` (sin filtro compañía si llega por ruta directa) | Sustituir por `_resolveDevice(deviceOrId)` |
-| Caller en legacy (`device.ts:1885`) | Tiene `device` cargado (líneas 1858-1882) → pasa solo `id` | Pasar `device` directamente |
-| Ahorro | 1 fetch | |
-
----
-
-#### 3. `getExportMetrics` — `12830/device.ts:245`
-
-| Aspecto | Estado actual | Cambio |
-|---|---|---|
-| Firma | `(id: string, params)` | `(deviceOrId: string \| DeviceModel, params)` |
-| Fetch interno | `Device.findById(id).populate("connectedTo")` | Resolver device, **mantener** el populate si no viene. Si el model entrante ya tiene `connectedTo` populated, reutilizar |
-| Llamada interna | `this.getMetrics(id, exportParams)` | `this.getMetrics(device, exportParams)` — pasa el modelo, no el id |
-| Caller en legacy (`device.ts:1814`) | Pasa solo `id` | Pasar `device` (requiere ampliar select del `this.get` del legacy para incluir el populate de `connectedTo`) |
-| Ahorro | 2 fetches | |
-
-> Nota: este caso es el más delicado porque necesita `connectedTo` populado para `device.getUTCOffset()`. Si el caller no lo provee populated, hay que hacer un fetch puntual del populate. Detalle en Phase 2.
-
----
-
-#### 4. `getActivityExportXlsx` — `12830/device.ts:296`
-
-| Aspecto | Estado actual | Cambio |
-|---|---|---|
-| Firma | `(id: string, params)` | `(deviceOrId: string \| DeviceModel, params)` |
-| Fetch interno | `super.get(id, {select: "... model lastStatus"})` | `_resolveDevice(deviceOrId, params.select)` |
-| Caller en legacy (`device.ts:2477`) | `Device.findById(deviceId)` ❌ sin filtro compañía → pasa `deviceId` | Cambiar a `this.get(deviceId, ...)` → pasar `activityDevice` (ya existe como variable) |
+| Resolución del device | siempre `super.get(id, {select: "... model lastStatus"})` | ternario inline: si es string → `_checkPrivilege` + `super.get`; si es `DeviceModel` → `Promise.resolve(deviceOrId)` |
+| Caller en legacy (`device.ts:2400`) | `Device.findById(deviceId)` ❌ sin filtro de compañía → pasa `deviceId` | Sigue usando `Device.findById` (necesario para conservar `getUTCOffset()`), **se añade guard manual de compañía** y luego pasa el `device` ya cargado |
 | Ahorro | 1 fetch + arregla bypass de compañía | |
 
 ---
 
-#### 5. `getIndicators` — `12830/device.ts:148`
+#### 2. `getMetrics` — `12830/device.ts:230`
 
-| Aspecto | Estado actual | Cambio |
+| Aspecto | Estado anterior | Estado nuevo |
 |---|---|---|
 | Firma | `(id: string, params)` | `(deviceOrId: string \| DeviceModel, params)` |
-| Fetch interno | `super.get(id, {select: "... model lastStatus"})` | `_resolveDevice(deviceOrId, params.select)` |
-| Caller en legacy (`device.ts:4258` loop) | El loop ya tiene `dev` cargado → pasa `dev._id` | Pasar `dev` directamente |
+| Resolución del device | `await Device.findById(id)` siempre | ternario inline dentro del `.then`: si es string → `Device.findById(deviceOrId)`; si es `DeviceModel` → reutilizar. `_checkPrivilege` solo si entra string |
+| Caller en legacy (`device.ts:1854`) | Tiene `device` cargado (líneas 1862-1888) → pasaba solo `id` | Pasa `device` directamente |
+| Ahorro | 1 fetch | |
+
+---
+
+#### 3. `getExportMetrics` — `12830/device.ts:270`
+
+| Aspecto | Estado anterior | Estado nuevo |
+|---|---|---|
+| Firma | `(id: string, params)` | `(deviceOrId: string \| DeviceModel, params)` |
+| Resolución del device | siempre `Device.findById(id).populate("connectedTo")` | ternario inline: si es string → `Device.findById(deviceOrId).populate("connectedTo")`; si es `DeviceModel` → reutilizar (el caller debe traer `connectedTo` populado) |
+| Llamada interna | `this.getMetrics(id, exportParams)` | `this.getMetrics(device, exportParams)` — pasa el modelo, no el id |
+| Caller en legacy (`device.ts:1814`) | `Device.findById(id).populate("connectedTo")` y pasa solo `id` | El populate ya incluye `connectedTo` con `timezone connectedTo lastStatus` → se pasa el `device` ya populado |
+| Ahorro | 2 fetches | |
+
+> Nota: `getUTCOffset()` necesita `connectedTo` populado. El caller legacy ya hace ese populate en su propio `Device.findById`, así que reutilizar el modelo funciona sin fetch extra.
+
+---
+
+#### 4. `getActivityExportXlsx` — `12830/device.ts:329`
+
+| Aspecto | Estado anterior | Estado nuevo |
+|---|---|---|
+| Firma | `(id: string, params)` | `(deviceOrId: string \| DeviceModel, params)` |
+| Resolución del device | siempre `super.get(id, {select: "... model lastStatus"})` | ternario inline tras validar las fechas: si es string → `_checkPrivilege` + `super.get`; si es `DeviceModel` → reutilizar |
+| Caller en legacy (`device.ts:2483`) | `Device.findById(deviceId)` ❌ sin filtro de compañía → pasa `deviceId` | Sigue usando `Device.findById` (necesario para `getUTCOffset()`), **se añade guard manual de compañía** y pasa `activityDevice` ya cargado |
+| Ahorro | 1 fetch + arregla bypass de compañía | |
+
+---
+
+#### 5. `getIndicators` — `12830/device.ts:147`
+
+| Aspecto | Estado anterior | Estado nuevo |
+|---|---|---|
+| Firma | `(id: string, params)` | `(deviceOrId: string \| DeviceModel, params)` |
+| Resolución del device | siempre `super.get(id, {select: "... model lastStatus"})` | ternario inline: si es string → `_checkPrivilege` + `super.get`; si es `DeviceModel` → `Promise.resolve(deviceOrId)` |
+| Caller en legacy (`device.ts:4264` loop) | El loop ya tenía `dev` cargado → pasaba `dev._id` | Pasa `dev` directamente |
 | Ahorro | **N fetches × N devices 12830 en cada listado** ⚠️ alto impacto | |
 
 ---
@@ -182,10 +180,10 @@ Cinco métodos del `Device12830Controller` se refactorizan. Por cada uno: qué h
 | Decisión | Razón | Riesgo |
 |---|---|---|
 | Union `string \| DeviceModel` en lugar de tercer parámetro opcional | Más limpio, firma más natural, no se confunde con `params` | Ninguno — los callers existentes que pasan string siguen funcionando |
-| Helper `_resolveDevice` privado en el 12830 | Concentra la lógica en un solo punto, fácil de testear | Ninguno |
-| Cuando llega `DeviceModel` se confía en el caller (no se re-valida) | El caller ya hizo `this.get()` con filtro de compañía | Si en el futuro alguien llama el método con un model obtenido por una vía no autenticada → bypass de compañía. Mitigación: documentar el contrato en JSDoc del método |
-| Cambiar `Device.findById` → `this.get` en `device.ts:2394` y `:2477` | Aplica filtro de compañía consistente | Devices de otra compañía ahora devuelven 404 en lugar de procesarse — comportamiento más correcto, pero técnicamente un cambio funcional |
-| No tocar Bugs A, B, F | Fuera de scope. Riesgo de regresión alto en SIM/superadmin | Deuda técnica persiste |
+| Resolución inline con ternario en lugar de helper `_resolveDevice` | Cada método tiene matices propios (`super.get` vs `Device.findById` con populate, con/sin `_checkPrivilege` al inicio). Un helper único habría tenido que aceptar tantas opciones que perdía valor | Ninguno — el patrón queda visible al inicio de cada método |
+| Cuando llega `DeviceModel` se confía en el caller (no se re-valida ni se ejecuta `_checkPrivilege`) | El caller ya hizo el guard de compañía (legacy) o el `_checkPrivilege` (loop de `getList`) | Si en el futuro alguien llama el método con un model obtenido por una vía no autenticada → bypass de compañía. Mitigación: contrato documentado en el JSDoc de cada método |
+| Mantener `Device.findById` en los callers legacy en lugar de migrar a `this.get` | `ControllerAbstract.get` aplica `_filterItem` → `toJSON()`, devolviendo un POJO sin métodos mongoose como `getUTCOffset()` que el 12830 necesita | Hay que añadir un guard manual de compañía por cada `Device.findById` para no bypasear la seguridad |
+| No tocar Bugs A, B, F de KNT-2353 | Fuera de scope. Riesgo de regresión alto en SIM/superadmin | Deuda técnica persiste |
 
 
 ---
