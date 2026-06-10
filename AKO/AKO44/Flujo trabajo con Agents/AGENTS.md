@@ -37,14 +37,17 @@ Do:
 - Read the task document before starting.
 - Read the smallest set of relevant source files needed for the phase.
 - Summarize relevant findings before editing.
-- Update the task document after each completed phase.
+- Update the task document after every code change in the same turn, without asking for permission.
+- When updating, re-read the previously written sections (including earlier phases) and rewrite anything that no longer matches the code on disk.
 - Record decisions, risks, and validation results.
 
 Do not:
 - Paste large code blocks into task documents unless necessary.
 - Store long logs, stack traces, or full command outputs in persistent context.
 - Duplicate source code in markdown.
-- Keep outdated assumptions as if they were facts.
+- Keep outdated assumptions, planned designs, or proposed helpers in the doc once the real implementation diverges.
+- Let the task document drift from the current state of the code, even within the same phase.
+- Ask the user whether to update the doc — just update it.
 - Advance to another phase without explicit user confirmation.
 
 ## Workflow for phased tasks
