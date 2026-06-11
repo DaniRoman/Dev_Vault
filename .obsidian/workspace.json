@@ -49,8 +49,7 @@
               "title": "AKO  44 - Acceso a Admin"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fm",
+                "query": "fota",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -236,11 +235,12 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "de643dfc8922618f",
+  "active": "cd0b57e002270810",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/Fota.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints/KNT-2354-12830-device-union-param.md",
     "AKO/AKO44/AKO 44 - Errores y sus soluciónes.md",
     "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
@@ -250,7 +250,6 @@
     "AKO/AKO44/LiveMesages/AKO 44 - Live Messages.md",
     "AKO/AKO44/Docs/AKO 44 - Admin.md",
     "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
-    "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - cambio de parámetro.md",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - Confirmación ACK ok.md",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - status pending delete.md",
