@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Feature 2253 Flujo de remove Device",
+                "query": "fm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +106,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -238,7 +239,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "de643dfc8922618f",
+  "active": "cd0b57e002270810",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
