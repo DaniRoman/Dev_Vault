@@ -11,14 +11,17 @@
             "id": "958b2312419148b6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
-                "mode": "source",
-                "source": false
+                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+                "viewState": {
+                  "x": 1508.073116241693,
+                  "y": -394.8072633705322,
+                  "zoom": -0.152033603741954
+                }
               },
-              "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - Flujo para Actualizar firmware"
             }
           },
           {
@@ -235,12 +238,12 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "cd0b57e002270810",
+  "active": "958b2312419148b6",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/Fota.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints/KNT-2354-12830-device-union-param.md",
     "AKO/AKO44/AKO 44 - Errores y sus soluciónes.md",
     "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
