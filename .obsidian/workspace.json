@@ -39,17 +39,14 @@
             "id": "de643dfc8922618f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-                "viewState": {
-                  "x": 1262.2007178973142,
-                  "y": -507.7229518494004,
-                  "zoom": -0.16599541454602576
-                }
+                "file": "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo para Actualizar firmware"
+              "icon": "lucide-file",
+              "title": "AKO  44 - Acceso a Admin"
             }
           }
         ],
@@ -239,8 +236,9 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "cd0b57e002270810",
+  "active": "de643dfc8922618f",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints/KNT-2354-12830-device-union-param.md",
@@ -269,8 +267,6 @@
     "AKO/AKO44/Flujo trabajo con Agents/AGENTS.md",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints/KNT-2353-device-redundant-fetches.md",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints/AKO44 - Unificar Endpoints.md",
-    "AKO/AKO44/FOTA launcher Blame/KNT-2303-firmware-plmn-launcher-log.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/FOTA launcher Blame",
     "AKO/AKO44/AlarmCount nunca es stale por caché Redis",
     "AKO/AKO44/Logs para micros",
