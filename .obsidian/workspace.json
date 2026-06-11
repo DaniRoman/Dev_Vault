@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "file": "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "title": "AKO 44 - Flujo Device mensaje tipo a Quue"
             }
           }
         ],
@@ -223,8 +223,10 @@
   },
   "active": "bd64f011a27846b8",
   "lastOpenFiles": [
-    "AKO/AKO44/Remove Device/Feature 2253 Flujo de remove Device - Errores & Bugs.md",
+    "AKO/AKO44/AKO 44 - Errores y sus soluciónes.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints/KNT-2354-12830-device-union-param.md",
+    "AKO/AKO44/Remove Device/Feature 2253 Flujo de remove Device - Errores & Bugs.md",
     "AKO/AKO44/Remove Device/AKO 44 - Feature 2253 - Confirmación ACK ok.md",
     "AKO/AKO44/Remove Device/Feature 2253 Flujo de remove Device.md",
     "AKO/AKO44/LiveMesages/AKO 44 - Live Messages.md",
@@ -239,7 +241,6 @@
     "AKO/AKO44/Docs/task-errcom-inactive-recovery.md",
     "AKO/AKO44/Docs/Sin título.md",
     "AKO/AKO44/Docs/KNT-2243 - errores.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO44 - Features Main Site.md",
     "AKO/AKO44/Remove Device",
     "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
@@ -251,7 +252,6 @@
     "AKO/AKO44/Unificar Device & Device12830 Endpoints/AKO44 - Unificar Endpoints.md",
     "AKO/AKO44/FOTA launcher Blame/KNT-2303-firmware-plmn-launcher-log.md",
     "AKO/AKO44/FOTA launcher Blame/FOTA Launcher Blame.md",
-    "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/FOTA launcher Blame",
     "AKO/AKO44/AlarmCount nunca es stale por caché Redis",
