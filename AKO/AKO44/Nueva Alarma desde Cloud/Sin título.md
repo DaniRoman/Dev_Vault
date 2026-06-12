@@ -34,3 +34,10 @@ asi consigo ref
 ![[Pasted image 20260612133331.png]]
 
 param_c_ag1_max_s1
+
+
+tabla timeseries_values_continuos se gaurdan los valores analogicas prob 1, prob2 
+
+values_digital van los reles  puerta abierta y demas.
+
+
