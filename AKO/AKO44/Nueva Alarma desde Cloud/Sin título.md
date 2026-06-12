@@ -10,6 +10,8 @@ Con esto definir una alarma nueva en `conf { cloud: }`
 mirar cada parte que significa:
 
 
+
+
 Mirar el flujo como se dispara un alarma treshold  probando un mensaje de tipo `sample` para ver como se gestiona una alarma.
 
 
