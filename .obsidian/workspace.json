@@ -11,17 +11,14 @@
             "id": "958b2312419148b6",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
-                "viewState": {
-                  "x": 1418.646390239771,
-                  "y": -700.442909199885,
-                  "zoom": -0.152033603741954
-                }
+                "file": "AKO/AKO44/Sin nombre/Sin título.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - Flujo para Actualizar firmware"
+              "icon": "lucide-file",
+              "title": "Sin título"
             }
           },
           {
@@ -105,12 +102,11 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 415.5024719238281
+    "width": 466.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -240,10 +236,12 @@
   },
   "active": "958b2312419148b6",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
+    "AKO/AKO44/Sin nombre/Sin título.md",
+    "AKO/AKO44/Sin nombre",
     "AKO/AKO44/Docs/Fota.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
-    "AKO/AKO44/Docs/AKO 44 - Flujo para Actualizar firmware.canvas",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints/KNT-2354-12830-device-union-param.md",
     "AKO/AKO44/AKO 44 - Errores y sus soluciónes.md",
     "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
@@ -268,7 +266,6 @@
     "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
     "AKO/AKO44/Flujo trabajo con Agents/AGENTS.md",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints/KNT-2353-device-redundant-fetches.md",
-    "AKO/AKO44/Unificar Device & Device12830 Endpoints/AKO44 - Unificar Endpoints.md",
     "AKO/AKO44/FOTA launcher Blame",
     "AKO/AKO44/AlarmCount nunca es stale por caché Redis",
     "AKO/AKO44/Logs para micros",
@@ -277,7 +274,6 @@
     "AKO/AKO44/comm_sync",
     "AKO/AKO44/Test Cases",
     "AKO/AKO44/Unificar Device & Device12830 Endpoints",
-    "AKO/AKO44/Reset Device Conf",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "DeveloperRoadMap/attachments/Pasted image 20260514162153.png",
     "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
