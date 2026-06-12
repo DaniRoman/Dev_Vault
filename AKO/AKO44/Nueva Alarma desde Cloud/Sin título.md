@@ -15,12 +15,12 @@ Mirar el flujo como se dispara un alarma treshold  probando un mensaje de tipo `
 
 Ejecutar `sql` para tener las tablas
 
-modificar sql y micro para ese tipo de alarma `continuos` ??
+modificar sql y micro `save-alarms-tresholds `para ese tipo de alarma `continuos` ??
 
 
 llega sample - calculo entrgadas digiytales y demas  calcula los treshold  () rellena el sample y lo manda al timeseries, y el lo almacena en una tabla, alarm treshold todo esto llega en cada sample solo tti y digital , respecto a los daylos 
 
-meter un caso nuevo save-alarms-tresholds 
+meter un caso nuevo 
 
 kver flujo como se dispara un alarma treshold  probando enviar un sample 
 
