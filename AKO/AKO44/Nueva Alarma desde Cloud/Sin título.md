@@ -40,4 +40,9 @@ tabla timeseries_values_continuos se gaurdan los valores analogicas prob 1, prob
 
 values_digital van los reles  puerta abierta y demas.
 
+cuando llegue un sample a continuos con los valores de alarma que se dispare un triger 
+device active alarms y de ahi lo pasa al micro 
+
+
+
 
