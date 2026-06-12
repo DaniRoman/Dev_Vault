@@ -1,5 +1,5 @@
 param_SP_setpoint, el sp
-param_C1-sp_delta
+param_C1-sp_delta, cuantos grados por encima por abajo del SP para que suene la alar
 
 con estos tengo la alarma maxima y minima 
 

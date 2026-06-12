@@ -117,7 +117,7 @@ Cinco métodos del `Device12830Controller` se refactorizan. Por cada uno: qué h
 |---|---|---|
 | Firma | `(id: string, params)` | `(deviceOrId: string \| DeviceModel, params)` |
 | Resolución del device | siempre `super.get(id, {select: "... model lastStatus"})` | ternario inline: si es string → `_checkPrivilege` + `super.get`; si es `DeviceModel` → `Promise.resolve(deviceOrId)` |
-| Caller en legacy (`device.ts:2400`) | `Device.findById(deviceId)` ❌ sin filtro de compañía → pasa `deviceId` | Sigue usando `Device.findById` (necesario para conservar `getUTCOffset()`), **se invoca el helper `this._assertSameCompany(device)`** y luego pasa el `device` ya cargado |
+| Caller en legacy (`device.ts:2400`) | `Device.findById(deviceId)` ❌ sin filtro de compañía → pasa `deviceId` | Sustituido por `this._getModel(deviceId)` (privilege + fetch + existence + guard de compañía en una sola llamada), pasa el `DeviceModel` Mongoose ya cargado al 12830 |
 | Ahorro | 1 fetch + arregla bypass de compañía | |
 
 ---
@@ -153,7 +153,7 @@ Cinco métodos del `Device12830Controller` se refactorizan. Por cada uno: qué h
 |---|---|---|
 | Firma | `(id: string, params)` | `(deviceOrId: string \| DeviceModel, params)` |
 | Resolución del device | siempre `super.get(id, {select: "... model lastStatus"})` | ternario inline tras validar las fechas: si es string → `_checkPrivilege` + `super.get`; si es `DeviceModel` → reutilizar |
-| Caller en legacy (`device.ts:2483`) | `Device.findById(deviceId)` ❌ sin filtro de compañía → pasa `deviceId` | Sigue usando `Device.findById` (necesario para `getUTCOffset()`), **se invoca el helper `this._assertSameCompany(device)`** y pasa `activityDevice` ya cargado |
+| Caller en legacy (`device.ts:2483`) | `Device.findById(deviceId)` ❌ sin filtro de compañía → pasa `deviceId` | Sustituido por `this._getModel(deviceId)` (privilege + fetch + existence + guard de compañía), asigna a `activityDevice` y pasa al 12830 |
 | Ahorro | 1 fetch + arregla bypass de compañía | |
 
 ---
@@ -182,7 +182,7 @@ Cinco métodos del `Device12830Controller` se refactorizan. Por cada uno: qué h
 | Union `string \| DeviceModel` en lugar de tercer parámetro opcional | Más limpio, firma más natural, no se confunde con `params` | Ninguno — los callers existentes que pasan string siguen funcionando |
 | Resolución inline con ternario en lugar de helper `_resolveDevice` | Cada método tiene matices propios (`super.get` vs `Device.findById` con populate, con/sin `_checkPrivilege` al inicio). Un helper único habría tenido que aceptar tantas opciones que perdía valor | Ninguno — el patrón queda visible al inicio de cada método |
 | Cuando llega `DeviceModel` se confía en el caller (no se re-valida ni se ejecuta `_checkPrivilege`) | El caller ya hizo el guard de compañía (legacy) o el `_checkPrivilege` (loop de `getList`) | Si en el futuro alguien llama el método con un model obtenido por una vía no autenticada → bypass de compañía. Mitigación: contrato documentado en el JSDoc de cada método |
-| Mantener `Device.findById` en los callers legacy en lugar de migrar a `this.get` | `ControllerAbstract.get` aplica `_filterItem` → `toJSON()`, devolviendo un POJO sin métodos mongoose como `getUTCOffset()` que el 12830 necesita; además recorta campos según permisos y no soporta el `.populate()` específico que usan `getMetrics`/`getExportMetrics`. Ver Phase 2 → "¿Por qué no `this.get()`?" | Se replica el filtro de compañía con el helper privado `_assertSameCompany` (1 llamada por método, evita las 4 duplicaciones del guard inline) |
+| Mantener `Device.findById` en los callers legacy en lugar de migrar a `this.get` | `ControllerAbstract.get` aplica `_filterItem` → `toJSON()`, devolviendo un POJO sin métodos mongoose como `getUTCOffset()` que el 12830 necesita; además recorta campos según permisos y no soporta el `.populate()` específico que usan `getMetrics`/`getExportMetrics`. Ver Phase 2 → "¿Por qué no `this.get()`?" | Se encapsula el patrón en un helper privado `_getModel` (privilege + findById + populate opcional + existence + guard de compañía), reutilizable por nuevos endpoints sin duplicar boilerplate |
 | No tocar Bugs A, B, F de KNT-2353 | Fuera de scope. Riesgo de regresión alto en SIM/superadmin | Deuda técnica persiste |
 
 
@@ -201,13 +201,15 @@ Aplicar el patrón `string | DeviceModel` en los 5 métodos del 12830 y actualiz
 | File | Cambio |
 |------|--------|
 | `src/controllers/api/12830/device.ts` | `getIndicators`, `getActivity`, `getMetrics`, `getExportMetrics`, `getActivityExportXlsx` aceptan `string \| DeviceModel`. Si llega un `DeviceModel` se reutiliza directamente y se omite `_checkPrivilege` + `super.get`. `console.log` de debug en `getActives` ya estaban quitados. |
-| `src/controllers/api/device.ts` | `getMetrics` y `getExportMetrics` pasan `device` al 12830. `getActivity` y `getDeviceActivityExportXlsx` pasan `device`/`activityDevice` al 12830. Se añade el helper privado `_assertSameCompany(device)` y se sustituyen los 4 guards inline duplicados por una llamada al helper. `_extraGetSelects` pasa `dev` al loop. |
+| `src/controllers/api/device.ts` | `getMetrics` y `getExportMetrics` pasan `device` al 12830. `getActivity` y `getDeviceActivityExportXlsx` pasan `device`/`activityDevice` al 12830. Se añaden dos helpers privados: `_assertSameCompany(device)` (guard de compañía, responde 404) y `_getModel(id, {populate?, select?})` (privilege + findById + populate + existence + guard, devuelve `DeviceModel` Mongoose). Los 4 métodos legacy reemplazan el bloque `_checkPrivilege + findById + existence + guard` por una sola llamada a `_getModel`. `_extraGetSelects` pasa `dev` al loop. |
 
 ### Decisiones tomadas
 
 - **No usar `this.get` del `ControllerAbstract` en el legacy**: ver sección "¿Por qué no `this.get()`?" más abajo.
 - **Helper `_resolveDevice` descartado**: la lógica resultó simple (1 línea con ternario) y se aplica inline en cada método para no añadir indirección.
-- **Helper `_assertSameCompany` introducido**: las 4 funciones que hacían `Device.findById` + guard manual repetían el mismo bloque de 6 líneas. Se extrae a un helper privado que devuelve `Promise<void>` (resuelve si OK, rechaza con 403 si la compañía no coincide). Las 4 llamadas pasan de 6 líneas a 1.
+- **Helpers `_assertSameCompany` + `_getModel` introducidos**: las 4 funciones repetían el mismo patrón `_checkPrivilege → Device.findById(.populate) → existence check → guard de compañía`. Se consolida en `_getModel`, que devuelve un `DeviceModel` Mongoose intacto (preserva `getUTCOffset()` y demás métodos). `_assertSameCompany` queda como helper interno de `_getModel`. Las 4 llamadas pasan de ~10 líneas a 1.
+- **Status 404 (no 403) para cross-company**: `_assertSameCompany` rechaza con `{status: 404, message: "Device not found"}` igual que hace `ControllerAbstract._checkRestrictions`. Mantiene coherencia con el resto del API (el endpoint `GET /api/device/:id` ya devolvía 404 en este caso) y evita enumeración de IDs ajenos. El front no necesita cambios — ya maneja 404 en device endpoints.
+- **`_getModel` vs `this.get` del abstract**: `_getModel` vive en `DeviceController` y es opt-in. No se toca el abstract, por lo que los otros ~59 controllers del proyecto no se ven afectados. Quien quiera un POJO filtrado sigue usando `this.get()`; quien necesite el documento Mongoose completo con guard aplicado usa `_getModel`.
 - **Contrato del 12830 con `DeviceModel`**: cuando recibe un modelo se confía en que el caller ya pasó por `_checkPrivilege` y por el guard de compañía. Documentado en los JSDoc de cada método.
 
 ### ¿Por qué no `this.get()` del abstract en lugar de `Device.findById` + guard manual?
@@ -225,13 +227,13 @@ Aplicar el patrón `string | DeviceModel` en los 5 métodos del 12830 y actualiz
 
 3. **No soporta `.populate()` arbitrario.** `getMetrics` y `getExportMetrics` hacen `Device.findById(id).populate({path: "connectedTo", select: "..."})`. `this.get()` usa su propio sistema de `selectOptions`/`availablePaths` que no permite popular un sub-documento con un select específico sin reescribir bastante infraestructura del abstract.
 
-**Conclusión:** mantener `Device.findById` (devuelve documento Mongoose completo) + helper `_assertSameCompany` (replica exactamente el check que hace `_checkRestrictions`, pero responde `403` en vez de `404` para hacer explícito el bypass corregido). Es el cambio mínimo que arregla la fuga sin tocar la infraestructura del abstract.
+**Conclusión:** encapsular el patrón en un helper privado `_getModel` (privilege + `Device.findById` con populate/select opcional + existence check + guard de compañía) que devuelve un documento Mongoose intacto y responde 404 cuando la compañía no coincide (mismo status que `_checkRestrictions` del abstract). Es el cambio mínimo que arregla la fuga, mantiene coherencia con el resto del API y deja un patrón reutilizable para nuevos endpoints sin tocar la infraestructura del abstract.
 
 ### Bug pre-existente corregido (ampliación de scope autorizada por el usuario)
 
-En `getExportMetrics` (línea 1823) y `getMetrics` (línea 1869) el guard de compañía existente leía `(device as any).company` y `this.context.user.company`, pero los campos reales del schema son `_company` (Device) y `this.context.company._id` (Context). El check nunca se disparaba → el filtro de compañía estaba bypaseado en esos dos endpoints.
+En `getExportMetrics` (línea 1823) y `getMetrics` (línea 1869) el guard de compañía existente leía `(device as any).company` y `this.context.user.company`, pero los campos reales del schema son `_company` (Device) y `this.context.company._id` (Context). El check nunca se disparaba → el filtro de compañía estaba bypaseado en esos dos endpoints. `getActivity` y `getDeviceActivityExportXlsx` no tenían guard alguno.
 
-**Fix aplicado:** los 4 guards (`getMetrics`, `getExportMetrics`, `getActivity`, `getDeviceActivityExportXlsx`) consolidados en una sola llamada a `this._assertSameCompany(device)`.
+**Fix aplicado:** los 4 endpoints (`getMetrics`, `getExportMetrics`, `getActivity`, `getDeviceActivityExportXlsx`) ahora invocan `this._getModel(id, ...)`, que aplica el guard de compañía centralizado y responde 404 (igual que el resto de endpoints de device) si el device pertenece a otra compañía.
 
 ### Validation
 
@@ -293,10 +295,10 @@ No hay tests automatizados de integración que cubran los 5 endpoints afectados 
 | # | Caller legacy | Cómo entra el device en el 12830 | Guard de compañía aplicado antes |
 |---|---|---|---|
 | 1 | `_extraGetSelects` loop (línea 4258) | `dev` ya viene del `super.getList` (filtros del controller aplicados) | ✅ vía `getList` |
-| 2 | `getActivity` (línea 2400) | `Device.findById(deviceId)` + helper `_assertSameCompany(device)` | ✅ añadido este turno |
-| 3 | `getMetrics` (línea 1864) | `Device.findById(id).populate({connectedTo})` + helper `_assertSameCompany(device)` | ✅ corregido este turno (era `(device as any).company`, después inline, ahora consolidado en helper) |
-| 4 | `getExportMetrics` (línea 1824) | `Device.findById(id).populate({connectedTo})` + helper `_assertSameCompany(device)` | ✅ corregido este turno |
-| 5 | `getDeviceActivityExportXlsx` (línea 2491) | `Device.findById(deviceId)` + helper `_assertSameCompany(device)` | ✅ añadido este turno |
+| 2 | `getActivity` (línea 2410) | `this._getModel(deviceId)` | ✅ añadido este turno (vía `_getModel`) |
+| 3 | `getMetrics` (línea 1871) | `this._getModel(id, {populate: {connectedTo}})` | ✅ corregido este turno (era `(device as any).company`, ahora consolidado en `_getModel`) |
+| 4 | `getExportMetrics` (línea 1838) | `this._getModel(id, {populate: {connectedTo}})` | ✅ corregido este turno (vía `_getModel`) |
+| 5 | `getDeviceActivityExportXlsx` (línea 2483) | `this._getModel(deviceId)` | ✅ añadido este turno (vía `_getModel`) |
 
 ### Pendiente de validar manualmente en QA (requiere user de otra compañía)
 
@@ -304,16 +306,16 @@ No se pudo ejecutar en local porque solo había token de superadmin. Lanzar en Q
 
 | Endpoint | Resultado esperado | Antes del fix |
 |----------|---------------------|--------------|
-| `GET /api/device/:idCompañiaB/activity` | 403 Forbidden | 200 con datos ajenos (fuga) |
-| `GET /api/device/:idCompañiaB/metrics` | 403 Forbidden | 200 (guard roto) |
-| `GET /api/device/:idCompañiaB/metrics/export` | 403 Forbidden | 200 (guard roto) |
-| `GET /api/device/:idCompañiaB/activity/xlsx` | 403 Forbidden | 200 con xlsx ajeno (fuga) |
+| `GET /api/device/:idCompañiaB/activity` | 404 Not Found | 200 con datos ajenos (fuga) |
+| `GET /api/device/:idCompañiaB/metrics` | 404 Not Found | 200 (guard roto) |
+| `GET /api/device/:idCompañiaB/metrics/export` | 404 Not Found | 200 (guard roto) |
+| `GET /api/device/:idCompañiaB/activity/xlsx` | 404 Not Found | 200 con xlsx ajeno (fuga) |
 
 ### Riesgos remanentes
 
-- **Cambio de comportamiento HTTP en 4 endpoints**: usuarios no-superadmin pidiendo devices de otra compañía pasarán de `200` (con datos ajenos) a `403`. Es la corrección deseada — la fuga no debería haber existido. Verificar en QA que el front no asume "200 vacío" para devices ajenos.
+- **Cambio de comportamiento HTTP en 4 endpoints**: usuarios no-superadmin pidiendo devices de otra compañía pasarán de `200` (con datos ajenos) a `404`. Es la corrección deseada — la fuga no debería haber existido — y se alinea con el 404 que ya devuelve `GET /api/device/:id` en el mismo escenario (`_checkRestrictions` del abstract). El front ya maneja 404 en device endpoints, no requiere cambios.
 
 ### Próximo paso recomendado
 
-Merge a `develop`. Si en QA aparece algún 403 inesperado, revisar si el front está pidiendo devices de otra compañía (probable bug del front que estaba enmascarado por estos guards rotos).
+Merge a `develop`. El comportamiento HTTP queda alineado con el endpoint de detalle (`GET /api/device/:id`), por lo que el front no debería notar ningún cambio: los flujos normales (devices de la propia compañía) siguen devolviendo 200 con los mismos datos; los devices de otra compañía pasan de "200 con fuga" a "404", el mismo error que ya recibían en el endpoint de detalle.
 
