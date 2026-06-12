@@ -26,3 +26,11 @@ meter un caso nuevo
 
 kver flujo como se dispara un alarma treshold  probando enviar un sample 
 
+
+asi consigo ref
+
+![[Pasted image 20260612133316.png]]
+
+![[Pasted image 20260612133331.png]]
+
+param_c_ag1_max_s1
