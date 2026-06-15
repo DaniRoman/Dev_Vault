@@ -3,9 +3,7 @@
 ## Contexto
 
 Las alarmas de cloud se definen en el campo `alarms.cloud` de la definición de dispositivo
-(p. ej. `src/schemas/device-definitions/panel_0ry_7302.json`).
-
-A diferencia de las alarmas de dispositivo (`alarms.device`), las alarmas de cloud **no las
+(p. ej. `src/schemas/device-definitions/panel_0ry_7302.json`). Las alarmas de cloud **no las
 evalúa el firmware** sino el microservicio dedicado de timeseries. Este servicio lee la
 definición expuesta por `akocloud-api`, evalúa la condición con los valores en tiempo real, y
 escribe el estado de la alarma en `device.lastStatus.alarms[ref]`.
