@@ -25,17 +25,14 @@
             "id": "bd64f011a27846b8",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
-                "viewState": {
-                  "x": -960.4528825242766,
-                  "y": -344.6516216279789,
-                  "zoom": -0.28985199704549663
-                }
+                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - ErrorComm workFlow"
+              "icon": "lucide-file",
+              "title": "AKO 44 Main Site"
             }
           },
           {
@@ -240,8 +237,8 @@
   },
   "active": "bd64f011a27846b8",
   "lastOpenFiles": [
-    "AKO/AKO44/errcom/AKO 44 - ErrorComm.md",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
+    "AKO/AKO44/errcom/AKO 44 - ErrorComm.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Nueva Alarma desde Cloud/cloud-alarm-guide-panel-0ry.md",
     "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
