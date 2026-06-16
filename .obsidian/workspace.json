@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 Main Site.md",
+                "file": "AKO/AKO44/errcom/task-knt-2248-12830-fixes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 Main Site"
+              "title": "task-knt-2248-12830-fixes"
             }
           },
           {
@@ -237,9 +237,10 @@
   },
   "active": "bd64f011a27846b8",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/errcom/AKO 44 - ErrorComm.md",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/errcom/errcom-cloud-alarm-times-and-names.md",
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/Nueva Alarma desde Cloud/cloud-alarm-guide-panel-0ry.md",
     "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
     "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.md",
