@@ -129,7 +129,12 @@ flowchart TD
 
 ### Paso 1 — Decidir, por cada medición, quién evalúa cada alarma
 
-Se añade el helper `resolveCloudAlarmSource(code, alarm_ref)`
+Se añade el helper `resolveCloudAlarmSource(code, alarm_ref)` 
+
+>[!important] `alarm_ref`
+>Es el `injector`
+
+
 ([cloud-alarm-source.ts](domains/src/alarms/Application/cloud-alarm-source.ts), NUEVO): dice si una alarma
 es de **temperatura analógica** o no.
 
