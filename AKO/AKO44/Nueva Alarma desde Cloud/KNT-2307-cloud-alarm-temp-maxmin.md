@@ -132,7 +132,7 @@ flowchart TD
 Se añade el helper `resolveCloudAlarmSource(code, alarm_ref)` 
 
 >[!important] `alarm_ref`
->Es el `injector`
+>Es el `injector` el que enriqueze el mensaje tipo `sample` con el `alarm_ref` definid
 
 
 ([cloud-alarm-source.ts](domains/src/alarms/Application/cloud-alarm-source.ts), NUEVO): dice si una alarma
