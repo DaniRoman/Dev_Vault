@@ -8,7 +8,7 @@
 | Branch  | `feature/KNT-2390`     |
 | Author  | Dani                   |
 | Created | 2026-06-15             |
-| Status  | `done` (pendiente solo de commits) |
+| Status  | `done` — activación y desactivación validadas end-to-end (2026-06-18); pendiente solo de commits |
 
 ## Objetivo
 
@@ -16,8 +16,11 @@ Las alarmas de temperatura **MAX** (`alarm_cloud_error_1`) y **MIN** (`alarm_clo
 `panel_0ry`, antes evaluadas por el firmware, las debe gestionar el microservicio `akocloud-timeseries`
 en cloud. Requisito clave: deben saltar **casi al instante** al recibir el sample, no con la media diaria.
 
-**Resultado:** implementado y validado end-to-end (2026-06-17). El sample cruza el umbral → se publica la
-activación de inmediato → llega a Mongo (`alarm12830`). Sin media diaria, sin esperar el aggregate, sin el job.
+**Resultado:** implementado y validado end-to-end. La **activación** (2026-06-17) y la **desactivación**
+(2026-06-18, tras corregir el bug de fecha off-by-one en UTC+2) funcionan: el sample cruza el umbral → se
+publica la activación de inmediato → `alarm12830` queda `active:true`; al bajar del umbral → se publica la
+desactivación → el mismo doc pasa a `active:false` con `valueDeactivation`, sin huérfano. Sin media diaria,
+sin esperar el aggregate, sin el job.
 
 ---
 
@@ -214,6 +217,58 @@ Device `6a02f7f89669739498a9d799` (`panel_0ry_7302`), sample `prb1 = 50 ºC` (um
 
 ---
 
+## Fase de bug — desactivación no apaga el doc en Mongo (off-by-one de fecha)
+
+**Estado:** `fixed` y **re-validado** end-to-end (2026-06-18).
+
+### Síntoma
+
+Al enviar un sample por debajo del umbral (p.ej. `prb1=20`), `alarm_notification_log` registra la
+`deactivation` con `delivered=true`, pero en Mongo `alarm12830` el doc sigue `active:true`. La
+desactivación aparece, en cambio, en la colección `alarmorphans` con
+`counterId = "alarm_cloud_error_1-2026-06-16"` y `valueDeactivation:"20"`.
+
+### Flujo del bug
+
+```mermaid
+flowchart TD
+    DEACT["EvaluateCloudAlarms (deactivate)\nlee activation_day de Postgres"]
+    PG[("alarm_notification_log\nday (DATE) = 2026-06-17")]
+    NODEPG["node-pg parsea DATE →\nDate(2026-06-17 00:00 LOCAL, UTC+2)"]
+    ISO["toISOString() → 2026-06-16T22:00Z\n.split('T')[0] = 2026-06-16 ❌"]
+    PUB["event12830\ncounterId = alarm_cloud_error_1-2026-06-16 ❌"]
+    UPD["events-12830/updater · DeactivationHandler\nbusca doc activo por counterId"]
+    MISS["no encuentra (doc real es -2026-06-17)\n→ guarda en alarmorphans ❌"]
+    DOC[("🍃 alarm12830\nsigue active:true ❌")]
+
+    DEACT --> PG --> NODEPG --> ISO --> PUB --> UPD --> MISS --> DOC
+```
+
+### Causa raíz
+
+`node-pg` convierte una columna `DATE` en un `Date` de JS a **medianoche local**. Con el proceso en
+**UTC+2**, `toISOString()` lo retrocede un día. El `counterId` de la desactivación se construye con ese
+`activation_day` ([event-payload-builder.ts](domains/src/alarms/Application/event-payload-builder.ts)),
+así que sale un día antes y deja de casar con el doc activo en `alarm12830`. La **activación** no se ve
+afectada porque su `counterId` se construye con el `timestamp` del sample, no con una columna `DATE`.
+
+### Fix
+
+[cloud-alarm-state.timescaledb.repository.ts](domains/src/alarms/Infrastructure/cloud-alarm-state.timescaledb.repository.ts):
+- `deactivate()`: `SELECT to_char(day, 'YYYY-MM-DD') AS day` → Postgres devuelve texto, sin parseo a `Date`.
+- `toDateString()`: endurecido para formatear desde componentes **locales** si llegara un `Date` (defensa).
+
+Build: `nx run domains:build` ✅.
+
+### Re-validación (2026-06-18) ✅
+
+1. Rebuild de `domains` + `timeseries`, restart del micro, y reset del estado de prueba (PG + Mongo).
+2. Ciclo activación (`prb1=50`) → desactivación (`prb1=20`) el mismo día.
+3. Confirmado: `counterId` idéntico en activación y desactivación, y el doc de `alarm12830` pasa a
+   `active:false` con `valueDeactivation`/`dateDeactivation`, **sin huérfano nuevo** en `alarmorphans`.
+
+---
+
 ## Decisiones clave
 
 1. Temperatura del `panel_0ry` se evalúa **instantáneamente en el micro**, no por el job diario.
@@ -242,7 +297,8 @@ Se descartó porque:
 
 ## Pendiente
 
-- **Commits** (nada commiteado aún en `akocloud-timeseries` ni `timeseries-sqls`).
+- **Commits** (nada commiteado aún en `akocloud-timeseries` ni `timeseries-sqls`); incluir el fix de fecha
+  en `cloud-alarm-state.timescaledb.repository.ts`.
 - (Colateral) commit del cast de tipos en `timeseries-sqls/cloud-alarms/active_alarms.sql` por su equipo.
 
 > Nota: el micro **depende** del enriquecido del injector (lo reutiliza), así que el injector **debe seguir**

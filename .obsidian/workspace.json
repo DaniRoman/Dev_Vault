@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Nueva Alarma desde Cloud/Sin título.md",
+                "file": "AKO/AKO44/Nueva Alarma desde Cloud/KNT-2307-cloud-alarm-temp-maxmin 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "KNT-2307-cloud-alarm-temp-maxmin 1"
             }
           }
         ]
@@ -208,8 +208,9 @@
   },
   "active": "ee41a4b957553b9c",
   "lastOpenFiles": [
-    "AKO/AKO44/Nueva Alarma desde Cloud/KNT-2307-cloud-alarm-temp-maxmin.md",
     "AKO/AKO44/Nueva Alarma desde Cloud/Sin título.md",
+    "AKO/AKO44/Nueva Alarma desde Cloud/KNT-2307-cloud-alarm-temp-maxmin.md",
+    "AKO/AKO44/Nueva Alarma desde Cloud/KNT-2307-cloud-alarm-temp-maxmin 1.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
     "AKO/AKO44/Nueva Alarma desde Cloud/cloud-alarm-guide-panel-0ry.md",
@@ -243,7 +244,6 @@
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - status pending delete.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Docs/task-errcom-inactive-recovery.md",
-    "AKO/AKO44/Docs/Sin título.md",
     "AKO/AKO44/Remove Device",
     "AKO/AKO44/FOTA launcher Blame",
     "AKO/AKO44/AlarmCount nunca es stale por caché Redis",
