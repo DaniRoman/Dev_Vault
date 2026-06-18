@@ -11,7 +11,7 @@ Use this file for stable rules that should apply across most tasks in this repos
 When working in this repository, follow this priority order:
 
 1. The actual code, tests, schemas, migrations, and runtime configuration.
-2. The current task document under `docs/ai/`.
+2. The current task document under `docs/ia/`.
 3. This `AGENTS.md` file.
 4. Existing project conventions discovered in nearby files.
 5. The user's latest explicit instruction.
@@ -52,12 +52,12 @@ Do not:
 
 ## Workflow for phased tasks
 
-When a task is documented in `docs/ai/*.md`, follow this workflow.
+When a task is documented in `docs/ia/*.md`, follow this workflow.
 
 ### Before touching code
 
 1. Read this file.
-2. Read the relevant task document under `docs/ai/`.
+2. Read the relevant task document under `docs/ia/`.
 3. Identify the current phase.
 4. Work only on the phase explicitly requested by the user.
 5. Summarize:
@@ -67,8 +67,8 @@ When a task is documented in `docs/ai/*.md`, follow this workflow.
    - assumptions,
    - expected validation.
 
-If the task document is missing, create it from `docs/ai/task-template.md` before implementation.
-See `docs/ai/writing-guide.md` for guidance on filling in each section correctly.
+If the task document is missing, create it from `docs/ia/task-template.md` before implementation.
+See `docs/ia/writing-guide.md` for guidance on filling in each section correctly.
 
 ### During investigation
 
@@ -195,9 +195,9 @@ Every phase should document the validation performed.
 Use this prompt pattern when asking an agent to continue:
 
 ```text
-Read AGENTS.md and docs/ai/<task-file>.md.
+Read AGENTS.md and docs/ia/<task-file>.md.
 Work only on Phase <N>: <phase name>.
 Before editing, summarize what you understood, files to inspect, and risks.
-After implementation, update docs/ai/<task-file>.md with phase status, decisions, validation, and next step.
+After implementation, update docs/ia/<task-file>.md with phase status, decisions, validation, and next step.
 Do not advance to the next phase without confirmation.
 ```

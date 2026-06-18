@@ -9,7 +9,32 @@ Create one before touching any code if the task:
 - requires understanding an existing flow before changing it, or
 - might need a bug investigation phase.
 
-Copy `task-template.md`, rename it `[TICKET-ID]-[slug].md`, and place it under `docs/ai/`.
+Copy `task-template.md`, rename it `[TICKET-ID]-[slug].md`, and place it under `docs/ia/`.
+
+## Document structure and order (read this first)
+
+The template starts with a non-negotiable **"Reglas de estructura y claridad"** block. Follow that order
+strictly — the document must be understandable by **someone who does not know the task**, without reading
+the code:
+
+1. Objetivo → 2. Scope → 3. **Glosario** → 4. **Contexto funcional** → 5. **Flujo ANTES** →
+   6. **Problema/limitación** → 7. **Implementación paso a paso** → 8. **Flujo DESPUÉS** →
+   9. **Resultado y validación** → Apéndices.
+
+Key rules when filling these:
+
+- **Do not open with the final architecture.** Explain how the system worked **before** and what was wrong
+  with it first.
+- **Glosario:** one row per internal term you use (micro, handler, sample, serie, umbral, job, aggregate,
+  activación/desactivación, queue/collection names, identifiers…). If you write "the micro saves the
+  series", the reader must be able to look up *which* micro, what the *series* is, and what gets saved.
+- **Contexto funcional:** what the affected microservice is for and what it normally does with its input.
+- **Flujo ANTES vs DESPUÉS:** one Mermaid diagram each when the behavior changes (see "Code flow diagrams").
+- **Implementación paso a paso:** numbered steps (what changed, what was added, what stopped depending on
+  other processes, what bug was fixed) — *before* showing the final diagram.
+- **Resultado, validación end-to-end y bugs corregidos van al FINAL**, never in the objective.
+
+`KNT-2307-cloud-alarm-temp-maxmin.md` is the reference example of this structure.
 
 ## Filling in each section
 
@@ -28,9 +53,17 @@ Always append a short qualifier after `in-progress` when useful:
 
 ### Code flow diagrams
 
-Add a Mermaid `flowchart` or `sequenceDiagram` in **Phase 1** to trace the affected path.
-Update it in **Phase 2** to show the new flow.
-If a bug is found, annotate the Phase 1 diagram with ❌ markers before writing the fix.
+Add a Mermaid `flowchart` or `sequenceDiagram` in **"Flujo ANTES"** to trace the path as it worked before
+the task, and a second one in **"Flujo DESPUÉS"** to show the final behavior. End with a one-line summary of
+the key difference. If a bug is found, annotate the relevant diagram with ❌ markers before writing the fix.
+
+The final diagram must be **pedagogical, not just correct** (see the template's "Flujo final — OBLIGATORIO"):
+
+- Label each node with *what it does* in plain language, not only the class/column name.
+- Add a **legend** (what each microservice represents, which emoji/color marks new vs. unchanged paths) and
+  group nodes by microservice with `subgraph`.
+- Make explicit: what data enters, which decisions are taken (branches + which case takes which branch),
+  when an alarm/state activates, when it deactivates, and which processes are no longer needed.
 
 **When to use `flowchart`:**
 Use for request → controller → service → DB flows and for showing where a bug sits.

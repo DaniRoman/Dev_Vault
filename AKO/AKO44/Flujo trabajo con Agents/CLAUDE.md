@@ -9,7 +9,7 @@ Claude Code loads this file as project memory. The line `@AGENTS.md` imports the
 When working on a documented task:
 
 1. `AGENTS.md` is auto-loaded via the `@AGENTS.md` import above — no need to re-read it manually.
-2. Read the task document under `docs/ai/`.
+2. Read the task document under `docs/ia/`.
 3. Work only on the requested phase.
 4. Update the task document after the phase.
 5. Do not move to the next phase without explicit confirmation.

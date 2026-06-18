@@ -1,5 +1,28 @@
 # Task: [TICKET-ID] — [Short title]
 
+## ⚠️ Reglas de estructura y claridad del documento (NO negociable)
+
+> El documento debe poder leerlo **alguien que no conoce la tarea** y entenderla — y poder explicarla —
+> **sin revisar el código**. Para lograrlo, respeta estas reglas:
+>
+> 1. **Orden obligatorio del relato** (no saltar pasos ni adelantar la solución):
+>    1. Objetivo → 2. Scope → 3. Glosario → 4. Contexto funcional → 5. Flujo **ANTES** →
+>    6. Problema/limitación del flujo anterior → 7. Implementación **paso a paso** →
+>    8. Flujo **DESPUÉS** → 9. Resultado y validación → Apéndices.
+> 2. **No empezar por la arquitectura final.** Antes hay que explicar cómo funcionaba el sistema **antes**
+>    de la tarea y qué problema tenía.
+> 3. **Incluir un Glosario** y/o aclaraciones breves: no dar por entendido ningún término interno
+>    (micro, handler, sample, serie, umbral, job, aggregate, activación, nombres de colas/colecciones…).
+>    Si se dice "el micro guarda la serie", debe quedar claro **qué micro**, **qué es la serie** y **qué se guarda**.
+> 4. **Incluir una sección de Contexto funcional** que explique para qué sirve el microservicio afectado.
+> 5. **Diferenciar siempre flujo ANTES y flujo DESPUÉS**, con un diagrama por cada uno cuando aplique.
+> 6. **Explicar la implementación por pasos** (qué se modificó, qué se añadió, qué dejó de depender de
+>    otros procesos, qué bug se corrigió) **antes** de mostrar el flujo final.
+> 7. **El Resultado, la validación end-to-end y los bugs corregidos van al FINAL**, nunca en el objetivo
+>    ni al principio.
+> 8. **Diagrama Mermaid intuitivo y autoexplicativo** siempre que la tarea afecte a un flujo de datos,
+>    microservicios, handlers, jobs o procesos de negocio (ver sección "Flujo final del microservicio").
+
 ## Metadata
 
 | Field  | Value                              |
@@ -41,6 +64,34 @@ Why does this task exist? What problem does it solve?
   "siembra de prueba", nunca como dato canónico.
 - Antes de comparar nombres/valores, **verificar contra la definición y el esquema reales**, no contra
   suposiciones ni contra un documento de prueba editado a mano.
+
+## Glosario (leer antes que nada)
+
+> Lista de términos internos que aparecen en este documento, con una mini-descripción. No des por sabido
+> nada: micro, handler, sample, serie temporal, umbral, job, aggregate, activación/desactivación, nombres
+> de colas y colecciones, identificadores… Rellena solo los que uses.
+
+| Término | Qué significa **en esta tarea** |
+|---------|----------------------------------|
+|         |                                  |
+
+## Contexto funcional del microservicio
+
+> ¿Qué microservicio se ve afectado y para qué sirve? ¿Qué hace normalmente con la entrada que recibe?
+> Suficiente para que alguien externo entienda el resto del documento.
+
+## Flujo ANTES de la tarea
+
+> Cómo se comportaba el sistema **antes** de tus cambios. Incluye un diagrama Mermaid del flujo previo.
+
+```mermaid
+flowchart TD
+    A["Entrada"] --> B["Microservicio"] --> C[("Almacenamiento / cola")]
+```
+
+## Problema / limitación del flujo anterior
+
+> Qué fallaba o no cubría el flujo de arriba. Este es el motivo de la tarea.
 
 ## Phases
 
@@ -123,10 +174,16 @@ What did you find? Be specific: file, line, what it does vs what it should do.
 > el comportamiento del microservicio. Requisitos:
 >
 > - Debe poder entenderse **sin leer el código**: alguien externo debe poder explicárselo a otra persona.
+> - **Pedagógico, no solo correcto.** Etiqueta cada nodo con *qué hace* en lenguaje claro (no solo el
+>   nombre de la clase/columna). Incluye una **leyenda** (qué representa cada micro, qué color/emoji marca
+>   lo nuevo vs. lo de siempre) y agrupa por microservicio con `subgraph`.
+> - Deja explícito en el diagrama: **qué datos entran**, **qué decisiones se toman** (bifurcaciones y qué
+>   rama toma cada caso), **cuándo se activa** y **cuándo se desactiva**, y **qué procesos dejan de ser
+>   necesarios** (si aplica).
 > - Cuando la tarea **cambia el comportamiento**, incluir **dos** diagramas: **ANTES** y **DESPUÉS**,
->   y una frase que resuma la diferencia clave.
+>   marcando qué parte existía antes y qué parte cambia, más una frase que resuma la diferencia clave.
 > - Trazar el camino completo (mensaje/endpoint → controller → servicio/use case → DB/colas/Mongo),
->   no solo el trozo modificado. Marcar las **bifurcaciones** y qué rama toma cada caso.
+>   no solo el trozo modificado.
 > - Mantenerlo sincronizado con el código real al cerrar cada fase (igual que el resto del doc).
 > - Para bugs, anotar con ❌ dónde falla antes de escribir el fix.
 
