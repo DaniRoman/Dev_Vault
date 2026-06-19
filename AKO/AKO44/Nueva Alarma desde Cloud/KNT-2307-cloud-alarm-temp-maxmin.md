@@ -43,29 +43,30 @@ temperatura **máxima** (`alarm_cloud_error_1`) y **mínima** (`alarm_cloud_erro
 
 ## 3. Glosario (leer antes que nada)
 
-| Término | Qué significa **en esta tarea** |
-|---|---|
-| **Microservicio / micro** | Un programa independiente que arranca como proceso propio y se comunica con los demás por colas de mensajes (RabbitMQ). |
-| **`akocloud-timeseries`** | El micro **de esta tarea**. Recibe las mediciones, guarda el histórico y (ahora) evalúa las alarmas de temperatura. |
-| **`akocloud-micros`** | Otro repositorio con varios micros auxiliares; aquí intervienen el **injector** y el **updater**. |
-| **Medición / `sample`** | Un dato que envía el aparato: variable + valor + unidad + marca de tiempo. P.ej. `prb1 = 50 ºC`. |
-| **`injector`** | Micro (en `akocloud-micros`) que, antes de pasar la medición, le **añade el umbral** de la alarma (lo calcula leyendo la configuración del dispositivo). |
-| **Umbral / `threshold`** | El límite que dispara la alarma (p.ej. MAX = 25 ºC). Viene **adjunto a la medición** junto con el **comparador** (`above` = salta si el valor es mayor; `below` = si es menor). |
-| **Serie temporal / "guardar la serie"** | El **histórico de mediciones** a lo largo del tiempo. Se guarda en **TimescaleDB** (PostgreSQL para series temporales). No tiene nada que ver con las alarmas: es solo el registro de valores. |
-| **Activación** | La alarma pasa de apagada a **encendida** (el valor cruza el umbral). |
-| **Desactivación** | La alarma pasa de encendida a **apagada** (el valor vuelve a la normalidad). |
-| **`job` diario (`check_active_alarms`)** | Un proceso programado que se ejecuta **una vez al día** y revisa alarmas usando la **media del día**. Es el mecanismo "lento". |
-| **Media diaria / `aggregate`** | Promedio de los valores del día (vista `analog_variables_daily_stats`). El `job` lo usa para decidir; por eso un pico puntual podía no detectarse. |
-| **`handler`** | Función que **maneja un tipo concreto de mensaje**. Aquí: `ActivationHandler` (enciende la alarma en Mongo) y `DeactivationHandler` (la apaga). |
-| **`event12830`** | Cola de RabbitMQ por donde viajan los eventos de alarma (encender/apagar) hacia el `updater`. |
-| **`updater` (`events-12830/updater`)** | Micro (en `akocloud-micros`) que **escucha `event12830`** y escribe la alarma final en MongoDB. |
-| **`alarm12830`** | Colección de **MongoDB** con las alarmas tal y como las ve el usuario final (`active: true/false`, valor, fechas…). |
-| **`alarmorphans`** | Colección de Mongo donde el `updater` guarda eventos "huérfanos": desactivaciones que **no encontraron** su alarma activa para apagar. Aparecer aquí es señal de un desajuste. |
-| **`counterId`** | Identificador que **empareja** una activación con su desactivación: `nombreAlarma-fechaActivación` (p.ej. `alarm_cloud_error_1-2026-06-17`). Si no coincide, el `updater` no sabe qué alarma apagar. |
-| **`device_active_alarms`** (PostgreSQL) | Tabla del micro que recuerda **qué alarmas están encendidas ahora** (para no avisar dos veces). |
-| **`alarm_notification_log`** (PostgreSQL) | Tabla del micro con el **historial de avisos** enviados (activación/desactivación, entregado sí/no). |
-| **`device_alarm_thresholds`** (PostgreSQL) | Tabla donde se guardan los umbrales que consume el **`job` diario**. Las alarmas de temperatura **ya no** se escriben aquí. |
-| **`resolveCloudAlarmSource(...)`** | Función auxiliar que, dada una alarma, dice si es de **temperatura analógica** (ruta instantánea nueva) o de otro tipo (ruta del `job`). |
+| Término                                                                                         | Qué significa **en esta tarea**                                                                                                                                                                      |
+| ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Microservicio / micro**                                                                       | Un programa independiente que arranca como proceso propio y se comunica con los demás por colas de mensajes (RabbitMQ).                                                                              |
+| **`akocloud-timeseries`**                                                                       | El micro **de esta tarea**. Recibe las mediciones, guarda el histórico y (ahora) evalúa las alarmas de temperatura.                                                                                  |
+| **`akocloud-micros`**                                                                           | Otro repositorio con varios micros auxiliares; aquí intervienen el **injector** y el **updater**.                                                                                                    |
+| **Medición / `sample`**                                                                         | Un dato que envía el aparato: variable + valor + unidad + marca de tiempo. P.ej. `prb1 = 50 ºC`.                                                                                                     |
+| **`injector`**                                                                                  | Micro (en `akocloud-micros`) que, antes de pasar la medición, le **añade el umbral** de la alarma (lo calcula leyendo la configuración del dispositivo).                                             |
+| **Umbral / `threshold`**                                                                        | El límite que dispara la alarma (p.ej. MAX = 25 ºC). Viene **adjunto a la medición** junto con el **comparador** (`above` = salta si el valor es mayor; `below` = si es menor).                      |
+| **Serie temporal / "guardar la serie"**                                                         | El **histórico de mediciones** a lo largo del tiempo. Se guarda en **TimescaleDB** (PostgreSQL para series temporales). No tiene nada que ver con las alarmas: es solo el registro de valores.       |
+| **Activación**                                                                                  | La alarma pasa de apagada a **encendida** (el valor cruza el umbral).                                                                                                                                |
+| **Desactivación**                                                                               | La alarma pasa de encendida a **apagada** (el valor vuelve a la normalidad).                                                                                                                         |
+| **`job` diario (`check_active_alarms`)**                                                        | Un proceso programado que se ejecuta **una vez al día** y revisa alarmas usando la **media del día**. Es el mecanismo "lento".                                                                       |
+| **Media diaria / `aggregate`**                                                                  | Promedio de los valores del día (vista `analog_variables_daily_stats`). El `job` lo usa para decidir; por eso un pico puntual podía no detectarse.                                                   |
+| **`handler`**                                                                                   | Función que **maneja un tipo concreto de mensaje**. Aquí: `ActivationHandler` (enciende la alarma en Mongo) y `DeactivationHandler` (la apaga).                                                      |
+| **`event12830`**                                                                                | Cola de RabbitMQ por donde viajan los eventos de alarma (encender/apagar) hacia el `updater`.                                                                                                        |
+| **`updater` (`events-12830/updater`)**                                                          | Micro (en `akocloud-micros`) que **escucha `event12830`** y escribe la alarma final en MongoDB.                                                                                                      |
+| **`alarm12830`**                                                                                | Colección de **MongoDB** con las alarmas tal y como las ve el usuario final (`active: true/false`, valor, fechas…).                                                                                  |
+| **`alarmorphans`**                                                                              | Colección de Mongo donde el `updater` guarda eventos "huérfanos": desactivaciones que **no encontraron** su alarma activa para apagar. Aparecer aquí es señal de un desajuste.                       |
+| **`counterId`**                                                                                 | Identificador que **empareja** una activación con su desactivación: `nombreAlarma-fechaActivación` (p.ej. `alarm_cloud_error_1-2026-06-17`). Si no coincide, el `updater` no sabe qué alarma apagar. |
+| **`device_active_alarms`** (PostgreSQL)                                                         | Tabla del micro que recuerda **qué alarmas están encendidas ahora** (para no avisar dos veces).                                                                                                      |
+| **`alarm_notification_log`** (PostgreSQL)                                                       | Tabla del micro con el **historial de avisos** enviados (activación/desactivación, entregado sí/no).                                                                                                 |
+| **`device_alarm_thresholds`** (PostgreSQL)                                                      | Tabla donde se guardan los umbrales que consume el **`job` diario**. Las alarmas de temperatura **ya no** se escriben aquí.                                                                          |
+| **`resolveCloudAlarmSource(...)`**                                                              | Función auxiliar que, dada una alarma, dice si es de **temperatura analógica** (ruta instantánea nueva) o de otro tipo (ruta del `job`).                                                             |
+| TTI es **Time Temperature Indicator** — un indicador de la industria del frío/alimentación.<br> | <br>En vez de preguntar "¿la temperatura superó X?", pregunta: **"¿qué porcentaje del día estuvo la temperatura dentro/fuera del rango de setpoint?"**                                               |
 
 ---
 
