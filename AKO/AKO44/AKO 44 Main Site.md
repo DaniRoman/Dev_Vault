@@ -1,49 +1,33 @@
 
 
 ## Entornos
-
 [[AKO 44 - Entornos]]
+
+
+---
 
 ## Flujo de trabajo con IA .md
 [[AKO 44  - Flujo de trabajo con IA]]
+
+---
 
 ## Devices creados
 
 [[AKO 44 - Devices Creados]]
 
-## Unificar Endpoints
-[[AKO44 - Unificar Endpoints]]
-## Logs
-[[AKO 44 - Guia_Logs_Microservicios]]
+---
+## Tareas
 
-## ResetDevices
-[[AKO 44 - Reset Conf for Devices]]
-## Activación de  _`Panel0Ry`_
-[[AKO 44 - Activación de Panel0Ry]]
+[[AKO 44 - Tareas]]
 
-## `Live`
-[[AKO 44 - Live Messages]]
-
-## ***`alarm-ACK`***
-[[alarm-ACK workflow.canvas]]
-
-## ***`Fota`***
-[[Fota]]
-
-## ***`PLMN`***
-[[AKO 44 - PLMN]]
-
-## ***`Micro ErrorComm`***
-[[AKO 44 - ErrorComm]]
-
-## ***`Net-Sync`***
-[[AKO 44 - Net-Sync]]
-
-## ***`comm_sync`***
-[[AKO 44 - comm_syn]]
-
-## `Tests`
+---
+## Tests
 [[AKO 44 TestCases]]
+
+---
+
+
+
 
 ## Translator
 [[AKO 44 - Translator]]
