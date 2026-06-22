@@ -26,6 +26,10 @@
 > 7. **La Documentación de negocio (no técnica) va al FINAL**, escrita para alguien que no toca código.
 > 8. **Diagrama Mermaid intuitivo y autoexplicativo** siempre que la casuística afecte a un flujo de datos,
 >    microservicios, handlers, jobs o procesos de negocio (ver "Diagrama del flujo — OBLIGATORIO").
+> 9. **No inventes el scope de otro proyecto** (`api` / `cliente` / `micro`). Documenta **solo hasta tu
+>    frontera**. En el punto de contacto describe **únicamente el contrato observable** (qué endpoint/evento/cola,
+>    qué payload recibes o publicas) y deja el interior del otro proyecto como bloque **⏳ PENDIENTE** para que lo
+>    rellene su IA. Marca cada sección/nodo con su `Owner`. Si no es tu parte, no la rellenes: deja la nota.
 
 ## Metadata
 
@@ -49,6 +53,28 @@
 
 **Out of scope:**
 - …
+
+## Proyectos implicados y reparto (multi-IA)
+
+> Este documento puede vivir en la carpeta padre (`<padre>/docs/ia/casuisticas/[TICKET]-[slug].md`) para que
+> las IA de todos los proyectos lo lean y editen. Cada IA rellena **solo las secciones de su proyecto** y deja
+> el resto como bloques **⏳ PENDIENTE**. Owners válidos: `api`, `cliente`, `micro`.
+
+| Owner     | Repo / carpeta | Responsabilidad en este flujo | Estado de su parte |
+|-----------|----------------|-------------------------------|--------------------|
+| `cliente` |                |                               | `pending`          |
+| `api`     |                |                               | `pending`          |
+| `micro`   |                |                               | `pending`          |
+
+> **Convención de hueco pendiente.** Cuando el flujo entra en otro proyecto, no inventes su interior: deja un
+> bloque así, con el contrato que sí conoces desde tu lado.
+>
+> ```
+> > ⏳ PENDIENTE · owner **cliente**
+> > Contrato conocido desde `api`: recibe `POST /alarms/ack` con `{deviceId, alarmId}`.
+> > A rellenar por la IA de `cliente`: qué pantalla/acción lo dispara, validaciones, estado previo.
+> > No rellenar desde fuera de este proyecto.
+> ```
 
 ## ⚠️ Integridad de datos — fuente de verdad (NO negociable)
 
@@ -85,9 +111,9 @@
 > ¿Qué microservicios intervienen en este flujo y para qué sirve cada uno? ¿Qué hacen normalmente con la
 > entrada que reciben? Suficiente para que alguien externo entienda el flujo técnico que viene después.
 
-| Microservicio | Para qué sirve | Qué recibe | Qué produce / a dónde escribe |
-|---------------|----------------|------------|-------------------------------|
-|               |                |            |                               |
+| Microservicio | Owner | Para qué sirve | Qué recibe | Qué produce / a dónde escribe |
+|---------------|-------|----------------|------------|-------------------------------|
+|               |       |                |            |                               |
 
 ---
 
@@ -113,6 +139,9 @@
 > Narra el camino completo en lenguaje claro: cómo **se activa** (evento / umbral / endpoint que lo dispara),
 > qué microservicios lo procesan **en qué orden**, a qué **endpoints / colas / colecciones** apunta cada paso
 > y dónde termina. Referencia por `archivo:línea` cuando cites código; no pegues bloques enteros.
+>
+> Marca cada paso con su owner: `[api]`, `[cliente]` o `[micro]`. Documenta solo los pasos de tu proyecto;
+> para los de otro, deja un bloque **⏳ PENDIENTE** con el contrato que conoces desde tu frontera.
 
 1. **Disparo:** …
 2. **Procesamiento:** …
@@ -123,7 +152,8 @@
 > Requisitos del diagrama (igual que el resto del doc, debe entenderse **sin leer el código**):
 > - **Pedagógico, no solo correcto.** Etiqueta cada nodo con *qué hace* en lenguaje claro, no solo con el
 >   nombre de la clase/columna. Añade **leyenda** (qué representa cada micro, qué emoji/color marca el punto
->   de fallo) y agrupa por microservicio con `subgraph`.
+>   de fallo) y **agrupa por proyecto/microservicio con `subgraph`** (`cliente` / `api` / `micro`).
+> - Los nodos de un proyecto que aún no documentas se marcan **⏳ PENDIENTE** y no se inventan por dentro.
 > - Deja explícito: **qué datos entran**, **qué decisiones se toman** (bifurcaciones y qué rama toma cada
 >   caso), **cuándo se activa** y **cuándo se desactiva**.
 > - Traza el camino completo (evento/endpoint → controller → servicio/use case → DB/colas/Mongo).
@@ -134,11 +164,18 @@
 
 ```mermaid
 flowchart TD
-    A["Disparo (evento / umbral / endpoint)"] --> B["Microservicio A · qué hace"]
-    B --> C{"¿condición?"}
-    C -->|"caso 1"| D["Microservicio B · qué hace"]
+    subgraph CLIENTE["cliente"]
+        A["Acción de usuario · qué dispara"]
+    end
+    subgraph API["api"]
+        B["Endpoint · qué recibe"] --> C{"¿condición?"}
+    end
+    subgraph MICRO["micro"]
+        D["Procesa · qué hace"] --> F[("DB / cola / Mongo")]
+    end
+    A -->|"POST /... {payload}"| B
+    C -->|"caso 1"| D
     C -->|"caso 2"| E["Ruta alternativa"]
-    D --> F[("DB / cola / Mongo")]
 ```
 
 **Flujo OBSERVADO** *(rellenar tras la Verificación; marca ❌ donde rompe)*
@@ -152,6 +189,16 @@ flowchart TD
 
 > **Diferencia clave:** una frase. Ej.: "El esperado activa la alarma cloud al superar el umbral; el observado
 > sale antes porque `device.alarms.cloud` está vacío."
+
+### Contrato de integración entre proyectos (seam)
+
+> El punto de contacto entre proyectos es lo más frágil del flujo multi-IA: si `cliente` y `api` asumen payloads
+> distintos, nadie lo detecta. Esta tabla es la **única fuente de verdad de la frontera** y la confirman **ambos
+> lados**. Marca como `⏳ por confirmar` lo que aún no haya validado el owner correspondiente; no lo des por hecho.
+
+| Seam | Owner que publica | Owner que consume | Endpoint / evento / cola | Payload (shape) | Estado |
+|------|-------------------|-------------------|--------------------------|-----------------|--------|
+|      |                   |                   |                          |                 | `⏳ por confirmar` |
 
 ### Decisiones y riesgos
 

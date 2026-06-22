@@ -11,7 +11,9 @@ Crea uno antes de tocar nada si la casuística:
 - requiere entender un flujo existente antes de juzgar si está bien, o
 - necesita comprobar si un error sospechado ocurre realmente.
 
-Copia `casuistica-template.md`, renómbralo como `[TICKET-ID]-[slug].md` y colócalo dentro de `docs/ia/`.
+Copia `casuistica-template.md`, renómbralo como `[TICKET-ID]-[slug].md` y colócalo en `docs/ia/casuisticas/`.
+Si la casuística cruza varios proyectos, ponlo en la **carpeta padre** común (`<padre>/docs/ia/casuisticas/`)
+para que las IA de `api`, `cliente` y `micro` puedan leerlo y editarlo (ver "Casuísticas multi-proyecto").
 
 ## Estructura y orden del documento: leer primero
 
@@ -37,6 +39,34 @@ Reglas clave al rellenar estas secciones:
 - **Verificación antes que conclusiones:** no afirmes que la casuística falla sin pasos reproducibles que lo
   demuestren. Respeta la regla de **Integridad de datos** (ver más abajo).
 - **Documentación de negocio al FINAL**, escrita para alguien que no toca código y legible por sí sola.
+- **No inventes el scope de otro proyecto.** Si la casuística cruza varios repos (`api` / `cliente` / `micro`),
+  documenta solo tu parte y deja el resto como huecos pendientes (ver "Casuísticas multi-proyecto").
+
+## Casuísticas multi-proyecto (varias IA)
+
+Cuando un flujo cruza varios repos (típicamente `cliente` → `api` → `micro`), un único documento describe el
+flujo completo y **cada IA rellena solo la parte de su proyecto**. La regla de oro: **nadie inventa el scope de
+otro proyecto.**
+
+- **Ubicación:** el documento vive en la carpeta padre común para que todas las IA accedan al mismo archivo.
+- **Owners:** usa siempre `api`, `cliente` o `micro`. Rellena la tabla "Proyectos implicados y reparto" con la
+  responsabilidad de cada uno y el estado de su parte (`pending` / `done`). Marca cada paso del flujo y cada
+  nodo del diagrama con su owner, y agrupa el diagrama por proyecto con `subgraph`.
+- **Documenta hasta tu frontera, no más.** Puedes (y debes) documentar el **contrato observable** en el punto de
+  contacto, porque eso lo ves desde tu lado: p. ej. `api` sí sabe "recibo `POST /alarms/ack` con `{deviceId,
+  alarmId}`". Lo que **no** puede hacer `api` es inventar qué pantalla de `cliente` lo dispara o cómo lo valida.
+- **Deja un hueco pendiente** donde el flujo entra en otro proyecto, en vez de adivinar su interior:
+
+  ```markdown
+  > ⏳ PENDIENTE · owner **cliente**
+  > Contrato conocido desde `api`: recibe `POST /alarms/ack` con `{deviceId, alarmId}`.
+  > A rellenar por la IA de `cliente`: qué acción lo dispara, validaciones, estado previo.
+  > No rellenar desde fuera de este proyecto.
+  ```
+
+- **Contrato de integración (seam):** la tabla del seam en la Phase 1 es la única fuente de verdad de la frontera
+  y la confirman **los dos lados**. Mientras un owner no haya validado su columna, marca esa fila como
+  `⏳ por confirmar`. Es donde se detectan los desajustes de payload entre proyectos; no lo des por hecho.
 
 ## Cómo rellenar cada sección
 
