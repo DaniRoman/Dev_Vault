@@ -11,17 +11,14 @@
             "id": "ee41a4b957553b9c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
-                "viewState": {
-                  "x": 836,
-                  "y": 713,
-                  "zoom": -1.5965571271771857
-                }
+                "file": "AKO/AKO44/AKO 44 - Términos y Conceptos.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - backlog.perte stateController Workflow"
+              "icon": "lucide-file",
+              "title": "AKO 44 - Términos y Conceptos"
             }
           }
         ]
@@ -101,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 677.5110321044922
+    "width": 403.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -231,11 +228,17 @@
   },
   "active": "ee41a4b957553b9c",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 - Conexion Layer - Authentication.canvas",
+    "AKO/AKO44/AKO 44 - Main Site.md",
+    "Development vault - Main Site.md",
+    "Sor Moni.md",
+    "Lenguajes/Angular/Angular Main Site.md",
+    "Express/Express Main Site.md",
+    "DeveloperRoadMap/DeveloperRoadMap.md",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
+    "AKO/AKO44/AKO 44 - Tareas.md",
+    "AKO/AKO44/Docs/AKO 44 - Conexion Layer - Authentication.canvas",
     "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
     "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/Landing-Page/Landing-Page Main Site.md",
     "AKO/AKO44/AKO 44 - Devices Creados.md",
     "AKO/AKO44/AKO 44 - Entornos.md",
@@ -247,7 +250,6 @@
     "AKO/AKO44/Docs/AKO 44 - Protocolos.md",
     "AKO/AKO44/Docs/AKO 44 Diferencia entre CMD y Param.md",
     "AKO/AKO44/Translator/AKO 44 - Translator.md",
-    "AKO/AKO44/AKO 44 - Tareas.md",
     "AKO/AKO44/Test Cases/AKO 44 TestCases.md",
     "AKO/AKO44/Reset Conf/AKO 44 - Reset Conf for Devices.md",
     "AKO/AKO44/Reset Device Conf/AKO 44  - Script masivo para resetDevices.md",
@@ -256,10 +258,6 @@
     "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
     "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
     "AKO/AKO44/Flujo trabajo con Agents/AGENTS.es.md",
-    "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.es.md",
-    "AKO/AKO44/Flujo trabajo con Agents/writing-guide.es.md",
-    "AKO/AKO44/Flujo trabajo con Agents/writing-guide.md",
-    "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.md",
     "AKO/AKO44/comm_sync/AKO 44 - comm_syn workflow.canvas",
     "AKO/AKO44/Flujo Comportamiento Cloud - Device - Cloud",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
@@ -279,7 +277,6 @@
     "AKO/AKO44/Translator",
     "AKO/AKO44/comm_sync",
     "DeveloperRoadMap/attachments/Pasted image 20260514162153.png",
-    "AKO/AKO44/Docs/alarm-ACK workflow.canvas",
     "AKO/AKO44/attachments/Pasted image 20260513110828.png",
     "AKO/AKO44/attachments/Pasted image 20260513102610.png",
     "AKO/AKO44/attachments/Pasted image 20260513102300.png",

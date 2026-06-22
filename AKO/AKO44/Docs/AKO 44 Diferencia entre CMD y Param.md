@@ -23,7 +23,7 @@
 	- “lanza esta acción ahora”
 
 
-Con ese documento [[AKO 44 Main Site#^91b034]] , para saber qué estoy mandando miro **dos cosas**:
+Con ese documento [[AKO 44 - Main Site#^91b034]] , para saber qué estoy mandando miro **dos cosas**:
 
 1. **el campo `ty`**
 2. **el contenido de `d`**
