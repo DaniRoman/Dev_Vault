@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 631.5110321044922
+    "width": 677.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -228,9 +228,13 @@
   },
   "active": "ee41a4b957553b9c",
   "lastOpenFiles": [
-    "AKO/AKO44/Docs/AKO 44 Diferencia entre CMD y Param.md",
-    "AKO/AKO44/AKO 44 - Términos y Conceptos.md",
+    "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Docs/AKO 44 Flujos de trabajo.md",
+    "AKO/AKO44/Docs/AKO 44 Flujo Del Proyecto.md",
+    "AKO/AKO44/AKO 44 - Términos y Conceptos.md",
+    "AKO/AKO44/Docs/AKO 44 - Protocolos.md",
+    "AKO/AKO44/Docs/AKO 44 Diferencia entre CMD y Param.md",
     "AKO/AKO44/Translator/AKO 44 - Translator.md",
     "AKO/AKO44/AKO 44 - Tareas.md",
     "AKO/AKO44/Test Cases/AKO 44 TestCases.md",
@@ -250,12 +254,8 @@
     "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.md",
     "AKO/AKO44/Flujo trabajo con Agents/AGENTS.md",
     "AKO/AKO44/Produc/Ako44-Prod.md",
-    "AKO/AKO44/Translator/AKO 44 - Aceptar nuevo mensaje del device en el translator.md",
-    "AKO/AKO44/comm_sync/AKO 44 - comm_syn.md",
     "AKO/AKO44/comm_sync/AKO 44 - comm_syn workflow.canvas",
-    "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
     "AKO/AKO44/Flujo Comportamiento Cloud - Device - Cloud",
-    "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",

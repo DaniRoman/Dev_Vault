@@ -56,8 +56,7 @@ Mirando el nombre del parámetro `Ini1` y el valor un `9` en el excel de configu
 y me quedo con la dirección de modbus la cual utilizare para modificar ese parametro en el dispositivo a traves del programa [[AKO 44 - Configurar Alarmas desde Cloud o en Crudo]]
 ## Configurar alarmas desde cloud, o en crudo desde el device directamente
 [[AKO 44 - Configurar Alarmas desde Cloud o en Crudo]]
-## Flujo del proyecto general
-[[AKO 44 Flujo Del Proyecto]]
+
 ## Conceptos
 
 En un equipo IoT (un controlador, registrador, etc.) normalmente tienes **entradas** (sensores) y **salidas** (actuadores).
@@ -124,8 +123,7 @@ es un sensor**, y normalmente entra al equipo como una **entrada**.
 ## Errores
 
 [[AKO 44 - Errores y sus soluciónes]]
-## Protocolos de red
-[[Ako44 - Protocolos]]
+
 ## Flujos de trabajo
 [[AKO 44 Flujos de trabajo]]
 ## Status Legacy
