@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/AKO 44 - Main Site.md",
+                "file": "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.es.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - Main Site"
+              "title": "CLAUDE.es"
             }
           }
         ]
@@ -208,9 +208,11 @@
   },
   "active": "ee41a4b957553b9c",
   "lastOpenFiles": [
-    "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
     "AKO/AKO44/Flujo trabajo con Agents/writing-guide_casuistica.md",
     "AKO/AKO44/Flujo trabajo con Agents/casuistica-template.md",
+    "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.es.md",
+    "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
+    "AKO/AKO44/AKO 44 - Main Site.md",
     "AKO/AKO44/Flujo trabajo con Agents/writing-guide.es 1.md",
     "AKO/AKO44/Flujo trabajo con Agents/writing-guide_casuistica 1.md",
     "AKO/AKO44/Flujo trabajo con Agents/task-template 1.md",
@@ -220,11 +222,9 @@
     "AKO/AKO44/Flujo trabajo con Agents/AGENTS.es.md",
     "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
     "AKO/AKO44/Flujo trabajo con Agents/writing-guide.es.md",
-    "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.es.md",
     "AKO/AKO44/Nueva Alarma desde Cloud/KNT-2307-cloud-alarm-temp-maxmin.md",
     "AKO/AKO44/Reset Device Conf/AKO 44  - Script masivo para resetDevices.md",
     "AKO/AKO44/AKO 44 - Términos y Conceptos.md",
-    "AKO/AKO44/AKO 44 - Main Site.md",
     "Development vault - Main Site.md",
     "Sor Moni.md",
     "Lenguajes/Angular/Angular Main Site.md",
