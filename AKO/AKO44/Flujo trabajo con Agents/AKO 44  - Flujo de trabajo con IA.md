@@ -1,2 +1,2 @@
-[[CLAUDE]], [[AGENTS]], [[task-template]]
+[[AGENTS.es]] [[CLAUDE.es]] [[writing-guide.es]] [[task-template]]
 
