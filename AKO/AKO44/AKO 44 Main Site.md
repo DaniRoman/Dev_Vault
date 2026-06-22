@@ -1,11 +1,14 @@
 
-
 ## Entornos
 [[AKO 44 - Entornos]]
 
 ---
 ## Flujo de trabajo con IA .md
 [[AKO 44  - Flujo de trabajo con IA]]
+
+---
+## Conceptos
+[[AKO 44 - Términos y Conceptos]]
 
 ---
 ## Devices creados
@@ -26,16 +29,16 @@
 [[AKO 44 - Translator]]
 
 ---
-## Protocolo de comunicación entre `Device`dispositivo y cloud
+## Protocolo de comunicación entre Device - Cloud - Device
 
-[Documento](https://ako0.sharepoint.com/:w:/t/DesarrolloModificaciondeProducto/DEVICE_COMMUNICATION_PROTOCOL/IQANIw2Uzjg2QpMzVO0zj5Z5AWI-WY01IyDjBINtVQTB-ck?e=bLD5hS&ovuser=5a94156b-5d3f-467b-b767-561717bb62ca%2Cdaniel.roman%40ako.com&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNjAxMDQwMDkyNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D)
+[Enlace a Documento de especificación del protocolo entre dispositivo y cloud](https://ako0.sharepoint.com/:w:/t/DesarrolloModificaciondeProducto/DEVICE_COMMUNICATION_PROTOCOL/IQANIw2Uzjg2QpMzVO0zj5Z5AWI-WY01IyDjBINtVQTB-ck?e=bLD5hS&ovuser=5a94156b-5d3f-467b-b767-561717bb62ca%2Cdaniel.roman%40ako.com&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNjAxMDQwMDkyNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D)
 - Documento de especificación del protocolo entre dispositivo y cloud. ^91b034
 - Define transporte y formato: NB-IoT + UDP + CoAP + JSON/CBOR.
 - Describe cada tipo de mensaje (`status`, `audit`, `cmd`, `sync`, etc.) y la estructura de su payload.
 - Sirve para interpretar y construir correctamente los mensajes entre firmware y backend.
 
-## Diferencia entre CMD y Parámetro
-[[AKO 44 Diferencia entre CMD y Param]]
+---
+
 ## Configurar Darwin 2Ry
 
 [Excel de Conf de parámetros en dispositivo](https://ako0-my.sharepoint.com/:x:/r/personal/fmaataoui_ako_com/_layouts/15/Doc.aspx?sourcedoc=%7B14551CBA-3E92-4704-99CC-ACD1E74D41EF%7D&file=Chart%20new%20DARWIN%20Panel.xlsx&wdLOR=c99E32DE4-E50B-3441-A947-77B3FBF12E90&fromShare=true&action=default&mobileredirect=true&wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1773646586414&web=1)
