@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 375.5024719238281
+    "width": 435.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -206,7 +206,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e998f953db48c1c4",
+  "active": "ee41a4b957553b9c",
   "lastOpenFiles": [
     "AKO/AKO44/Flujo Comportamiento Cloud - Device - Cloud",
     "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
