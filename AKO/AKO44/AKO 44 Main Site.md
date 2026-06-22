@@ -54,6 +54,7 @@ Mirando el nombre del parámetro `Ini1` y el valor un `9` en el excel de configu
 ![[Pasted image 20260316084645.png]]
 
 y me quedo con la dirección de modbus la cual utilizare para modificar ese parametro en el dispositivo a traves del programa [[AKO 44 - Configurar Alarmas desde Cloud o en Crudo]]
+
 ## Configurar alarmas desde cloud, o en crudo desde el device directamente
 [[AKO 44 - Configurar Alarmas desde Cloud o en Crudo]]
 
