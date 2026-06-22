@@ -3,14 +3,11 @@
 ## Entornos
 [[AKO 44 - Entornos]]
 
-
 ---
-
 ## Flujo de trabajo con IA .md
 [[AKO 44  - Flujo de trabajo con IA]]
 
 ---
-
 ## Devices creados
 
 [[AKO 44 - Devices Creados]]
@@ -25,14 +22,11 @@
 [[AKO 44 TestCases]]
 
 ---
-
-
-
-
-## Translator
+## Casos de uso con Translator
 [[AKO 44 - Translator]]
 
-## Protocolo de comunicación dispositivo y cloud
+---
+## Protocolo de comunicación entre `Device`dispositivo y cloud
 
 [Documento](https://ako0.sharepoint.com/:w:/t/DesarrolloModificaciondeProducto/DEVICE_COMMUNICATION_PROTOCOL/IQANIw2Uzjg2QpMzVO0zj5Z5AWI-WY01IyDjBINtVQTB-ck?e=bLD5hS&ovuser=5a94156b-5d3f-467b-b767-561717bb62ca%2Cdaniel.roman%40ako.com&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNjAxMDQwMDkyNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D)
 - Documento de especificación del protocolo entre dispositivo y cloud. ^91b034
