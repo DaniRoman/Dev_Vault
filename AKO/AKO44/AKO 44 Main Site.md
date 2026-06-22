@@ -6,6 +6,15 @@
 `https://api.dev.akonet.cloud`
 
 
+Acceder a Admin de producción 
+
+`https://admin.ako54.akonet.cloud/`
+>Mismas credenciales de siempre
+
+>Acceder a Cliente
+>`https://legacy.ako54.akonet.cloud/`
+
+
 ## Flujo de trabajo con IA .md
 [[AKO 44  - Flujo de trabajo con IA]]
 

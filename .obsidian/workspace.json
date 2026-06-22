@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Translator/AKO 44 - Aceptar nuevo mensaje del device en el translator.md",
+                "file": "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AKO 44 - Aceptar nuevo mensaje del device en el translator"
+              "title": "AKO 44  - Flujo de trabajo con IA"
             }
           }
         ]
@@ -74,8 +74,7 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -209,16 +208,21 @@
   },
   "active": "ee41a4b957553b9c",
   "lastOpenFiles": [
-    "AKO/AKO44/comm_sync/AKO 44 - comm_syn.md",
-    "AKO/AKO44/comm_sync/AKO 44 - comm_syn workflow.canvas",
-    "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
-    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Flujo trabajo con Agents/AGENTS.es.md",
+    "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.es.md",
+    "AKO/AKO44/Flujo trabajo con Agents/writing-guide.es.md",
     "AKO/AKO44/Flujo trabajo con Agents/writing-guide.md",
-    "AKO/AKO44/Flujo Comportamiento Cloud - Device - Cloud",
-    "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
     "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
     "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.md",
     "AKO/AKO44/Flujo trabajo con Agents/AGENTS.md",
+    "AKO/AKO44/AKO 44 Main Site.md",
+    "AKO/AKO44/Produc/Ako44-Prod.md",
+    "AKO/AKO44/Translator/AKO 44 - Aceptar nuevo mensaje del device en el translator.md",
+    "AKO/AKO44/comm_sync/AKO 44 - comm_syn.md",
+    "AKO/AKO44/comm_sync/AKO 44 - comm_syn workflow.canvas",
+    "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
+    "AKO/AKO44/Flujo Comportamiento Cloud - Device - Cloud",
+    "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
     "AKO/AKO44/Nueva Alarma desde Cloud/KNT-2307-cloud-alarm-temp-maxmin.md",
     "AKO/AKO44/Nueva Alarma desde Cloud/Sin título.md",
     "AKO/AKO44/Nueva Alarma desde Cloud/KNT-2307-cloud-alarm-temp-maxmin 1.md",
@@ -240,11 +244,7 @@
     "AKO/AKO44/AKO 44 - Flujo Device mensaje tipo a Quue.md",
     "AKO/AKO44/Remove Device/Feature 2253 Flujo de remove Device - Errores & Bugs.md",
     "AKO/AKO44/Remove Device/AKO 44 - Feature 2253 - Confirmación ACK ok.md",
-    "AKO/AKO44/Remove Device/Feature 2253 Flujo de remove Device.md",
-    "AKO/AKO44/LiveMesages/AKO 44 - Live Messages.md",
-    "AKO/AKO44/Docs/AKO 44 - Admin.md",
     "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
-    "AKO/AKO44/Docs/AKO 44 - Feature 2253 - cambio de parámetro.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Remove Device",
     "AKO/AKO44/FOTA launcher Blame",
