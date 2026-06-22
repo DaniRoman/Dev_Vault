@@ -1,11 +1,9 @@
+***DEV***
 
-***DEV*** `https://api.dev.akonet.cloud`
-***ADMIN DEV***
+>***CLIENTE*** `https://api.dev.akonet.cloud`
+>***ADMIN*** `https://admin.dev.akonet.cloud`
 
-Acceder a Admin de producción 
+***AKO 54***
 
-`https://admin.ako54.akonet.cloud/`
->Mismas credenciales de siempre
-
->Acceder a Cliente
->`https://legacy.ako54.akonet.cloud/`
+> ***ADMIN*** `https://admin.ako54.akonet.cloud/`
+> ***CLIENTE*** `https://legacy.ako54.akonet.cloud/`
