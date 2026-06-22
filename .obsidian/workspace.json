@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5024719238281
+    "width": 375.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -206,15 +206,16 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ee41a4b957553b9c",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
     "AKO/AKO44/Flujo trabajo con Agents/task-template.md",
+    "AKO/AKO44/Flujo trabajo con Agents/AKO 44  - Flujo de trabajo con IA.md",
+    "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.md",
     "AKO/AKO44/Flujo trabajo con Agents/AGENTS.md",
+    "AKO/AKO44/Flujo trabajo con Agents/writing-guide.md",
     "AKO/AKO44/Nueva Alarma desde Cloud/KNT-2307-cloud-alarm-temp-maxmin.md",
     "AKO/AKO44/Nueva Alarma desde Cloud/Sin título.md",
-    "AKO/AKO44/Flujo trabajo con Agents/CLAUDE.md",
     "AKO/AKO44/Nueva Alarma desde Cloud/KNT-2307-cloud-alarm-temp-maxmin 1.md",
-    "AKO/AKO44/Flujo trabajo con Agents/writing-guide.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Nueva Alarma desde Cloud/cloud-alarm-guide-panel-0ry.md",
     "AKO/AKO44/errcom/errcom-cloud-alarm-times-and-names.md",
@@ -243,7 +244,6 @@
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - Confirmación ACK ok.md",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - status pending delete.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
-    "AKO/AKO44/Docs/task-errcom-inactive-recovery.md",
     "AKO/AKO44/Remove Device",
     "AKO/AKO44/FOTA launcher Blame",
     "AKO/AKO44/AlarmCount nunca es stale por caché Redis",
