@@ -16,6 +16,10 @@
 [[AKO 44 - Devices Creados]]
 
 ---
+## Documentación
+[[AKO 44 - Documenta]]
+
+---
 ## Tareas
 
 [[AKO 44 - Tareas]]
