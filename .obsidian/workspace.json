@@ -11,17 +11,14 @@
             "id": "ee41a4b957553b9c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/comm_sync/AKO 44 - comm_syn workflow.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
+                "file": "AKO/AKO44/Translator/AKO 44 - Aceptar nuevo mensaje del device en el translator.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - comm_syn workflow"
+              "icon": "lucide-file",
+              "title": "AKO 44 - Aceptar nuevo mensaje del device en el translator"
             }
           }
         ]
@@ -56,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fma",
+                "query": "sync",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +74,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -212,6 +210,7 @@
   "active": "ee41a4b957553b9c",
   "lastOpenFiles": [
     "AKO/AKO44/comm_sync/AKO 44 - comm_syn.md",
+    "AKO/AKO44/comm_sync/AKO 44 - comm_syn workflow.canvas",
     "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
     "AKO/AKO44/AKO 44 Main Site.md",
     "AKO/AKO44/Flujo trabajo con Agents/writing-guide.md",
@@ -246,7 +245,6 @@
     "AKO/AKO44/Docs/AKO 44 - Admin.md",
     "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
     "AKO/AKO44/Docs/AKO 44 - Feature 2253 - cambio de parámetro.md",
-    "AKO/AKO44/Docs/AKO 44 - Feature 2253 - Confirmación ACK ok.md",
     "AKO/AKO44/Docs/AKO 44 - Flujo de cambio de parámetros Cloud - Device.canvas",
     "AKO/AKO44/Remove Device",
     "AKO/AKO44/FOTA launcher Blame",
@@ -264,7 +262,6 @@
     "AKO/AKO44/attachments/Pasted image 20260513102129.png",
     "AKO/AKO44/attachments/Pasted image 20260513093405.png",
     "AKO/AKO44/attachments/Pasted image 20260513093347.png",
-    "AKO/AKO44/comm_sync/AKO 44 - comm_syn workflow.canvas",
     "AKO/AKO44/Test Cases/AKO 44 TestCases ErrorComm.canvas",
     "AKO/AKO44/Docs/AKO 44 - Net-Sync WorkFlow.canvas"
   ]
