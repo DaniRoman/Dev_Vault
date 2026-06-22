@@ -1,5 +1,11 @@
 >[!important] Importante ***`microservice.json`***
 
+
+## Info para proyectos
+
+`https://api.dev.akonet.cloud`
+
+
 ## Flujo de trabajo con IA .md
 [[AKO 44  - Flujo de trabajo con IA]]
 
