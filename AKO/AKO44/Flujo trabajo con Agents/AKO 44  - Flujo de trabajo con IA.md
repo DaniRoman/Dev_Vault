@@ -4,6 +4,26 @@
 
 El esquema de arriba resume las dos cosas. Y para arrancar, estos son los mensajes exactos que le mandas a cada IA (uno por proyecto, por turnos):
 
+**Cómo coordinas una feature nueva (la receta, por turnos):**
+
+Paso 0 — tú creas la carpeta, copias las 4 plantillas, y rellenas la visión funcional del `overview.md` (qué es la feature, para qué sirve), aunque sea en dos frases. Eso le da el norte a las tres IAs.
+
+Paso 1 — abres la **IA de api** primero (ve los dos lados) y le dices:
+
+```
+Feature nueva: <nombre>. Lee docs/features/<nombre>/overview.md (visión funcional)
+y api.md. Documenta tu capa en api.md desde tu código: endpoints, qué recibes,
+qué emites. En el overview, añade a la tabla de seams las filas de tus fronteras
+(qué recibes de cliente, qué mandas a micro) como ⏳ por confirmar.
+Donde el flujo entre en cliente o micro, deja ⏳ PENDIENTE. No inventes su scope.
+```
+
+Paso 2 — abres la **IA de micro**, mismo encargo para `micro.md`, y además: _"confirma o corrige las filas de seam que dejó api que te afecten"_.
+
+Paso 3 — abres la **IA de cliente**, igual para `client.md`, y confirma su seam con api.
+
+Paso 4 — vuelves a una IA (la de api suele ir bien) y le dices: _"con las tres capas ya rellenas, completa el flujo end-to-end (sección 2) y el diagrama del overview"_. Ese paso es el ensamblaje final.
+
 **Para documentar una feature nueva** (el caso de ahora), a cada IA por separado:
 
 ```
