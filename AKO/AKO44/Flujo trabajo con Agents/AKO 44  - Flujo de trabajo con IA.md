@@ -35,3 +35,5 @@ Resultado: una feature documentada que servirá de contexto para todo lo que ven
 Resultado: el problema resuelto y documentado, y la base de conocimiento más completa que antes. (Prompts en `guides/work-on-an-issue.md`.)
 
 **La regla que sostiene todo el sistema**, en una frase: cada IA escribe solo lo suyo, deja marcado lo ajeno, y el archivo compartido en `docs/` es el punto de encuentro donde se cierran las fronteras. Eso es lo que evita que una IA invente el scope de otra, que era tu problema de partida.
+
+vamos a empezar a implemematr loop ingeniering para que solo se encargue una para usar tareas y no tener que habalr una por una
