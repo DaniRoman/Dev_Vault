@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 545.5024719238281
+    "width": 336.5110321044922
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -206,7 +206,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ee41a4b957553b9c",
+  "active": "e998f953db48c1c4",
   "lastOpenFiles": [
     "AKO/AKO44/Flujo trabajo con Agents/attachments/Pasted image 20260623112604.png",
     "AKO/AKO44/Flujo trabajo con Agents/attachments",
