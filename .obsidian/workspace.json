@@ -11,12 +11,17 @@
             "id": "ee41a4b957553b9c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "canvas",
               "state": {
-                "file": "attachments/Pasted image 20260310121655.png"
+                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
+                "viewState": {
+                  "x": -926.0205104598981,
+                  "y": -532.4010425092584,
+                  "zoom": 0.27440004331445395
+                }
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260310121655"
+              "icon": "lucide-layout-dashboard",
+              "title": "AKO 44 - ErrorComm workFlow"
             }
           }
         ]
@@ -76,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 632.5024719238281
+    "width": 632.5024719238281,
+    "collapsed": true
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -206,6 +212,8 @@
   },
   "active": "ee41a4b957553b9c",
   "lastOpenFiles": [
+    "AKO/AKO44/errcom/AKO 44 - ErrorComm.md",
+    "attachments/Pasted image 20260310121655.png",
     "Bjj/Bjj Tecniques.md",
     "AKO/AKO44/IADocs/IA Docs.md",
     "AKO/AKO44/Flujo trabajo con Agents/casuistica-template.md",
@@ -238,7 +246,6 @@
     "AKO/AKO44/AKO 44 - Tareas.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer - Authentication.canvas",
     "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
-    "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/comm_sync/AKO 44 - comm_syn workflow.canvas",
     "AKO/AKO44/Flujo Comportamiento Cloud - Device - Cloud",
@@ -260,7 +267,6 @@
     "AKO/AKO44/attachments/Pasted image 20260513102610.png",
     "AKO/AKO44/attachments/Pasted image 20260513102300.png",
     "AKO/AKO44/attachments/Pasted image 20260513102153.png",
-    "AKO/AKO44/attachments/Pasted image 20260513102129.png",
-    "AKO/AKO44/attachments/Pasted image 20260513093405.png"
+    "AKO/AKO44/attachments/Pasted image 20260513102129.png"
   ]
 }
