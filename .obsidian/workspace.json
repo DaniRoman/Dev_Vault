@@ -11,14 +11,12 @@
             "id": "ee41a4b957553b9c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Bjj/Bjj Tecniques.md",
-                "mode": "source",
-                "source": false
+                "file": "attachments/Pasted image 20260310121655.png"
               },
-              "icon": "lucide-file",
-              "title": "Bjj Tecniques"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260310121655"
             }
           }
         ]
@@ -208,6 +206,7 @@
   },
   "active": "ee41a4b957553b9c",
   "lastOpenFiles": [
+    "Bjj/Bjj Tecniques.md",
     "AKO/AKO44/IADocs/IA Docs.md",
     "AKO/AKO44/Flujo trabajo con Agents/casuistica-template.md",
     "AKO/AKO44/IADocs",
@@ -240,7 +239,6 @@
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer - Authentication.canvas",
     "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
     "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
-    "AKO/Landing-Page/Landing-Page Main Site.md",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
     "AKO/AKO44/comm_sync/AKO 44 - comm_syn workflow.canvas",
     "AKO/AKO44/Flujo Comportamiento Cloud - Device - Cloud",
