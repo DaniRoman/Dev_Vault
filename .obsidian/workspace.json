@@ -11,17 +11,14 @@
             "id": "ee41a4b957553b9c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
-                "viewState": {
-                  "x": -929.3897424240254,
-                  "y": -531.5587345182266,
-                  "zoom": 0.27440004331445395
-                }
+                "file": "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "AKO 44 - ErrorComm workFlow"
+              "icon": "lucide-file",
+              "title": "AKO  44 - Acceso a Admin"
             }
           }
         ]
@@ -56,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sync",
+                "query": "user",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,12 +74,12 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 632.5024719238281,
-    "collapsed": true
+    "width": 632.5024719238281
   },
   "right": {
     "id": "3553b5f1a4be20ed",
@@ -212,6 +209,7 @@
   },
   "active": "ee41a4b957553b9c",
   "lastOpenFiles": [
+    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/errcom/AKO 44 - ErrorComm.md",
     "attachments/Pasted image 20260310121655.png",
     "Bjj/Bjj Tecniques.md",
@@ -243,7 +241,6 @@
     "Express/Express Main Site.md",
     "DeveloperRoadMap/DeveloperRoadMap.md",
     "AKO/AKO44/Docs/AKO 44 - backlog.perte stateController Workflow.canvas",
-    "AKO/AKO44/AKO 44 - Tareas.md",
     "AKO/AKO44/Docs/AKO 44 - Conexion Layer - Authentication.canvas",
     "AKO/AKO44/Docs/AKO 44  - Driver Translator Perte - InputValidator workFlow.canvas",
     "AKO/AKO44/Docs/Ako44 - Mok device conexión Script.canvas",
@@ -251,7 +248,6 @@
     "AKO/AKO44/Flujo Comportamiento Cloud - Device - Cloud",
     "AKO/AKO44/Docs/AKO 44 Diagrama de flujo ack y pending output en cambio de parámetro Cloud - Device - Cloud.canvas",
     "AKO/AKO44/Docs/AKO 44 - Flujo Api Device.canvas",
-    "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/Nueva Alarma desde Cloud/attachments/Pasted image 20260612133316.png",
     "AKO/AKO44/Nueva Alarma desde Cloud/attachments/Pasted image 20260612133331.png",
     "AKO/AKO44/Nueva Alarma desde Cloud/attachments",
