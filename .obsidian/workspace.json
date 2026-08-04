@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "AKO  44 - Acceso a Admin"
             }
+          },
+          {
+            "id": "2f96c973f9cc65ea",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.13.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -207,7 +220,7 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "cd0b57e002270810",
+  "active": "2f96c973f9cc65ea",
   "lastOpenFiles": [
     "AKO/AKO44/Docs/AKO 44 - ErrorComm workFlow.canvas",
     "AKO/AKO44/errcom/AKO 44 - ErrorComm.md",
