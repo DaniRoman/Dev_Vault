@@ -25,12 +25,14 @@
             "id": "2f96c973f9cc65ea",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.13.4"
+                "file": "AKO/AKO44/Docs/AKO  44 - Acceso a Admin.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Registro de cambios 1.13.4"
+              "icon": "lucide-file",
+              "title": "AKO  44 - Acceso a Admin"
             }
           }
         ],
