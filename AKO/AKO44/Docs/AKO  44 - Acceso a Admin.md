@@ -8,7 +8,7 @@ En `localhost_3002`accedo con estas credenciales..
 ```json
 {
 	"username": "fmaataoui@ako.com",
-	"password": "Fmako-1909"
+	"password": "Fmako-1909". "Tanger-2001"
 }
 ```
 
